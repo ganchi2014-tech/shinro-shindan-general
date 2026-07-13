@@ -125,4 +125,52 @@ function makeDept(over = {}) {
   assert.ok(diffs.some(x => x.field === 'hensachi.source_url' && x.new === 'https://kei-net.example'));
   assert.ok(diffs.some(x => x.field === 'hensachi.verified_date' && x.new === '2026-07-14'));
 }
+// campus 更新が反映され diffs に現れる
+{
+  const data = { universities: [{ id: 'u1', name: 'テスト大学' }], departments: [makeDept()] };
+  const research = {
+    uni_id: 'u1', researched_date: '2026-07-14',
+    departments: [{ dept_id: 'u1-keiei', campus: '新キャンパス' }],
+  };
+  const diffs = mergeUni(data, research);
+  assert.strictEqual(data.departments[0].campus, '新キャンパス');
+  assert.ok(diffs.some(x => x.field === 'campus' && x.old === 'C' && x.new === '新キャンパス'));
+}
+// employment_fields: tags付きミニデータで不正ID → throw
+{
+  const data = {
+    universities: [{ id: 'u1', name: 'テスト大学' }],
+    departments: [makeDept()],
+    tags: { employment: [{ id: 'kinyu', label: '金融' }, { id: 'it', label: 'IT' }] },
+  };
+  const research = {
+    uni_id: 'u1', researched_date: '2026-07-14',
+    departments: [{ dept_id: 'u1-keiei', employment_fields: ['kinyu', 'sonzai-shinai'] }],
+  };
+  assert.throws(() => mergeUni(data, research), /不正な employment_fields ID/);
+}
+// employment_fields: tags付きミニデータで正しいID → 通る
+{
+  const data = {
+    universities: [{ id: 'u1', name: 'テスト大学' }],
+    departments: [makeDept()],
+    tags: { employment: [{ id: 'kinyu', label: '金融' }, { id: 'it', label: 'IT' }] },
+  };
+  const research = {
+    uni_id: 'u1', researched_date: '2026-07-14',
+    departments: [{ dept_id: 'u1-keiei', employment_fields: ['kinyu', 'it'] }],
+  };
+  mergeUni(data, research);
+  assert.deepStrictEqual(data.departments[0].employment_fields, ['kinyu', 'it']);
+}
+// employment_fields: tagsが無いミニデータ（従来テストと同様）→ 検証スキップされ通る
+{
+  const data = { universities: [{ id: 'u1', name: 'テスト大学' }], departments: [makeDept()] };
+  const research = {
+    uni_id: 'u1', researched_date: '2026-07-14',
+    departments: [{ dept_id: 'u1-keiei', employment_fields: ['nonexistent-id'] }],
+  };
+  mergeUni(data, research); // throwしない
+  assert.deepStrictEqual(data.departments[0].employment_fields, ['nonexistent-id']);
+}
 console.log('ALL OK');

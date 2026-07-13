@@ -96,8 +96,29 @@ function buildUniversity(baseUni, empUni, entryMethodDetails) {
   return u;
 }
 
+// 既存 data_v2.json に調査済み(verified)の学部が1件でもあれば、--force なしの再実行を拒否する
+// （to_v2.js は data_final.json から全生成するため、無条件再実行は調査済みデータを消してしまう）
+function checkNotOverwritingVerified(WORK) {
+  const outPath = path.join(WORK, 'data_v2.json');
+  if (!fs.existsSync(outPath)) return;
+  if (process.argv.includes('--force')) return;
+  let existing;
+  try {
+    existing = JSON.parse(fs.readFileSync(outPath, 'utf8'));
+  } catch (e) {
+    return; // 既存ファイルが壊れている等はガード対象外（生成を続行）
+  }
+  const verifiedCount = (existing.departments || []).filter(d => d.data_status === 'verified').length;
+  if (verifiedCount > 0) {
+    console.error(`エラー: data_v2.json に調査済み(verified)の学部が${verifiedCount}件ある。to_v2.js は全生成のため再実行すると調査済みデータが消える。`);
+    console.error('上書きするには --force を付けて実行せよ（実行前にバックアップ必須）。');
+    process.exit(1);
+  }
+}
+
 function main() {
   const WORK = __dirname;
+  checkNotOverwritingVerified(WORK);
   const data = JSON.parse(fs.readFileSync(path.join(WORK, 'data_final.json'), 'utf8'));
   const tagsDef = JSON.parse(fs.readFileSync(path.join(WORK, 'tags_def.json'), 'utf8'));
 

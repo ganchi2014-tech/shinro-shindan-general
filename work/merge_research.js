@@ -50,8 +50,14 @@ function mergeUni(data, research) {
       }
       if (m.note !== undefined) target.note = m.note;
     }
+    if (r.campus !== undefined) setAndDiff(diffs, d.dept_id, d, 'campus', r.campus, 'campus');
     if (r.qualifications) setAndDiff(diffs, d.dept_id, d, 'qualifications', r.qualifications, 'qualifications');
-    if (r.employment_fields) setAndDiff(diffs, d.dept_id, d, 'employment_fields', r.employment_fields, 'employment_fields');
+    if (r.employment_fields) {
+      const allowed = new Set((data.tags?.employment || []).map(t => t.id));
+      const bad = r.employment_fields.filter(x => !allowed.has(x));
+      if (allowed.size && bad.length) throw new Error(`${r.dept_id}: 不正な employment_fields ID: ${bad.join(',')}`);
+      setAndDiff(diffs, d.dept_id, d, 'employment_fields', r.employment_fields, 'employment_fields');
+    }
     if (r.zemi) {
       if (r.zemi.length > 3) throw new Error(`${r.dept_id}: zemi は最大3件（${r.zemi.length}件指定）`);
       const zemi = r.zemi.map(z => ({ name: z.name, theme: z.theme ?? null, source_url: z.source_url, verified_date: date }));

@@ -16,12 +16,13 @@
 3. **入試方式**: 総合型/公募推薦/一般/共通テスト利用の有無（学部単位で判明する範囲）
 4. **看板ゼミ・研究室**: 学部公式ページで紹介されている代表的なゼミ・研究室を1件（容易に見つかれば最大3件、看板を先頭に）。名称＋テーマ1行＋掲載ページURL
 5. **主な就職系統**: 学部の進路実績ページから業界タグを2〜4個（許可ID: koumuin, kyoiku, kinyu, maker, it, ryutsu, iryo_fukushi, kensetsu, media, service, shokuhin, sports_kenko）
+6. **キャンパス**: 学部の主たる所在キャンパス名（公式サイトで確認できた場合のみ）
 
 ## 厳守事項
 - **すべての値に source_url を付ける。出典が確認できない値は出力しない**（フィールドごと省略する）
 - 推測で埋めない。見つからなければキーごと省略、学部ごと信頼できる情報が皆無なら "unconfirmed": true（学部オブジェクト直下）
 - qualifications / employment_fields は確認できなかったら**キーごと省略**。空配列 [] は「0件が確定」の意味になるので送らない
-- entry_methods は available の真偽を確認できた方式だけ記載（available 必須。確認できない方式はエントリごと省略）
+- entry_methods の available は**真偽を出典付きで確認できた場合のみ**記載する。確認できないが補足を伝えたい場合は note のみ送ってよい（既存値が保持され、verified 扱いにはならない）。推測で available を埋めない
 - ゼミ調査に1学部あたり数分以上かけない（見つからなければ即スキップ）
 - 出力は下記スキーマのJSONのみ（1大学=1オブジェクト、複数校は配列で）
 
@@ -35,6 +36,7 @@
   "departments": [
     {
       "dept_id": "manifest記載のID",
+      "campus": "...",
       "hensachi": { "min": 50.0, "max": 55.0, "source_url": "..." },
       "bairitsu": { "ippan": { "2025": 3.4, "2026": 3.1 }, "source_url": "..." },
       "entry_methods": [ { "type": "kyotsu", "available": true, "note": "..." } ],
