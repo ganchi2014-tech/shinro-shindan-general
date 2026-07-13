@@ -1,0 +1,99 @@
+{
+ "uni_id": "hiroshima",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0720/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/0720/bairitsu/",
+  "https://search.keinet.ne.jp/1360/general/exam_result",
+  "https://www.hiroshima-u.ac.jp/nyushi",
+  "https://www.hiroshima-u.ac.jp/access",
+  "https://passnavi.obunsha.co.jp/univ/0720/shinro/"
+ ],
+ "departments": [
+  {
+   "dept_id": "hiroshima-kyoiku",
+   "campus": "東広島キャンパス",
+   "bairitsu": {
+    "ippan": { "2025": 2.2, "2026": 2.0 },
+    "note": "第四類（生涯活動教育系）健康スポーツ教育学プログラム・前期日程（Kei-Net/パスナビ）",
+    "source_url": "https://search.keinet.ne.jp/1360/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（光り輝き入試）。実施プログラムは年度の募集要項で要確認" },
+    { "type": "koubo", "note": "学校推薦型選抜は教育学部の一部プログラム（国語文化・家政等）で実施。健康スポーツ系での実施は未確認" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程・後期日程）" },
+    { "type": "kyotsu", "note": "国立のため共通テストは一般選抜に組込み（私大型の共テ利用単独方式はなし）。健康スポーツ教育学の共テボーダーは前期71%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "hiroshima-keizai",
+   "campus": "東広島キャンパス",
+   "hensachi": { "min": 45.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0720/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.1, "2026": 1.7 },
+    "note": "経済学部昼間コース・前期日程（Kei-Net）",
+    "source_url": "https://search.keinet.ne.jp/1360/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（光り輝き入試）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程・後期日程）" },
+    { "type": "kyotsu", "note": "国立のため共通テストは一般選抜に組込み。共テ得点率58%（夜間主）〜81%、昼間前期71%（河合塾）" }
+   ],
+   "employment_fields": ["kinyu", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "hiroshima-ho",
+   "campus": "東千田キャンパス",
+   "hensachi": { "min": 50.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0720/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.3, "2026": 1.8 },
+    "note": "法学部昼間コース・前期日程（Kei-Net）",
+    "source_url": "https://search.keinet.ne.jp/1360/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（光り輝き入試）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程・後期日程）" },
+    { "type": "kyotsu", "note": "国立のため共通テストは一般選抜に組込み。共テ得点率65%（夜間主）〜73%（昼間）（河合塾）" }
+   ],
+   "employment_fields": ["koumuin", "media"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "hiroshima-ko",
+   "campus": "東広島キャンパス",
+   "hensachi": { "min": 50.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0720/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.1, "2026": 1.8 },
+    "note": "工学部前期日程計（Kei-Net。2026年類別は第一類1.7・第二類2.1・第三類1.5・第四類1.9）",
+    "source_url": "https://search.keinet.ne.jp/1360/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（光り輝き入試）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程・後期日程）" },
+    { "type": "kyotsu", "note": "国立のため共通テストは一般選抜に組込み。共テ得点率66〜79%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "kensetsu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "hiroshima-d01",
+   "campus": "東広島キャンパス",
+   "hensachi": { "min": 52.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0720/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.1, "2026": 1.6 },
+    "note": "総合科学科（総合科学・文科系）前期日程（Kei-Net。2026年は理科系2.0・国際共創2.0）",
+    "source_url": "https://search.keinet.ne.jp/1360/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（光り輝き入試）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程・後期日程）" },
+    { "type": "kyotsu", "note": "国立のため共通テストは一般選抜に組込み。共テ得点率67〜77%（河合塾）" }
+   ],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "国立。教育・経済（昼間）・工・総合科学は東広島キャンパス、法学部（昼間）は東千田キャンパス（広島市。公式アクセスページで確認。経済夜間主も東千田）。教育学部第四類健康スポーツ教育学は河合塾偏差値の設定なし（実技配点のため。前期共テボーダー71%）のためhensachiを省略。就職傾向はパスナビ進路ページ：教育=学校教員（小85・中40・高44・特支12）、法=県市職員・検察庁・中国新聞社、経済=広島銀行・中国電力、工=マツダ・中国電力等。総合科学部は具体的就職先を確認できずemployment_fieldsを省略。"
+}

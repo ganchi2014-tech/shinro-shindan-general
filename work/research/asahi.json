@@ -1,0 +1,83 @@
+{
+ "uni_id": "asahi",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3530/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/3530/bairitsu/",
+  "https://search.keinet.ne.jp/2408/general/exam_result",
+  "https://nyuusi.asahi-u.ac.jp/examination/",
+  "https://passnavi.obunsha.co.jp/univ/3530/location/",
+  "https://passnavi.obunsha.co.jp/univ/3530/shinro/"
+ ],
+ "departments": [
+  {
+   "dept_id": "asahi-d01",
+   "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3530/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.0, "2026": 2.5 },
+    "note": "健康スポーツ科学科・一般入試（2026=Ⅰ期、Kei-Net。2025=パスナビ）",
+    "source_url": "https://search.keinet.ne.jp/2408/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（信長入試Ⅰ〜Ⅲ期・専願）" },
+    { "type": "koubo", "available": true, "note": "一般推薦入試（Ⅰ・Ⅱ期、併願可）ほかスポーツ推薦等" },
+    { "type": "ippan", "available": true, "note": "一般入試Ⅰ・Ⅱ期、総合学力型・英数型あり" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試Ⅰ〜Ⅲ期・共通テストプラス入試あり" }
+   ],
+   "employment_fields": ["iryo_fukushi", "koumuin", "sports_kenko"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "asahi-ho",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3530/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 1.3, "2026": 1.4 },
+    "note": "法学科・一般入試（2026=Ⅰ期、Kei-Net。2025=パスナビ）",
+    "source_url": "https://search.keinet.ne.jp/2408/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（信長入試Ⅰ〜Ⅲ期・専願）" },
+    { "type": "koubo", "available": true, "note": "一般推薦入試（Ⅰ・Ⅱ期、併願可）" },
+    { "type": "ippan", "available": true, "note": "一般入試Ⅰ・Ⅱ期" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試Ⅰ〜Ⅲ期" }
+   ],
+   "employment_fields": ["koumuin", "ryutsu", "service"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "asahi-keiei",
+   "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3530/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.6, "2026": 3.1 },
+    "note": "経営学科・一般入試（2026=Ⅰ期、Kei-Net。2025=パスナビ）",
+    "source_url": "https://search.keinet.ne.jp/2408/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（信長入試Ⅰ〜Ⅲ期・専願）" },
+    { "type": "koubo", "available": true, "note": "一般推薦入試（Ⅰ・Ⅱ期、併願可）・高大接続推薦（経営学部のみ）" },
+    { "type": "ippan", "available": true, "note": "一般入試Ⅰ・Ⅱ期" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試Ⅰ〜Ⅲ期" }
+   ],
+   "employment_fields": ["kinyu", "maker"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "asahi-d02",
+   "hensachi": { "min": 37.5, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3530/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.1, "2026": 15.0 },
+    "note": "救急救命学科・一般入試（2026=Ⅰ期、Kei-Net。2025=パスナビ）。2026年Ⅰ期は合格者数の絞り込みで倍率が突出",
+    "source_url": "https://search.keinet.ne.jp/2408/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（信長入試Ⅰ〜Ⅲ期・専願）" },
+    { "type": "koubo", "available": true, "note": "一般推薦入試（Ⅰ・Ⅱ期、併願可）" },
+    { "type": "ippan", "available": true, "note": "一般入試Ⅰ・Ⅱ期" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試Ⅰ〜Ⅲ期" }
+   ],
+   "employment_fields": ["iryo_fukushi", "koumuin"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "全学部が岐阜県瑞穂市穂積1851の単一キャンパス（固有のキャンパス名は公式未確認のためcampus欄は省略）。就職実績はパスナビ学部別進路ページで確認（法=岐阜県警察・自衛隊等、経営=監査法人・大垣共立銀行等、保健医療=病院・消防・警察等）。2025年3月卒の法・経営・健康スポーツ科学科は就職率100%（就職希望者200名）。"
+}

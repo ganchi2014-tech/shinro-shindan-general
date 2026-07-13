@@ -1,0 +1,276 @@
+{
+ "uni_id": "ritsumeikan",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4050/difficulty/",
+  "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf",
+  "https://admission.ritsumei.ac.jp/admission/general/result.html",
+  "https://admission.ritsumei.ac.jp/admission/ao/result.html",
+  "https://www.ritsumei.ac.jp/ba/education/course/course_4.html/",
+  "https://www.ritsumei.ac.jp/ss/education/seminar.html/"
+ ],
+ "departments": [
+  {
+   "dept_id": "ritsumeikan-keiei",
+   "campus": "大阪いばらきキャンパス（OIC）",
+   "hensachi": { "min": 57.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 4.1, "2026": 4.0 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式・学部個別配点方式・後期分割方式・「経営学部で学ぶ感性＋共通テスト」方式等", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "zemi": [
+    { "name": "石﨑祥之ゼミ", "theme": "「観光を素材に経営を考える」国際観光マーケティングの諸問題", "source_url": "https://www.ritsumei.ac.jp/ba/education/course/course_4.html/" },
+    { "name": "菊盛真衣ゼミ", "theme": "マーケティングと消費者行動における理論と実証", "source_url": "https://www.ritsumei.ac.jp/ba/education/course/course_4.html/" },
+    { "name": "中村真悟ゼミ", "theme": "SDGsの観点から現代の企業経営を考える", "source_url": "https://www.ritsumei.ac.jp/ba/education/course/course_4.html/" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-seisaku",
+   "campus": "大阪いばらきキャンパス（OIC）",
+   "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.9, "2026": 4.0 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式・学部個別配点方式・後期分割方式等", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-sogoshinri",
+   "campus": "大阪いばらきキャンパス（OIC）",
+   "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 4.2, "2026": 4.0 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式（文系）・理系型3教科方式・学部個別配点方式・後期分割方式等", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-sanshakai",
+   "campus": "衣笠キャンパス（京都市北区）",
+   "hensachi": { "min": 52.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 4.1, "2026": 4.4 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式・学部個別配点方式・後期分割方式等", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "zemi": [
+    { "name": "江口友朗ゼミ", "theme": "世界の諸現象への金銭的理解：制度・政策・雇用・貧困・文化等の違いがもたらすこと", "source_url": "https://www.ritsumei.ac.jp/ss/education/seminar.html/" },
+    { "name": "櫻井純理ゼミ", "theme": "働き方・キャリア形成の課題と社会政策", "source_url": "https://www.ritsumei.ac.jp/ss/education/seminar.html/" },
+    { "name": "中井美樹ゼミ", "theme": "ジェンダー・格差の視点から現代日本社会の課題を考える", "source_url": "https://www.ritsumei.ac.jp/ss/education/seminar.html/" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-kokusaikankei",
+   "campus": "衣笠キャンパス（京都市北区）",
+   "hensachi": { "min": 57.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.7, "2026": 3.9 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式・学部個別配点方式・IR方式（英語資格試験利用型）・後期分割方式等", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-bungaku",
+   "campus": "衣笠キャンパス（京都市北区）",
+   "hensachi": { "min": 52.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.9, "2026": 3.1 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式・学部個別配点方式・後期分割方式等（8学域で募集）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-ho",
+   "campus": "衣笠キャンパス（京都市北区）",
+   "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.6, "2026": 2.9 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式・学部個別配点方式・後期分割方式等", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-sportskenko",
+   "campus": "びわこ・くさつキャンパス（BKC、滋賀県草津市）",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.7, "2026": 4.0 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式（文系）・理系型3教科方式・学部個別配点方式・後期分割方式等", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施（スポーツ能力特別選抜等の特別選抜も別途あり）", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-keizai",
+   "campus": "びわこ・くさつキャンパス（BKC、滋賀県草津市）",
+   "hensachi": { "min": 55.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.7, "2026": 3.0 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式・学部個別配点方式・後期分割方式等（国際専攻・経済専攻）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-riko",
+   "campus": "びわこ・くさつキャンパス（BKC、滋賀県草津市）",
+   "hensachi": { "min": 50.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.2, "2026": 2.5 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式（理系）・学部個別配点方式（理科1/2科目型）・後期分割方式等。2026年度から機械工学科に2コース設置", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-johoriko",
+   "campus": "大阪いばらきキャンパス（OIC）",
+   "hensachi": { "min": 57.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 4.4, "2026": 3.0 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式（理系）・学部個別配点方式（理科1科目型・情報型理系）・後期分割方式等", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-seimei",
+   "campus": "びわこ・くさつキャンパス（BKC、滋賀県草津市）",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.5, "2026": 2.5 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式（理系）・学部個別配点方式（理科1/2科目型）・後期分割方式等（4学科）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-d01",
+   "campus": "びわこ・くさつキャンパス（BKC、滋賀県草津市）",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.3, "2026": 2.1 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "薬学方式・全学統一方式（理系）・学部個別配点方式・後期分割方式等（薬学科6年制／創薬科学科4年制）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・3教科型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-d02",
+   "campus": "大阪いばらきキャンパス（OIC）",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 4.4, "2026": 3.8 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式（文系）・学部個別配点方式（文系型・理科1科目型・情報型理系）・後期分割方式等", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-d03",
+   "campus": "びわこ・くさつキャンパス（BKC、滋賀県草津市）",
+   "hensachi": { "min": 55.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.3, "2026": 4.5 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式（文系）・理系型3教科方式・学部個別配点方式・後期分割方式等", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（7科目型・5教科型・3教科型・後期型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-d04",
+   "note": "グローバル教養学部は一般選抜（共通テスト方式含む）を実施していない（公式入試結果PDFの注記）。河合塾ボーダー偏差値もパスナビに掲載なし。",
+   "entry_methods": [
+    { "type": "ippan", "available": false, "note": "「グローバル教養学部では一般選抜入学試験を実施していません」（2026年度入試結果PDF注記）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": false, "note": "共通テスト方式は一般選抜の一部であり同学部では実施なし", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "AO選抜等の特別選抜が中心。詳細は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "ritsumeikan-d05",
+   "note": "デザイン・アート学部は2026年4月開設（公式入試結果PDF注記「2026年度から、デザイン・アート学部を開設しました」）。2026年度が初の一般選抜のため倍率は1年分のみ。",
+   "campus": "衣笠キャンパス（京都市北区）",
+   "hensachi": { "min": 55.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4050/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2026": 7.7 },
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf"
+   },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学統一方式（文系）・学部個別配点方式（情報型理系）・後期分割方式（2026年度新規実施）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト方式（3教科型）", "source_url": "https://admission.ritsumei.ac.jp/assets/file/archives/admission/general/result/result-2026.pdf" },
+    { "type": "sogo", "note": "大学としてAO選抜入学試験（総合型選抜）を実施。学部別の実施方式は入試情報サイト要確認", "source_url": "https://admission.ritsumei.ac.jp/admission/ao/result.html" }
+   ],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "偏差値は河合塾ボーダー（パスナビ2026年度入試ページ）。倍率は大学公式「2026年度一般選抜入学試験結果データ」PDF掲載の学部別競争率（受験者数÷合格者数）で、同PDFに2025・2024年度も併載。キャンパスも同PDFの学部別表による（衣笠=法・産業社会・国際関係・文・デザイン・アート／OIC=経営・政策科学・総合心理・映像・情報理工／BKC=経済・スポーツ健康科学・食マネジメント・理工・生命科学・薬）。グローバル教養学部は一般選抜なし（AO等中心）のため偏差値・倍率なし。デザイン・アート学部は2026年4月新設（manifestの「新設予定・要確認」は開設済みと確認）。総合型（AO選抜）は大学として実施を確認したが学部別の実施方式までは未確認のためnote扱い。公募推薦は実施の確認が取れず記載省略（立命館は指定校・附属校推薦が中心）。学部別の就職系統は出典（学部別業種データ）を確保できなかったため全学部で省略（全学ではメーカー・サービス・金融・IT等が上位、キャリアセンター https://www.ritsumei.ac.jp/career/ 参照）。"
+}

@@ -1,0 +1,103 @@
+{
+ "uni_id": "fukuoka",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/5020/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/5020/bairitsu/",
+  "https://search.keinet.ne.jp/2712/general/exam_result",
+  "https://nyushi.fukuoka-u.ac.jp/nyushi/",
+  "https://passnavi.obunsha.co.jp/univ/5020/location/",
+  "https://www.fukuoka-u.ac.jp/education/undergraduate/economics/economics/career.html",
+  "https://www.fukuoka-u.ac.jp/education/undergraduate/law/jurisprudence/career.html",
+  "https://www.fukuoka-u.ac.jp/education/undergraduate/commerce/commerce/career.html",
+  "https://www.fukuoka-u.ac.jp/education/undergraduate/sports_health/sports/career.html",
+  "https://www.fukuoka-u.ac.jp/fukudaism/education/25/02/20062.html"
+ ],
+ "departments": [
+  {
+   "dept_id": "fukuoka-sportskagaku",
+   "campus": "七隈キャンパス",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/5020/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.4, "2026": 5.2 },
+    "note": "スポーツ科学科代表値。2025=一般選抜合計（パスナビ）、2026=前期小論文型（Kei-Net。前期実技型5.7倍・健康運動科学科前期3.4倍）",
+    "source_url": "https://search.keinet.ne.jp/2712/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（スポーツ科学部で実施）・アスリート特別選抜あり" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜A方式推薦（全学部・学科で実施）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（系統別日程・前期日程・後期日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用型（Ⅰ〜Ⅲ期）・前期日程共通テスト併用型" }
+   ],
+   "employment_fields": ["kyoiku", "sports_kenko", "koumuin"],
+   "zemi": [
+    {
+     "name": "霜島広樹ゼミ（スポーツ科学部）",
+     "theme": "スポーツビジネス研究（球場のビール販売要因分析、プロ野球のビジネス構想など）",
+     "source_url": "https://www.fukuoka-u.ac.jp/fukudaism/education/25/02/20062.html"
+    },
+    {
+     "name": "檜垣靖樹研究室",
+     "theme": "運動が身体に及ぼす影響の疫学・基礎実験研究（運動生理学）",
+     "source_url": "https://sites.google.com/view/higaki-lab-fukuoka/%E3%83%9B%E3%83%BC%E3%83%A0home"
+    }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "fukuoka-keizai",
+   "campus": "七隈キャンパス",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/5020/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.1, "2026": 2.9 },
+    "note": "経済学科・前期日程（2025=パスナビ、2026=Kei-Net。2025系統別は3.4倍）",
+    "source_url": "https://search.keinet.ne.jp/2712/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（経済学部で実施）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜A方式推薦（全学部・学科で実施）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（系統別日程・前期日程・後期日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用型（Ⅰ〜Ⅲ期）・前期日程共通テスト併用型" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "service", "it"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "fukuoka-ho",
+   "campus": "七隈キャンパス",
+   "hensachi": { "min": 45.0, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/5020/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.4, "2026": 3.3 },
+    "note": "法律学科・前期日程（2025=パスナビ、2026=Kei-Net。2025系統別は2.9倍）",
+    "source_url": "https://search.keinet.ne.jp/2712/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（法学部で実施）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜A方式推薦（全学部・学科で実施）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（系統別日程・前期日程・後期日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用型（Ⅰ〜Ⅲ期）・前期日程共通テスト併用型" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "ryutsu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "fukuoka-sho",
+   "campus": "七隈キャンパス",
+   "hensachi": { "min": 42.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/5020/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 4.1, "2026": 5.2 },
+    "note": "商学科・前期日程（2025=パスナビ、2026=Kei-Net。2025系統別は3.5倍）。第二部を除く",
+    "source_url": "https://search.keinet.ne.jp/2712/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（商学部で実施）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜A方式推薦（全学部・学科で実施）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（系統別日程・前期日程・後期日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用型（Ⅰ〜Ⅲ期）・前期日程共通テスト併用型" }
+   ],
+   "employment_fields": ["ryutsu", "service", "kinyu", "it"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "全学部が七隈キャンパス（福岡市城南区七隈8-19-1）のワンキャンパス制。偏差値は第一部の値（商学部第二部37.5〜42.5は除外）。業種別就職割合は各学科公式careerページ（2025年度卒実績）に基づく：法律学科は公務24.5%・金融15.4%、経済学科は金融21.4%・卸小売16.4%、商学科は卸小売20.5%・サービス20.1%。スポーツ科学科は保健体育教員・指導者が主進路。公式入試状況PDF（jyokyo2026.pdf）はフォント埋め込みの関係でテキスト抽出不可のためKei-Net掲載値を採用。"
+}

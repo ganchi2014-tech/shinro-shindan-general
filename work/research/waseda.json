@@ -1,0 +1,78 @@
+{
+ "uni_id": "waseda",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3190/difficulty/",
+  "https://www.waseda.jp/inst/admission/undergraduate/result/",
+  "https://www.waseda.jp/inst/admission/assets/uploads/2025/05/d79fc6300a12cba773595e4f0eb20c30.pdf",
+  "https://www.waseda.jp/inst/admission/assets/uploads/2026/05/97a8b9659f04c1fba9e71f1ec77ca91d.pdf",
+  "https://www.waseda.jp/fsps/sps/applicants/admissions/",
+  "https://passnavi.obunsha.co.jp/univ/3190/location/",
+  "https://passnavi.obunsha.co.jp/univ/3190/shinro/"
+ ],
+ "departments": [
+  {
+   "dept_id": "waseda-sportskagaku",
+   "campus": "所沢キャンパス",
+   "hensachi": { "min": 57.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3190/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.6, "2026": 3.4 }, "source_url": "https://www.waseda.jp/inst/admission/undergraduate/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜Ⅰ〜Ⅲ群（Ⅲ群＝スポーツ自己推薦入試。全国大会出場レベルの競技歴が出願要件）" },
+    { "type": "ippan", "available": true, "note": "一般選抜は共通テスト＋学部独自の総合問題" },
+    { "type": "kyotsu", "available": true, "note": "共テのみ方式と共テ＋競技歴方式の2種" }
+   ],
+   "employment_fields": ["it", "kinyu", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "waseda-kyoiku",
+   "campus": "早稲田キャンパス",
+   "hensachi": { "min": 62.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3190/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.8, "2026": 5.9 }, "source_url": "https://www.waseda.jp/inst/admission/undergraduate/result/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "A方式（文系）・B方式（理系）・C方式（共テ＋個別）・D方式（理学科生物）" },
+    { "type": "kyotsu", "available": false, "note": "私大型の共テ単独利用入試はなし（C方式は共テ併用の一般選抜扱い）" }
+   ],
+   "employment_fields": ["it", "kinyu", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "waseda-sho",
+   "campus": "早稲田キャンパス",
+   "hensachi": { "min": 67.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3190/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 9.1, "2026": 9.7 }, "source_url": "https://www.waseda.jp/inst/admission/undergraduate/result/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "地歴・公民型と数学型の2方式（数学型の方が倍率低め: 2026年は7.3倍 vs 10.9倍）" },
+    { "type": "kyotsu", "available": false, "note": "共通テスト利用入試の実施なし（2025・2026年度入試結果PDFに掲載なし）" }
+   ],
+   "employment_fields": ["kinyu", "it", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "waseda-shakaikagaku",
+   "campus": "早稲田キャンパス",
+   "hensachi": { "min": 70.0, "max": 70.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3190/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.1, "2026": 4.8 }, "source_url": "https://www.waseda.jp/inst/admission/undergraduate/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "全国自己推薦入学試験（学校長推薦不要の自己推薦型）" },
+    { "type": "ippan", "available": true, "note": "総合問題型・数学型の2方式" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり（募集30名）" }
+   ],
+   "employment_fields": ["kinyu", "it", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "waseda-ningenkagaku",
+   "campus": "所沢キャンパス",
+   "hensachi": { "min": 62.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3190/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.2, "2026": 4.2 }, "source_url": "https://www.waseda.jp/inst/admission/undergraduate/result/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "国英型・数英型・数学選抜方式の3方式×3学科" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり（各学科5名の小規模）" }
+   ],
+   "employment_fields": ["it", "kinyu", "koumuin"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率は大学公式「一般選抜および大学入学共通テスト利用入学試験結果」PDF（2025年度・2026年度、掲載元: https://www.waseda.jp/inst/admission/undergraduate/result/）の実質倍率（受験者数÷合格者数〔補欠合格含む〕）。複数方式のある学部（社会科学部・人間科学部）は一般選抜各方式の合算値、教育学部・商学部は公表の学部計を使用。就職系統タグは学部別公表データが得られなかったため全学の就職者数上位（コンサル・IT・金融・都庁等公務員、出典パスナビ進路ページ）に基づく共通タグである点に注意。早稲田の偏差値は河合塾基準（パスナビ掲載、2.5刻み）。ゼミは学部規模が大きく特定の「看板ゼミ」の公式提示がないため省略。"
+}

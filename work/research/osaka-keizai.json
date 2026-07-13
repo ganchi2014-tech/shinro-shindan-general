@@ -1,0 +1,98 @@
+{
+  "uni_id": "osaka-keizai",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/4100/difficulty/",
+    "https://passnavi.obunsha.co.jp/univ/4100/difficulty/?facultyID=010",
+    "https://www.osaka-ue.ac.jp/entrance/admissions/exam/",
+    "https://www.osaka-ue.ac.jp/entrance/file/general/4204",
+    "https://www.osaka-ue.ac.jp/entrance/file/general/3891",
+    "https://www.osaka-ue.ac.jp/education/seminar/zemisyoukai/",
+    "https://www.osaka-ue.ac.jp/recruit/employment.html",
+    "https://www.osaka-ue.ac.jp/profile/access/"
+  ],
+  "departments": [
+    {
+      "dept_id": "osaka-keizai-keizai",
+      "campus": "大隅キャンパス",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4100/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.5, "2026": 5.3 }, "source_url": "https://www.osaka-ue.ac.jp/entrance/admissions/exam/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "商工系資格評価型選抜・学部AO入試（2026年度入試結果PDFで実施確認）", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "koubo", "available": true, "note": "公募推薦（総合評価型・基礎学力型）", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A方式(2教科)・B方式(3教科/ベスト2教科)・後期D方式", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期C方式 4/3/ベスト2教科型）", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" }
+      ],
+      "employment_fields": ["kinyu", "maker", "ryutsu", "koumuin"],
+      "zemi": [
+        { "name": "小川貴之ゼミ", "theme": "企業経営と株主の対話を学ぶ（株主総会見学など実地型の経済学習）", "source_url": "https://www.osaka-ue.ac.jp/education/seminar/zemisyoukai/economics/" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "osaka-keizai-keiei",
+      "campus": "大隅キャンパス",
+      "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4100/difficulty/?facultyID=010" },
+      "bairitsu": { "ippan": { "2025": 8.1, "2026": 5.2 }, "source_url": "https://www.osaka-ue.ac.jp/entrance/admissions/exam/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "商工系資格評価型選抜（経営学科は学部AO対象外）", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "koubo", "available": true, "note": "公募推薦（総合評価型・基礎学力型）", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A/B方式・後期D方式", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期C方式）", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" }
+      ],
+      "employment_fields": ["kinyu", "maker", "ryutsu", "it"],
+      "zemi": [
+        { "name": "古賀敬作ゼミ", "theme": "地域の人々と地元企業のアップサイクルを通した地域連携プロジェクト", "source_url": "https://www.osaka-ue.ac.jp/education/seminar/zemisyoukai/business/" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "osaka-keizai-keiei2",
+      "campus": "大隅キャンパス",
+      "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4100/difficulty/?facultyID=010" },
+      "bairitsu": { "ippan": { "2025": 5.1, "2026": 5.1 }, "source_url": "https://www.osaka-ue.ac.jp/entrance/admissions/exam/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "商工系資格評価型選抜・学部AO入試", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "koubo", "available": true, "note": "公募推薦（総合評価型・基礎学力型）", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A/B方式・後期D方式", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期C方式）", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" }
+      ],
+      "employment_fields": ["kinyu", "maker", "ryutsu", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "osaka-keizai-d01",
+      "campus": "大隅キャンパス",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4100/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.2, "2026": 4.8 }, "source_url": "https://www.osaka-ue.ac.jp/entrance/admissions/exam/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "商工系資格評価型選抜・学部AO入試", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "koubo", "available": true, "note": "公募推薦（総合評価型・基礎学力型）", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A/B方式・後期D方式", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期C方式）", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" }
+      ],
+      "employment_fields": ["it", "maker", "ryutsu"],
+      "zemi": [
+        { "name": "中村健二ゼミ", "theme": "社会人基礎力育成をテーマに学外コンテストで受賞多数（人生100年時代の社会人基礎力育成グランプリ準大賞など）", "source_url": "https://www.osaka-ue.ac.jp/education/seminar/zemisyoukai/information/" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "osaka-keizai-ningenkagaku",
+      "campus": "大隅キャンパス",
+      "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4100/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.9, "2026": 6.8 }, "source_url": "https://www.osaka-ue.ac.jp/entrance/admissions/exam/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "商工系資格評価型選抜・学部AO入試", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "koubo", "available": true, "note": "公募推薦（総合評価型・基礎学力型）", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A/B方式・後期D方式", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期C方式）", "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4204" }
+      ],
+      "zemi": [
+        { "name": "髙井逸史ゼミ", "theme": "スマホを活用した健康寿命の延伸（此花区でスマホサポーター養成講座を開催）", "source_url": "https://www.osaka-ue.ac.jp/education/seminar/zemisyoukai/human/" }
+      ],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は大学公式入試結果PDF（2026年度=file/general/4204、2025年度=file/general/3891）の一般選抜・前期A方式（2教科）の合格倍率（受験者数÷合格者数）。偏差値はパスナビ掲載の河合塾ボーダー（2027年度入試難易予想・2026年7月1日更新、第1回全統記述模試）。経営学部の偏差値min40.0は前期B方式、max42.5は前期A方式（第2部経営37.5は本データ対象外）。全学部とも大隅キャンパス（大阪市東淀川区、公式アクセスページで確認）。employment_fieldsは大学公式就職データページの業種別就職状況（製造・金融・流通商社・IT情報通信・公務員等）に基づく学部代表値。人間科学部は業種内訳が確認できなかったため省略。ビジネス法学科の個別ゼミは確認できず省略。"
+}

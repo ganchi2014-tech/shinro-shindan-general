@@ -1,0 +1,108 @@
+{
+ "uni_id": "tenri",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4600/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/4600/bairitsu/",
+  "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf",
+  "https://www.tenri-u.ac.jp/ent/data/",
+  "https://www.tenri-u.ac.jp/ent/system/",
+  "https://www.tenri-u.ac.jp/access/",
+  "https://www.tenri-u.ac.jp/career/record/",
+  "https://www.tenri-u.ac.jp/faculty/fhysical-faculty/"
+ ],
+ "departments": [
+  {
+   "dept_id": "tenri-taiiku",
+   "campus": "体育学部キャンパス（奈良県天理市田井庄町）",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4600/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.5, "2026": 2.4 },
+    "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf",
+    "source_url_2025": "https://passnavi.obunsha.co.jp/univ/4600/bairitsu/"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（自己アピール型ほか。体育学部のみトップアスリート選抜あり）", "source_url": "https://www.tenri-u.ac.jp/ent/system/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜〔公募推薦選抜〕A日程・B日程", "source_url": "https://www.tenri-u.ac.jp/ent/system/" },
+    { "type": "ippan", "available": true, "note": "一般選抜前期（2教科型・3教科型・特技能力型）・後期", "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期・中期・後期）", "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "sports_kenko", "service"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "tenri-taiiku2",
+   "note": "「健康科学」という独立学科・専攻は公式サイトで確認できず。体育学部体育学科の3年次コース選択のひとつ「健康スポーツコース」に相当（出典: https://www.tenri-u.ac.jp/faculty/fhysical-faculty/ ）。偏差値・倍率は体育学科全体の値。",
+   "campus": "体育学部キャンパス（奈良県天理市田井庄町）",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4600/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.5, "2026": 2.4 },
+    "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf",
+    "source_url_2025": "https://passnavi.obunsha.co.jp/univ/4600/bairitsu/"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（体育学部として実施）", "source_url": "https://www.tenri-u.ac.jp/ent/system/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜〔公募推薦選抜〕A日程・B日程", "source_url": "https://www.tenri-u.ac.jp/ent/system/" },
+    { "type": "ippan", "available": true, "note": "一般選抜前期・後期（体育学科として募集）", "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期・中期・後期）", "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "sports_kenko", "service"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "tenri-jinbun",
+   "campus": "杣之内キャンパス（奈良県天理市杣之内町）",
+   "hensachi": { "min": 35.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4600/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 1.5, "2026": 1.5 },
+    "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf",
+    "source_url_2025": "https://passnavi.obunsha.co.jp/univ/4600/bairitsu/"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（自己アピール型・英語外部試験利用等）", "source_url": "https://www.tenri-u.ac.jp/ent/system/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜〔公募推薦選抜〕A日程・B日程", "source_url": "https://www.tenri-u.ac.jp/ent/system/" },
+    { "type": "ippan", "available": true, "note": "一般選抜前期（2教科型・3教科型）・後期", "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期・中期・後期）", "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf" }
+   ],
+   "employment_fields": ["koumuin", "iryo_fukushi", "kinyu", "ryutsu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "tenri-kokusai",
+   "campus": "杣之内キャンパス（奈良県天理市杣之内町）",
+   "hensachi": { "min": 35.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4600/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 1.2, "2026": 1.3 },
+    "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf",
+    "source_url_2025": "https://passnavi.obunsha.co.jp/univ/4600/bairitsu/"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（自己アピール型・英語外部試験利用等）", "source_url": "https://www.tenri-u.ac.jp/ent/system/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜〔公募推薦選抜〕A日程・B日程", "source_url": "https://www.tenri-u.ac.jp/ent/system/" },
+    { "type": "ippan", "available": true, "note": "一般選抜前期（2教科型・3教科型）・後期", "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期・中期・後期）", "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf" }
+   ],
+   "employment_fields": ["maker", "it", "ryutsu", "service"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "tenri-d01",
+   "campus": "別所キャンパス（奈良県天理市別所町）",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4600/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 1.7, "2026": 1.6 },
+    "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf",
+    "source_url_2025": "https://passnavi.obunsha.co.jp/univ/4600/bairitsu/"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜", "source_url": "https://www.tenri-u.ac.jp/ent/system/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜〔公募推薦選抜〕A日程・B日程", "source_url": "https://www.tenri-u.ac.jp/ent/system/" },
+    { "type": "ippan", "available": true, "note": "一般選抜前期（2教科型・3教科型）・後期（看護・臨床検査）", "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期・中期・後期）", "source_url": "https://www.tenri-u.ac.jp/wp/wp-content/uploads/guide2027_admission-01.pdf" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "偏差値は河合塾ボーダー（パスナビ掲載、2026年度）。倍率の2026年度値は大学公式「2026年度入試データ」PDFの一般選抜前期・後期の学科別データを学部集計した受験者数÷合格者数（人文65/43=1.5、国際41/31=1.3、体育36/15=2.4、医療74/46=1.6）。2025年度値はパスナビ入試結果ページの学部合計倍率（志願者÷合格者: 人文170/111、国際84/68、体育70/20、医療106/62）で算出基準が異なる点に注意。manifestの「体育学部 健康科学」は独立学科ではなく体育学科内の健康スポーツコースに相当。就職系統は大学公式の学部別「最近の主な就職先」（ https://www.tenri-u.ac.jp/career/record/ 配下）による。看板ゼミは学部公式ページで個別名称・テーマ付きの紹介が短時間で確認できず省略（体育学部は3年次から各教員ゼミ＝体育学演習に所属する制度）。"
+}

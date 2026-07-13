@@ -1,0 +1,107 @@
+{
+  "uni_id": "momoyama",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/4350/difficulty/",
+    "https://www.andrew.ac.jp/nyushi/info/result.html",
+    "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf",
+    "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf",
+    "https://www.andrew.ac.jp/next/index.html",
+    "https://www.andrew.ac.jp/work/workdata.html",
+    "https://www.andrew.ac.jp/faculty/social/employment/",
+    "https://www.andrew.ac.jp/faculty/international/employment/"
+  ],
+  "departments": [
+    {
+      "dept_id": "momoyama-d01",
+      "campus": "和泉キャンパス",
+      "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4350/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.2, "2026": 4.3 }, "source_url": "https://www.andrew.ac.jp/nyushi/info/result.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（専願制・併願制12月/1月・小論文型）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf" },
+        { "type": "ippan", "available": true, "note": "一般入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" }
+      ],
+      "employment_fields": ["kyoiku", "iryo_fukushi"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "momoyama-keiei",
+      "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4350/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.9, "2026": 6.0 }, "source_url": "https://www.andrew.ac.jp/nyushi/info/result.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（専願制・併願制）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf" },
+        { "type": "ippan", "available": true, "note": "一般入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" }
+      ],
+      "employment_fields": ["kinyu", "maker", "ryutsu", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "momoyama-keizai",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4350/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.7, "2026": 5.8 }, "source_url": "https://www.andrew.ac.jp/nyushi/info/result.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（専願制・併願制）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf" },
+        { "type": "ippan", "available": true, "note": "一般入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" }
+      ],
+      "employment_fields": ["kinyu", "maker", "ryutsu", "service"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "momoyama-shakai",
+      "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4350/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.8, "2026": 8.2 }, "source_url": "https://www.andrew.ac.jp/nyushi/info/result.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（専願制・併願制）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf" },
+        { "type": "ippan", "available": true, "note": "一般入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" }
+      ],
+      "employment_fields": ["kensetsu", "maker", "ryutsu", "kinyu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "momoyama-ho",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4350/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.2, "2026": 4.7 }, "source_url": "https://www.andrew.ac.jp/nyushi/info/result.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（専願制・併願制）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf" },
+        { "type": "ippan", "available": true, "note": "一般入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" }
+      ],
+      "employment_fields": ["koumuin", "kinyu", "service"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "momoyama-kokusaikyoyo",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4350/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.4, "2026": 3.0 }, "source_url": "https://www.andrew.ac.jp/nyushi/info/result.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（専願制・併願制）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/2025.pdf" },
+        { "type": "ippan", "available": true, "note": "一般入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試（前期・後期）", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" }
+      ],
+      "employment_fields": ["kinyu", "ryutsu", "service"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "momoyama-ko",
+      "campus": "和泉キャンパス",
+      "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4350/difficulty/" },
+      "bairitsu": { "ippan": { "2026": 1.3 }, "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "一般入試（前期）2026年度から実施", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試（前期）2026年度から実施", "source_url": "https://www.andrew.ac.jp/nyushi/info/nd5qkv000000037v-att/a1771463292480.pdf" }
+      ],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は一般入試（前期）の受験者数÷合格者数を学部単位で算出（社会学部=社会+ソーシャルデザイン合算、人間教育学部=幼児教育+小学校教育+健康・スポーツ教育合算）。2026年度は公式PDF（a1771463292480.pdf）、2025年度は公式入試結果PDF（2025.pdf）に基づく。工学部は2026年4月新設（工学科1学科3専攻：機械システム工学/電気電子システム工学/都市デザイン工学、和泉キャンパス、公式NEXTページで確認）のため2025年度倍率・就職実績なし。総合型/公募推薦の工学部実施状況は出典未確認のため省略。人間教育学部は2025年4月の桃山学院教育大学との統合で設置（和泉キャンパス）。他学部のキャンパスは個別ページで確認できなかったため省略（大学は和泉市の単一キャンパス）。employment_fieldsは公式進路・就職データページ（workdata.html）の業種別実績および学部別就職・資格ページに基づく。ゼミ紹介ページはリダイレクト形式で内容確認できず全学部省略。偏差値はパスナビ掲載の河合塾ボーダー（2027年度入試難易予想・2026年7月1日更新）。"
+}

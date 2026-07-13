@@ -1,0 +1,94 @@
+{
+ "uni_id": "nittaidai",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3010/difficulty/",
+  "https://www.nittai.ac.jp/exam/com/data.html",
+  "https://www.nittai.ac.jp/albums/abm.php?d=305&f=abm00010813.pdf",
+  "https://www.nittai.ac.jp/albums/abm.php?d=305&f=abm00008520.pdf",
+  "https://www.nittai.ac.jp/albums/abm.php?d=305&f=abm00010811.pdf",
+  "https://www.nittai.ac.jp/albums/abm.php?d=305&f=abm00008524.pdf",
+  "https://www.nittai.ac.jp/albums/abm.php?d=305&f=abm00010810.pdf",
+  "https://www.nittai.ac.jp/albums/abm.php?d=305&f=abm00008523.pdf",
+  "https://www.nittai.ac.jp/albums/abm.php?d=305&f=abm00010808.pdf",
+  "https://www.nittai.ac.jp/albums/abm.php?d=305&f=abm00008521.pdf",
+  "https://www.nittai.ac.jp/career/employment/",
+  "https://passnavi.obunsha.co.jp/univ/3010/location/"
+ ],
+ "departments": [
+  {
+   "dept_id": "nittaidai-taiiku",
+   "campus": "東京・世田谷キャンパス／横浜・健志台キャンパス（体育学部は両キャンパス）",
+   "hensachi": { "min": 50.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3010/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 6.3, "2026": 6.1 }, "source_url": "https://www.nittai.ac.jp/exam/com/data.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "実技方式・トップアスリート方式・学部別選考方式Ⅰ/Ⅱ期（令和8年度入学者選抜結果PDFより）" },
+    { "type": "koubo", "available": false, "note": "学校推薦型は指定校推薦・スポーツ推薦のみで公募制一般推薦の実施なし（令和7・8年度選抜結果PDFより）" },
+    { "type": "ippan", "available": true, "note": "A日程・B日程" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用方式" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "sports_kenko"],
+   "zemi": [
+    { "name": "運動生理学研究室", "theme": "運動時の骨格筋・神経系の適応、健康維持・疾病予防に関わるトレーニング研究", "source_url": "https://www.nittai.ac.jp/department/exphys/" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "nittaidai-taiiku2",
+   "campus": "東京・世田谷キャンパス／横浜・健志台キャンパス（体育学部は両キャンパス）",
+   "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3010/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.3, "2026": 13.6 }, "source_url": "https://www.nittai.ac.jp/exam/com/data.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "実技方式・トップアスリート方式・学部別選考方式Ⅰ/Ⅱ期" },
+    { "type": "koubo", "available": false, "note": "学校推薦型は指定校推薦・スポーツ推薦のみ（令和7・8年度選抜結果PDFより）" },
+    { "type": "ippan", "available": true, "note": "A日程・B日程" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用方式" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "sports_kenko"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "nittaidai-d01",
+   "campus": "東京・世田谷キャンパス",
+   "hensachi": { "min": 35.0, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3010/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 11.4, "2026": 6.2 }, "source_url": "https://www.nittai.ac.jp/exam/com/data.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "トップアスリート方式・学部別選考方式ほか" },
+    { "type": "koubo", "available": true, "note": "スポーツ国際学科で学校推薦型選抜一般推薦を実施（武道教育学科は指定校・スポーツ推薦のみ）" },
+    { "type": "ippan", "available": true, "note": "A日程・B日程（募集枠小・年度により倍率変動大）" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用方式" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "nittaidai-d02",
+   "campus": "横浜・健志台キャンパス",
+   "hensachi": { "min": 42.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3010/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 19.9, "2026": 9.1 }, "source_url": "https://www.nittai.ac.jp/exam/com/data.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "トップアスリート方式・学部別選考方式Ⅰ/Ⅱ期" },
+    { "type": "koubo", "available": true, "note": "スポーツマネジメント推薦（公募型）・一般推薦の実績あり（令和7年度選抜結果PDFより）" },
+    { "type": "ippan", "available": true, "note": "A日程・B日程（一般枠が小さく倍率が高く出やすい）" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用方式" }
+   ],
+   "employment_fields": ["sports_kenko", "maker", "ryutsu", "service"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "nittaidai-d03",
+   "campus": "東京・世田谷キャンパス",
+   "hensachi": { "min": 37.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3010/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 11.9, "2026": 2.8 }, "source_url": "https://www.nittai.ac.jp/exam/com/data.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "小論文方式・学部別選考方式ほか" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜一般推薦を実施（令和7・8年度選抜結果PDFより）" },
+    { "type": "ippan", "available": true, "note": "A日程・B日程（募集枠小）" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用方式" }
+   ],
+   "employment_fields": ["kyoiku", "iryo_fukushi"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率は大学公式の学部別入学者選抜結果PDF（データ掲載元: https://www.nittai.ac.jp/exam/com/data.html）から一般選抜（共通テスト利用＋A日程＋B日程）の受験者数÷最終合格者数を学科（学部）単位で合算して算出。日体大は総合型・推薦の入学者比率が非常に高く、一般選抜は募集枠が小さいため年度間の倍率変動が大きい点に注意。偏差値は河合塾基準（パスナビ2026年度掲載値）。"
+}

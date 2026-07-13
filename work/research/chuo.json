@@ -1,0 +1,80 @@
+{
+ "uni_id": "chuo",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/2680/difficulty/",
+  "https://www.chuo-u.ac.jp/connect/admission/data/",
+  "https://www.chuo-u.ac.jp/common_d/connect/admission/2027/overview/ippan_data2026.pdf",
+  "https://www.chuo-u.ac.jp/common_d/connect/admission/2027/overview/ippan_data2025.pdf",
+  "https://www.chuo-u.ac.jp/common_d/connect/enrollment/2026/guidelines/tokubetsu.pdf",
+  "https://passnavi.obunsha.co.jp/univ/2680/location/",
+  "https://passnavi.obunsha.co.jp/univ/2680/shinro/"
+ ],
+ "departments": [
+  {
+   "dept_id": "chuo-ho",
+   "campus": "茗荷谷キャンパス（東京都文京区）",
+   "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2680/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.6, "2026": 3.9 }, "source_url": "https://www.chuo-u.ac.jp/connect/admission/data/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "チャレンジ入学試験・英語運用能力特別入学試験（特別入試）" },
+    { "type": "ippan", "available": true, "note": "学部別選抜（一般方式4教科型/3教科型）・5学部共通選抜・共テ併用方式" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（単独方式）前期5教科型/3教科型・後期" }
+   ],
+   "employment_fields": ["koumuin", "kinyu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "chuo-keizai",
+   "campus": "多摩キャンパス（東京都八王子市）",
+   "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2680/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 8.8, "2026": 5.4 }, "source_url": "https://www.chuo-u.ac.jp/connect/admission/data/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "高大接続入学試験（自己推薦型／資格・実績評価型）・英語運用能力特別入学試験" },
+    { "type": "ippan", "available": true, "note": "学部別選抜（一般方式Ⅰ/Ⅱ）・英語外部試験利用方式・5学部共通選抜・共テ併用方式" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（単独方式）前期4教科型/3教科型・後期" }
+   ],
+   "employment_fields": ["koumuin", "kinyu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "chuo-sho",
+   "campus": "多摩キャンパス（東京都八王子市）",
+   "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2680/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 6.3, "2026": 3.8 }, "source_url": "https://www.chuo-u.ac.jp/connect/admission/data/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "英語運用能力特別入学試験等の特別入試を実施" },
+    { "type": "ippan", "available": true, "note": "学部別選抜（一般方式A/B、フレックス・コース制）・英語外部試験利用方式・5学部共通選抜・共テ併用方式" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（単独方式）前期4教科型/3教科型・後期" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "chuo-bungaku",
+   "campus": "多摩キャンパス（東京都八王子市）",
+   "hensachi": { "min": 52.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2680/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.1, "2026": 3.0 }, "source_url": "https://www.chuo-u.ac.jp/connect/admission/data/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "自己推薦入学試験（外国語型／専攻適性型）" },
+    { "type": "ippan", "available": true, "note": "学部別選抜（一般方式、14専攻・プログラム別）・英語外部試験利用方式・5学部共通選抜" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（単独方式）前期4教科型（専攻フリー）/3教科型・後期" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "ryutsu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "chuo-sogoseisaku",
+   "campus": "多摩キャンパス（東京都八王子市）",
+   "hensachi": { "min": 55.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2680/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 8.8, "2026": 7.6 }, "source_url": "https://www.chuo-u.ac.jp/connect/admission/data/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "学部別選抜（一般方式）・英語外部試験利用方式・5学部共通選抜・共テ併用方式" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（単独方式）前期・後期" }
+   ],
+   "employment_fields": ["koumuin", "it", "media"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率は大学公式「入試データ」（https://www.chuo-u.ac.jp/connect/admission/data/ 掲載のippan_data2025.pdf / ippan_data2026.pdf）の学部別選抜（一般方式）合計の公表倍率（受験者数÷合格者数）。中央大は方式が多く（5学部共通選抜・英語外部利用・共テ併用・共テ単独）、方式により倍率が大きく異なる。経済学部は2025年8.8倍→2026年5.4倍と変動大。法学部は2023年に多摩から茗荷谷キャンパスへ移転済み。就職は全学的に公務員（都庁・国税庁等）と金融に強い（出典パスナビ進路ページ、2024-2025卒実績）。総合政策学部の総合型選抜の実施有無は特別入試要項から学部個別に確認できなかったため記載省略。"
+}

@@ -1,0 +1,70 @@
+{
+ "uni_id": "gifu-shotoku",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3560/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/3560/bairitsu/",
+  "https://search.keinet.ne.jp/2410/general/exam_result",
+  "https://adm.shotoku.ac.jp/admission_method/",
+  "https://www.shotoku.ac.jp/access/",
+  "https://www.shotoku.ac.jp/carrier/",
+  "https://www.shotoku.ac.jp/academics/economics/career.html"
+ ],
+ "departments": [
+  {
+   "dept_id": "gifu-shotoku-kyoiku",
+   "campus": "羽島キャンパス",
+   "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3560/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.4, "2026": 5.4 },
+    "note": "教育学部体育専修・前期標準科目方式（2025=パスナビ、2026=Kei-Net）。2026年前期基礎方式は9.7倍",
+    "source_url": "https://search.keinet.ne.jp/2410/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（Yawaragi方式専願・自己推薦方式ほか）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜 公募制推薦方式（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般選抜 前期基礎科目方式・前期標準科目方式・後期日程" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期・後期）・標準科目方式共テ併用あり" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "gifu-shotoku-kyoiku2",
+   "campus": "羽島キャンパス",
+   "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3560/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.1, "2026": 5.1 },
+    "note": "保育初等教育専修・前期標準科目方式（2025=パスナビ、2026=Kei-Net）",
+    "source_url": "https://search.keinet.ne.jp/2410/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（Yawaragi方式専願・自己推薦方式ほか）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜 公募制推薦方式（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般選抜 前期基礎科目方式・前期標準科目方式・後期日程" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期・後期）" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "gifu-shotoku-d01",
+   "campus": "岐阜キャンパス",
+   "hensachi": { "min": 35.0, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3560/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.0, "2026": 3.5 },
+    "note": "2025=一般選抜合計（パスナビ）、2026=前期標準科目方式（Kei-Net。前期基礎1.4倍・後期1.1倍）",
+    "source_url": "https://search.keinet.ne.jp/2410/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（Yawaragi方式専願・自己推薦方式ほか）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜 公募制推薦方式（前期・後期）・専門学科総合学科推薦あり" },
+    { "type": "ippan", "available": true, "note": "一般選抜 前期基礎科目方式・前期標準科目方式・後期日程" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期・後期）" }
+   ],
+   "employment_fields": ["koumuin", "kinyu"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "教育学部=羽島キャンパス、経済情報学部=岐阜キャンパス（公式アクセスページで確認）。教育学部は2025年3月卒の教員就職280名（就職者の85.3%）と教員養成が看板。体育専修の一般入試は2026年度に大幅倍率上昇（前期基礎9.7倍・後期19.0倍）。dept_id「kyoiku2」は初等教育課程のうち保育初等教育専修の値を採用。"
+}

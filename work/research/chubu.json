@@ -1,0 +1,115 @@
+{
+ "uni_id": "chubu",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3710/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/3710/bairitsu/",
+  "https://search.keinet.ne.jp/2448/general/exam_result",
+  "https://search.keinet.ne.jp/2448/general/border_rate",
+  "https://www.chubu.ac.jp/admissions/entrance-exams/",
+  "https://www.chubu.ac.jp/admissions/entrance-exams/guidelines/center/",
+  "https://www.chubu.ac.jp/career/results/",
+  "https://www.chubu.ac.jp/about/",
+  "https://mprg.jp/about"
+ ],
+ "departments": [
+  {
+   "dept_id": "chubu-d01",
+   "campus": "春日井キャンパス",
+   "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3710/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 4.0, "2026": 2.2 },
+    "note": "2025=前期A方式（パスナビ）、2026=一般方式（前期A・B）計（Kei-Net）",
+    "source_url": "https://search.keinet.ne.jp/2448/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "夢探究入試（総合型選抜）①〜⑥" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試（専願・併願）" },
+    { "type": "ippan", "available": true, "note": "前期A・B方式／後期入試" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期、2・3・5教科型）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "chubu-d02",
+   "campus": "春日井キャンパス",
+   "hensachi": { "min": 37.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3710/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 4.1, "2026": 3.1 },
+    "note": "2025=前期A方式（パスナビ）、2026=一般方式計（Kei-Net）",
+    "source_url": "https://search.keinet.ne.jp/2448/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "夢探究入試（総合型選抜）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試（専願・併願）・情報・商業資格推薦あり" },
+    { "type": "ippan", "available": true, "note": "前期A・B方式／後期入試" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "kensetsu", "maker"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "chubu-d03",
+   "campus": "春日井キャンパス",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3710/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 4.8, "2026": 2.3 },
+    "note": "2025=前期A方式（パスナビ）、2026=一般方式計（Kei-Net）",
+    "source_url": "https://search.keinet.ne.jp/2448/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "夢探究入試（総合型選抜）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試（専願・併願）" },
+    { "type": "ippan", "available": true, "note": "前期A・B方式／後期入試" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）" }
+   ],
+   "employment_fields": ["kensetsu", "maker"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "chubu-d04",
+   "campus": "春日井キャンパス",
+   "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2448/general/border_rate" },
+   "bairitsu": {
+    "ippan": { "2025": 3.6, "2026": 2.7 },
+    "note": "現代教育学科現代教育専攻。2025=前期A方式（パスナビ）、2026=一般方式計（Kei-Net）",
+    "source_url": "https://search.keinet.ne.jp/2448/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "夢探究入試（総合型選抜）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試（専願・併願）" },
+    { "type": "ippan", "available": true, "note": "前期A・B方式／後期入試" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）" }
+   ],
+   "employment_fields": ["kyoiku"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "chubu-d05",
+   "campus": "春日井キャンパス",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3710/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 5.2, "2026": 4.8 },
+    "note": "2025=前期A方式（パスナビ）、2026=一般方式計（Kei-Net）",
+    "source_url": "https://search.keinet.ne.jp/2448/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "夢探究入試（総合型選抜）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試（専願・併願）・情報系資格推薦あり" },
+    { "type": "ippan", "available": true, "note": "前期A・B方式／後期入試" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）" }
+   ],
+   "employment_fields": ["it", "maker"],
+   "zemi": [
+    {
+     "name": "山下隆義研究室（機械知覚&ロボティクスグループ MPRG）",
+     "theme": "深層学習による画像認識・コンピュータビジョン（物体検出・人物画像解析）",
+     "source_url": "https://mprg.jp/about"
+    }
+   ],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "全学部が春日井キャンパスのワンキャンパス制（8学部）。倍率2026年度はKei-Net大学検索システム掲載の一般方式（前期A・B）計、2025年度はパスナビ掲載の前期A方式で算出基準が異なる点に注意。現代教育学科の偏差値はパスナビ未掲載のためKei-Net本体のボーダー値（現代教育専攻40.0・中等教育国語数学専攻42.5、2027年度入試予想）を採用。公式入試結果PDF（admissions-entrance-exams-result-2026.pdf）は埋め込みフォントの関係でテキスト抽出不可だった。"
+}

@@ -1,0 +1,112 @@
+{
+ "uni_id": "meijo",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3850/difficulty/",
+  "https://search.keinet.ne.jp/2462/general/exam_result",
+  "https://www.meijo-u.ac.jp/admissions/examination/system/",
+  "https://passnavi.obunsha.co.jp/univ/3850/location/",
+  "https://www.meijo-u.ac.jp/career/results/academics/",
+  "https://www.meijo-u.ac.jp/academics/business/business/seminar.html"
+ ],
+ "departments": [
+  {
+   "dept_id": "meijo-ho",
+   "campus": "天白キャンパス",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3850/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.0, "2026": 3.4 },
+    "note": "一般選抜A方式（Kei-Net、受験者/合格者）",
+    "source_url": "https://search.keinet.ne.jp/2462/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "note": "総合型選抜は学部・年度により実施区分が異なる（Meijo Navi入試制度ページ参照）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制推薦。薬学部を除き評定要件なし）" },
+    { "type": "ippan", "available": true, "note": "一般選抜A方式（3教科型）・K方式（傾斜配点型）" },
+    { "type": "kyotsu", "available": true, "note": "C方式（共通テスト利用・前期/後期）・F方式（共通テストプラス型）" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "maker"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "meijo-keizai",
+   "campus": "天白キャンパス",
+   "hensachi": { "min": 50.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3850/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 5.5, "2026": 2.5 },
+    "note": "経済学科・一般選抜A方式（Kei-Net）",
+    "source_url": "https://search.keinet.ne.jp/2462/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "note": "総合型選抜は学部・年度により実施区分が異なる（Meijo Navi入試制度ページ参照）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制推薦）" },
+    { "type": "ippan", "available": true, "note": "一般選抜A方式" },
+    { "type": "kyotsu", "available": true, "note": "C方式（共通テスト利用）・F方式（共通テストプラス型）" }
+   ],
+   "employment_fields": ["kinyu", "maker", "ryutsu", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "meijo-keiei",
+   "campus": "天白キャンパス",
+   "hensachi": { "min": 50.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3850/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.5, "2026": 4.5 },
+    "note": "経営学科・一般選抜A方式（Kei-Net）",
+    "source_url": "https://search.keinet.ne.jp/2462/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "note": "総合型選抜は学部・年度により実施区分が異なる（Meijo Navi入試制度ページ参照）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制推薦）" },
+    { "type": "ippan", "available": true, "note": "一般選抜A方式" },
+    { "type": "kyotsu", "available": true, "note": "C方式（共通テスト利用）・F方式（共通テストプラス型）" }
+   ],
+   "employment_fields": ["maker", "kinyu", "ryutsu"],
+   "zemi": [
+    {
+     "name": "経営学科 専門ゼミナール（学びのトライアングル）",
+     "theme": "講義・専門ゼミ・企業現場調査を組み合わせ、マーケティング・会計・ファイナンスの実証研究を行う",
+     "source_url": "https://www.meijo-u.ac.jp/academics/business/business/seminar.html"
+    }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "meijo-d01",
+   "campus": "天白キャンパス",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3850/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.6, "2026": 4.0 },
+    "note": "情報工学科・一般選抜A方式（Kei-Net）",
+    "source_url": "https://search.keinet.ne.jp/2462/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "note": "総合型選抜は学部・年度により実施区分が異なる（Meijo Navi入試制度ページ参照）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制推薦）" },
+    { "type": "ippan", "available": true, "note": "一般選抜A方式・K方式" },
+    { "type": "kyotsu", "available": true, "note": "C方式（共通テスト利用）・F方式（共通テストプラス型）" }
+   ],
+   "employment_fields": ["it", "maker"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "meijo-ningen",
+   "campus": "ナゴヤドーム前キャンパス",
+   "hensachi": { "min": 50.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3850/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 2.9, "2026": 2.9 },
+    "note": "人間学科・一般選抜A方式（Kei-Net）",
+    "source_url": "https://search.keinet.ne.jp/2462/general/exam_result"
+   },
+   "entry_methods": [
+    { "type": "sogo", "note": "総合型選抜は学部・年度により実施区分が異なる（Meijo Navi入試制度ページ参照）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制推薦）" },
+    { "type": "ippan", "available": true, "note": "一般選抜A方式" },
+    { "type": "kyotsu", "available": true, "note": "C方式（共通テスト利用）・F方式（共通テストプラス型）" }
+   ],
+   "employment_fields": ["service", "ryutsu", "kinyu", "koumuin"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "法・経営・経済・情報工は天白キャンパス、人間学部はナゴヤドーム前キャンパス（パスナビ所在地ページで確認）。情報工学部は2022年4月開設で就職実績は2026年3月卒が初（就職率100%・IT/情報通信中心、公式キャリアページで確認）。倍率はKei-Net大学検索システム掲載のA方式（2025・2026年度）。公式サイト（meijo-u.ac.jp）の一部ページはWebFetchで403となるため、入試結果PDFの直接照合は未実施。"
+}

@@ -1,0 +1,71 @@
+{
+ "uni_id": "biwako-seikei",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3888/difficulty/",
+  "https://bss-nyushi.jp/exam/sports/outline.php",
+  "https://biwako-seikei.jp/career/results/",
+  "https://biwako-seikei.jp/department/",
+  "https://biwako-seikei.jp/access/",
+  "https://passnavi.obunsha.co.jp/univ/3888/bairitsu/?facultyID=005"
+ ],
+ "departments": [
+  {
+   "dept_id": "biwako-seikei-d01",
+   "campus": "滋賀県大津市北比良（単一キャンパス）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3888/difficulty/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（A〜E日程・ファミリー入試）", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募A・B日程）。ほかにスポーツ推薦・指定校推薦あり", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" },
+    { "type": "ippan", "available": true, "note": "一般選抜入試（A・B日程／C・D日程）", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜入試（A〜D日程）", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "sports_kenko"],
+   "employment_source_url": "https://biwako-seikei.jp/career/results/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "biwako-seikei-d02",
+   "campus": "滋賀県大津市北比良（単一キャンパス）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3888/difficulty/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（A〜E日程・ファミリー入試）※学部一括募集", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募A・B日程）。ほかにスポーツ推薦・指定校推薦あり", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" },
+    { "type": "ippan", "available": true, "note": "一般選抜入試（A・B日程／C・D日程）", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜入試（A〜D日程）", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "sports_kenko"],
+   "employment_source_url": "https://biwako-seikei.jp/career/results/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "biwako-seikei-d03",
+   "campus": "滋賀県大津市北比良（単一キャンパス）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3888/difficulty/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（A〜E日程・ファミリー入試）※学部一括募集", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募A・B日程）。ほかにスポーツ推薦・指定校推薦あり", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" },
+    { "type": "ippan", "available": true, "note": "一般選抜入試（A・B日程／C・D日程）", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜入試（A〜D日程）", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "sports_kenko"],
+   "employment_source_url": "https://biwako-seikei.jp/career/results/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "biwako-seikei-d04",
+   "campus": "滋賀県大津市北比良（単一キャンパス）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3888/difficulty/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（A〜E日程・ファミリー入試）※学部一括募集", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募A・B日程）。ほかにスポーツ推薦・指定校推薦あり", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" },
+    { "type": "ippan", "available": true, "note": "一般選抜入試（A・B日程／C・D日程）", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜入試（A〜D日程）", "source_url": "https://bss-nyushi.jp/exam/sports/outline.php" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "sports_kenko"],
+   "employment_source_url": "https://biwako-seikei.jp/career/results/",
+   "unconfirmed": false
+  }
+ ],
+ "notes": "スポーツ学部スポーツ学科の1学部1学科構成で、d02〜d04のコース名はmanifestの旧称。現行公式サイトでは8コース制（学校スポーツ／アスリートコーチング／アウトドア・スポーツ／スポーツ政策・文化／スポーツビジネス・メディア／スポーツパフォーマンス分析／トレーニング科学／健康・スポーツ医科学、出典: https://biwako-seikei.jp/department/）。manifestの「コーチングコース」はアスリートコーチングコース、「スポーツビジネスコース」はスポーツビジネス・メディアコース、「健康スポーツコース」は健康・スポーツ医科学コースに概ね対応。入試はコース別でなく学部一括のため偏差値・入試方式は全行同一。一般入試倍率は大学公式サイトに2025・2026年度の入試結果（志願者・合格者数）の公表ページが確認できず省略（パスナビ掲載の直近公表は2023年度で一般選抜計1.1倍）。偏差値は河合塾ボーダー35.0（A日程）・共通テスト得点率47%（パスナビ）。就職実績は就職率6年連続100%、教員・公務員（警察・消防等）・スポーツ関連企業への就職が特色（出典: https://biwako-seikei.jp/career/results/）。"
+}

@@ -1,0 +1,108 @@
+{
+  "uni_id": "chukyo",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/3690/difficulty/",
+    "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf",
+    "https://nc.chukyo-u.ac.jp/nyushi/result/",
+    "https://www.chukyo-u.ac.jp/information/access/",
+    "https://www.chukyo-u.ac.jp/parents/support/recruit/page5.php",
+    "https://sps.chukyo-u.ac.jp/staff/000070.html",
+    "https://sps.chukyo-u.ac.jp/staff/000100.html",
+    "https://sps.chukyo-u.ac.jp/staff/000099.html"
+  ],
+  "departments": [
+    {
+      "dept_id": "chukyo-sportskagaku",
+      "campus": "豊田キャンパス",
+      "hensachi": { "min": 50.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3690/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 6.2, "2026": 4.0 }, "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "年内入試（総合型選抜）実施", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "koubo", "available": true, "note": "年内入試（学校推薦型選抜）実施", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A方式・M方式（マークシート）・後期F方式、共通テストプラス方式", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用方式（前期・後期、競技実績2科目型あり）", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" }
+      ],
+      "employment_fields": ["kyoiku", "koumuin", "sports_kenko", "maker"],
+      "zemi": [
+        { "name": "來田享子ゼミ", "theme": "体育・スポーツ史とジェンダー（オリンピック・ムーブメント約130年の歴史研究）", "source_url": "https://sps.chukyo-u.ac.jp/staff/000070.html" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "chukyo-sportskagaku2",
+      "campus": "豊田キャンパス",
+      "hensachi": { "min": 50.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3690/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.5, "2026": 5.9 }, "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "年内入試（総合型選抜）実施", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "koubo", "available": true, "note": "年内入試（学校推薦型選抜）実施", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A方式・M方式・後期F方式、共通テストプラス方式", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用方式（前期・後期、競技実績2科目型あり）", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" }
+      ],
+      "employment_fields": ["kyoiku", "koumuin", "sports_kenko", "maker"],
+      "zemi": [
+        { "name": "荒牧勇研究室", "theme": "スポーツ脳科学（競技パフォーマンスを支える脳の構造・機能の解明）", "source_url": "https://sps.chukyo-u.ac.jp/staff/000100.html" },
+        { "name": "渡邊航平研究室（神経筋バイオメカニクス研究室）", "theme": "加齢・発育・トレーニングによる身体変化を運動神経の視点から評価", "source_url": "https://sps.chukyo-u.ac.jp/staff/000099.html" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "chukyo-sportskagaku3",
+      "campus": "豊田キャンパス",
+      "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3690/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.4, "2026": 7.4 }, "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "年内入試（総合型選抜）実施", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "koubo", "available": true, "note": "年内入試（学校推薦型選抜）実施", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A方式・M方式・後期F方式、共通テストプラス方式", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用方式（前期・後期、競技実績2科目型あり）", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" }
+      ],
+      "employment_fields": ["sports_kenko", "kyoiku", "koumuin"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "chukyo-gendaishakai",
+      "campus": "豊田キャンパス",
+      "hensachi": { "min": 45.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3690/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.7, "2026": 5.9 }, "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "年内入試（総合型選抜）実施", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "koubo", "available": true, "note": "年内入試（学校推薦型選抜）実施", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A方式・M方式・後期F方式、共通テストプラス方式", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用方式（前期・後期）", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" }
+      ],
+      "employment_fields": ["maker", "service", "ryutsu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "chukyo-ko",
+      "campus": "名古屋キャンパス／豊田キャンパス（学科により異なる）",
+      "hensachi": { "min": 47.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3690/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.7, "2026": 6.5 }, "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "年内入試（総合型選抜）実施", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "koubo", "available": true, "note": "年内入試（学校推薦型選抜）実施", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A方式・M方式・後期F方式（理系2教科型）、共通テストプラス方式（数学重視型）", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用方式（2教科3科目型〜4教科以上6科目型）", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" }
+      ],
+      "employment_fields": ["maker", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "chukyo-d01",
+      "campus": "名古屋キャンパス",
+      "hensachi": { "min": 47.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3690/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.5, "2026": 6.4 }, "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "年内入試（総合型選抜）実施", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "koubo", "available": true, "note": "年内入試（学校推薦型選抜）実施", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A方式・M方式・後期F方式、共通テストプラス方式", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用方式（前期・後期）", "source_url": "https://nc.chukyo-u.ac.jp/assets/pdf/nyushi/result/result.pdf" }
+      ],
+      "employment_fields": ["kinyu", "koumuin", "maker", "ryutsu"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は大学公式「入試結果一覧（2026年度・2025年度）」PDF（中京入試ガイド2027収録）の一般選抜前期A方式の志願者数÷合格者数。chukyo-d01（法・経済・経営・文）は4学部合算値（2026: 志願4,740/合格737=6.4、2025: 3,810/691=5.5）。偏差値はパスナビ掲載の河合塾ボーダー（2027年度入試難易予想・2026年7月1日更新）。d01の偏差値は法47.5〜文57.5の4学部レンジ。現代社会学部の偏差値は社会学50.0-52.5/コミュニティ47.5/社会福祉45.0/国際文化47.5の学科レンジ。スポーツ科学部は5学科体制のうち担当3学科（スポーツ教育・競技スポーツ科学・トレーナー）を記載。工学部は機械システム・電気電子が名古屋、情報・メディアが豊田キャンパス（公式アクセスページ）。employment_fieldsは公式「学科別就職先一覧」（教育委員会・警察消防・トヨタ系メーカー・銀行・NTTデータ東海等）に基づく。"
+}

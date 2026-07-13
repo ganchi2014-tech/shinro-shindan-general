@@ -1,0 +1,172 @@
+{
+ "uni_id": "kyoto-sangyo",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3920/difficulty/",
+  "https://www.kyoto-su.ac.jp/admissions/exam/entrance/statistics/index.html",
+  "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf",
+  "https://www.kyoto-su.ac.jp/mt_uploads/2025_zenki_sta3.pdf",
+  "https://www.kyoto-su.ac.jp/admissions/exam/",
+  "https://www.kyoto-su.ac.jp/onecampus/",
+  "https://www.kyoto-su.ac.jp/career-sp/toukei/",
+  "https://www.kyoto-su.ac.jp/faculty/bu/pickup_seminar.html"
+ ],
+ "departments": [
+  {
+   "dept_id": "kyoto-sangyo-ho",
+   "campus": "神山キャンパス（全学部ワンキャンパス）",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3920/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.2, "2026": 3.1 }, "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（全学部で実施）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募推薦・総合評価型/基礎評価型、併願可）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）", "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "ryutsu", "maker"],
+   "employment_source_url": "https://www.kyoto-su.ac.jp/faculty/ju/shinro/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kyoto-sangyo-keizai",
+   "campus": "神山キャンパス（全学部ワンキャンパス）",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3920/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.7, "2026": 2.9 }, "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（全学部で実施）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募推薦・総合評価型/基礎評価型、併願可）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）", "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" }
+   ],
+   "employment_fields": ["maker", "kinyu", "ryutsu"],
+   "employment_source_url": "https://www.kyoto-su.ac.jp/faculty/ec/shinro/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kyoto-sangyo-keiei",
+   "campus": "神山キャンパス（全学部ワンキャンパス）",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3920/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.8, "2026": 3.6 }, "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（全学部で実施）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募推薦・総合評価型/基礎評価型、併願可）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）", "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" }
+   ],
+   "employment_fields": ["maker", "kinyu", "it"],
+   "employment_source_url": "https://www.kyoto-su.ac.jp/faculty/bu/shinro/",
+   "zemi": [
+    { "name": "赤岡広周ゼミ", "theme": "経営管理を生かしたチームマネジメント・プロジェクトマネジメント", "source_url": "https://www.kyoto-su.ac.jp/faculty/bu/pickup_seminar.html" },
+    { "name": "石光裕ゼミ", "theme": "企業戦略と財務情報", "source_url": "https://www.kyoto-su.ac.jp/faculty/bu/pickup_seminar.html" },
+    { "name": "上元亘ゼミ", "theme": "ガストロノミーとツーリズムのマーケティング", "source_url": "https://www.kyoto-su.ac.jp/faculty/bu/pickup_seminar.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kyoto-sangyo-gendaishakai",
+   "campus": "神山キャンパス（全学部ワンキャンパス）",
+   "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3920/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.1, "2026": 4.6 }, "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（全学部で実施）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募推薦・総合評価型/基礎評価型、併願可）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）", "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" }
+   ],
+   "employment_fields": ["maker", "kinyu", "service"],
+   "employment_source_url": "https://www.kyoto-su.ac.jp/faculty/fs/shinro/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kyoto-sangyo-kokusaikankei",
+   "campus": "神山キャンパス（全学部ワンキャンパス）",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3920/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.5, "2026": 2.3 }, "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（全学部で実施）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募推薦・総合評価型/基礎評価型、併願可）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）。英語外部試験利用あり", "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" }
+   ],
+   "employment_fields": ["maker", "ryutsu", "kinyu"],
+   "employment_source_url": "https://www.kyoto-su.ac.jp/faculty/ir/career-path/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kyoto-sangyo-gaikokugo",
+   "campus": "神山キャンパス（全学部ワンキャンパス）",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3920/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.3, "2026": 3.9 }, "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（全学部で実施）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募推薦・総合評価型/基礎評価型、併願可）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）。英語外部試験利用あり", "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" }
+   ],
+   "employment_fields": ["maker", "ryutsu", "kinyu"],
+   "employment_source_url": "https://www.kyoto-su.ac.jp/faculty/ffl/shinro/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kyoto-sangyo-d01",
+   "campus": "神山キャンパス（全学部ワンキャンパス）",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3920/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.9, "2026": 4.7 }, "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（全学部で実施）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募推薦・総合評価型/基礎評価型、併願可）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）。英語外部試験利用あり", "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" }
+   ],
+   "employment_fields": ["maker", "ryutsu", "kinyu"],
+   "employment_source_url": "https://www.kyoto-su.ac.jp/faculty/fcsi/shinro.html",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kyoto-sangyo-ri",
+   "campus": "神山キャンパス（全学部ワンキャンパス）",
+   "hensachi": { "min": 47.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3920/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.0, "2026": 3.8 }, "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（全学部で実施）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募推薦・総合評価型/基礎評価型、併願可）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）", "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" }
+   ],
+   "employment_fields": ["maker", "it", "kinyu"],
+   "employment_source_url": "https://www.kyoto-su.ac.jp/faculty/sc/shinro/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kyoto-sangyo-johoriko",
+   "campus": "神山キャンパス（全学部ワンキャンパス）",
+   "hensachi": { "min": 45.0, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3920/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.3, "2026": 5.0 }, "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（全学部で実施）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募推薦・総合評価型/基礎評価型、併願可）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）", "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" }
+   ],
+   "employment_fields": ["it", "maker"],
+   "employment_source_url": "https://www.kyoto-su.ac.jp/faculty/ise/shinro/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kyoto-sangyo-seimei",
+   "campus": "神山キャンパス（全学部ワンキャンパス）",
+   "hensachi": { "min": 45.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3920/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.4, "2026": 4.5 }, "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（全学部で実施）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募推薦・総合評価型/基礎評価型、併願可）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）", "source_url": "https://www.kyoto-su.ac.jp/mt_uploads/2026_ippan_01sta3_statistics.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/" }
+   ],
+   "employment_fields": ["shokuhin", "maker", "kinyu"],
+   "employment_source_url": "https://www.kyoto-su.ac.jp/faculty/ls/career-path/",
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率は大学公式「入学試験に関する統計 一般選抜入試[前期日程] スタンダード3科目型」の学部計（2025年度PDF: 2025_zenki_sta3.pdf、2026年度PDF: 2026_ippan_01sta3_statistics.pdf）。中期・後期や他方式は別PDF。文化学部は2026年度に文化構想学科・文化観光学科を含む3学科構成となり2025年度（京都文化・国際文化の2学科）と学科構成が異なるため倍率の年度間比較に注意（1.9→4.7）。偏差値はパスナビ掲載の河合塾ボーダー。全学部が京都市北区の神山キャンパス（ワンキャンパス、出典: https://www.kyoto-su.ac.jp/onecampus/）。2026年度からアントレプレナーシップ学環も設置（本データの学部一覧外）。就職系統は各学部の進路・就職ページ掲載の業種別就職状況・主な就職先に基づく。"
+}

@@ -1,0 +1,93 @@
+{
+ "uni_id": "kokushikan",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/2420/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/2420/difficulty/?facultyID=010",
+  "https://www.kokushikan.ac.jp/admission/undergraduate/data/",
+  "https://www.kokushikan.ac.jp/docs/eaff3492db2da05c69a8919dece2aaeeacfd9c0d.pdf",
+  "https://www.kokushikan.ac.jp/docs/b7248d91709a1cd6d82eaeda470830341609b026.pdf",
+  "https://www.kokushikan.ac.jp/information/campus/",
+  "https://www.kokushikan.ac.jp/campus_life/career/results/",
+  "https://www.kokushikan.ac.jp/admission/undergraduate/"
+ ],
+ "departments": [
+  {
+   "dept_id": "kokushikan-taiiku",
+   "campus": "多摩キャンパス",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2420/difficulty/?facultyID=010" },
+   "bairitsu": { "ippan": { "2025": 2.1, "2026": 2.3 }, "source_url": "https://www.kokushikan.ac.jp/admission/undergraduate/data/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "AO選抜・スポーツ／武道（各種目）選抜あり" },
+    { "type": "koubo", "available": true, "note": "一般公募制推薦選抜あり" },
+    { "type": "ippan", "available": true, "note": "前期（A・B日程）・デリバリー・中期・後期" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜Ⅰ期・Ⅱ期（大学独自試験なし）" }
+   ],
+   "employment_fields": ["koumuin", "kyoiku", "sports_kenko"],
+   "zemi": [
+    { "name": "秋葉茂季ゼミ（スポーツ心理学）", "theme": "野球の走塁戦略・打者のタイミング・試合中の認知方略などスポーツ心理学研究", "source_url": "https://www.kokushikan.ac.jp/faculty/PE/news/details_19816.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kokushikan-taiiku2",
+   "campus": "多摩キャンパス",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2420/difficulty/?facultyID=010" },
+   "bairitsu": { "ippan": { "2025": 1.0, "2026": 1.8 }, "source_url": "https://www.kokushikan.ac.jp/admission/undergraduate/data/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "AO選抜・スポーツ／武道選抜あり（武道系種目が中心）" },
+    { "type": "koubo", "available": true, "note": "一般公募制推薦選抜あり" },
+    { "type": "ippan", "available": true, "note": "前期・デリバリー・中期・後期（一般枠は小規模）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["koumuin", "kyoiku", "sports_kenko"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kokushikan-taiiku3",
+   "campus": "多摩キャンパス",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2420/difficulty/?facultyID=010" },
+   "bairitsu": { "ippan": { "2025": 5.5, "2026": 3.2 }, "source_url": "https://www.kokushikan.ac.jp/admission/undergraduate/data/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "AO選抜あり" },
+    { "type": "koubo", "available": true, "note": "一般公募制推薦選抜あり" },
+    { "type": "ippan", "available": true, "note": "前期（A・B日程）ほか" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["koumuin", "iryo_fukushi"],
+   "zemi": [
+    { "name": "スポーツ医科学科（救急救命士養成）", "theme": "救急救命士国家試験合格者数で全国4年制大学1位を継続、消防官就職に強み", "source_url": "https://www.kokushikan.ac.jp/faculty/pe/department/medical_science/" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kokushikan-keiei",
+   "campus": "世田谷キャンパス",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2420/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0, "2026": 3.8 }, "source_url": "https://www.kokushikan.ac.jp/admission/undergraduate/data/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "AO選抜あり" },
+    { "type": "koubo", "available": true, "note": "一般公募制推薦選抜あり" },
+    { "type": "ippan", "available": true, "note": "前期（A・B日程）・デリバリー・中期・後期" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜Ⅰ期・Ⅱ期" }
+   ],
+   "employment_fields": ["ryutsu", "kinyu", "service"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kokushikan-ho",
+   "campus": "世田谷キャンパス",
+   "hensachi": { "min": 40.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2420/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.6, "2026": 2.0 }, "source_url": "https://www.kokushikan.ac.jp/admission/undergraduate/data/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "AO選抜あり" },
+    { "type": "koubo", "available": true, "note": "一般公募制推薦選抜あり" },
+    { "type": "ippan", "available": true, "note": "前期（A・B日程）・デリバリー・中期・後期" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜Ⅰ期・Ⅱ期" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "kensetsu"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率は大学公式「入学者選抜結果（前期選抜）」PDF（令和7年度・令和8年度、掲載元: https://www.kokushikan.ac.jp/admission/undergraduate/data/）のA・B日程合算（受験者数÷合格者数）。学部は学科計/学部計の公表倍率を使用。国士舘は消防官就職者数全国1位（14年連続）・救急救命士合格者数全国1位（スポーツ医科学科）が特色で、警察・消防など公安系公務員に極めて強い。体育学部のこどもスポーツ教育学科のみ町田キャンパス（担当3学科は多摩）。"
+}

@@ -1,0 +1,77 @@
+{
+ "uni_id": "keio",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/2370/difficulty/",
+  "https://www.keio.ac.jp/files/32d7248026715b4d0ee6aa84b49c136bd32cd6fe3e25c6cc126df449e852b3a1",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/private/2210.html",
+  "https://passnavi.obunsha.co.jp/univ/2370/location/",
+  "https://passnavi.obunsha.co.jp/univ/2370/shinro/",
+  "https://www.keio.ac.jp/ja/admissions/faculty/examinations/"
+ ],
+ "departments": [
+  {
+   "dept_id": "keio-sho",
+   "campus": "三田キャンパス（1・2年次は日吉キャンパス）",
+   "hensachi": { "min": 65.0, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2370/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.6, "2026": 4.1 }, "source_url": "https://www.keio.ac.jp/files/32d7248026715b4d0ee6aa84b49c136bd32cd6fe3e25c6cc126df449e852b3a1" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "A方式（地歴＋数学）とB方式（地歴＋論文テスト）。B方式の倍率が大幅に高い（2026年: A約3.0倍 vs B約9.0倍）" },
+    { "type": "kyotsu", "available": false, "note": "慶應は全学部で大学入学共通テスト利用入試を実施していない" }
+   ],
+   "employment_fields": ["service", "kinyu", "it"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "keio-keizai",
+   "campus": "三田キャンパス（1・2年次は日吉キャンパス）",
+   "hensachi": { "min": 67.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2370/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.2, "2026": 4.3 }, "source_url": "https://www.keio.ac.jp/files/32d7248026715b4d0ee6aa84b49c136bd32cd6fe3e25c6cc126df449e852b3a1" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "A方式（数学型）とB方式（歴史型）。A方式の方が募集人員が多い（400 vs 200）" },
+    { "type": "kyotsu", "available": false, "note": "共通テスト利用入試なし" }
+   ],
+   "employment_fields": ["service", "kinyu", "it"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "keio-ho",
+   "campus": "三田キャンパス（1・2年次は日吉キャンパス）",
+   "hensachi": { "min": 65.0, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2370/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.6, "2026": 4.0 }, "source_url": "https://www.keio.ac.jp/files/32d7248026715b4d0ee6aa84b49c136bd32cd6fe3e25c6cc126df449e852b3a1" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "FIT入試（総合型選抜、A方式・B方式）を実施" },
+    { "type": "ippan", "available": true, "note": "法律学科・政治学科別募集（各230名）" },
+    { "type": "kyotsu", "available": false, "note": "共通テスト利用入試なし" }
+   ],
+   "employment_fields": ["service", "kinyu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "keio-bungaku",
+   "campus": "三田キャンパス（1年次は日吉キャンパス）",
+   "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2370/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.3, "2026": 3.3 }, "source_url": "https://www.keio.ac.jp/files/32d7248026715b4d0ee6aa84b49c136bd32cd6fe3e25c6cc126df449e852b3a1" },
+   "entry_methods": [
+    { "type": "koubo", "available": true, "note": "自主応募制による推薦入学者選考（学校長推薦不要の公募型推薦）を実施" },
+    { "type": "ippan", "available": true, "note": "小論文を課す独自入試（募集580名）" },
+    { "type": "kyotsu", "available": false, "note": "共通テスト利用入試なし" }
+   ],
+   "employment_fields": ["kinyu", "it", "service"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "keio-sogoseisaku",
+   "campus": "湘南藤沢キャンパス（SFC）",
+   "hensachi": { "min": 70.0, "max": 70.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2370/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 6.1, "2026": 7.5 }, "source_url": "https://www.keio.ac.jp/files/32d7248026715b4d0ee6aa84b49c136bd32cd6fe3e25c6cc126df449e852b3a1" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "AO入試（総合型選抜）を実施。SFCはAO入試の先駆け" },
+    { "type": "ippan", "available": true, "note": "「情報」「数学または情報」等選択＋小論文の独自方式（募集225名）" },
+    { "type": "kyotsu", "available": false, "note": "共通テスト利用入試なし" }
+   ],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率は一般選抜の実質倍率相当（受験者数÷合格者数〔補欠許可者含む〕）。2026年度は大学公式「2026年度一般選抜統計総括」PDF（keio.ac.jp/files/…）から算出（文=4,764/1,425、経済A+B=6,141/1,425、法=2,838/718、商A+B=7,998/1,959、総政=3,019/404）。2025年度は河合塾Kei-Net掲載の入試結果（https://www.keinet.ne.jp/exam/past/result/ippan/private/2210.html）。慶應は共通テスト利用入試を全学部で実施していない。就職はコンサル・金融が突出（出典パスナビ進路ページ）。総合政策学部の学部別就職先データは確認できなかったため employment_fields を省略。看板ゼミは公式の全学横断的な提示がなく省略。"
+}

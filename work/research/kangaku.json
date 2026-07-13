@@ -1,0 +1,218 @@
+{
+ "uni_id": "kangaku",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4390/difficulty/",
+  "https://www.kwansei.ac.jp/admissions/exam-data/2026.html",
+  "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf",
+  "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties_2025.pdf",
+  "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf",
+  "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+  "https://www.kwansei.ac.jp/access/",
+  "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html",
+  "https://www.kwansei.ac.jp/s_ba/about/seminar.html"
+ ],
+ "departments": [
+  {
+   "dept_id": "kangaku-sho",
+   "campus": "西宮上ケ原キャンパス",
+   "hensachi": { "min": 55.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.5, "2026": 4.5 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型入学試験等）を全学的に実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["kinyu", "maker", "service", "it"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "zemi": [
+    { "name": "研究演習（経営コースのゼミ）", "theme": "人的資産管理・経営組織における人材育成", "source_url": "https://www.kwansei.ac.jp/s_ba/about/seminar.html" },
+    { "name": "研究演習（マーケティングコースのゼミ）", "theme": "マーケティングリサーチに基づく新製品開発と戦略策定", "source_url": "https://www.kwansei.ac.jp/s_ba/about/seminar.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-shakai",
+   "campus": "西宮上ケ原キャンパス",
+   "hensachi": { "min": 52.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.3, "2026": 4.2 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型入学試験等）を全学的に実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["maker", "service", "it", "kinyu"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-ho",
+   "campus": "西宮上ケ原キャンパス",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.2, "2026": 3.3 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型入学試験等）を全学的に実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["kinyu", "maker", "koumuin"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-keizai",
+   "campus": "西宮上ケ原キャンパス",
+   "hensachi": { "min": 55.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.3, "2026": 3.9 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型入学試験等）を全学的に実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["kinyu", "maker", "it"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-bungaku",
+   "campus": "西宮上ケ原キャンパス",
+   "hensachi": { "min": 52.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.6, "2026": 4.7 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型・学部特色入学試験等）を実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["service", "maker", "kinyu", "it"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-d01",
+   "campus": "西宮上ケ原キャンパス",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.6, "2026": 4.3 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型・学部特色入学試験等）を実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["service", "maker", "kinyu"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-kokusai",
+   "campus": "西宮上ケ原キャンパス",
+   "hensachi": { "min": 60.0, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 7.1, "2026": 7.3 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型・グローバル入学試験等）を実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["maker", "service", "ryutsu"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-kyoiku",
+   "campus": "西宮聖和キャンパス",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9, "2026": 4.5 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型入学試験等）を全学的に実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["kyoiku", "service"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-d02",
+   "campus": "西宮上ケ原キャンパス",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.4, "2026": 4.8 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型入学試験等）を全学的に実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["service", "maker", "kinyu"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-sogoseisaku",
+   "campus": "神戸三田キャンパス",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0, "2026": 3.7 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型入学試験等）を全学的に実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["service", "it", "maker"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-ri",
+   "campus": "神戸三田キャンパス",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.4, "2026": 3.2 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型入学試験等）を全学的に実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["it", "service", "maker"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-ko",
+   "campus": "神戸三田キャンパス",
+   "hensachi": { "min": 50.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.6, "2026": 3.3 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型入学試験等）を全学的に実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["maker", "it", "service"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-seimeikankyou",
+   "campus": "神戸三田キャンパス",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.5, "2026": 2.8 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型入学試験等）を全学的に実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["maker", "it", "service"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kangaku-kenchiku",
+   "campus": "神戸三田キャンパス",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4390/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.8, "2026": 3.4 }, "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程・学部個別日程等（2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/university_entrance_exam_results_all_faculties2026.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（1月出願・2026年度実施）", "source_url": "https://www.kwansei.ac.jp/admissions/assets/common_university_entrance_exam_result2026.pdf" },
+    { "type": "sogo", "note": "総合型選抜（探究評価型入学試験等）を全学的に実施。対象学部・方式は年度により異なる", "source_url": "https://www.kwansei.ac.jp/admissions/guideline/exploratory.html" }
+   ],
+   "employment_fields": ["kensetsu", "service"],
+   "employment_source_url": "https://www.kwansei.ac.jp/assets/gakububetsugyousyubetsusyusyokujyoukyo_2024.pdf",
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率は大学公式PDF「一般入学試験（全学部日程）」の実質競争率。学部値は学科・方式別の受験者数と合格者数を合算して算出（小数第1位、2025年度PDF: university_entrance_exam_results_all_faculties_2025.pdf、2026年度PDF: ...all_faculties2026.pdf）。学部個別日程・英数日程・共テ併用等は別PDFで別途公表。偏差値はパスナビ掲載の河合塾ボーダー（2026年度入試）。キャンパス配置の出典は https://www.kwansei.ac.jp/access/（神・文・社会・法・経済・商・人間福祉・国際=西宮上ケ原、教育=西宮聖和、総合政策・理・工・生命環境・建築=神戸三田）。公募推薦は実施の有無を公式サイトで確認できなかったため記載省略。就職系統は2024年度学部別業種別就職状況PDFの上位業種から付与。"
+}

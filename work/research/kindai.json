@@ -1,0 +1,229 @@
+{
+ "uni_id": "kindai",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4270/difficulty/",
+  "https://kindai.jp/exam/results/",
+  "https://kindai.jp/assets/pdf/exam/results/r8/260220/r8_ippan_zenkia_260220.pdf",
+  "https://kindai.jp/assets/pdf/exam/results/r7/250220/r7_ippan_zenkia_250220.pdf",
+  "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf",
+  "https://kindai.jp/exam/system/",
+  "https://kindai.jp/faculty/",
+  "https://www.kindai.ac.jp/career/data/faculty/"
+ ],
+ "departments": [
+  {
+   "dept_id": "kindai-keiei",
+   "campus": "東大阪キャンパス",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 50.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 6.5, "2026": 8.3 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期A/B日程・後期", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式（前期・中期・後期）＋共通テスト併用方式", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": true, "note": "総合型選抜A（グローバル型）/B（プロフェッショナル型）/D（自己推薦型）等", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "employment_fields": ["ryutsu", "service", "kinyu"],
+   "employment_source_url": "https://www.kindai.ac.jp/business/career/future/after-graduation/",
+   "zemi": [
+    { "name": "廣田章光ゼミ（マーケティングデザイン）", "theme": "マーケティング・サービスデザイン（モットーは「マーケティングで世界をハッピーに」）", "source_url": "https://act.kindai.ac.jp/story/7dacecac4bdccd4fcaab41df926cc28154223bd8.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kindai-keizai",
+   "campus": "東大阪キャンパス",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 50.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 6.3, "2026": 6.7 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期A/B日程・後期", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": true, "note": "総合型選抜A（グローバルキャリア志向型）/B（ビジネス・データサイエンス志向型）/C（起業志向型）", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "employment_fields": ["kinyu", "it", "maker", "ryutsu"],
+   "employment_source_url": "https://www.kindai.ac.jp/economics/career/future/after-graduation/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kindai-ho",
+   "campus": "東大阪キャンパス",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.2, "2026": 5.8 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期A/B日程・後期", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": false, "note": "2026年度（令和8年度）総合型選抜の実施学部に含まれない", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "ryutsu", "maker"],
+   "employment_source_url": "https://www.kindai.ac.jp/law/career/future/after-graduation/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kindai-bungei",
+   "campus": "東大阪キャンパス",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 45.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.7, "2026": 5.2 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期A/B日程・後期", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト併用方式B日程は芸術学科を除く", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": true, "note": "総合型選抜を文学科・芸術学科・文化歴史・文化デザインで実施", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "employment_fields": ["media", "kyoiku", "ryutsu", "it"],
+   "employment_source_url": "https://www.kindai.ac.jp/lit-art-cul/career/future/after-graduation/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kindai-d01",
+   "campus": "東大阪キャンパス",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 50.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 7.0, "2026": 7.0 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期A/B日程・後期", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": true, "note": "総合型選抜（環境・まちづくり系専攻）を実施", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "employment_fields": ["it", "media", "kinyu", "koumuin"],
+   "employment_source_url": "https://www.kindai.ac.jp/sociology/career/future/after-graduation/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kindai-riko",
+   "campus": "東大阪キャンパス",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 42.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.4, "2026": 3.5 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期A/B日程・後期", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": true, "note": "総合型選抜を理学科・生命科学・応用化学・社会環境工・エネルギー物質等で実施", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu", "kyoiku"],
+   "employment_source_url": "https://www.kindai.ac.jp/science-engineering/campus-life/future/after-graduation/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kindai-joho",
+   "campus": "東大阪キャンパス",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 9.3, "2026": 13.4 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期A/B日程・後期（情報学部独自方式あり）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": true, "note": "総合型選抜を実施", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "zemi": [
+    { "name": "知的教育情報システム研究室（越智研究室）", "theme": "e-Learning・知的教育情報システムの研究", "source_url": "https://www.kindai.ac.jp/informatics/education/laboratory/ochi/" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kindai-kenchiku",
+   "campus": "東大阪キャンパス",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 7.8, "2026": 7.2 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期A/B日程・後期", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": false, "note": "2026年度（令和8年度）総合型選抜の実施学部に含まれない", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "employment_fields": ["kensetsu", "maker", "koumuin"],
+   "employment_source_url": "https://www.kindai.ac.jp/architecture/career/future/after-graduation/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kindai-d02",
+   "campus": "東大阪キャンパス",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.3, "2026": 5.9 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期A/B日程・後期（スタンダード方式・理科重視方式）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": false, "note": "2026年度（令和8年度）総合型選抜の実施学部に含まれない", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "employment_fields": ["iryo_fukushi", "maker", "koumuin"],
+   "employment_source_url": "https://www.kindai.ac.jp/pharmacy/career/future/after-graduation/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kindai-no",
+   "campus": "奈良キャンパス",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 45.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.3, "2026": 4.1 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期A/B日程・後期", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": false, "note": "2026年度（令和8年度）総合型選抜の実施学部に含まれない", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "employment_fields": ["shokuhin", "maker", "koumuin", "kyoiku"],
+   "employment_source_url": "https://www.kindai.ac.jp/agriculture/career/future/after-graduation/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kindai-d03",
+   "campus": "おおさかメディカルキャンパス（堺市・2025年11月に大阪狭山から移転）",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 13.8, "2026": 14.5 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期・後期（一次試験＋二次試験）、医学部地域枠入試あり", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式（前期・中期・後期、二次試験あり）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募、一次＋二次試験）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": false, "note": "2026年度（令和8年度）総合型選抜の実施学部に含まれない", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "employment_source_url": "https://www.kindai.ac.jp/medicine/career/future/after-graduation/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kindai-d04",
+   "campus": "和歌山キャンパス",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 42.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.0, "2026": 2.1 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期A/B日程・後期", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": true, "note": "総合型選抜を全6学科で実施", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "employment_fields": ["shokuhin", "maker", "it"],
+   "employment_source_url": "https://www.kindai.ac.jp/bost/career/future/after-graduation/",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kindai-kokusai",
+   "campus": "東大阪キャンパス",
+   "campus_source_url": "https://kindai.jp/faculty/",
+   "hensachi": { "min": 45.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4270/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.9, "2026": 4.3 }, "source_url": "https://kindai.jp/exam/results/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "前期A/B日程・後期（国際学部独自方式あり）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト併用方式（後期）はグローバル専攻のみ", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "koubo", "available": true, "note": "推薦入試（一般公募）", "source_url": "https://kindai.jp/exam/system/" },
+    { "type": "sogo", "available": true, "note": "総合型選抜（グローバル専攻・東アジア専攻）を実施", "source_url": "https://kindai.jp/assets/pdf/exam/results/r8/251114/r8_ao_251114.pdf" }
+   ],
+   "employment_fields": ["service", "ryutsu", "maker", "kinyu"],
+   "employment_source_url": "https://www.kindai.ac.jp/international-studies/career/future/after-graduation/",
+   "unconfirmed": false
+  }
+ ],
+ "notes": "偏差値は河合塾提供データ（パスナビ2026年度入試）。倍率は大学公式入試結果PDF（一般入試・前期A日程の学部計、受験者数÷合格者数を小数第1位で算出。医学部のみ一次試験受験者数÷二次試験合格者数）。2026年度＝令和8年度、2025年度＝令和7年度。医学部は2025年11月に大阪狭山キャンパスからおおさかメディカルキャンパス（堺市泉ヶ丘）へ移転。学科名称変更予定: 文芸学部文化デザイン学科→デザイン学科（2027年4月）、農学部農業生産科学科→農学科（2027年4月）、生物理工学部食品安全工学科→食品・生命科学科ほか（2027年4月）。情報学部は2022年新設のため学部公式の就職実績ページが未公開（404）で、employment_fieldsは省略。"
+}

@@ -1,0 +1,239 @@
+{
+ "uni_id": "doshisha",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3990/difficulty/",
+  "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html",
+  "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf",
+  "https://www.doshisha.ac.jp/files/nyugk/page/2025_ippan_01_shijugou_1.pdf",
+  "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf",
+  "https://www.doshisha.ac.jp/files/nyugk/page/2026_AO.pdf",
+  "https://www.doshisha.ac.jp/files/nyugk/page/2026_sogo_jikosuisen.pdf",
+  "https://www.doshisha.ac.jp/files/nyugk/page/2026_gakkousuisen_suisensenbatu.pdf",
+  "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+  "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf"
+ ],
+ "departments": [
+  {
+   "dept_id": "doshisha-sportskenko",
+   "campus": "京田辺校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.4, "2026": 5.3 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程（文系/理系）・学部個別日程（文系型/理系型）", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "note": "3科目方式・5科目方式・スポーツ競技力加点方式", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": true, "note": "AO入試および自己推薦入試（スポーツ）を実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_AO.pdf" }
+   ],
+   "employment_fields": ["service", "kinyu", "maker"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-riko",
+   "campus": "京田辺校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.3, "2026": 2.4 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "note": "全10学科で実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": false, "note": "2026年度の総合型選抜（AO・自己推薦）実施学部に含まれない", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_sogo_jikosuisen.pdf" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（推薦選抜入学試験）を全10学科で実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_gakkousuisen_suisensenbatu.pdf" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-shinri",
+   "campus": "京田辺校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0, "2026": 3.3 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": true, "note": "自己推薦入学試験を実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_sogo_jikosuisen.pdf" }
+   ],
+   "employment_fields": ["it", "service", "koumuin"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-d01",
+   "campus": "京田辺校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.2, "2026": 2.6 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "全学部日程は文系・理系の両方式あり", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "note": "A方式・B方式", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": true, "note": "自己推薦入学試験を実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_sogo_jikosuisen.pdf" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（推薦選抜入学試験）を実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_gakkousuisen_suisensenbatu.pdf" }
+   ],
+   "employment_fields": ["it", "kinyu", "maker"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-shakai",
+   "campus": "今出川校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.8, "2026": 4.2 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "note": "全5学科で実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": true, "note": "自己推薦入学試験（社会福祉・メディア・産業関係はスポーツ、教育文化はグローバル/ローカル活動経験者）", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_sogo_jikosuisen.pdf" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（推薦選抜入学試験）を社会福祉学科で実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_gakkousuisen_suisensenbatu.pdf" }
+   ],
+   "employment_fields": ["kinyu", "media", "it", "koumuin"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-ho",
+   "campus": "今出川校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0, "2026": 3.2 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "英語に80点の基準点あり", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": true, "note": "自己推薦入学試験（法律・政治）を実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_sogo_jikosuisen.pdf" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "maker", "it"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-sho",
+   "campus": "今出川校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 60.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.2, "2026": 4.4 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "商学総合コース・フレックス複合コース", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "note": "商学総合コースで実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": true, "note": "AO入試（フレックス複合コース）を実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_AO.pdf" }
+   ],
+   "employment_fields": ["kinyu", "maker", "it", "ryutsu"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "zemi": [
+    { "name": "冨田健司ゼミ（マーケティング）", "theme": "マーケティング戦略・商品企画（学生商品企画コンペ「Sカレ2024」で優勝）", "source_url": "https://www.doshisha.ac.jp/news/detail/001-zcaf4S.html" },
+    { "name": "植田宏文ゼミ", "theme": "金融経済・マクロ金融論", "source_url": "https://hiueda.doshisha.ac.jp/" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-bungaku",
+   "campus": "今出川校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0, "2026": 3.1 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "note": "全5学科で実施（英文はA/B方式）", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": false, "note": "2026年度の総合型選抜（AO・自己推薦）実施学部に含まれない", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_sogo_jikosuisen.pdf" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（推薦選抜入学試験）を英文・美学芸術・国文（伝統文化継承者）で実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_gakkousuisen_suisensenbatu.pdf" }
+   ],
+   "employment_fields": ["maker", "service", "koumuin", "it"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-keizai",
+   "campus": "今出川校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.5, "2026": 3.3 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "英語に80点の基準点あり", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": true, "note": "自己推薦入学試験を実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_sogo_jikosuisen.pdf" }
+   ],
+   "employment_fields": ["kinyu", "it", "maker", "service"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-d02",
+   "campus": "今出川校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.3, "2026": 4.6 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "note": "3科目方式・5科目方式", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": false, "note": "2026年度の総合型選抜（AO・自己推薦）実施学部に含まれない", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_sogo_jikosuisen.pdf" }
+   ],
+   "employment_fields": ["kinyu", "it", "koumuin", "maker"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-d03",
+   "campus": "京田辺校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.9, "2026": 3.5 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "英語コース・中国語コース", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": true, "note": "自己推薦入学試験（英語・中国語コース）を実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_sogo_jikosuisen.pdf" }
+   ],
+   "employment_fields": ["service", "maker", "ryutsu"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-globalchiiki",
+   "campus": "今出川校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0, "2026": 4.0 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "ヨーロッパ・アジア太平洋・アメリカの3コース", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": false, "note": "2026年度の総合型選抜（AO・自己推薦）実施学部に含まれない", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_sogo_jikosuisen.pdf" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（推薦選抜入学試験）を3コースで実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_gakkousuisen_suisensenbatu.pdf" }
+   ],
+   "employment_fields": ["it", "maker", "service"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-d04",
+   "campus": "今出川校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 55.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.0, "2026": 5.4 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": true, "note": "自己推薦入学試験を実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_sogo_jikosuisen.pdf" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（推薦選抜入学試験）を実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_gakkousuisen_suisensenbatu.pdf" }
+   ],
+   "employment_fields": ["it", "koumuin", "maker"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "doshisha-d05",
+   "campus": "京田辺校地",
+   "campus_source_url": "https://www.doshisha.ac.jp/academics/undergrad_list/index.html",
+   "hensachi": { "min": 55.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3990/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.1, "2026": 2.2 }, "source_url": "https://www.doshisha.ac.jp/admissions_undergrad/statistics/index.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "医工・医情報・医生命システムの3学科", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_ippan_01_shijugou.pdf" },
+    { "type": "kyotsu", "available": true, "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_kyotsuu.pdf" },
+    { "type": "sogo", "available": true, "note": "AO入試（医情報学科）を実施", "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/2026_AO.pdf" }
+   ],
+   "employment_fields": ["maker", "it"],
+   "employment_source_url": "https://career-center.doshisha.ac.jp/career/attach/page/CAREER-PAGE-JA-40/181068/file/shushokusha_gakka_gyoushu_2022.pdf",
+   "unconfirmed": false
+  }
+ ],
+ "notes": "偏差値は河合塾提供データ（パスナビ2026年度入試）。倍率は大学公式の一般選抜入学試験結果PDF（全学部日程＋学部個別日程の学部合計・実質倍率）。2026年度は神・社会・政策・理工・生命医科・グローバル地域文化で追加合格あり（本データに追加合格は含まず）。共通テスト利用入試は2026年度に全14学部で実施。総合型選抜はAO入試（商フレックス複合・生命医科医情報・スポーツ健康科学）と自己推薦入学試験（神・社会・法・経済・文化情報・スポ健・心理・グロコミュ）の2系統。学校推薦型（推薦選抜）は神・文・社会・文化情報・理工・グロ地域で実施（指定校推薦は非公表のため未記載）。業種別就職データは2022年度卒実績（キャリアセンター公表の学部別一覧、直近年度の学部別業種一覧は未公表）。"
+}

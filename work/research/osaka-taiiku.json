@@ -1,0 +1,77 @@
+{
+ "uni_id": "osaka-taiiku",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4190/difficulty/",
+  "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf",
+  "https://www.ouhs.jp/nyushi/",
+  "https://www.ouhs.jp/lp/",
+  "https://www.ouhs.jp/access/",
+  "https://www.ouhs.jp/job/result/",
+  "https://www.ouhs.jp/department/school_sport_sciences/sport_sciences/sport_psychology/"
+ ],
+ "departments": [
+  {
+   "dept_id": "osaka-taiiku-taiiku",
+   "note": "体育学部（スポーツ教育学科・健康・スポーツマネジメント学科）は2024年4月に「スポーツ科学部スポーツ科学科」へ改組（出典: https://www.ouhs.jp/lp/ ）。以下のデータは後継のスポーツ科学部スポーツ科学科のもの。",
+   "campus": "熊取キャンパス（大阪府泉南郡熊取町）",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4190/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.2, "2026": 2.1 },
+    "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（アスリート型・自己表現型）、スポーツ特別総合型選抜等も実施", "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（体力評価型・自己表現型・教科型、内部・指定校除く公募制）", "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf" },
+    { "type": "ippan", "available": true, "note": "一般選抜（2教科型・体力評価2教科型。2027年度から高得点重視型に変更予定）", "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf" },
+    { "type": "kyotsu", "available": false, "note": "2026年度入試結果の入試制度一覧に共通テスト利用選抜の記載なし", "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "sports_kenko", "service"],
+   "zemi": [
+    {
+     "name": "スポーツ心理・カウンセリングコースのゼミ",
+     "theme": "スポーツ現場の心理的現象や熟練者のスキルを実証的に検証し統計的に分析する課題研究",
+     "source_url": "https://www.ouhs.jp/department/school_sport_sciences/sport_sciences/sport_psychology/"
+    }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "osaka-taiiku-taiiku2",
+   "note": "健康・スポーツマネジメント学科は2024年4月の改組で「スポーツ科学部スポーツ科学科」に統合（スポーツマネジメント・健康科学等の6コース制）（出典: https://www.ouhs.jp/lp/ ）。以下のデータは後継のスポーツ科学部スポーツ科学科のもの。",
+   "campus": "熊取キャンパス（大阪府泉南郡熊取町）",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4190/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.2, "2026": 2.1 },
+    "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（アスリート型・自己表現型）等", "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（体力評価型・自己表現型・教科型）", "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf" },
+    { "type": "ippan", "available": true, "note": "一般選抜（2教科型・体力評価2教科型）", "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf" },
+    { "type": "kyotsu", "available": false, "note": "2026年度入試結果の入試制度一覧に共通テスト利用選抜の記載なし", "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "sports_kenko", "service"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "osaka-taiiku-kyoiku",
+   "note": "現行の学科名称は「教育学部教育学科」。",
+   "campus": "熊取キャンパス（大阪府泉南郡熊取町）",
+   "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4190/difficulty/" },
+   "bairitsu": {
+    "ippan": { "2025": 3.8, "2026": 5.8 },
+    "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf"
+   },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（自己表現型）", "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（体力評価型・自己表現型・教科型）", "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf" },
+    { "type": "ippan", "available": true, "note": "一般選抜（2教科型・体力評価2教科型）", "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf" },
+    { "type": "kyotsu", "available": false, "note": "2026年度入試結果の入試制度一覧に共通テスト利用選抜の記載なし", "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/17a1e23cf6b60169ea6e06adfea247a9.pdf" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "体育学部は2024年4月にスポーツ科学部スポーツ科学科へ改組済み（2学科を1学科6コースに統合）。manifestの体育学部2学科には後継スポーツ科学部の値を充当。倍率は大学公式2026年度入試結果PDF掲載の一般選抜（2教科型＋体力評価2教科型）の受験者数÷合格者数（2025年度=184/58、2026年度=160/76、教育学部2025=118/31、2026=110/19）。共通テスト利用は制度一覧に記載なし（=未実施と判断）。就職実績（2025年度卒: 就職率98.1%、公務員111人・教員150人、スポーツ業界等）は https://www.ouhs.jp/job/result/ による。2027年度入試より卒業生子女型→ファミリー型、体力評価2教科型→高得点重視型に変更予定。"
+}
