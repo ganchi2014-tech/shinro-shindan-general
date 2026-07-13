@@ -66,7 +66,8 @@
      "法学",
      "法律",
      "政治",
-     "政策"
+     "政策",
+     "法・"
     ],
     "dept_keywords_exclude": [
      "療法"
@@ -29646,6 +29647,7 @@
     "各種国家資格"
    ],
    "interest_tags": [
+    "hokei",
     "keizai"
    ],
    "employment_fields": [],
