@@ -7,19 +7,24 @@ const REQUIRED = ['dept_id', 'uni_id', 'name', 'campus', 'hensachi', 'bairitsu',
 const STATUSES = ['verified', 'estimated', 'unconfirmed'];
 
 function validate(data) {
+  if (!Array.isArray(data.universities) || !Array.isArray(data.departments)) {
+    return { errors: ['データ形状が不正: universities / departments が配列ではない'], stats: { total: 0, byStatus: { verified: 0, estimated: 0, unconfirmed: 0 }, zemiCount: 0, zemiCoverage: 0, campusMissing: 0 } };
+  }
   const errors = [];
   const uniIds = new Set(data.universities.map(u => u.id));
   const seen = new Set();
   const byStatus = { verified: 0, estimated: 0, unconfirmed: 0 };
   let zemiCount = 0;
+  let campusMissing = 0;
 
   for (const d of data.departments) {
     const label = d.dept_id || d.name || '(不明)';
     for (const f of REQUIRED) {
       if (!(f in d)) errors.push(`${label}: 必須フィールド ${f} がない`);
     }
-    if (seen.has(d.dept_id)) errors.push(`${d.dept_id}: dept_id重複`);
+    if (seen.has(d.dept_id)) errors.push(`${label}: dept_id重複`);
     seen.add(d.dept_id);
+    if (d.campus == null) campusMissing++;
     if (!uniIds.has(d.uni_id)) errors.push(`${label}: 存在しない大学を参照 (${d.uni_id})`);
     if (!STATUSES.includes(d.data_status)) errors.push(`${label}: data_status が不正 (${d.data_status})`);
     else byStatus[d.data_status]++;
@@ -41,7 +46,7 @@ function validate(data) {
     if ((d.zemi || []).length > 3) errors.push(`${label}: zemi が3件を超えている`);
   }
   const total = data.departments.length;
-  return { errors, stats: { total, byStatus, zemiCount, zemiCoverage: total ? zemiCount / total : 0 } };
+  return { errors, stats: { total, byStatus, zemiCount, zemiCoverage: total ? zemiCount / total : 0, campusMissing } };
 }
 
 function main() {
@@ -50,6 +55,7 @@ function main() {
   console.log(`学部総数: ${stats.total}`);
   console.log(`ステータス: verified=${stats.byStatus.verified} estimated=${stats.byStatus.estimated} unconfirmed=${stats.byStatus.unconfirmed}`);
   console.log(`ゼミカバー率: ${(stats.zemiCoverage * 100).toFixed(1)}% (${stats.zemiCount}/${stats.total})`);
+  console.log(`campus未設定: ${stats.campusMissing}件`);
   if (errors.length) {
     console.error(`\nエラー ${errors.length}件:`);
     for (const e of errors.slice(0, 50)) console.error(' -', e);
