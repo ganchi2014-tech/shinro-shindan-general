@@ -69,4 +69,60 @@ function makeDept(over = {}) {
   const research = { uni_id: 'u1', researched_date: '2026-07-14', departments: [{ dept_id: 'u1-keiei', zemi: [z, z, z, z] }] };
   assert.throws(() => mergeUni(data, research), /3件/);
 }
+// uni_id不一致のdept_id混入 → throw（他大学の学部を書き換えない）
+{
+  const data = {
+    universities: [{ id: 'u1', name: 'テスト大学' }, { id: 'u2', name: '別大学' }],
+    departments: [makeDept(), makeDept({ dept_id: 'u2-hoka', uni_id: 'u2' })],
+  };
+  const research = { uni_id: 'u1', researched_date: '2026-07-14', departments: [{ dept_id: 'u2-hoka' }] };
+  assert.throws(() => mergeUni(data, research), /学部ではない/);
+}
+// entry_methods available省略（noteのみ）→ 既存available保持・キー存在・verifiedはfalseのまま
+{
+  const data = { universities: [{ id: 'u1', name: 'テスト大学' }], departments: [makeDept()] };
+  const research = {
+    uni_id: 'u1', researched_date: '2026-07-14',
+    departments: [{ dept_id: 'u1-keiei', entry_methods: [{ type: 'kyotsu', note: '要確認のまま' }] }],
+  };
+  mergeUni(data, research);
+  const ky = data.departments[0].entry_methods.find(m => m.type === 'kyotsu');
+  assert.ok('available' in ky); // キーが消えていない
+  assert.strictEqual(ky.available, null); // 既存値を保持
+  assert.strictEqual(ky.verified, false); // 未確認のままverified化しない
+  assert.strictEqual(ky.note, '要確認のまま');
+}
+// 不明な entry_method type → throw
+{
+  const data = { universities: [{ id: 'u1', name: 'テスト大学' }], departments: [makeDept()] };
+  const research = {
+    uni_id: 'u1', researched_date: '2026-07-14',
+    departments: [{ dept_id: 'u1-keiei', entry_methods: [{ type: 'sonzai-shinai', available: true }] }],
+  };
+  assert.throws(() => mergeUni(data, research), /entry_method type/);
+}
+// bairitsu 既存 {'2025':4.0} に {'2026':3.2} をマージ → 両年度残存
+{
+  const dept = makeDept();
+  dept.bairitsu.ippan = { '2025': 4.0 };
+  const data = { universities: [{ id: 'u1', name: 'テスト大学' }], departments: [dept] };
+  const research = {
+    uni_id: 'u1', researched_date: '2026-07-14',
+    departments: [{ dept_id: 'u1-keiei', bairitsu: { ippan: { '2026': 3.2 } } }],
+  };
+  mergeUni(data, research);
+  assert.strictEqual(data.departments[0].bairitsu.ippan['2025'], 4.0);
+  assert.strictEqual(data.departments[0].bairitsu.ippan['2026'], 3.2);
+}
+// source_url 更新が diffs に現れる
+{
+  const data = { universities: [{ id: 'u1', name: 'テスト大学' }], departments: [makeDept()] };
+  const research = {
+    uni_id: 'u1', researched_date: '2026-07-14',
+    departments: [{ dept_id: 'u1-keiei', hensachi: { source_url: 'https://kei-net.example' } }],
+  };
+  const diffs = mergeUni(data, research);
+  assert.ok(diffs.some(x => x.field === 'hensachi.source_url' && x.new === 'https://kei-net.example'));
+  assert.ok(diffs.some(x => x.field === 'hensachi.verified_date' && x.new === '2026-07-14'));
+}
 console.log('ALL OK');

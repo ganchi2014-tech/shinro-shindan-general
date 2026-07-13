@@ -24,34 +24,37 @@ function mergeUni(data, research) {
   for (const r of research.departments || []) {
     const d = byId[r.dept_id];
     if (!d) throw new Error(`不明な dept_id: ${r.dept_id}（dept_manifest.json を確認）`);
+    if (d.uni_id !== research.uni_id) throw new Error(`${r.dept_id} は ${research.uni_id} の学部ではない（uni_id=${d.uni_id}）`);
 
     if (r.hensachi) {
       setAndDiff(diffs, d.dept_id, d.hensachi, 'min', r.hensachi.min ?? d.hensachi.min, 'hensachi.min');
       setAndDiff(diffs, d.dept_id, d.hensachi, 'max', r.hensachi.max ?? d.hensachi.max, 'hensachi.max');
       if (r.hensachi.source_url) {
-        d.hensachi.source_url = r.hensachi.source_url;
-        d.hensachi.verified_date = date;
+        setAndDiff(diffs, d.dept_id, d.hensachi, 'source_url', r.hensachi.source_url, 'hensachi.source_url');
+        setAndDiff(diffs, d.dept_id, d.hensachi, 'verified_date', date, 'hensachi.verified_date');
       }
     }
     if (r.bairitsu) {
       setAndDiff(diffs, d.dept_id, d.bairitsu, 'ippan', { ...d.bairitsu.ippan, ...r.bairitsu.ippan }, 'bairitsu.ippan');
       if (r.bairitsu.source_url) {
-        d.bairitsu.source_url = r.bairitsu.source_url;
-        d.bairitsu.verified_date = date;
+        setAndDiff(diffs, d.dept_id, d.bairitsu, 'source_url', r.bairitsu.source_url, 'bairitsu.source_url');
+        setAndDiff(diffs, d.dept_id, d.bairitsu, 'verified_date', date, 'bairitsu.verified_date');
       }
     }
     for (const m of r.entry_methods || []) {
       const target = d.entry_methods.find(x => x.type === m.type);
       if (!target) throw new Error(`${r.dept_id}: 不明な entry_method type ${m.type}`);
-      setAndDiff(diffs, d.dept_id, target, 'available', m.available, `entry_methods.${m.type}.available`);
+      if ('available' in m && m.available !== undefined) {
+        setAndDiff(diffs, d.dept_id, target, 'available', m.available, `entry_methods.${m.type}.available`);
+        target.verified = true;
+      }
       if (m.note !== undefined) target.note = m.note;
-      target.verified = true;
     }
     if (r.qualifications) setAndDiff(diffs, d.dept_id, d, 'qualifications', r.qualifications, 'qualifications');
     if (r.employment_fields) setAndDiff(diffs, d.dept_id, d, 'employment_fields', r.employment_fields, 'employment_fields');
     if (r.zemi) {
       if (r.zemi.length > 3) throw new Error(`${r.dept_id}: zemi は最大3件（${r.zemi.length}件指定）`);
-      const zemi = r.zemi.map(z => ({ name: z.name, theme: z.theme || null, source_url: z.source_url, verified_date: date }));
+      const zemi = r.zemi.map(z => ({ name: z.name, theme: z.theme ?? null, source_url: z.source_url, verified_date: date }));
       setAndDiff(diffs, d.dept_id, d, 'zemi', zemi, 'zemi');
     }
     if (r.unconfirmed) d.data_status = 'unconfirmed';
@@ -90,15 +93,25 @@ function main() {
   if (!files.length) { console.error('使い方: node merge_research.js research/<uni_id>.json ...'); process.exit(1); }
   const dataPath = path.join(WORK, 'data_v2.json');
   const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+  const reports = [];
   for (const f of files) {
-    const research = JSON.parse(fs.readFileSync(path.join(WORK, f), 'utf8'));
-    const uni = data.universities.find(u => u.id === research.uni_id);
-    if (!uni) throw new Error(`不明な uni_id: ${research.uni_id}`);
-    const diffs = mergeUni(data, research);
-    writeReport(research, diffs, uni.name);
-    console.log(`${research.uni_id}: ${diffs.length}件の差分を反映`);
+    try {
+      const research = JSON.parse(fs.readFileSync(path.resolve(WORK, f), 'utf8'));
+      const uni = data.universities.find(u => u.id === research.uni_id);
+      if (!uni) throw new Error(`不明な uni_id: ${research.uni_id}`);
+      const diffs = mergeUni(data, research);
+      reports.push({ research, diffs, uniName: uni.name });
+    } catch (e) {
+      console.error(`失敗: ${f} — ${e.message}`);
+      console.error('何も保存していない。修正して全ファイルを再実行せよ。');
+      process.exit(1);
+    }
   }
   fs.writeFileSync(dataPath, JSON.stringify(data, null, 1), 'utf8');
+  for (const rep of reports) {
+    writeReport(rep.research, rep.diffs, rep.uniName);
+    console.log(`${rep.research.uni_id}: ${rep.diffs.length}件の差分を反映`);
+  }
   console.log('data_v2.json 更新完了');
 }
 
