@@ -59,4 +59,23 @@ const tagsDef = require('./tags_def.json');
   assert.strictEqual(u.entry_method_details.sogo[0].method_name, 'AO');
   assert.strictEqual(u.departments, undefined);
 }
+// --- 実データ統合テスト: 誤タグ（心理→riko / 療法→hokei）が無いこと ---
+{
+  const data = require('./data_final.json');
+  for (const uni of data.ippan.universities) {
+    for (const d of (uni.departments || [])) {
+      const tags = autoTags(d.name, tagsDef);
+      if (d.name.includes('心理')) {
+        assert.ok(!tags.includes('riko'), `riko誤付与: ${uni.id} ${d.name} → ${tags}`);
+      }
+      if (d.name.includes('療法')) {
+        assert.ok(!tags.includes('hokei'), `hokei誤付与: ${uni.id} ${d.name} → ${tags}`);
+      }
+    }
+  }
+}
+// --- slugify: 複合名（学部 学科）はSLUG_MAPに当たる ---
+{
+  assert.strictEqual(slugify('経済学部 経済学科', new Set()), 'keizai');
+}
 console.log('ALL OK');

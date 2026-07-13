@@ -26,7 +26,9 @@ const SLUG_MAP = {
 };
 
 function slugify(deptName, used) {
-  let base = SLUG_MAP[deptName];
+  // 「経済学部 経済学科」のような複合名は最初の空白より前でSLUG_MAPを照合
+  const lookupKey = deptName.split(/[\s　]/)[0];
+  let base = SLUG_MAP[lookupKey];
   if (!base) {
     // フォールバック: d01, d02...（この大学内で未使用の最小番号）
     let i = 1;
@@ -43,7 +45,9 @@ function slugify(deptName, used) {
 }
 
 function autoTags(deptName, tagsDef) {
+  // dept_keywords_exclude: 部分一致の誤爆防止（例:「心理学部」⊃「理学部」、「療法学科」⊃「法学」）
   const tags = tagsDef.interest
+    .filter(t => !(t.dept_keywords_exclude || []).some(k => deptName.includes(k)))
     .filter(t => t.dept_keywords.some(k => deptName.includes(k)))
     .map(t => t.id);
   return tags.length ? tags : ['unclassified'];
@@ -58,7 +62,7 @@ function buildDepartments(ippanUni, catAvail, tagsDef) {
       dept_id: `${ippanUni.id}-${slug}`,
       uni_id: ippanUni.id,
       name: d.name,
-      campus: d.campus || null,
+      campus: d.campus ?? null,
       hensachi: {
         min: d.hensachi_min ?? null,
         max: d.hensachi_max ?? null,
@@ -113,9 +117,13 @@ function main() {
     const catAvail = {
       sogo: (detail.sogo.length > 0),
       koubo: (detail.koubo.length > 0),
-      kokkoritsu: (baseUni.type || '').includes('国立') || (baseUni.type || '').includes('公立') || (baseUni.type || '') === '国公立',
+      kokkoritsu: (baseUni.type || '').includes('国立') || (baseUni.type || '').includes('公立'),
     };
-    if (ippanBy[id]) departments.push(...buildDepartments(ippanBy[id], catAvail, tagsDef));
+    if (ippanBy[id]) {
+      departments.push(...buildDepartments(ippanBy[id], catAvail, tagsDef));
+    } else {
+      console.warn(`WARN: ippanエントリなし（学部0件で出力されます）: ${id} (${baseUni.name})`);
+    }
   }
 
   const out = {
@@ -128,7 +136,8 @@ function main() {
   };
   fs.writeFileSync(path.join(WORK, 'data_v2.json'), JSON.stringify(out, null, 1), 'utf8');
 
-  const manifest = departments.map(d => ({ dept_id: d.dept_id, uni_id: d.uni_id, uni_name: universities.find(u => u.id === d.uni_id).name, dept_name: d.name }));
+  const uniNameById = new Map(universities.map(u => [u.id, u.name]));
+  const manifest = departments.map(d => ({ dept_id: d.dept_id, uni_id: d.uni_id, uni_name: uniNameById.get(d.uni_id), dept_name: d.name }));
   fs.writeFileSync(path.join(WORK, 'dept_manifest.json'), JSON.stringify(manifest, null, 1), 'utf8');
 
   console.log(`universities: ${universities.length} / departments: ${departments.length}`);

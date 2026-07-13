@@ -63,9 +63,13 @@
     "id": "hokei",
     "label": "法律・政治",
     "dept_keywords": [
-     "法",
+     "法学",
+     "法律",
      "政治",
      "政策"
+    ],
+    "dept_keywords_exclude": [
+     "療法"
     ]
    },
    {
@@ -106,14 +110,20 @@
     "id": "riko",
     "label": "理学・工学（ものづくり）",
     "dept_keywords": [
-     "理",
-     "工",
+     "理学部",
+     "理学科",
+     "理工",
+     "工学",
+     "基礎工",
      "機械",
      "電気",
      "電子",
      "材料",
-     "物質",
-     "基礎工"
+     "物質"
+    ],
+    "dept_keywords_exclude": [
+     "心理",
+     "療法"
     ]
    },
    {
@@ -24010,7 +24020,7 @@
  ],
  "departments": [
   {
-   "dept_id": "osaka-taiiku-d01",
+   "dept_id": "osaka-taiiku-taiiku",
    "uni_id": "osaka-taiiku",
    "name": "体育学部 体育学科",
    "campus": "熊取",
@@ -24064,7 +24074,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-taiiku-d02",
+   "dept_id": "osaka-taiiku-taiiku2",
    "uni_id": "osaka-taiiku",
    "name": "体育学部 健康・スポーツマネジメント学科",
    "campus": "熊取",
@@ -24118,7 +24128,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-taiiku-d03",
+   "dept_id": "osaka-taiiku-kyoiku",
    "uni_id": "osaka-taiiku",
    "name": "教育学部 初等教育教員養成課程",
    "campus": "熊取",
@@ -24329,8 +24339,7 @@
     "認定心理士"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -25948,8 +25957,7 @@
     "認定心理士"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -27312,7 +27320,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "tenri-d01",
+   "dept_id": "tenri-taiiku",
    "uni_id": "tenri",
    "name": "体育学部 体育学科",
    "campus": "杣之内",
@@ -27366,7 +27374,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "tenri-d02",
+   "dept_id": "tenri-taiiku2",
    "uni_id": "tenri",
    "name": "体育学部 健康科学",
    "campus": "杣之内",
@@ -27529,7 +27537,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "tenri-d03",
+   "dept_id": "tenri-d01",
    "uni_id": "tenri",
    "name": "医療学部",
    "campus": "別所",
@@ -27799,7 +27807,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-keizai-d01",
+   "dept_id": "osaka-keizai-keizai",
    "uni_id": "osaka-keizai",
    "name": "経済学部 経済学科",
    "campus": "大隅",
@@ -27854,7 +27862,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-keizai-d02",
+   "dept_id": "osaka-keizai-keiei",
    "uni_id": "osaka-keizai",
    "name": "経営学部 経営学科",
    "campus": "大隅",
@@ -27909,7 +27917,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-keizai-d03",
+   "dept_id": "osaka-keizai-keiei2",
    "uni_id": "osaka-keizai",
    "name": "経営学部 ビジネス法学科",
    "campus": "大隅",
@@ -27965,7 +27973,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-keizai-d04",
+   "dept_id": "osaka-keizai-d01",
    "uni_id": "osaka-keizai",
    "name": "情報社会学部",
    "campus": "大隅",
@@ -29051,7 +29059,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-fukushi-d02",
+   "dept_id": "kansai-fukushi-hokeniryo",
    "uni_id": "kansai-fukushi",
    "name": "保健医療学部 リハビリテーション学科",
    "campus": "柏原",
@@ -29106,7 +29114,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-fukushi-d03",
+   "dept_id": "kansai-fukushi-kyoiku",
    "uni_id": "kansai-fukushi",
    "name": "教育学部 教育学科",
    "campus": "柏原",
@@ -29161,7 +29169,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-fukushi-d04",
+   "dept_id": "kansai-fukushi-d02",
    "uni_id": "kansai-fukushi",
    "name": "心理科学部 心理科学科",
    "campus": "柏原",
@@ -29208,15 +29216,14 @@
     "精神保健福祉士"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-fukushi-d05",
+   "dept_id": "kansai-fukushi-shakaifukushi",
    "uni_id": "kansai-fukushi",
    "name": "社会福祉学部 福祉創造学科",
    "campus": "柏原",
@@ -29270,7 +29277,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-fukushi-d06",
+   "dept_id": "kansai-fukushi-d03",
    "uni_id": "kansai-fukushi",
    "name": "健康福祉学部 福祉栄養学科",
    "campus": "柏原",
@@ -29325,7 +29332,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "chukyo-d01",
+   "dept_id": "chukyo-sportskagaku",
    "uni_id": "chukyo",
    "name": "スポーツ科学部 スポーツ教育",
    "campus": "豊田",
@@ -29379,7 +29386,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "chukyo-d02",
+   "dept_id": "chukyo-sportskagaku2",
    "uni_id": "chukyo",
    "name": "スポーツ科学部 競技スポーツ",
    "campus": "豊田",
@@ -29432,7 +29439,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "chukyo-d03",
+   "dept_id": "chukyo-sportskagaku3",
    "uni_id": "chukyo",
    "name": "スポーツ科学部 トレーナー",
    "campus": "豊田",
@@ -29593,7 +29600,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "chukyo-d04",
+   "dept_id": "chukyo-d01",
    "uni_id": "chukyo",
    "name": "法・経済・経営・文",
    "campus": "名古屋",
@@ -29639,7 +29646,6 @@
     "各種国家資格"
    ],
    "interest_tags": [
-    "hokei",
     "keizai"
    ],
    "employment_fields": [],
@@ -29919,7 +29925,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "meijo-d01",
+   "dept_id": "meijo-ho",
    "uni_id": "meijo",
    "name": "法学部 法学科",
    "campus": "天白",
@@ -29973,7 +29979,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "meijo-d02",
+   "dept_id": "meijo-keizai",
    "uni_id": "meijo",
    "name": "経済学部 経済学科",
    "campus": "天白",
@@ -30027,7 +30033,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "meijo-d03",
+   "dept_id": "meijo-keiei",
    "uni_id": "meijo",
    "name": "経営学部 経営学科",
    "campus": "天白",
@@ -30081,7 +30087,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "meijo-d04",
+   "dept_id": "meijo-d01",
    "uni_id": "meijo",
    "name": "情報工学部",
    "campus": "天白",
@@ -30190,7 +30196,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "daido-d01",
+   "dept_id": "daido-ko",
    "uni_id": "daido",
    "name": "工学部 機械工学/電気電子/建築",
    "campus": "滝春",
@@ -30246,7 +30252,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "daido-d02",
+   "dept_id": "daido-joho",
    "uni_id": "daido",
    "name": "情報学部 情報システム/情報デザイン",
    "campus": "滝春",
@@ -30302,7 +30308,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "daido-d03",
+   "dept_id": "daido-joho2",
    "uni_id": "daido",
    "name": "情報学部 総合情報（経営情報）",
    "campus": "滝春",
@@ -30357,7 +30363,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "gifu-shotoku-d01",
+   "dept_id": "gifu-shotoku-kyoiku",
    "uni_id": "gifu-shotoku",
    "name": "教育学部 体育専修",
    "campus": "羽島",
@@ -30412,7 +30418,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "gifu-shotoku-d02",
+   "dept_id": "gifu-shotoku-kyoiku2",
    "uni_id": "gifu-shotoku",
    "name": "教育学部 初等教育課程",
    "campus": "羽島",
@@ -30466,7 +30472,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "gifu-shotoku-d03",
+   "dept_id": "gifu-shotoku-d01",
    "uni_id": "gifu-shotoku",
    "name": "経済情報学部",
    "campus": "岐阜",
@@ -30576,7 +30582,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "asahi-d02",
+   "dept_id": "asahi-ho",
    "uni_id": "asahi",
    "name": "法学部 法学科",
    "campus": "穂積",
@@ -30631,7 +30637,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "asahi-d03",
+   "dept_id": "asahi-keiei",
    "uni_id": "asahi",
    "name": "経営学部 経営学科",
    "campus": "穂積",
@@ -30685,7 +30691,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "asahi-d04",
+   "dept_id": "asahi-d02",
    "uni_id": "asahi",
    "name": "保健医療 救急救命学科",
    "campus": "穂積",
@@ -30957,7 +30963,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "hiroshima-d01",
+   "dept_id": "hiroshima-kyoiku",
    "uni_id": "hiroshima",
    "name": "教育学部 第四類 健康スポーツ系",
    "campus": "東広島",
@@ -31173,7 +31179,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "hiroshima-d02",
+   "dept_id": "hiroshima-d01",
    "uni_id": "hiroshima",
    "name": "総合科学部",
    "campus": "東広島",
@@ -31227,7 +31233,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nittaidai-d01",
+   "dept_id": "nittaidai-taiiku",
    "uni_id": "nittaidai",
    "name": "体育学部 体育学科",
    "campus": "世田谷",
@@ -31281,7 +31287,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nittaidai-d02",
+   "dept_id": "nittaidai-taiiku2",
    "uni_id": "nittaidai",
    "name": "体育学部 健康学科",
    "campus": "世田谷",
@@ -31335,7 +31341,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nittaidai-d03",
+   "dept_id": "nittaidai-d01",
    "uni_id": "nittaidai",
    "name": "スポーツ文化学部",
    "campus": "世田谷",
@@ -31390,7 +31396,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nittaidai-d04",
+   "dept_id": "nittaidai-d02",
    "uni_id": "nittaidai",
    "name": "スポーツマネジメント学部",
    "campus": "横浜健志台",
@@ -31444,7 +31450,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nittaidai-d05",
+   "dept_id": "nittaidai-d03",
    "uni_id": "nittaidai",
    "name": "児童スポーツ教育学部",
    "campus": "世田谷",
@@ -31771,7 +31777,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kokushikan-d01",
+   "dept_id": "kokushikan-taiiku",
    "uni_id": "kokushikan",
    "name": "体育学部 体育学科",
    "campus": "世田谷",
@@ -31825,7 +31831,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kokushikan-d02",
+   "dept_id": "kokushikan-taiiku2",
    "uni_id": "kokushikan",
    "name": "体育学部 武道学科",
    "campus": "世田谷",
@@ -31879,7 +31885,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kokushikan-d03",
+   "dept_id": "kokushikan-taiiku3",
    "uni_id": "kokushikan",
    "name": "体育学部 スポーツ医科学科",
    "campus": "世田谷",
@@ -33718,7 +33724,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "tokai-univ-d01",
+   "dept_id": "tokai-univ-taiiku",
    "uni_id": "tokai-univ",
    "name": "体育学部 体育学科",
    "campus": "湘南",
@@ -33772,7 +33778,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "tokai-univ-d02",
+   "dept_id": "tokai-univ-taiiku2",
    "uni_id": "tokai-univ",
    "name": "体育学部 競技スポーツ学科",
    "campus": "湘南",
@@ -33826,7 +33832,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "tokai-univ-d03",
+   "dept_id": "tokai-univ-taiiku3",
    "uni_id": "tokai-univ",
    "name": "体育学部 スポーツ・レジャーマネジメント学科",
    "campus": "湘南",
@@ -34043,7 +34049,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-univ-d01",
+   "dept_id": "kansai-univ-ho",
    "uni_id": "kansai-univ",
    "name": "法学部 法学政治学科",
    "campus": null,
@@ -34263,7 +34269,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-univ-d02",
+   "dept_id": "kansai-univ-d01",
    "uni_id": "kansai-univ",
    "name": "人間健康学部",
    "campus": null,
@@ -34372,7 +34378,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-univ-d03",
+   "dept_id": "kansai-univ-d02",
    "uni_id": "kansai-univ",
    "name": "政策創造学部",
    "campus": "千里山",
@@ -34533,7 +34539,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-univ-d04",
+   "dept_id": "kansai-univ-d03",
    "uni_id": "kansai-univ",
    "name": "社会安全学部",
    "campus": "高槻ミューズ",
@@ -34587,7 +34593,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-univ-d05",
+   "dept_id": "kansai-univ-d04",
    "uni_id": "kansai-univ",
    "name": "システム理工学部",
    "campus": "千里山",
@@ -34642,7 +34648,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-univ-d06",
+   "dept_id": "kansai-univ-d05",
    "uni_id": "kansai-univ",
    "name": "環境都市工学部",
    "campus": "千里山",
@@ -34697,7 +34703,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-univ-d07",
+   "dept_id": "kansai-univ-d06",
    "uni_id": "kansai-univ",
    "name": "化学生命工学部",
    "campus": "千里山",
@@ -34752,7 +34758,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-univ-d08",
+   "dept_id": "kansai-univ-d07",
    "uni_id": "kansai-univ",
    "name": "ビジネスデータサイエンス学部（2025年新設）",
    "campus": "吹田みらい",
@@ -35344,8 +35350,7 @@
     "認定心理士"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -35788,7 +35793,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "bukkyo-d01",
+   "dept_id": "bukkyo-kyoiku",
    "uni_id": "bukkyo",
    "name": "教育学部 教育学科",
    "campus": null,
@@ -35897,7 +35902,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "bukkyo-d02",
+   "dept_id": "bukkyo-d01",
    "uni_id": "bukkyo",
    "name": "保健医療技術学部",
    "campus": null,
@@ -35952,7 +35957,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "bukkyo-d03",
+   "dept_id": "bukkyo-d02",
    "uni_id": "bukkyo",
    "name": "歴史学部",
    "campus": null,
@@ -36006,7 +36011,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "bukkyo-d04",
+   "dept_id": "bukkyo-d03",
    "uni_id": "bukkyo",
    "name": "仏教学部",
    "campus": "紫野",
@@ -36168,7 +36173,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kyoto-tachibana-d01",
+   "dept_id": "kyoto-tachibana-kango",
    "uni_id": "kyoto-tachibana",
    "name": "看護学部 看護学科",
    "campus": null,
@@ -36333,7 +36338,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kyoto-tachibana-d02",
+   "dept_id": "kyoto-tachibana-kenkokagaku",
    "uni_id": "kyoto-tachibana",
    "name": "健康科学部 救急救命学科",
    "campus": null,
@@ -36387,7 +36392,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kyoto-tachibana-d03",
+   "dept_id": "kyoto-tachibana-d01",
    "uni_id": "kyoto-tachibana",
    "name": "国際英語学部",
    "campus": "山科",
@@ -36542,8 +36547,7 @@
     "認定心理士"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -36606,7 +36610,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kyoto-tachibana-d04",
+   "dept_id": "kyoto-tachibana-d02",
    "uni_id": "kyoto-tachibana",
    "name": "工学部（情報工・建築デザイン）",
    "campus": "山科",
@@ -37580,8 +37584,7 @@
     "公認心理師(要院)"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -37690,8 +37693,7 @@
     "公認心理師(要院)"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -38397,8 +38399,7 @@
     "公認心理師(要院)"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -38842,7 +38843,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "oit-d01",
+   "dept_id": "oit-ko",
    "uni_id": "oit",
    "name": "工学部 機械工学科",
    "campus": null,
@@ -38896,7 +38897,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "oit-d02",
+   "dept_id": "oit-ko2",
    "uni_id": "oit",
    "name": "工学部 電気電子システム工学科",
    "campus": null,
@@ -38951,7 +38952,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "oit-d03",
+   "dept_id": "oit-d01",
    "uni_id": "oit",
    "name": "情報科学部",
    "campus": null,
@@ -39005,7 +39006,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "oit-d04",
+   "dept_id": "oit-d02",
    "uni_id": "oit",
    "name": "ロボティクス＆デザイン工学部",
    "campus": null,
@@ -39060,7 +39061,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "oit-d05",
+   "dept_id": "oit-d03",
    "uni_id": "oit",
    "name": "知的財産学部",
    "campus": null,
@@ -39114,7 +39115,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-dentsu-d01",
+   "dept_id": "osaka-dentsu-ko",
    "uni_id": "osaka-dentsu",
    "name": "工学部 電気電子工学科",
    "campus": null,
@@ -39168,7 +39169,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-dentsu-d02",
+   "dept_id": "osaka-dentsu-d01",
    "uni_id": "osaka-dentsu",
    "name": "情報通信工学部",
    "campus": null,
@@ -39222,7 +39223,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-dentsu-d03",
+   "dept_id": "osaka-dentsu-sogojoho",
    "uni_id": "osaka-dentsu",
    "name": "総合情報学部 デジタルゲーム学科",
    "campus": null,
@@ -39275,7 +39276,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-dentsu-d04",
+   "dept_id": "osaka-dentsu-d02",
    "uni_id": "osaka-dentsu",
    "name": "医療健康科学部",
    "campus": null,
@@ -39330,7 +39331,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-gaidai-d01",
+   "dept_id": "kansai-gaidai-gaikokugo",
    "uni_id": "kansai-gaidai",
    "name": "外国語学部 英米語学科",
    "campus": null,
@@ -39385,7 +39386,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-gaidai-d02",
+   "dept_id": "kansai-gaidai-d01",
    "uni_id": "kansai-gaidai",
    "name": "英語キャリア学部",
    "campus": null,
@@ -39439,7 +39440,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-gaidai-d03",
+   "dept_id": "kansai-gaidai-d02",
    "uni_id": "kansai-gaidai",
    "name": "国際共生学部",
    "campus": null,
@@ -39710,7 +39711,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kuas-d01",
+   "dept_id": "kuas-ko",
    "uni_id": "kuas",
    "name": "工学部 機械電気システム工学科",
    "campus": null,
@@ -39820,7 +39821,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kuas-d02",
+   "dept_id": "kuas-d01",
    "uni_id": "kuas",
    "name": "健康医療学部 看護学科",
    "campus": null,
@@ -39875,7 +39876,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kuas-d03",
+   "dept_id": "kuas-d02",
    "uni_id": "kuas",
    "name": "バイオ環境学部",
    "campus": null,
@@ -40038,7 +40039,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-sangyo-d01",
+   "dept_id": "osaka-sangyo-ko",
    "uni_id": "osaka-sangyo",
    "name": "工学部 機械工学科",
    "campus": null,
@@ -40091,7 +40092,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-sangyo-d02",
+   "dept_id": "osaka-sangyo-d01",
    "uni_id": "osaka-sangyo",
    "name": "スポーツ健康学部",
    "campus": null,
@@ -40680,8 +40681,7 @@
     "認定心理士"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -40743,7 +40743,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-jinkagaku-d01",
+   "dept_id": "osaka-jinkagaku-ningenkagaku",
    "uni_id": "osaka-jinkagaku",
    "name": "人間科学部 医療リハビリ学科",
    "campus": null,
@@ -40798,7 +40798,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-jinkagaku-d02",
+   "dept_id": "osaka-jinkagaku-ningenkagaku2",
    "uni_id": "osaka-jinkagaku",
    "name": "人間科学部 社会福祉学科",
    "campus": null,
@@ -40852,7 +40852,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-jinkagaku-d03",
+   "dept_id": "osaka-jinkagaku-hokeniryo",
    "uni_id": "osaka-jinkagaku",
    "name": "保健医療学部 看護学科",
    "campus": null,
@@ -41014,7 +41014,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-kokusai-d02",
+   "dept_id": "osaka-kokusai-hokeniryo",
    "uni_id": "osaka-kokusai",
    "name": "保健医療学部 看護学科",
    "campus": null,
@@ -41177,7 +41177,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-seikei-d01",
+   "dept_id": "osaka-seikei-keiei",
    "uni_id": "osaka-seikei",
    "name": "経営学部 スポーツマネジメント学科",
    "campus": null,
@@ -41232,7 +41232,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-seikei-d02",
+   "dept_id": "osaka-seikei-keiei2",
    "uni_id": "osaka-seikei",
    "name": "経営学部 国際観光ビジネス学科",
    "campus": null,
@@ -41448,7 +41448,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "taisei-gakuin-d01",
+   "dept_id": "taisei-gakuin-ningen",
    "uni_id": "taisei-gakuin",
    "name": "人間学部 子ども発達学科",
    "campus": null,
@@ -41557,7 +41557,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-aoyama-d01",
+   "dept_id": "osaka-aoyama-kenkokagaku",
    "uni_id": "osaka-aoyama",
    "name": "健康科学部 健康栄養学科",
    "campus": null,
@@ -41666,7 +41666,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "osaka-aoyama-d02",
+   "dept_id": "osaka-aoyama-d01",
    "uni_id": "osaka-aoyama",
    "name": "子ども教育学部",
    "campus": null,
@@ -41775,7 +41775,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "hyogo-u-d01",
+   "dept_id": "hyogo-u-kenkokagaku",
    "uni_id": "hyogo-u",
    "name": "健康科学部 栄養マネジメント学科",
    "campus": null,
@@ -41830,7 +41830,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "hyogo-u-d02",
+   "dept_id": "hyogo-u-kenkokagaku2",
    "uni_id": "hyogo-u",
    "name": "健康科学部 健康システム学科",
    "campus": null,
@@ -41885,7 +41885,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "hyogo-u-d03",
+   "dept_id": "hyogo-u-d01",
    "uni_id": "hyogo-u",
    "name": "生涯福祉学部",
    "campus": null,
@@ -42153,7 +42153,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-iryo-d01",
+   "dept_id": "kansai-iryo-hokeniryo",
    "uni_id": "kansai-iryo",
    "name": "保健医療学部 鍼灸学科",
    "campus": null,
@@ -42208,7 +42208,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-iryo-d02",
+   "dept_id": "kansai-iryo-hokeniryo2",
    "uni_id": "kansai-iryo",
    "name": "保健医療学部 柔道整復学科",
    "campus": null,
@@ -42262,7 +42262,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-iryo-d03",
+   "dept_id": "kansai-iryo-hokeniryo3",
    "uni_id": "kansai-iryo",
    "name": "保健医療学部 理学療法学科",
    "campus": null,
@@ -42308,8 +42308,6 @@
     "理学療法士"
    ],
    "interest_tags": [
-    "hokei",
-    "riko",
     "iryo"
    ],
    "employment_fields": [],
@@ -42317,7 +42315,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kansai-iryo-d04",
+   "dept_id": "kansai-iryo-hokeniryo4",
    "uni_id": "kansai-iryo",
    "name": "保健医療学部 看護学科",
    "campus": null,
@@ -42371,7 +42369,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kyoto-kango-d01",
+   "dept_id": "kyoto-kango-kango",
    "uni_id": "kyoto-kango",
    "name": "看護学部 看護学科",
    "campus": null,
@@ -42535,7 +42533,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nanzan-d01",
+   "dept_id": "nanzan-keiei",
    "uni_id": "nanzan",
    "name": "経営学部 経営学科",
    "campus": "名古屋",
@@ -42590,7 +42588,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nanzan-d02",
+   "dept_id": "nanzan-gaikokugo",
    "uni_id": "nanzan",
    "name": "外国語学部 英米学科",
    "campus": "名古屋",
@@ -42645,7 +42643,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nanzan-d03",
+   "dept_id": "nanzan-ho",
    "uni_id": "nanzan",
    "name": "法学部 法律学科",
    "campus": "名古屋",
@@ -42700,7 +42698,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nanzan-d04",
+   "dept_id": "nanzan-keizai",
    "uni_id": "nanzan",
    "name": "経済学部 経済学科",
    "campus": "名古屋",
@@ -42809,7 +42807,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-u-d01",
+   "dept_id": "aichi-u-ho",
    "uni_id": "aichi-u",
    "name": "法学部 法律学科",
    "campus": "名古屋",
@@ -42919,7 +42917,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-u-d02",
+   "dept_id": "aichi-u-keiei",
    "uni_id": "aichi-u",
    "name": "経営学部 経営学科",
    "campus": "名古屋",
@@ -42974,7 +42972,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-u-d03",
+   "dept_id": "aichi-u-d01",
    "uni_id": "aichi-u",
    "name": "現代中国学部",
    "campus": "名古屋",
@@ -43028,7 +43026,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-u-d04",
+   "dept_id": "aichi-u-d02",
    "uni_id": "aichi-u",
    "name": "国際コミュニケーション学部",
    "campus": "名古屋",
@@ -43131,8 +43129,6 @@
     "言語聴覚士"
    ],
    "interest_tags": [
-    "hokei",
-    "riko",
     "iryo",
     "sports"
    ],
@@ -43197,7 +43193,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-shukutoku-d03",
+   "dept_id": "aichi-shukutoku-shinri",
    "uni_id": "aichi-shukutoku",
    "name": "心理学部 心理学科",
    "campus": "長久手",
@@ -43244,15 +43240,14 @@
     "認定心理士"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-shukutoku-d04",
+   "dept_id": "aichi-shukutoku-bungaku",
    "uni_id": "aichi-shukutoku",
    "name": "文学部 国文学科",
    "campus": "長久手",
@@ -43306,7 +43301,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-shukutoku-d05",
+   "dept_id": "aichi-shukutoku-d03",
    "uni_id": "aichi-shukutoku",
    "name": "ビジネス学部 ビジネス学科",
    "campus": "星が丘",
@@ -43360,7 +43355,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-gakuin-d01",
+   "dept_id": "aichi-gakuin-shi",
    "uni_id": "aichi-gakuin",
    "name": "歯学部 歯学科",
    "campus": "楠元",
@@ -43413,7 +43408,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-gakuin-d02",
+   "dept_id": "aichi-gakuin-yaku",
    "uni_id": "aichi-gakuin",
    "name": "薬学部 薬学科",
    "campus": "名城",
@@ -43466,7 +43461,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-gakuin-d03",
+   "dept_id": "aichi-gakuin-sho",
    "uni_id": "aichi-gakuin",
    "name": "商学部 商学科",
    "campus": "日進",
@@ -43521,7 +43516,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-gakuin-d04",
+   "dept_id": "aichi-gakuin-keizai",
    "uni_id": "aichi-gakuin",
    "name": "経済学部 経済学科",
    "campus": "日進",
@@ -43576,7 +43571,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-gakuin-d05",
+   "dept_id": "aichi-gakuin-ho",
    "uni_id": "aichi-gakuin",
    "name": "法学部 法律学科",
    "campus": "日進",
@@ -43631,7 +43626,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-gakuin-d06",
+   "dept_id": "aichi-gakuin-d01",
    "uni_id": "aichi-gakuin",
    "name": "心身科学部 健康科学科（健康科学・養護教諭等）",
    "campus": "日進",
@@ -43685,7 +43680,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nagoya-keizai-d01",
+   "dept_id": "nagoya-keizai-keizai",
    "uni_id": "nagoya-keizai",
    "name": "経済学部 現代経済学科",
    "campus": "犬山",
@@ -43740,7 +43735,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nagoya-keizai-d02",
+   "dept_id": "nagoya-keizai-keiei",
    "uni_id": "nagoya-keizai",
    "name": "経営学部 経営学科",
    "campus": "犬山",
@@ -43794,7 +43789,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nagoya-keizai-d03",
+   "dept_id": "nagoya-keizai-ho",
    "uni_id": "nagoya-keizai",
    "name": "法学部 ビジネス法学科",
    "campus": "犬山",
@@ -43850,7 +43845,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nagoya-keizai-d04",
+   "dept_id": "nagoya-keizai-d01",
    "uni_id": "nagoya-keizai",
    "name": "教育保育学部 子ども学科",
    "campus": "犬山",
@@ -43905,7 +43900,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-toho-d01",
+   "dept_id": "aichi-toho-keiei",
    "uni_id": "aichi-toho",
    "name": "経営学部 地域ビジネス学科",
    "campus": "名古屋",
@@ -43960,7 +43955,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-toho-d02",
+   "dept_id": "aichi-toho-keiei2",
    "uni_id": "aichi-toho",
    "name": "経営学部 国際ビジネス学科",
    "campus": "名古屋",
@@ -44015,7 +44010,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-toho-d03",
+   "dept_id": "aichi-toho-kyoiku",
    "uni_id": "aichi-toho",
    "name": "教育学部 子ども発達学科",
    "campus": "名古屋",
@@ -44070,7 +44065,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-toho-d04",
+   "dept_id": "aichi-toho-d01",
    "uni_id": "aichi-toho",
    "name": "人間健康学部 人間健康学科",
    "campus": "名古屋",
@@ -44124,7 +44119,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "chukyo-gakuin-d01",
+   "dept_id": "chukyo-gakuin-kango",
    "uni_id": "chukyo-gakuin",
    "name": "看護学部 看護学科",
    "campus": "中津川",
@@ -44178,7 +44173,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "chukyo-gakuin-d02",
+   "dept_id": "chukyo-gakuin-keiei",
    "uni_id": "chukyo-gakuin",
    "name": "経営学部 経営学科",
    "campus": "中津川",
@@ -44232,7 +44227,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "chukyo-gakuin-d03",
+   "dept_id": "chukyo-gakuin-kango2",
    "uni_id": "chukyo-gakuin",
    "name": "看護学部 栄養健康学科",
    "campus": "中津川",
@@ -44288,7 +44283,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nufs-d01",
+   "dept_id": "nufs-gaikokugo",
    "uni_id": "nufs",
    "name": "外国語学部 英米語学科",
    "campus": "日進",
@@ -44343,7 +44338,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nufs-d02",
+   "dept_id": "nufs-gaikokugo2",
    "uni_id": "nufs",
    "name": "外国語学部 世界共生学科",
    "campus": "日進",
@@ -44397,7 +44392,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nufs-d03",
+   "dept_id": "nufs-gaikokugo3",
    "uni_id": "nufs",
    "name": "外国語学部 中国語学科",
    "campus": "日進",
@@ -44451,7 +44446,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nufs-d04",
+   "dept_id": "nufs-d01",
    "uni_id": "nufs",
    "name": "世界教養学部 国際日本学科",
    "campus": "日進",
@@ -44505,7 +44500,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nufs-d05",
+   "dept_id": "nufs-d02",
    "uni_id": "nufs",
    "name": "現代国際学部 現代英語学科",
    "campus": "日進",
@@ -44559,7 +44554,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "ngu-d01",
+   "dept_id": "ngu-sho",
    "uni_id": "ngu",
    "name": "商学部 商学科",
    "campus": "名古屋",
@@ -44614,7 +44609,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "ngu-d02",
+   "dept_id": "ngu-keizai",
    "uni_id": "ngu",
    "name": "経済学部 現代経済学科",
    "campus": "名古屋",
@@ -44669,7 +44664,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "ngu-d03",
+   "dept_id": "ngu-keiei",
    "uni_id": "ngu",
    "name": "経営学部 経営学科",
    "campus": "名古屋",
@@ -44723,7 +44718,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "ngu-d04",
+   "dept_id": "ngu-reha",
    "uni_id": "ngu",
    "name": "リハビリテーション学部 理学療法学科",
    "campus": "瀬戸",
@@ -44769,8 +44764,6 @@
     "理学療法士"
    ],
    "interest_tags": [
-    "hokei",
-    "riko",
     "iryo"
    ],
    "employment_fields": [],
@@ -44778,7 +44771,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "ngu-d05",
+   "dept_id": "ngu-reha2",
    "uni_id": "ngu",
    "name": "リハビリテーション学部 作業療法学科",
    "campus": "瀬戸",
@@ -44824,7 +44817,6 @@
     "作業療法士"
    ],
    "interest_tags": [
-    "hokei",
     "iryo"
    ],
    "employment_fields": [],
@@ -44832,7 +44824,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "ngu-d06",
+   "dept_id": "ngu-d01",
    "uni_id": "ngu",
    "name": "スポーツ健康学部 スポーツ健康学科",
    "campus": "瀬戸",
@@ -44886,7 +44878,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nucb-d01",
+   "dept_id": "nucb-sho",
    "uni_id": "nucb",
    "name": "商学部 マーケティング学科",
    "campus": "日進",
@@ -44941,7 +44933,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nucb-d02",
+   "dept_id": "nucb-keiei",
    "uni_id": "nucb",
    "name": "経営学部 経営学科",
    "campus": "日進",
@@ -44995,7 +44987,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nucb-d03",
+   "dept_id": "nucb-keizai",
    "uni_id": "nucb",
    "name": "経済学部 総合政策学科",
    "campus": "日進",
@@ -45050,7 +45042,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nucb-d04",
+   "dept_id": "nucb-kokusai",
    "uni_id": "nucb",
    "name": "国際学部 国際学科",
    "campus": "日進",
@@ -45104,7 +45096,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "nucb-d05",
+   "dept_id": "nucb-d01",
    "uni_id": "nucb",
    "name": "コミュニケーション学部 グローバル教養学科",
    "campus": "日進",
@@ -45159,7 +45151,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "ait-d01",
+   "dept_id": "ait-ko",
    "uni_id": "ait",
    "name": "工学部 機械学科",
    "campus": "八草",
@@ -45213,7 +45205,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "ait-d02",
+   "dept_id": "ait-ko2",
    "uni_id": "ait",
    "name": "工学部 電気学科",
    "campus": "八草",
@@ -45267,7 +45259,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "ait-d03",
+   "dept_id": "ait-ko3",
    "uni_id": "ait",
    "name": "工学部 応用化学科",
    "campus": "八草",
@@ -45321,7 +45313,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "ait-d04",
+   "dept_id": "ait-d01",
    "uni_id": "ait",
    "name": "情報科学部 情報科学科",
    "campus": "八草",
@@ -45375,7 +45367,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "ait-d05",
+   "dept_id": "ait-keiei",
    "uni_id": "ait",
    "name": "経営学部 経営学科",
    "campus": "本山自由ヶ丘",
@@ -45429,7 +45421,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-ika-d01",
+   "dept_id": "aichi-ika-i",
    "uni_id": "aichi-ika",
    "name": "医学部 医学科",
    "campus": "長久手",
@@ -45482,7 +45474,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-ika-d02",
+   "dept_id": "aichi-ika-kango",
    "uni_id": "aichi-ika",
    "name": "看護学部 看護学科",
    "campus": "長久手",
@@ -45537,7 +45529,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "fujita-hu-d01",
+   "dept_id": "fujita-hu-i",
    "uni_id": "fujita-hu",
    "name": "医学部 医学科",
    "campus": "豊明",
@@ -45590,7 +45582,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "fujita-hu-d02",
+   "dept_id": "fujita-hu-d01",
    "uni_id": "fujita-hu",
    "name": "医療科学部 看護学科",
    "campus": "豊明",
@@ -45644,7 +45636,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "fujita-hu-d03",
+   "dept_id": "fujita-hu-d02",
    "uni_id": "fujita-hu",
    "name": "医療科学部 リハビリテーション学科",
    "campus": "豊明",
@@ -45699,7 +45691,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "fujita-hu-d04",
+   "dept_id": "fujita-hu-d03",
    "uni_id": "fujita-hu",
    "name": "医療科学部 臨床検査学科",
    "campus": "豊明",
@@ -45752,7 +45744,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "fujita-hu-d05",
+   "dept_id": "fujita-hu-d04",
    "uni_id": "fujita-hu",
    "name": "医療科学部 臨床工学科",
    "campus": "豊明",
@@ -45806,7 +45798,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "fujita-hu-d06",
+   "dept_id": "fujita-hu-d05",
    "uni_id": "fujita-hu",
    "name": "医療科学部 放射線学科",
    "campus": "豊明",
@@ -45905,8 +45897,6 @@
     "理学療法士"
    ],
    "interest_tags": [
-    "hokei",
-    "riko",
     "iryo"
    ],
    "employment_fields": [],
@@ -45960,7 +45950,6 @@
     "作業療法士"
    ],
    "interest_tags": [
-    "hokei",
     "iryo"
    ],
    "employment_fields": [],
@@ -46075,7 +46064,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "suzuka-iryo-d05",
+   "dept_id": "suzuka-iryo-yaku",
    "uni_id": "suzuka-iryo",
    "name": "薬学部 薬学科",
    "campus": "白子",
@@ -46128,7 +46117,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "suzuka-iryo-d06",
+   "dept_id": "suzuka-iryo-kango",
    "uni_id": "suzuka-iryo",
    "name": "看護学部 看護学科",
    "campus": "千代崎",
@@ -46182,7 +46171,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "shigakkan-d01",
+   "dept_id": "shigakkan-kenkokagaku",
    "uni_id": "shigakkan",
    "name": "健康科学部 体育科学科",
    "campus": "大府",
@@ -46236,7 +46225,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "shigakkan-d02",
+   "dept_id": "shigakkan-kenkokagaku2",
    "uni_id": "shigakkan",
    "name": "健康科学部 栄養科学科",
    "campus": "大府",
@@ -46291,7 +46280,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "shigakkan-d03",
+   "dept_id": "shigakkan-kenkokagaku3",
    "uni_id": "shigakkan",
    "name": "健康科学部 こども健康・教育学科",
    "campus": "大府",
@@ -46347,7 +46336,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "shigakkan-d04",
+   "dept_id": "shigakkan-kenkokagaku4",
    "uni_id": "shigakkan",
    "name": "健康科学部 健康スポーツ科学科",
    "campus": "大府",
@@ -46511,7 +46500,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "tokoha-d01",
+   "dept_id": "tokoha-kyoiku",
    "uni_id": "tokoha",
    "name": "教育学部 初等教育課程",
    "campus": "静岡",
@@ -46566,7 +46555,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "tokoha-d02",
+   "dept_id": "tokoha-kyoiku2",
    "uni_id": "tokoha",
    "name": "教育学部 生涯学習学科",
    "campus": "静岡",
@@ -46620,7 +46609,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "tokoha-d03",
+   "dept_id": "tokoha-hokeniryo",
    "uni_id": "tokoha",
    "name": "保健医療学部 看護学科",
    "campus": "静岡",
@@ -46674,7 +46663,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "tokoha-d04",
+   "dept_id": "tokoha-keiei",
    "uni_id": "tokoha",
    "name": "経営学部 経営学科",
    "campus": "静岡",
@@ -46729,7 +46718,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "tokoha-d05",
+   "dept_id": "tokoha-d01",
    "uni_id": "tokoha",
    "name": "健康プロデュース学部",
    "campus": "浜松",
@@ -46783,7 +46772,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "shizuoka-sanno-d01",
+   "dept_id": "shizuoka-sanno-keiei",
    "uni_id": "shizuoka-sanno",
    "name": "経営学部 経営学科",
    "campus": "藤枝",
@@ -46837,7 +46826,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "shizuoka-sanno-d02",
+   "dept_id": "shizuoka-sanno-sportskagaku",
    "uni_id": "shizuoka-sanno",
    "name": "スポーツ科学部 スポーツ科学科",
    "campus": "藤枝",
@@ -47164,7 +47153,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "gifu-kyoritsu-d01",
+   "dept_id": "gifu-kyoritsu-keizai",
    "uni_id": "gifu-kyoritsu",
    "name": "経済学部 経済学科",
    "campus": "大垣",
@@ -47219,7 +47208,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "gifu-kyoritsu-d02",
+   "dept_id": "gifu-kyoritsu-keiei",
    "uni_id": "gifu-kyoritsu",
    "name": "経営学部 経営学科",
    "campus": "大垣",
@@ -47273,7 +47262,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "gifu-kyoritsu-d03",
+   "dept_id": "gifu-kyoritsu-keiei2",
    "uni_id": "gifu-kyoritsu",
    "name": "経営学部 スポーツ経営学科",
    "campus": "大垣",
@@ -47328,7 +47317,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "gifu-kyoritsu-d04",
+   "dept_id": "gifu-kyoritsu-kango",
    "uni_id": "gifu-kyoritsu",
    "name": "看護学部 看護学科",
    "campus": "大垣",
@@ -47382,7 +47371,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "aichi-bunkyo-d01",
+   "dept_id": "aichi-bunkyo-jinbun",
    "uni_id": "aichi-bunkyo",
    "name": "人文学部 グローバル・スタディーズ学科",
    "campus": "小牧",
@@ -47817,7 +47806,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "shiga-ika-d01",
+   "dept_id": "shiga-ika-i",
    "uni_id": "shiga-ika",
    "name": "医学部 医学科（6年制）",
    "campus": "瀬田",
@@ -47870,7 +47859,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "shiga-ika-d02",
+   "dept_id": "shiga-ika-i2",
    "uni_id": "shiga-ika",
    "name": "医学部 看護学科",
    "campus": "瀬田",
@@ -50625,7 +50614,6 @@
     "一級建築士（要実務）"
    ],
    "interest_tags": [
-    "riko",
     "kenchiku"
    ],
    "employment_fields": [],
@@ -51331,8 +51319,7 @@
     "社会福祉士"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -52413,8 +52400,7 @@
     "社会福祉士（受験資格）"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -52682,8 +52668,7 @@
     "認定心理士"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -55292,8 +55277,7 @@
     "公認心理師(要院)"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -57793,8 +57777,7 @@
     "社会福祉主事（任用）"
    ],
    "interest_tags": [
-    "shakai",
-    "riko"
+    "shakai"
    ],
    "employment_fields": [],
    "zemi": [],
@@ -59213,7 +59196,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kyoto-furitsu-ika-d01",
+   "dept_id": "kyoto-furitsu-ika-i",
    "uni_id": "kyoto-furitsu-ika",
    "name": "医学部 医学科（6年制）",
    "campus": "河原町",
@@ -59266,7 +59249,7 @@
    "data_status": "estimated"
   },
   {
-   "dept_id": "kyoto-furitsu-ika-d02",
+   "dept_id": "kyoto-furitsu-ika-i2",
    "uni_id": "kyoto-furitsu-ika",
    "name": "医学部 看護学科",
    "campus": "広小路",

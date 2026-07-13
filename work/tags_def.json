@@ -4,11 +4,11 @@
   "interest": [
     { "id": "bungaku",   "label": "文学・歴史・哲学",        "dept_keywords": ["文学", "文化", "歴史", "人文"] },
     { "id": "gaikokugo", "label": "外国語・国際",            "dept_keywords": ["外国語", "国際", "英文", "グローバル"] },
-    { "id": "hokei",     "label": "法律・政治",              "dept_keywords": ["法", "政治", "政策"] },
+    { "id": "hokei",     "label": "法律・政治",              "dept_keywords": ["法学", "法律", "政治", "政策"], "dept_keywords_exclude": ["療法"] },
     { "id": "keizai",    "label": "経済・経営・商学",        "dept_keywords": ["経済", "経営", "商", "ビジネス", "政治経済"] },
     { "id": "shakai",    "label": "社会・メディア・心理",    "dept_keywords": ["社会", "メディア", "心理", "コミュニケーション", "現代社会"] },
     { "id": "kyoiku",    "label": "教育・こども",            "dept_keywords": ["教育", "児童", "保育", "こども", "子ども", "発達"] },
-    { "id": "riko",      "label": "理学・工学（ものづくり）", "dept_keywords": ["理", "工", "機械", "電気", "電子", "材料", "物質", "基礎工"] },
+    { "id": "riko",      "label": "理学・工学（ものづくり）", "dept_keywords": ["理学部", "理学科", "理工", "工学", "基礎工", "機械", "電気", "電子", "材料", "物質"], "dept_keywords_exclude": ["心理", "療法"] },
     { "id": "joho",      "label": "情報・データサイエンス",  "dept_keywords": ["情報", "データサイエンス", "システム", "コンピュータ"] },
     { "id": "kenchiku",  "label": "建築・デザイン",          "dept_keywords": ["建築", "デザイン", "住環境", "造形"] },
     { "id": "nogaku",    "label": "農学・食・環境",          "dept_keywords": ["農", "食", "環境", "バイオ", "生命", "和食"] },
