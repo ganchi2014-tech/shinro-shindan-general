@@ -1,0 +1,95 @@
+{
+  "uni_id": "hosei",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/3050/difficulty/",
+    "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf",
+    "https://nyushi.hosei.ac.jp/application/files/7717/4798/4342/data_2025.pdf",
+    "https://www.hosei.ac.jp/careercenter/syushoku/gakubu/",
+    "https://www.hosei.ac.jp/kyoiku/gakubu/"
+  ],
+  "departments": [
+    {
+      "dept_id": "hosei-keiei",
+      "campus": "市ケ谷キャンパス",
+      "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3050/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.0, "2026": 5.8 }, "source_url": "https://nyushi.hosei.ac.jp/nyushi/data/" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "T日程（統一日程）・A方式（個別日程）・英語外部試験利用入試", "source_url": "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用（B方式・C方式）", "source_url": "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf" }
+      ],
+      "employment_fields": ["it", "service", "kinyu", "ryutsu"],
+      "employment_fields_source_url": "https://www.hosei.ac.jp/careercenter/syushoku/gakubu/keiei/",
+      "zemi": [
+        { "name": "佐野嘉秀教授ゼミ（経営学科）", "theme": "人事管理・働き方改革（ディベートや企業訪問のフィールドワーク）", "source_url": "https://www.hosei.ac.jp/info/article-20200406132113/" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "hosei-keizai",
+      "campus": "多摩キャンパス",
+      "hensachi": { "min": 55.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3050/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.8, "2026": 5.4 }, "source_url": "https://nyushi.hosei.ac.jp/nyushi/data/" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "T日程・A方式・英語外部試験利用入試", "source_url": "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用（B方式・C方式）", "source_url": "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf" }
+      ],
+      "employment_fields": ["it", "kinyu", "service", "ryutsu"],
+      "employment_fields_source_url": "https://www.hosei.ac.jp/careercenter/syushoku/gakubu/keizai/",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "hosei-ho",
+      "campus": "市ケ谷キャンパス",
+      "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3050/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.0, "2026": 10.4 }, "source_url": "https://nyushi.hosei.ac.jp/nyushi/data/" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "T日程・A方式・英語外部試験利用入試", "source_url": "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用（B方式・C方式）", "source_url": "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf" }
+      ],
+      "employment_fields": ["it", "koumuin", "kinyu", "service"],
+      "employment_fields_source_url": "https://www.hosei.ac.jp/careercenter/syushoku/gakubu/hogaku",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "hosei-shakai",
+      "campus": "多摩キャンパス",
+      "hensachi": { "min": 55.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3050/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.8, "2026": 6.7 }, "source_url": "https://nyushi.hosei.ac.jp/nyushi/data/" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "T日程・A方式・英語外部試験利用入試", "source_url": "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用（B方式・C方式）", "source_url": "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf" }
+      ],
+      "employment_fields": ["it", "service", "kinyu", "ryutsu"],
+      "employment_fields_source_url": "https://www.hosei.ac.jp/careercenter/syushoku/gakubu/shakai/",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "hosei-d01",
+      "campus": "多摩キャンパス",
+      "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3050/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.3, "2026": 6.8 }, "source_url": "https://nyushi.hosei.ac.jp/nyushi/data/" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "T日程・A方式・英語外部試験利用入試", "source_url": "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用（B方式・C方式）", "source_url": "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf" }
+      ],
+      "employment_fields": ["service", "ryutsu", "it", "sports_kenko"],
+      "employment_fields_source_url": "https://www.hosei.ac.jp/careercenter/syushoku/gakubu/sports",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "hosei-bungaku",
+      "campus": "市ケ谷キャンパス",
+      "hensachi": { "min": 55.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3050/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.1, "2026": 4.6 }, "source_url": "https://nyushi.hosei.ac.jp/nyushi/data/" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "T日程・A方式・英語外部試験利用入試", "source_url": "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用（B方式・C方式）", "source_url": "https://nyushi.hosei.ac.jp/application/files/1617/7975/3265/data_2026.pdf" }
+      ],
+      "employment_fields": ["it", "service", "ryutsu", "kinyu"],
+      "employment_fields_source_url": "https://www.hosei.ac.jp/careercenter/syushoku/gakubu/bungaku",
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は大学公式入試情報サイト掲載の一般選抜結果PDF（data_2026.pdf / data_2025.pdf）から、A方式（学部個別日程）の学部内合計で算出した実質倍率（受験者数÷合格者数）。T日程・英語外部・共テ利用は含まない。法学部2026のA方式は合格者絞り込みにより10.4倍（法律12.0・政治14.0・国際政治5.9）と前年から大きく上昇。employment_fieldsはキャリアセンター学部別就職状況の業種別上位に基づく。スポーツ健康学部のsports_kenkoはコナミスポーツ・東京ドーム等の就職実績記載に基づく。"
+}

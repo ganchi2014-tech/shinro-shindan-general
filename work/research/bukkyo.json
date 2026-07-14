@@ -1,0 +1,108 @@
+{
+ "uni_id": "bukkyo",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4030/difficulty/",
+  "https://www.bukkyo-u.ac.jp/find/exam/result/",
+  "https://www.bukkyo-u.ac.jp/admission/design/file/exam/result/2026-type-exam_a.pdf",
+  "https://www.bukkyo-u.ac.jp/admission/design/file/exam/result/2025-type-exam_a.pdf",
+  "https://www.bukkyo-u.ac.jp/find/exam/",
+  "https://www.bukkyo-u.ac.jp/career/data/decision.html",
+  "https://www.bukkyo-u.ac.jp/admission/about/campus/"
+ ],
+ "departments": [
+  {
+   "dept_id": "bukkyo-kyoiku",
+   "hensachi": { "min": 42.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4030/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 11.7, "2026": 6.7 }, "source_url": "https://www.bukkyo-u.ac.jp/find/exam/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（自己推薦制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "ippan", "available": true, "note": "A・B・C日程", "source_url": "https://www.bukkyo-u.ac.jp/admission/design/file/exam/result/2026-type-exam_a.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（前期・後期）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "bukkyo-shakai",
+   "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4030/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.8, "2026": 5.4 }, "source_url": "https://www.bukkyo-u.ac.jp/find/exam/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（自己推薦制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "ippan", "available": true, "note": "A・B・C日程", "source_url": "https://www.bukkyo-u.ac.jp/admission/design/file/exam/result/2026-type-exam_a.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（前期・後期）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" }
+   ],
+   "employment_fields": ["maker", "kinyu", "service"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "bukkyo-d01",
+   "campus": "二条キャンパス",
+   "hensachi": { "min": 40.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4030/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.4, "2026": 3.3 }, "source_url": "https://www.bukkyo-u.ac.jp/find/exam/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（自己推薦制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "ippan", "available": true, "note": "A・B・C日程", "source_url": "https://www.bukkyo-u.ac.jp/admission/design/file/exam/result/2026-type-exam_a.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（前期・後期）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "bukkyo-d02",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4030/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 6.2, "2026": 4.1 }, "source_url": "https://www.bukkyo-u.ac.jp/find/exam/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（自己推薦制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "ippan", "available": true, "note": "A・B・C日程", "source_url": "https://www.bukkyo-u.ac.jp/admission/design/file/exam/result/2026-type-exam_a.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（前期・後期）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "kyoiku", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "bukkyo-d03",
+   "hensachi": { "min": 37.5, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4030/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.6, "2026": 3.8 }, "source_url": "https://www.bukkyo-u.ac.jp/find/exam/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（自己推薦制）・宗門後継者選抜あり", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "ippan", "available": true, "note": "A・B・C日程", "source_url": "https://www.bukkyo-u.ac.jp/admission/design/file/exam/result/2026-type-exam_a.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（前期・後期）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" }
+   ],
+   "employment_fields": ["ryutsu", "kyoiku", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "bukkyo-bungaku",
+   "hensachi": { "min": 37.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4030/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.7, "2026": 2.7 }, "source_url": "https://www.bukkyo-u.ac.jp/find/exam/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（自己推薦制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "ippan", "available": true, "note": "A・B・C日程", "source_url": "https://www.bukkyo-u.ac.jp/admission/design/file/exam/result/2026-type-exam_a.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（前期・後期）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" }
+   ],
+   "employment_fields": ["maker", "kinyu", "service"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "bukkyo-shakaifukushi",
+   "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4030/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.5, "2026": 5.3 }, "source_url": "https://www.bukkyo-u.ac.jp/find/exam/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（自己推薦制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" },
+    { "type": "ippan", "available": true, "note": "A・B・C日程", "source_url": "https://www.bukkyo-u.ac.jp/admission/design/file/exam/result/2026-type-exam_a.pdf" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（前期・後期）", "source_url": "https://www.bukkyo-u.ac.jp/find/exam/" }
+   ],
+   "employment_fields": ["iryo_fukushi", "koumuin"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率は大学公式「一般選抜（A日程）状況表」の競争倍率（受験者数÷合格者数=実質倍率）。学部内複数学科は受験者・合格者を合算して算出（教育学部はmanifestが教育学科のため教育学科のみの値。2025年11.7倍→2026年6.7倍と大幅変動）。保健医療技術学部は理学療法+作業療法の合算（看護学科は2025年度まで同学部内、2026年度状況表では看護学部として別掲＝看護学部新設に伴う分離とみられる）。偏差値は河合塾提供データ（パスナビ）。入試方式（総合型=自己推薦制/公募制推薦/一般A・B・C/共テ利用前期・後期）は大学公式入試サイトの全学方式一覧に基づく。就職系統は公式キャリアサイトの進路決定状況・学科別就職先ページに基づく。"
+}

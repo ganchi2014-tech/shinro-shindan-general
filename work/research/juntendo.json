@@ -1,0 +1,81 @@
+{
+  "uni_id": "juntendo",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/2460/difficulty/",
+    "https://www.juntendo.ac.jp/admission/exam/result/",
+    "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf",
+    "https://www.juntendo.ac.jp/assets/d0f3da3b73c22160c66826471c6991c0.pdf",
+    "https://www.juntendo.ac.jp/academics/faculty/hss/career/employment/",
+    "https://www.juntendo.ac.jp/academics/faculty/hs/career/employment/",
+    "https://www.juntendo.ac.jp/academics/faculty/nurs/education/career/",
+    "https://www.juntendo.ac.jp/academics/faculty/ila/career/support/index_5.html",
+    "https://www.juntendo.ac.jp/access/"
+  ],
+  "departments": [
+    {
+      "dept_id": "juntendo-sportskenko",
+      "campus": "さくらキャンパス（千葉）",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2460/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.1, "2026": 5.2 }, "source_url": "https://www.juntendo.ac.jp/admission/exam/result/" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "一般選抜A・B・C日程（基本方式／高得点2科目方式／高得点1科目＋面接方式）", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（前期S・A・B・C・D方式、後期E方式）", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" },
+        { "type": "sogo", "available": true, "note": "総合型選抜Ⅰ〜Ⅲ（一般型・教員志望アピール型・活動実績重視型・英語資格利用型）", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募推薦方式・特別推薦A/B方式）", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" }
+      ],
+      "employment_fields": ["kyoiku", "koumuin", "sports_kenko", "kinyu"],
+      "employment_fields_source_url": "https://www.juntendo.ac.jp/academics/faculty/hss/career/employment/",
+      "zemi": [
+        { "name": "スポーツ医学研究室", "theme": "スポーツと医学の融合によるアスリート・健康支援の研究", "source_url": "https://sportsmed.juntendo.ac.jp/" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "juntendo-d01",
+      "campus": "浦安キャンパス",
+      "hensachi": { "min": 50.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2460/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.4, "2026": 2.6 }, "source_url": "https://www.juntendo.ac.jp/admission/exam/result/" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "一般選抜A・B日程", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（3・4・5科目方式、一般併用方式）", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" },
+        { "type": "sogo", "available": true, "note": "総合型選抜", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" }
+      ],
+      "employment_fields": ["iryo_fukushi"],
+      "employment_fields_source_url": "https://www.juntendo.ac.jp/academics/faculty/nurs/education/career/",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "juntendo-hokeniryo",
+      "campus": "本郷・お茶の水キャンパス",
+      "hensachi": { "min": 47.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2460/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.5, "2026": 4.0 }, "source_url": "https://www.juntendo.ac.jp/admission/exam/result/" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "一般選抜A・B日程（理学療法学科・診療放射線学科）", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" },
+        { "type": "sogo", "available": true, "note": "総合型選抜", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制・指定校）", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" }
+      ],
+      "employment_fields": ["iryo_fukushi"],
+      "employment_fields_source_url": "https://www.juntendo.ac.jp/academics/faculty/hs/career/employment/",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "juntendo-kokusaikyoyo",
+      "campus": "本郷・お茶の水キャンパス",
+      "hensachi": { "min": 45.0, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2460/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.0, "2026": 2.9 }, "source_url": "https://www.juntendo.ac.jp/admission/exam/result/" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A・B日程／中期／後期", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（前期A〜D方式・後期A/B方式）", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" },
+        { "type": "sogo", "available": true, "note": "総合型選抜Ⅰ・Ⅱ・活動実績型", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜Ⅰ・Ⅱ（公募制推薦／指定校推薦）", "source_url": "https://www.juntendo.ac.jp/assets/e11bcdf033920a63116f407ac330273c.pdf" }
+      ],
+      "employment_fields": ["it", "iryo_fukushi", "kinyu", "service"],
+      "employment_fields_source_url": "https://www.juntendo.ac.jp/academics/faculty/ila/career/support/index_5.html",
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は大学公式の入試結果一覧PDF（2026年度=e11bcdf0…pdf、2025年度=d0f3da3b…pdf）から一般選抜（A/B/C日程等）の学部内合計で算出した実質倍率（受験者数÷合格者数）。共通テスト利用・併用選抜は含まない。保健医療学部は理学療法学科＋診療放射線学科の合算。合格者数は繰上合格を含む。医療看護学部は附属6病院への就職が8割以上（学部公式キャリアページ）。国際教養学部は医療業界への就職が一定数いるのが特長（学部公式進路実績ページ、業種別で情報通信15%・医療13%・製造9%）。スポーツ健康科学部の2026年度一般選抜は合格者絞り込みで倍率上昇（3.1→5.2）。"
+}

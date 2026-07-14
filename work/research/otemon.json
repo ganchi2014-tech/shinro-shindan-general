@@ -1,0 +1,71 @@
+{
+ "uni_id": "otemon",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4065/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/4065/bairitsu/",
+  "https://nyushi.otemon.ac.jp/admission/data.html",
+  "https://nyushi.otemon.ac.jp/admission/pdf/26data.pdf",
+  "https://www.otemon.ac.jp/career/date.html",
+  "https://nyushi.otemon.ac.jp/guide/career.html",
+  "https://www.otemon.ac.jp/guide/campus/campusmap.html"
+ ],
+ "departments": [
+  {
+   "dept_id": "otemon-shakai",
+   "campus": "茨木総持寺キャンパス",
+   "hensachi": { "min": 40.0, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4065/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.0, "2026": 7.3 }, "source_url": "https://nyushi.otemon.ac.jp/admission/pdf/26data.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（アサーティブ入試）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般入試（前期・後期、複数教科型）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）" }
+   ],
+   "employment_fields": ["kensetsu", "maker", "kinyu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "otemon-keiei",
+   "campus": "茨木総持寺キャンパス",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4065/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.6, "2026": 7.8 }, "source_url": "https://nyushi.otemon.ac.jp/admission/pdf/26data.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（アサーティブ入試）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般入試（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）" }
+   ],
+   "employment_fields": ["maker", "ryutsu", "kinyu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "otemon-ho",
+   "campus": "茨木総持寺キャンパス",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4065/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.4, "2026": 4.5 }, "source_url": "https://nyushi.otemon.ac.jp/admission/pdf/26data.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（アサーティブ入試）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般入試（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "otemon-shinri",
+   "campus": "茨木安威キャンパス（2年次以降。1年次は茨木総持寺）",
+   "hensachi": { "min": 42.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4065/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.1, "2026": 5.9 }, "source_url": "https://nyushi.otemon.ac.jp/admission/pdf/26data.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（アサーティブ入試）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般入試（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）" }
+   ],
+   "employment_fields": ["maker", "service"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "2026年倍率は大学公式「2026年度入試結果データ」PDF（26data.pdf）の一般入試前期・後期＋共通テスト利用入試の学科・方式別の受験者数・合格者数を学部単位で合算した実質倍率（受験者÷合格者、調査者算出の代表値）。2025年倍率はパスナビ掲載の一般選抜合計実質倍率（社会4.0・経営4.6・法3.4・心理5.1）。心理学部は心理学専攻＋人工知能・認知科学専攻を合算。法学部は2024年新設のため卒業生の就職実績が未公表（employment_fields省略）。偏差値は河合塾提供データ（パスナビ掲載）。"
+}

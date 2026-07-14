@@ -1,0 +1,198 @@
+{
+  "uni_id": "kansai-univ",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/4240/difficulty/",
+    "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html",
+    "https://www.nyusi.kansai-u.ac.jp/admission/2026_result/",
+    "https://www.nyusi.kansai-u.ac.jp/admission/",
+    "https://www.nyusi.kansai-u.ac.jp/admission/recommendation_science/",
+    "https://www.kansai-u.ac.jp/ja/about/campus/",
+    "https://www.kansai-u.ac.jp/career/examinee/about.html"
+  ],
+  "departments": [
+    {
+      "dept_id": "kansai-univ-ho",
+      "campus": "千里山キャンパス",
+      "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.8, "2026": 4.5 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "全学日程1・2、学部独自日程", "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" }
+      ],
+      "employment_fields": ["koumuin", "maker", "kinyu", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-sho",
+      "campus": "千里山キャンパス",
+      "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.2, "2026": 5.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試を実施（小論文2種類＋面接）", "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/" }
+      ],
+      "employment_fields": ["maker", "it", "kinyu", "ryutsu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-keizai",
+      "campus": "千里山キャンパス",
+      "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.1, "2026": 5.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" }
+      ],
+      "employment_fields": ["kinyu", "maker", "it", "koumuin"],
+      "zemi": [
+        { "name": "宇都宮浄人ゼミ", "theme": "交通とまちづくり", "source_url": "https://www.kansai-u.ac.jp/Fc_eco/faculty/seminar/" },
+        { "name": "石井光ゼミ", "theme": "企業の戦略的行動や産業の動きを経済学的な視点から考える", "source_url": "https://www.kansai-u.ac.jp/Fc_eco/faculty/seminar/" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-shakai",
+      "campus": "千里山キャンパス",
+      "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.6, "2026": 5.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" }
+      ],
+      "employment_fields": ["it", "maker", "kinyu", "ryutsu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-d01",
+      "campus": "堺キャンパス",
+      "hensachi": { "min": 50.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 6.7, "2026": 5.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" }
+      ],
+      "employment_fields": ["kyoiku", "iryo_fukushi"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-bungaku",
+      "campus": "千里山キャンパス",
+      "hensachi": { "min": 52.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.6, "2026": 4.8 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" }
+      ],
+      "employment_fields": ["koumuin", "kyoiku", "kinyu", "ryutsu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-d02",
+      "campus": "千里山キャンパス",
+      "hensachi": { "min": 52.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.9, "2026": 6.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" }
+      ],
+      "employment_fields": ["maker", "kinyu", "it", "koumuin"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-gaikokugo",
+      "campus": "千里山キャンパス",
+      "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.0, "2026": 4.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" }
+      ],
+      "employment_fields": ["maker", "service", "ryutsu", "kinyu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-sogojoho",
+      "campus": "高槻キャンパス",
+      "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.0, "2026": 4.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" }
+      ],
+      "employment_fields": ["it", "maker", "kinyu"],
+      "zemi": [
+        { "name": "堀ゼミ", "theme": "ユーザ中心デザインを軸にWeb制作・アプリ開発を通じて使いやすさを研究", "source_url": "https://www.kansai-u.ac.jp/Fc_inf/fm/research/research9.html" },
+        { "name": "林ゼミ", "theme": "心理実験やCG・映像など文理総合的なテーマの研究", "source_url": "https://www.kansai-u.ac.jp/Fc_inf/fm/research/research3.html" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-d03",
+      "campus": "高槻ミューズキャンパス",
+      "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.2, "2026": 7.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" }
+      ],
+      "employment_fields": ["koumuin", "kensetsu", "maker", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-d04",
+      "campus": "千里山キャンパス",
+      "hensachi": { "min": 50.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.7, "2026": 3.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" },
+        { "type": "koubo", "available": true, "note": "理工系3学部で公募制推薦入試を実施", "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/recommendation_science/" },
+        { "type": "sogo", "available": true, "note": "AO入試を実施（女子特別入試もあり）", "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/" }
+      ],
+      "employment_fields": ["it", "maker"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-d05",
+      "campus": "千里山キャンパス",
+      "hensachi": { "min": 50.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.2, "2026": 3.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" },
+        { "type": "koubo", "available": true, "note": "理工系3学部で公募制推薦入試を実施", "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/recommendation_science/" },
+        { "type": "sogo", "available": true, "note": "AO入試を実施（女子特別入試もあり）", "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/" }
+      ],
+      "employment_fields": ["kensetsu", "koumuin"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-d06",
+      "campus": "千里山キャンパス",
+      "hensachi": { "min": 52.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.9, "2026": 3.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" },
+        { "type": "koubo", "available": true, "note": "理工系3学部で公募制推薦入試を実施", "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/recommendation_science/" },
+        { "type": "sogo", "available": true, "note": "AO入試を実施", "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/" }
+      ],
+      "employment_fields": ["maker", "shokuhin"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kansai-univ-d07",
+      "campus": "吹田みらいキャンパス",
+      "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4240/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.1, "2026": 5.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2533.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.nyusi.kansai-u.ac.jp/admission/common/" }
+      ],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は河合塾Kei-Net掲載の一般選抜合計の実質倍率（受験者数÷合格者数）。大学公式の入試結果はデジタルブック形式（https://www.nyusi.kansai-u.ac.jp/admission/2026_result/）のためKei-Net集計値を採用。偏差値はパスナビ掲載の河合塾提供値（2027年度入試予想）。ビジネスデータサイエンス学部は2025年4月新設（吹田みらいキャンパス）で卒業生未輩出のため就職系統は省略。人間健康学部の就職系統は学部公式の教員採用試験合格実績・社会福祉士国家試験合格率（https://www.kansai-u.ac.jp/Fc_hw/career/index.html）に基づく。就職系統の出典: 法=https://www.kansai-u.ac.jp/Fc_law/career/faculty/employment.html、商=https://www.kansai-u.ac.jp/Fc_com/data/、経済=https://www.kansai-u.ac.jp/Fc_eco/career/examinee/、社会=https://www.kansai-u.ac.jp/Fc_soc/career/、政策創造=https://www.kansai-u.ac.jp/Fc_policy/career/index.html、外国語=https://www.kansai-u.ac.jp/fl/career/recruit.html、総合情報=https://www.kansai-u.ac.jp/Fc_inf/ss/results/results.html、社会安全=https://www.kansai-u.ac.jp/Fc_ss/career/newest.html、理工系3学部=https://www.kansai-u.ac.jp/stem/career.html、文=https://passnavi.obunsha.co.jp/univ/4240/shinro/?facultyID=010。キャンパスは大学公式（https://www.kansai-u.ac.jp/ja/about/campus/）で確認。AO入試（総合型）・公募制推薦の実施学部は公式入試サイト（https://www.nyusi.kansai-u.ac.jp/admission/）掲載分のみ記載（公募制推薦=商学部・理工系3学部、AO=理工系3学部）。"
+}

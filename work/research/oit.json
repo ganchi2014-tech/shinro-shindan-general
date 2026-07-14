@@ -1,0 +1,89 @@
+{
+  "uni_id": "oit",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/4130/difficulty/",
+    "https://www.keinet.ne.jp/exam/past/result/ippan/private/2523.html",
+    "https://www.oit.ac.jp/admission/result/",
+    "https://www.oit.ac.jp/oit/access/index.html",
+    "https://www.oit.ac.jp/laboratory/"
+  ],
+  "departments": [
+    {
+      "dept_id": "oit-ko",
+      "campus": "大宮キャンパス",
+      "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4130/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.0, "2026": 3.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2523.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "AO入試（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "ippan", "available": true, "note": "前期A・B/後期D日程（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用型（出典: https://www.oit.ac.jp/admission/result/）" }
+      ],
+      "employment_fields": ["maker", "it"],
+      "zemi": [
+        { "name": "材料設計工学研究室", "theme": "材料の破壊力学・圧電セラミックスなど壊れない製品のための材料設計研究", "source_url": "https://www.oit.ac.jp/laboratory/room/118" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "oit-ko2",
+      "campus": "大宮キャンパス",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4130/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.0, "2026": 3.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2523.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "AO入試（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "ippan", "available": true, "note": "前期A・B/後期D日程（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用型（出典: https://www.oit.ac.jp/admission/result/）" }
+      ],
+      "zemi": [
+        { "name": "メカトロニクス研究室", "theme": "モータ制御・磁気浮上・ワイヤレス給電など電気エネルギーの高効率利用", "source_url": "https://www.oit.ac.jp/laboratory/room/44" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "oit-d01",
+      "campus": "枚方キャンパス",
+      "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4130/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.1, "2026": 3.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2523.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "AO入試（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "ippan", "available": true, "note": "前期A・B/後期D日程（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用型（出典: https://www.oit.ac.jp/admission/result/）" }
+      ],
+      "employment_fields": ["it", "maker"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "oit-d02",
+      "campus": "梅田キャンパス",
+      "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4130/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.4, "2026": 3.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2523.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "AO入試（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "ippan", "available": true, "note": "前期A・B/後期D日程（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用型（出典: https://www.oit.ac.jp/admission/result/）" }
+      ],
+      "employment_fields": ["maker", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "oit-d03",
+      "campus": "大宮キャンパス",
+      "hensachi": { "min": 45.0, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4130/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.4, "2026": 4.5 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2523.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "AO入試（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "ippan", "available": true, "note": "前期/後期日程（出典: https://www.oit.ac.jp/admission/result/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用型（出典: https://www.oit.ac.jp/admission/result/）" }
+      ],
+      "employment_fields": ["maker", "kinyu", "ryutsu", "it"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は河合塾Kei-Net掲載の一般選抜入試結果（大学発表に基づく前期＋後期合算、共通テスト利用を除く）の志願者数÷合格者数で算出した志願倍率。2025年度=2025年4月入学、2026年度=2026年4月入学。工学部は学科別でなく学部合算値を機械工学科・電気電子システム工学科の代表値として使用。偏差値はパスナビ掲載の河合塾ボーダー偏差値（2026年度入試）。公式入試結果はデジタルパンフレット形式のため数値抽出はKei-Net経由。電気電子システム工学科の学科別就職ページは確認できずemployment_fieldsを省略。"
+}

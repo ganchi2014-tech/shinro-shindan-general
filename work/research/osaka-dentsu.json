@@ -1,0 +1,74 @@
+{
+  "uni_id": "osaka-dentsu",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/4200/difficulty/",
+    "https://www.keinet.ne.jp/exam/past/result/ippan/private/2529.html",
+    "https://www.osakac.ac.jp/examinee/admission/list/",
+    "https://www.osakac.ac.jp/institution/campus/neyagawa/",
+    "https://www.osakac.ac.jp/institution/campus/shijonawate/",
+    "https://www.osakac.ac.jp/career/job/result/"
+  ],
+  "departments": [
+    {
+      "dept_id": "osaka-dentsu-ko",
+      "campus": "寝屋川キャンパス",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4200/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.1, "2026": 2.5 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2529.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜AO入学試験（出典: https://www.osakac.ac.jp/examinee/admission/list/）" },
+        { "type": "koubo", "available": true, "note": "公募推薦入学試験 前期/後期（出典: https://www.osakac.ac.jp/examinee/admission/list/）" },
+        { "type": "ippan", "available": true, "note": "一般入学試験 前期/中期/後期（出典: https://www.osakac.ac.jp/examinee/admission/list/）" },
+        { "type": "kyotsu", "available": true, "note": "一般入学試験 共通テスト方式（出典: https://www.osakac.ac.jp/examinee/admission/list/）" }
+      ],
+      "employment_fields": ["maker", "kensetsu", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "osaka-dentsu-d01",
+      "campus": "寝屋川キャンパス",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4200/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.7, "2026": 2.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2529.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜AO入学試験（出典: https://www.osakac.ac.jp/examinee/admission/list/）" },
+        { "type": "koubo", "available": true, "note": "公募推薦入学試験 前期/後期（出典: https://www.osakac.ac.jp/examinee/admission/list/）" },
+        { "type": "ippan", "available": true, "note": "一般入学試験 前期/中期/後期（出典: https://www.osakac.ac.jp/examinee/admission/list/）" },
+        { "type": "kyotsu", "available": true, "note": "一般入学試験 共通テスト方式（出典: https://www.osakac.ac.jp/examinee/admission/list/）" }
+      ],
+      "employment_fields": ["it", "maker"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "osaka-dentsu-sogojoho",
+      "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4200/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.6, "2026": 4.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2529.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜AO入学試験（出典: https://www.osakac.ac.jp/examinee/admission/list/）" },
+        { "type": "koubo", "available": true, "note": "公募推薦入学試験 前期/後期（出典: https://www.osakac.ac.jp/examinee/admission/list/）" },
+        { "type": "ippan", "available": true, "note": "一般入学試験 前期/中期/後期（出典: https://www.osakac.ac.jp/examinee/admission/list/）" },
+        { "type": "kyotsu", "available": true, "note": "一般入学試験 共通テスト方式（出典: https://www.osakac.ac.jp/examinee/admission/list/）" }
+      ],
+      "employment_fields": ["it", "maker"],
+      "zemi": [
+        { "name": "ゲームエンジニアリング研究室", "theme": "ゲーム工学とデジタル治療（DTx）・eスポーツ・認知ヘルスケアへの応用", "source_url": "https://www.osakac.ac.jp/faculty/isa-gr/digital-games/labs.php" },
+        { "name": "デジタルカルチャー研究室", "theme": "3次元計測とインタラクティブ技術によるデジタル文化財", "source_url": "https://www.osakac.ac.jp/faculty/isa-gr/digital-games/labs.php" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "osaka-dentsu-d02",
+      "campus": "四條畷キャンパス",
+      "hensachi": { "min": 35.0, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4200/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.7, "2026": 2.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2529.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜AO入学試験（出典: https://www.osakac.ac.jp/examinee/admission/list/）" },
+        { "type": "koubo", "available": true, "note": "公募推薦入学試験 前期/後期（出典: https://www.osakac.ac.jp/examinee/admission/list/）" },
+        { "type": "ippan", "available": true, "note": "一般入学試験 前期/中期/後期（出典: https://www.osakac.ac.jp/examinee/admission/list/）" },
+        { "type": "kyotsu", "available": true, "note": "一般入学試験 共通テスト方式（出典: https://www.osakac.ac.jp/examinee/admission/list/）" }
+      ],
+      "employment_fields": ["iryo_fukushi", "maker"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は河合塾Kei-Net掲載の一般選抜入試結果（大学発表に基づく）の学部合算志願者数÷合格者数で算出した志願倍率（共通テスト方式含む集計はKei-Net表記に依拠）。医療健康科学部は現在「健康情報学部」（医療工学科・理学療法学科等）に改組されており、偏差値・倍率は健康情報学部の値を使用。総合情報学部デジタルゲーム学科は2026年4月に改組（新デジタルゲーム学科開設）。総合情報学部のキャンパスは改組に伴い公式で明確に確認できなかったため省略。偏差値はパスナビ掲載の河合塾ボーダー偏差値（2026年度、2026年7月1日更新）。"
+}

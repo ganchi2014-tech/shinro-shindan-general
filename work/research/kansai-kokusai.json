@@ -1,0 +1,68 @@
+{
+ "uni_id": "kansai-kokusai",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4382/difficulty/",
+  "https://search.keinet.ne.jp/2581/general/exam_result",
+  "https://www.kuins.ac.jp/lifesupport/career/situation.html",
+  "https://www.kuins.ac.jp/about/campus_guide/access.html",
+  "https://www.kuins.ac.jp/admission/"
+ ],
+ "departments": [
+  {
+   "dept_id": "kansai-kokusai-kyoiku",
+   "campus": "尼崎キャンパス",
+   "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4382/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.2, "2026": 1.3 }, "source_url": "https://search.keinet.ne.jp/2581/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（河合塾Kei-Netに総合型選抜入試結果掲載あり）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式" }
+   ],
+   "employment_fields": ["kyoiku", "iryo_fukushi"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kansai-kokusai-hokeniryo",
+   "hensachi": { "min": 35.0, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4382/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.2, "2026": 1.2 }, "source_url": "https://search.keinet.ne.jp/2581/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募）" },
+    { "type": "ippan", "available": true, "note": "一般選抜" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kansai-kokusai-d01",
+   "campus": "神戸山手キャンパス",
+   "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4382/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.2, "2026": 1.3 }, "source_url": "https://search.keinet.ne.jp/2581/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募）" },
+    { "type": "ippan", "available": true, "note": "一般選抜" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式" }
+   ],
+   "employment_fields": ["service"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kansai-kokusai-keiei",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4382/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.5, "2026": 1.2 }, "source_url": "https://search.keinet.ne.jp/2581/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募）" },
+    { "type": "ippan", "available": true, "note": "一般選抜" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式" }
+   ],
+   "employment_fields": ["maker", "ryutsu", "kinyu"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "【学部改組】国際コミュニケーション学部（kansai-kokusai-d01）は2025年4月にグローバル学部グローバル学科へ改組（2023年に英語コミュニケーション学科→グローバルコミュニケーション学科に改称）。d01の数値は現行グローバル学部の値。2026年4月には情報学部情報デザイン学科を新設。倍率は河合塾Kei-Net大学検索システムの一般入試結果の学部集計（実質倍率＝受験者÷合格者。2026年度: 教育88/69=1.3・グローバル127/98=1.3・経営142/114=1.2・保健医療113/92=1.2）。偏差値は河合塾提供データ（パスナビ掲載、2026年7月1日時点）。就職系統は大学公式「就職状況・主な就職先」ページ（経営=メーカー・流通・金融、看護=病院、教育福祉=教員採用47名・保育、グローバルコミュニケーション=観光・航空）。キャンパスは公式キャンパス案内より教育=尼崎、グローバル=神戸山手（経営・保健医療は複数キャンパス記載があり確定できないため省略）。"
+}

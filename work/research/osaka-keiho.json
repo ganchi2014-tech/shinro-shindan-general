@@ -1,0 +1,70 @@
+{
+ "uni_id": "osaka-keiho",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4110/difficulty/",
+  "https://www.keiho-u.ac.jp/admission/guidance/deta.html",
+  "https://www.keiho-u.ac.jp/admission/guidance/otsaen00000002sx-att/keiho_2025.pdf",
+  "https://www.keiho-u.ac.jp/career/employment-results.html",
+  "https://www.keiho-u.ac.jp/about/campus/hanaoka.html"
+ ],
+ "departments": [
+  {
+   "dept_id": "osaka-keiho-ho",
+   "campus": "花岡キャンパス／八尾駅前キャンパス（全学部が両キャンパスを併用）",
+   "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4110/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.2, "2026": 4.8 }, "source_url": "https://www.keiho-u.ac.jp/admission/guidance/deta.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "学部AO入試・特色入試（総合型選抜、I〜III期）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦試験（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般試験（前期・中期・後期、共通テストプラス型あり）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（I期・II期）" }
+   ],
+   "employment_fields": ["koumuin", "kinyu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "osaka-keiho-keizai",
+   "campus": "花岡キャンパス／八尾駅前キャンパス（全学部が両キャンパスを併用）",
+   "hensachi": { "min": 37.5, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4110/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.8, "2026": 3.6 }, "source_url": "https://www.keiho-u.ac.jp/admission/guidance/deta.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "学部AO入試・特色入試（総合型選抜）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦試験（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般試験（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（I期・II期）" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "osaka-keiho-keiei",
+   "campus": "花岡キャンパス／八尾駅前キャンパス（全学部が両キャンパスを併用）",
+   "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4110/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.3, "2026": 5.6 }, "source_url": "https://www.keiho-u.ac.jp/admission/guidance/deta.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "学部AO入試・特色入試（総合型選抜）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦試験（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般試験（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（I期・II期）" }
+   ],
+   "employment_fields": ["ryutsu", "kinyu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "osaka-keiho-kokusai",
+   "campus": "花岡キャンパス／八尾駅前キャンパス（全学部が両キャンパスを併用）",
+   "hensachi": { "min": 37.5, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4110/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.5, "2026": 2.5 }, "source_url": "https://www.keiho-u.ac.jp/admission/guidance/deta.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "学部AO入試・特色入試（総合型選抜）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦試験（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般試験（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（I期・II期）" }
+   ],
+   "employment_fields": ["service", "ryutsu"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率は一般試験・前期の競争倍率（実質倍率＝受験者÷合格者）を代表値として採用。2026年度は大学公式入試結果ページ（deta.html: 経済3.6・経営5.6・法4.8・国際2.5）、2025年度は公式PDF keiho_2025.pdf（経済2.8・経営3.3・法3.2・国際2.5）。中期・後期・共通テスト利用は別掲。キャンパスは花岡（共通教育中心）と八尾駅前（専門教育中心）を全学部が併用（公式キャンパスページ）。就職系統は公式就職実績ページ（全学: 公務員合格128名・金融保険・流通小売・運輸等）に基づき、法学部は「公務員就職率2年連続大阪私大1位」（公式ニュース2024/02/27）からkoumuinを筆頭に付与。全学傾向を学部に割り当てているため参考値。偏差値は河合塾提供データ（パスナビ掲載）。"
+}

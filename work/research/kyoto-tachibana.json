@@ -1,0 +1,150 @@
+{
+  "uni_id": "kyoto-tachibana",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://search.keinet.ne.jp/2497/general/border_rate",
+    "https://search.keinet.ne.jp/2497/general/exam_result",
+    "https://www.keinet.ne.jp/exam/past/result/ippan/private/2497.html",
+    "https://www.tachibana-u.ac.jp/admission/information/result_undergraduate/",
+    "https://www.tachibana-u.ac.jp/admission/information/sogo/",
+    "https://www.tachibana-u.ac.jp/admission/information/recommend/",
+    "https://www.tachibana-u.ac.jp/admission/information/general/",
+    "https://www.tachibana-u.ac.jp/admission/information/center/",
+    "https://passnavi.obunsha.co.jp/univ/3950/shinro",
+    "https://www.tachibana-u.ac.jp/admission/about/campusmap/"
+  ],
+  "departments": [
+    {
+      "dept_id": "kyoto-tachibana-kango",
+      "campus": "京都・山科キャンパス",
+      "hensachi": { "min": 50.0, "max": 52.5, "source_url": "https://search.keinet.ne.jp/2497/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 5.7, "2026": 4.4 }, "source_url": "https://search.keinet.ne.jp/2497/general/exam_result" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "全学科で総合型選抜を実施", "source_url": "https://www.tachibana-u.ac.jp/admission/information/sogo/" },
+        { "type": "koubo", "available": true, "note": "公募推薦（併願制）A・B日程／全学統一マーク式", "source_url": "https://www.tachibana-u.ac.jp/admission/information/recommend/" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A・B・C日程／後期日程", "source_url": "https://www.tachibana-u.ac.jp/admission/information/general/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜 前期／後期", "source_url": "https://www.tachibana-u.ac.jp/admission/information/center/" }
+      ],
+      "employment_fields": ["iryo_fukushi"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kyoto-tachibana-hattatsukyoiku",
+      "campus": "京都・山科キャンパス",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://search.keinet.ne.jp/2497/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 2.4, "2026": 1.9 }, "source_url": "https://search.keinet.ne.jp/2497/general/exam_result" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/sogo/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/recommend/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/center/" }
+      ],
+      "employment_fields": ["kyoiku", "koumuin"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kyoto-tachibana-keiei",
+      "campus": "京都・山科キャンパス",
+      "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2497/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 4.3, "2026": 4.7 }, "source_url": "https://search.keinet.ne.jp/2497/general/exam_result" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/sogo/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/recommend/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/center/" }
+      ],
+      "employment_fields": ["ryutsu", "kinyu", "it"],
+      "zemi": [
+        { "name": "下門ゼミ", "theme": "株式会社ダイエーとの連携プロジェクトなど企業連携型の実践演習", "source_url": "https://www.tachibana-u.ac.jp/archive_business_administration/index_2.html" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kyoto-tachibana-kenkokagaku",
+      "campus": "京都・山科キャンパス",
+      "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://search.keinet.ne.jp/2497/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 4.2, "2026": 4.9 }, "source_url": "https://search.keinet.ne.jp/2497/general/exam_result" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/sogo/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/recommend/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/center/" }
+      ],
+      "employment_fields": ["iryo_fukushi", "koumuin"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kyoto-tachibana-d01",
+      "campus": "京都・山科キャンパス",
+      "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2497/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 2.4, "2026": 4.1 }, "source_url": "https://search.keinet.ne.jp/2497/general/exam_result" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/sogo/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/recommend/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/center/" }
+      ],
+      "employment_fields": ["kinyu", "service", "ryutsu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kyoto-tachibana-bungaku",
+      "campus": "京都・山科キャンパス",
+      "hensachi": { "min": 40.0, "max": 47.5, "source_url": "https://search.keinet.ne.jp/2497/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 4.0, "2026": 3.6 }, "source_url": "https://search.keinet.ne.jp/2497/general/exam_result" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/sogo/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/recommend/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/center/" }
+      ],
+      "employment_fields": ["ryutsu", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kyoto-tachibana-sogoshinri",
+      "campus": "京都・山科キャンパス",
+      "hensachi": { "min": 45.0, "max": 47.5, "source_url": "https://search.keinet.ne.jp/2497/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 5.6, "2026": 6.2 }, "source_url": "https://search.keinet.ne.jp/2497/general/exam_result" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/sogo/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/recommend/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/center/" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kyoto-tachibana-keizai",
+      "campus": "京都・山科キャンパス",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2497/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 4.0, "2026": 5.9 }, "source_url": "https://search.keinet.ne.jp/2497/general/exam_result" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/sogo/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/recommend/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/center/" }
+      ],
+      "employment_fields": ["kinyu", "ryutsu", "it"],
+      "zemi": [
+        { "name": "ランビーノゼミ", "theme": "タイ・タマサート大学やUNHCRアジア太平洋局を訪問する国際経済フィールドワーク", "source_url": "https://www.tachibana-u.ac.jp/archive_economics/" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "kyoto-tachibana-d02",
+      "campus": "京都・山科キャンパス",
+      "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2497/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 2.9, "2026": 3.9 }, "source_url": "https://search.keinet.ne.jp/2497/general/exam_result" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/sogo/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/recommend/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.tachibana-u.ac.jp/admission/information/center/" }
+      ],
+      "employment_fields": ["maker", "kensetsu", "it"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "偏差値は河合塾Kei-Netボーダー偏差値（2026年度予想）。健康科学部は救急救命学科の値（45.0）、工学部は情報工40.0・建築デザイン42.5（新設ロボティクス37.5は対象学科外のため除外）。倍率は河合塾Kei-Net集計の一般選抜（全日程計・学部単位）の実質倍率（受験者数÷合格者数）。2025年度=keinet.ne.jp過去入試結果、2026年度=search.keinet.ne.jp入試結果（大学公式2026年度結果ページとも整合、公式は前期A日程3科目等の日程別掲載）。国際英語学部2025は前期の値。全学部が京都・山科のワンキャンパス（受験生サイト キャンパス紹介で確認）。総合型選抜は全学科実施。公募推薦・一般選抜は全学統一マーク式。2026年4月にデジタルメディア学部・工学部ロボティクス学科・健康科学部臨床工学科を新設（本データの対象学部一覧には含まれない）。総合心理学部の就職系統はパスナビ進路ページに学部別記載が確認できず省略。"
+}

@@ -1,0 +1,66 @@
+{
+ "uni_id": "osaka-gakuin",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4090/difficulty/",
+  "https://www.ogu.ac.jp/admissions/admission/seido/",
+  "https://www.ogu.ac.jp/admissions/assets/files/admission/seido/data2026_jp.pdf",
+  "https://www.ogu.ac.jp/admissions/assets/files/admission/seido/data2025_jp.pdf",
+  "https://www.ogu.ac.jp/support/career/course/data.html"
+ ],
+ "departments": [
+  {
+   "dept_id": "osaka-gakuin-keizai",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4090/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.1, "2026": 1.7 }, "source_url": "https://www.ogu.ac.jp/admissions/admission/seido/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（ファミリー型・スポーツ/文化活動型・オープンキャンパス参加型など）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期、2教科/3教科型）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・中期など）" }
+   ],
+   "employment_fields": ["maker", "kinyu", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "osaka-gakuin-keiei",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4090/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.2, "2026": 2.6 }, "source_url": "https://www.ogu.ac.jp/admissions/admission/seido/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（ファミリー型・スポーツ/文化活動型・オープンキャンパス参加型など）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試" }
+   ],
+   "employment_fields": ["ryutsu", "maker", "kinyu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "osaka-gakuin-ho",
+   "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4090/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.1, "2026": 1.1 }, "source_url": "https://www.ogu.ac.jp/admissions/admission/seido/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（ファミリー型・スポーツ/文化活動型・オープンキャンパス参加型など）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "ryutsu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "osaka-gakuin-joho",
+   "hensachi": { "min": 35.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4090/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.1, "2026": 1.6 }, "source_url": "https://www.ogu.ac.jp/admissions/admission/seido/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（ファミリー型・スポーツ/文化活動型・オープンキャンパス参加型など）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（前期・後期）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試" }
+   ],
+   "employment_fields": ["it", "maker"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率は大学公式の入試データPDF（data2026_jp.pdf / data2025_jp.pdf、入試制度ページからリンク）の一般選抜（前期・中期・後期）の受験者数・合格者数を学部単位で合算した実質倍率（受験者÷合格者、調査者算出。経営学部は経営学科＋ホスピタリティ経営学科の合算。2026経営: 894/348=2.6、2025経営: 228/54=4.2）。偏差値は河合塾提供データ（パスナビ掲載、2027年度入試向け最新値。経済35.0・経営40.0・法37.5は単一値、情報35.0〜40.0）。就職系統は大学公式キャリアページの学部別「主な就職先」PDF（2026年3月現在、過去5か年実績: 経済=メーカー・金融・公務員、経営=小売・メーカー・金融、法=公務員（警察/消防多数）・金融・卸小売、情報=情報通信（SIer多数）・メーカー）。キャンパスは単一（大阪府吹田市）のため campus キーは省略。"
+}

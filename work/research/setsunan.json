@@ -1,0 +1,146 @@
+{
+  "uni_id": "setsunan",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://search.keinet.ne.jp/2538/general/border_rate",
+    "https://www.keinet.ne.jp/exam/past/result/ippan/private/2538.html",
+    "https://search.keinet.ne.jp/2538/general/exam_result",
+    "https://www.setsunan.ac.jp/admission/faculty/results/",
+    "https://www.setsunan.ac.jp/admission/",
+    "https://www.setsunan.ac.jp/lp/2026ippan/",
+    "https://www.setsunan.ac.jp/admission/faculty/information/detail/26",
+    "https://search.keinet.ne.jp/2538/outline/campus",
+    "https://passnavi.obunsha.co.jp/univ/4290/shinro"
+  ],
+  "departments": [
+    {
+      "dept_id": "setsunan-keiei",
+      "campus": "寝屋川キャンパス",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2538/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 2.1, "2026": 13.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2538.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜を実施", "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（均等配点／高得点科目重視・オールマーク式）", "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A（2・3科目型）／前期B（2026新規）ほか", "source_url": "https://www.setsunan.ac.jp/lp/2026ippan/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト併用・利用入試（前期・中期）", "source_url": "https://www.setsunan.ac.jp/admission/faculty/information/detail/26" }
+      ],
+      "employment_fields": ["it", "kinyu", "kensetsu"],
+      "zemi": [
+        { "name": "小林ゼミ（経営学部）", "theme": "「想像と創造」をテーマに大学公認TikTok開設やWeb開発など学生の発想を実践化", "source_url": "https://www.setsunan.ac.jp/news/detail/7518" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "setsunan-ho",
+      "campus": "寝屋川キャンパス",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://search.keinet.ne.jp/2538/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 2.3, "2026": 4.5 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2538.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.setsunan.ac.jp/lp/2026ippan/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/faculty/information/detail/26" }
+      ],
+      "employment_fields": ["koumuin", "ryutsu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "setsunan-riko",
+      "campus": "寝屋川キャンパス",
+      "hensachi": { "min": 37.5, "max": 40.0, "source_url": "https://search.keinet.ne.jp/2538/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 2.1, "2026": 2.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2538.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.setsunan.ac.jp/lp/2026ippan/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/faculty/information/detail/26" }
+      ],
+      "employment_fields": ["kensetsu", "maker", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "setsunan-yaku",
+      "campus": "枚方キャンパス",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2538/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 2.0, "2026": 2.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2538.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.setsunan.ac.jp/lp/2026ippan/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/faculty/information/detail/26" }
+      ],
+      "employment_fields": ["iryo_fukushi"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "setsunan-kango",
+      "campus": "枚方キャンパス",
+      "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://search.keinet.ne.jp/2538/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 3.9, "2026": 5.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2538.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.setsunan.ac.jp/lp/2026ippan/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/faculty/information/detail/26" }
+      ],
+      "employment_fields": ["iryo_fukushi"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "setsunan-gaikokugo",
+      "campus": "寝屋川キャンパス",
+      "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://search.keinet.ne.jp/2538/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 1.6, "2026": 5.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2538.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.setsunan.ac.jp/lp/2026ippan/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/faculty/information/detail/26" }
+      ],
+      "employment_fields": ["service", "kinyu", "ryutsu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "setsunan-keizai",
+      "campus": "寝屋川キャンパス",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2538/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 2.6, "2026": 6.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2538.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.setsunan.ac.jp/lp/2026ippan/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/faculty/information/detail/26" }
+      ],
+      "employment_fields": ["kinyu", "ryutsu", "kensetsu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "setsunan-d01",
+      "campus": "寝屋川キャンパス",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://search.keinet.ne.jp/2538/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 2.4, "2026": 4.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2538.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.setsunan.ac.jp/lp/2026ippan/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/faculty/information/detail/26" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "setsunan-d02",
+      "campus": "枚方キャンパス",
+      "hensachi": { "min": 37.5, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2538/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 1.6, "2026": 3.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2538.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.setsunan.ac.jp/lp/2026ippan/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.setsunan.ac.jp/admission/faculty/information/detail/26" }
+      ],
+      "employment_fields": ["shokuhin", "ryutsu", "koumuin"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "偏差値は河合塾Kei-Netボーダー偏差値（2026年度予想）。setsunan-gaikokugo（外国語学部）は2025年4月に国際学部へ改組されており、偏差値・倍率・就職は国際学部の値を記載。倍率は河合塾Kei-Net過去入試結果ページ掲載の一般選抜学部計・実質倍率（受験者数÷合格者数、受験者不明時は志願者÷合格者）。2026年度は志願者が前年比234%と急増し倍率が大幅上昇（特に経営13.0倍）。大学公式の入試結果はsetsunan.ac.jp/admission/faculty/results/にPDFで日程別掲載（前期A3科目等）。現代社会学部（2023年新設）の学部別就職実績はパスナビに未掲載のため省略。キャンパス配置はKei-Net所在地ページで確認（寝屋川=現代社会・法・国際・経営・経済・理工、枚方=薬・看護・農）。"
+}

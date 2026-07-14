@@ -1,0 +1,73 @@
+{
+  "uni_id": "otani",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/3890/difficulty/",
+    "https://www.keinet.ne.jp/exam/past/result/ippan/private/2487.html",
+    "https://www.otani.ac.jp/admission/",
+    "https://www.otani.ac.jp/access.html",
+    "https://www.otani.ac.jp/career_support/sfpjr70000008hht.html"
+  ],
+  "departments": [
+    {
+      "dept_id": "otani-kyoiku",
+      "campus": "京都市北区小山上総町（単一キャンパス）",
+      "hensachi": { "min": 35.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3890/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.1, "2026": 1.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2487.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜入試（出典: https://www.otani.ac.jp/admission/）" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試 前期/後期（出典: https://www.otani.ac.jp/admission/）" },
+        { "type": "ippan", "available": true, "note": "一般選抜 第1期/第2期（出典: https://www.otani.ac.jp/admission/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（出典: https://www.otani.ac.jp/admission/）" }
+      ],
+      "employment_fields": ["kyoiku", "koumuin"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "otani-bungaku",
+      "campus": "京都市北区小山上総町（単一キャンパス）",
+      "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3890/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.0, "2026": 1.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2487.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜入試（出典: https://www.otani.ac.jp/admission/）" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試 前期/後期（出典: https://www.otani.ac.jp/admission/）" },
+        { "type": "ippan", "available": true, "note": "一般選抜 第1期/第2期（出典: https://www.otani.ac.jp/admission/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（出典: https://www.otani.ac.jp/admission/）" }
+      ],
+      "employment_fields": ["koumuin", "kyoiku", "ryutsu", "service"],
+      "zemi": [
+        { "name": "真宗学演習（真宗学科）", "theme": "親鸞の著作・浄土三部経など文献講読を通じた親鸞思想の探究", "source_url": "https://www.otani.ac.jp/faculty/letters/shin-buddhist/subject.html" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "otani-shakai",
+      "campus": "京都市北区小山上総町（単一キャンパス）",
+      "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3890/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.1, "2026": 1.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2487.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜入試（出典: https://www.otani.ac.jp/admission/）" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試 前期/後期（出典: https://www.otani.ac.jp/admission/）" },
+        { "type": "ippan", "available": true, "note": "一般選抜 第1期/第2期（出典: https://www.otani.ac.jp/admission/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（出典: https://www.otani.ac.jp/admission/）" }
+      ],
+      "employment_fields": ["koumuin", "kinyu", "maker", "iryo_fukushi"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "otani-kokusai",
+      "campus": "京都市北区小山上総町（単一キャンパス）",
+      "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3890/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.1, "2026": 1.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2487.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜入試（出典: https://www.otani.ac.jp/admission/）" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試 前期/後期（出典: https://www.otani.ac.jp/admission/）" },
+        { "type": "ippan", "available": true, "note": "一般選抜 第1期/第2期（出典: https://www.otani.ac.jp/admission/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（出典: https://www.otani.ac.jp/admission/）" }
+      ],
+      "employment_fields": ["service", "kinyu", "ryutsu"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は河合塾Kei-Net掲載の一般選抜入試結果（大学発表に基づく）の学部志願者数÷合格者数で算出した志願倍率。偏差値はパスナビ掲載の河合塾ボーダー偏差値（2027年度入試予想を含む最新表示）。文学部（真宗・国際文化の一部）はBF（ボーダーフリー）判定の学科があり、min値は数値表示のある35.0を採用。教育学部の幼児教育は35.0・初等教育は37.5〜40.0のためmin=35.0/max=40.0。国際学部は2021年4月設置で2025年3月に初卒業生（就職実績は国際文化学科ベース）。学部別就職実績: 文学部 https://www.otani.ac.jp/career_support/sfpjr70000008i9c.html 、社会学部 https://www.otani.ac.jp/career_support/sfpjr70000008hrf.html 、国際学部 https://www.otani.ac.jp/career_support/sfpjr70000008i1a.html 、教育学部 https://www.otani.ac.jp/career_support/sfpjr70000008ihe.html 。キャンパスは単一（交通アクセス: https://www.otani.ac.jp/access.html）。"
+}

@@ -1,0 +1,106 @@
+{
+  "uni_id": "tokai-univ",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/2710/difficulty/",
+    "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/",
+    "https://www.u-tokai.ac.jp/uploads/2026/04/3b5cc80f01c1130ba4b1fd15ff69afb0.pdf",
+    "https://www.u-tokai.ac.jp/uploads/2025/05/ca253228791e2fd7169b4fd8981ca556-1.pdf",
+    "https://www.u-tokai.ac.jp/about/campus/campus-shonan/",
+    "https://www.u-tokai.ac.jp/examination-admissions/examination-system/",
+    "https://www.u-tokai.ac.jp/campus-life/external/"
+  ],
+  "departments": [
+    {
+      "dept_id": "tokai-univ-taiiku",
+      "campus": "湘南キャンパス",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.7, "2026": 3.8 }, "source_url": "https://www.u-tokai.ac.jp/uploads/2026/04/3b5cc80f01c1130ba4b1fd15ff69afb0.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "一般選抜・全学部統一選抜（前期/後期）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期/中期/後期）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/" },
+        { "type": "sogo", "available": true, "note": "総合型選抜", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（高等学校長の推薦・本学第一志望の現役生対象）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/" }
+      ],
+      "employment_fields": ["kyoiku", "koumuin", "maker"],
+      "employment_fields_source_url": "https://www.u-tokai.ac.jp/campus-life/external/ud-physical-education/",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "tokai-univ-taiiku2",
+      "campus": "湘南キャンパス",
+      "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.1, "2026": 3.2 }, "source_url": "https://www.u-tokai.ac.jp/uploads/2026/04/3b5cc80f01c1130ba4b1fd15ff69afb0.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "一般選抜・全学部統一選抜（前期/後期）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期/中期/後期）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/" },
+        { "type": "sogo", "available": true, "note": "総合型選抜", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（高等学校長の推薦・本学第一志望の現役生対象）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/" }
+      ],
+      "employment_fields": ["sports_kenko", "maker", "kyoiku"],
+      "employment_fields_source_url": "https://www.u-tokai.ac.jp/campus-life/external/ud-physical-education/",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "tokai-univ-taiiku3",
+      "campus": "湘南キャンパス",
+      "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.8, "2026": 6.4 }, "source_url": "https://www.u-tokai.ac.jp/uploads/2026/04/3b5cc80f01c1130ba4b1fd15ff69afb0.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "一般選抜・全学部統一選抜（前期/後期）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期/中期/後期）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/" },
+        { "type": "sogo", "available": true, "note": "総合型選抜", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（高等学校長の推薦・本学第一志望の現役生対象）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/" }
+      ],
+      "employment_fields": ["sports_kenko", "service", "ryutsu"],
+      "employment_fields_source_url": "https://www.u-tokai.ac.jp/campus-life/external/ud-physical-education/",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "tokai-univ-keiei",
+      "campus": "湘南キャンパス（3年次から品川キャンパス）",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.2, "2026": 3.9 }, "source_url": "https://www.u-tokai.ac.jp/uploads/2026/04/3b5cc80f01c1130ba4b1fd15ff69afb0.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "一般選抜・全学部統一選抜（前期/後期）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期/中期/後期）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/" },
+        { "type": "sogo", "available": true, "note": "総合型選抜", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（高等学校長の推薦・本学第一志望の現役生対象）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/" }
+      ],
+      "employment_fields": ["kinyu", "ryutsu", "it", "service"],
+      "employment_fields_source_url": "https://www.u-tokai.ac.jp/campus-life/external/ud-businessadministration/",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "tokai-univ-ko",
+      "campus": "湘南キャンパス",
+      "hensachi": { "min": 35.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.8, "2026": 1.8 }, "source_url": "https://www.u-tokai.ac.jp/uploads/2026/04/3b5cc80f01c1130ba4b1fd15ff69afb0.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "一般選抜・全学部統一選抜（前期/後期）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期/中期/後期）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/" },
+        { "type": "sogo", "available": true, "note": "総合型選抜", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（高等学校長の推薦・本学第一志望の現役生対象）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/" }
+      ],
+      "employment_fields": ["maker", "kensetsu", "it"],
+      "employment_fields_source_url": "https://www.u-tokai.ac.jp/campus-life/external/ud-engineering/",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "tokai-univ-bungaku",
+      "campus": "湘南キャンパス",
+      "hensachi": { "min": 42.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.2, "2026": 3.4 }, "source_url": "https://www.u-tokai.ac.jp/uploads/2026/04/3b5cc80f01c1130ba4b1fd15ff69afb0.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "一般選抜・全学部統一選抜（前期/後期）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜（前期/中期/後期）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/result-apply/result-department/" },
+        { "type": "sogo", "available": true, "note": "総合型選抜（学科課題型の実施実績あり）", "source_url": "https://www.u-tokai.ac.jp/uploads/2025/11/ea95a4168b1755da616706c50dfd4dc8.pdf" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（高等学校長の推薦・本学第一志望の現役生対象）", "source_url": "https://www.u-tokai.ac.jp/examination-admissions/examination-system/" }
+      ],
+      "employment_fields": ["kyoiku", "koumuin", "ryutsu", "media"],
+      "employment_fields_source_url": "https://www.u-tokai.ac.jp/campus-life/external/ud-letters/",
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は大学公式の一般選抜結果PDF（2026年度・2025年度）の競争率（受験者数÷合格者数、実質倍率。合格者数は繰り上げ含む）。体育学部は3学科それぞれ学科単位の値、経営・工・文学部は学部合計の値。工学部・文学部は複数学科の合算で、偏差値も学科間で幅がある（工:35.0〜45.0、文:42.5〜50.0）。全学部統一選抜・共通テスト利用選抜の結果は別PDFのため倍率には含まない。経営学部経営学科は2022年度改組の新体制。政治経済・経営・国際・観光・情報通信の5学部は3年次から品川キャンパスへ移動（大学公式キャンパス案内）。ゼミは公式サイトで学部代表と確認できる個別ページが短時間で特定できなかったため省略。"
+}

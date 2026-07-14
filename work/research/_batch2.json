@@ -1,0 +1,937 @@
+[
+ {
+  "uni_id": "meiji",
+  "depts": [
+   {
+    "dept_id": "meiji-sho",
+    "uni_id": "meiji",
+    "uni_name": "明治大学",
+    "dept_name": "商学部"
+   },
+   {
+    "dept_id": "meiji-keiei",
+    "uni_id": "meiji",
+    "uni_name": "明治大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "meiji-seikei",
+    "uni_id": "meiji",
+    "uni_name": "明治大学",
+    "dept_name": "政治経済学部"
+   },
+   {
+    "dept_id": "meiji-ho",
+    "uni_id": "meiji",
+    "uni_name": "明治大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "meiji-bungaku",
+    "uni_id": "meiji",
+    "uni_name": "明治大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "meiji-d01",
+    "uni_id": "meiji",
+    "uni_name": "明治大学",
+    "dept_name": "情報コミュニケーション学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "hosei",
+  "depts": [
+   {
+    "dept_id": "hosei-keiei",
+    "uni_id": "hosei",
+    "uni_name": "法政大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "hosei-keizai",
+    "uni_id": "hosei",
+    "uni_name": "法政大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "hosei-ho",
+    "uni_id": "hosei",
+    "uni_name": "法政大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "hosei-shakai",
+    "uni_id": "hosei",
+    "uni_name": "法政大学",
+    "dept_name": "社会学部"
+   },
+   {
+    "dept_id": "hosei-d01",
+    "uni_id": "hosei",
+    "uni_name": "法政大学",
+    "dept_name": "スポーツ健康学部"
+   },
+   {
+    "dept_id": "hosei-bungaku",
+    "uni_id": "hosei",
+    "uni_name": "法政大学",
+    "dept_name": "文学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "juntendo",
+  "depts": [
+   {
+    "dept_id": "juntendo-sportskenko",
+    "uni_id": "juntendo",
+    "uni_name": "順天堂大学",
+    "dept_name": "スポーツ健康科学部"
+   },
+   {
+    "dept_id": "juntendo-d01",
+    "uni_id": "juntendo",
+    "uni_name": "順天堂大学",
+    "dept_name": "医療看護学部"
+   },
+   {
+    "dept_id": "juntendo-hokeniryo",
+    "uni_id": "juntendo",
+    "uni_name": "順天堂大学",
+    "dept_name": "保健医療学部"
+   },
+   {
+    "dept_id": "juntendo-kokusaikyoyo",
+    "uni_id": "juntendo",
+    "uni_name": "順天堂大学",
+    "dept_name": "国際教養学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "tokai-univ",
+  "depts": [
+   {
+    "dept_id": "tokai-univ-taiiku",
+    "uni_id": "tokai-univ",
+    "uni_name": "東海大学",
+    "dept_name": "体育学部 体育学科"
+   },
+   {
+    "dept_id": "tokai-univ-taiiku2",
+    "uni_id": "tokai-univ",
+    "uni_name": "東海大学",
+    "dept_name": "体育学部 競技スポーツ学科"
+   },
+   {
+    "dept_id": "tokai-univ-taiiku3",
+    "uni_id": "tokai-univ",
+    "uni_name": "東海大学",
+    "dept_name": "体育学部 スポーツ・レジャーマネジメント学科"
+   },
+   {
+    "dept_id": "tokai-univ-keiei",
+    "uni_id": "tokai-univ",
+    "uni_name": "東海大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "tokai-univ-ko",
+    "uni_id": "tokai-univ",
+    "uni_name": "東海大学",
+    "dept_name": "工学部"
+   },
+   {
+    "dept_id": "tokai-univ-bungaku",
+    "uni_id": "tokai-univ",
+    "uni_name": "東海大学",
+    "dept_name": "文学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "kansai-univ",
+  "depts": [
+   {
+    "dept_id": "kansai-univ-ho",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "法学部 法学政治学科"
+   },
+   {
+    "dept_id": "kansai-univ-sho",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "商学部"
+   },
+   {
+    "dept_id": "kansai-univ-keizai",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "kansai-univ-shakai",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "社会学部"
+   },
+   {
+    "dept_id": "kansai-univ-d01",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "人間健康学部"
+   },
+   {
+    "dept_id": "kansai-univ-bungaku",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "kansai-univ-d02",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "政策創造学部"
+   },
+   {
+    "dept_id": "kansai-univ-gaikokugo",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "外国語学部"
+   },
+   {
+    "dept_id": "kansai-univ-sogojoho",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "総合情報学部"
+   },
+   {
+    "dept_id": "kansai-univ-d03",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "社会安全学部"
+   },
+   {
+    "dept_id": "kansai-univ-d04",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "システム理工学部"
+   },
+   {
+    "dept_id": "kansai-univ-d05",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "環境都市工学部"
+   },
+   {
+    "dept_id": "kansai-univ-d06",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "化学生命工学部"
+   },
+   {
+    "dept_id": "kansai-univ-d07",
+    "uni_id": "kansai-univ",
+    "uni_name": "関西大学",
+    "dept_name": "ビジネスデータサイエンス学部（2025年新設）"
+   }
+  ]
+ },
+ {
+  "uni_id": "ryukoku",
+  "depts": [
+   {
+    "dept_id": "ryukoku-keiei",
+    "uni_id": "ryukoku",
+    "uni_name": "龍谷大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "ryukoku-ho",
+    "uni_id": "ryukoku",
+    "uni_name": "龍谷大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "ryukoku-d01",
+    "uni_id": "ryukoku",
+    "uni_name": "龍谷大学",
+    "dept_name": "政策学部"
+   },
+   {
+    "dept_id": "ryukoku-keizai",
+    "uni_id": "ryukoku",
+    "uni_name": "龍谷大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "ryukoku-shakai",
+    "uni_id": "ryukoku",
+    "uni_name": "龍谷大学",
+    "dept_name": "社会学部"
+   },
+   {
+    "dept_id": "ryukoku-bungaku",
+    "uni_id": "ryukoku",
+    "uni_name": "龍谷大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "ryukoku-kokusai",
+    "uni_id": "ryukoku",
+    "uni_name": "龍谷大学",
+    "dept_name": "国際学部"
+   },
+   {
+    "dept_id": "ryukoku-d02",
+    "uni_id": "ryukoku",
+    "uni_name": "龍谷大学",
+    "dept_name": "先端理工学部"
+   },
+   {
+    "dept_id": "ryukoku-no",
+    "uni_id": "ryukoku",
+    "uni_name": "龍谷大学",
+    "dept_name": "農学部"
+   },
+   {
+    "dept_id": "ryukoku-d03",
+    "uni_id": "ryukoku",
+    "uni_name": "龍谷大学",
+    "dept_name": "心理学部（2023年新設）"
+   }
+  ]
+ },
+ {
+  "uni_id": "konan",
+  "depts": [
+   {
+    "dept_id": "konan-keizai",
+    "uni_id": "konan",
+    "uni_name": "甲南大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "konan-keiei",
+    "uni_id": "konan",
+    "uni_name": "甲南大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "konan-ho",
+    "uni_id": "konan",
+    "uni_name": "甲南大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "konan-riko",
+    "uni_id": "konan",
+    "uni_name": "甲南大学",
+    "dept_name": "理工学部"
+   },
+   {
+    "dept_id": "konan-bungaku",
+    "uni_id": "konan",
+    "uni_name": "甲南大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "konan-d01",
+    "uni_id": "konan",
+    "uni_name": "甲南大学",
+    "dept_name": "知能情報学部"
+   },
+   {
+    "dept_id": "konan-d02",
+    "uni_id": "konan",
+    "uni_name": "甲南大学",
+    "dept_name": "マネジメント創造学部"
+   },
+   {
+    "dept_id": "konan-d03",
+    "uni_id": "konan",
+    "uni_name": "甲南大学",
+    "dept_name": "フロンティアサイエンス学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "bukkyo",
+  "depts": [
+   {
+    "dept_id": "bukkyo-kyoiku",
+    "uni_id": "bukkyo",
+    "uni_name": "佛教大学",
+    "dept_name": "教育学部 教育学科"
+   },
+   {
+    "dept_id": "bukkyo-shakai",
+    "uni_id": "bukkyo",
+    "uni_name": "佛教大学",
+    "dept_name": "社会学部"
+   },
+   {
+    "dept_id": "bukkyo-d01",
+    "uni_id": "bukkyo",
+    "uni_name": "佛教大学",
+    "dept_name": "保健医療技術学部"
+   },
+   {
+    "dept_id": "bukkyo-d02",
+    "uni_id": "bukkyo",
+    "uni_name": "佛教大学",
+    "dept_name": "歴史学部"
+   },
+   {
+    "dept_id": "bukkyo-d03",
+    "uni_id": "bukkyo",
+    "uni_name": "佛教大学",
+    "dept_name": "仏教学部"
+   },
+   {
+    "dept_id": "bukkyo-bungaku",
+    "uni_id": "bukkyo",
+    "uni_name": "佛教大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "bukkyo-shakaifukushi",
+    "uni_id": "bukkyo",
+    "uni_name": "佛教大学",
+    "dept_name": "社会福祉学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "kyoto-tachibana",
+  "depts": [
+   {
+    "dept_id": "kyoto-tachibana-kango",
+    "uni_id": "kyoto-tachibana",
+    "uni_name": "京都橘大学",
+    "dept_name": "看護学部 看護学科"
+   },
+   {
+    "dept_id": "kyoto-tachibana-hattatsukyoiku",
+    "uni_id": "kyoto-tachibana",
+    "uni_name": "京都橘大学",
+    "dept_name": "発達教育学部"
+   },
+   {
+    "dept_id": "kyoto-tachibana-keiei",
+    "uni_id": "kyoto-tachibana",
+    "uni_name": "京都橘大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "kyoto-tachibana-kenkokagaku",
+    "uni_id": "kyoto-tachibana",
+    "uni_name": "京都橘大学",
+    "dept_name": "健康科学部 救急救命学科"
+   },
+   {
+    "dept_id": "kyoto-tachibana-d01",
+    "uni_id": "kyoto-tachibana",
+    "uni_name": "京都橘大学",
+    "dept_name": "国際英語学部"
+   },
+   {
+    "dept_id": "kyoto-tachibana-bungaku",
+    "uni_id": "kyoto-tachibana",
+    "uni_name": "京都橘大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "kyoto-tachibana-sogoshinri",
+    "uni_id": "kyoto-tachibana",
+    "uni_name": "京都橘大学",
+    "dept_name": "総合心理学部"
+   },
+   {
+    "dept_id": "kyoto-tachibana-keizai",
+    "uni_id": "kyoto-tachibana",
+    "uni_name": "京都橘大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "kyoto-tachibana-d02",
+    "uni_id": "kyoto-tachibana",
+    "uni_name": "京都橘大学",
+    "dept_name": "工学部（情報工・建築デザイン）"
+   }
+  ]
+ },
+ {
+  "uni_id": "kobe-gakuin",
+  "depts": [
+   {
+    "dept_id": "kobe-gakuin-ho",
+    "uni_id": "kobe-gakuin",
+    "uni_name": "神戸学院大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "kobe-gakuin-keiei",
+    "uni_id": "kobe-gakuin",
+    "uni_name": "神戸学院大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "kobe-gakuin-yaku",
+    "uni_id": "kobe-gakuin",
+    "uni_name": "神戸学院大学",
+    "dept_name": "薬学部"
+   },
+   {
+    "dept_id": "kobe-gakuin-d01",
+    "uni_id": "kobe-gakuin",
+    "uni_name": "神戸学院大学",
+    "dept_name": "総合リハビリテーション学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "setsunan",
+  "depts": [
+   {
+    "dept_id": "setsunan-keiei",
+    "uni_id": "setsunan",
+    "uni_name": "摂南大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "setsunan-ho",
+    "uni_id": "setsunan",
+    "uni_name": "摂南大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "setsunan-riko",
+    "uni_id": "setsunan",
+    "uni_name": "摂南大学",
+    "dept_name": "理工学部"
+   },
+   {
+    "dept_id": "setsunan-yaku",
+    "uni_id": "setsunan",
+    "uni_name": "摂南大学",
+    "dept_name": "薬学部"
+   },
+   {
+    "dept_id": "setsunan-kango",
+    "uni_id": "setsunan",
+    "uni_name": "摂南大学",
+    "dept_name": "看護学部"
+   },
+   {
+    "dept_id": "setsunan-gaikokugo",
+    "uni_id": "setsunan",
+    "uni_name": "摂南大学",
+    "dept_name": "外国語学部"
+   },
+   {
+    "dept_id": "setsunan-keizai",
+    "uni_id": "setsunan",
+    "uni_name": "摂南大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "setsunan-d01",
+    "uni_id": "setsunan",
+    "uni_name": "摂南大学",
+    "dept_name": "現代社会学部（2023年新設）"
+   },
+   {
+    "dept_id": "setsunan-d02",
+    "uni_id": "setsunan",
+    "uni_name": "摂南大学",
+    "dept_name": "農学部（2020年新設）"
+   }
+  ]
+ },
+ {
+  "uni_id": "otemon",
+  "depts": [
+   {
+    "dept_id": "otemon-shakai",
+    "uni_id": "otemon",
+    "uni_name": "追手門学院大学",
+    "dept_name": "社会学部"
+   },
+   {
+    "dept_id": "otemon-keiei",
+    "uni_id": "otemon",
+    "uni_name": "追手門学院大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "otemon-ho",
+    "uni_id": "otemon",
+    "uni_name": "追手門学院大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "otemon-shinri",
+    "uni_id": "otemon",
+    "uni_name": "追手門学院大学",
+    "dept_name": "心理学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "tezukayama",
+  "depts": [
+   {
+    "dept_id": "tezukayama-keizaikeiei",
+    "uni_id": "tezukayama",
+    "uni_name": "帝塚山大学",
+    "dept_name": "経済経営学部"
+   },
+   {
+    "dept_id": "tezukayama-shinri",
+    "uni_id": "tezukayama",
+    "uni_name": "帝塚山大学",
+    "dept_name": "心理学部"
+   },
+   {
+    "dept_id": "tezukayama-ho",
+    "uni_id": "tezukayama",
+    "uni_name": "帝塚山大学",
+    "dept_name": "法学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "osaka-gakuin",
+  "depts": [
+   {
+    "dept_id": "osaka-gakuin-keizai",
+    "uni_id": "osaka-gakuin",
+    "uni_name": "大阪学院大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "osaka-gakuin-keiei",
+    "uni_id": "osaka-gakuin",
+    "uni_name": "大阪学院大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "osaka-gakuin-ho",
+    "uni_id": "osaka-gakuin",
+    "uni_name": "大阪学院大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "osaka-gakuin-joho",
+    "uni_id": "osaka-gakuin",
+    "uni_name": "大阪学院大学",
+    "dept_name": "情報学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "otemae",
+  "depts": [
+   {
+    "dept_id": "otemae-gendaishakai",
+    "uni_id": "otemae",
+    "uni_name": "大手前大学",
+    "dept_name": "現代社会学部"
+   },
+   {
+    "dept_id": "otemae-d01",
+    "uni_id": "otemae",
+    "uni_name": "大手前大学",
+    "dept_name": "国際看護学部"
+   },
+   {
+    "dept_id": "otemae-d02",
+    "uni_id": "otemae",
+    "uni_name": "大手前大学",
+    "dept_name": "建築＆芸術学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "ryutsu-kagaku",
+  "depts": [
+   {
+    "dept_id": "ryutsu-kagaku-sho",
+    "uni_id": "ryutsu-kagaku",
+    "uni_name": "流通科学大学",
+    "dept_name": "商学部"
+   },
+   {
+    "dept_id": "ryutsu-kagaku-keizai",
+    "uni_id": "ryutsu-kagaku",
+    "uni_name": "流通科学大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "ryutsu-kagaku-d01",
+    "uni_id": "ryutsu-kagaku",
+    "uni_name": "流通科学大学",
+    "dept_name": "人間社会学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "kobe-shinwa",
+  "depts": [
+   {
+    "dept_id": "kobe-shinwa-kyoiku",
+    "uni_id": "kobe-shinwa",
+    "uni_name": "神戸親和大学",
+    "dept_name": "教育学部"
+   },
+   {
+    "dept_id": "kobe-shinwa-d01",
+    "uni_id": "kobe-shinwa",
+    "uni_name": "神戸親和大学",
+    "dept_name": "心理学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "kansai-kokusai",
+  "depts": [
+   {
+    "dept_id": "kansai-kokusai-kyoiku",
+    "uni_id": "kansai-kokusai",
+    "uni_name": "関西国際大学",
+    "dept_name": "教育学部"
+   },
+   {
+    "dept_id": "kansai-kokusai-hokeniryo",
+    "uni_id": "kansai-kokusai",
+    "uni_name": "関西国際大学",
+    "dept_name": "保健医療学部"
+   },
+   {
+    "dept_id": "kansai-kokusai-d01",
+    "uni_id": "kansai-kokusai",
+    "uni_name": "関西国際大学",
+    "dept_name": "国際コミュニケーション学部"
+   },
+   {
+    "dept_id": "kansai-kokusai-keiei",
+    "uni_id": "kansai-kokusai",
+    "uni_name": "関西国際大学",
+    "dept_name": "経営学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "osaka-keiho",
+  "depts": [
+   {
+    "dept_id": "osaka-keiho-ho",
+    "uni_id": "osaka-keiho",
+    "uni_name": "大阪経済法科大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "osaka-keiho-keizai",
+    "uni_id": "osaka-keiho",
+    "uni_name": "大阪経済法科大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "osaka-keiho-keiei",
+    "uni_id": "osaka-keiho",
+    "uni_name": "大阪経済法科大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "osaka-keiho-kokusai",
+    "uni_id": "osaka-keiho",
+    "uni_name": "大阪経済法科大学",
+    "dept_name": "国際学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "oit",
+  "depts": [
+   {
+    "dept_id": "oit-ko",
+    "uni_id": "oit",
+    "uni_name": "大阪工業大学",
+    "dept_name": "工学部 機械工学科"
+   },
+   {
+    "dept_id": "oit-ko2",
+    "uni_id": "oit",
+    "uni_name": "大阪工業大学",
+    "dept_name": "工学部 電気電子システム工学科"
+   },
+   {
+    "dept_id": "oit-d01",
+    "uni_id": "oit",
+    "uni_name": "大阪工業大学",
+    "dept_name": "情報科学部"
+   },
+   {
+    "dept_id": "oit-d02",
+    "uni_id": "oit",
+    "uni_name": "大阪工業大学",
+    "dept_name": "ロボティクス＆デザイン工学部"
+   },
+   {
+    "dept_id": "oit-d03",
+    "uni_id": "oit",
+    "uni_name": "大阪工業大学",
+    "dept_name": "知的財産学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "osaka-dentsu",
+  "depts": [
+   {
+    "dept_id": "osaka-dentsu-ko",
+    "uni_id": "osaka-dentsu",
+    "uni_name": "大阪電気通信大学",
+    "dept_name": "工学部 電気電子工学科"
+   },
+   {
+    "dept_id": "osaka-dentsu-d01",
+    "uni_id": "osaka-dentsu",
+    "uni_name": "大阪電気通信大学",
+    "dept_name": "情報通信工学部"
+   },
+   {
+    "dept_id": "osaka-dentsu-sogojoho",
+    "uni_id": "osaka-dentsu",
+    "uni_name": "大阪電気通信大学",
+    "dept_name": "総合情報学部 デジタルゲーム学科"
+   },
+   {
+    "dept_id": "osaka-dentsu-d02",
+    "uni_id": "osaka-dentsu",
+    "uni_name": "大阪電気通信大学",
+    "dept_name": "医療健康科学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "kansai-gaidai",
+  "depts": [
+   {
+    "dept_id": "kansai-gaidai-gaikokugo",
+    "uni_id": "kansai-gaidai",
+    "uni_name": "関西外国語大学",
+    "dept_name": "外国語学部 英米語学科"
+   },
+   {
+    "dept_id": "kansai-gaidai-d01",
+    "uni_id": "kansai-gaidai",
+    "uni_name": "関西外国語大学",
+    "dept_name": "英語キャリア学部"
+   },
+   {
+    "dept_id": "kansai-gaidai-d02",
+    "uni_id": "kansai-gaidai",
+    "uni_name": "関西外国語大学",
+    "dept_name": "国際共生学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "otani",
+  "depts": [
+   {
+    "dept_id": "otani-kyoiku",
+    "uni_id": "otani",
+    "uni_name": "大谷大学",
+    "dept_name": "教育学部"
+   },
+   {
+    "dept_id": "otani-bungaku",
+    "uni_id": "otani",
+    "uni_name": "大谷大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "otani-shakai",
+    "uni_id": "otani",
+    "uni_name": "大谷大学",
+    "dept_name": "社会学部"
+   },
+   {
+    "dept_id": "otani-kokusai",
+    "uni_id": "otani",
+    "uni_name": "大谷大学",
+    "dept_name": "国際学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "kuas",
+  "depts": [
+   {
+    "dept_id": "kuas-ko",
+    "uni_id": "kuas",
+    "uni_name": "京都先端科学大学",
+    "dept_name": "工学部 機械電気システム工学科"
+   },
+   {
+    "dept_id": "kuas-keizaikeiei",
+    "uni_id": "kuas",
+    "uni_name": "京都先端科学大学",
+    "dept_name": "経済経営学部"
+   },
+   {
+    "dept_id": "kuas-d01",
+    "uni_id": "kuas",
+    "uni_name": "京都先端科学大学",
+    "dept_name": "健康医療学部 看護学科"
+   },
+   {
+    "dept_id": "kuas-d02",
+    "uni_id": "kuas",
+    "uni_name": "京都先端科学大学",
+    "dept_name": "バイオ環境学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "osaka-sangyo",
+  "depts": [
+   {
+    "dept_id": "osaka-sangyo-keiei",
+    "uni_id": "osaka-sangyo",
+    "uni_name": "大阪産業大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "osaka-sangyo-keizai",
+    "uni_id": "osaka-sangyo",
+    "uni_name": "大阪産業大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "osaka-sangyo-ko",
+    "uni_id": "osaka-sangyo",
+    "uni_name": "大阪産業大学",
+    "dept_name": "工学部 機械工学科"
+   },
+   {
+    "dept_id": "osaka-sangyo-d01",
+    "uni_id": "osaka-sangyo",
+    "uni_name": "大阪産業大学",
+    "dept_name": "スポーツ健康学部"
+   },
+   {
+    "dept_id": "osaka-sangyo-kokusai",
+    "uni_id": "osaka-sangyo",
+    "uni_name": "大阪産業大学",
+    "dept_name": "国際学部"
+   }
+  ]
+ }
+]

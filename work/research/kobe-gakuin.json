@@ -1,0 +1,69 @@
+{
+ "uni_id": "kobe-gakuin",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4440/difficulty/",
+  "https://admission.kobegakuin.ac.jp/nyushi/results/past/",
+  "https://admission.kobegakuin.ac.jp/kobegakuin_cms/wp-content/uploads/result2026.pdf",
+  "https://admission.kobegakuin.ac.jp/kobegakuin_cms/wp-content/uploads/result2025.pdf",
+  "https://www.kobegakuin.ac.jp/career/senior/by_faculty/"
+ ],
+ "departments": [
+  {
+   "dept_id": "kobe-gakuin-ho",
+   "hensachi": { "min": 37.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4440/difficulty/?facultyID=005" },
+   "bairitsu": { "ippan": { "2025": 2.2, "2026": 3.3 }, "source_url": "https://admission.kobegakuin.ac.jp/nyushi/results/past/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（自己推薦型）。出典: 大学公式入試集計PDF" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試（第一日・第二日）" },
+    { "type": "ippan", "available": true, "note": "一般選抜入試（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試（前期・後期）" }
+   ],
+   "employment_fields": ["koumuin", "maker"],
+   "zemi": [
+    { "name": "春日勉ゼミ（刑事法）", "theme": "模擬裁判と刑務所見学を柱に刑事裁判の本質を実践的に学ぶ", "source_url": "https://www.kobegakuin.ac.jp/gakuho-net/infocus/2025/02.html" }
+   ],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kobe-gakuin-keiei",
+   "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4440/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.7, "2026": 4.7 }, "source_url": "https://admission.kobegakuin.ac.jp/nyushi/results/past/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（自己推薦型）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試" },
+    { "type": "ippan", "available": true, "note": "一般選抜入試（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試" }
+   ],
+   "employment_fields": ["maker", "ryutsu", "kinyu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kobe-gakuin-yaku",
+   "hensachi": { "min": 37.5, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4440/difficulty/?facultyID=045" },
+   "bairitsu": { "ippan": { "2025": 1.2, "2026": 1.2 }, "source_url": "https://admission.kobegakuin.ac.jp/nyushi/results/past/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（自己推薦型・病院薬剤師志望特化型）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試（化学重視型あり）" },
+    { "type": "ippan", "available": true, "note": "一般選抜入試（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試" }
+   ],
+   "employment_fields": ["iryo_fukushi", "maker", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "kobe-gakuin-d01",
+   "hensachi": { "min": 35.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4440/difficulty/?facultyID=035" },
+   "bairitsu": { "ippan": { "2025": 1.9, "2026": 1.5 }, "source_url": "https://admission.kobegakuin.ac.jp/nyushi/results/past/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試（理学療法学科・作業療法学科は適性評価型、社会リハビリテーション学科は自己推薦型）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試" },
+    { "type": "ippan", "available": true, "note": "一般選抜入試（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試" }
+   ],
+   "employment_fields": ["iryo_fukushi", "koumuin"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率は大学公式の入試集計PDF（result2025.pdf / result2026.pdf、過去の入試結果ページからリンク）の一般選抜入試計の競争率（実質倍率＝受験者数÷合格者数）。経営学部は経営・会計専攻＋データサイエンス専攻、総合リハビリテーション学部は理学療法・作業療法・社会リハビリテーションの3学科を受験者・合格者合算で算出した代表値（経営2026: 2,872/607=4.7、総合リハ2026: 458/308=1.5）。偏差値は河合塾提供データ（パスナビ掲載）。就職系統は大学公式キャリアサイトの学部別就職状況（法: law.html=官公庁・メーカー、経営: business.html=メーカー・小売・金融、薬: pharmacy.html=製薬・薬局・病院・公務員、総合リハ: rehabilitation.html=医療機関・福祉・公務員）。"
+}

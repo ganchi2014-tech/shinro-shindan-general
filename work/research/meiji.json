@@ -1,0 +1,103 @@
+{
+  "uni_id": "meiji",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/3120/difficulty/",
+    "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf",
+    "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2025nyushidata.pdf",
+    "https://www.meiji.ac.jp/shushoku/6t5h7p00000c2zmv-att/qfki0t00000iz6yt.pdf",
+    "https://www.meiji.ac.jp/koho/campus_guide/",
+    "https://www.meiji.ac.jp/infocom/employment/6t5h7p00000hjm15.html",
+    "https://www.meiji.ac.jp/bungaku/employment/index.html"
+  ],
+  "departments": [
+    {
+      "dept_id": "meiji-sho",
+      "campus": "駿河台キャンパス（3・4年）／和泉キャンパス（1・2年）",
+      "hensachi": { "min": 62.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3120/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.8, "2026": 6.1 }, "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "学部別入学試験・全学部統一入学試験", "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入学試験（4・6科目方式）", "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" }
+      ],
+      "employment_fields": ["it", "kinyu", "maker"],
+      "employment_fields_source_url": "https://www.meiji.ac.jp/shushoku/6t5h7p00000c2zmv-att/qfki0t00000iz6yt.pdf",
+      "zemi": [
+        { "name": "沢内ゼミナール", "theme": "マーケティング", "source_url": "https://www.meiji.ac.jp/shogaku/seminar/expert/sa/s_sawauchi.html" },
+        { "name": "金子ゼミナール", "theme": "経営学とイノベーション", "source_url": "https://www.meiji.ac.jp/shogaku/seminar/expert/ka/s_kaneko.html" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "meiji-keiei",
+      "campus": "駿河台キャンパス（3・4年）／和泉キャンパス（1・2年）",
+      "hensachi": { "min": 62.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3120/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.9, "2026": 4.1 }, "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "学部別入学試験（3科目方式・英語4技能試験活用方式）・全学部統一入学試験", "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入学試験（3・4科目方式）", "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" }
+      ],
+      "employment_fields": ["it", "kinyu", "maker"],
+      "employment_fields_source_url": "https://www.meiji.ac.jp/shushoku/6t5h7p00000c2zmv-att/qfki0t00000iz6yt.pdf",
+      "zemi": [
+        { "name": "青木ゼミ", "theme": "現代企業の競争戦略と組織", "source_url": "https://www.meiji.ac.jp/keiei/seminar/seminar_list.html" },
+        { "name": "小関ゼミ", "theme": "非営利組織・社会的企業によるまちづくり", "source_url": "https://www.meiji.ac.jp/keiei/seminar/seminar_list.html" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "meiji-seikei",
+      "campus": "駿河台キャンパス（3・4年）／和泉キャンパス（1・2年）",
+      "hensachi": { "min": 60.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3120/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.4, "2026": 3.8 }, "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "学部別入学試験・全学部統一入学試験", "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入学試験（3・7科目方式）", "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" }
+      ],
+      "employment_fields": ["it", "kinyu", "maker", "koumuin"],
+      "employment_fields_source_url": "https://www.meiji.ac.jp/shushoku/6t5h7p00000c2zmv-att/qfki0t00000iz6yt.pdf",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "meiji-ho",
+      "campus": "駿河台キャンパス（3・4年）／和泉キャンパス（1・2年）",
+      "hensachi": { "min": 60.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3120/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.6, "2026": 5.4 }, "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "学部別入学試験・全学部統一入学試験", "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入学試験（3・4・5科目方式）", "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" }
+      ],
+      "employment_fields": ["kinyu", "koumuin", "it"],
+      "employment_fields_source_url": "https://www.meiji.ac.jp/shushoku/6t5h7p00000c2zmv-att/qfki0t00000iz6yt.pdf",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "meiji-bungaku",
+      "campus": "駿河台キャンパス（3・4年）／和泉キャンパス（1・2年）",
+      "hensachi": { "min": 57.5, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3120/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.6, "2026": 5.0 }, "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "学部別入学試験・全学部統一入学試験", "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入学試験（3・5科目方式）", "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+        { "type": "sogo", "available": true, "note": "自己推薦特別入学試験（文学部で実施）", "source_url": "https://www.meiji.ac.jp/exam/" }
+      ],
+      "employment_fields": ["it", "kyoiku", "koumuin", "media"],
+      "employment_fields_source_url": "https://www.meiji.ac.jp/shushoku/6t5h7p00000c2zmv-att/qfki0t00000iz6yt.pdf",
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "meiji-d01",
+      "campus": "駿河台キャンパス（3・4年）／和泉キャンパス（1・2年）",
+      "hensachi": { "min": 60.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3120/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.3, "2026": 5.1 }, "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "学部別入学試験・全学部統一入学試験", "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入学試験（3・6科目方式）", "source_url": "https://www.meiji.ac.jp/exam/information/data/6t5h7p000001himy-att/2026nyushidata.pdf" }
+      ],
+      "employment_fields": ["it", "media", "kinyu", "maker"],
+      "employment_fields_source_url": "https://www.meiji.ac.jp/shushoku/6t5h7p00000c2zmv-att/qfki0t00000iz6yt.pdf",
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は大学公式「入試データ」PDFの学部別入学試験（学部内合計）の実質倍率（受験者数÷合格者数）。2025年度=2025nyushidata.pdf、2026年度=2026nyushidata.pdf。2026年度より政治経済学部は地域行政学科を募集停止し政策学科を新設。文学部の偏差値最小57.5はフランス文学・演劇学専攻、最大65.0は心理社会学科臨床心理学専攻。情報コミュニケーション学部のmediaタグは学部公式就職ページ（マスコミ・通信業界への就職が多い旨の記載）に基づく。文学部のmediaタグは学部公式キャリア支援ページ（出版・放送の記載）に基づく。業種別就職状況PDFでは全学部とも情報通信業が上位。"
+}
