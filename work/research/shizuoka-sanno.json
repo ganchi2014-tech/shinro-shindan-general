@@ -1,0 +1,42 @@
+{
+ "uni_id": "shizuoka-sanno",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3573/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/private/2426.html",
+  "https://www.ssu.ac.jp/for-applicants/admission/"
+ ],
+ "departments": [
+  {
+   "dept_id": "shizuoka-sanno-keiei",
+   "campus": "藤枝キャンパス（静岡県藤枝市駿河台）／磐田キャンパス（静岡県磐田市大原）から選択",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3573/difficulty/", "note": "パスナビでは経営学部の一般選考型はBF（ボーダーフリー）。代表値として下限35.0を便宜設定" },
+   "bairitsu": { "ippan": { "2025": 1.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2426.html", "note": "実質倍率（受験者÷合格者）。2026年度はKei-Net未掲載（前年比「-」）のため2025のみ" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（オープンキャンパス参加型・探究活用・アーリー入試ほか多数）／SSU受験生サイト" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（指定校推薦・系列校推薦）" },
+    { "type": "ippan", "available": true, "note": "一般選抜入試" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "service", "koumuin"],
+   "unconfirmed": false,
+   "notes": "経営学部はパスナビ偏差値がBF。倍率は河合塾Kei-Net掲載の一般選抜（学部計）2025年度値"
+  },
+  {
+   "dept_id": "shizuoka-sanno-sportskagaku",
+   "campus": "磐田キャンパス（静岡県磐田市大原）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3573/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2426.html", "note": "実質倍率（受験者÷合格者）。2026年度はKei-Net未掲載のため2025のみ" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜（強化スポーツ推薦・スポーツ活動自己PR型ほか）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（指定校推薦・系列校推薦）" },
+    { "type": "ippan", "available": true, "note": "一般選抜入試" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試" }
+   ],
+   "employment_fields": ["sports_kenko", "kyoiku", "koumuin"],
+   "unconfirmed": false,
+   "notes": "スポーツ科学部は磐田キャンパス。偏差値35.0（パスナビ河合塾）。倍率は2025年度一般選抜（学部計）値"
+  }
+ ],
+ "notes": "偏差値は旺文社パスナビ掲載の河合塾偏差値（2026年度入試）。経営学部はBF。倍率は河合塾Kei-Net掲載の静岡産業大学一般選抜入試結果（受験者÷合格者）で、2026年度は掲載前（前年比「-」）のため2025年度のみ記載。入試区分（総合型・学校推薦型・一般選抜・共通テスト利用）はSSU公式受験生サイトで確認。看板ゼミは学部公式ページで容易に特定できず省略。"
+}

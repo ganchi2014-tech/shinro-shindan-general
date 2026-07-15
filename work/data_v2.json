@@ -49489,43 +49489,46 @@
    "dept_id": "tokoha-kyoiku",
    "uni_id": "tokoha",
    "name": "教育学部 初等教育課程",
-   "campus": "静岡",
+   "campus": "静岡草薙キャンパス（静岡県静岡市駿河区弥生町）",
    "hensachi": {
     "min": 45,
-    "max": 50,
+    "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3580/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.4,
+     "2026": 1.6
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2427.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合能力入試（高大接続型・リーダー育成型・自己アピール型ほか）／常葉大学入学試験要項",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜（推薦・特別入学試験）",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部統一試験）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試（前期・後期）・共通テストプラス入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49536,51 +49539,57 @@
    "interest_tags": [
     "kyoiku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "tokoha-kyoiku2",
    "uni_id": "tokoha",
    "name": "教育学部 生涯学習学科",
-   "campus": "静岡",
+   "campus": "静岡草薙キャンパス（静岡県静岡市駿河区弥生町）",
    "hensachi": {
-    "min": 42.5,
-    "max": 47.5,
+    "min": 37.5,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3580/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.4,
+     "2026": 1.6
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2427.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合能力入試",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部統一試験）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試・共通テストプラス入試",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49590,51 +49599,58 @@
    "interest_tags": [
     "kyoiku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "tokoha-hokeniryo",
    "uni_id": "tokoha",
    "name": "保健医療学部 看護学科",
-   "campus": "静岡",
+   "campus": "静岡水落キャンパス（静岡県静岡市葵区水落町）",
    "hensachi": {
-    "min": 45,
-    "max": 50,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3580/difficulty/?facultyID=025",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.7,
+     "2026": 1.3
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2427.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合能力入試",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部統一試験）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試・共通テストプラス入試",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49644,51 +49660,56 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "tokoha-keiei",
    "uni_id": "tokoha",
    "name": "経営学部 経営学科",
-   "campus": "静岡",
+   "campus": "静岡草薙キャンパス／浜松キャンパス（静岡県浜松市中央区）",
    "hensachi": {
-    "min": 42.5,
-    "max": 47.5,
+    "min": 37.5,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3580/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.1,
+     "2026": 2.4
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2427.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合能力入試",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部統一試験）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試・共通テストプラス入試",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49699,51 +49720,59 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "ryutsu",
+    "maker"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "tokoha-d01",
    "uni_id": "tokoha",
    "name": "健康プロデュース学部",
-   "campus": "浜松",
+   "campus": "浜松キャンパス（静岡県浜松市中央区布橋）",
    "hensachi": {
-    "min": 42.5,
-    "max": 47.5,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3580/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.1,
+     "2026": 1.2
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2427.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合能力入試",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜（スポーツ推薦含む）",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部統一試験）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試・共通テストプラス入試",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49753,51 +49782,57 @@
    "interest_tags": [
     "sports"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "sports_kenko",
+    "shokuhin",
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "shizuoka-sanno-keiei",
    "uni_id": "shizuoka-sanno",
    "name": "経営学部 経営学科",
-   "campus": "藤枝",
+   "campus": "藤枝キャンパス（静岡県藤枝市駿河台）／磐田キャンパス（静岡県磐田市大原）から選択",
    "hensachi": {
     "min": 35,
-    "max": 40,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3573/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.2
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2426.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合型選抜（オープンキャンパス参加型・探究活用・アーリー入試ほか多数）／SSU受験生サイト",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜（指定校推薦・系列校推薦）",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜入試",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "大学入学共通テスト利用入試",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49807,51 +49842,58 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "ryutsu",
+    "service",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "shizuoka-sanno-sportskagaku",
    "uni_id": "shizuoka-sanno",
    "name": "スポーツ科学部 スポーツ科学科",
-   "campus": "藤枝",
+   "campus": "磐田キャンパス（静岡県磐田市大原）",
    "hensachi": {
     "min": 35,
-    "max": 42.5,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3573/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.3
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2426.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合型選抜（強化スポーツ推薦・スポーツ活動自己PR型ほか）",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜（指定校推薦・系列校推薦）",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜入試",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "大学入学共通テスト利用入試",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49861,51 +49903,58 @@
    "interest_tags": [
     "sports"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "sports_kenko",
+    "kyoiku",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "shizuoka-eiwa-d01",
    "uni_id": "shizuoka-eiwa",
    "name": "人間社会学部 人間社会学科",
-   "campus": "静岡",
+   "campus": "東静岡キャンパス（静岡県静岡市駿河区池田）",
    "hensachi": {
     "min": 35,
-    "max": 42.5,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3572/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1,
+     "2026": 1.2
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2429.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合型選抜あり／静岡英和学院大学 入試情報",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜あり",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜あり",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "大学入学共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49916,21 +49965,25 @@
    "interest_tags": [
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "shizuoka-eiwa-d02",
    "uni_id": "shizuoka-eiwa",
    "name": "人間社会学部 コミュニティ福祉学科",
-   "campus": "静岡",
+   "campus": "東静岡キャンパス（静岡県静岡市駿河区池田）",
    "hensachi": {
     "min": 35,
-    "max": 40,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3572/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -49941,26 +49994,26 @@
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合型選抜あり",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜あり",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜あり",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "大学入学共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49970,15 +50023,19 @@
    "interest_tags": [
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "kyoiku",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "unconfirmed"
   },
   {
    "dept_id": "shizuoka-eiwa-d03",
    "uni_id": "shizuoka-eiwa",
    "name": "短期大学部 食物学科",
-   "campus": "静岡",
+   "campus": "東静岡キャンパス（静岡県静岡市駿河区池田）",
    "hensachi": {
     "min": 35,
     "max": 40,
@@ -49995,20 +50052,20 @@
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合型選抜あり（短期大学部）",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜あり（短期大学部）",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜あり（短期大学部）",
+     "verified": true
     },
     {
      "type": "kyotsu",
@@ -50025,15 +50082,18 @@
     "nogaku",
     "eiyo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "shokuhin",
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "unconfirmed"
   },
   {
    "dept_id": "hamamatsu-gakuin-d01",
    "uni_id": "hamamatsu-gakuin",
    "name": "現代コミュニケーション学部 地域共創学科",
-   "campus": "浜松",
+   "campus": "浜松キャンパス（静岡県浜松市中央区布橋三丁目）",
    "hensachi": {
     "min": 35,
     "max": 40,
@@ -50042,34 +50102,37 @@
     "verified_date": null
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1,
+     "2026": 1
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2421.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合型選抜（アドミッションオフィス方式・活動実績アピール方式）／浜松学院大学 入試ガイド",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜（学校推薦・指定校推薦・特別強化指定クラブ推薦・全国児童養護施設推薦）",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A・B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "大学入学共通テスト利用入試（A・B・C日程）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -50079,7 +50142,11 @@
    "interest_tags": [
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "ryutsu",
+    "service",
+    "koumuin"
+   ],
    "zemi": [],
    "data_status": "estimated"
   },
@@ -50087,7 +50154,7 @@
    "dept_id": "hamamatsu-gakuin-d02",
    "uni_id": "hamamatsu-gakuin",
    "name": "現代コミュニケーション学部 子どもコミュニケーション学科",
-   "campus": "浜松",
+   "campus": "浜松キャンパス（静岡県浜松市中央区布橋三丁目）",
    "hensachi": {
     "min": 35,
     "max": 40,
@@ -50096,34 +50163,37 @@
     "verified_date": null
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1,
+     "2026": 1
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2421.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合型選抜（アドミッションオフィス方式・活動実績アピール方式）",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜（学校推薦・指定校推薦ほか）",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A・B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "大学入学共通テスト利用入試（A・B・C日程）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -50134,7 +50204,10 @@
     "shakai",
     "kyoiku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
    "zemi": [],
    "data_status": "estimated"
   },

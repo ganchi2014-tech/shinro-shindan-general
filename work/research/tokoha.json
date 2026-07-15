@@ -1,0 +1,90 @@
+{
+ "uni_id": "tokoha",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3580/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/3580/difficulty/?facultyID=025",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/private/2427.html",
+  "https://www.tokoha-u.ac.jp/entrance/guide/daigaku/",
+  "https://passnavi.obunsha.co.jp/univ/3580/shinro/",
+  "https://www.tokoha-u.ac.jp/career/career_data/"
+ ],
+ "departments": [
+  {
+   "dept_id": "tokoha-kyoiku",
+   "campus": "静岡草薙キャンパス（静岡県静岡市駿河区弥生町）",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3580/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.4, "2026": 1.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2427.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合能力入試（高大接続型・リーダー育成型・自己アピール型ほか）／常葉大学入学試験要項" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（推薦・特別入学試験）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部統一試験）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）・共通テストプラス入試あり" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false,
+   "notes": "初等教育課程＝パスナビ「学校教育」偏差値45.0。倍率は河合塾Kei-Net掲載の教育学部一般選抜（学部計）値"
+  },
+  {
+   "dept_id": "tokoha-kyoiku2",
+   "campus": "静岡草薙キャンパス（静岡県静岡市駿河区弥生町）",
+   "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3580/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.4, "2026": 1.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2427.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合能力入試" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜" },
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部統一試験）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試・共通テストプラス入試" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "service"],
+   "unconfirmed": false,
+   "notes": "生涯学習学科＝パスナビ「生涯学習」偏差値37.5。倍率は教育学部一般選抜（学部計）値を代表値とした"
+  },
+  {
+   "dept_id": "tokoha-hokeniryo",
+   "campus": "静岡水落キャンパス（静岡県静岡市葵区水落町）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3580/difficulty/?facultyID=025" },
+   "bairitsu": { "ippan": { "2025": 1.7, "2026": 1.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2427.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合能力入試" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜" },
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部統一試験）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試・共通テストプラス入試" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "batch4記載は「保健医療学部 看護学科」だが、常葉大学の看護学科は実際には健康科学部所属（静岡水落キャンパス）。偏差値・倍率は健康科学部 看護学科（3教科型）の値。保健医療学部（浜松）は理学療法・作業療法学科で構成される"
+  },
+  {
+   "dept_id": "tokoha-keiei",
+   "campus": "静岡草薙キャンパス／浜松キャンパス（静岡県浜松市中央区）",
+   "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3580/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.1, "2026": 2.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2427.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合能力入試" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜" },
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部統一試験）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試・共通テストプラス入試" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu", "maker"],
+   "unconfirmed": false,
+   "notes": "経営学部は静岡草薙・浜松の両キャンパスに設置。2026年度は志願者急増で倍率2.4倍に上昇（2025年1.1倍）"
+  },
+  {
+   "dept_id": "tokoha-d01",
+   "campus": "浜松キャンパス（静岡県浜松市中央区布橋）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3580/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.1, "2026": 1.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2427.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合能力入試" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（スポーツ推薦含む）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部統一試験）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試・共通テストプラス入試" }
+   ],
+   "employment_fields": ["sports_kenko", "shokuhin", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "健康プロデュース学部（健康栄養・保育健康・スポーツ健康科学・健康鍼灸・健康柔道整復）。偏差値はBF〜35.0で代表値35.0を採用。就職は病院・食品メーカー・薬局・警察・消防・スポーツクラブ等"
+  }
+ ],
+ "notes": "偏差値は旺文社パスナビ掲載の河合塾偏差値（2026年度入試）。倍率は河合塾Kei-Net掲載の常葉大学一般選抜入試結果（受験者数÷合格者数、学部計または学科3教科型）で2025・2026両年度。入試区分（総合能力入試＝総合型/学校推薦型/一般選抜/共通テスト利用）は常葉大学公式入学試験要項で全学的に実施を確認。看板ゼミは学部公式ページで容易に特定できず省略。"
+}
