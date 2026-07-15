@@ -58676,18 +58676,20 @@
    "dept_id": "rikkyo-bungaku",
    "uni_id": "rikkyo",
    "name": "文学部",
-   "campus": "池袋",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
    "hensachi": {
-    "min": 55,
-    "max": 57.5,
+    "min": 57.5,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58705,14 +58707,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（個別学部日程・全学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58722,26 +58724,32 @@
    "interest_tags": [
     "bungaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "rikkyo-d01",
    "uni_id": "rikkyo",
    "name": "異文化コミュニケーション学部",
-   "campus": "池袋",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
    "hensachi": {
-    "min": 62.5,
-    "max": 62.5,
+    "min": 65,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 5.4
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58759,14 +58767,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（個別学部日程・全学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58778,26 +58786,32 @@
     "bungaku",
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "media",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "rikkyo-keizai",
    "uni_id": "rikkyo",
    "name": "経済学部",
-   "campus": "池袋",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
    "hensachi": {
-    "min": 55,
-    "max": 57.5,
+    "min": 57.5,
+    "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.6
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58815,14 +58829,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（個別学部日程・全学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58834,26 +58848,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "rikkyo-keiei",
    "uni_id": "rikkyo",
    "name": "経営学部",
-   "campus": "池袋",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
    "hensachi": {
-    "min": 60,
+    "min": 62.5,
     "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 5.9
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58871,14 +58891,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（個別学部日程・全学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58890,26 +58910,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "ryutsu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "rikkyo-shakai",
    "uni_id": "rikkyo",
    "name": "社会学部",
-   "campus": "池袋",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
    "hensachi": {
-    "min": 57.5,
-    "max": 60,
+    "min": 60,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.2
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58927,14 +58953,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（個別学部日程・全学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58943,26 +58969,32 @@
    "interest_tags": [
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "media",
+    "service",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "rikkyo-ho",
    "uni_id": "rikkyo",
    "name": "法学部",
-   "campus": "池袋",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
    "hensachi": {
-    "min": 55,
-    "max": 57.5,
+    "min": 60,
+    "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58980,14 +59012,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（個別学部日程・全学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58999,26 +59031,32 @@
    "interest_tags": [
     "hokei"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "rikkyo-kanko",
    "uni_id": "rikkyo",
    "name": "観光学部",
-   "campus": "新座",
+   "campus": "新座キャンパス（埼玉県新座市北野）",
    "hensachi": {
-    "min": 52.5,
-    "max": 55,
+    "min": 57.5,
+    "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.8
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59036,14 +59074,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（個別学部日程・全学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59052,26 +59090,32 @@
    "interest_tags": [
     "unclassified"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "rikkyo-d02",
    "uni_id": "rikkyo",
    "name": "現代心理学部",
-   "campus": "新座",
+   "campus": "新座キャンパス（埼玉県新座市北野）",
    "hensachi": {
-    "min": 52.5,
-    "max": 57.5,
+    "min": 60,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59089,14 +59133,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（個別学部日程・全学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59105,26 +59149,32 @@
    "interest_tags": [
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "service",
+    "media"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "rikkyo-ri",
    "uni_id": "rikkyo",
    "name": "理学部",
-   "campus": "池袋",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
    "hensachi": {
-    "min": 52.5,
-    "max": 55,
+    "min": 55,
+    "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.6
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59142,14 +59192,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（個別学部日程・全学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59158,26 +59208,32 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "rikkyo-d03",
    "uni_id": "rikkyo",
    "name": "スポーツウエルネス学部",
-   "campus": "新座",
+   "campus": "新座キャンパス（埼玉県新座市北野）",
    "hensachi": {
-    "min": 55,
+    "min": 57.5,
     "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 5.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59195,14 +59251,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（個別学部日程・全学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59212,26 +59268,31 @@
    "interest_tags": [
     "sports"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "sports_kenko",
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "gakushuin-ho",
    "uni_id": "gakushuin",
    "name": "法学部",
-   "campus": "目白",
+   "campus": "目白キャンパス（東京都豊島区目白）",
    "hensachi": {
-    "min": 55,
+    "min": 57.5,
     "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2310/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.2
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2310/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59249,14 +59310,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（コア試験・プラス試験）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり。共テボーダー72〜82%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59268,26 +59329,32 @@
    "interest_tags": [
     "hokei"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "gakushuin-keizai",
    "uni_id": "gakushuin",
    "name": "経済学部",
-   "campus": "目白",
+   "campus": "目白キャンパス（東京都豊島区目白）",
    "hensachi": {
-    "min": 55,
+    "min": 57.5,
     "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2310/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2310/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59305,14 +59372,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（コア試験・プラス試験）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59324,26 +59391,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "gakushuin-bungaku",
    "uni_id": "gakushuin",
    "name": "文学部",
-   "campus": "目白",
+   "campus": "目白キャンパス（東京都豊島区目白）",
    "hensachi": {
-    "min": 52.5,
+    "min": 55,
     "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2310/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.4
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2310/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59361,14 +59434,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（コア試験・プラス試験）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59378,26 +59451,32 @@
    "interest_tags": [
     "bungaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "gakushuin-ri",
    "uni_id": "gakushuin",
    "name": "理学部",
-   "campus": "目白",
+   "campus": "目白キャンパス（東京都豊島区目白）",
    "hensachi": {
-    "min": 50,
-    "max": 52.5,
+    "min": 55,
+    "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2310/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2310/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59415,14 +59494,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（コア試験・プラス試験）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59431,26 +59510,32 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "gakushuin-d01",
    "uni_id": "gakushuin",
    "name": "国際社会科学部",
-   "campus": "目白",
+   "campus": "目白キャンパス（東京都豊島区目白）",
    "hensachi": {
     "min": 55,
     "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2310/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.6
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2310/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59468,14 +59553,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（コア試験・プラス試験）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59487,9 +59572,13 @@
     "gaikokugo",
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "kinyu",
+    "media"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nihon-univ-ho",

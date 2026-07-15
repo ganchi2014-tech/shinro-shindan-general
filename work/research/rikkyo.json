@@ -1,0 +1,142 @@
+{
+ "uni_id": "rikkyo",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3160/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/",
+  "https://search.keinet.ne.jp/2290/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "rikkyo-bungaku",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
+   "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（個別学部日程・全学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kyoiku", "media", "service"],
+   "unconfirmed": false,
+   "notes": "文学部（キリスト教・文・史・教育）。偏差値57.5〜62.5。倍率2025:3.7倍"
+  },
+  {
+   "dept_id": "rikkyo-d01",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
+   "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.4 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（個別学部日程・全学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["service", "media", "koumuin"],
+   "unconfirmed": false,
+   "notes": "異文化コミュニケーション学部。学内最難関、偏差値65.0。倍率2025:5.4倍"
+  },
+  {
+   "dept_id": "rikkyo-keizai",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
+   "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.6 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（個別学部日程・全学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部（経済・会計ファイナンス・経済政策）。偏差値57.5〜60.0。倍率2025:3.6倍（学内最低）"
+  },
+  {
+   "dept_id": "rikkyo-keiei",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
+   "hensachi": { "min": 62.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（個別学部日程・全学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "service"],
+   "unconfirmed": false,
+   "notes": "経営学部（経営・国際経営）。偏差値62.5。学内最高倍率、倍率2025:5.9倍"
+  },
+  {
+   "dept_id": "rikkyo-shakai",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
+   "hensachi": { "min": 60.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.2 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（個別学部日程・全学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["media", "service", "koumuin"],
+   "unconfirmed": false,
+   "notes": "社会学部（社会・現代文化・メディア社会）。偏差値60.0〜62.5。倍率2025:4.2倍"
+  },
+  {
+   "dept_id": "rikkyo-ho",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（個別学部日程・全学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部（法・国際ビジネス法・政治）。偏差値60.0。倍率2025:3.7倍"
+  },
+  {
+   "dept_id": "rikkyo-kanko",
+   "campus": "新座キャンパス（埼玉県新座市北野）",
+   "hensachi": { "min": 57.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.8 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（個別学部日程・全学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["service", "ryutsu", "koumuin"],
+   "unconfirmed": false,
+   "notes": "観光学部（観光・交流文化）。偏差値57.5。倍率2025:3.8倍"
+  },
+  {
+   "dept_id": "rikkyo-d02",
+   "campus": "新座キャンパス（埼玉県新座市北野）",
+   "hensachi": { "min": 60.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（個別学部日程・全学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["iryo_fukushi", "service", "media"],
+   "unconfirmed": false,
+   "notes": "現代心理学部（心理・映像身体）。偏差値60.0〜62.5。倍率2025:5.0倍"
+  },
+  {
+   "dept_id": "rikkyo-ri",
+   "campus": "池袋キャンパス（東京都豊島区西池袋）",
+   "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.6 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（個別学部日程・全学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["maker", "it", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "理学部（数学・物理・化学・生命理学）。偏差値55.0〜57.5。倍率2025:3.6倍（学内最低）"
+  },
+  {
+   "dept_id": "rikkyo-d03",
+   "campus": "新座キャンパス（埼玉県新座市北野）",
+   "hensachi": { "min": 57.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.3 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3160/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（個別学部日程・全学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["sports_kenko", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "スポーツウエルネス学部（2023年新設）。偏差値57.5。倍率2025:5.3倍"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度）。倍率は旺文社パスナビ掲載の一般選抜（2025年度・学部計）。私立難関大（MARCH）。文法経営社会理異文化＝池袋、観光・現代心理・スポーツウエルネス＝新座キャンパス。看板ゼミは省略"
+}

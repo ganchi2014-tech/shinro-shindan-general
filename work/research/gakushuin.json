@@ -1,0 +1,77 @@
+{
+ "uni_id": "gakushuin",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/2310/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/2310/bairitsu/",
+  "https://search.keinet.ne.jp/2204/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "gakushuin-ho",
+   "campus": "目白キャンパス（東京都豊島区目白）",
+   "hensachi": { "min": 57.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2310/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.2 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2310/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（コア試験・プラス試験）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり。共テボーダー72〜82%（河合塾）" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部（法・政治）。偏差値57.5、共テボーダー72〜82%帯。倍率2025:4.2倍"
+  },
+  {
+   "dept_id": "gakushuin-keizai",
+   "campus": "目白キャンパス（東京都豊島区目白）",
+   "hensachi": { "min": 57.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2310/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2310/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（コア試験・プラス試験）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部（経済・経営）。偏差値57.5。倍率2025:4.7倍（学内最高）"
+  },
+  {
+   "dept_id": "gakushuin-bungaku",
+   "campus": "目白キャンパス（東京都豊島区目白）",
+   "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2310/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.4 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2310/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（コア試験・プラス試験）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kyoiku", "media", "service"],
+   "unconfirmed": false,
+   "notes": "文学部（哲・史・日本語日本文・英語英米文化・ドイツ語圏文化・フランス語圏文化・心理・教育）。偏差値55.0〜57.5。倍率2025:4.4倍"
+  },
+  {
+   "dept_id": "gakushuin-ri",
+   "campus": "目白キャンパス（東京都豊島区目白）",
+   "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2310/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2310/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（コア試験・プラス試験）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["maker", "it", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "理学部（物理・化学・数学・生命科学）。偏差値55.0〜57.5。倍率2025:4.5倍"
+  },
+  {
+   "dept_id": "gakushuin-d01",
+   "campus": "目白キャンパス（東京都豊島区目白）",
+   "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2310/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.6 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2310/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（コア試験・プラス試験）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["service", "kinyu", "media"],
+   "unconfirmed": false,
+   "notes": "国際社会科学部 国際社会科学科。偏差値55.0〜57.5。倍率2025:4.6倍"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度）。倍率は旺文社パスナビ掲載の一般選抜（2025年度・学部計）。私立難関大、全学目白キャンパス。看板ゼミは省略"
+}
