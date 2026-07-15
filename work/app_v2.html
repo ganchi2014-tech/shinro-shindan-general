@@ -1501,6 +1501,40 @@ main {
       <p id="homeStats">読み込み中…</p>
       <button class="primary-btn" id="startBtn">診断をはじめる</button>
     </section>
+    <section class="screen" data-screen="diag-hensachi" hidden>
+      <h2>偏差値・模試</h2>
+      <label>偏差値 <input id="hensachiInput" type="number" min="30" max="80" value="50"></label>
+      <label><input id="hensachiUnknownChk" type="checkbox"> わからない</label>
+      <div>模試:
+        <select id="examSourceSel">
+          <option value="kawai">河合</option><option value="shinken">進研</option>
+          <option value="sundai">駿台</option><option value="toshin">東進</option>
+        </select>
+      </div>
+      <button class="primary-btn" data-next="diag-area">次へ</button>
+    </section>
+
+    <section class="screen" data-screen="diag-area" hidden>
+      <h2>エリア</h2>
+      <div id="regionChips" class="chip-wrap"></div>
+      <label><input id="commuteOnlyChk" type="checkbox"> 通学できる大学だけ</label>
+      <button class="primary-btn" data-next="diag-interest">次へ</button>
+    </section>
+
+    <section class="screen" data-screen="diag-interest" hidden>
+      <h2>興味・希望</h2>
+      <h3>興味のある分野</h3><div id="interestChips" class="chip-wrap"></div>
+      <h3>希望する就職系統</h3><div id="careerChips" class="chip-wrap"></div>
+      <h3>使える入試方式</h3>
+      <div class="chip-wrap">
+        <label><input type="checkbox" class="em" value="sogo">総合型</label>
+        <label><input type="checkbox" class="em" value="koubo">学校推薦</label>
+        <label><input type="checkbox" class="em" value="ippan" checked>一般</label>
+        <label><input type="checkbox" class="em" value="kyotsu" checked>共テ利用</label>
+      </div>
+      <button class="primary-btn" data-next="diag-riasec">次へ</button>
+    </section>
+
     <section class="screen" data-screen="loading" hidden><p>診断中…</p></section>
     <section class="screen" data-screen="result" hidden>
       <div id="resultSummary"></div>
@@ -1566,6 +1600,31 @@ main {
     document.getElementById('backBtn').hidden = state.history.length === 0;
   }
 
+  function makeChip(container, id, label, set) {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'chip'; b.textContent = label;
+    b.setAttribute('aria-pressed', set.has(id) ? 'true' : 'false');
+    b.addEventListener('click', () => {
+      if (set.has(id)) { set.delete(id); b.setAttribute('aria-pressed', 'false'); b.classList.remove('on'); }
+      else { set.add(id); b.setAttribute('aria-pressed', 'true'); b.classList.add('on'); }
+    });
+    container.appendChild(b);
+  }
+
+  function buildInputScreens() {
+    // エリア（data_v2.regions が配列 or universities から抽出）
+    const regionList = Array.isArray(DATA.regions) && DATA.regions.length
+      ? DATA.regions.map(r => (typeof r === 'string' ? { id: r, label: r } : r))
+      : [...new Set(DATA.universities.map(u => u.region))].map(r => ({ id: r, label: r }));
+    const rc = document.getElementById('regionChips');
+    regionList.forEach(r => makeChip(rc, r.id, r.label || r.id, state.regions));
+
+    const ic = document.getElementById('interestChips');
+    DATA.tags.interest.forEach(t => makeChip(ic, t.id, t.label, state.interests));
+    const cc = document.getElementById('careerChips');
+    DATA.tags.employment.forEach(t => makeChip(cc, t.id, t.label, state.careers));
+  }
+
   function init() {
     ENGINE = loadEngine();
     DATA = loadJSON('inlineData');
@@ -1577,6 +1636,20 @@ main {
       (nUni && nDept) ? `${nUni}大学 / ${nDept}学部から診断` : 'データ未読み込み';
     document.getElementById('startBtn').addEventListener('click', () => go('diag-hensachi'));
     document.getElementById('backBtn').addEventListener('click', goBack);
+
+    buildInputScreens();
+    document.getElementById('hensachiInput').addEventListener('input', e => { state.hensachi = Number(e.target.value); });
+    document.getElementById('hensachiUnknownChk').addEventListener('change', e => { state.hensachiUnknown = e.target.checked; });
+    document.getElementById('examSourceSel').addEventListener('change', e => { state.examSource = e.target.value; });
+    document.getElementById('commuteOnlyChk').addEventListener('change', e => { state.commuteOnly = e.target.checked; });
+    document.querySelectorAll('[data-next]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (btn.getAttribute('data-next') === 'diag-riasec') {
+          state.examMethods = new Set([...document.querySelectorAll('.em')].filter(x => x.checked).map(x => x.value));
+        }
+        go(btn.getAttribute('data-next'));
+      });
+    });
   }
   document.addEventListener('DOMContentLoaded', init);
   </script>
