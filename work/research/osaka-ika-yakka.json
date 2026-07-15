@@ -1,0 +1,51 @@
+{
+ "uni_id": "osaka-ika-yakka",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4070/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/4070/bairitsu/",
+  "https://search.keinet.ne.jp/2516/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "osaka-ika-yakka-d01",
+   "campus": "本部キャンパス（大阪府高槻市大学町）",
+   "hensachi": { "min": 67.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4070/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 11.6 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4070/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）。個別試験＋面接" },
+    { "type": "kyotsu", "available": false, "note": "医学科は共通テスト利用選抜なし（大学入学共通テスト利用は前期で一部）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部 医学科（6年制）。私立医学部。偏差値67.5、共テボーダー87%帯。倍率2025:11.6倍（学内圧倒的最高）"
+  },
+  {
+   "dept_id": "osaka-ika-yakka-d02",
+   "campus": "本部キャンパス（大阪府高槻市大学町）",
+   "hensachi": { "min": 47.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4070/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.2 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4070/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり。共テ得点率59〜70%帯（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "薬学部 薬学科（6年制）。旧大阪薬科大学。偏差値47.5〜50.0。倍率2025:2.2倍"
+  },
+  {
+   "dept_id": "osaka-ika-yakka-kango",
+   "campus": "本部キャンパス（大阪府高槻市大学町）",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4070/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4070/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "看護学部 看護学科。偏差値52.5〜55.0。倍率2025:2.9倍"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は旺文社パスナビ掲載の一般選抜（2025年度）。私立医療系総合大（2021年に大阪医科大＋大阪薬科大が統合）。全学高槻キャンパス。看板ゼミは省略"
+}

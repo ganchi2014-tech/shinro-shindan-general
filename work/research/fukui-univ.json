@@ -1,0 +1,64 @@
+{
+ "uni_id": "fukui-univ",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0410/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1205.html",
+  "https://search.keinet.ne.jp/1205/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "fukui-univ-kyoiku",
+   "campus": "文京キャンパス（福井県福井市文京）",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0410/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.6, "2026": 1.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1205.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー51〜63%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false,
+   "notes": "教育学部（学校教育課程）。偏差値42.5〜45.0、共テボーダー51〜63%。倍率は前期一般選抜（2025:1.6→2026:1.6）"
+  },
+  {
+   "dept_id": "fukui-univ-ko",
+   "campus": "文京キャンパス（福井県福井市文京）",
+   "hensachi": { "min": 42.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0410/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.5, "2026": 1.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1205.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）。学科別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー53〜70%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "工学部（機械システム工・電気電子情報工・建築都市環境工・物質生命化学・応用物理）。偏差値42.5〜52.5、共テボーダー53〜70%。倍率は前期一般選抜（2025:1.5→2026:1.4）"
+  },
+  {
+   "dept_id": "fukui-univ-d01",
+   "campus": "文京キャンパス（福井県福井市文京）",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0410/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.4, "2026": 1.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1205.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー57〜74%（河合塾）" }
+   ],
+   "employment_fields": ["service", "koumuin", "media"],
+   "unconfirmed": false,
+   "notes": "国際地域学部 国際地域学科。偏差値45.0、共テボーダー57〜74%。倍率は前期一般選抜（2025:1.4→2026:1.1、学内最低）"
+  },
+  {
+   "dept_id": "fukui-univ-d02",
+   "campus": "松岡キャンパス（福井県吉田郡永平寺町松岡下合月）",
+   "hensachi": { "min": 47.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0410/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.6, "2026": 3.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1205.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー57〜86%（医学科79〜86%／看護57〜）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部（医学科／看護学科）。偏差値47.5〜62.5（医学科62.5が学内最上位）、共テボーダー57〜86%。倍率は前期一般選抜（2025:2.6→2026:3.0、医学科は2026で3.9倍）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は河合塾Kei-Net掲載の前期日程一般選抜入試結果で2025・2026両年度。国立総合大。教育・工・国際地域＝文京キャンパス（福井市）、医学部＝松岡キャンパス（永平寺町）。看板ゼミは省略"
+}
