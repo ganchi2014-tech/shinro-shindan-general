@@ -44,4 +44,28 @@ const E = require('./engine_v2.js');
   assert.strictEqual(E.classifyZone(55, null), 'ungrouped');  // 偏差値未入力
 }
 
+// ---- hardFilter ----
+{
+  const universities = [
+    { id: 'ushiga', name: '滋賀大', region: 'shiga', commute_possible: true },
+    { id: 'ukanto', name: '関東大', region: 'kanto', commute_possible: false },
+  ];
+  const departments = [
+    { dept_id: 'ushiga-a', uni_id: 'ushiga', data_status: 'verified' },
+    { dept_id: 'ushiga-b', uni_id: 'ushiga', data_status: 'unconfirmed' },
+    { dept_id: 'ukanto-a', uni_id: 'ukanto', data_status: 'verified' },
+  ];
+  const r1 = E.hardFilter(departments, universities, { regions: ['shiga'] });
+  assert.strictEqual(r1.passed.length, 1);
+  assert.strictEqual(r1.passed[0].dept.dept_id, 'ushiga-a');
+  assert.strictEqual(r1.excluded.byRegion, 1);
+  assert.strictEqual(r1.excluded.unconfirmed, 1);
+  const r2 = E.hardFilter(departments, universities, { regions: [] });
+  assert.strictEqual(r2.passed.length, 2);
+  assert.strictEqual(r2.excluded.byRegion, 0);
+  const r3 = E.hardFilter(departments, universities, { regions: [], commuteOnly: true });
+  assert.strictEqual(r3.passed.length, 1);
+  assert.strictEqual(r3.passed[0].dept.dept_id, 'ushiga-a');
+}
+
 console.log('ALL OK');

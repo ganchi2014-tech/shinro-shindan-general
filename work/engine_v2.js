@@ -43,7 +43,23 @@ function classifyZone(mid, adjHen) {
   return 'safe';
 }
 
+function hardFilter(departments, universities, userProfile) {
+  const uniById = Object.fromEntries(universities.map((u) => [u.id, u]));
+  const regions = new Set(userProfile.regions || []);
+  const excluded = { byRegion: 0, unconfirmed: 0 };
+  const passed = [];
+  for (const d of departments) {
+    const uni = uniById[d.uni_id];
+    if (!uni) continue;
+    if (d.data_status === 'unconfirmed') { excluded.unconfirmed++; continue; }
+    if (regions.size && !regions.has(uni.region)) { excluded.byRegion++; continue; }
+    if (userProfile.commuteOnly && uni.commute_possible !== true) { excluded.byRegion++; continue; }
+    passed.push({ dept: d, uni });
+  }
+  return { passed, excluded };
+}
+
 module.exports = {
   RIASEC_TYPES, RIASEC_ORDER, EXAM_SOURCE_OFFSET, ZONE, DEFAULT_TOP_N,
-  computeRiasecProfile, adjustedHensachi, classifyZone,
+  computeRiasecProfile, adjustedHensachi, classifyZone, hardFilter,
 };
