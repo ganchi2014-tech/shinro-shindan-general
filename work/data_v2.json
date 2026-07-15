@@ -49379,37 +49379,39 @@
    "dept_id": "suzuka-d01",
    "uni_id": "suzuka",
    "name": "国際人間科学部 国際学科",
-   "campus": "鈴鹿",
+   "campus": "千代崎キャンパス（三重県鈴鹿市郡山町）",
    "hensachi": {
     "min": 35,
-    "max": 40,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://search.keinet.ne.jp/2477/general/border_rate",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3867/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合型選抜",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜",
+     "verified": true
     },
     {
      "type": "kyotsu",
@@ -49425,45 +49427,51 @@
    "interest_tags": [
     "gaikokugo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "suzuka-d02",
    "uni_id": "suzuka",
    "name": "国際人間科学部 こども教育学科",
-   "campus": "鈴鹿",
+   "campus": "千代崎キャンパス（三重県鈴鹿市郡山町）",
    "hensachi": {
     "min": 35,
     "max": 40,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://search.keinet.ne.jp/2477/general/border_rate",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3867/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合型選抜",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜",
+     "verified": true
     },
     {
      "type": "kyotsu",
@@ -49481,9 +49489,12 @@
     "gaikokugo",
     "kyoiku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "tokoha-kyoiku",
@@ -50433,13 +50444,13 @@
    "dept_id": "aichi-bunkyo-jinbun",
    "uni_id": "aichi-bunkyo",
    "name": "人文学部 グローバル・スタディーズ学科",
-   "campus": "小牧",
+   "campus": "小牧キャンパス（愛知県小牧市大草）",
    "hensachi": {
     "min": 35,
-    "max": 40,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://search.keinet.ne.jp/2466/general/border_rate",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -50450,20 +50461,20 @@
     {
      "type": "sogo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "総合型選抜",
+     "verified": true
     },
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "学校推薦型選抜",
+     "verified": true
     },
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜",
+     "verified": true
     },
     {
      "type": "kyotsu",
@@ -50482,9 +50493,13 @@
     "bungaku",
     "gaikokugo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "kyoiku",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "shiga-univ-keizai",

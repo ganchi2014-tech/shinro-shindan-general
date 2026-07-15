@@ -1,0 +1,40 @@
+{
+ "uni_id": "suzuka",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3867/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/3867/bairitsu/",
+  "https://search.keinet.ne.jp/2477/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "suzuka-d01",
+   "campus": "千代崎キャンパス（三重県鈴鹿市郡山町）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://search.keinet.ne.jp/2477/general/border_rate" },
+   "bairitsu": { "ippan": { "2025": 1.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3867/bairitsu/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜" },
+    { "type": "ippan", "available": true, "note": "一般選抜" }
+   ],
+   "employment_fields": ["service", "ryutsu", "koumuin"],
+   "unconfirmed": false,
+   "notes": "国際地域学部 国際地域学科（batch表記の国際人間科学部 国際学科に相当。学部改組済）。河合塾BF（ボーダーフリー）、共テ得点率35〜37%。一般選抜倍率2025:1.0倍（実質全入）"
+  },
+  {
+   "dept_id": "suzuka-d02",
+   "campus": "千代崎キャンパス（三重県鈴鹿市郡山町）",
+   "hensachi": { "min": 35.0, "max": 40.0, "source_url": "https://search.keinet.ne.jp/2477/general/border_rate" },
+   "bairitsu": { "ippan": { "2025": 1.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3867/bairitsu/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜" },
+    { "type": "ippan", "available": true, "note": "一般選抜" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false,
+   "notes": "こども教育学部 こども教育学科（batch表記の国際人間科学部 こども教育学科に相当。学部改組済）。河合塾BF〜40.0、共テ得点率36〜38%。一般選抜倍率2025:1.0倍。保育士・幼稚園・小学校教員養成"
+  }
+ ],
+ "notes": "偏差値・共テ得点率は河合塾（Kei-Net／パスナビ、2026年度）。倍率は旺文社パスナビ掲載の一般選抜（2025年度、学部計1.0倍・学科別は非公表）。私立小規模大でBF（ボーダーフリー）水準。鈴鹿大は2024年度に国際地域学部・こども教育学部へ改組。看板ゼミは省略"
+}

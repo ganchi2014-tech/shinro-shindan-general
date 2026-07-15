@@ -1,0 +1,24 @@
+{
+ "uni_id": "aichi-bunkyo",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3653/difficulty",
+  "https://search.keinet.ne.jp/2466/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "aichi-bunkyo-jinbun",
+   "campus": "小牧キャンパス（愛知県小牧市大草）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://search.keinet.ne.jp/2466/general/border_rate" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜" },
+    { "type": "ippan", "available": true, "note": "一般選抜" }
+   ],
+   "employment_fields": ["service", "kyoiku", "koumuin"],
+   "unconfirmed": false,
+   "notes": "人間学部 人文学科（batch表記のグローバル・スタディーズ学科に相当。2025年度より人文総合・英語・中国語・教員養成の4コース制）。河合塾偏差値35.0、共テ得点率40〜48%。倍率はパスナビ未取得（BF水準の小規模私立、実質全入に近い）"
+  }
+ ],
+ "notes": "偏差値・共テ得点率は河合塾（Kei-Net／パスナビ、2026年度）。私立小規模大でBF（ボーダーフリー）水準。倍率は取得できず未収録（現行推定値を保持）。看板ゼミは省略"
+}
