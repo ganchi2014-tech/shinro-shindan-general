@@ -1501,6 +1501,9 @@ main {
 .fit-badge { font-weight: 700; color: var(--accent, #2563eb); }
 .reasons { margin-top: 4px; display: flex; gap: 4px; flex-wrap: wrap; }
 .rchip { font-size: 11px; background: var(--bg-card-hi); border-radius: 10px; padding: 2px 8px; }
+.detail-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.detail-table th { text-align: left; width: 38%; color: var(--text-dim); vertical-align: top; padding: 6px 4px; font-weight: 500; }
+.detail-table td { padding: 6px 4px; }
   </style>
 </head>
 <body>
@@ -1562,6 +1565,9 @@ main {
     <section class="screen" data-screen="result" hidden>
       <div id="resultSummary"></div>
       <div id="resultBody"></div>
+    </section>
+    <section class="screen" data-screen="detail" hidden>
+      <div id="detailBody"></div>
     </section>
   </main>
 
@@ -1758,6 +1764,46 @@ main {
     });
     const ung = zoneSection('偏差値データなし', r.ungrouped);
     if (ung) body.appendChild(ung);
+  }
+
+  function findDept(deptId) {
+    const dept = DATA.departments.find(d => d.dept_id === deptId);
+    const uni = dept ? DATA.universities.find(u => u.id === dept.uni_id) : null;
+    return { dept, uni };
+  }
+
+  function showDetail(deptId) {
+    const { dept, uni } = findDept(deptId);
+    if (!dept || !uni) return;
+    state.currentDept = deptId;
+    const h = dept.hensachi || {};
+    const bai = dept.bairitsu && dept.bairitsu.ippan ? dept.bairitsu.ippan : null;
+    const baiText = bai ? Object.entries(bai).map(([y, v]) => `${y}:${v}`).join(' / ') : '—';
+    const ENTRY_METHOD_LABELS = { sogo: '総合型', koubo: '学校推薦', ippan: '一般', kyotsu: '共テ利用' };
+    const methods = (dept.entry_methods || [])
+      .filter(m => m && m.available)
+      .map(m => ENTRY_METHOD_LABELS[m.type] || m.type).join('・');
+    const empMap = new Map((DATA.tags.employment || []).map(t => [t.id, t.label]));
+    const emps = (dept.employment_fields || []).map(id => empMap.get(id) || id).join('・');
+    const rows = [
+      ['偏差値', (h.min != null ? `${h.min}-${h.max}（${h.basis || ''}）` : '—')],
+      ['倍率(一般)', baiText],
+      ['キャンパス', dept.campus || uni.campus_main || '—'],
+      ['入試方式', methods || '—'],
+      ['取得できる資格', (dept.qualifications || []).join('・') || '—'],
+      ['就職分野', emps || '—'],
+      ['学費(年)', uni.tuition_yen_per_year ? `${uni.tuition_yen_per_year.toLocaleString()}円` : '—'],
+    ];
+    const LINK_LABELS = { official_url: '公式サイト', nyushi_url: '入試情報', shingaku_url: '進路・就職', youkou_url: '募集要項' };
+    const ol = uni.official_links || {};
+    const links = Object.keys(LINK_LABELS)
+      .filter(k => ol[k])
+      .map(k => `<li><a href="${ol[k]}" target="_blank" rel="noopener">${LINK_LABELS[k]}</a></li>`).join('');
+    document.getElementById('detailBody').innerHTML =
+      `<h2>${uni.name}</h2><h3>${dept.name}</h3>` +
+      `<table class="detail-table">${rows.map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`).join('')}</table>` +
+      (links ? `<h4>公式リンク</h4><ul>${links}</ul>` : '');
+    go('detail');
   }
 
   function init() {
