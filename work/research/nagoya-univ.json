@@ -1,0 +1,129 @@
+{
+ "uni_id": "nagoya-univ",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0490/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1250.html",
+  "https://search.keinet.ne.jp/1250/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "nagoya-univ-bungaku",
+   "campus": "東山キャンパス（愛知県名古屋市千種区不老町）",
+   "hensachi": { "min": 62.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0490/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.0, "2026": 1.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1250.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー79%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "media", "koumuin"],
+   "unconfirmed": false,
+   "notes": "文学部 人文学科。偏差値62.5、共テボーダー79%。倍率は前期一般選抜（2025:2.0→2026:1.9）"
+  },
+  {
+   "dept_id": "nagoya-univ-kyoiku",
+   "campus": "東山キャンパス（愛知県名古屋市千種区不老町）",
+   "hensachi": { "min": 62.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0490/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.2, "2026": 2.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1250.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー78%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "media"],
+   "unconfirmed": false,
+   "notes": "教育学部 人間発達科学科。偏差値62.5、共テボーダー78%。倍率は前期一般選抜（2025:2.2→2026:2.1）"
+  },
+  {
+   "dept_id": "nagoya-univ-ho",
+   "campus": "東山キャンパス（愛知県名古屋市千種区不老町）",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0490/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.2, "2026": 2.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1250.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー79%（河合塾）" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部 法律・政治学科。偏差値60.0、共テボーダー79%。倍率は前期一般選抜（2025:2.2→2026:2.1）"
+  },
+  {
+   "dept_id": "nagoya-univ-keizai",
+   "campus": "東山キャンパス（愛知県名古屋市千種区不老町）",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0490/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.1, "2026": 2.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1250.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー79%（河合塾）" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部（経済・経営）。偏差値60.0、共テボーダー79%。倍率は前期一般選抜（2025:2.1→2026:2.4）"
+  },
+  {
+   "dept_id": "nagoya-univ-joho",
+   "campus": "東山キャンパス（愛知県名古屋市千種区不老町）",
+   "hensachi": { "min": 60.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0490/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.3, "2026": 1.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1250.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー78〜80%（河合塾）" }
+   ],
+   "employment_fields": ["it", "maker", "media"],
+   "unconfirmed": false,
+   "notes": "情報学部（自然情報・人間社会情報・コンピュータ科学）。偏差値60.0〜62.5、共テボーダー78〜80%。倍率は前期一般選抜（2025:2.3→2026:1.9）"
+  },
+  {
+   "dept_id": "nagoya-univ-ri",
+   "campus": "東山キャンパス（愛知県名古屋市千種区不老町）",
+   "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0490/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.8, "2026": 2.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1250.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー78%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "理学部（数理・物理・化学・生命理学・地球惑星科学）。偏差値57.5〜60.0、共テボーダー78%。倍率は前期一般選抜（2025:2.8→2026:2.4）"
+  },
+  {
+   "dept_id": "nagoya-univ-ko",
+   "campus": "東山キャンパス（愛知県名古屋市千種区不老町）",
+   "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0490/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.3, "2026": 2.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1250.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）。学科別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー75〜78%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "工学部（化学生命工・物理工・マテリアル工・電気電子情報工・機械航空宇宙工・エネルギー理工・環境土木建築）。偏差値57.5〜60.0、共テボーダー75〜78%。倍率は前期一般選抜（2025:2.3→2026:2.3）"
+  },
+  {
+   "dept_id": "nagoya-univ-no",
+   "campus": "東山キャンパス（愛知県名古屋市千種区不老町）",
+   "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0490/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.1, "2026": 1.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1250.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー75〜77%（河合塾）" }
+   ],
+   "employment_fields": ["shokuhin", "maker", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "農学部（生物環境科学・資源生物科学・応用生命科学）。偏差値57.5〜60.0、共テボーダー75〜77%。倍率は前期一般選抜（2025:2.1→2026:1.9）"
+  },
+  {
+   "dept_id": "nagoya-univ-d01",
+   "campus": "鶴舞キャンパス（愛知県名古屋市昭和区鶴舞町／医学科）・東山（保健の一部）",
+   "hensachi": { "min": 50.0, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0490/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.2, "2026": 2.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1250.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・医学科は後期も／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー63〜87%（医学科87%／保健63〜72%）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部（医学科／保健学科）。偏差値50.0〜67.5（医学科67.5が学内最上位）、共テボーダー63〜87%。倍率は前期一般選抜（2025:2.2→2026:2.0）。医学科は後期(共テ92%)も実施"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は河合塾Kei-Net掲載の前期日程一般選抜入試結果で2025・2026両年度（前期計2.3→2.2）。難関国立総合大（旧帝）。文系・理系＝東山キャンパス、医学科＝鶴舞キャンパス。学校推薦型も一部あるが偏差値・倍率は一般前期基準。看板ゼミは省略"
+}

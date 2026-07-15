@@ -1,0 +1,77 @@
+{
+ "uni_id": "gifu-univ",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0460/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1260.html",
+  "https://search.keinet.ne.jp/1260/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "gifu-univ-kyoiku",
+   "campus": "柳戸キャンパス（岐阜県岐阜市柳戸）",
+   "hensachi": { "min": 45.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0460/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.7, "2026": 2.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1260.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー47〜61%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false,
+   "notes": "教育学部（学校教育教員養成課程）。偏差値45.0〜50.0、共テボーダー47〜61%。倍率は前期一般選抜（2025:1.7→2026:2.0）"
+  },
+  {
+   "dept_id": "gifu-univ-d01",
+   "campus": "柳戸キャンパス（岐阜県岐阜市柳戸）",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0460/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.0, "2026": 1.8 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1260.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー64〜70%（河合塾）" }
+   ],
+   "employment_fields": ["koumuin", "service", "media"],
+   "unconfirmed": false,
+   "notes": "地域科学部（地域政策・地域文化）。偏差値52.5、共テボーダー64〜70%。倍率は前期一般選抜（2025:2.0→2026:1.8）"
+  },
+  {
+   "dept_id": "gifu-univ-ko",
+   "campus": "柳戸キャンパス（岐阜県岐阜市柳戸）",
+   "hensachi": { "min": 50.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0460/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.6, "2026": 2.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1260.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）。学科別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー62〜72%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "工学部（社会基盤工・機械工・化学生命工・電気電子情報工）。偏差値50.0〜55.0、共テボーダー62〜72%。倍率は前期一般選抜（2025:2.6→2026:2.9、学内最高）"
+  },
+  {
+   "dept_id": "gifu-univ-d02",
+   "campus": "柳戸キャンパス（岐阜県岐阜市柳戸）",
+   "hensachi": { "min": 52.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0460/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.3, "2026": 2.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1260.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）。学科別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー69〜79%（獣医が最上位）" }
+   ],
+   "employment_fields": ["shokuhin", "iryo_fukushi", "maker"],
+   "unconfirmed": false,
+   "notes": "応用生物科学部（応用生命科学・生産環境科学・共同獣医学科6年制）。偏差値52.5〜62.5（獣医62.5が最上位）、共テボーダー69〜79%。倍率は前期一般選抜（2025:2.3→2026:2.4）"
+  },
+  {
+   "dept_id": "gifu-univ-d03",
+   "campus": "柳戸キャンパス（岐阜県岐阜市柳戸）",
+   "hensachi": { "min": 50.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0460/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.3, "2026": 2.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1260.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー59〜82%（医学科82%／看護59〜）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部（医学科／看護学科）。偏差値50.0〜65.0（医学科65.0が学内最上位）、共テボーダー59〜82%。倍率は前期一般選抜（2025:2.3→2026:2.2）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は河合塾Kei-Net掲載の前期日程一般選抜入試結果で2025・2026両年度。国立総合大、全学柳戸キャンパス。名古屋大と法人統合（東海国立大学機構）。看板ゼミは省略"
+}
