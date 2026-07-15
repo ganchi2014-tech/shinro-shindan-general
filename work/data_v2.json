@@ -52273,18 +52273,21 @@
    "dept_id": "kobe-univ-keiei",
    "uni_id": "kobe-univ",
    "name": "経営学部",
-   "campus": "六甲台",
+   "campus": "六甲台キャンパス（兵庫県神戸市灘区六甲台町）",
    "hensachi": {
     "min": 62.5,
     "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.2,
+     "2026": 3.6
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52302,14 +52305,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー79%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52319,26 +52322,33 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-univ-keizai",
    "uni_id": "kobe-univ",
    "name": "経済学部",
-   "campus": "六甲台",
+   "campus": "六甲台キャンパス（兵庫県神戸市灘区六甲台町）",
    "hensachi": {
     "min": 60,
-    "max": 62.5,
+    "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.9,
+     "2026": 2.3
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52356,14 +52366,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／数学選抜・英数選抜・総合選抜等）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー78%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52375,26 +52385,33 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-univ-ho",
    "uni_id": "kobe-univ",
    "name": "法学部",
-   "campus": "六甲台",
+   "campus": "六甲台キャンパス（兵庫県神戸市灘区六甲台町）",
    "hensachi": {
-    "min": 60,
+    "min": 62.5,
     "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.2,
+     "2026": 2.7
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52412,14 +52429,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー80〜85%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52428,26 +52445,33 @@
    "interest_tags": [
     "hokei"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-univ-bungaku",
    "uni_id": "kobe-univ",
    "name": "文学部",
-   "campus": "六甲台",
+   "campus": "六甲台第2キャンパス（兵庫県神戸市灘区）",
    "hensachi": {
-    "min": 60,
-    "max": 62.5,
+    "min": 62.5,
+    "max": 67.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.4,
+     "2026": 2.4
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52465,14 +52489,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー80〜87%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52482,26 +52506,33 @@
    "interest_tags": [
     "bungaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-univ-d01",
    "uni_id": "kobe-univ",
    "name": "国際人間科学部",
-   "campus": "六甲台",
+   "campus": "鶴甲第1・第2キャンパス（兵庫県神戸市灘区鶴甲）",
    "hensachi": {
     "min": 57.5,
-    "max": 62.5,
+    "max": 67.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.8,
+     "2026": 2.6
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52519,14 +52550,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー76〜83%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52536,26 +52567,33 @@
    "interest_tags": [
     "gaikokugo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "service",
+    "media"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-univ-ri",
    "uni_id": "kobe-univ",
    "name": "理学部",
-   "campus": "六甲台",
+   "campus": "六甲台第2キャンパス（兵庫県神戸市灘区）",
    "hensachi": {
-    "min": 55,
-    "max": 60,
+    "min": 57.5,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3,
+     "2026": 3.2
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52573,14 +52611,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー76〜87%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52589,26 +52627,33 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-univ-ko",
    "uni_id": "kobe-univ",
    "name": "工学部",
-   "campus": "六甲台",
+   "campus": "六甲台第2キャンパス（兵庫県神戸市灘区）",
    "hensachi": {
     "min": 57.5,
-    "max": 60,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.4,
+     "2026": 3.2
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52626,14 +52671,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー75〜84%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52643,26 +52688,33 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-univ-no",
    "uni_id": "kobe-univ",
    "name": "農学部",
-   "campus": "六甲台",
+   "campus": "六甲台第2キャンパス（兵庫県神戸市灘区）",
    "hensachi": {
-    "min": 57.5,
-    "max": 60,
+    "min": 55,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.3,
+     "2026": 2.1
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52680,14 +52732,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー75〜85%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52698,26 +52750,33 @@
    "interest_tags": [
     "nogaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "shokuhin",
+    "maker",
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-univ-d02",
    "uni_id": "kobe-univ",
    "name": "海洋政策科学部",
-   "campus": "深江",
+   "campus": "深江キャンパス（兵庫県神戸市東灘区深江南町）",
    "hensachi": {
-    "min": 52.5,
-    "max": 55,
+    "min": 55,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.2,
+     "2026": 2.2
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52735,14 +52794,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー71〜78%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52751,26 +52810,33 @@
    "interest_tags": [
     "hokei"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "maker",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-univ-d03",
    "uni_id": "kobe-univ",
    "name": "医学部（医・保健）",
-   "campus": "楠・名谷",
+   "campus": "楠キャンパス（兵庫県神戸市中央区楠町／医学科）・名谷キャンパス（保健学科）",
    "hensachi": {
-    "min": 55,
+    "min": 52.5,
     "max": 67.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.6,
+     "2026": 2.3
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52788,14 +52854,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー67〜86%（医学科86%／保健67〜）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52807,9 +52873,11 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-koritsu-d01",

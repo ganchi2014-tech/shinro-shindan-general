@@ -1,0 +1,142 @@
+{
+ "uni_id": "kobe-univ",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0620/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html",
+  "https://search.keinet.ne.jp/1310/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "kobe-univ-keiei",
+   "campus": "六甲台キャンパス（兵庫県神戸市灘区六甲台町）",
+   "hensachi": { "min": 62.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.2, "2026": 3.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー79%（河合塾）" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経営学部。偏差値62.5、共テボーダー79%。倍率は前期一般選抜（2025:3.2→2026:3.6）"
+  },
+  {
+   "dept_id": "kobe-univ-keizai",
+   "campus": "六甲台キャンパス（兵庫県神戸市灘区六甲台町）",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9, "2026": 2.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／数学選抜・英数選抜・総合選抜等）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー78%（河合塾）" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部。偏差値60.0、共テボーダー78%。倍率は前期一般選抜（2025:2.9→2026:2.3）"
+  },
+  {
+   "dept_id": "kobe-univ-ho",
+   "campus": "六甲台キャンパス（兵庫県神戸市灘区六甲台町）",
+   "hensachi": { "min": 62.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.2, "2026": 2.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー80〜85%（河合塾）" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部。偏差値62.5、共テボーダー80〜85%。倍率は前期一般選抜（2025:3.2→2026:2.7）"
+  },
+  {
+   "dept_id": "kobe-univ-bungaku",
+   "campus": "六甲台第2キャンパス（兵庫県神戸市灘区）",
+   "hensachi": { "min": 62.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.4, "2026": 2.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー80〜87%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "media", "koumuin"],
+   "unconfirmed": false,
+   "notes": "文学部（人文学科）。偏差値62.5〜67.5、共テボーダー80〜87%。倍率は前期一般選抜（2025:2.4→2026:2.4）"
+  },
+  {
+   "dept_id": "kobe-univ-d01",
+   "campus": "鶴甲第1・第2キャンパス（兵庫県神戸市灘区鶴甲）",
+   "hensachi": { "min": 57.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.8, "2026": 2.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー76〜83%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "service", "media"],
+   "unconfirmed": false,
+   "notes": "国際人間科学部（グローバル文化・発達コミュニティ・環境共生・子ども教育）。偏差値57.5〜67.5、共テボーダー76〜83%。倍率は前期一般選抜（2025:2.8→2026:2.6）"
+  },
+  {
+   "dept_id": "kobe-univ-ri",
+   "campus": "六甲台第2キャンパス（兵庫県神戸市灘区）",
+   "hensachi": { "min": 57.5, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0, "2026": 3.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー76〜87%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "理学部（数学・物理・化学・生物・惑星）。偏差値57.5〜65.0、共テボーダー76〜87%。倍率は前期一般選抜（2025:3.0→2026:3.2）"
+  },
+  {
+   "dept_id": "kobe-univ-ko",
+   "campus": "六甲台第2キャンパス（兵庫県神戸市灘区）",
+   "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.4, "2026": 3.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー75〜84%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "工学部（建築・市民工・電気電子・機械・応用化学・情報知能）。偏差値57.5〜62.5、共テボーダー75〜84%。倍率は前期一般選抜（2025:3.4→2026:3.2）。※システム情報学部は別組織で2026倍率3.7"
+  },
+  {
+   "dept_id": "kobe-univ-no",
+   "campus": "六甲台第2キャンパス（兵庫県神戸市灘区）",
+   "hensachi": { "min": 55.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.3, "2026": 2.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー75〜85%（河合塾）" }
+   ],
+   "employment_fields": ["shokuhin", "maker", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "農学部（食料環境システム・資源生命科学・生命機能科学）。偏差値55.0〜65.0、共テボーダー75〜85%。倍率は前期一般選抜（2025:2.3→2026:2.1、学内最低）"
+  },
+  {
+   "dept_id": "kobe-univ-d02",
+   "campus": "深江キャンパス（兵庫県神戸市東灘区深江南町）",
+   "hensachi": { "min": 55.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.2, "2026": 2.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー71〜78%（河合塾）" }
+   ],
+   "employment_fields": ["koumuin", "maker", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "海洋政策科学部（旧海事科学部、海洋政策・海洋工学・海洋科学）。偏差値55.0〜62.5、共テボーダー71〜78%。倍率は前期一般選抜（2025:2.2→2026:2.2）。商船系（航海・機関士養成）"
+  },
+  {
+   "dept_id": "kobe-univ-d03",
+   "campus": "楠キャンパス（兵庫県神戸市中央区楠町／医学科）・名谷キャンパス（保健学科）",
+   "hensachi": { "min": 52.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.6, "2026": 2.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1310.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー67〜86%（医学科86%／保健67〜）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部（医学科／保健学科）。偏差値52.5〜67.5（医学科最上位、保健下位）、共テボーダー67〜86%。倍率は前期一般選抜（2025:2.6→2026:2.3）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は河合塾Kei-Net掲載の前期日程一般選抜入試結果で2025・2026両年度。難関国立総合大。六甲台・鶴甲（灘区）中心、医＝楠/名谷、海洋政策＝深江キャンパス。学校推薦型・総合型も一部あるが偏差値・倍率は一般前期基準。看板ゼミは省略"
+}
