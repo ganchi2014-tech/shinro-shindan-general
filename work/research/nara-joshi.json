@@ -1,0 +1,64 @@
+{
+ "uni_id": "nara-joshi",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0660/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1330.html",
+  "https://search.keinet.ne.jp/1330/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "nara-joshi-bungaku",
+   "campus": "奈良女子大学キャンパス（奈良県奈良市北魚屋西町）",
+   "hensachi": { "min": 55.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0660/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.7, "2026": 2.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1330.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー70〜78%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "media", "service"],
+   "unconfirmed": false,
+   "notes": "文学部（人文社会・言語文化・人間科学）。学内最難関、偏差値55.0〜60.0、共テボーダー70〜78%。倍率は前期一般選抜（2025:2.7→2026:2.0）"
+  },
+  {
+   "dept_id": "nara-joshi-ri",
+   "campus": "奈良女子大学キャンパス（奈良県奈良市北魚屋西町）",
+   "hensachi": { "min": 50.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0660/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.2, "2026": 1.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1330.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー65〜79%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "it", "maker"],
+   "unconfirmed": false,
+   "notes": "理学部（数物科学・化学生物環境）。偏差値50.0〜55.0、共テボーダー65〜79%。倍率は前期一般選抜（2025:2.2→2026:1.6）"
+  },
+  {
+   "dept_id": "nara-joshi-d01",
+   "campus": "奈良女子大学キャンパス（奈良県奈良市北魚屋西町）",
+   "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0660/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.7, "2026": 2.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1330.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー67〜77%（河合塾）" }
+   ],
+   "employment_fields": ["shokuhin", "iryo_fukushi", "kensetsu", "service"],
+   "unconfirmed": false,
+   "notes": "生活環境学部（食物栄養・心身健康・住環境・文化情報）。偏差値55.0〜57.5、共テボーダー67〜77%。倍率は前期一般選抜（2025:2.7→2026:2.7）"
+  },
+  {
+   "dept_id": "nara-joshi-ko",
+   "campus": "奈良女子大学キャンパス（奈良県奈良市北魚屋西町）",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0660/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.6, "2026": 1.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1330.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー69〜76%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it"],
+   "unconfirmed": false,
+   "notes": "工学部（2022年新設・女子大初の工学部）。偏差値52.5、共テボーダー69〜76%。倍率は前期一般選抜（2025:1.6→2026:1.6）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度・第1回全統記述模試・2026-07-01更新）。倍率は河合塾Kei-Net掲載の前期日程一般選抜入試結果で2025・2026両年度。国立の女子大、全学奈良市北魚屋キャンパス。看板ゼミは省略"
+}

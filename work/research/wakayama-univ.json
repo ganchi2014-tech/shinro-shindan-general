@@ -1,0 +1,77 @@
+{
+ "uni_id": "wakayama-univ",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0670/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1335.html",
+  "https://search.keinet.ne.jp/1335/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "wakayama-univ-kyoiku",
+   "campus": "栄谷キャンパス（和歌山県和歌山市栄谷）",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0670/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.6, "2026": 1.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1335.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー52〜67%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false,
+   "notes": "教育学部（学校教育教員養成課程）。偏差値42.5〜45.0、共テボーダー52〜67%。倍率は前期一般選抜（2025:1.6→2026:1.6）"
+  },
+  {
+   "dept_id": "wakayama-univ-keizai",
+   "campus": "栄谷キャンパス（和歌山県和歌山市栄谷）",
+   "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0670/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.9, "2026": 2.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1335.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー61〜75%（河合塾）" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu", "maker"],
+   "unconfirmed": false,
+   "notes": "経済学部。偏差値47.5、共テボーダー61〜75%。倍率は前期一般選抜（2025:1.9→2026:2.0）"
+  },
+  {
+   "dept_id": "wakayama-univ-d01",
+   "campus": "栄谷キャンパス（和歌山県和歌山市栄谷）",
+   "hensachi": { "min": 47.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0670/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.7, "2026": 1.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1335.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー59〜67%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "システム工学部。偏差値47.5〜50.0、共テボーダー59〜67%。倍率は前期一般選抜（2025:1.7→2026:1.7）"
+  },
+  {
+   "dept_id": "wakayama-univ-kanko",
+   "campus": "栄谷キャンパス（和歌山県和歌山市栄谷）",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0670/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.3, "2026": 2.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1335.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー64〜75%（河合塾）" }
+   ],
+   "employment_fields": ["service", "ryutsu", "koumuin"],
+   "unconfirmed": false,
+   "notes": "観光学部（日本の国立大で唯一の観光学部）。学内最難関、偏差値52.5、共テボーダー64〜75%。倍率は前期一般選抜（2025:2.3→2026:2.4）"
+  },
+  {
+   "dept_id": "wakayama-univ-d02",
+   "campus": "栄谷キャンパス（和歌山県和歌山市栄谷）",
+   "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0670/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.1, "2026": 4.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1335.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー60%（河合塾）" }
+   ],
+   "employment_fields": ["it", "koumuin", "media"],
+   "unconfirmed": false,
+   "notes": "社会インフォマティクス学環（データ・情報系の学部横断組織）。偏差値47.5、共テボーダー60%。倍率は前期一般選抜（2025:1.1→2026:4.9、志願者が前年比527%の急増）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度・第1回全統記述模試）。倍率は河合塾Kei-Net掲載の前期日程一般選抜入試結果で2025・2026両年度。国立大につき一般前期＋共通テストを確認。全学栄谷キャンパス。学校推薦型・総合型も一部あるが偏差値・倍率は一般前期基準。看板ゼミは省略"
+}

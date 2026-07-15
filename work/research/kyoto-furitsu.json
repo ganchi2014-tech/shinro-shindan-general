@@ -1,0 +1,63 @@
+{
+ "uni_id": "kyoto-furitsu",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/1170/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/1170/bairitsu/",
+  "https://search.keinet.ne.jp/1595/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "kyoto-furitsu-bungaku",
+   "campus": "下鴨キャンパス（京都府京都市左京区下鴨半木町）",
+   "hensachi": { "min": 60.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/1170/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1170/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "公立大につき共通テストを課す。共テボーダー78〜86%（河合塾）" }
+   ],
+   "employment_fields": ["koumuin", "kyoiku", "media", "service"],
+   "unconfirmed": false,
+   "notes": "文学部（日本・中国文化／欧米言語文化／歴史）。学内最難関、偏差値60.0〜65.0、共テボーダー78〜86%。倍率2025は学科により異なる（例：日本・中国文化学科4.5倍）。2026倍率は未掲載"
+  },
+  {
+   "dept_id": "kyoto-furitsu-d01",
+   "campus": "下鴨キャンパス（京都府京都市左京区下鴨半木町）",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/1170/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期のみ。和食文化科学科は前期A＝文系型／前期B＝理系型に分けて選抜）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー69〜81%（河合塾。農学食科学部相当）" }
+   ],
+   "employment_fields": ["shokuhin", "service", "koumuin"],
+   "unconfirmed": false,
+   "notes": "和食文化科学部 和食文化科学科（2024年度再編で農学食科学部系に統合、募集は和食文化科学科として継続）。偏差値52.5〜55.0、共テボーダー69〜81%。倍率は前期A/B別で個別設定のため代表値は未収録（現行推定値を保持）"
+  },
+  {
+   "dept_id": "kyoto-furitsu-d02",
+   "campus": "下鴨キャンパス（京都府京都市左京区下鴨半木町）",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/1170/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1170/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー68〜82%（河合塾）" }
+   ],
+   "employment_fields": ["it", "maker", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "生命理工情報学部（生命化学科・理工情報学科）。偏差値52.5〜55.0、共テボーダー68〜82%。倍率2025代表値4.7（生命化学4.8／理工情報4.6の平均）。2026倍率は未掲載"
+  },
+  {
+   "dept_id": "kyoto-furitsu-d03",
+   "campus": "下鴨キャンパス（京都府京都市左京区下鴨半木町）",
+   "hensachi": { "min": 50.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/1170/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1170/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー67〜79%（河合塾）" }
+   ],
+   "employment_fields": ["kensetsu", "koumuin", "maker"],
+   "unconfirmed": false,
+   "notes": "環境科学部（環境・情報科学科／環境デザイン学科／森林科学科）。偏差値50.0〜55.0、共テボーダー67〜79%。倍率2025は学科差大（環境デザイン4.5／森林科学2.7）、代表値4.5を採用。2026倍率は未掲載"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は旺文社パスナビ掲載の前期日程一般選抜（2025年度のみ、学科別・代表値）。京都府立大は2024年度に5学部制へ再編。主たる下鴨キャンパス。看板ゼミは省略"
+}
