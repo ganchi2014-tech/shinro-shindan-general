@@ -1526,6 +1526,46 @@ main {
   function loadJSON(id) { return JSON.parse(document.getElementById(id).textContent); }
 
   let ENGINE, DATA, RIASEC_DEF, RIASEC_MAP;
+
+  const state = {
+    hensachi: 50,
+    hensachiUnknown: false,
+    examSource: 'kawai',            // kawai/shinken/sundai/toshin
+    regions: new Set(),
+    commuteOnly: false,
+    interests: new Set(),
+    careers: new Set(),
+    examMethods: new Set(['ippan', 'kyotsu']),
+    riasecAnswers: {},              // {index: 0..3}
+    screen: 'home',
+    history: [],
+    lastResult: null,
+    currentDept: null,
+  };
+
+  function go(screenId, opts = {}) {
+    const cur = document.querySelector(`.screen[data-screen="${state.screen}"]`);
+    if (cur) cur.hidden = true;
+    const next = document.querySelector(`.screen[data-screen="${screenId}"]`);
+    if (!next) { console.warn('no screen', screenId); return; }
+    if (!opts.back) state.history.push(state.screen);
+    state.screen = screenId;
+    next.hidden = false;
+    const back = document.getElementById('backBtn');
+    back.hidden = state.history.length === 0;
+    window.scrollTo(0, 0);
+  }
+  function goBack() {
+    if (!state.history.length) return;
+    const prev = state.history.pop();
+    const cur = document.querySelector(`.screen[data-screen="${state.screen}"]`);
+    if (cur) cur.hidden = true;
+    const p = document.querySelector(`.screen[data-screen="${prev}"]`);
+    if (p) p.hidden = false;
+    state.screen = prev;
+    document.getElementById('backBtn').hidden = state.history.length === 0;
+  }
+
   function init() {
     ENGINE = loadEngine();
     DATA = loadJSON('inlineData');
@@ -1535,6 +1575,8 @@ main {
     const nDept = (DATA.departments || []).length;
     document.getElementById('homeStats').textContent =
       (nUni && nDept) ? `${nUni}大学 / ${nDept}学部から診断` : 'データ未読み込み';
+    document.getElementById('startBtn').addEventListener('click', () => go('diag-hensachi'));
+    document.getElementById('backBtn').addEventListener('click', goBack);
   }
   document.addEventListener('DOMContentLoaded', init);
   </script>
