@@ -65505,10 +65505,10 @@ module.exports = {
   };
 
   function go(screenId, opts = {}) {
-    const cur = document.querySelector(`.screen[data-screen="${state.screen}"]`);
-    if (cur) cur.hidden = true;
     const next = document.querySelector(`.screen[data-screen="${screenId}"]`);
     if (!next) { console.warn('no screen', screenId); return; }
+    const cur = document.querySelector(`.screen[data-screen="${state.screen}"]`);
+    if (cur) cur.hidden = true;
     if (!opts.back) state.history.push(state.screen);
     state.screen = screenId;
     next.hidden = false;
