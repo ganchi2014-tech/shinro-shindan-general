@@ -11,6 +11,7 @@ function injectJSON(html, id, jsonText) {
   if (i < 0) throw new Error(`tag not found: ${id}`);
   const start = i + tag.length;
   const end = html.indexOf('</' + 'script>', start);
+  if (end < 0) throw new Error('closing tag not found: ' + id);
   return html.slice(0, start) + '\n' + jsonText + '\n' + html.slice(end);
 }
 function injectRaw(html, id, srcText) {
@@ -19,6 +20,7 @@ function injectRaw(html, id, srcText) {
   if (i < 0) throw new Error(`tag not found: ${id}`);
   const start = i + tag.length;
   const end = html.indexOf('</' + 'script>', start);
+  if (end < 0) throw new Error('closing tag not found: ' + id);
   return html.slice(0, start) + '\n' + srcText + '\n' + html.slice(end);
 }
 
