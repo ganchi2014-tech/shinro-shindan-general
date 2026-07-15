@@ -1,0 +1,74 @@
+{
+ "uni_id": "kobe-jogakuin",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4460/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/4460/bairitsu/",
+  "https://search.keinet.ne.jp/2565/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "kobe-jogakuin-d01",
+   "campus": "岡田山キャンパス（兵庫県西宮市岡田山）",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4460/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.4 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4460/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kyoiku", "media", "service"],
+   "unconfirmed": false,
+   "notes": "文学部（英文・総合文化）。偏差値40.0。倍率2025:1.4倍"
+  },
+  {
+   "dept_id": "kobe-jogakuin-kokusai",
+   "campus": "岡田山キャンパス（兵庫県西宮市岡田山）",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4460/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4460/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["service", "media", "koumuin"],
+   "unconfirmed": false,
+   "notes": "国際学部（グローバル・スタディーズ）。偏差値40.0。倍率2025:1.5倍"
+  },
+  {
+   "dept_id": "kobe-jogakuin-shinri",
+   "campus": "岡田山キャンパス（兵庫県西宮市岡田山）",
+   "hensachi": { "min": 40.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4460/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4460/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["iryo_fukushi", "service", "media"],
+   "unconfirmed": false,
+   "notes": "心理学部 心理・行動科学科。学内最上位、偏差値40.0〜45.0。倍率2025:2.0倍"
+  },
+  {
+   "dept_id": "kobe-jogakuin-ongaku",
+   "campus": "岡田山キャンパス（兵庫県西宮市岡田山）",
+   "hensachi": { "min": 35.0, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4460/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.1 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4460/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（実技を含む）" }
+   ],
+   "employment_fields": ["media", "kyoiku", "service"],
+   "unconfirmed": false,
+   "notes": "音楽学部 音楽学科。河合塾BF〜37.5。実技中心選抜。倍率2025:1.1倍（学内最低）"
+  },
+  {
+   "dept_id": "kobe-jogakuin-ningenkagaku",
+   "campus": "岡田山キャンパス（兵庫県西宮市岡田山）",
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["shokuhin", "iryo_fukushi", "maker"],
+   "unconfirmed": true,
+   "notes": "人間科学部（生命環境系。旧・現行の学部再編に伴い河合塾偏差値・倍率がパスナビ学部計表に非掲載）。偏差値・倍率はデータ取得できず未確定（現行推定値を保持）"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は旺文社パスナビ掲載の一般選抜（2025年度・学部計）。私立女子大、全学岡田山キャンパス（西宮市）。人間科学部は学部計表に非掲載のため未確定。看板ゼミは省略"
+}

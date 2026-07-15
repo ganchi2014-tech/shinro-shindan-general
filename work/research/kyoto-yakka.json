@@ -1,0 +1,25 @@
+{
+ "uni_id": "kyoto-yakka",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3960/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/3960/bairitsu/",
+  "https://search.keinet.ne.jp/2494/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "kyoto-yakka-d01",
+   "campus": "本部キャンパス（京都府京都市山科区御陵中内町）",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3960/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3960/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（A方式・B方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり。共テ得点率69%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "薬学部 薬学科（6年制）。私立薬科単科大の名門。偏差値52.5〜55.0、共テボーダー69%。倍率2025:2.5倍"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は旺文社パスナビ掲載の一般選抜（2025年度）。私立薬学単科大、全学山科キャンパス。看板ゼミは省略"
+}

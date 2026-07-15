@@ -56250,18 +56250,20 @@
    "dept_id": "kobe-jogakuin-d01",
    "uni_id": "kobe-jogakuin",
    "name": "文学部（英文）",
-   "campus": "岡田山",
+   "campus": "岡田山キャンパス（兵庫県西宮市岡田山）",
    "hensachi": {
-    "min": 45,
-    "max": 47.5,
+    "min": 40,
+    "max": 40,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4460/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.4
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4460/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -56279,14 +56281,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -56297,26 +56299,32 @@
     "bungaku",
     "gaikokugo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-jogakuin-kokusai",
    "uni_id": "kobe-jogakuin",
    "name": "国際学部",
-   "campus": "岡田山",
+   "campus": "岡田山キャンパス（兵庫県西宮市岡田山）",
    "hensachi": {
-    "min": 45,
-    "max": 47.5,
+    "min": 40,
+    "max": 40,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4460/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4460/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -56334,14 +56342,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -56350,26 +56358,32 @@
    "interest_tags": [
     "gaikokugo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "media",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-jogakuin-shinri",
    "uni_id": "kobe-jogakuin",
    "name": "心理学部",
-   "campus": "岡田山",
+   "campus": "岡田山キャンパス（兵庫県西宮市岡田山）",
    "hensachi": {
-    "min": 45,
-    "max": 47.5,
+    "min": 40,
+    "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4460/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4460/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -56387,14 +56401,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -56404,26 +56418,32 @@
    "interest_tags": [
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "service",
+    "media"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-jogakuin-ongaku",
    "uni_id": "kobe-jogakuin",
    "name": "音楽学部",
-   "campus": "岡田山",
+   "campus": "岡田山キャンパス（兵庫県西宮市岡田山）",
    "hensachi": {
-    "min": 40,
-    "max": 45,
+    "min": 35,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4460/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.1
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4460/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -56441,8 +56461,8 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（実技を含む）",
+     "verified": true
     },
     {
      "type": "kyotsu",
@@ -56457,15 +56477,19 @@
    "interest_tags": [
     "geijutsu"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "media",
+    "kyoiku",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-jogakuin-ningenkagaku",
    "uni_id": "kobe-jogakuin",
    "name": "人間科学部",
-   "campus": "岡田山",
+   "campus": "岡田山キャンパス（兵庫県西宮市岡田山）",
    "hensachi": {
     "min": 42.5,
     "max": 45,
@@ -56494,14 +56518,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -56511,26 +56535,32 @@
    "interest_tags": [
     "unclassified"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "shokuhin",
+    "iryo_fukushi",
+    "maker"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "unconfirmed"
   },
   {
    "dept_id": "yamato-univ-kyoiku",
    "uni_id": "yamato-univ",
    "name": "教育学部",
-   "campus": "吹田",
+   "campus": "吹田キャンパス（大阪府吹田市片山町）",
    "hensachi": {
-    "min": 50,
+    "min": 52.5,
     "max": 55,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4357/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -56548,14 +56578,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -56566,26 +56596,31 @@
    "interest_tags": [
     "kyoiku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "yamato-univ-hokeniryo",
    "uni_id": "yamato-univ",
    "name": "保健医療学部",
-   "campus": "吹田",
+   "campus": "吹田キャンパス（大阪府吹田市片山町）",
    "hensachi": {
     "min": 47.5,
     "max": 52.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4357/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -56603,14 +56638,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -56622,26 +56657,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "yamato-univ-seikei",
    "uni_id": "yamato-univ",
    "name": "政治経済学部",
-   "campus": "吹田",
+   "campus": "吹田キャンパス（大阪府吹田市片山町）",
    "hensachi": {
-    "min": 50,
-    "max": 55,
+    "min": 52.5,
+    "max": 52.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4357/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 6.1
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -56659,14 +56698,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -56676,26 +56715,32 @@
     "hokei",
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "yamato-univ-riko",
    "uni_id": "yamato-univ",
    "name": "理工学部",
-   "campus": "吹田",
+   "campus": "吹田キャンパス（大阪府吹田市片山町）",
    "hensachi": {
-    "min": 47.5,
-    "max": 52.5,
+    "min": 50,
+    "max": 50,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4357/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.2
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -56713,14 +56758,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -56731,26 +56776,32 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "yamato-univ-shakai",
    "uni_id": "yamato-univ",
    "name": "社会学部",
-   "campus": "吹田",
+   "campus": "吹田キャンパス（大阪府吹田市片山町）",
    "hensachi": {
-    "min": 50,
+    "min": 52.5,
     "max": 52.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4357/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 5.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -56768,14 +56819,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -56784,26 +56835,32 @@
    "interest_tags": [
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "media",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "yamato-univ-joho",
    "uni_id": "yamato-univ",
    "name": "情報学部",
-   "campus": "吹田",
+   "campus": "吹田キャンパス（大阪府吹田市片山町）",
    "hensachi": {
-    "min": 50,
+    "min": 52.5,
     "max": 52.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4357/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -56821,14 +56878,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -56837,26 +56894,31 @@
    "interest_tags": [
     "joho"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "it",
+    "maker"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-yakka-d01",
    "uni_id": "kyoto-yakka",
    "name": "薬学部（6年制）",
-   "campus": "山科",
+   "campus": "本部キャンパス（京都府京都市山科区御陵中内町）",
    "hensachi": {
     "min": 52.5,
     "max": 55,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3960/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3960/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -56874,14 +56936,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A方式・B方式）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり。共テ得点率69%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -56890,9 +56952,11 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-ika-yakka-d01",
@@ -63539,18 +63603,20 @@
    "dept_id": "kyoto-furitsu-ika-i",
    "uni_id": "kyoto-furitsu-ika",
    "name": "医学部 医学科（6年制）",
-   "campus": "河原町",
+   "campus": "河原町キャンパス（京都府京都市上京区河原町通広小路上る梶井町）",
    "hensachi": {
-    "min": 62.5,
-    "max": 65,
+    "min": 70,
+    "max": 70,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1180/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.6
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1180/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -63568,14 +63634,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "公立医大につき共通テストを課す。共テボーダー88%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -63584,26 +63650,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-furitsu-ika-i2",
    "uni_id": "kyoto-furitsu-ika",
    "name": "医学部 看護学科",
-   "campus": "広小路",
+   "campus": "広小路キャンパス（京都府京都市上京区／看護学科）",
    "hensachi": {
-    "min": 50,
-    "max": 52.5,
+    "min": 55,
+    "max": 55,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1180/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1180/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -63621,14 +63691,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー70%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -63639,9 +63709,11 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   }
  ]
 }

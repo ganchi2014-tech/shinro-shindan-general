@@ -1,0 +1,90 @@
+{
+ "uni_id": "yamato-univ",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4357/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/",
+  "https://search.keinet.ne.jp/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "yamato-univ-kyoiku",
+   "campus": "吹田キャンパス（大阪府吹田市片山町）",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4357/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false,
+   "notes": "教育学部（初等幼児教育・国語教育・数学教育・英語教育ほか）。偏差値52.5〜55.0。倍率2025:4.5倍"
+  },
+  {
+   "dept_id": "yamato-univ-hokeniryo",
+   "campus": "吹田キャンパス（大阪府吹田市片山町）",
+   "hensachi": { "min": 47.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4357/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "保健医療学部（看護・総合リハビリテーション）。偏差値47.5〜52.5。倍率2025:3.7倍"
+  },
+  {
+   "dept_id": "yamato-univ-seikei",
+   "campus": "吹田キャンパス（大阪府吹田市片山町）",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4357/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 6.1 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "政治経済学部（政治・政策／経済経営）。偏差値52.5。学内最高倍率、倍率2025:6.1倍"
+  },
+  {
+   "dept_id": "yamato-univ-riko",
+   "campus": "吹田キャンパス（大阪府吹田市片山町）",
+   "hensachi": { "min": 50.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4357/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.2 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "理工学部 理工学科（機械工・電気電子工・建築・情報科学ほか）。偏差値50.0。倍率2025:4.2倍"
+  },
+  {
+   "dept_id": "yamato-univ-shakai",
+   "campus": "吹田キャンパス（大阪府吹田市片山町）",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4357/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["service", "media", "koumuin"],
+   "unconfirmed": false,
+   "notes": "社会学部 社会学科。偏差値52.5。倍率2025:5.7倍"
+  },
+  {
+   "dept_id": "yamato-univ-joho",
+   "campus": "吹田キャンパス（大阪府吹田市片山町）",
+   "hensachi": { "min": 52.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4357/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.3 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4357/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["it", "maker"],
+   "unconfirmed": false,
+   "notes": "情報学部 情報学科。偏差値52.5。倍率2025:3.3倍（学内最低）"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度）。倍率は旺文社パスナビ掲載の一般選抜（2025年度・学部計）。新興の私立総合大（大阪吹田）、全学吹田キャンパス。近年志願者急増で倍率高め。看板ゼミは省略"
+}

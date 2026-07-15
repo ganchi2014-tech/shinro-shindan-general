@@ -1,0 +1,38 @@
+{
+ "uni_id": "kyoto-furitsu-ika",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/1180/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/1180/bairitsu/",
+  "https://search.keinet.ne.jp/1600/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "kyoto-furitsu-ika-i",
+   "campus": "河原町キャンパス（京都府京都市上京区河原町通広小路上る梶井町）",
+   "hensachi": { "min": 70.0, "max": 70.0, "source_url": "https://passnavi.obunsha.co.jp/univ/1180/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.6 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1180/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "公立医大につき共通テストを課す。共テボーダー88%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部 医学科（6年制）。公立医大の最難関級、偏差値70.0、共テボーダー88%。倍率は前期一般選抜2025:2.6倍"
+  },
+  {
+   "dept_id": "kyoto-furitsu-ika-i2",
+   "campus": "広小路キャンパス（京都府京都市上京区／看護学科）",
+   "hensachi": { "min": 55.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/1180/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1180/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー70%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部 看護学科。偏差値55.0、共テボーダー70%。倍率は前期一般選抜2025:1.7倍"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は旺文社パスナビ掲載の前期日程一般選抜（2025年度）。公立の医科大学、河原町・広小路キャンパス（京都市上京区）。看板ゼミは省略"
+}
