@@ -1,0 +1,85 @@
+{
+  "uni_id": "hannan",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/4340/difficulty/",
+    "https://www.hannan-u.ac.jp/entrance/exam/result/copy_of_copy_of_copy_of_copy_of_20220314.html",
+    "https://www.hannan-u.ac.jp/entrance/exam/result/ihm6cm0000009ijl-att/2026_ippanzenki.pdf",
+    "https://www.hannan-u.ac.jp/entrance/exam/result/ihm6cm0000007n35-att/2025_ippanzenki.pdf",
+    "https://www.hannan-u.ac.jp/career/mrrf430000000njn.html",
+    "https://www.hannan-u.ac.jp/access/llinfi00000codz1.html"
+  ],
+  "departments": [
+    {
+      "dept_id": "hannan-d01",
+      "campus": "本キャンパス（大阪府松原市）",
+      "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4340/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.9, "2026": 3.1 }, "source_url": "https://www.hannan-u.ac.jp/entrance/exam/result/ihm6cm0000009ijl-att/2026_ippanzenki.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜入試（公式入試結果ページに実績あり）" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）" },
+        { "type": "ippan", "available": true, "note": "一般入試（前期・後期、2教科型/3教科型）" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試（前期・後期）" }
+      ],
+      "employment_fields": ["service", "ryutsu"],
+      "zemi": [
+        {
+          "name": "森重ゼミ（国際観光学科）",
+          "theme": "観光を活用した地域課題解決・移住のきっかけを生み出す観光マップの作成",
+          "source_url": "https://www.hannan-u.ac.jp/career/mrrf43000001helz.html"
+        }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "hannan-keizai",
+      "campus": "本キャンパス（大阪府松原市）",
+      "hensachi": { "min": 37.5, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4340/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.6, "2026": 5.1 }, "source_url": "https://www.hannan-u.ac.jp/entrance/exam/result/ihm6cm0000009ijl-att/2026_ippanzenki.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜入試" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）" },
+        { "type": "ippan", "available": true, "note": "一般入試（前期・後期、2教科型/3教科型）" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試（前期・後期）" }
+      ],
+      "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+      "zemi": [
+        {
+          "name": "公務キャリア・プロジェクトゼミ",
+          "theme": "警察官・消防士・市役所職員等をめざす選抜制ゼミで公務員試験対策を継続実施",
+          "source_url": "https://www.hannan-u.ac.jp/special/economics/"
+        }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "hannan-d02",
+      "campus": "本キャンパス（大阪府松原市）",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4340/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.9, "2026": 7.8 }, "source_url": "https://www.hannan-u.ac.jp/entrance/exam/result/ihm6cm0000009ijl-att/2026_ippanzenki.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜入試" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）" },
+        { "type": "ippan", "available": true, "note": "一般入試（前期・後期、2教科型/3教科型）" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試（前期・後期）" }
+      ],
+      "employment_fields": ["it", "service"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "hannan-d03",
+      "campus": "本キャンパス（大阪府松原市）",
+      "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4340/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.8, "2026": 4.2 }, "source_url": "https://www.hannan-u.ac.jp/entrance/exam/result/ihm6cm0000009ijl-att/2026_ippanzenki.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜入試" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（前期・後期）" },
+        { "type": "ippan", "available": true, "note": "一般入試（前期・後期、2教科型/3教科型）" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試（前期・後期）" }
+      ],
+      "employment_fields": ["ryutsu", "service"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "阪南大学は2024〜2025年に学部改組済み。manifestの旧学部名を後継組織にマッピング: 国際観光学部→国際学部国際観光学科(hannan-d01)、国際コミュニケーション学部→国際学部国際コミュニケーション学科(hannan-d03)、経営情報学部→総合情報学部(hannan-d02)。偏差値は後継学部・学科の河合塾ボーダー値(パスナビ掲載、2026年4月入学向け)。倍率は大学公式の入試結果PDF(一般入試前期)の実質倍率(受験者数÷合格者数)を2教科型・3教科型合算で算出(2025年度: 令和7年度PDF、2026年度: 令和8年度PDF)。キャンパスは大学公式アクセスページで本キャンパス(松原市)を確認(学部別配置の明記はないが教学キャンパスは本キャンパスのみ)。"
+}

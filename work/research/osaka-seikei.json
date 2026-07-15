@@ -1,0 +1,91 @@
+{
+ "uni_id": "osaka-seikei",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://search.keinet.ne.jp/2513/general/border_rate",
+  "https://search.keinet.ne.jp/2513/general/exam_result",
+  "https://passnavi.obunsha.co.jp/univ/4185/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/4185/location/",
+  "https://osaka-seikei-nyushi.jp/nyushi-university/exam/education/kobo.html",
+  "https://univ.osaka-seikei.jp/career/results/",
+  "https://univ.osaka-seikei.jp/department/data_science/research/"
+ ],
+ "departments": [
+  {
+   "dept_id": "osaka-seikei-kyoiku",
+   "campus": "相川キャンパス（大阪市東淀川区）",
+   "hensachi": { "min": 37.5, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2513/general/border_rate" },
+   "bairitsu": { "ippan": { "2025": 2.2, "2026": 1.7 }, "source_url": "https://search.keinet.ne.jp/2513/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試A日程等（入試ナビ掲載）" },
+    { "type": "koubo", "available": true, "note": "公募推薦入試A・B・C日程（コース別1科目型/2科目型）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（Kei-Net入試結果に実績掲載）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（パスナビに共テ得点率掲載）" }
+   ],
+   "employment_fields": ["kyoiku", "iryo_fukushi"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "osaka-seikei-keiei",
+   "campus": "相川キャンパス（大阪市東淀川区）",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://search.keinet.ne.jp/2513/general/border_rate" },
+   "bairitsu": { "ippan": { "2025": 4.7, "2026": 6.7 }, "source_url": "https://search.keinet.ne.jp/2513/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試あり（入試ナビ掲載）" },
+    { "type": "koubo", "available": true, "note": "公募推薦入試あり（入試ナビ掲載）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（Kei-Net入試結果に実績掲載）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（パスナビに共テ得点率掲載）" }
+   ],
+   "employment_fields": ["ryutsu", "service", "it"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "osaka-seikei-keiei2",
+   "campus": "相川キャンパス（大阪市東淀川区）",
+   "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://search.keinet.ne.jp/2513/general/border_rate" },
+   "bairitsu": { "ippan": { "2025": 1.5, "2026": 6.6 }, "source_url": "https://search.keinet.ne.jp/2513/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試あり（入試ナビ掲載）" },
+    { "type": "koubo", "available": true, "note": "公募推薦入試あり（入試ナビ掲載）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（Kei-Net入試結果に実績掲載）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（パスナビに共テ得点率掲載）" }
+   ],
+   "employment_fields": ["ryutsu", "service"],
+   "unconfirmed": false,
+   "notes": "経営学部国際観光ビジネス学科は改組され、現在は国際観光学部国際観光学科として募集。偏差値・倍率は国際観光学部の値"
+  },
+  {
+   "dept_id": "osaka-seikei-datascience",
+   "campus": "駅前キャンパス（大阪市東淀川区）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://search.keinet.ne.jp/2513/general/border_rate" },
+   "bairitsu": { "ippan": { "2025": 1.4, "2026": 1.0 }, "source_url": "https://search.keinet.ne.jp/2513/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試あり（入試ナビ掲載）" },
+    { "type": "koubo", "available": true, "note": "公募推薦入試あり（入試ナビ掲載）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（Kei-Net入試結果に実績掲載）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（パスナビに共テ得点率掲載）" }
+   ],
+   "zemi": [
+    { "name": "サイバーフィジカル情報処理学研究室", "theme": "現実世界とサイバー空間を融合した拡張世界の構築とIoT連携・セキュリティ", "source_url": "https://univ.osaka-seikei.jp/department/data_science/research/" },
+    { "name": "イノベーションマネジメント研究室", "theme": "経営企画・事業開発・マーケティングにデータサイエンスを活用、AI時代の人とAIの役割分担研究", "source_url": "https://univ.osaka-seikei.jp/department/data_science/research/" }
+   ],
+   "unconfirmed": false,
+   "notes": "2023年4月開設のため就職実績は未公表（完成年度前）"
+  },
+  {
+   "dept_id": "osaka-seikei-kango",
+   "campus": "駅前キャンパス（大阪市東淀川区）",
+   "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2513/general/border_rate" },
+   "bairitsu": { "ippan": { "2025": 5.9, "2026": 2.3 }, "source_url": "https://search.keinet.ne.jp/2513/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜入試あり（入試ナビ掲載）" },
+    { "type": "koubo", "available": true, "note": "公募推薦入試あり（入試ナビ掲載）" },
+    { "type": "ippan", "available": true, "note": "一般選抜（Kei-Net入試結果に実績掲載）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用（パスナビに共テ得点率掲載）" }
+   ],
+   "unconfirmed": false,
+   "notes": "2023年4月開設のため就職実績は未公表（完成年度前）"
+  }
+ ],
+ "notes": "倍率はKei-Net掲載の一般選抜入試結果に基づく実質倍率（受験者数÷合格者数）。教育学部は中等教育・初等教育の合算値（2026年度: 368/214=1.7、2025年度: 219/98=2.2）。経営学部はスポーツマネジメント学科・国際観光は各学科（学部）単独の値。偏差値は河合塾Kei-Netボーダー偏差値（最新予想）。旧・経営学部国際観光ビジネス学科は国際観光学部へ改組済み。"
+}

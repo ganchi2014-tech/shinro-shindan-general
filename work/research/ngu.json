@@ -1,0 +1,91 @@
+{
+  "uni_id": "ngu",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/3760/difficulty/",
+    "https://www.keinet.ne.jp/exam/past/result/ippan/private/2453.html",
+    "https://passnavi.obunsha.co.jp/univ/3760/bairitsu/",
+    "https://www.ngu.jp/career/job/",
+    "https://www.ngu.jp/admissions/"
+  ],
+  "departments": [
+    {
+      "dept_id": "ngu-sho",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3760/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.5, "2026": 5.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2453.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.ngu.jp/admissions/" }
+      ],
+      "employment_fields": ["ryutsu", "it", "service"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "ngu-keizai",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3760/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.7, "2026": 3.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2453.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.ngu.jp/admissions/" }
+      ],
+      "employment_fields": ["kinyu", "maker", "service"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "ngu-keiei",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3760/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.3, "2026": 5.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2453.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.ngu.jp/admissions/" }
+      ],
+      "employment_fields": ["service", "ryutsu", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "ngu-reha",
+      "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3760/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.3, "2026": 5.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2453.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.ngu.jp/admissions/" }
+      ],
+      "employment_fields": ["iryo_fukushi"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "ngu-reha2",
+      "bairitsu": { "ippan": { "2025": 4.3, "2026": 5.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2453.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.ngu.jp/admissions/" }
+      ],
+      "employment_fields": ["iryo_fukushi"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "ngu-d01",
+      "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3760/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.6, "2026": 1.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2453.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.ngu.jp/admissions/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.ngu.jp/admissions/" }
+      ],
+      "employment_fields": ["sports_kenko", "iryo_fukushi", "kyoiku"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "偏差値は河合塾2026年度（旺文社パスナビ掲載）。学部単位の偏差値のため学科min=max。ngu-reha2（作業療法学科）は学科別偏差値が確認できず省略、倍率はリハビリテーション学部単位の値を代表として記載。倍率はいずれも実質倍率（受験者数÷合格者数）。2026年度=Kei-Net一般選抜入試結果、2025年度=パスナビ入試結果。ゼミ・研究室は学部公式で個別特定できず省略。employment_fieldsは大学公式就職実績（ngu.jp/career/job）からの推定タグ。"
+}

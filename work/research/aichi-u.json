@@ -1,0 +1,93 @@
+{
+  "uni_id": "aichi-u",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/3600/difficulty/",
+    "https://adm.aichi-u.ac.jp/admission/result/",
+    "https://adm.aichi-u.ac.jp/assets/media/docs/admission/result/2025_data01.pdf",
+    "https://adm.aichi-u.ac.jp/assets/media/docs/admission/result/2026_data01.pdf",
+    "https://adm.aichi-u.ac.jp/admission/system/",
+    "https://passnavi.obunsha.co.jp/univ/3600/suisen/",
+    "https://adm.aichi-u.ac.jp/career/data/",
+    "https://www.aichi-u.ac.jp/profile/campus"
+  ],
+  "departments": [
+    {
+      "dept_id": "aichi-u-ho",
+      "campus": "名古屋キャンパス",
+      "hensachi": { "min": 50.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3600/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.5, "2026": 7.0 }, "source_url": "https://adm.aichi-u.ac.jp/admission/result/" },
+      "entry_methods": [
+        { "type": "sogo", "available": false, "note": "法学部対象の総合型選抜なし（スポーツ・帰国生等の特別入試を除く）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（一般推薦方式）対象", "source_url": "https://passnavi.obunsha.co.jp/univ/3600/suisen/" },
+        { "type": "ippan", "available": true, "note": "一般選抜（スタンダード方式・共通テスト併用方式等）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" }
+      ],
+      "employment_fields": ["koumuin", "kinyu", "maker"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "aichi-u-keizai",
+      "campus": "名古屋キャンパス",
+      "hensachi": { "min": 50.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3600/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.1, "2026": 6.7 }, "source_url": "https://adm.aichi-u.ac.jp/admission/result/" },
+      "entry_methods": [
+        { "type": "sogo", "available": false, "note": "経済学部対象の総合型選抜なし（スポーツ・帰国生等の特別入試を除く）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（一般推薦方式）対象", "source_url": "https://passnavi.obunsha.co.jp/univ/3600/suisen/" },
+        { "type": "ippan", "available": true, "note": "一般選抜（スタンダード方式・共通テスト併用方式等）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" }
+      ],
+      "employment_fields": ["kinyu", "maker", "koumuin"],
+      "zemi": [
+        { "name": "栗原ゼミ", "theme": "グローバル経済と日本経済（国際金融・為替）の研究", "source_url": "https://taweb.aichi-u.ac.jp/kurihara/seminar.html" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "aichi-u-keiei",
+      "campus": "名古屋キャンパス",
+      "hensachi": { "min": 50.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3600/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 5.4, "2026": 7.7 }, "source_url": "https://adm.aichi-u.ac.jp/admission/result/" },
+      "entry_methods": [
+        { "type": "sogo", "available": false, "note": "経営学部対象の総合型選抜なし（スポーツ・帰国生等の特別入試を除く）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（一般推薦方式・情報/簿記会計推薦方式）対象", "source_url": "https://passnavi.obunsha.co.jp/univ/3600/suisen/" },
+        { "type": "ippan", "available": true, "note": "一般選抜（スタンダード方式・共通テスト併用方式等）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" }
+      ],
+      "employment_fields": ["maker", "kinyu"],
+      "zemi": [
+        { "name": "太田幸治ゼミ", "theme": "マーケティングを中心とした消費者行動・企業戦略の実践的研究", "source_url": "https://leo.aichi-u.ac.jp/~otazemi/Top.html" }
+      ],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "aichi-u-d01",
+      "campus": "名古屋キャンパス",
+      "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3600/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.7, "2026": 5.5 }, "source_url": "https://adm.aichi-u.ac.jp/admission/result/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（現代中国学部グローバル人材特別入試）あり", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（一般推薦方式）対象", "source_url": "https://passnavi.obunsha.co.jp/univ/3600/suisen/" },
+        { "type": "ippan", "available": true, "note": "一般選抜（スタンダード方式・共通テスト併用方式等）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" }
+      ],
+      "employment_fields": ["maker", "ryutsu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "aichi-u-d02",
+      "campus": "名古屋キャンパス",
+      "hensachi": { "min": 50.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3600/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.3, "2026": 4.6 }, "source_url": "https://adm.aichi-u.ac.jp/admission/result/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（国際コミュニケーション学部英語学科特別入試）あり", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" },
+        { "type": "koubo", "available": true, "note": "公募制推薦入試（一般推薦方式）対象", "source_url": "https://passnavi.obunsha.co.jp/univ/3600/suisen/" },
+        { "type": "ippan", "available": true, "note": "一般選抜（スタンダード方式・共通テスト併用方式等）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）", "source_url": "https://adm.aichi-u.ac.jp/admission/system/" }
+      ],
+      "employment_fields": ["service", "maker", "kyoiku"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は大学公式「一般選抜結果（学部別）」PDF記載の実質倍率（受験者数÷合格者数）。2025年度は「前期入試」、2026年度は入試制度改編後の「スタンダード方式」（前期入試相当の主方式）の値。経営学部=経営学科、国際コミュニケーション学部=英語学科の値を代表値とした（2025英語学科4.3/国際教養学科4.5、2026英語学科4.6/国際教養学科4.4）。偏差値はパスナビ掲載の河合塾提供値（2026年7月更新）。法・経済・経営・現代中国・国際コミュニケーションの5学部はすべて名古屋キャンパス（文・地域政策は豊橋）。就職系統は受験生向けサイトの学部別就職データの傾向から付与。2026年度から一般選抜の方式名称が変更（前期入試→スタンダード方式等）。"
+}

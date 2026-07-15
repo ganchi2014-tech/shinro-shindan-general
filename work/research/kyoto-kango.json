@@ -1,0 +1,28 @@
+{
+  "uni_id": "kyoto-kango",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://search.keinet.ne.jp/2597/general/border_rate",
+    "https://www.keinet.ne.jp/exam/past/result/ippan/private/2597.html",
+    "https://manabi.benesse.ne.jp/daigaku/school/3616/nyushi/bairitsu/kango/",
+    "https://www.kyotokango.ac.jp/admission/",
+    "https://www.kyotokango.ac.jp/%E5%B0%B1%E8%81%B7/4643/",
+    "https://www.kyotokango.ac.jp/access/"
+  ],
+  "departments": [
+    {
+      "dept_id": "kyoto-kango-kango",
+      "campus": "本学キャンパス（京都市中京区壬生東高田町1-21・単一キャンパス）",
+      "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2597/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 1.8, "2026": 1.8 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2597.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（AO入試）", "source_url": "https://www.kyotokango.ac.jp/admission/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜 公募推薦A日程（小論文・面接）・B日程（基礎学力調査）", "source_url": "https://www.kyotokango.ac.jp/admission/" },
+        { "type": "ippan", "available": true, "note": "一般選抜A・B日程（3教科/2教科方式）・C日程（国語＋面接）", "source_url": "https://www.kyotokango.ac.jp/admission/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜（3教科利用・個別試験なし）", "source_url": "https://www.kyotokango.ac.jp/admission/" }
+      ],
+      "employment_fields": ["iryo_fukushi"]
+    }
+  ],
+  "notes": "【偏差値】河合塾Kei-Net一般選抜ボーダー40.0〜42.5（方式による幅）。【倍率】実質倍率（受験者÷合格者）。2026年度=河合塾Kei-Net掲載の一般選抜結果（志願151・受験123・合格69で1.8倍。共テ利用は1.2倍）。2025年度=マナビジョン掲載の一般A日程2科目方式1.8倍（志願136・受験109・合格61）。【就職】公式サイト就職実績: 就職率100%・第一志望就職率80%以上、就職先は京都市立病院・京都大学医学部附属病院・京都府立医科大学附属病院など病院中心（看護師）。保健師・助産師志望者は大学院・専攻科進学実績あり。【ゼミ】看護単科大学で受験生向けの看板ゼミ紹介ページが確認できず省略。"
+}

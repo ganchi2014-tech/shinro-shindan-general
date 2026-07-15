@@ -1,0 +1,69 @@
+{
+ "uni_id": "nagoya-keizai",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3770/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/3770/bairitsu/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/private/2454.html",
+  "https://www.nagoya-ku.ac.jp/exam/",
+  "https://www.nagoya-ku.ac.jp/access/",
+  "https://passnavi.obunsha.co.jp/univ/3770/shinro/",
+  "https://www.nagoya-ku.ac.jp/blog_cate/business/business-zemi/"
+ ],
+ "departments": [
+  {
+   "dept_id": "nagoya-keizai-keizai",
+   "campus": "犬山キャンパス",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3770/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.0, "2026": 1.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2454.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "オープンキャンパス参加型・アピール型・スポーツ型・学力型（出典: https://www.nagoya-ku.ac.jp/exam/）" },
+    { "type": "koubo", "available": true, "note": "一般推薦入試（公募）・指定校推薦等" },
+    { "type": "ippan", "available": true, "note": "一般入試 前期・中期・後期" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用 I期・II期" }
+   ],
+   "employment_fields": ["ryutsu", "it", "koumuin"]
+  },
+  {
+   "dept_id": "nagoya-keizai-keiei",
+   "campus": "犬山キャンパス",
+   "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3770/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.1, "2026": 1.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2454.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true },
+    { "type": "koubo", "available": true },
+    { "type": "ippan", "available": true },
+    { "type": "kyotsu", "available": true }
+   ],
+   "employment_fields": ["ryutsu", "koumuin", "kyoiku"],
+   "zemi": [
+    { "name": "ポジベーション・ゼミ（徐ゼミ）", "theme": "時事問題ディスカッション・経営者講演・産学連携プロジェクト学習", "source_url": "https://www.nagoya-ku.ac.jp/blog_cate/business/business-zemi/" }
+   ]
+  },
+  {
+   "dept_id": "nagoya-keizai-ho",
+   "campus": "犬山キャンパス",
+   "bairitsu": { "ippan": { "2025": 1.0, "2026": 1.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2454.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true },
+    { "type": "koubo", "available": true },
+    { "type": "ippan", "available": true },
+    { "type": "kyotsu", "available": true }
+   ],
+   "employment_fields": ["koumuin", "ryutsu", "kinyu"]
+  },
+  {
+   "dept_id": "nagoya-keizai-d01",
+   "campus": "犬山キャンパス",
+   "bairitsu": { "ippan": { "2025": 1.0, "2026": 1.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2454.html" },
+   "entry_methods": [
+    { "type": "sogo", "available": true },
+    { "type": "koubo", "available": true },
+    { "type": "ippan", "available": true },
+    { "type": "kyotsu", "available": true }
+   ],
+   "employment_fields": ["koumuin", "iryo_fukushi", "kyoiku", "ryutsu"]
+  }
+ ],
+ "notes": "偏差値はパスナビ掲載の河合塾提供値。法学部（ビジネス法学科）と人間生活科学部はBF（ボーダーフリー）のため hensachi を省略。nagoya-keizai-d01（manifest名: 教育保育学部 子ども学科）は公式サイト上『人間生活科学部 教育保育学科』であり、偏差値・倍率はその値（教育保育学部という独立学部は現存せず）。倍率は実質倍率（受験者数÷合格者数）: 2026年度は河合塾Kei-Net掲載の一般選抜前期の学科値、2025年度はパスナビ掲載の学部合算値（https://passnavi.obunsha.co.jp/univ/3770/bairitsu/）。キャンパスは公式アクセスページで犬山キャンパスがメインキャンパスであることを確認（全学部同一拠点）。"
+}

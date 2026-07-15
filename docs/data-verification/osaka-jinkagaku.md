@@ -1,0 +1,45 @@
+# 大阪人間科学大学（osaka-jinkagaku）照合レポート
+
+調査日: 2026-07-13 / 変更点: 27件
+
+## 出典
+- https://search.keinet.ne.jp/2515/general/border_rate
+- https://passnavi.obunsha.co.jp/univ/4155/bairitsu/
+- https://passnavi.obunsha.co.jp/univ/4155/subject/
+- https://www.ohs.ac.jp/department/
+- https://www.ohs.ac.jp/admission/
+- https://shingakunet.com/gakko/SC003359/career/
+
+## 変更差分
+| 学部 | 項目 | 旧 | 新 |
+|---|---|---|---|
+| osaka-jinkagaku-ningenkagaku | hensachi.min | 42.5 | 35 |
+| osaka-jinkagaku-ningenkagaku | hensachi.max | 50 | 35 |
+| osaka-jinkagaku-ningenkagaku | hensachi.source_url | null | "https://search.keinet.ne.jp/2515/general/border_rate" |
+| osaka-jinkagaku-ningenkagaku | hensachi.verified_date | null | "2026-07-13" |
+| osaka-jinkagaku-ningenkagaku | bairitsu.ippan | {} | {"2024":3,"2025":1.3} |
+| osaka-jinkagaku-ningenkagaku | bairitsu.source_url | null | "https://passnavi.obunsha.co.jp/univ/4155/bairitsu/" |
+| osaka-jinkagaku-ningenkagaku | bairitsu.verified_date | null | "2026-07-13" |
+| osaka-jinkagaku-ningenkagaku | entry_methods.kyotsu.available | null | true |
+| osaka-jinkagaku-ningenkagaku | employment_fields | [] | ["iryo_fukushi"] |
+| osaka-jinkagaku-ningenkagaku2 | hensachi.min | 37.5 | 35 |
+| osaka-jinkagaku-ningenkagaku2 | hensachi.max | 42.5 | 35 |
+| osaka-jinkagaku-ningenkagaku2 | hensachi.source_url | null | "https://search.keinet.ne.jp/2515/general/border_rate" |
+| osaka-jinkagaku-ningenkagaku2 | hensachi.verified_date | null | "2026-07-13" |
+| osaka-jinkagaku-ningenkagaku2 | bairitsu.ippan | {} | {"2024":1.9,"2025":2.4} |
+| osaka-jinkagaku-ningenkagaku2 | bairitsu.source_url | null | "https://passnavi.obunsha.co.jp/univ/4155/bairitsu/" |
+| osaka-jinkagaku-ningenkagaku2 | bairitsu.verified_date | null | "2026-07-13" |
+| osaka-jinkagaku-ningenkagaku2 | entry_methods.kyotsu.available | null | true |
+| osaka-jinkagaku-ningenkagaku2 | employment_fields | [] | ["iryo_fukushi"] |
+| osaka-jinkagaku-hokeniryo | hensachi.min | 45 | 35 |
+| osaka-jinkagaku-hokeniryo | hensachi.max | 50 | 37.5 |
+| osaka-jinkagaku-hokeniryo | hensachi.source_url | null | "https://search.keinet.ne.jp/2515/general/border_rate" |
+| osaka-jinkagaku-hokeniryo | hensachi.verified_date | null | "2026-07-13" |
+| osaka-jinkagaku-hokeniryo | bairitsu.ippan | {} | {"2024":2.2,"2025":1.1} |
+| osaka-jinkagaku-hokeniryo | bairitsu.source_url | null | "https://passnavi.obunsha.co.jp/univ/4155/bairitsu/" |
+| osaka-jinkagaku-hokeniryo | bairitsu.verified_date | null | "2026-07-13" |
+| osaka-jinkagaku-hokeniryo | entry_methods.kyotsu.available | null | true |
+| osaka-jinkagaku-hokeniryo | employment_fields | [] | ["iryo_fukushi"] |
+
+## 特記事項
+【重要・学科マッピングの注意】大阪人間科学大学の実際の学部学科構成は3学部8学科で、看護学科は存在しない（公式 https://www.ohs.ac.jp/department/ で確認）。実際の構成: 人間科学部（社会創造/社会福祉/医療福祉[視能訓練専攻]/子ども教育）、心理学部（心理）、保健医療学部（理学療法/作業療法/言語聴覚）。manifestのdept名との対応は以下の解釈で調査した。(1)osaka-jinkagaku-ningenkagaku『人間科学部 医療リハビリ学科』→人間科学部 医療福祉学科（視能訓練専攻）に対応と解釈（河合塾偏差値35.0、一般倍率2024:3.0/2025:1.3）。(2)osaka-jinkagaku-ningenkagaku2『人間科学部 社会福祉学科』→社会福祉学科（河合塾35.0、倍率2024:1.9/2025:2.4）。(3)osaka-jinkagaku-hokeniryo『保健医療学部 看護学科』→看護学科は存在しないため保健医療学部リハビリ3学科（理学療法/作業療法/言語聴覚）を代表値とした。河合塾偏差値は理学35.0・作業37.5・言語35.0でmin35.0/max37.5。一般倍率は代表として理学療法学科（2024:2.2/2025:1.1）を採用したが学科差が大きい（2025: 理学1.1・作業4.5・言語2.3、2024: 理学2.2・作業2.6・言語1.0）。倍率はパスナビ掲載値で算出方法は志願者数ベース（志願倍率相当）。2026年度一般入試結果は未掲載のため2024・2025年度を記載。就職は全学科とも医療・福祉分野中心（社会福祉士・理学療法士・作業療法士・言語聴覚士・視能訓練士等、出典 shingakunet SC003359/career）。ゼミ・研究室は学部公式ページで代表例を短時間で特定できずスキップ。

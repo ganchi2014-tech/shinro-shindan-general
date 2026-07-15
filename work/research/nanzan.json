@@ -1,0 +1,86 @@
+{
+  "uni_id": "nanzan",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/3820/difficulty/",
+    "https://www.nanzan-u.ac.jp/admission/nyushi/result/",
+    "https://www.nanzan-u.ac.jp/admission/nyushi/result/pdf/2025/ippan.pdf",
+    "https://www.nanzan-u.ac.jp/admission/nyushi/result/pdf/2026/ippan.pdf",
+    "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/",
+    "https://office.nanzan-u.ac.jp/CAREER/data/item/4_2025.pdf",
+    "https://search.keinet.ne.jp/2460/outline/campus"
+  ],
+  "departments": [
+    {
+      "dept_id": "nanzan-keiei",
+      "campus": "名古屋キャンパス",
+      "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3820/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.4, "2026": 6.1 }, "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/result/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜を全学部・学科で実施（資格・検定試験活用型等）", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "koubo", "available": false, "note": "公募制推薦なし。学校推薦型は指定校・学園内推薦等のみ", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "ippan", "available": true, "note": "一般入試・全学統一入試（個別学力試験型/共通テスト併用型）", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期3・5教科型/後期）", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" }
+      ],
+      "employment_fields": ["maker", "ryutsu", "kinyu", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "nanzan-gaikokugo",
+      "campus": "名古屋キャンパス",
+      "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3820/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.8, "2026": 3.9 }, "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/result/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜を全学部・学科で実施（資格・検定試験活用型、講義体験型等）", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "koubo", "available": false, "note": "公募制推薦なし。学校推薦型は指定校・学園内推薦等のみ", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "ippan", "available": true, "note": "一般入試・全学統一入試", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期3・5教科型/後期）", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" }
+      ],
+      "employment_fields": ["maker", "service", "ryutsu", "media"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "nanzan-ho",
+      "campus": "名古屋キャンパス",
+      "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3820/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.3, "2026": 4.3 }, "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/result/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜を全学部・学科で実施（資格・検定試験活用型等）", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "koubo", "available": false, "note": "公募制推薦なし。学校推薦型は指定校・学園内推薦等のみ", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "ippan", "available": true, "note": "一般入試・全学統一入試", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期3・5教科型/後期）", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" }
+      ],
+      "employment_fields": ["koumuin", "maker", "kinyu", "service"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "nanzan-keizai",
+      "campus": "名古屋キャンパス",
+      "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3820/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 3.8, "2026": 5.3 }, "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/result/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜を全学部・学科で実施（プレゼンテーション型等）", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "koubo", "available": false, "note": "公募制推薦なし。学校推薦型は指定校・学園内推薦等のみ", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "ippan", "available": true, "note": "一般入試・全学統一入試", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期3・5教科型/後期）", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" }
+      ],
+      "employment_fields": ["kinyu", "maker", "it", "ryutsu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "nanzan-kokusaikyoyo",
+      "campus": "名古屋キャンパス",
+      "hensachi": { "min": 55.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3820/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.2, "2026": 3.1 }, "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/result/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜を全学部・学科で実施（プレゼンテーション型等）", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "koubo", "available": false, "note": "公募制推薦なし。学校推薦型は指定校・学園内推薦等のみ", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "ippan", "available": true, "note": "一般入試・全学統一入試", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/shubetsu/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期のみ、後期なし）", "source_url": "https://www.nanzan-u.ac.jp/admission/nyushi/result/pdf/2026/ippan.pdf" }
+      ],
+      "employment_fields": ["service", "maker", "ryutsu", "media"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "倍率は大学公式の入試結果PDF（2025年度・2026年度〈一般選抜〉）の「一般入試」方式の志願者数÷合格者数（志願倍率。受験者数は非公表のため実質倍率は算出不可。追加合格は含まない）。対象学科: 経営=経営学科、外国語=英米学科、法=法律学科、経済=経済学科。偏差値はパスナビ掲載の河合塾提供値（2027年度入試予想）。就職系統は公式キャリア支援課「2025年度業種別就職状況」PDF（学部別）の上位業種から付与（https://office.nanzan-u.ac.jp/CAREER/data/item/4_2025.pdf）。キャンパスは全学部が名古屋キャンパス（Kei-Net大学検索システムのキャンパス所在地は名古屋キャンパスのみ掲載）。ゼミは学部公式ページで特定の看板ゼミ紹介が確認できなかったため省略（経営学部は3年次必修「経営学演習」制度あり）。"
+}

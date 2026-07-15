@@ -1,0 +1,83 @@
+{
+  "uni_id": "ait",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://passnavi.obunsha.co.jp/univ/3640/difficulty/",
+    "https://www.keinet.ne.jp/exam/past/result/ippan/private/2439.html",
+    "https://passnavi.obunsha.co.jp/univ/3640/bairitsu/",
+    "https://www.ait.ac.jp/career/achievements/",
+    "https://www.ait.ac.jp/examinee/data/general/"
+  ],
+  "departments": [
+    {
+      "dept_id": "ait-ko",
+      "campus": "八草キャンパス",
+      "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3640/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.0, "2026": 3.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2439.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" }
+      ],
+      "employment_fields": ["maker", "kensetsu"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "ait-ko2",
+      "campus": "八草キャンパス",
+      "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3640/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.0, "2026": 3.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2439.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" }
+      ],
+      "employment_fields": ["maker", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "ait-ko3",
+      "campus": "八草キャンパス",
+      "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3640/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 2.0, "2026": 3.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2439.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" }
+      ],
+      "employment_fields": ["maker"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "ait-d01",
+      "campus": "八草キャンパス",
+      "hensachi": { "min": 50.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3640/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 4.1, "2026": 5.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2439.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" }
+      ],
+      "employment_fields": ["it", "maker"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "ait-keiei",
+      "campus": "八草キャンパス",
+      "hensachi": { "min": 37.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3640/difficulty/" },
+      "bairitsu": { "ippan": { "2025": 1.7, "2026": 3.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2439.html" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "koubo", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "ippan", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" },
+        { "type": "kyotsu", "available": true, "source_url": "https://www.ait.ac.jp/examinee/data/general/" }
+      ],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "偏差値は河合塾2026年度（旺文社パスナビ掲載）。工学部（機械/電気/応用化学）は各47.5、情報科学部はコンピュータシステム50.0〜メディア情報55.0、経営学部は経営情報システム42.5〜45.0・スポーツマネジメント37.5〜40.0で学部レンジ37.5〜45.0。倍率はいずれも実質倍率（受験者数÷合格者数）。2026年度=Kei-Net一般選抜入試結果、2025年度=パスナビ入試結果。※工学部の2025年度は志願9,628/合格4,812で倍率2.0、2026年度はKei-Net集計で志願5,886/合格1,553の3.7と集計範囲が異なる可能性あり要注意。キャンパスは全学部とも八草キャンパス（豊田市）。就職はトヨタ系・デンソー系メーカー、建設、IT中心（ait.ac.jp/career）。経営学部は学部別就職データ未取得のため employment_fields 省略。ゼミ・研究室は個別特定に至らず省略。"
+}

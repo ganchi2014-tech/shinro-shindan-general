@@ -1,0 +1,57 @@
+{
+  "uni_id": "chukyo-gakuin",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://search.keinet.ne.jp/2412/general/border_rate",
+    "https://www.chukyogakuin-u.ac.jp/",
+    "https://secondhome.chukyogakuin-u.ac.jp/admissions/ippan/",
+    "https://secondhome.chukyogakuin-u.ac.jp/admissions/suisen/",
+    "https://www.chukyogakuin-u.ac.jp/career/student-management/performance-data/index.html",
+    "https://www.chukyogakuin-u.ac.jp/career/student-nurse/performance/index.html",
+    "https://passnavi.obunsha.co.jp/univ/3565/bairitsu/"
+  ],
+  "departments": [
+    {
+      "dept_id": "chukyo-gakuin-kango",
+      "dept_name": "看護学部 看護学科",
+      "campus": "瑞浪キャンパス",
+      "bairitsu": {
+        "ippan": { "2024": 1.0 },
+        "source_url": "https://passnavi.obunsha.co.jp/univ/3565/bairitsu/",
+        "note": "実質倍率（受験者÷合格者）。大学公式は入試結果を原則非公表、2024年度学部全体で1.0。2025・2026年度の公式詳細倍率は未公表。共通テスト得点率は看護学部39%（Kei-Net）"
+      },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "前期（国語面接型／2科目受験型／1科目利用面接型）・後期（国語面接型／小論文面接型）。出典 https://secondhome.chukyogakuin-u.ac.jp/admissions/ippan/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（指定校専願・一般併願、面接＋調査書）。看護はⅠ・Ⅱあり。出典 https://secondhome.chukyogakuin-u.ac.jp/admissions/suisen/" },
+        { "type": "kyotsu", "available": true, "note": "共通テストプラス（併願）。出典 https://secondhome.chukyogakuin-u.ac.jp/admissions/ippan/" }
+      ],
+      "employment_fields": ["iryo_fukushi", "kyoiku"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "chukyo-gakuin-keiei",
+      "dept_name": "経営学部 経営学科",
+      "campus": "中津川キャンパス",
+      "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://search.keinet.ne.jp/2412/general/border_rate" },
+      "bairitsu": {
+        "ippan": { "2024": 1.0 },
+        "source_url": "https://passnavi.obunsha.co.jp/univ/3565/bairitsu/",
+        "note": "実質倍率（受験者÷合格者）。大学公式は入試結果を原則非公表、2024年度学部全体で1.0。共通テスト得点率は経営学部37%（Kei-Net）"
+      },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "前期（国語面接型／2科目受験型／1科目利用面接型）・後期。出典 https://secondhome.chukyogakuin-u.ac.jp/admissions/ippan/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（指定校専願・一般併願、面接＋調査書）。出典 https://secondhome.chukyogakuin-u.ac.jp/admissions/suisen/" },
+        { "type": "kyotsu", "available": true, "note": "共通テストプラス（併願）。出典 https://secondhome.chukyogakuin-u.ac.jp/admissions/ippan/" }
+      ],
+      "employment_fields": ["koumuin", "service"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "chukyo-gakuin-kango2",
+      "dept_name": "看護学部 栄養健康学科",
+      "unconfirmed": true,
+      "notes": "manifest記載の『栄養健康学科』に該当する4年制学部学科は現存を確認できず。大学公式サイト上、健康栄養に相当する学科は『短期大学部 健康栄養学科』で、既に学生募集停止（https://www.chukyogakuin-u.ac.jp/）。現行の4年制大学は経営学部・看護学部の2学部構成。信頼できる現行入試データが得られないため未確認扱い。"
+    }
+  ],
+  "notes": "中京学院大学は2学部（経営学部＝中津川キャンパス、看護学部＝瑞浪キャンパス）。全体的に河合塾偏差値はBF〜35.0の入りやすい難易度で、看護学部はBF（ボーダーフリー）のためhensachiは省略（共テ得点率39%）。入試結果は大学公式では原則非公表、passnavi掲載の2024年度データで学部全体倍率1.0。総合型選抜の実施有無は今回の調査で出典確認できず省略。manifestのchukyo-gakuin-kango2『栄養健康学科』は短大部の募集停止学科に相当し未確認。"
+}

@@ -1,0 +1,715 @@
+[
+ {
+  "uni_id": "hannan",
+  "depts": [
+   {
+    "dept_id": "hannan-d01",
+    "uni_id": "hannan",
+    "uni_name": "阪南大学",
+    "dept_name": "国際観光学部"
+   },
+   {
+    "dept_id": "hannan-keizai",
+    "uni_id": "hannan",
+    "uni_name": "阪南大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "hannan-d02",
+    "uni_id": "hannan",
+    "uni_name": "阪南大学",
+    "dept_name": "経営情報学部"
+   },
+   {
+    "dept_id": "hannan-d03",
+    "uni_id": "hannan",
+    "uni_name": "阪南大学",
+    "dept_name": "国際コミュニケーション学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "osaka-shodai",
+  "depts": [
+   {
+    "dept_id": "osaka-shodai-keizai",
+    "uni_id": "osaka-shodai",
+    "uni_name": "大阪商業大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "osaka-shodai-d01",
+    "uni_id": "osaka-shodai",
+    "uni_name": "大阪商業大学",
+    "dept_name": "総合経営学部"
+   },
+   {
+    "dept_id": "osaka-shodai-d02",
+    "uni_id": "osaka-shodai",
+    "uni_name": "大阪商業大学",
+    "dept_name": "公共学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "kyoto-bunkyo",
+  "depts": [
+   {
+    "dept_id": "kyoto-bunkyo-d01",
+    "uni_id": "kyoto-bunkyo",
+    "uni_name": "京都文教大学",
+    "dept_name": "総合社会学部"
+   },
+   {
+    "dept_id": "kyoto-bunkyo-d02",
+    "uni_id": "kyoto-bunkyo",
+    "uni_name": "京都文教大学",
+    "dept_name": "臨床心理学部"
+   },
+   {
+    "dept_id": "kyoto-bunkyo-kodomokyoiku",
+    "uni_id": "kyoto-bunkyo",
+    "uni_name": "京都文教大学",
+    "dept_name": "こども教育学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "osaka-jinkagaku",
+  "depts": [
+   {
+    "dept_id": "osaka-jinkagaku-ningenkagaku",
+    "uni_id": "osaka-jinkagaku",
+    "uni_name": "大阪人間科学大学",
+    "dept_name": "人間科学部 医療リハビリ学科"
+   },
+   {
+    "dept_id": "osaka-jinkagaku-ningenkagaku2",
+    "uni_id": "osaka-jinkagaku",
+    "uni_name": "大阪人間科学大学",
+    "dept_name": "人間科学部 社会福祉学科"
+   },
+   {
+    "dept_id": "osaka-jinkagaku-hokeniryo",
+    "uni_id": "osaka-jinkagaku",
+    "uni_name": "大阪人間科学大学",
+    "dept_name": "保健医療学部 看護学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "osaka-kokusai",
+  "depts": [
+   {
+    "dept_id": "osaka-kokusai-d01",
+    "uni_id": "osaka-kokusai",
+    "uni_name": "大阪国際大学",
+    "dept_name": "経営経済学部"
+   },
+   {
+    "dept_id": "osaka-kokusai-kokusaikyoyo",
+    "uni_id": "osaka-kokusai",
+    "uni_name": "大阪国際大学",
+    "dept_name": "国際教養学部"
+   },
+   {
+    "dept_id": "osaka-kokusai-hokeniryo",
+    "uni_id": "osaka-kokusai",
+    "uni_name": "大阪国際大学",
+    "dept_name": "保健医療学部 看護学科"
+   },
+   {
+    "dept_id": "osaka-kokusai-ningenkagaku",
+    "uni_id": "osaka-kokusai",
+    "uni_name": "大阪国際大学",
+    "dept_name": "人間科学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "osaka-seikei",
+  "depts": [
+   {
+    "dept_id": "osaka-seikei-kyoiku",
+    "uni_id": "osaka-seikei",
+    "uni_name": "大阪成蹊大学",
+    "dept_name": "教育学部"
+   },
+   {
+    "dept_id": "osaka-seikei-keiei",
+    "uni_id": "osaka-seikei",
+    "uni_name": "大阪成蹊大学",
+    "dept_name": "経営学部 スポーツマネジメント学科"
+   },
+   {
+    "dept_id": "osaka-seikei-keiei2",
+    "uni_id": "osaka-seikei",
+    "uni_name": "大阪成蹊大学",
+    "dept_name": "経営学部 国際観光ビジネス学科"
+   },
+   {
+    "dept_id": "osaka-seikei-datascience",
+    "uni_id": "osaka-seikei",
+    "uni_name": "大阪成蹊大学",
+    "dept_name": "データサイエンス学部"
+   },
+   {
+    "dept_id": "osaka-seikei-kango",
+    "uni_id": "osaka-seikei",
+    "uni_name": "大阪成蹊大学",
+    "dept_name": "看護学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "taisei-gakuin",
+  "depts": [
+   {
+    "dept_id": "taisei-gakuin-kango",
+    "uni_id": "taisei-gakuin",
+    "uni_name": "太成学院大学",
+    "dept_name": "看護学部"
+   },
+   {
+    "dept_id": "taisei-gakuin-ningen",
+    "uni_id": "taisei-gakuin",
+    "uni_name": "太成学院大学",
+    "dept_name": "人間学部 子ども発達学科"
+   },
+   {
+    "dept_id": "taisei-gakuin-keiei",
+    "uni_id": "taisei-gakuin",
+    "uni_name": "太成学院大学",
+    "dept_name": "経営学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "osaka-aoyama",
+  "depts": [
+   {
+    "dept_id": "osaka-aoyama-kenkokagaku",
+    "uni_id": "osaka-aoyama",
+    "uni_name": "大阪青山大学",
+    "dept_name": "健康科学部 健康栄養学科"
+   },
+   {
+    "dept_id": "osaka-aoyama-kango",
+    "uni_id": "osaka-aoyama",
+    "uni_name": "大阪青山大学",
+    "dept_name": "看護学部"
+   },
+   {
+    "dept_id": "osaka-aoyama-d01",
+    "uni_id": "osaka-aoyama",
+    "uni_name": "大阪青山大学",
+    "dept_name": "子ども教育学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "hyogo-u",
+  "depts": [
+   {
+    "dept_id": "hyogo-u-kango",
+    "uni_id": "hyogo-u",
+    "uni_name": "兵庫大学",
+    "dept_name": "看護学部"
+   },
+   {
+    "dept_id": "hyogo-u-kenkokagaku",
+    "uni_id": "hyogo-u",
+    "uni_name": "兵庫大学",
+    "dept_name": "健康科学部 栄養マネジメント学科"
+   },
+   {
+    "dept_id": "hyogo-u-kenkokagaku2",
+    "uni_id": "hyogo-u",
+    "uni_name": "兵庫大学",
+    "dept_name": "健康科学部 健康システム学科"
+   },
+   {
+    "dept_id": "hyogo-u-d01",
+    "uni_id": "hyogo-u",
+    "uni_name": "兵庫大学",
+    "dept_name": "生涯福祉学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "kobe-tokiwa",
+  "depts": [
+   {
+    "dept_id": "kobe-tokiwa-d01",
+    "uni_id": "kobe-tokiwa",
+    "uni_name": "神戸常盤大学",
+    "dept_name": "保健科学部 看護学科"
+   },
+   {
+    "dept_id": "kobe-tokiwa-d02",
+    "uni_id": "kobe-tokiwa",
+    "uni_name": "神戸常盤大学",
+    "dept_name": "保健科学部 医療検査学科"
+   },
+   {
+    "dept_id": "kobe-tokiwa-d03",
+    "uni_id": "kobe-tokiwa",
+    "uni_name": "神戸常盤大学",
+    "dept_name": "保健科学部 口腔保健学科"
+   },
+   {
+    "dept_id": "kobe-tokiwa-kyoiku",
+    "uni_id": "kobe-tokiwa",
+    "uni_name": "神戸常盤大学",
+    "dept_name": "教育学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "kansai-iryo",
+  "depts": [
+   {
+    "dept_id": "kansai-iryo-hokeniryo",
+    "uni_id": "kansai-iryo",
+    "uni_name": "関西医療大学",
+    "dept_name": "保健医療学部 鍼灸学科"
+   },
+   {
+    "dept_id": "kansai-iryo-hokeniryo2",
+    "uni_id": "kansai-iryo",
+    "uni_name": "関西医療大学",
+    "dept_name": "保健医療学部 柔道整復学科"
+   },
+   {
+    "dept_id": "kansai-iryo-hokeniryo3",
+    "uni_id": "kansai-iryo",
+    "uni_name": "関西医療大学",
+    "dept_name": "保健医療学部 理学療法学科"
+   },
+   {
+    "dept_id": "kansai-iryo-hokeniryo4",
+    "uni_id": "kansai-iryo",
+    "uni_name": "関西医療大学",
+    "dept_name": "保健医療学部 看護学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "kyoto-kango",
+  "depts": [
+   {
+    "dept_id": "kyoto-kango-kango",
+    "uni_id": "kyoto-kango",
+    "uni_name": "京都看護大学",
+    "dept_name": "看護学部 看護学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "osaka-shinai",
+  "depts": [
+   {
+    "dept_id": "osaka-shinai-kango",
+    "uni_id": "osaka-shinai",
+    "uni_name": "大阪信愛学院大学",
+    "dept_name": "看護学部"
+   },
+   {
+    "dept_id": "osaka-shinai-kyoiku",
+    "uni_id": "osaka-shinai",
+    "uni_name": "大阪信愛学院大学",
+    "dept_name": "教育学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "nanzan",
+  "depts": [
+   {
+    "dept_id": "nanzan-keiei",
+    "uni_id": "nanzan",
+    "uni_name": "南山大学",
+    "dept_name": "経営学部 経営学科"
+   },
+   {
+    "dept_id": "nanzan-gaikokugo",
+    "uni_id": "nanzan",
+    "uni_name": "南山大学",
+    "dept_name": "外国語学部 英米学科"
+   },
+   {
+    "dept_id": "nanzan-ho",
+    "uni_id": "nanzan",
+    "uni_name": "南山大学",
+    "dept_name": "法学部 法律学科"
+   },
+   {
+    "dept_id": "nanzan-keizai",
+    "uni_id": "nanzan",
+    "uni_name": "南山大学",
+    "dept_name": "経済学部 経済学科"
+   },
+   {
+    "dept_id": "nanzan-kokusaikyoyo",
+    "uni_id": "nanzan",
+    "uni_name": "南山大学",
+    "dept_name": "国際教養学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "aichi-u",
+  "depts": [
+   {
+    "dept_id": "aichi-u-ho",
+    "uni_id": "aichi-u",
+    "uni_name": "愛知大学",
+    "dept_name": "法学部 法律学科"
+   },
+   {
+    "dept_id": "aichi-u-keizai",
+    "uni_id": "aichi-u",
+    "uni_name": "愛知大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "aichi-u-keiei",
+    "uni_id": "aichi-u",
+    "uni_name": "愛知大学",
+    "dept_name": "経営学部 経営学科"
+   },
+   {
+    "dept_id": "aichi-u-d01",
+    "uni_id": "aichi-u",
+    "uni_name": "愛知大学",
+    "dept_name": "現代中国学部"
+   },
+   {
+    "dept_id": "aichi-u-d02",
+    "uni_id": "aichi-u",
+    "uni_name": "愛知大学",
+    "dept_name": "国際コミュニケーション学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "aichi-shukutoku",
+  "depts": [
+   {
+    "dept_id": "aichi-shukutoku-d01",
+    "uni_id": "aichi-shukutoku",
+    "uni_name": "愛知淑徳大学",
+    "dept_name": "健康医療科学部 医療貢献学科（理学・作業・言語聴覚療法専攻）"
+   },
+   {
+    "dept_id": "aichi-shukutoku-d02",
+    "uni_id": "aichi-shukutoku",
+    "uni_name": "愛知淑徳大学",
+    "dept_name": "食健康科学部 健康栄養学科"
+   },
+   {
+    "dept_id": "aichi-shukutoku-shinri",
+    "uni_id": "aichi-shukutoku",
+    "uni_name": "愛知淑徳大学",
+    "dept_name": "心理学部 心理学科"
+   },
+   {
+    "dept_id": "aichi-shukutoku-bungaku",
+    "uni_id": "aichi-shukutoku",
+    "uni_name": "愛知淑徳大学",
+    "dept_name": "文学部 国文学科"
+   },
+   {
+    "dept_id": "aichi-shukutoku-d03",
+    "uni_id": "aichi-shukutoku",
+    "uni_name": "愛知淑徳大学",
+    "dept_name": "ビジネス学部 ビジネス学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "aichi-gakuin",
+  "depts": [
+   {
+    "dept_id": "aichi-gakuin-shi",
+    "uni_id": "aichi-gakuin",
+    "uni_name": "愛知学院大学",
+    "dept_name": "歯学部 歯学科"
+   },
+   {
+    "dept_id": "aichi-gakuin-yaku",
+    "uni_id": "aichi-gakuin",
+    "uni_name": "愛知学院大学",
+    "dept_name": "薬学部 薬学科"
+   },
+   {
+    "dept_id": "aichi-gakuin-sho",
+    "uni_id": "aichi-gakuin",
+    "uni_name": "愛知学院大学",
+    "dept_name": "商学部 商学科"
+   },
+   {
+    "dept_id": "aichi-gakuin-keizai",
+    "uni_id": "aichi-gakuin",
+    "uni_name": "愛知学院大学",
+    "dept_name": "経済学部 経済学科"
+   },
+   {
+    "dept_id": "aichi-gakuin-ho",
+    "uni_id": "aichi-gakuin",
+    "uni_name": "愛知学院大学",
+    "dept_name": "法学部 法律学科"
+   },
+   {
+    "dept_id": "aichi-gakuin-d01",
+    "uni_id": "aichi-gakuin",
+    "uni_name": "愛知学院大学",
+    "dept_name": "心身科学部 健康科学科（健康科学・養護教諭等）"
+   }
+  ]
+ },
+ {
+  "uni_id": "nagoya-keizai",
+  "depts": [
+   {
+    "dept_id": "nagoya-keizai-keizai",
+    "uni_id": "nagoya-keizai",
+    "uni_name": "名古屋経済大学",
+    "dept_name": "経済学部 現代経済学科"
+   },
+   {
+    "dept_id": "nagoya-keizai-keiei",
+    "uni_id": "nagoya-keizai",
+    "uni_name": "名古屋経済大学",
+    "dept_name": "経営学部 経営学科"
+   },
+   {
+    "dept_id": "nagoya-keizai-ho",
+    "uni_id": "nagoya-keizai",
+    "uni_name": "名古屋経済大学",
+    "dept_name": "法学部 ビジネス法学科"
+   },
+   {
+    "dept_id": "nagoya-keizai-d01",
+    "uni_id": "nagoya-keizai",
+    "uni_name": "名古屋経済大学",
+    "dept_name": "教育保育学部 子ども学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "aichi-toho",
+  "depts": [
+   {
+    "dept_id": "aichi-toho-keiei",
+    "uni_id": "aichi-toho",
+    "uni_name": "愛知東邦大学",
+    "dept_name": "経営学部 地域ビジネス学科"
+   },
+   {
+    "dept_id": "aichi-toho-keiei2",
+    "uni_id": "aichi-toho",
+    "uni_name": "愛知東邦大学",
+    "dept_name": "経営学部 国際ビジネス学科"
+   },
+   {
+    "dept_id": "aichi-toho-kyoiku",
+    "uni_id": "aichi-toho",
+    "uni_name": "愛知東邦大学",
+    "dept_name": "教育学部 子ども発達学科"
+   },
+   {
+    "dept_id": "aichi-toho-d01",
+    "uni_id": "aichi-toho",
+    "uni_name": "愛知東邦大学",
+    "dept_name": "人間健康学部 人間健康学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "chukyo-gakuin",
+  "depts": [
+   {
+    "dept_id": "chukyo-gakuin-kango",
+    "uni_id": "chukyo-gakuin",
+    "uni_name": "中京学院大学",
+    "dept_name": "看護学部 看護学科"
+   },
+   {
+    "dept_id": "chukyo-gakuin-keiei",
+    "uni_id": "chukyo-gakuin",
+    "uni_name": "中京学院大学",
+    "dept_name": "経営学部 経営学科"
+   },
+   {
+    "dept_id": "chukyo-gakuin-kango2",
+    "uni_id": "chukyo-gakuin",
+    "uni_name": "中京学院大学",
+    "dept_name": "看護学部 栄養健康学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "nufs",
+  "depts": [
+   {
+    "dept_id": "nufs-gaikokugo",
+    "uni_id": "nufs",
+    "uni_name": "名古屋外国語大学",
+    "dept_name": "外国語学部 英米語学科"
+   },
+   {
+    "dept_id": "nufs-gaikokugo2",
+    "uni_id": "nufs",
+    "uni_name": "名古屋外国語大学",
+    "dept_name": "外国語学部 世界共生学科"
+   },
+   {
+    "dept_id": "nufs-gaikokugo3",
+    "uni_id": "nufs",
+    "uni_name": "名古屋外国語大学",
+    "dept_name": "外国語学部 中国語学科"
+   },
+   {
+    "dept_id": "nufs-d01",
+    "uni_id": "nufs",
+    "uni_name": "名古屋外国語大学",
+    "dept_name": "世界教養学部 国際日本学科"
+   },
+   {
+    "dept_id": "nufs-d02",
+    "uni_id": "nufs",
+    "uni_name": "名古屋外国語大学",
+    "dept_name": "現代国際学部 現代英語学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "ngu",
+  "depts": [
+   {
+    "dept_id": "ngu-sho",
+    "uni_id": "ngu",
+    "uni_name": "名古屋学院大学",
+    "dept_name": "商学部 商学科"
+   },
+   {
+    "dept_id": "ngu-keizai",
+    "uni_id": "ngu",
+    "uni_name": "名古屋学院大学",
+    "dept_name": "経済学部 現代経済学科"
+   },
+   {
+    "dept_id": "ngu-keiei",
+    "uni_id": "ngu",
+    "uni_name": "名古屋学院大学",
+    "dept_name": "経営学部 経営学科"
+   },
+   {
+    "dept_id": "ngu-reha",
+    "uni_id": "ngu",
+    "uni_name": "名古屋学院大学",
+    "dept_name": "リハビリテーション学部 理学療法学科"
+   },
+   {
+    "dept_id": "ngu-reha2",
+    "uni_id": "ngu",
+    "uni_name": "名古屋学院大学",
+    "dept_name": "リハビリテーション学部 作業療法学科"
+   },
+   {
+    "dept_id": "ngu-d01",
+    "uni_id": "ngu",
+    "uni_name": "名古屋学院大学",
+    "dept_name": "スポーツ健康学部 スポーツ健康学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "nucb",
+  "depts": [
+   {
+    "dept_id": "nucb-sho",
+    "uni_id": "nucb",
+    "uni_name": "名古屋商科大学",
+    "dept_name": "商学部 マーケティング学科"
+   },
+   {
+    "dept_id": "nucb-keiei",
+    "uni_id": "nucb",
+    "uni_name": "名古屋商科大学",
+    "dept_name": "経営学部 経営学科"
+   },
+   {
+    "dept_id": "nucb-keizai",
+    "uni_id": "nucb",
+    "uni_name": "名古屋商科大学",
+    "dept_name": "経済学部 総合政策学科"
+   },
+   {
+    "dept_id": "nucb-kokusai",
+    "uni_id": "nucb",
+    "uni_name": "名古屋商科大学",
+    "dept_name": "国際学部 国際学科"
+   },
+   {
+    "dept_id": "nucb-d01",
+    "uni_id": "nucb",
+    "uni_name": "名古屋商科大学",
+    "dept_name": "コミュニケーション学部 グローバル教養学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "ait",
+  "depts": [
+   {
+    "dept_id": "ait-ko",
+    "uni_id": "ait",
+    "uni_name": "愛知工業大学",
+    "dept_name": "工学部 機械学科"
+   },
+   {
+    "dept_id": "ait-ko2",
+    "uni_id": "ait",
+    "uni_name": "愛知工業大学",
+    "dept_name": "工学部 電気学科"
+   },
+   {
+    "dept_id": "ait-ko3",
+    "uni_id": "ait",
+    "uni_name": "愛知工業大学",
+    "dept_name": "工学部 応用化学科"
+   },
+   {
+    "dept_id": "ait-d01",
+    "uni_id": "ait",
+    "uni_name": "愛知工業大学",
+    "dept_name": "情報科学部 情報科学科"
+   },
+   {
+    "dept_id": "ait-keiei",
+    "uni_id": "ait",
+    "uni_name": "愛知工業大学",
+    "dept_name": "経営学部 経営学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "aichi-ika",
+  "depts": [
+   {
+    "dept_id": "aichi-ika-i",
+    "uni_id": "aichi-ika",
+    "uni_name": "愛知医科大学",
+    "dept_name": "医学部 医学科"
+   },
+   {
+    "dept_id": "aichi-ika-kango",
+    "uni_id": "aichi-ika",
+    "uni_name": "愛知医科大学",
+    "dept_name": "看護学部 看護学科"
+   }
+  ]
+ }
+]

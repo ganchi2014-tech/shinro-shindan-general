@@ -1,0 +1,55 @@
+{
+ "uni_id": "osaka-aoyama",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4068/difficulty/",
+  "https://www.osaka-aoyama.ac.jp/prospective/admission/past/",
+  "https://www.osaka-aoyama.ac.jp/career/achievement/",
+  "https://search.keinet.ne.jp/outline/campus/2511"
+ ],
+ "departments": [
+  {
+   "dept_id": "osaka-aoyama-kenkokagaku",
+   "campus": "箕面キャンパス（大阪府箕面市新稲）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4068/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.3, "2026": 2.6 }, "source_url": "https://www.osaka-aoyama.ac.jp/prospective/admission/past/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜あり（公式入試結果に区分掲載）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）あり（公式入試結果に区分掲載）" },
+    { "type": "ippan", "available": true, "note": "一般選抜あり" },
+    { "type": "kyotsu", "note": "公式入試結果・パスナビに共通テスト利用の記載なし（実施していないとみられるが未確認）" }
+   ],
+   "employment_fields": ["iryo_fukushi", "shokuhin", "ryutsu"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "osaka-aoyama-kango",
+   "campus": "箕面キャンパス（大阪府箕面市新稲）",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4068/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.4, "2026": 1.8 }, "source_url": "https://www.osaka-aoyama.ac.jp/prospective/admission/past/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜あり（公式入試結果に区分掲載）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）あり（公式入試結果に区分掲載）" },
+    { "type": "ippan", "available": true, "note": "一般選抜あり" },
+    { "type": "kyotsu", "note": "公式入試結果・パスナビに共通テスト利用の記載なし（実施していないとみられるが未確認）" }
+   ],
+   "employment_fields": ["iryo_fukushi", "koumuin"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "osaka-aoyama-d01",
+   "campus": "箕面キャンパス（大阪府箕面市新稲）",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4068/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.3, "2026": 1.6 }, "source_url": "https://www.osaka-aoyama.ac.jp/prospective/admission/past/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜あり（公式入試結果に区分掲載）" },
+    { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）あり（公式入試結果に区分掲載）" },
+    { "type": "ippan", "available": true, "note": "一般選抜あり" },
+    { "type": "kyotsu", "note": "公式入試結果・パスナビに共通テスト利用の記載なし（実施していないとみられるが未確認）" }
+   ],
+   "employment_fields": ["kyoiku", "iryo_fukushi", "koumuin"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率は大学公式「過去の入試結果」ページの一般選抜（志願者数÷合格者数＝志願倍率、2026年度は令和8年度・2025年度は令和7年度）。偏差値はパスナビ掲載の河合塾偏差値。共通テスト利用選抜は公式・パスナビとも記載なし。就職先は公式就職実績ページ（学科別PDF）と就職・進路支援ページに基づく。看板ゼミは学部公式ページで特定できず省略。"
+}

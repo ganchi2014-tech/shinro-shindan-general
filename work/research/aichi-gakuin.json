@@ -1,0 +1,95 @@
+{
+ "uni_id": "aichi-gakuin",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3620/difficulty/",
+  "https://navi.agu.ac.jp/examination/result/",
+  "https://navi.agu.ac.jp/examination/",
+  "https://www.agu.ac.jp/guide/campus/",
+  "https://passnavi.obunsha.co.jp/univ/3620/shinro/",
+  "https://comm.agu.ac.jp/faculty/seminar/matsumoto/"
+ ],
+ "departments": [
+  {
+   "dept_id": "aichi-gakuin-shi",
+   "campus": "楠元キャンパス（1〜4年次。臨床は末盛キャンパスの歯学部附属病院）",
+   "hensachi": { "min": 37.5, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.1, "2026": 1.4 }, "source_url": "https://navi.agu.ac.jp/examination/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "AO入試・高大接続型入試等（出典: https://navi.agu.ac.jp/examination/）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試A（専願）・B（併願可）等" },
+    { "type": "ippan", "available": true, "note": "前期試験A・B、中期、後期など" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用I期・II期。歯学部はオンライン面接あり" }
+   ]
+  },
+  {
+   "dept_id": "aichi-gakuin-yaku",
+   "campus": "楠元キャンパス（1〜6年次）",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.4, "2026": 3.9 }, "source_url": "https://navi.agu.ac.jp/examination/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true },
+    { "type": "koubo", "available": true },
+    { "type": "ippan", "available": true },
+    { "type": "kyotsu", "available": true, "note": "薬学部はオンライン面接あり" }
+   ],
+   "employment_fields": ["iryo_fukushi", "ryutsu"]
+  },
+  {
+   "dept_id": "aichi-gakuin-sho",
+   "campus": "名城公園キャンパス",
+   "hensachi": { "min": 45.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.8, "2026": 4.9 }, "source_url": "https://navi.agu.ac.jp/examination/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true },
+    { "type": "koubo", "available": true },
+    { "type": "ippan", "available": true },
+    { "type": "kyotsu", "available": true }
+   ],
+   "employment_fields": ["kinyu", "ryutsu"],
+   "zemi": [
+    { "name": "松本力也ゼミ", "theme": "マーケティング・製品戦略とブランド管理", "source_url": "https://comm.agu.ac.jp/faculty/seminar/matsumoto/" }
+   ]
+  },
+  {
+   "dept_id": "aichi-gakuin-keizai",
+   "campus": "名城公園キャンパス",
+   "hensachi": { "min": 45.0, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 6.6, "2026": 5.5 }, "source_url": "https://navi.agu.ac.jp/examination/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true },
+    { "type": "koubo", "available": true },
+    { "type": "ippan", "available": true },
+    { "type": "kyotsu", "available": true }
+   ],
+   "employment_fields": ["kinyu"]
+  },
+  {
+   "dept_id": "aichi-gakuin-ho",
+   "campus": "名城公園キャンパス",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.7, "2026": 5.3 }, "source_url": "https://navi.agu.ac.jp/examination/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true },
+    { "type": "koubo", "available": true },
+    { "type": "ippan", "available": true },
+    { "type": "kyotsu", "available": true }
+   ],
+   "employment_fields": ["koumuin", "kinyu"]
+  },
+  {
+   "dept_id": "aichi-gakuin-d01",
+   "campus": "日進キャンパス",
+   "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3620/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.7, "2026": 6.9 }, "source_url": "https://navi.agu.ac.jp/examination/result/" },
+   "entry_methods": [
+    { "type": "sogo", "available": true },
+    { "type": "koubo", "available": true },
+    { "type": "ippan", "available": true },
+    { "type": "kyotsu", "available": true }
+   ],
+   "employment_fields": ["iryo_fukushi", "kyoiku", "shokuhin"]
+  }
+ ],
+ "notes": "倍率は大学公式（AGU NAVI 過去の入試データ）の前期試験Aの実質倍率（受験者数÷合格者数）。偏差値はパスナビ掲載の河合塾提供値（2026年度入試向け）。aichi-gakuin-d01（manifest名: 心身科学部 健康科学科）は現在『健康科学部 健康科学科』に改組されており、偏差値・倍率は健康科学部健康科学科の値。歯学部の学部別就職データはパスナビ未掲載のため employment_fields を省略（歯科医師養成課程）。"
+}

@@ -1,0 +1,901 @@
+[
+ {
+  "uni_id": "fujita-hu",
+  "depts": [
+   {
+    "dept_id": "fujita-hu-i",
+    "uni_id": "fujita-hu",
+    "uni_name": "藤田医科大学",
+    "dept_name": "医学部 医学科"
+   },
+   {
+    "dept_id": "fujita-hu-d01",
+    "uni_id": "fujita-hu",
+    "uni_name": "藤田医科大学",
+    "dept_name": "医療科学部 看護学科"
+   },
+   {
+    "dept_id": "fujita-hu-d02",
+    "uni_id": "fujita-hu",
+    "uni_name": "藤田医科大学",
+    "dept_name": "医療科学部 リハビリテーション学科"
+   },
+   {
+    "dept_id": "fujita-hu-d03",
+    "uni_id": "fujita-hu",
+    "uni_name": "藤田医科大学",
+    "dept_name": "医療科学部 臨床検査学科"
+   },
+   {
+    "dept_id": "fujita-hu-d04",
+    "uni_id": "fujita-hu",
+    "uni_name": "藤田医科大学",
+    "dept_name": "医療科学部 臨床工学科"
+   },
+   {
+    "dept_id": "fujita-hu-d05",
+    "uni_id": "fujita-hu",
+    "uni_name": "藤田医科大学",
+    "dept_name": "医療科学部 放射線学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "suzuka-iryo",
+  "depts": [
+   {
+    "dept_id": "suzuka-iryo-d01",
+    "uni_id": "suzuka-iryo",
+    "uni_name": "鈴鹿医療科学大学",
+    "dept_name": "保健衛生学部 理学療法学科"
+   },
+   {
+    "dept_id": "suzuka-iryo-d02",
+    "uni_id": "suzuka-iryo",
+    "uni_name": "鈴鹿医療科学大学",
+    "dept_name": "保健衛生学部 作業療法学科"
+   },
+   {
+    "dept_id": "suzuka-iryo-d03",
+    "uni_id": "suzuka-iryo",
+    "uni_name": "鈴鹿医療科学大学",
+    "dept_name": "保健衛生学部 救急救命学科"
+   },
+   {
+    "dept_id": "suzuka-iryo-d04",
+    "uni_id": "suzuka-iryo",
+    "uni_name": "鈴鹿医療科学大学",
+    "dept_name": "医用工学部 臨床工学科"
+   },
+   {
+    "dept_id": "suzuka-iryo-yaku",
+    "uni_id": "suzuka-iryo",
+    "uni_name": "鈴鹿医療科学大学",
+    "dept_name": "薬学部 薬学科"
+   },
+   {
+    "dept_id": "suzuka-iryo-kango",
+    "uni_id": "suzuka-iryo",
+    "uni_name": "鈴鹿医療科学大学",
+    "dept_name": "看護学部 看護学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "shigakkan",
+  "depts": [
+   {
+    "dept_id": "shigakkan-kenkokagaku",
+    "uni_id": "shigakkan",
+    "uni_name": "至学館大学",
+    "dept_name": "健康科学部 体育科学科"
+   },
+   {
+    "dept_id": "shigakkan-kenkokagaku2",
+    "uni_id": "shigakkan",
+    "uni_name": "至学館大学",
+    "dept_name": "健康科学部 栄養科学科"
+   },
+   {
+    "dept_id": "shigakkan-kenkokagaku3",
+    "uni_id": "shigakkan",
+    "uni_name": "至学館大学",
+    "dept_name": "健康科学部 こども健康・教育学科"
+   },
+   {
+    "dept_id": "shigakkan-kenkokagaku4",
+    "uni_id": "shigakkan",
+    "uni_name": "至学館大学",
+    "dept_name": "健康科学部 健康スポーツ科学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "suzuka",
+  "depts": [
+   {
+    "dept_id": "suzuka-d01",
+    "uni_id": "suzuka",
+    "uni_name": "鈴鹿大学",
+    "dept_name": "国際人間科学部 国際学科"
+   },
+   {
+    "dept_id": "suzuka-d02",
+    "uni_id": "suzuka",
+    "uni_name": "鈴鹿大学",
+    "dept_name": "国際人間科学部 こども教育学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "tokoha",
+  "depts": [
+   {
+    "dept_id": "tokoha-kyoiku",
+    "uni_id": "tokoha",
+    "uni_name": "常葉大学",
+    "dept_name": "教育学部 初等教育課程"
+   },
+   {
+    "dept_id": "tokoha-kyoiku2",
+    "uni_id": "tokoha",
+    "uni_name": "常葉大学",
+    "dept_name": "教育学部 生涯学習学科"
+   },
+   {
+    "dept_id": "tokoha-hokeniryo",
+    "uni_id": "tokoha",
+    "uni_name": "常葉大学",
+    "dept_name": "保健医療学部 看護学科"
+   },
+   {
+    "dept_id": "tokoha-keiei",
+    "uni_id": "tokoha",
+    "uni_name": "常葉大学",
+    "dept_name": "経営学部 経営学科"
+   },
+   {
+    "dept_id": "tokoha-d01",
+    "uni_id": "tokoha",
+    "uni_name": "常葉大学",
+    "dept_name": "健康プロデュース学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "shizuoka-sanno",
+  "depts": [
+   {
+    "dept_id": "shizuoka-sanno-keiei",
+    "uni_id": "shizuoka-sanno",
+    "uni_name": "静岡産業大学",
+    "dept_name": "経営学部 経営学科"
+   },
+   {
+    "dept_id": "shizuoka-sanno-sportskagaku",
+    "uni_id": "shizuoka-sanno",
+    "uni_name": "静岡産業大学",
+    "dept_name": "スポーツ科学部 スポーツ科学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "shizuoka-eiwa",
+  "depts": [
+   {
+    "dept_id": "shizuoka-eiwa-d01",
+    "uni_id": "shizuoka-eiwa",
+    "uni_name": "静岡英和学院大学",
+    "dept_name": "人間社会学部 人間社会学科"
+   },
+   {
+    "dept_id": "shizuoka-eiwa-d02",
+    "uni_id": "shizuoka-eiwa",
+    "uni_name": "静岡英和学院大学",
+    "dept_name": "人間社会学部 コミュニティ福祉学科"
+   },
+   {
+    "dept_id": "shizuoka-eiwa-d03",
+    "uni_id": "shizuoka-eiwa",
+    "uni_name": "静岡英和学院大学",
+    "dept_name": "短期大学部 食物学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "hamamatsu-gakuin",
+  "depts": [
+   {
+    "dept_id": "hamamatsu-gakuin-d01",
+    "uni_id": "hamamatsu-gakuin",
+    "uni_name": "浜松学院大学",
+    "dept_name": "現代コミュニケーション学部 地域共創学科"
+   },
+   {
+    "dept_id": "hamamatsu-gakuin-d02",
+    "uni_id": "hamamatsu-gakuin",
+    "uni_name": "浜松学院大学",
+    "dept_name": "現代コミュニケーション学部 子どもコミュニケーション学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "gifu-kyoritsu",
+  "depts": [
+   {
+    "dept_id": "gifu-kyoritsu-keizai",
+    "uni_id": "gifu-kyoritsu",
+    "uni_name": "岐阜協立大学",
+    "dept_name": "経済学部 経済学科"
+   },
+   {
+    "dept_id": "gifu-kyoritsu-keiei",
+    "uni_id": "gifu-kyoritsu",
+    "uni_name": "岐阜協立大学",
+    "dept_name": "経営学部 経営学科"
+   },
+   {
+    "dept_id": "gifu-kyoritsu-keiei2",
+    "uni_id": "gifu-kyoritsu",
+    "uni_name": "岐阜協立大学",
+    "dept_name": "経営学部 スポーツ経営学科"
+   },
+   {
+    "dept_id": "gifu-kyoritsu-kango",
+    "uni_id": "gifu-kyoritsu",
+    "uni_name": "岐阜協立大学",
+    "dept_name": "看護学部 看護学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "aichi-bunkyo",
+  "depts": [
+   {
+    "dept_id": "aichi-bunkyo-jinbun",
+    "uni_id": "aichi-bunkyo",
+    "uni_name": "愛知文教大学",
+    "dept_name": "人文学部 グローバル・スタディーズ学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "shiga-univ",
+  "depts": [
+   {
+    "dept_id": "shiga-univ-keizai",
+    "uni_id": "shiga-univ",
+    "uni_name": "滋賀大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "shiga-univ-kyoiku",
+    "uni_id": "shiga-univ",
+    "uni_name": "滋賀大学",
+    "dept_name": "教育学部"
+   },
+   {
+    "dept_id": "shiga-univ-datascience",
+    "uni_id": "shiga-univ",
+    "uni_name": "滋賀大学",
+    "dept_name": "データサイエンス学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "shiga-kenritsu",
+  "depts": [
+   {
+    "dept_id": "shiga-kenritsu-d01",
+    "uni_id": "shiga-kenritsu",
+    "uni_name": "滋賀県立大学",
+    "dept_name": "環境科学部"
+   },
+   {
+    "dept_id": "shiga-kenritsu-ko",
+    "uni_id": "shiga-kenritsu",
+    "uni_name": "滋賀県立大学",
+    "dept_name": "工学部"
+   },
+   {
+    "dept_id": "shiga-kenritsu-d02",
+    "uni_id": "shiga-kenritsu",
+    "uni_name": "滋賀県立大学",
+    "dept_name": "人間文化学部"
+   },
+   {
+    "dept_id": "shiga-kenritsu-d03",
+    "uni_id": "shiga-kenritsu",
+    "uni_name": "滋賀県立大学",
+    "dept_name": "人間看護学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "shiga-ika",
+  "depts": [
+   {
+    "dept_id": "shiga-ika-i",
+    "uni_id": "shiga-ika",
+    "uni_name": "滋賀医科大学",
+    "dept_name": "医学部 医学科（6年制）"
+   },
+   {
+    "dept_id": "shiga-ika-i2",
+    "uni_id": "shiga-ika",
+    "uni_name": "滋賀医科大学",
+    "dept_name": "医学部 看護学科"
+   }
+  ]
+ },
+ {
+  "uni_id": "kyoto-univ",
+  "depts": [
+   {
+    "dept_id": "kyoto-univ-d01",
+    "uni_id": "kyoto-univ",
+    "uni_name": "京都大学",
+    "dept_name": "総合人間学部"
+   },
+   {
+    "dept_id": "kyoto-univ-bungaku",
+    "uni_id": "kyoto-univ",
+    "uni_name": "京都大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "kyoto-univ-ho",
+    "uni_id": "kyoto-univ",
+    "uni_name": "京都大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "kyoto-univ-keizai",
+    "uni_id": "kyoto-univ",
+    "uni_name": "京都大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "kyoto-univ-ri",
+    "uni_id": "kyoto-univ",
+    "uni_name": "京都大学",
+    "dept_name": "理学部"
+   },
+   {
+    "dept_id": "kyoto-univ-ko",
+    "uni_id": "kyoto-univ",
+    "uni_name": "京都大学",
+    "dept_name": "工学部"
+   },
+   {
+    "dept_id": "kyoto-univ-no",
+    "uni_id": "kyoto-univ",
+    "uni_name": "京都大学",
+    "dept_name": "農学部"
+   },
+   {
+    "dept_id": "kyoto-univ-kyoiku",
+    "uni_id": "kyoto-univ",
+    "uni_name": "京都大学",
+    "dept_name": "教育学部"
+   },
+   {
+    "dept_id": "kyoto-univ-d02",
+    "uni_id": "kyoto-univ",
+    "uni_name": "京都大学",
+    "dept_name": "医学部（医・人間健康科学）"
+   },
+   {
+    "dept_id": "kyoto-univ-yaku",
+    "uni_id": "kyoto-univ",
+    "uni_name": "京都大学",
+    "dept_name": "薬学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "osaka-univ",
+  "depts": [
+   {
+    "dept_id": "osaka-univ-bungaku",
+    "uni_id": "osaka-univ",
+    "uni_name": "大阪大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "osaka-univ-ho",
+    "uni_id": "osaka-univ",
+    "uni_name": "大阪大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "osaka-univ-keizai",
+    "uni_id": "osaka-univ",
+    "uni_name": "大阪大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "osaka-univ-ri",
+    "uni_id": "osaka-univ",
+    "uni_name": "大阪大学",
+    "dept_name": "理学部"
+   },
+   {
+    "dept_id": "osaka-univ-ko",
+    "uni_id": "osaka-univ",
+    "uni_name": "大阪大学",
+    "dept_name": "工学部"
+   },
+   {
+    "dept_id": "osaka-univ-kisoko",
+    "uni_id": "osaka-univ",
+    "uni_name": "大阪大学",
+    "dept_name": "基礎工学部"
+   },
+   {
+    "dept_id": "osaka-univ-gaikokugo",
+    "uni_id": "osaka-univ",
+    "uni_name": "大阪大学",
+    "dept_name": "外国語学部"
+   },
+   {
+    "dept_id": "osaka-univ-ningenkagaku",
+    "uni_id": "osaka-univ",
+    "uni_name": "大阪大学",
+    "dept_name": "人間科学部"
+   },
+   {
+    "dept_id": "osaka-univ-d01",
+    "uni_id": "osaka-univ",
+    "uni_name": "大阪大学",
+    "dept_name": "医学部（医・保健）"
+   },
+   {
+    "dept_id": "osaka-univ-yaku",
+    "uni_id": "osaka-univ",
+    "uni_name": "大阪大学",
+    "dept_name": "薬学部"
+   },
+   {
+    "dept_id": "osaka-univ-shi",
+    "uni_id": "osaka-univ",
+    "uni_name": "大阪大学",
+    "dept_name": "歯学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "kobe-univ",
+  "depts": [
+   {
+    "dept_id": "kobe-univ-keiei",
+    "uni_id": "kobe-univ",
+    "uni_name": "神戸大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "kobe-univ-keizai",
+    "uni_id": "kobe-univ",
+    "uni_name": "神戸大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "kobe-univ-ho",
+    "uni_id": "kobe-univ",
+    "uni_name": "神戸大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "kobe-univ-bungaku",
+    "uni_id": "kobe-univ",
+    "uni_name": "神戸大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "kobe-univ-d01",
+    "uni_id": "kobe-univ",
+    "uni_name": "神戸大学",
+    "dept_name": "国際人間科学部"
+   },
+   {
+    "dept_id": "kobe-univ-ri",
+    "uni_id": "kobe-univ",
+    "uni_name": "神戸大学",
+    "dept_name": "理学部"
+   },
+   {
+    "dept_id": "kobe-univ-ko",
+    "uni_id": "kobe-univ",
+    "uni_name": "神戸大学",
+    "dept_name": "工学部"
+   },
+   {
+    "dept_id": "kobe-univ-no",
+    "uni_id": "kobe-univ",
+    "uni_name": "神戸大学",
+    "dept_name": "農学部"
+   },
+   {
+    "dept_id": "kobe-univ-d02",
+    "uni_id": "kobe-univ",
+    "uni_name": "神戸大学",
+    "dept_name": "海洋政策科学部"
+   },
+   {
+    "dept_id": "kobe-univ-d03",
+    "uni_id": "kobe-univ",
+    "uni_name": "神戸大学",
+    "dept_name": "医学部（医・保健）"
+   }
+  ]
+ },
+ {
+  "uni_id": "osaka-koritsu",
+  "depts": [
+   {
+    "dept_id": "osaka-koritsu-d01",
+    "uni_id": "osaka-koritsu",
+    "uni_name": "大阪公立大学",
+    "dept_name": "現代システム科学域"
+   },
+   {
+    "dept_id": "osaka-koritsu-bungaku",
+    "uni_id": "osaka-koritsu",
+    "uni_name": "大阪公立大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "osaka-koritsu-ho",
+    "uni_id": "osaka-koritsu",
+    "uni_name": "大阪公立大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "osaka-koritsu-sho",
+    "uni_id": "osaka-koritsu",
+    "uni_name": "大阪公立大学",
+    "dept_name": "商学部"
+   },
+   {
+    "dept_id": "osaka-koritsu-keizai",
+    "uni_id": "osaka-koritsu",
+    "uni_name": "大阪公立大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "osaka-koritsu-ri",
+    "uni_id": "osaka-koritsu",
+    "uni_name": "大阪公立大学",
+    "dept_name": "理学部"
+   },
+   {
+    "dept_id": "osaka-koritsu-ko",
+    "uni_id": "osaka-koritsu",
+    "uni_name": "大阪公立大学",
+    "dept_name": "工学部"
+   },
+   {
+    "dept_id": "osaka-koritsu-no",
+    "uni_id": "osaka-koritsu",
+    "uni_name": "大阪公立大学",
+    "dept_name": "農学部"
+   },
+   {
+    "dept_id": "osaka-koritsu-d02",
+    "uni_id": "osaka-koritsu",
+    "uni_name": "大阪公立大学",
+    "dept_name": "獣医学部"
+   },
+   {
+    "dept_id": "osaka-koritsu-d03",
+    "uni_id": "osaka-koritsu",
+    "uni_name": "大阪公立大学",
+    "dept_name": "医学部（医・リハビリ）"
+   },
+   {
+    "dept_id": "osaka-koritsu-kango",
+    "uni_id": "osaka-koritsu",
+    "uni_name": "大阪公立大学",
+    "dept_name": "看護学部"
+   },
+   {
+    "dept_id": "osaka-koritsu-seikatsukagaku",
+    "uni_id": "osaka-koritsu",
+    "uni_name": "大阪公立大学",
+    "dept_name": "生活科学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "kyoto-furitsu",
+  "depts": [
+   {
+    "dept_id": "kyoto-furitsu-bungaku",
+    "uni_id": "kyoto-furitsu",
+    "uni_name": "京都府立大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "kyoto-furitsu-d01",
+    "uni_id": "kyoto-furitsu",
+    "uni_name": "京都府立大学",
+    "dept_name": "和食文化科学部"
+   },
+   {
+    "dept_id": "kyoto-furitsu-d02",
+    "uni_id": "kyoto-furitsu",
+    "uni_name": "京都府立大学",
+    "dept_name": "生命理工情報学部"
+   },
+   {
+    "dept_id": "kyoto-furitsu-d03",
+    "uni_id": "kyoto-furitsu",
+    "uni_name": "京都府立大学",
+    "dept_name": "環境科学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "kyoto-kosen",
+  "depts": [
+   {
+    "dept_id": "kyoto-kosen-d01",
+    "uni_id": "kyoto-kosen",
+    "uni_name": "京都工芸繊維大学",
+    "dept_name": "工芸科学部（設計工学域）"
+   },
+   {
+    "dept_id": "kyoto-kosen-d02",
+    "uni_id": "kyoto-kosen",
+    "uni_name": "京都工芸繊維大学",
+    "dept_name": "工芸科学部（物質・材料/生命系）"
+   },
+   {
+    "dept_id": "kyoto-kosen-d03",
+    "uni_id": "kyoto-kosen",
+    "uni_name": "京都工芸繊維大学",
+    "dept_name": "工芸科学部（デザイン科学域）"
+   }
+  ]
+ },
+ {
+  "uni_id": "kyoto-kyoiku",
+  "depts": [
+   {
+    "dept_id": "kyoto-kyoiku-d01",
+    "uni_id": "kyoto-kyoiku",
+    "uni_name": "京都教育大学",
+    "dept_name": "教育学部（学校教育・各教科専攻）"
+   }
+  ]
+ },
+ {
+  "uni_id": "wakayama-univ",
+  "depts": [
+   {
+    "dept_id": "wakayama-univ-kyoiku",
+    "uni_id": "wakayama-univ",
+    "uni_name": "和歌山大学",
+    "dept_name": "教育学部"
+   },
+   {
+    "dept_id": "wakayama-univ-keizai",
+    "uni_id": "wakayama-univ",
+    "uni_name": "和歌山大学",
+    "dept_name": "経済学部"
+   },
+   {
+    "dept_id": "wakayama-univ-d01",
+    "uni_id": "wakayama-univ",
+    "uni_name": "和歌山大学",
+    "dept_name": "システム工学部"
+   },
+   {
+    "dept_id": "wakayama-univ-kanko",
+    "uni_id": "wakayama-univ",
+    "uni_name": "和歌山大学",
+    "dept_name": "観光学部"
+   },
+   {
+    "dept_id": "wakayama-univ-d02",
+    "uni_id": "wakayama-univ",
+    "uni_name": "和歌山大学",
+    "dept_name": "社会インフォマティクス学環"
+   }
+  ]
+ },
+ {
+  "uni_id": "nara-joshi",
+  "depts": [
+   {
+    "dept_id": "nara-joshi-bungaku",
+    "uni_id": "nara-joshi",
+    "uni_name": "奈良女子大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "nara-joshi-ri",
+    "uni_id": "nara-joshi",
+    "uni_name": "奈良女子大学",
+    "dept_name": "理学部"
+   },
+   {
+    "dept_id": "nara-joshi-d01",
+    "uni_id": "nara-joshi",
+    "uni_name": "奈良女子大学",
+    "dept_name": "生活環境学部"
+   },
+   {
+    "dept_id": "nara-joshi-ko",
+    "uni_id": "nara-joshi",
+    "uni_name": "奈良女子大学",
+    "dept_name": "工学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "kyoto-joshi",
+  "depts": [
+   {
+    "dept_id": "kyoto-joshi-bungaku",
+    "uni_id": "kyoto-joshi",
+    "uni_name": "京都女子大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "kyoto-joshi-hattatsukyoiku",
+    "uni_id": "kyoto-joshi",
+    "uni_name": "京都女子大学",
+    "dept_name": "発達教育学部"
+   },
+   {
+    "dept_id": "kyoto-joshi-d01",
+    "uni_id": "kyoto-joshi",
+    "uni_name": "京都女子大学",
+    "dept_name": "心理共生学部"
+   },
+   {
+    "dept_id": "kyoto-joshi-kasei",
+    "uni_id": "kyoto-joshi",
+    "uni_name": "京都女子大学",
+    "dept_name": "家政学部"
+   },
+   {
+    "dept_id": "kyoto-joshi-gendaishakai",
+    "uni_id": "kyoto-joshi",
+    "uni_name": "京都女子大学",
+    "dept_name": "現代社会学部"
+   },
+   {
+    "dept_id": "kyoto-joshi-ho",
+    "uni_id": "kyoto-joshi",
+    "uni_name": "京都女子大学",
+    "dept_name": "法学部"
+   },
+   {
+    "dept_id": "kyoto-joshi-datascience",
+    "uni_id": "kyoto-joshi",
+    "uni_name": "京都女子大学",
+    "dept_name": "データサイエンス学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "doshisha-joshi",
+  "depts": [
+   {
+    "dept_id": "doshisha-joshi-d01",
+    "uni_id": "doshisha-joshi",
+    "uni_name": "同志社女子大学",
+    "dept_name": "薬学部（6年制）"
+   },
+   {
+    "dept_id": "doshisha-joshi-kango",
+    "uni_id": "doshisha-joshi",
+    "uni_name": "同志社女子大学",
+    "dept_name": "看護学部"
+   },
+   {
+    "dept_id": "doshisha-joshi-gendaishakai",
+    "uni_id": "doshisha-joshi",
+    "uni_name": "同志社女子大学",
+    "dept_name": "現代社会学部"
+   },
+   {
+    "dept_id": "doshisha-joshi-d02",
+    "uni_id": "doshisha-joshi",
+    "uni_name": "同志社女子大学",
+    "dept_name": "学芸学部"
+   },
+   {
+    "dept_id": "doshisha-joshi-d03",
+    "uni_id": "doshisha-joshi",
+    "uni_name": "同志社女子大学",
+    "dept_name": "表象文化学部"
+   },
+   {
+    "dept_id": "doshisha-joshi-seikatsukagaku",
+    "uni_id": "doshisha-joshi",
+    "uni_name": "同志社女子大学",
+    "dept_name": "生活科学部"
+   }
+  ]
+ },
+ {
+  "uni_id": "mukogawa-joshi",
+  "depts": [
+   {
+    "dept_id": "mukogawa-joshi-d01",
+    "uni_id": "mukogawa-joshi",
+    "uni_name": "武庫川女子大学",
+    "dept_name": "薬学部（6年制）"
+   },
+   {
+    "dept_id": "mukogawa-joshi-kango",
+    "uni_id": "mukogawa-joshi",
+    "uni_name": "武庫川女子大学",
+    "dept_name": "看護学部"
+   },
+   {
+    "dept_id": "mukogawa-joshi-kyoiku",
+    "uni_id": "mukogawa-joshi",
+    "uni_name": "武庫川女子大学",
+    "dept_name": "教育学部"
+   },
+   {
+    "dept_id": "mukogawa-joshi-shokumotsueiyo",
+    "uni_id": "mukogawa-joshi",
+    "uni_name": "武庫川女子大学",
+    "dept_name": "食物栄養科学部"
+   },
+   {
+    "dept_id": "mukogawa-joshi-kenchiku",
+    "uni_id": "mukogawa-joshi",
+    "uni_name": "武庫川女子大学",
+    "dept_name": "建築学部"
+   },
+   {
+    "dept_id": "mukogawa-joshi-bungaku",
+    "uni_id": "mukogawa-joshi",
+    "uni_name": "武庫川女子大学",
+    "dept_name": "文学部"
+   },
+   {
+    "dept_id": "mukogawa-joshi-keiei",
+    "uni_id": "mukogawa-joshi",
+    "uni_name": "武庫川女子大学",
+    "dept_name": "経営学部"
+   },
+   {
+    "dept_id": "mukogawa-joshi-d02",
+    "uni_id": "mukogawa-joshi",
+    "uni_name": "武庫川女子大学",
+    "dept_name": "社会情報学部"
+   },
+   {
+    "dept_id": "mukogawa-joshi-kenkosports",
+    "uni_id": "mukogawa-joshi",
+    "uni_name": "武庫川女子大学",
+    "dept_name": "健康スポーツ科学部"
+   },
+   {
+    "dept_id": "mukogawa-joshi-d03",
+    "uni_id": "mukogawa-joshi",
+    "uni_name": "武庫川女子大学",
+    "dept_name": "心理・社会福祉学部"
+   },
+   {
+    "dept_id": "mukogawa-joshi-d04",
+    "uni_id": "mukogawa-joshi",
+    "uni_name": "武庫川女子大学",
+    "dept_name": "環境共生学部（2025年新設）"
+   },
+   {
+    "dept_id": "mukogawa-joshi-ongaku",
+    "uni_id": "mukogawa-joshi",
+    "uni_name": "武庫川女子大学",
+    "dept_name": "音楽学部"
+   }
+  ]
+ }
+]

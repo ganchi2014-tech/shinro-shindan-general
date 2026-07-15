@@ -1,0 +1,54 @@
+{
+  "uni_id": "osaka-kokusai",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://search.keinet.ne.jp/2524/general/border_rate",
+    "https://passnavi.obunsha.co.jp/univ/4140/bairitsu/",
+    "https://passnavi.obunsha.co.jp/univ/4140/subject/",
+    "https://www.oiu.ac.jp/gakubu/",
+    "https://www.oiu.ac.jp/shinro/employment/results.html"
+  ],
+  "departments": [
+    {
+      "dept_id": "osaka-kokusai-d01",
+      "hensachi": { "min": 35.0, "max": 40.0, "source_url": "https://search.keinet.ne.jp/2524/general/border_rate" },
+      "bairitsu": { "ippan": { "2024": 1.8, "2025": 1.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4140/bairitsu/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://passnavi.obunsha.co.jp/univ/4140/subject/" },
+        { "type": "koubo", "available": true, "source_url": "https://passnavi.obunsha.co.jp/univ/4140/subject/" },
+        { "type": "ippan", "available": true, "source_url": "https://passnavi.obunsha.co.jp/univ/4140/subject/" }
+      ],
+      "employment_fields": ["ryutsu", "kinyu", "service"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "osaka-kokusai-kokusaikyoyo",
+      "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://search.keinet.ne.jp/2524/general/border_rate" },
+      "bairitsu": { "ippan": { "2024": 1.3, "2025": 1.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4140/bairitsu/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://passnavi.obunsha.co.jp/univ/4140/subject/" },
+        { "type": "koubo", "available": true, "source_url": "https://passnavi.obunsha.co.jp/univ/4140/subject/" },
+        { "type": "ippan", "available": true, "source_url": "https://passnavi.obunsha.co.jp/univ/4140/subject/" }
+      ],
+      "employment_fields": ["service", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "osaka-kokusai-hokeniryo",
+      "unconfirmed": true
+    },
+    {
+      "dept_id": "osaka-kokusai-ningenkagaku",
+      "hensachi": { "min": 35.0, "max": 37.5, "source_url": "https://search.keinet.ne.jp/2524/general/border_rate" },
+      "bairitsu": { "ippan": { "2024": 2.2, "2025": 2.1 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4140/bairitsu/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "source_url": "https://passnavi.obunsha.co.jp/univ/4140/subject/" },
+        { "type": "koubo", "available": true, "source_url": "https://passnavi.obunsha.co.jp/univ/4140/subject/" },
+        { "type": "ippan", "available": true, "source_url": "https://passnavi.obunsha.co.jp/univ/4140/subject/" }
+      ],
+      "employment_fields": ["iryo_fukushi", "kyoiku", "sports_kenko"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "【重要】大阪国際大学に保健医療学部・看護学科は存在しない。実際は3学部6学科（経営経済学部=経営/経済、国際教養学部=国際コミュニケーション/国際観光、人間科学部=心理コミュニケーション/人間健康科学/スポーツ行動）。公式 https://www.oiu.ac.jp/gakubu/ およびKei-Net学部一覧で確認。よってmanifestのosaka-kokusai-hokeniryo『保健医療学部 看護学科』はunconfirmed:trueとした。偏差値は河合塾Kei-Netボーダー（2515相当の2524ページ）: 経営35.0/経済40.0→経営経済min35max40、国際コミュ35.0/国際観光35.0→国際教養35.0、心理35.0/人間健康35.0/スポーツ37.5→人間科学min35max37.5。※パスナビ掲載の河合塾値はやや高め（経営経済37.5-40.0、国際教養37.5、人間科学35.0-37.5）で幅がある。倍率はパスナビ掲載の学部計 志願倍率（2024・2025年度、2026は未掲載）。就職は経営経済=卸小売/金融/サービス、国際教養=観光・ホテル・航空等サービス/情報通信、人間科学=福祉・医療/保育・教育/スポーツ健康（出典 oiu shinro results）。共通テスト利用選抜はパスナビ入試科目ページで明確な確認が取れなかったためentry_methodsから省略（実際には実施の可能性が高いが未確認）。ゼミ・研究室は短時間で代表例を特定できずスキップ。"
+}

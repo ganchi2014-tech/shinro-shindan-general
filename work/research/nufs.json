@@ -1,0 +1,101 @@
+{
+  "uni_id": "nufs",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://www.nagoyagaidai.com/nyushi/result/",
+    "https://www.nagoyagaidai.com/nyushi/",
+    "https://passnavi.obunsha.co.jp/univ/3750/difficulty/",
+    "https://passnavi.obunsha.co.jp/univ/3750/bairitsu/",
+    "https://www.nagoyagaidai.com/career_support/",
+    "https://www.nagoyagaidai.com/reorganization/",
+    "https://www.nufs.ac.jp/outline/access/access/"
+  ],
+  "departments": [
+    {
+      "dept_id": "nufs-gaikokugo",
+      "campus": "日進キャンパス",
+      "hensachi": { "min": 45.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3750/difficulty/" },
+      "bairitsu": {
+        "ippan": { "2025": 2.7, "2026": 3.7 },
+        "source_url": "https://www.nagoyagaidai.com/nyushi/result/",
+        "note": "2026=公式入試結果より英米語学科英米語専攻の一般選抜方式合計（前期A/M3/M2/共テプラス/後期）の志願者978÷合格者267。2025=パスナビ掲載の外国語学部一般選抜合計（志願者÷合格者、https://passnavi.obunsha.co.jp/univ/3750/bairitsu/）"
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（出典: https://www.nagoyagaidai.com/nyushi/）" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜【一般公募】（出典: https://www.nagoyagaidai.com/nyushi/）" },
+        { "type": "ippan", "available": true, "note": "一般選抜 前期A/M3/M2/共通テストプラス/後期（出典: https://www.nagoyagaidai.com/nyushi/result/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用 前期3教科/5教科・後期2教科（出典: https://www.nagoyagaidai.com/nyushi/result/）" }
+      ],
+      "employment_fields": ["service", "maker", "ryutsu", "kyoiku"]
+    },
+    {
+      "dept_id": "nufs-gaikokugo2",
+      "campus": "日進キャンパス",
+      "hensachi": { "min": 42.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3750/difficulty/" },
+      "bairitsu": {
+        "ippan": { "2025": 2.9, "2026": 3.9 },
+        "source_url": "https://www.nagoyagaidai.com/nyushi/result/",
+        "note": "世界共生学科は改組され現在は現代国際学部グローバル共生学科（2025年4月開設、2027年4月に地球社会学部へ移行予定）。2026=公式入試結果よりグローバル共生学科の一般選抜方式合計 志願者283÷合格者72。2025=パスナビ掲載の現代国際学部一般選抜合計（志願者÷合格者）"
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（出典: https://www.nagoyagaidai.com/nyushi/）" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜【一般公募】（出典: https://www.nagoyagaidai.com/nyushi/）" },
+        { "type": "ippan", "available": true, "note": "一般選抜（出典: https://www.nagoyagaidai.com/nyushi/result/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用前期・後期あり（出典: https://www.nagoyagaidai.com/nyushi/result/）" }
+      ],
+      "employment_fields": ["service", "maker", "ryutsu", "kyoiku"]
+    },
+    {
+      "dept_id": "nufs-gaikokugo3",
+      "campus": "日進キャンパス",
+      "hensachi": { "min": 47.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3750/difficulty/" },
+      "bairitsu": {
+        "ippan": { "2025": 2.7, "2026": 2.4 },
+        "source_url": "https://www.nagoyagaidai.com/nyushi/result/",
+        "note": "2026=公式入試結果より中国語学科の一般選抜方式合計 志願者120÷合格者50。2025=パスナビ掲載の外国語学部一般選抜合計（志願者÷合格者）。偏差値は2027年新体制の世界教養学部中国専攻の値"
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（出典: https://www.nagoyagaidai.com/nyushi/）" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜【一般公募】（出典: https://www.nagoyagaidai.com/nyushi/）" },
+        { "type": "ippan", "available": true, "note": "一般選抜（出典: https://www.nagoyagaidai.com/nyushi/result/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用前期・後期あり（出典: https://www.nagoyagaidai.com/nyushi/result/）" }
+      ],
+      "employment_fields": ["service", "maker", "ryutsu", "kyoiku"]
+    },
+    {
+      "dept_id": "nufs-d01",
+      "campus": "日進キャンパス",
+      "hensachi": { "min": 47.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3750/difficulty/" },
+      "bairitsu": {
+        "ippan": { "2025": 3.4, "2026": 2.8 },
+        "source_url": "https://www.nagoyagaidai.com/nyushi/result/",
+        "note": "2026=公式入試結果より国際日本学科の一般選抜方式合計 志願者69÷合格者25。2025=パスナビ掲載の世界教養学部一般選抜合計（志願者÷合格者）。偏差値は世界教養学部全体の幅（学科別の河合塾値は未掲載）"
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（出典: https://www.nagoyagaidai.com/nyushi/）" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜【一般公募】（出典: https://www.nagoyagaidai.com/nyushi/）" },
+        { "type": "ippan", "available": true, "note": "一般選抜（出典: https://www.nagoyagaidai.com/nyushi/result/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用前期・後期あり（出典: https://www.nagoyagaidai.com/nyushi/result/）" }
+      ],
+      "employment_fields": ["service", "maker", "ryutsu", "kyoiku"]
+    },
+    {
+      "dept_id": "nufs-d02",
+      "campus": "日進キャンパス",
+      "hensachi": { "min": 47.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3750/difficulty/" },
+      "bairitsu": {
+        "ippan": { "2025": 2.9, "2026": 4.7 },
+        "source_url": "https://www.nagoyagaidai.com/nyushi/result/",
+        "note": "2026=公式入試結果より現代英語学科の一般選抜方式合計 志願者479÷合格者101。2025=パスナビ掲載の現代国際学部一般選抜合計（志願者÷合格者）。偏差値は2027年改称後の地球社会学部英語キャリア学科（現・現代英語学科）の値"
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（出典: https://www.nagoyagaidai.com/nyushi/）" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜【一般公募】（出典: https://www.nagoyagaidai.com/nyushi/）" },
+        { "type": "ippan", "available": true, "note": "一般選抜（出典: https://www.nagoyagaidai.com/nyushi/result/）" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用前期・後期あり（出典: https://www.nagoyagaidai.com/nyushi/result/）" }
+      ],
+      "employment_fields": ["service", "maker", "ryutsu", "kyoiku"]
+    }
+  ],
+  "notes": "【学部改組】名古屋外国語大学は2027年4月に総合英語学部・世界教養学部・地球社会学部の3学部9学科へ再編予定（https://www.nagoyagaidai.com/reorganization/）。世界共生学科（旧世界共生学部）は2025年4月に現代国際学部グローバル共生学科として改組済み、現代英語学科は2027年に英語キャリア学科へ名称変更予定。河合塾偏差値（パスナビ掲載）は2027年度入試（新学部体制）の値のため、旧学科名とのマッピングを各deptのnoteに記載。【倍率算出】2026年度=大学公式入試結果の学科別一般選抜方式合計（志願者÷合格者）、2025年度=パスナビ掲載の学部別一般選抜合計（志願者÷合格者）。【就職】2025年3月卒就職決定率99.4%、航空業界104名（CA内定39名・中部地区13年連続1位）。メーカー・商社・金融・航空・旅行・ホテル・物流・マスコミ・教育が主要進路（https://www.nagoyagaidai.com/career_support/）。employment_fieldsは全学共通の実績に基づく。【キャンパス】全学部とも日進キャンパス（愛知県日進市岩崎町竹ノ山57、https://www.nufs.ac.jp/outline/access/access/）。【ゼミ】3年次から専門ゼミナール制はあるが、個別の看板ゼミ名称を短時間で特定できる公式掲載が見つからなかったため省略。"
+}

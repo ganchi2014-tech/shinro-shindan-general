@@ -1,0 +1,66 @@
+{
+  "uni_id": "kansai-iryo",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://search.keinet.ne.jp/2550/general/border_rate",
+    "https://www.kansai.ac.jp/start/upload/ex_info/1/2026zenki.pdf",
+    "https://www.kansai.ac.jp/start/admission/ex_info/",
+    "https://www.kansai.ac.jp/job_career/results/career_course/",
+    "https://www.kansai.ac.jp/info/access/"
+  ],
+  "departments": [
+    {
+      "dept_id": "kansai-iryo-hokeniryo",
+      "campus": "本学キャンパス（大阪府泉南郡熊取町若葉2-11-1・単一キャンパス）",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://search.keinet.ne.jp/2550/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 1.5, "2026": 2.0 }, "source_url": "https://www.kansai.ac.jp/start/upload/ex_info/1/2026zenki.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜Ⅰ期・Ⅱ期", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" },
+        { "type": "koubo", "available": false, "note": "学校推薦型（公募制）は非実施。代わりに自己推薦選抜Ⅰ期・Ⅱ期を実施", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" },
+        { "type": "ippan", "available": true, "note": "一般選抜前期A・B（3科目型/2科目型/英語外部利用/共通テスト併用）・後期", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜前期・後期", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" }
+      ],
+      "employment_fields": ["iryo_fukushi", "sports_kenko"]
+    },
+    {
+      "dept_id": "kansai-iryo-hokeniryo2",
+      "campus": "本学キャンパス（大阪府泉南郡熊取町若葉2-11-1・単一キャンパス）",
+      "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://search.keinet.ne.jp/2550/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 2.0, "2026": 1.0 }, "source_url": "https://www.kansai.ac.jp/start/upload/ex_info/1/2026zenki.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜Ⅰ期・Ⅱ期", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" },
+        { "type": "koubo", "available": false, "note": "学校推薦型（公募制）は非実施。代わりに自己推薦選抜Ⅰ期・Ⅱ期を実施", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" },
+        { "type": "ippan", "available": true, "note": "一般選抜前期A・B・後期", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜前期・後期", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" }
+      ],
+      "employment_fields": ["iryo_fukushi", "sports_kenko"]
+    },
+    {
+      "dept_id": "kansai-iryo-hokeniryo3",
+      "campus": "本学キャンパス（大阪府泉南郡熊取町若葉2-11-1・単一キャンパス）",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2550/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 1.9, "2026": 2.0 }, "source_url": "https://www.kansai.ac.jp/start/upload/ex_info/1/2026zenki.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜Ⅰ期・Ⅱ期", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" },
+        { "type": "koubo", "available": false, "note": "学校推薦型（公募制）は非実施。代わりに自己推薦選抜Ⅰ期・Ⅱ期を実施", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" },
+        { "type": "ippan", "available": true, "note": "一般選抜前期A・B・後期", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜前期・後期", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" }
+      ],
+      "employment_fields": ["iryo_fukushi"]
+    },
+    {
+      "dept_id": "kansai-iryo-hokeniryo4",
+      "campus": "本学キャンパス（大阪府泉南郡熊取町若葉2-11-1・単一キャンパス）",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2550/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 4.0, "2026": 4.4 }, "source_url": "https://www.kansai.ac.jp/start/upload/ex_info/1/2026zenki.pdf" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜Ⅰ期・Ⅱ期", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" },
+        { "type": "koubo", "available": false, "note": "学校推薦型（公募制）は非実施。代わりに自己推薦選抜Ⅰ期・Ⅱ期を実施", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" },
+        { "type": "ippan", "available": true, "note": "一般選抜前期A・B・後期", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" },
+        { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用選抜前期・後期", "source_url": "https://www.kansai.ac.jp/start/admission/ex_info/" }
+      ],
+      "employment_fields": ["iryo_fukushi"]
+    }
+  ],
+  "notes": "【学科名対応】manifestの「鍼灸学科」は現行「保健医療学部 はり灸・スポーツトレーナー学科」、「柔道整復学科」は現行「保健医療学部 ヘルスプロモーション整復学科」、「保健医療学部 看護学科」は現行「保健看護学部 保健看護学科」に対応（改組・名称変更済）。【倍率】大学公式「2026年度入試結果概要（一般選抜前期・方式別）」PDFの競争率（実質倍率=受験者÷合格者、'26/'25欄）を使用。代表値は前期A・3科目型（ヘルスプロモーション整復のみ'25の3科目型欄が空欄のため前期A・2科目型で代替）。看護は共通テスト利用で'26=5.1倍と高倍率。【就職】公式就職・進路データ: 看護=実習病院中心に病院就職6割超、理学療法・作業療法=臨床実習病院中心、はり灸ST・整復=治療院・接骨院・スポーツ関連施設中心。【ゼミ】公式サイトで受験生向けに看板ゼミとして紹介されたページが確認できず省略。"
+}

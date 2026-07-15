@@ -1,0 +1,73 @@
+{
+ "uni_id": "hyogo-u",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4545/difficulty/",
+  "https://search.keinet.ne.jp/2579/general/exam_result",
+  "https://juken.hyogo-dai.ac.jp/exam/system/",
+  "https://www.hyogo-dai.ac.jp/career/result.html",
+  "https://passnavi.obunsha.co.jp/univ/4545/shinro/",
+  "https://www.hyogo-dai.ac.jp/lp/healthy/"
+ ],
+ "departments": [
+  {
+   "dept_id": "hyogo-u-kango",
+   "campus": "加古川キャンパス（兵庫県加古川市平岡町新在家）",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4545/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.2, "2026": 1.4 }, "source_url": "https://search.keinet.ne.jp/2579/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜あり（マッチング入試・スカウティング入試）" },
+    { "type": "koubo", "available": true, "note": "公募制入試Ⅰ〜Ⅳ期（面接型・基礎学力型）" },
+    { "type": "ippan", "available": true, "note": "一般入試Ⅰ〜Ⅲ期" },
+    { "type": "kyotsu", "note": "公式入試制度ページに共通テスト利用の記載なし（実施していないとみられる）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false
+  },
+  {
+   "dept_id": "hyogo-u-kenkokagaku",
+   "campus": "加古川キャンパス（兵庫県加古川市平岡町新在家）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4545/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.0, "2026": 1.6 }, "source_url": "https://search.keinet.ne.jp/2579/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜あり（マッチング入試・スカウティング入試）" },
+    { "type": "koubo", "available": true, "note": "公募制入試Ⅰ〜Ⅳ期（面接型・基礎学力型）" },
+    { "type": "ippan", "available": true, "note": "一般入試Ⅰ〜Ⅲ期" },
+    { "type": "kyotsu", "note": "公式入試制度ページに共通テスト利用の記載なし（実施していないとみられる）" }
+   ],
+   "employment_fields": ["shokuhin", "ryutsu", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "栄養マネジメント学科は2026年4月に「栄養学科」へ名称変更。偏差値・倍率はKei-Net/パスナビの「栄養」の値"
+  },
+  {
+   "dept_id": "hyogo-u-kenkokagaku2",
+   "campus": "加古川キャンパス（兵庫県加古川市平岡町新在家）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4545/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.0, "2026": 1.8 }, "source_url": "https://search.keinet.ne.jp/2579/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜あり（マッチング入試・スカウティング入試）。スポーツ・吹奏楽入試もあり" },
+    { "type": "koubo", "available": true, "note": "公募制入試Ⅰ〜Ⅳ期（面接型・基礎学力型）" },
+    { "type": "ippan", "available": true, "note": "一般入試Ⅰ〜Ⅲ期" },
+    { "type": "kyotsu", "note": "公式入試制度ページに共通テスト利用の記載なし（実施していないとみられる）" }
+   ],
+   "employment_fields": ["sports_kenko", "service", "shokuhin"],
+   "unconfirmed": false,
+   "notes": "健康システム学科は2026年4月に「健康スポーツ学科」へ名称変更。偏差値・倍率はKei-Net/パスナビの「健康スポーツ」の値。就職タグは健康科学部全体の実績に基づく"
+  },
+  {
+   "dept_id": "hyogo-u-d01",
+   "campus": "加古川キャンパス（兵庫県加古川市平岡町新在家）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4545/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.0, "2026": 1.0 }, "source_url": "https://search.keinet.ne.jp/2579/general/exam_result" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合型選抜あり（マッチング入試・スカウティング入試）。福祉人材育成入試もあり" },
+    { "type": "koubo", "available": true, "note": "公募制入試Ⅰ〜Ⅳ期（面接型・基礎学力型）" },
+    { "type": "ippan", "available": true, "note": "一般入試Ⅰ〜Ⅲ期" },
+    { "type": "kyotsu", "note": "公式入試制度ページに共通テスト利用の記載なし（実施していないとみられる）" }
+   ],
+   "employment_fields": ["iryo_fukushi", "kyoiku"],
+   "unconfirmed": false
+  }
+ ],
+ "notes": "倍率はKei-Net掲載の一般入試Ⅰ期（最大規模日程）の実質倍率（受験者数÷合格者数）を学部代表値とした。偏差値はパスナビ掲載の河合塾偏差値。健康科学部は2026年4月に栄養マネジメント学科→栄養学科、健康システム学科→健康スポーツ学科へ名称変更（公式LPで確認）。看板ゼミは学部公式ページで容易に特定できず省略。"
+}

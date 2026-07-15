@@ -1,0 +1,69 @@
+{
+  "uni_id": "kobe-tokiwa",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://search.keinet.ne.jp/2594/general/border_rate",
+    "https://kobe-tokiwa.jp/prospective/results/",
+    "https://kobe-tokiwa.jp/prospective/guideline/",
+    "https://manabi.benesse.ne.jp/daigaku/school/3724/nyushi/bairitsu/hokenkagaku/",
+    "https://manabi.benesse.ne.jp/daigaku/school/3724/nyushi/bairitsu/",
+    "https://www.kobe-tokiwa.ac.jp/univ/section/education/path.html",
+    "https://www.kobe-tokiwa.ac.jp/univ/section/medical_technology/path.html",
+    "https://shingakunet.com/gakko/SC005102/career/"
+  ],
+  "departments": [
+    {
+      "dept_id": "kobe-tokiwa-d01",
+      "campus": "神戸キャンパス（兵庫県神戸市長田区大谷町2-6-2・単一キャンパス）",
+      "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://search.keinet.ne.jp/2594/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 1.9, "2026": 2.9 }, "source_url": "https://kobe-tokiwa.jp/prospective/results/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜マッチング型（看護学科対象）", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" },
+        { "type": "koubo", "available": true, "note": "公募制入試Ⅰ期（面接重視型）・Ⅱ期（学力重視型）・Ⅲ期", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" },
+        { "type": "ippan", "available": true, "note": "一般選抜前期・中期・後期", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用1次・2次、プラス自己PR型", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" }
+      ],
+      "employment_fields": ["iryo_fukushi"]
+    },
+    {
+      "dept_id": "kobe-tokiwa-d02",
+      "campus": "神戸キャンパス（兵庫県神戸市長田区大谷町2-6-2・単一キャンパス）",
+      "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://search.keinet.ne.jp/2594/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 1.3, "2026": 1.1 }, "source_url": "https://kobe-tokiwa.jp/prospective/results/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜マッチング型（医療検査学科対象）", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" },
+        { "type": "koubo", "available": true, "note": "公募制入試Ⅰ〜Ⅲ期", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" },
+        { "type": "ippan", "available": true, "note": "一般選抜前期・中期・後期", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用1次・2次", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" }
+      ],
+      "employment_fields": ["iryo_fukushi"]
+    },
+    {
+      "dept_id": "kobe-tokiwa-d03",
+      "campus": "神戸キャンパス（兵庫県神戸市長田区大谷町2-6-2・単一キャンパス）",
+      "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://search.keinet.ne.jp/2594/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 1.1, "2026": 1.0 }, "source_url": "https://kobe-tokiwa.jp/prospective/results/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜スカウティング型・マッチング型（口腔保健学科対象）", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" },
+        { "type": "koubo", "available": true, "note": "公募制入試Ⅰ〜Ⅲ期", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" },
+        { "type": "ippan", "available": true, "note": "一般選抜前期・中期・後期", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用1次・2次", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" }
+      ],
+      "employment_fields": ["iryo_fukushi"]
+    },
+    {
+      "dept_id": "kobe-tokiwa-kyoiku",
+      "campus": "神戸キャンパス（兵庫県神戸市長田区大谷町2-6-2・単一キャンパス）",
+      "bairitsu": { "ippan": { "2025": 1.0, "2026": 1.0 }, "source_url": "https://kobe-tokiwa.jp/prospective/results/" },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜スカウティング型・地域創生型（こども教育学科対象）", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" },
+        { "type": "koubo", "available": true, "note": "公募制入試Ⅰ〜Ⅲ期", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" },
+        { "type": "ippan", "available": true, "note": "一般選抜前期・中期・後期", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用1次・2次", "source_url": "https://kobe-tokiwa.jp/prospective/guideline/" }
+      ],
+      "employment_fields": ["kyoiku", "koumuin"],
+      "notes_dept": "河合塾ボーダー偏差値はBF（ボーダーフリー）のため hensachi は省略（出典: https://search.keinet.ne.jp/2594/general/border_rate）"
+    }
+  ],
+  "notes": "【学部改組】看護学科は現在「看護学部看護学科」として独立（保健科学部から改組・2025年度）。manifestのdept_id（kobe-tokiwa-d01=保健科学部看護学科）を維持しつつ現行の看護学部のデータを充当。保健科学部には診療放射線学科（偏差値40.0）もあるがmanifest対象外。【倍率】2026年度は大学公式入試実績（一般選抜前期・中期・後期＋社会人・留学生特別選抜の合計、実質倍率=受験者数÷合格者数）。2025年度はマナビジョン掲載値（実質倍率、一般選抜合計）: https://manabi.benesse.ne.jp/daigaku/school/3724/nyushi/bairitsu/hokenkagaku/ 。教育学部のこども教育はBFのため偏差値省略。【就職出典】教育学部=公式進路ページ（私立保育園38%・小学校教諭等）、保健科学部医療検査=公式進路ページ（病院71%）、看護=スタディサプリ進路career（病院看護師91%）。ゼミは公式サイトで代表的な「看板ゼミ」としての明確な紹介ページが確認できなかったため省略。"
+}

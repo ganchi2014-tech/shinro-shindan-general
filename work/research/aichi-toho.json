@@ -1,0 +1,71 @@
+{
+ "uni_id": "aichi-toho",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3717/difficulty/",
+  "https://www.aichi-toho.ac.jp/admission/past",
+  "https://www.aichi-toho.ac.jp/files/admission/2026入試結果.pdf",
+  "https://passnavi.obunsha.co.jp/univ/3717/bairitsu/",
+  "https://passnavi.obunsha.co.jp/univ/3717/shinro/",
+  "https://www.aichi-toho.ac.jp/information/access",
+  "https://www.aichi-toho.ac.jp/archives/49430"
+ ],
+ "departments": [
+  {
+   "dept_id": "aichi-toho-keiei",
+   "campus": "平和が丘キャンパス（名古屋市名東区平和が丘）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3717/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.2, "2026": 2.4 }, "source_url": "https://www.aichi-toho.ac.jp/files/admission/2026入試結果.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "自己プロデュース・課題探究・活動実績入試（前期/中期/後期）（出典: https://www.aichi-toho.ac.jp/files/admission/2026入試結果.pdf）" },
+    { "type": "koubo", "available": true, "note": "公募制推薦入試（専願/併願）・指定校制・スポーツ音楽推薦" },
+    { "type": "ippan", "available": true, "note": "一般入試 前期・中期・後期" },
+    { "type": "kyotsu", "available": true, "note": "大学入学共通テスト利用入試 前期・中期・後期" }
+   ],
+   "employment_fields": ["ryutsu", "service"],
+   "zemi": [
+    { "name": "宮本ゼミ（経営学部）", "theme": "JR東海バスと連携した観光ツアー商品開発（産学連携PBL）", "source_url": "https://www.aichi-toho.ac.jp/archives/49430" }
+   ]
+  },
+  {
+   "dept_id": "aichi-toho-keiei2",
+   "campus": "平和が丘キャンパス（名古屋市名東区平和が丘）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3717/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.2, "2026": 2.4 }, "source_url": "https://www.aichi-toho.ac.jp/files/admission/2026入試結果.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true },
+    { "type": "koubo", "available": true },
+    { "type": "ippan", "available": true },
+    { "type": "kyotsu", "available": true }
+   ],
+   "employment_fields": ["ryutsu", "service"]
+  },
+  {
+   "dept_id": "aichi-toho-kyoiku",
+   "campus": "平和が丘キャンパス（名古屋市名東区平和が丘）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3717/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.1, "2026": 1.6 }, "source_url": "https://www.aichi-toho.ac.jp/files/admission/2026入試結果.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true },
+    { "type": "koubo", "available": true },
+    { "type": "ippan", "available": true },
+    { "type": "kyotsu", "available": true }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"]
+  },
+  {
+   "dept_id": "aichi-toho-d01",
+   "campus": "平和が丘キャンパス（名古屋市名東区平和が丘）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3717/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.2, "2026": 1.5 }, "source_url": "https://www.aichi-toho.ac.jp/files/admission/2026入試結果.pdf" },
+   "entry_methods": [
+    { "type": "sogo", "available": true },
+    { "type": "koubo", "available": true },
+    { "type": "ippan", "available": true },
+    { "type": "kyotsu", "available": true }
+   ],
+   "employment_fields": ["koumuin", "service", "sports_kenko"]
+  }
+ ],
+ "notes": "偏差値はパスナビ掲載の河合塾提供値（全学部35.0）。倍率2026は大学公式『2026年度入試結果』PDFの一般入試前期の志願倍率（志願者数÷合格者数）、2025はパスナビ掲載の一般前期倍率（https://passnavi.obunsha.co.jp/univ/3717/bairitsu/）で算出基準が異なる可能性あり。【学部改組注意】経営学部は現在『ビジネス学科・コミュニケーション・デザイン学科（学部一括入試）』に改組されており、manifest の地域ビジネス学科（keiei）・国際ビジネス学科（keiei2）は旧学科名。両dept_idとも経営学部一括の同一値を記載。キャンパスは平和が丘の単一キャンパス（全学部）。人間健康学部のsports_kenkoタグは同学部のスポーツ健康コース構成（https://www.aichi-toho.ac.jp/faculty/human/humanhealth/course_humanhealth）に基づく。"
+}

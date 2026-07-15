@@ -1,0 +1,113 @@
+{
+  "uni_id": "aichi-shukutoku",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://search.keinet.ne.jp/2441/general/border_rate",
+    "https://search.keinet.ne.jp/2441/general/exam_result",
+    "https://passnavi.obunsha.co.jp/univ/3650/bairitsu",
+    "https://www.aasa.ac.jp/welcome/exam/",
+    "https://www.aasa.ac.jp/welcome/exam/ippan.html",
+    "https://www.aasa.ac.jp/welcome/exam/kyotsu.html",
+    "https://www.aasa.ac.jp/campus_guide/map.html",
+    "https://www.aasa.ac.jp/course/employment/",
+    "https://passnavi.obunsha.co.jp/univ/3650/shinro/"
+  ],
+  "departments": [
+    {
+      "dept_id": "aichi-shukutoku-d01",
+      "dept_name": "健康医療科学部 医療貢献学科（理学・作業・言語聴覚療法専攻）",
+      "campus": "長久手キャンパス",
+      "hensachi": { "min": 42.5, "max": 47.5, "source_url": "https://search.keinet.ne.jp/2441/general/border_rate" },
+      "bairitsu": {
+        "ippan": { "2024": 2.8, "2025": 3.1 },
+        "source_url": "https://passnavi.obunsha.co.jp/univ/3650/bairitsu",
+        "note": "医療貢献学科の一般選抜合計の実質倍率（受験者÷合格者）。2025年度=志願2504/受験2479/合格800→3.1。専攻別では理学療法学が特に高倍率（Kei-Net 2026前期3教科で理学療法6.7倍・言語聴覚2.3倍）。2026年度公式完全版は画像掲載のため学部合計値は未取得"
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜（活動実績入試等、評定3.0以上・卒業後5年以内可）。出典 https://www.aasa.ac.jp/welcome/exam/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（国・英・数・小論から2科目選択、学校長推薦）。出典 https://www.aasa.ac.jp/welcome/exam/" },
+        { "type": "ippan", "available": true, "note": "前期3教科型・前期2教科型（各5日間受験可）。出典 https://www.aasa.ac.jp/welcome/exam/ippan.html" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試（前期・後期）。出典 https://www.aasa.ac.jp/welcome/exam/kyotsu.html" }
+      ],
+      "employment_fields": ["iryo_fukushi"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "aichi-shukutoku-d02",
+      "dept_name": "食健康科学部 健康栄養学科",
+      "campus": "長久手キャンパス",
+      "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://search.keinet.ne.jp/2441/general/border_rate" },
+      "bairitsu": {
+        "ippan": { "2024": 1.8, "2025": 2.1 },
+        "source_url": "https://passnavi.obunsha.co.jp/univ/3650/bairitsu",
+        "note": "健康栄養学科 前期3教科型の実質倍率（受験者÷合格者）。2025年度=志願160/受験158/合格74→2.1（前期2教科型は1.7）"
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜。出典 https://www.aasa.ac.jp/welcome/exam/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜。出典 https://www.aasa.ac.jp/welcome/exam/" },
+        { "type": "ippan", "available": true, "note": "前期3教科型・前期2教科型。出典 https://www.aasa.ac.jp/welcome/exam/ippan.html" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試。出典 https://www.aasa.ac.jp/welcome/exam/kyotsu.html" }
+      ],
+      "employment_fields": ["shokuhin", "iryo_fukushi"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "aichi-shukutoku-shinri",
+      "dept_name": "心理学部 心理学科",
+      "campus": "長久手キャンパス",
+      "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://search.keinet.ne.jp/2441/general/border_rate" },
+      "bairitsu": {
+        "ippan": { "2024": 2.2, "2025": 3.4 },
+        "source_url": "https://passnavi.obunsha.co.jp/univ/3650/bairitsu",
+        "note": "心理学部 一般選抜合計の実質倍率（受験者÷合格者）。2025年度=志願1487/受験1465/合格437→3.4"
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜。出典 https://www.aasa.ac.jp/welcome/exam/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜。出典 https://www.aasa.ac.jp/welcome/exam/" },
+        { "type": "ippan", "available": true, "note": "前期3教科型・前期2教科型。出典 https://www.aasa.ac.jp/welcome/exam/ippan.html" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試。出典 https://www.aasa.ac.jp/welcome/exam/kyotsu.html" }
+      ],
+      "employment_fields": ["kinyu", "service", "it"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "aichi-shukutoku-bungaku",
+      "dept_name": "文学部 国文学科",
+      "campus": "長久手キャンパス",
+      "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://search.keinet.ne.jp/2441/general/border_rate" },
+      "bairitsu": {
+        "ippan": { "2024": 1.8, "2025": 2.8 },
+        "source_url": "https://passnavi.obunsha.co.jp/univ/3650/bairitsu",
+        "note": "文学部 国文学科 前期3教科型の実質倍率（受験者÷合格者）。2025年度=志願217/受験215/合格76→2.8（前期2教科型は3.5）"
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜。出典 https://www.aasa.ac.jp/welcome/exam/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜。出典 https://www.aasa.ac.jp/welcome/exam/" },
+        { "type": "ippan", "available": true, "note": "前期3教科型・前期2教科型。出典 https://www.aasa.ac.jp/welcome/exam/ippan.html" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試。出典 https://www.aasa.ac.jp/welcome/exam/kyotsu.html" }
+      ],
+      "employment_fields": ["kyoiku", "service"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "aichi-shukutoku-d03",
+      "dept_name": "ビジネス学部 ビジネス学科",
+      "campus": "星が丘キャンパス",
+      "hensachi": { "min": 42.5, "max": 42.5, "source_url": "https://search.keinet.ne.jp/2441/general/border_rate" },
+      "bairitsu": {
+        "ippan": { "2024": 3.7, "2025": 2.0 },
+        "source_url": "https://passnavi.obunsha.co.jp/univ/3650/bairitsu",
+        "note": "ビジネス学部 一般選抜合計の実質倍率（受験者÷合格者）。2025年度=志願1433/受験1396/合格681→2.0"
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜。出典 https://www.aasa.ac.jp/welcome/exam/" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜。出典 https://www.aasa.ac.jp/welcome/exam/" },
+        { "type": "ippan", "available": true, "note": "前期3教科型・前期2教科型。出典 https://www.aasa.ac.jp/welcome/exam/ippan.html" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用入試。出典 https://www.aasa.ac.jp/welcome/exam/kyotsu.html" }
+      ],
+      "employment_fields": ["kinyu", "ryutsu", "maker"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "偏差値は河合塾Kei-Netボーダー（2027年度入試向け予想、学部学科ランク）。健康医療科学部 医療貢献学科は専攻により幅があり理学療法47.5・言語聴覚42.5をmin/maxに採用。倍率はpassnavi掲載の一般選抜（実質倍率＝受験者÷合格者）で2024・2025年度を採用。2026年度の公式完全版入試結果は大学サイト上で画像テーブル掲載のためテキスト抽出不可で未採用。入試方式は総合型・学校推薦型・一般（前期3教科/2教科）・共通テスト利用の4方式を大学公式で確認。employment_fieldsは大学公式就職実績ページ（https://www.aasa.ac.jp/course/employment/）およびpassnavi進路情報の主要就職先から分類。ゼミ・研究室は時間制約によりスキップ。キャンパスはビジネス学部のみ星が丘、他4学部は長久手。"
+}

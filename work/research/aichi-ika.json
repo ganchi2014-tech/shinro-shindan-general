@@ -1,0 +1,39 @@
+{
+  "uni_id": "aichi-ika",
+  "researched_date": "2026-07-13",
+  "sources": [
+    "https://search.keinet.ne.jp/2438/general/border_rate",
+    "https://www.keinet.ne.jp/exam/past/result/ippan/private/2438.html",
+    "https://www.aichi-med-u.ac.jp/su11/su1107/su110701/index.html",
+    "https://www.aichi-med-u.ac.jp/su11/su1108/su110801/index.html"
+  ],
+  "departments": [
+    {
+      "dept_id": "aichi-ika-i",
+      "campus": "愛知医科大学（愛知県長久手市）",
+      "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://search.keinet.ne.jp/2438/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 8.7, "2026": 8.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2438.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "note": "1次学力試験＋2次小論文・面接", "source_url": "https://www.aichi-med-u.ac.jp/su11/su1107/su110701/index.html" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）", "source_url": "https://www.aichi-med-u.ac.jp/su11/su1107/su110701/index.html" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用（愛知県地域特別枠B方式）", "source_url": "https://www.aichi-med-u.ac.jp/su11/su1107/su110701/index.html" }
+      ],
+      "employment_fields": ["iryo_fukushi"],
+      "unconfirmed": false
+    },
+    {
+      "dept_id": "aichi-ika-kango",
+      "campus": "愛知医科大学（愛知県長久手市）",
+      "hensachi": { "min": 47.5, "max": 50.0, "source_url": "https://search.keinet.ne.jp/2438/general/border_rate" },
+      "bairitsu": { "ippan": { "2025": 2.3, "2026": 2.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/private/2438.html" },
+      "entry_methods": [
+        { "type": "ippan", "available": true, "source_url": "https://www.aichi-med-u.ac.jp/su11/su1108/su110801/index.html" },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）", "source_url": "https://www.aichi-med-u.ac.jp/su11/su1108/su110801/index.html" },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用（A方式・B方式）", "source_url": "https://www.aichi-med-u.ac.jp/su11/su1108/su110801/index.html" }
+      ],
+      "employment_fields": ["iryo_fukushi"],
+      "unconfirmed": false
+    }
+  ],
+  "notes": "河合塾Kei-Netボーダー偏差値（2026年度・2026年1月現在）: 医学部医学科65.0（共テ得点率83%）、看護学部看護学科47.5-50.0（共テ得点率59-64%）。一般選抜倍率はKei-Net過去入試結果の実質倍率（受験者数÷合格者数）: 医学科2025:8.7/2026:8.3、看護学科2025:2.3/2026:2.1。医学科は総合型選抜なし、共通テスト利用は地域特別枠B方式・国際バカロレア選抜も実施。看護学科の共テ利用はA/B方式あり。就職は医学科=医師（臨床研修）、看護学科=看護師等でいずれも医療・福祉（iryo_fukushi）。ゼミ・研究室は医療系のため学部紹介ページでの代表ゼミ特定は短時間では難しくスキップ。"
+}
