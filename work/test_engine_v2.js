@@ -68,4 +68,50 @@ const E = require('./engine_v2.js');
   assert.strictEqual(r3.passed[0].dept.dept_id, 'ushiga-a');
 }
 
+// ---- deptRiasecVector / riasecFitScore ----
+{
+  const map = { keizai: { R: 0, I: 0.4, A: 0.1, S: 0.3, E: 0.8, C: 0.6 },
+                joho:   { R: 0.4, I: 0.8, A: 0.2, S: 0.1, E: 0.3, C: 0.6 },
+                unclassified: { R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 } };
+  const dv1 = E.deptRiasecVector({ interest_tags: ['keizai'] }, map);
+  assert.strictEqual(dv1.E, 0.8);
+  const dv2 = E.deptRiasecVector({ interest_tags: ['keizai', 'joho'] }, map);
+  assert.ok(Math.abs(dv2.I - 0.6) < 1e-9, 'I avg 0.6: ' + dv2.I);
+  const dv3 = E.deptRiasecVector({ interest_tags: [] }, map);
+  assert.strictEqual(dv3.E, 0);
+  const uv = { R: 0, I: 0, A: 0, S: 0, E: 1, C: 0 };
+  const fit = E.riasecFitScore(uv, dv1);
+  assert.ok(Math.abs(fit - 0.8 / 2.2) < 1e-9, 'riasecFit: ' + fit);
+  assert.strictEqual(E.riasecFitScore(uv, dv3), 0);
+}
+// ---- computeFit ----
+{
+  const map = { keizai: { R: 0, I: 0.4, A: 0.1, S: 0.3, E: 0.8, C: 0.6 },
+                unclassified: { R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 } };
+  const dept = {
+    interest_tags: ['keizai'], employment_fields: ['kinyu', 'it'],
+    entry_methods: [{ type: 'ippan', available: true }, { type: 'kyotsu', available: false }],
+    zemi: [{ name: 'Aゼミ' }],
+  };
+  const uni = { prefecture: '滋賀県', commute_possible: true, tuition_yen_per_year: 1200000 };
+  const ctx = {
+    riasecProfile: { R: 0, I: 0, A: 0, S: 0, E: 1, C: 0 }, hollandCode: 'EC...',
+    interests: new Set(['keizai']), careers: new Set(['kinyu']),
+    examMethods: new Set(['ippan']), budgetMax: null, riasecMap: map,
+  };
+  const r = E.computeFit(dept, uni, ctx);
+  assert.ok(r.fitScore > 50 && r.fitScore < 61, 'fitScore around 55: ' + r.fitScore);
+  assert.strictEqual(r.breakdown.emp, 8);
+  assert.ok(r.reasons.length > 0 && r.reasons.length <= 5);
+  const r2 = E.computeFit(dept, uni, { ...ctx, budgetMax: 1000000 });
+  assert.ok(r2.fitScore < r.fitScore, '予算超過で減点');
+  const deptSogoOnly = { ...dept, entry_methods: [{ type: 'sogo', available: true }] };
+  const r3 = E.computeFit(deptSogoOnly, uni, ctx);
+  assert.ok(r3.breakdown.soft < r.breakdown.soft, '方式不一致で減点');
+  const bad = E.computeFit(deptSogoOnly, { prefecture: '東京都', tuition_yen_per_year: 5000000 },
+    { riasecProfile: { R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 }, hollandCode: '',
+      interests: new Set(), careers: new Set(), examMethods: new Set(['ippan']), budgetMax: 1000000, riasecMap: map });
+  assert.ok(bad.fitScore >= 0, 'クランプ下限0: ' + bad.fitScore);
+}
+
 console.log('ALL OK');
