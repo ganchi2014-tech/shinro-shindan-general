@@ -1,0 +1,3702 @@
+<!--
+  進路診断（一般高校生版） 2026年7月版 - 配布版（Single-File HTML）
+  使い方:
+    1. このファイルをタップ → ブラウザで開く（Android/PC: Chrome等でそのまま動作）
+    2. iPhoneの注意: ローカルファイルでは「ホーム画面に追加」やお気に入り保存が
+       効かない場合があります。その場合はファイルを開き直して使ってください。
+       確実に使うには Google Classroom / Drive のリンクから毎回開く運用を推奨。
+    3. オフラインで動作（インターネット不要）
+    4. 各生徒の端末内だけにデータが保存（プライバシー保護・サーバー送信なし）
+    5. 有効期限の目安: 2027年3月末。以降は最新版を配布してください。
+-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="apple-mobile-web-app-title" content="進路診断">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='80' font-size='80'%3E🎓%3C/text%3E%3C/svg%3E">
+  <title>進路診断（一般高校生版）</title>
+  <style>
+/* ============================ RESET & BASE ============================ */
+*, *::before, *::after { box-sizing: border-box; }
+:root {
+  --bg: #0f172a;
+  --bg-card: #1e293b;
+  --bg-card-hi: #334155;
+  --text: #f1f5f9;
+  --text-dim: #94a3b8;
+  --text-muted: #64748b;
+  --primary: #6366f1;
+  --primary-hi: #818cf8;
+  --primary-soft: rgba(99, 102, 241, 0.16);
+  --accent: #f59e0b;
+  --danger: #ef4444;
+  --success: #10b981;
+  --border: #334155;
+  --border-hi: #475569;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
+  --tap: 44px;
+}
+html { -webkit-text-size-adjust: 100%; height: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* ============================ HEADER ============================ */
+.app-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  padding-top: max(12px, env(safe-area-inset-top));
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.app-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.back-btn, .ghost-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  cursor: pointer;
+  min-height: 36px;
+}
+.back-btn:hover, .ghost-btn:hover { background: var(--bg-card); color: var(--text); }
+.back-btn[hidden], .ghost-btn[hidden] { display: none; }
+
+/* ============================ MAIN ============================ */
+main {
+  flex: 1;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+.screen { animation: fade 0.2s ease-out; }
+.screen[hidden] { display: none; }
+@keyframes fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================ HERO ============================ */
+.hero {
+  text-align: center;
+  padding: 32px 20px;
+  background: linear-gradient(140deg, var(--bg-card), var(--bg-card-hi));
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+}
+.hero-icon {
+  font-size: 56px;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.5));
+}
+.hero h2 { margin: 8px 0 12px; font-size: 22px; line-height: 1.4; }
+.hero-sub { color: var(--text-dim); font-size: 14px; margin: 0 0 24px; }
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+/* ============================ BUTTONS ============================ */
+.primary-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  min-height: var(--tap);
+  flex: 1 1 0;
+  min-width: 140px;
+  transition: background 0.15s;
+}
+.primary-btn:hover { background: var(--primary-hi); }
+.primary-btn:active { transform: scale(0.98); }
+.primary-btn:disabled { background: var(--bg-card-hi); cursor: not-allowed; opacity: 0.6; }
+
+.secondary-btn {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border-hi);
+  padding: 14px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  min-height: var(--tap);
+  flex: 1 1 0;
+  min-width: 140px;
+}
+.secondary-btn:hover { background: var(--bg-card); }
+
+/* ============================ INFO CARDS ============================ */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.info-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  padding: 16px 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.info-num { font-size: 26px; font-weight: 700; color: var(--primary-hi); }
+.info-label { font-size: 12px; color: var(--text-dim); }
+.data-credit { text-align: center; color: var(--text-muted); font-size: 11px; margin: 8px 0; }
+
+/* ============================ DIAGNOSTIC FLOW ============================ */
+.step-indicator {
+  display: inline-block;
+  background: var(--primary-soft);
+  color: var(--primary-hi);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.step-title { font-size: 22px; margin: 0 0 4px; }
+.step-sub { color: var(--text-dim); font-size: 13px; margin: 0 0 24px; }
+
+.nav-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  position: sticky;
+  bottom: 0;
+  padding: 12px 0;
+  background: linear-gradient(180deg, transparent, var(--bg) 30%);
+}
+
+/* ============================ HYOUTEI SLIDER ============================ */
+.hyoutei-wrap {
+  background: var(--bg-card);
+  padding: 24px 20px;
+  border-radius: var(--radius);
+  text-align: center;
+}
+.hyoutei-display {
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--primary-hi);
+  line-height: 1;
+  margin-bottom: 24px;
+  letter-spacing: -2px;
+}
+.hyoutei-display::after { content: ""; font-size: 24px; color: var(--text-dim); }
+#hyouteiInput {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 6px;
+  background: var(--bg-card-hi);
+  border-radius: 3px;
+  outline: none;
+}
+#hyouteiInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  background: var(--primary);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 6px var(--primary-soft);
+}
+#hyouteiInput::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: var(--primary);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+.hyoutei-marks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+.hyoutei-hint {
+  margin-top: 16px;
+  padding: 10px;
+  background: var(--primary-soft);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: var(--primary-hi);
+  min-height: 40px;
+}
+
+/* ============================ CHIPS ============================ */
+.chip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+}
+.chip {
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  color: var(--text);
+  padding: 14px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+  min-height: var(--tap);
+  transition: all 0.15s;
+}
+.chip:hover { border-color: var(--border-hi); }
+.chip.selected {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+  color: var(--primary-hi);
+  font-weight: 600;
+}
+
+/* ============================ RADIO ============================ */
+.radio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.radio-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.radio-row:hover { border-color: var(--border-hi); }
+.radio-row:has(input:checked) {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+}
+.radio-row input { margin-top: 4px; accent-color: var(--primary); }
+.radio-row span { font-size: 14px; }
+.radio-row strong { display: block; font-size: 15px; margin-bottom: 2px; }
+.radio-row span:not(strong) { color: var(--text-dim); font-size: 13px; }
+
+/* ============================ RESULTS ============================ */
+.result-summary {
+  background: var(--bg-card);
+  padding: 16px;
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  border-left: 4px solid var(--primary);
+}
+.result-summary h2 { margin: 0 0 8px; font-size: 18px; }
+.result-summary .conditions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.result-summary .cond-tag {
+  background: var(--bg-card-hi);
+  color: var(--text-dim);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+.result-actions { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+
+/* ============================ UNI LIST ============================ */
+.uni-list { display: flex; flex-direction: column; gap: 12px; }
+.uni-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: start;
+}
+.uni-card:hover { border-color: var(--primary); transform: translateY(-1px); box-shadow: var(--shadow); }
+.uni-card-main { min-width: 0; }
+.uni-name { font-size: 17px; font-weight: 600; margin: 0 0 4px; }
+.uni-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.region-badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+}
+.meta-tag {
+  display: inline-block;
+  background: var(--bg-card-hi);
+  color: var(--text-dim);
+  padding: 3px 9px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+.meta-tag.trending {
+  background: rgba(245, 158, 11, 0.18);
+  color: var(--accent);
+  font-weight: 600;
+}
+.meta-tag.shitei {
+  background: rgba(255, 215, 0, 0.18);
+  color: #ffd700;
+  font-weight: 700;
+}
+.trending-inline {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 6px;
+}
+.shitei-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin: 12px 0;
+  padding: 10px 12px;
+  background: var(--bg-card-hi);
+  border: 2px dashed var(--border-hi);
+  border-radius: var(--radius-sm);
+  color: var(--text-dim);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.shitei-toggle:hover { border-color: var(--accent); color: var(--text); }
+.shitei-toggle.flagged {
+  background: rgba(255, 215, 0, 0.12);
+  border-color: #ffd700;
+  border-style: solid;
+  color: #ffd700;
+}
+.shitei-toggle .star { font-size: 18px; }
+.shitei-toggle .text { flex: 1; text-align: left; }
+
+.shitei-panel {
+  background: var(--bg-card);
+  border-left: 3px solid var(--border-hi);
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  margin-top: 8px;
+}
+.shitei-panel.flagged {
+  border-left-color: #ffd700;
+  background: rgba(255, 215, 0, 0.05);
+}
+.shitei-panel .shitei-status {
+  font-size: 14px;
+  margin: 0 0 12px;
+}
+.shitei-panel h5 {
+  font-size: 13px;
+  margin: 12px 0 8px;
+  color: var(--text);
+}
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.checklist li {
+  position: relative;
+  padding: 8px 8px 8px 32px;
+  margin-bottom: 4px;
+  background: var(--bg-card-hi);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text);
+}
+.checklist li::before {
+  content: '☐';
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  color: var(--text-dim);
+  font-size: 14px;
+}
+.shitei-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 12px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.uni-reason {
+  font-size: 13px;
+  color: var(--text-dim);
+  margin: 0;
+  line-height: 1.5;
+}
+.uni-reason ul { margin: 4px 0 0; padding-left: 18px; }
+.uni-reason li { margin-bottom: 2px; }
+
+.match-score {
+  text-align: center;
+  background: var(--primary-soft);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  min-width: 64px;
+}
+.match-score .num { font-size: 22px; font-weight: 700; color: var(--primary-hi); display: block; line-height: 1; }
+.match-score .label { font-size: 10px; color: var(--text-dim); display: block; margin-top: 2px; }
+.match-score.grade-S { background: rgba(245, 158, 11, 0.16); }
+.match-score.grade-S .num { color: var(--accent); }
+.match-score.grade-A { background: rgba(16, 185, 129, 0.16); }
+.match-score.grade-A .num { color: var(--success); }
+.match-score.grade-S\+ {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(255, 215, 0, 0.2));
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
+}
+.match-score.grade-S\+ .num { color: #ffd700; }
+
+/* ============================ FILTERS ============================ */
+.filter-row { display: flex; gap: 8px; margin-bottom: 16px; }
+.filter-row select, .filter-row input {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 16px; /* 16px未満だとiOS Safariがフォーカス時に強制ズームする */
+  min-height: var(--tap);
+}
+
+/* ============================ DETAIL ============================ */
+.detail-header {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+}
+.detail-header h2 { margin: 0 0 8px; font-size: 22px; }
+.detail-header .meta-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 14px;
+  font-size: 13px;
+  margin-top: 12px;
+}
+.detail-header .meta-grid dt { color: var(--text-dim); }
+.detail-header .meta-grid dd { margin: 0; }
+
+.tab-row {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+  -webkit-overflow-scrolling: touch;
+}
+.tab {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  padding: 12px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+.tab.active {
+  color: var(--primary-hi);
+  border-bottom-color: var(--primary);
+}
+
+.tab-content { padding-bottom: 24px; }
+.tab-content h3 { font-size: 16px; margin: 0 0 12px; color: var(--primary-hi); }
+.tab-content h4 { font-size: 14px; margin: 16px 0 6px; color: var(--text); }
+.tab-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 8px 0;
+}
+.tab-content th, .tab-content td {
+  text-align: left;
+  padding: 8px 6px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.tab-content th { color: var(--text-dim); font-weight: 500; width: 30%; }
+.tab-content p { font-size: 14px; color: var(--text-dim); margin: 6px 0; }
+.tab-content .note { background: var(--bg-card); padding: 12px; border-radius: var(--radius-sm); font-size: 13px; margin: 8px 0; border-left: 3px solid var(--accent); }
+.tab-content .empty-state {
+  text-align: center;
+  padding: 32px 16px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.tab-content .method-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  margin-bottom: 12px;
+  border-left: 3px solid var(--primary);
+}
+.tab-content .method-card h4 { margin-top: 0; color: var(--primary-hi); }
+
+.rating-bar {
+  display: grid;
+  grid-template-columns: 110px 1fr 28px;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.rating-bar .label { color: var(--text-dim); }
+.rating-bar .bar { background: var(--bg-card-hi); border-radius: 4px; height: 8px; overflow: hidden; }
+.rating-bar .bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--primary-hi));
+  border-radius: 4px;
+  transition: width 0.4s;
+}
+.rating-bar .num { text-align: right; font-weight: 600; }
+
+.dept-list, .method-list { display: flex; flex-direction: column; gap: 10px; }
+.dept-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+}
+.dept-card .dept-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.dept-card .dept-name { font-weight: 600; font-size: 14px; }
+.dept-card .hensachi { font-size: 13px; color: var(--accent); font-weight: 600; }
+.dept-card .dept-meta { font-size: 12px; color: var(--text-dim); }
+.qualif-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.qualif-tag { background: var(--bg-card-hi); padding: 2px 8px; border-radius: 4px; font-size: 11px; color: var(--text-dim); }
+
+/* ============================ LOADING ============================ */
+.loading-wrap { text-align: center; padding: 80px 20px; }
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid var(--bg-card-hi);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 16px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.data-status { color: var(--text-muted); font-size: 12px; }
+
+/* ============================ UNKNOWN TOGGLE ============================ */
+.unknown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: var(--bg-card);
+  border: 1px dashed var(--border-hi);
+  border-radius: var(--radius-sm);
+  color: var(--text-dim);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.unknown-toggle:has(input:checked) {
+  background: rgba(148, 163, 184, 0.1);
+  border-style: solid;
+  border-color: var(--text-dim);
+  color: var(--text);
+}
+.unknown-toggle input { accent-color: var(--text-dim); }
+.hyoutei-wrap.unknown .hyoutei-display { opacity: 0.4; }
+.hyoutei-wrap.unknown #hyouteiInput { opacity: 0.4; }
+.hensachi-quick-btn.disabled, #hensachiInput.disabled, #hensachiInput:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ============================ HENSACHI GUIDE ============================ */
+.hensachi-quick-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.hensachi-quick-btn {
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  color: var(--text);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s;
+  min-height: var(--tap);
+}
+.hensachi-quick-btn:hover { border-color: var(--border-hi); }
+.hensachi-quick-btn.selected {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+}
+.hensachi-quick-btn .qb-main {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+.hensachi-quick-btn .qb-sub {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+.hensachi-quick-btn.selected .qb-sub { color: var(--primary-hi); }
+.hensachi-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-card);
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  margin-bottom: 8px;
+}
+.hensachi-input-wrap label { font-size: 14px; color: var(--text); }
+#hensachiInput {
+  width: 100px;
+  padding: 8px 12px;
+  background: var(--bg);
+  border: 2px solid var(--primary);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+#hensachiInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* ============================ WARNING BANNER ============================ */
+.warning-banner {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  margin: 12px 0 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text);
+}
+.warning-banner strong { color: var(--accent); }
+
+/* ============================ CAREER CATEGORIES ============================ */
+.career-chip-categories { display: flex; flex-direction: column; gap: 16px; }
+.career-cat { display: flex; flex-direction: column; gap: 6px; }
+.career-cat-label {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin: 0;
+  padding: 4px 8px;
+  background: var(--bg-card);
+  border-radius: 4px;
+  display: inline-block;
+  width: fit-content;
+  font-weight: 500;
+}
+
+/* ============================ SCHOOL DEFAULT (学校提供) ============================ */
+.school-data-badge {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--primary-hi);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+.bulk-uni-card.has-school-data {
+  border-left: 4px solid var(--primary);
+}
+.school-default-section {
+  background: rgba(99, 102, 241, 0.08);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  margin: 0 12px 8px;
+}
+.school-default-head {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-hi);
+  margin-bottom: 6px;
+}
+.school-default-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 3px 0;
+}
+.school-default-name { color: var(--text); }
+.school-default-hyo { color: var(--accent); font-weight: 600; }
+.school-default-note {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* ============================ BULK DEPT UI ============================ */
+.bulk-uni-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+.bulk-uni-card.flagged {
+  border-color: #ffd700;
+  background: rgba(255, 215, 0, 0.04);
+}
+.bulk-uni-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.bulk-uni-header:hover { background: var(--bg-card-hi); }
+.bulk-expand-icon {
+  font-size: 10px;
+  color: var(--text-dim);
+  width: 12px;
+}
+.bulk-uni-info { flex: 1; min-width: 0; }
+.bulk-uni-info .bulk-uni-name { font-size: 14px; font-weight: 600; }
+.bulk-uni-info .bulk-uni-meta { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+.bulk-dept-summary { color: var(--accent); font-weight: 600; }
+
+.bulk-uni-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 0 12px 8px;
+}
+.bulk-uni-actions .ghost-btn { font-size: 10px; padding: 3px 8px; min-height: 24px; }
+
+.bulk-dept-list, .bulk-custom-section {
+  padding: 0 12px 8px;
+}
+.bulk-dept-row {
+  display: grid;
+  grid-template-columns: 1fr 70px auto;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  margin-bottom: 3px;
+  background: var(--bg-card-hi);
+  border-radius: 4px;
+  font-size: 12px;
+}
+.bulk-dept-row.custom { grid-template-columns: 1fr 70px auto auto; }
+.bulk-dept-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  min-width: 0;
+}
+.bulk-dept-check input { accent-color: #ffd700; }
+.bulk-dept-name { font-weight: 500; }
+.bulk-dept-hensachi { font-size: 10px; color: var(--text-muted); margin-left: 4px; }
+.bulk-hyoutei-input {
+  width: 60px;
+  padding: 4px 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+}
+.bulk-hyoutei-suffix { font-size: 10px; color: var(--text-dim); }
+.bulk-remove-custom {
+  background: transparent;
+  border: none;
+  color: var(--danger);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 4px;
+}
+.bulk-add-custom-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+  margin-top: 6px;
+}
+.bulk-custom-input {
+  padding: 6px 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 4px;
+  font-size: 12px;
+}
+.bulk-add-custom-row .ghost-btn { font-size: 11px; padding: 4px 10px; min-height: 30px; }
+.bulk-empty { color: var(--text-muted); font-size: 12px; padding: 8px; text-align: center; }
+
+/* ============================ BULK 指定校 SCREEN ============================ */
+.bulk-header h2 { margin: 0 0 8px; font-size: 20px; }
+.bulk-header { margin-bottom: 16px; }
+.bulk-controls {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 56px;
+  background: var(--bg);
+  padding: 8px 0;
+  z-index: 5;
+}
+#bulkSearch {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  min-height: 40px;
+}
+.bulk-count {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.bulk-quick-actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.bulk-list { display: flex; flex-direction: column; gap: 20px; padding-bottom: 80px; }
+.bulk-region h3 {
+  font-size: 14px;
+  margin: 0 0 8px;
+  padding: 8px 12px;
+  background: var(--bg-card);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-weight: 600;
+}
+.bulk-region h3 .count {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-left: 8px;
+  font-weight: 400;
+}
+.bulk-region-actions {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.bulk-region-actions .ghost-btn { font-size: 11px; padding: 4px 10px; min-height: 28px; }
+.bulk-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 4px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.bulk-row:hover { border-color: var(--border-hi); }
+.bulk-row.checked {
+  background: rgba(255, 215, 0, 0.08);
+  border-color: #ffd700;
+}
+.bulk-row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #ffd700;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.bulk-uni { flex: 1; min-width: 0; }
+.bulk-uni-name { font-size: 14px; font-weight: 600; }
+.bulk-uni-meta { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+
+/* ============================ SUB-TAB ============================ */
+.subtab-row {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  background: var(--bg-card);
+  padding: 4px;
+  border-radius: var(--radius-sm);
+}
+.subtab {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+.subtab.active {
+  background: var(--primary);
+  color: white;
+}
+
+/* ============================ BAIRITSU TABLE ============================ */
+.bairitsu-trend-wrap {
+  overflow-x: auto;
+  margin: 8px 0;
+}
+.bairitsu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 320px;
+}
+.bairitsu-table th, .bairitsu-table td {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+.bairitsu-table thead th {
+  background: var(--bg-card-hi);
+  color: var(--text-dim);
+}
+.bairitsu-table tbody th {
+  background: var(--bg-card-hi);
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+/* ============================ VERIFIED BANNER ============================ */
+.verified-banner {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid var(--success);
+  border-left: 4px solid var(--success);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: var(--text);
+}
+.verified-banner strong { color: var(--success); }
+.verified-banner.warning {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: var(--accent);
+  border-left-color: var(--accent);
+}
+.verified-banner.warning strong { color: var(--accent); }
+
+/* ============================ NO URL NOTICE ============================ */
+.no-url-notice {
+  background: rgba(148, 163, 184, 0.1);
+  border: 1px dashed var(--border-hi);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.no-url-notice strong { color: var(--text); }
+
+/* ============================ OFFICIAL BUTTONS PROMINENT ============================ */
+.official-buttons-prominent {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.official-btn {
+  flex: 1;
+  min-width: 140px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.15s;
+  text-align: center;
+}
+.official-btn.nyushi {
+  background: var(--primary);
+  color: white;
+  border: 2px solid var(--primary);
+}
+.official-btn.nyushi:hover { background: var(--primary-hi); transform: translateY(-1px); }
+.official-btn.youkou {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+.official-btn.youkou:hover { background: rgba(245, 158, 11, 0.25); transform: translateY(-1px); }
+
+/* ============================ NYUSHI DETAILS ============================ */
+.nyushi-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-left: 4px solid var(--accent);
+}
+.nyushi-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.nyushi-dates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.nyushi-date-item {
+  background: var(--bg-card-hi);
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.nyushi-date-label {
+  font-size: 11px;
+  color: var(--text-dim);
+}
+.nyushi-date-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+.nyushi-section {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.nyushi-section strong {
+  display: block;
+  color: var(--text-dim);
+  font-size: 11px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.nyushi-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.nyushi-tag {
+  background: var(--bg-card-hi);
+  color: var(--text);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 1px solid var(--border);
+}
+.nyushi-tag.accent {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary-hi);
+  border-color: var(--primary);
+}
+
+/* ============================ EXTERNAL LINKS ============================ */
+.ext-link {
+  color: var(--primary-hi);
+  text-decoration: underline;
+}
+.ext-link-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.ext-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--primary-soft);
+  color: var(--primary-hi);
+  border: 1px solid var(--primary);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.ext-link-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* ============================ RICH DETAIL FIELDS ============================ */
+.rich-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+  margin: 12px 0;
+}
+.rich-card {
+  background: var(--bg-card);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--primary);
+}
+.rich-card .rich-label {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.rich-card .rich-value {
+  font-size: 14px;
+  font-weight: 600;
+}
+.rich-card .rich-sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+.rich-card.hero {
+  border-left-width: 4px;
+  border-left-color: var(--accent);
+  background: linear-gradient(135deg, var(--bg-card), rgba(245, 158, 11, 0.05));
+}
+.rich-card.hero .rich-value { color: var(--accent); font-size: 22px; }
+.feature-block {
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-card-hi));
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  margin: 12px 0;
+  border-left: 4px solid var(--accent);
+}
+.feature-block h4 { margin: 0 0 6px; color: var(--accent); font-size: 13px; }
+.feature-block p { margin: 0; font-size: 14px; line-height: 1.6; color: var(--text); }
+
+/* ============================ HENSACHI MAP ============================ */
+.hensachi-map {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.hensachi-map-head {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.hensachi-my {
+  background: var(--primary);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.hensachi-bucket {
+  background: var(--bg-card-hi);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+.hensachi-bucket-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.hensachi-bucket-head strong { font-size: 14px; }
+.hensachi-bucket-sub {
+  font-size: 11px;
+  color: var(--text-dim);
+  flex: 1;
+}
+.hensachi-bucket-count {
+  background: var(--bg);
+  color: var(--text);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.hensachi-bucket-unis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.hensachi-uni-chip {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border-hi);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.hensachi-uni-chip:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+.hensachi-uni-chip small { color: var(--text-dim); font-size: 10px; margin-left: 4px; }
+.hensachi-uni-chip:hover small { color: rgba(255,255,255,0.7); }
+.hensachi-empty { color: var(--text-muted); font-size: 12px; font-style: italic; }
+
+/* ============================ FAB BACK BUTTON ============================ */
+.fab-back {
+  position: fixed;
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  left: 16px;
+  z-index: 20;
+  background: var(--bg-card);
+  border: 2px solid var(--primary);
+  color: var(--primary-hi);
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  transition: all 0.15s;
+}
+.fab-back:hover { background: var(--primary); color: white; transform: translateX(2px); }
+.fab-back:active { transform: scale(0.95); }
+.fab-back[hidden] { display: none; }
+
+/* ============================ ESTIMATED BANNER ============================ */
+.estimated-banner {
+  background: rgba(148, 163, 184, 0.1);
+  border: 1px solid var(--text-dim);
+  border-left: 4px solid var(--text-dim);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.estimated-banner strong { color: var(--text); }
+
+/* ============================ SCORE BREAKDOWN ============================ */
+.score-breakdown {
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.score-breakdown summary {
+  cursor: pointer;
+  padding: 4px 8px;
+  background: var(--bg-card-hi);
+  border-radius: 4px;
+  display: inline-block;
+  user-select: none;
+}
+.score-breakdown summary:hover { color: var(--text-dim); }
+.breakdown-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+  padding: 6px 8px;
+  background: var(--bg-card-hi);
+  border-radius: 4px;
+}
+.breakdown-item {
+  background: var(--bg);
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  color: var(--primary-hi);
+  border: 1px solid var(--border);
+}
+.breakdown-item.minus { color: var(--danger); }
+
+/* ============================ PROGRESS BAR ============================ */
+.progress-bar {
+  height: 3px;
+  background: var(--bg-card);
+  position: sticky;
+  top: 60px;
+  z-index: 9;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--primary-hi));
+  transition: width 0.3s ease-out;
+  width: 0%;
+}
+
+/* ============================ FAV BUTTON & COMPARE ============================ */
+.match-score-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+.fav-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  cursor: pointer;
+  min-height: 28px;
+  min-width: 40px;
+  transition: all 0.15s;
+}
+.fav-btn:hover { border-color: var(--accent); background: var(--bg-card-hi); }
+.fav-btn.active {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+.crown-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ffd700, #f59e0b);
+  color: #1a1a1a;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.4);
+}
+.compare-wrap {
+  overflow-x: auto;
+  margin: 8px 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+}
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  min-width: 360px;
+}
+.compare-table th, .compare-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  vertical-align: middle;
+}
+.compare-table thead th { background: var(--bg-card-hi); position: sticky; top: 0; z-index: 1; }
+.compare-table tbody th {
+  text-align: left;
+  background: var(--bg-card-hi);
+  color: var(--text-dim);
+  font-weight: 500;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+.compare-uni-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.compare-uni-link {
+  color: var(--primary-hi);
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.compare-fav-rm {
+  background: transparent;
+  border: 1px solid var(--border-hi);
+  color: var(--danger);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  padding: 0;
+}
+
+/* ============================ FOOTER ============================ */
+.app-footer {
+  text-align: center;
+  padding: 16px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+}
+
+/* ============================ RIASEC 適性チェック ============================ */
+.riasec-list { display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
+.riasec-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 14px 12px;
+}
+.riasec-q { margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: var(--text); }
+.riasec-btns { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.riasec-opt {
+  border: 1px solid var(--border-hi);
+  background: var(--bg-elev, transparent);
+  color: var(--text-dim);
+  border-radius: 10px;
+  padding: 9px 4px;
+  font-size: 11px;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: all .12s ease;
+}
+.riasec-opt:hover { border-color: var(--accent); }
+.riasec-opt.on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ============================ 3ゾーン結果 ============================ */
+.result-band { font-size: 14px; color: var(--text); margin-bottom: 6px; }
+.result-band b { color: var(--accent); }
+.nudge {
+  background: var(--card); border: 1px dashed var(--border-hi);
+  border-radius: 10px; padding: 8px 12px; font-size: 12px; color: var(--text-dim);
+  margin-top: 6px;
+}
+.zone-block { margin-top: 22px; }
+.zone-title {
+  font-size: 17px; margin: 0 0 2px; display: flex; align-items: center; gap: 8px;
+}
+.zone-count {
+  font-size: 12px; background: var(--border-hi); color: var(--text-dim);
+  border-radius: 999px; padding: 1px 9px; font-weight: 600;
+}
+.zone-sub { margin: 0 0 10px; font-size: 12px; color: var(--text-muted); }
+.fit-badge {
+  font-size: 12px; font-weight: 700; color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  border-radius: 999px; padding: 2px 10px; white-space: nowrap;
+}
+.reason-chip {
+  display: inline-block; font-size: 11px; color: var(--text-dim);
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 999px; padding: 2px 9px; margin: 3px 4px 0 0;
+}
+.dept-card { margin-bottom: 12px; }
+.uc-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.uc-name { font-size: 16px; font-weight: 700; color: var(--text); line-height: 1.35; }
+.uc-dept { font-size: 13px; color: var(--text-dim); margin-top: 2px; }
+.uc-meta { display: flex; align-items: center; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
+.uc-band { font-size: 13px; font-weight: 600; color: var(--text); }
+.uc-reasons { margin-top: 6px; }
+.fav-btn {
+  background: transparent; border: none; font-size: 20px; line-height: 1;
+  cursor: pointer; padding: 2px 4px; flex-shrink: 0;
+}
+.uc-detail-btn {
+  margin-top: 10px; width: 100%;
+  background: var(--card); border: 1px solid var(--border-hi);
+  color: var(--accent); font-weight: 600; font-size: 13px;
+  border-radius: 10px; padding: 8px; cursor: pointer;
+}
+.uc-detail-btn:hover { border-color: var(--accent); }
+
+/* ============================ 詳細（data_v2） ============================ */
+.detail-dept { font-size: 15px; color: var(--text-dim); margin: 2px 0 8px; font-weight: 600; }
+.detail-lead { font-size: 13px; line-height: 1.7; color: var(--text-dim); margin: 4px 0 12px; }
+.detail-h { font-size: 14px; margin: 16px 0 8px; color: var(--text); border-left: 3px solid var(--accent); padding-left: 8px; }
+.method-item { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
+.method-name { font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 4px; }
+.method-note { font-size: 12px; color: var(--text-dim); line-height: 1.6; }
+.ok-badge { font-size: 11px; color: var(--success, #16a085); font-weight: 600; }
+.detail-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.detail-link { font-size: 13px; color: var(--accent); text-decoration: none; border: 1px solid var(--border-hi); border-radius: 8px; padding: 6px 12px; }
+.detail-link:hover { border-color: var(--accent); }
+
+/* ============================ RESPONSIVE ============================ */
+@media (min-width: 720px) {
+  .hero { padding: 48px 32px; }
+  .hero h2 { font-size: 28px; }
+  .step-title { font-size: 26px; }
+}
+
+</style>
+<!-- INLINE_V2 -->
+</head>
+<body>
+  <header class="app-header">
+    <button class="back-btn" id="backBtn" hidden>← 戻る</button>
+    <h1 class="app-title" id="appTitle">進路診断</h1>
+    <button class="ghost-btn" id="resetBtn" hidden>リセット</button>
+  </header>
+  <div class="progress-bar" id="progressBar" hidden>
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+  <!-- Floating Back Button (親指届く位置) -->
+  <button class="fab-back" id="fabBackBtn" hidden>← 戻る</button>
+
+  <main id="app">
+    <!-- ============================ HOME SCREEN ============================ -->
+    <section class="screen" data-screen="home">
+      <div class="hero">
+        <div class="hero-icon">🎓</div>
+        <h2>あなたに合う大学を見つけよう</h2>
+        <p class="hero-sub">
+          進路を考え始めた高校生のための大学診断アプリ。<br />
+          評定・偏差値・興味分野・希望の仕事から、おすすめの大学を提案します。
+        </p>
+        <div class="warning-banner">
+          ⚠️ <strong>重要</strong>: 入試制度・偏差値・倍率は<strong>年度ごとに変動</strong>します。出願前は必ず<strong>各大学の公式入試要項</strong>を確認してください。
+        </div>
+        <div class="cta-row">
+          <button class="primary-btn" data-go="diag-1">診断スタート</button>
+          <button class="secondary-btn" data-go="list">全大学を見る</button>
+        </div>
+        <div class="cta-row" style="margin-top:8px;gap:8px">
+          <button class="ghost-btn" data-go="favs" style="flex:1;min-width:0">❤️ お気に入り・比較</button>
+        </div>
+        <div class="warning-banner" style="margin-top:12px;background:rgba(239,68,68,0.1);border-color:var(--danger);border-left-color:var(--danger)">
+          <strong style="color:var(--danger)">⚠️ データは「目安」です</strong><br />
+          <span style="font-size:12px;line-height:1.6">
+            • 偏差値・倍率・評定基準・共テ得点率は<strong>推定値・過去の参考パターン</strong>を含みます<br />
+            • <strong>現高3生</strong> は来春の <strong>2027年度入試</strong> を受験。日程・条件は <strong>毎年9月頃に公式発表</strong><br />
+            • 出願前は必ず <strong>各大学の最新募集要項</strong> と <strong>担任・進路指導室</strong> で確認してください
+          </span>
+        </div>
+        <div class="warning-banner" style="margin-top:8px">
+          📅 <strong>このアプリは「2026年7月版」です（2027年3月末まで有効の目安）</strong><br />
+          <span style="font-size:12px;line-height:1.6">それ以降は入試情報が古くなるため、<strong>新しい版を先生からもらってください</strong>。友だちから転送されたファイルは古い版の可能性があります。</span>
+        </div>
+      </div>
+      <div class="info-card" style="margin-bottom:12px;text-align:left;padding:14px 16px">
+        <strong style="font-size:14px">🛤️ 専門学校・短大・就職・公務員（高卒）を考えている人へ</strong>
+        <p style="margin:6px 0 0;font-size:12px;color:var(--text-dim);line-height:1.6">このアプリは<strong>大学進学向け</strong>です。専門学校（資格・分野で選ぶのが基本）・短大・就職・公務員高卒枠も立派な進路です。迷っている人は<strong>担任・進路指導室</strong>に相談してください。</p>
+      </div>
+      <details class="info-card" style="margin-bottom:12px;text-align:left;padding:14px 16px">
+        <summary style="font-size:14px;font-weight:600;cursor:pointer">💰 お金の基礎知識（学費が心配な人は開く）</summary>
+        <div style="margin-top:8px;font-size:12px;color:var(--text-dim);line-height:1.7">
+          • <strong>学費の目安（年間）</strong>: 国公立 約54万円 / 私立文系 約120〜140万円 / 私立理系 約150〜180万円 / 薬学・医療系はさらに高い<br />
+          • <strong>国の修学支援新制度</strong>: 世帯収入に応じて<strong>授業料減免＋給付型奨学金（返さなくてよい）</strong>が受けられる制度。高3の春〜夏に予約申込み。対象かどうかは文科省のシミュレーターや進路指導室で確認<br />
+          • <strong>JASSO貸与型奨学金</strong>: 借りる奨学金（卒業後に返済）。無利子（第一種）と有利子（第二種）がある<br />
+          • <strong>受験にもお金がかかる</strong>: 私立1出願 約3.5万円・国公立 約1.7万円＋交通費。併願校数は保護者と相談を<br />
+          • 大学独自の特待生・奨学金は各大学の詳細画面「🌏 生活」タブへ
+        </div>
+      </details>
+      <div class="info-grid">
+        <div class="info-card"><span class="info-num" id="statUni">—</span><span class="info-label">大学数</span></div>
+        <div class="info-card"><span class="info-num" id="statRegion">—</span><span class="info-label">学部数</span></div>
+        <div class="info-card"><span class="info-num">3</span><span class="info-label">診断ゾーン</span></div>
+      </div>
+      <p class="data-credit" id="dataCredit">データ更新: —</p>
+    </section>
+
+    <!-- ============================ DIAGNOSTIC: STEP 1 評定 ============================ -->
+    <section class="screen" data-screen="diag-1" hidden>
+      <div class="step-indicator">Step 1 / 7</div>
+      <h2 class="step-title">あなたの評定平均は？</h2>
+      <p class="step-sub">評定平均＝<strong>通知表（5段階）の全教科の平均</strong>。高3は「3年1学期まで」の平均、<strong>高1・高2は直近の通知表の平均でOK</strong>。推薦入試の出願条件に使われる数字です。</p>
+      <p class="step-sub" style="font-size:12px;color:var(--text-muted)">※ 推薦・総合型の出願条件の目安です。診断のマッチングスコアには影響しません。</p>
+      <div class="hyoutei-wrap">
+        <div class="hyoutei-display"><span id="hyouteiVal">3.5</span></div>
+        <input type="range" min="1.0" max="5.0" step="0.1" value="3.5" id="hyouteiInput" />
+        <div class="hyoutei-marks">
+          <span>1.0</span><span>2.0</span><span>3.0</span><span>4.0</span><span>5.0</span>
+        </div>
+        <div class="hyoutei-hint" id="hyouteiHint"></div>
+        <label class="unknown-toggle">
+          <input type="checkbox" id="hyouteiUnknownChk" />
+          🤷 評定は未定（スコアに影響させない）
+        </label>
+      </div>
+      <div class="nav-row">
+        <button class="primary-btn" data-go="diag-hensachi">次へ →</button>
+      </div>
+    </section>
+
+    <!-- ============================ DIAGNOSTIC: STEP 2 偏差値・挑戦度（NEW） ============================ -->
+    <section class="screen" data-screen="diag-hensachi" hidden>
+      <div class="step-indicator">Step 2 / 7</div>
+      <h2 class="step-title">あなたの偏差値は？</h2>
+      <p class="step-sub">自分のレベルと大学のミスマッチを防ぎます。</p>
+      <p class="step-sub" style="margin-bottom:8px"><strong>📝 定期試験での目安をタップ</strong></p>
+      <div class="hensachi-quick-buttons" id="hensachiQuickBtns">
+        <button class="hensachi-quick-btn" data-hen="56">
+          <div class="qb-main">主要教科 平均80点以上</div>
+          <div class="qb-sub">偏差値の目安 55〜58</div>
+        </button>
+        <button class="hensachi-quick-btn" data-hen="50">
+          <div class="qb-main">主要教科 平均点並み</div>
+          <div class="qb-sub">偏差値の目安 48〜52</div>
+        </button>
+        <button class="hensachi-quick-btn" data-hen="42">
+          <div class="qb-main">主要教科 平均点以下</div>
+          <div class="qb-sub">偏差値の目安 40〜45</div>
+        </button>
+      </div>
+      <div class="hensachi-input-wrap">
+        <label>偏差値（手動調整可）:</label>
+        <input type="number" id="hensachiInput" step="0.5" min="30" max="75" value="50" />
+      </div>
+      <p class="step-sub" style="margin-top:16px">📐 どの模試の偏差値？（基準を自動でそろえます）:</p>
+      <div class="radio-list" id="examSourceList">
+        <label class="radio-row"><input type="radio" name="examSource" value="shinken" /><span><strong>進研模試</strong><br />受験者層が広く数値が高めに出ます（−7で換算）</span></label>
+        <label class="radio-row"><input type="radio" name="examSource" value="kawai" /><span><strong>河合塾 全統模試</strong><br />このアプリの基準。そのまま使います</span></label>
+        <label class="radio-row"><input type="radio" name="examSource" value="sundai" /><span><strong>駿台模試</strong><br />数値が低めに出ます（＋5で換算）</span></label>
+        <label class="radio-row"><input type="radio" name="examSource" value="unknown" checked /><span><strong>🤷 わからない / 定期テストの目安</strong><br />換算せずそのまま使います</span></label>
+      </div>
+      <label class="unknown-toggle">
+        <input type="checkbox" id="hensachiUnknownChk" />
+        🤷 偏差値は未定（スコアに影響させない）
+      </label>
+      <div class="info-card" style="margin-top:16px;text-align:left;padding:10px 14px;font-size:12px;color:var(--text-dim);line-height:1.7">
+        <strong style="color:var(--text)">🎯 挑戦度は自動でおまかせ</strong><br />
+        結果は「実力相応 / チャレンジ / 安全圏」の3ゾーンに自動で振り分けます。方針を選ぶ必要はありません。
+      </div>
+      <div class="nav-row">
+        <button class="secondary-btn" data-go="diag-1">← 戻る</button>
+        <button class="primary-btn" data-go="diag-2">次へ →</button>
+      </div>
+    </section>
+
+    <!-- ============================ DIAGNOSTIC: STEP 3 就職 ============================ -->
+    <section class="screen" data-screen="diag-2" hidden>
+      <div class="step-indicator">Step 3 / 7</div>
+      <h2 class="step-title">将来の希望する進路は？</h2>
+      <p class="step-sub">複数選択可。実就職率の高い大学を提案します。<strong>まだ決まっていない人は選ばずに「次へ」でOK</strong>（次の「興味のある分野」だけでも診断できます）。</p>
+      <div id="careerChips" class="career-chip-categories"></div>
+      <div class="nav-row">
+        <button class="secondary-btn" data-go="diag-hensachi">← 戻る</button>
+        <button class="primary-btn" data-go="diag-area">次へ →</button>
+      </div>
+    </section>
+
+    <!-- ============================ DIAGNOSTIC: STEP 4 就職希望地域（NEW） ============================ -->
+    <section class="screen" data-screen="diag-area" hidden>
+      <div class="step-indicator">Step 4 / 7</div>
+      <h2 class="step-title">将来の就職希望地域は？</h2>
+      <p class="step-sub">就職時にどこで働きたいかでマッチする大学が変わります。</p>
+      <div class="radio-list" id="workAreaList">
+        <label class="radio-row"><input type="radio" name="workArea" value="shiga" /><span><strong>🏞️ 滋賀県内で就職</strong><br />滋賀の大学・滋賀キャンパスあり大学が有利</span></label>
+        <label class="radio-row"><input type="radio" name="workArea" value="kansai" /><span><strong>🏯 関西圏で就職</strong><br />大阪・京都・兵庫・奈良・滋賀の大学が有利</span></label>
+        <label class="radio-row"><input type="radio" name="workArea" value="any" /><span><strong>🗾 どこでもOK</strong><br />地域の影響を受けず全国の大学から</span></label>
+        <label class="radio-row"><input type="radio" name="workArea" value="unknown" checked /><span><strong>🤷 未定（デフォルト）</strong><br />スコアに影響させない</span></label>
+      </div>
+      <div class="nav-row">
+        <button class="secondary-btn" data-go="diag-2">← 戻る</button>
+        <button class="primary-btn" data-go="diag-interest">次へ →</button>
+      </div>
+    </section>
+
+    <!-- ============================ DIAGNOSTIC: STEP 5 興味分野 ============================ -->
+    <section class="screen" data-screen="diag-interest" hidden>
+      <div class="step-indicator">Step 5 / 7</div>
+      <h2 class="step-title">興味のある分野・学びたいことは？</h2>
+      <p class="step-sub">複数選択可。仕事がまだ決まっていなくてもOK。「好きな教科・気になる分野」で選んでください。学部とのマッチングに使います。</p>
+      <div class="chip-grid" id="interestChips"></div>
+      <div class="nav-row">
+        <button class="secondary-btn" data-go="diag-area">← 戻る</button>
+        <button class="primary-btn" data-go="diag-4">次へ →</button>
+      </div>
+    </section>
+
+    <!-- ============================ DIAGNOSTIC: STEP 6 通い・下宿 ============================ -->
+    <section class="screen" data-screen="diag-4" hidden>
+      <div class="step-indicator">Step 6 / 7</div>
+      <h2 class="step-title">通い？ 下宿？</h2>
+      <p class="step-sub">滋賀県からの距離でフィルタします。</p>
+      <div class="radio-list" id="commuteList">
+        <label class="radio-row"><input type="radio" name="commute" value="jitaku" /><span><strong>🏠 通い 厳しめ（片道1時間半まで）</strong><br />滋賀・京都・近大阪・岐阜の通える大学のみ</span></label>
+        <label class="radio-row"><input type="radio" name="commute" value="jitaku-flex" /><span><strong>🏠 通い 緩め（〜2時間OK）</strong><br />通学可能な範囲を広めに</span></label>
+        <label class="radio-row"><input type="radio" name="commute" value="any" /><span><strong>🏘️ 下宿OK（全国の大学）</strong><br />距離関係なくすべての大学を対象</span></label>
+        <label class="radio-row"><input type="radio" name="commute" value="unknown" checked /><span><strong>🤷 未定（デフォルト）</strong><br />スコアに影響させない・フィルタなし</span></label>
+      </div>
+      <label class="unknown-toggle" style="margin-top:16px">
+        <input type="checkbox" id="costPriorityChk" />
+        💴 学費・生活費をできるだけ抑えたい（国公立・自宅通学圏を優先）
+      </label>
+      <div class="nav-row">
+        <button class="secondary-btn" data-go="diag-interest">← 戻る</button>
+        <button class="primary-btn" data-go="diag-5">次へ →</button>
+      </div>
+    </section>
+
+    <!-- ============================ DIAGNOSTIC: STEP 7 入試方式 ============================ -->
+    <section class="screen" data-screen="diag-5" hidden>
+      <div class="step-indicator">Step 7 / 7</div>
+      <h2 class="step-title">希望する入試方式は？</h2>
+      <p class="step-sub">複数選択可。方式の充実度もマッチングに反映します。</p>
+      <div class="chip-grid" id="exammethodChips">
+        <button class="chip" data-method="sogo">A:総合型選抜</button>
+        <button class="chip" data-method="koubo">B:公募・学校推薦</button>
+        <button class="chip" data-method="ippan">C:一般選抜（私立）</button>
+        <button class="chip" data-method="kokkoritsu">D:国公立（共テ＋二次）</button>
+        <button class="chip selected" data-method="any">どれでもOK</button>
+      </div>
+      <div class="info-card" style="margin-top:12px;text-align:left;padding:12px 14px;font-size:12px;color:var(--text-dim);line-height:1.7">
+        <strong style="color:var(--text)">📖 それぞれの意味（ざっくり）</strong><br />
+        <strong>A 総合型選抜</strong>: 書類・面接・小論文で「人物と意欲」を評価。夏〜秋に実施（旧AO入試）<br />
+        <strong>B 公募・学校推薦</strong>: 評定平均の条件＋基礎テストや面接。高3の秋〜冬。学校長の推薦が必要<br />
+        <strong>C 一般選抜（私立）</strong>: 学力試験1本勝負。1〜2月。評定は関係なし<br />
+        <strong>D 国公立</strong>: 1月の<strong>共通テスト（共テ・マーク式の全国試験）</strong>＋2〜3月の大学別二次試験の合計で決まる
+      </div>
+      <div class="nav-row">
+        <button class="secondary-btn" data-go="diag-4">← 戻る</button>
+        <button class="primary-btn" data-go="diag-riasec">次へ（適性チェック）→</button>
+      </div>
+    </section>
+
+    <!-- ============================ DIAGNOSTIC: 適性チェック RIASEC（任意） ============================ -->
+    <section class="screen" data-screen="diag-riasec" hidden>
+      <div class="step-indicator">適性チェック（任意）</div>
+      <h2 class="step-title">最後に、向いている学び方をチェック（<span id="riasecProgress">0</span>/12）</h2>
+      <p class="step-sub">直感でOK。時間がなければ<strong>スキップ</strong>できます。回答すると「あなたの性格に向いた学部」が上位に来やすくなり、診断の精度が上がります。</p>
+      <div id="riasecItems" class="riasec-list"></div>
+      <div class="nav-row" style="flex-wrap:wrap;gap:8px">
+        <button class="secondary-btn" data-go="diag-5">← 戻る</button>
+        <button class="primary-btn" id="runDiagBtn">🔍 この回答で診断</button>
+        <button class="ghost-btn" id="skipRiasecBtn">スキップして診断</button>
+      </div>
+    </section>
+
+    <!-- ============================ RESULTS ============================ -->
+    <section class="screen" data-screen="result" hidden>
+      <div class="result-summary" id="resultSummary"></div>
+      <div class="result-actions">
+        <button class="ghost-btn" id="editDiagBtn">条件を編集</button>
+        <button class="ghost-btn" data-go="list">全大学を見る</button>
+      </div>
+      <div class="uni-list" id="resultList"></div>
+    </section>
+
+    <!-- ============================ UNIVERSITIES LIST ============================ -->
+    <section class="screen" data-screen="list" hidden>
+      <div class="filter-row">
+        <select id="regionFilter">
+          <option value="all">すべての地域</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="大学名で検索" />
+      </div>
+      <div class="uni-list" id="listAll"></div>
+    </section>
+
+    <!-- ============================ UNIVERSITY DETAIL ============================ -->
+    <section class="screen" data-screen="detail" hidden>
+      <div class="detail-header" id="detailHeader"></div>
+      <nav class="tab-row">
+        <button class="tab active" data-tab="basic">🏠 概要</button>
+        <button class="tab" data-tab="entrance">📝 入試</button>
+        <button class="tab" data-tab="employment">💼 進路</button>
+        <button class="tab" data-tab="life">🌏 生活</button>
+      </nav>
+      <div class="tab-content" id="tabContent"></div>
+    </section>
+
+    <!-- ============================ お気に入り・比較 ============================ -->
+    <section class="screen" data-screen="favs" hidden>
+      <h2>❤️ お気に入り大学</h2>
+      <p class="step-sub">気になる大学を比較表で確認できます。</p>
+      <div id="favsContent"></div>
+    </section>
+
+    <!-- ============================ LOADING ============================ -->
+    <section class="screen" data-screen="loading">
+      <div class="loading-wrap">
+        <div class="spinner"></div>
+        <p>データを読み込んでいます…</p>
+        <p class="data-status" id="dataStatus"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>データは公開情報を基に整理。出願前は必ず各大学の公式情報を確認してください。</small>
+  </footer>
+
+  <script>
+// ============================================================
+// 進路診断アプリ（一般高校生版）
+// ============================================================
+'use strict';
+
+// ---------- グローバル状態 ----------
+const state = {
+  data: {
+    base: null,
+    sogo: null,
+    koubo: null,
+    ippan: null,
+    employment: null,
+  },
+  diag: {
+    hyoutei: 3.5,
+    hyouteiUnknown: false,       // デフォルトで入力あり（未定にしたい場合のみチェック）
+    hensachi: 50,
+    hensachiUnknown: false,      // デフォルトで入力あり
+    examSource: 'unknown',       // 模試基準（shinken/kawai/sundai/unknown）
+    challenge: 'unknown',        // デフォルト未定
+    careers: new Set(),          // 空 = 未定
+    interests: new Set(),        // 興味分野（空 = 未定）
+    workArea: 'unknown',         // デフォルト未定
+    commute: 'unknown',          // デフォルト未定
+    costPriority: false,         // 学費・費用を抑えたい
+    methods: new Set(['any']),
+  },
+  currentScreen: 'home',
+  currentDetail: null,
+  currentTab: 'basic',
+  history: [],
+  riasecAnswers: [],   // 適性チェック（12要素 0-3、未回答は空）
+  lastResult: null,    // engine_v2 の診断結果
+};
+
+// ---------- 評定平均ヒント ----------
+const HYOUTEI_HINTS = [
+  { max: 2.4, text: '評定は厳しめ。評定不問の一般選抜・公募（当日点勝負）が中心になります。' },
+  { max: 2.9, text: '評定3.0以上を求める推薦には出願できません。一般・評定不問の公募で挑戦を。' },
+  { max: 3.2, text: '多くの私大公募推薦の最低ラインです。基礎テスト型の公募で選択肢が広がります。' },
+  { max: 3.4, text: '関西私大の公募の多くで出願可能なライン。総合型も視野に入ります。' },
+  { max: 3.9, text: '同志社（3.5以上）など難関私大の推薦・総合型に手が届きます。' },
+  { max: 4.4, text: '国公立の学校推薦型（評定4.0前後〜）が現実的。指定校の有無は進路指導室に確認を。' },
+  { max: 5.1, text: '国公立の学校推薦・難関大の高評定枠が射程内。選択肢が最も広い状態です。' },
+];
+
+// 旧: 既存ratingsカテゴリラベル（後方互換）
+const CAREER_LABEL = {
+  kyoin: '中高教員',
+  shogakkō: '小学校教員',
+  keisatsu: '警察官',
+  shōbō: '消防士・救命士',
+  kōmuin_ippan: '一般公務員',
+  kigyō_ippan: '一般企業',
+  kigyō_supotsu: 'スポーツ関連企業',
+  iryō: '医療・専門職',
+};
+
+// 新: 24カテゴリ・キャリアオプション（カテゴリ別）
+const CAREER_CATEGORIES = {
+  'kyōin':    { label: '教育・保育系',    icon: '🎓' },
+  'kōmuin':   { label: '公務員・公安系',  icon: '🏛️' },
+  'medical':  { label: '医療・福祉系',    icon: '🏥' },
+  'sports':   { label: 'スポーツ・健康系', icon: '⚽' },
+  'gijutsu':  { label: '技術・建築・IT系', icon: '🔧' },
+  'kigyō':    { label: 'ビジネス・士業系', icon: '💼' },
+};
+
+const CAREER_OPTIONS = [
+  // 教育・保育系
+  { id: 'kyoin',         cat: 'kyōin',   label: '中学・高校の教員',   icon: '🏫', rating: 'kyoin', dept_keywords: ['教育', '教員養成'] },
+  { id: 'shogakkō',      cat: 'kyōin',   label: '小学校教員',         icon: '📚', rating: 'shogakkō', dept_keywords: ['教育', '児童', '発達教育'] },
+  { id: 'hoiku',         cat: 'kyōin',   label: '保育士・幼稚園教諭', icon: '🧸', rating: 'shogakkō', dept_keywords: ['保育', '幼児', 'こども', '子ども'] },
+  { id: 'yōgo',          cat: 'kyōin',   label: '養護教諭',           icon: '🩺', rating: 'iryō',  dept_keywords: ['養護', '健康科学'] },
+
+  // 公務員・公安系
+  { id: 'keisatsu',      cat: 'kōmuin',  label: '警察官',             icon: '👮', rating: 'keisatsu' },
+  { id: 'shōbō',         cat: 'kōmuin',  label: '消防士・救命士',     icon: '🚒', rating: 'shōbō', dept_keywords: ['救急救命'] },
+  { id: 'jieikan',       cat: 'kōmuin',  label: '自衛官',             icon: '🪖', rating: 'keisatsu', alt_rating: 'shōbō' },
+  { id: 'kōmuin_ippan',  cat: 'kōmuin',  label: '地方公務員（行政）', icon: '🏢', rating: 'kōmuin_ippan' },
+  { id: 'kokka_kōmuin',  cat: 'kōmuin',  label: '国家公務員・官僚',   icon: '🏛️', rating: 'kōmuin_ippan', dept_keywords: ['法', '政策', '政治'] },
+
+  // 医療・福祉系
+  { id: 'ishi',          cat: 'medical', label: '医師',               icon: '🩺', rating: 'iryō', dept_keywords: ['医学'], exclude_keywords: ['獣医', '医療', '医科学'] },
+  { id: 'shika_ishi',    cat: 'medical', label: '歯科医師',           icon: '🦷', rating: 'iryō', dept_keywords: ['歯学', '歯'] },
+  { id: 'jūi',           cat: 'medical', label: '獣医師',             icon: '🐾', rating: 'iryō', dept_keywords: ['獣医'] },
+  { id: 'kango',         cat: 'medical', label: '看護師',             icon: '👩‍⚕️', rating: 'iryō', dept_keywords: ['看護'] },
+  { id: 'hokenshi',      cat: 'medical', label: '保健師・助産師',     icon: '🤱', rating: 'iryō', dept_keywords: ['看護', '保健'] },
+  { id: 'pt_ot',         cat: 'medical', label: 'PT/OT/ST（リハビリ）', icon: '🦴', rating: 'iryō', dept_keywords: ['理学療法', '作業療法', 'リハビリ', '言語聴覚', '保健医療'] },
+  { id: 'gishi',         cat: 'medical', label: '放射線・臨床検査技師', icon: '🔬', rating: 'iryō', dept_keywords: ['放射線', '臨床検査', '医療技術', '医療健康'] },
+  { id: 'jūdōseifuku',   cat: 'medical', label: '柔道整復師',         icon: '💪', rating: 'iryō', dept_keywords: ['柔道整復', '柔整', '健康科学'] },
+  { id: 'eiyō',          cat: 'medical', label: '管理栄養士',         icon: '🥗', rating: 'iryō', dept_keywords: ['栄養', '食マネジメント', '食物'] },
+  { id: 'yakuzai',       cat: 'medical', label: '薬剤師',             icon: '💊', rating: 'iryō', dept_keywords: ['薬学', '薬'] },
+  { id: 'shafuku',       cat: 'medical', label: '社会福祉士',         icon: '🩹', rating: 'iryō', dept_keywords: ['福祉', '社会福祉', '人間福祉'] },
+
+  // スポーツ・健康系
+  { id: 'AT',            cat: 'sports',  label: 'トレーナー・健康運動指導', icon: '🧘', rating: 'kigyō_supotsu', dept_keywords: ['トレーナー', 'スポーツ科学', '健康スポーツ', '健康'] },
+  { id: 'coach',         cat: 'sports',  label: 'スポーツ指導者',     icon: '🎯', rating: 'kyoin', alt_rating: 'kigyō_supotsu' },
+  { id: 'kigyō_supotsu', cat: 'sports',  label: 'スポーツ用品/施設',  icon: '🏟️', rating: 'kigyō_supotsu' },
+
+  // 技術・建築・IT系
+  { id: 'kenchiku',      cat: 'gijutsu', label: '建築士',             icon: '🏗️', dept_keywords: ['建築'] },
+  { id: 'doboku',        cat: 'gijutsu', label: '土木技術者',         icon: '🚧', dept_keywords: ['土木', '社会基盤', 'インフラ'] },
+  { id: 'kikai_denki',   cat: 'gijutsu', label: '機械/電気エンジニア', icon: '⚙️', dept_keywords: ['機械', '電気', '電子', '機械工学'] },
+  { id: 'IT',            cat: 'gijutsu', label: 'IT・情報技術者',     icon: '💻', dept_keywords: ['情報', 'システム', 'コンピュータ', 'メディア情報', 'データサイエンス'] },
+  { id: 'design',        cat: 'gijutsu', label: 'デザイナー・クリエイター', icon: '🎨', dept_keywords: ['デザイン', '芸術', '美術', '造形', 'メディア'] },
+  { id: 'nōshoku',       cat: 'gijutsu', label: '食品・農業・バイオ', icon: '🌾', rating: 'kigyō_ippan', dept_keywords: ['農', '食', 'バイオ', '生命', '環境'] },
+
+  // ビジネス・専門士業系
+  { id: 'kigyō_ippan',   cat: 'kigyō',   label: '一般企業（メーカー・商社）', icon: '💼', rating: 'kigyō_ippan' },
+  { id: 'kinyū',         cat: 'kigyō',   label: '金融・銀行',         icon: '🏦', rating: 'kigyō_ippan' },
+  { id: 'masucomi',      cat: 'kigyō',   label: 'マスコミ・広告',     icon: '📺', rating: 'kigyō_ippan', dept_keywords: ['マスコミ', 'メディア', '広告', 'コミュニケーション'] },
+  { id: 'kaikei',        cat: 'kigyō',   label: '公認会計士・税理士', icon: '📊', rating: 'kigyō_ippan', dept_keywords: ['会計', '商学', '経営'] },
+  { id: 'hōsō',          cat: 'kigyō',   label: '弁護士・法曹',       icon: '⚖️', rating: 'kigyō_ippan', dept_keywords: ['法'] },
+  { id: 'kokusai',       cat: 'kigyō',   label: '語学・国際関係',     icon: '🌏', rating: 'kigyō_ippan', dept_keywords: ['外国語', '国際'] },
+  { id: 'kankō',         cat: 'kigyō',   label: '観光・ホテル・エアライン', icon: '✈️', rating: 'kigyō_ippan', dept_keywords: ['観光', '国際', '外国語', 'ホスピタリティ'] },
+  { id: 'shinri',        cat: 'kigyō',   label: '心理カウンセラー',   icon: '🧠', dept_keywords: ['心理'] },
+];
+
+function getCareerOption(id) { return CAREER_OPTIONS.find(c => c.id === id); }
+
+// ---------- 興味分野（学部系統）オプション ----------
+const INTEREST_OPTIONS = [
+  { id: 'bungaku',   label: '文学・歴史・哲学',       icon: '📖', dept_keywords: ['文学', '文化', '歴史', '人文'] },
+  { id: 'gaikokugo', label: '外国語・国際',           icon: '🌏', dept_keywords: ['外国語', '国際', '英文', 'グローバル'] },
+  { id: 'hōkei',     label: '法律・政治',             icon: '⚖️', dept_keywords: ['法', '政治', '政策'] },
+  { id: 'keizai',    label: '経済・経営・商学',       icon: '📈', dept_keywords: ['経済', '経営', '商', 'ビジネス', '政治経済'] },
+  { id: 'shakai',    label: '社会・メディア・心理',   icon: '🗞️', dept_keywords: ['社会', 'メディア', '心理', 'コミュニケーション', '現代社会'] },
+  { id: 'kyōiku',    label: '教育・こども',           icon: '🎓', dept_keywords: ['教育', '児童', '保育', 'こども', '子ども', '発達'] },
+  { id: 'rikō',      label: '理学・工学（ものづくり）', icon: '⚙️', dept_keywords: ['理', '工', '機械', '電気', '電子', '材料', '物質', '基礎工'] },
+  { id: 'jōhō',      label: '情報・データサイエンス', icon: '💻', dept_keywords: ['情報', 'データサイエンス', 'システム', 'コンピュータ'] },
+  { id: 'kenchiku',  label: '建築・デザイン',         icon: '🏗️', dept_keywords: ['建築', 'デザイン', '住環境', '造形'] },
+  { id: 'nōgaku',    label: '農学・食・環境',         icon: '🌱', dept_keywords: ['農', '食', '環境', 'バイオ', '生命', '和食'] },
+  { id: 'iryō',      label: '医療・看護・薬学',       icon: '🏥', dept_keywords: ['医', '看護', '薬', '保健', 'リハビリ', '理学療法', '作業療法', '歯'] },
+  { id: 'eiyō',      label: '栄養・家政・生活',       icon: '🥗', dept_keywords: ['栄養', '家政', '生活', '食物'] },
+  { id: 'supōtsu',   label: 'スポーツ・健康',         icon: '⚽', dept_keywords: ['スポーツ', '体育', '健康'] },
+  { id: 'geijutsu',  label: '芸術・音楽',             icon: '🎨', dept_keywords: ['芸術', '音楽', '美術', '表象'] },
+];
+function getInterestOption(id) { return INTEREST_OPTIONS.find(o => o.id === id); }
+
+// ---------- 模試基準の補正（河合塾基準に換算） ----------
+const EXAM_SOURCE_OFFSET = { shinken: -7, kawai: 0, sundai: 5, unknown: 0 };
+const EXAM_SOURCE_LABEL = { shinken: '進研', kawai: '河合', sundai: '駿台' };
+function adjustedHensachi() {
+  if (state.diag.hensachiUnknown || state.diag.hensachi == null) return null;
+  return state.diag.hensachi + (EXAM_SOURCE_OFFSET[state.diag.examSource] || 0);
+}
+
+// ============================================================
+// お気に入り (localStorage)
+// ============================================================
+const FAV_KEY = 'favorites-v2ui';
+function getFavs() { try { return JSON.parse(localStorage.getItem(FAV_KEY) || '[]'); } catch { return []; } }
+function isFav(id) { return getFavs().includes(id); }
+function toggleFav(id) {
+  const favs = getFavs();
+  const idx = favs.indexOf(id);
+  if (idx >= 0) favs.splice(idx, 1);
+  else favs.push(id);
+  localStorage.setItem(FAV_KEY, JSON.stringify(favs));
+  return favs.includes(id);
+}
+
+// ============================================================
+// データロード
+// ============================================================
+async function loadData() {
+  // 配布版（Single-File）: HTMLに埋め込まれたデータを優先使用
+  const inlineEl = document.getElementById('inlineBundleData');
+  if (inlineEl && inlineEl.textContent.trim()) {
+    try {
+      const bundle = JSON.parse(inlineEl.textContent);
+      state.data = bundle;
+      return Object.keys(bundle).length;
+    } catch (e) {
+      console.warn('Inline data parse failed, falling back to fetch', e);
+    }
+  }
+  // 開発版: fetch で JSON 取得
+  const files = [
+    ['base', 'data/universities-base.json'],
+    ['sogo', 'data/sogo-gata.json'],
+    ['koubo', 'data/koubo-gata.json'],
+    ['ippan', 'data/ippan.json'],
+    ['employment', 'data/employment.json'],
+  ];
+  const statusEl = document.getElementById('dataStatus');
+  let loaded = 0;
+  for (const [key, path] of files) {
+    try {
+      const res = await fetch(path);
+      if (!res.ok) throw new Error(`${res.status}`);
+      state.data[key] = await res.json();
+      loaded++;
+    } catch (err) {
+      console.warn(`データ未取得: ${path}`, err);
+      state.data[key] = { universities: [] };
+    }
+    if (statusEl) statusEl.textContent = `${loaded}/${files.length} 読込中…`;
+  }
+  return loaded;
+}
+
+// IDで各データの大学エントリを取得
+function getByid(key, id) {
+  const arr = state.data[key]?.universities || [];
+  return arr.find(u => u.id === id) || null;
+}
+
+// 基本データから全大学リスト
+function allUnis() {
+  return state.data.base?.universities || [];
+}
+
+function getBase(id) { return allUnis().find(u => u.id === id); }
+function getRegion(regionId) { return state.data.base?.regions?.[regionId]; }
+
+// ============================================================
+// v2 データ / エンジン / ブリッジ（ビルドが <!-- INLINE_V2 --> に注入）
+// ============================================================
+let DATA_V2 = null, RIASEC_DEF = null, RIASEC_MAP = null, ENGINE = null, BRIDGE = null;
+function loadV2() {
+  const dEl = document.getElementById('inlineDataV2');
+  const rdEl = document.getElementById('inlineRiasecDef');
+  const rmEl = document.getElementById('inlineRiasecMap');
+  DATA_V2 = dEl ? JSON.parse(dEl.textContent) : null;
+  RIASEC_DEF = rdEl ? JSON.parse(rdEl.textContent) : null;
+  RIASEC_MAP = rmEl ? JSON.parse(rmEl.textContent).map : null;
+  ENGINE = window.ENGINE_V2 || null;
+  BRIDGE = window.BRIDGE_V2 || null;
+  return !!(DATA_V2 && ENGINE && BRIDGE && RIASEC_DEF && RIASEC_MAP);
+}
+// v2データから dept / uni を引く
+function findDeptV2(deptId) {
+  const dept = (DATA_V2.departments || []).find(d => d.dept_id === deptId) || null;
+  const uni = dept ? (DATA_V2.universities || []).find(u => u.id === dept.uni_id) : null;
+  return { dept, uni };
+}
+function regionLabelV2(id) { return (DATA_V2.regions && DATA_V2.regions[id] && DATA_V2.regions[id].label) || id; }
+
+// 適性チェック（RIASEC 12問）画面を生成
+const RIASEC_OPT_LABELS = ['あてはまらない', 'ややあてはまる', 'あてはまる', 'とてもあてはまる'];
+function buildRiasecScreen() {
+  const box = document.getElementById('riasecItems');
+  if (!box || !RIASEC_DEF) return;
+  box.innerHTML = '';
+  RIASEC_DEF.items.forEach((it, i) => {
+    const card = document.createElement('div'); card.className = 'riasec-card';
+    const q = document.createElement('p'); q.className = 'riasec-q'; q.textContent = `${i + 1}. ${it.text}`;
+    card.appendChild(q);
+    const row = document.createElement('div'); row.className = 'riasec-btns';
+    RIASEC_OPT_LABELS.forEach((lab, v) => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'riasec-opt'; b.textContent = lab;
+      b.addEventListener('click', () => {
+        state.riasecAnswers[i] = v;
+        [...row.children].forEach(c => c.classList.remove('on'));
+        b.classList.add('on');
+        const answered = state.riasecAnswers.filter(x => x != null).length;
+        const prog = document.getElementById('riasecProgress');
+        if (prog) prog.textContent = answered;
+      });
+      row.appendChild(b);
+    });
+    card.appendChild(row);
+    box.appendChild(card);
+  });
+}
+
+// 診断実行（engine_v2）
+function runDiagnose(riasecArr) {
+  go('loading');
+  const profile = BRIDGE.toUserProfile(state.diag, riasecArr || []);
+  state.lastResult = ENGINE.diagnose(profile, DATA_V2, DATA_V2.tags, RIASEC_MAP);
+  renderResults();
+  go('result');
+}
+
+// ============================================================
+// 画面遷移
+// ============================================================
+function go(screenId, opts = {}) {
+  if (!opts.noHistory && state.currentScreen !== screenId) {
+    state.history.push(state.currentScreen);
+  }
+  document.querySelectorAll('.screen').forEach(s => {
+    s.hidden = s.dataset.screen !== screenId;
+  });
+  state.currentScreen = screenId;
+  updateHeader();
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+
+function back() {
+  if (state.history.length > 0) {
+    const prev = state.history.pop();
+    go(prev, { noHistory: true });
+  } else {
+    go('home', { noHistory: true });
+  }
+}
+
+function updateHeader() {
+  const backBtn = document.getElementById('backBtn');
+  const fabBack = document.getElementById('fabBackBtn');
+  const resetBtn = document.getElementById('resetBtn');
+  const title = document.getElementById('appTitle');
+  const screen = state.currentScreen;
+
+  // プログレスバー (診断中のみ)
+  const progBar = document.getElementById('progressBar');
+  const progFill = document.getElementById('progressFill');
+  const stepMap = { 'diag-1': 1, 'diag-hensachi': 2, 'diag-2': 3, 'diag-area': 4, 'diag-interest': 5, 'diag-4': 6, 'diag-5': 7 };
+  if (stepMap[screen]) {
+    progBar.hidden = false;
+    progFill.style.width = `${(stepMap[screen] / 7) * 100}%`;
+  } else {
+    progBar.hidden = true;
+  }
+
+  // Floating Back Button - ホーム以外で常に表示
+  if (fabBack) fabBack.hidden = (screen === 'home' || screen === 'loading');
+
+  if (screen === 'home') {
+    backBtn.hidden = true;
+    resetBtn.hidden = true;
+    title.textContent = '進路診断';
+  } else if (screen.startsWith('diag-')) {
+    backBtn.hidden = false;
+    resetBtn.hidden = true;
+    title.textContent = '診断';
+  } else if (screen === 'result') {
+    backBtn.hidden = false;
+    resetBtn.hidden = false;
+    title.textContent = '診断結果';
+  } else if (screen === 'list') {
+    backBtn.hidden = false;
+    resetBtn.hidden = true;
+    title.textContent = '大学一覧';
+  } else if (screen === 'detail') {
+    backBtn.hidden = false;
+    resetBtn.hidden = true;
+    title.textContent = '大学詳細';
+  } else if (screen === 'favs') {
+    backBtn.hidden = false;
+    resetBtn.hidden = true;
+    title.textContent = 'お気に入り・比較';
+  } else {
+    backBtn.hidden = true;
+    resetBtn.hidden = true;
+  }
+}
+
+// ============================================================
+// 評定平均スライダー
+// ============================================================
+function setupHyoutei() {
+  const input = document.getElementById('hyouteiInput');
+  const display = document.getElementById('hyouteiVal');
+  const hint = document.getElementById('hyouteiHint');
+  const updateHint = (v) => {
+    const num = parseFloat(v);
+    const h = HYOUTEI_HINTS.find(x => num <= x.max) || HYOUTEI_HINTS[HYOUTEI_HINTS.length - 1];
+    hint.textContent = h.text;
+  };
+  input.addEventListener('input', (e) => {
+    state.diag.hyoutei = parseFloat(e.target.value);
+    display.textContent = state.diag.hyoutei.toFixed(1);
+    updateHint(state.diag.hyoutei);
+  });
+  display.textContent = state.diag.hyoutei.toFixed(1);
+  updateHint(state.diag.hyoutei);
+}
+
+// ============================================================
+// チップ選択
+// ============================================================
+function renderCareerChips() {
+  const container = document.getElementById('careerChips');
+  if (!container) return;
+  let html = '';
+  for (const [catId, cat] of Object.entries(CAREER_CATEGORIES)) {
+    const opts = CAREER_OPTIONS.filter(o => o.cat === catId);
+    if (opts.length === 0) continue;
+    html += `<div class="career-cat">
+      <h4 class="career-cat-label">${cat.icon} ${cat.label}</h4>
+      <div class="chip-grid">
+        ${opts.map(o => `<button class="chip${state.diag.careers.has(o.id) ? ' selected' : ''}" data-career="${o.id}">${o.icon} ${escapeHtml(o.label)}</button>`).join('')}
+      </div>
+    </div>`;
+  }
+  container.innerHTML = html;
+}
+
+function renderInterestChips() {
+  const container = document.getElementById('interestChips');
+  if (!container) return;
+  container.innerHTML = INTEREST_OPTIONS.map(o =>
+    `<button class="chip${state.diag.interests.has(o.id) ? ' selected' : ''}" data-interest="${o.id}">${o.icon} ${escapeHtml(o.label)}</button>`
+  ).join('');
+}
+
+function setupChips() {
+  renderCareerChips();
+  renderInterestChips();
+  // 就職希望（動的チップ）
+  document.getElementById('careerChips')?.addEventListener('click', (e) => {
+    const chip = e.target.closest('.chip[data-career]');
+    if (!chip) return;
+    const key = chip.dataset.career;
+    if (state.diag.careers.has(key)) {
+      state.diag.careers.delete(key);
+      chip.classList.remove('selected');
+    } else {
+      state.diag.careers.add(key);
+      chip.classList.add('selected');
+    }
+  });
+
+  // 興味分野（動的チップ）
+  document.getElementById('interestChips')?.addEventListener('click', (e) => {
+    const chip = e.target.closest('.chip[data-interest]');
+    if (!chip) return;
+    const key = chip.dataset.interest;
+    if (state.diag.interests.has(key)) {
+      state.diag.interests.delete(key);
+      chip.classList.remove('selected');
+    } else {
+      state.diag.interests.add(key);
+      chip.classList.add('selected');
+    }
+  });
+
+  // 入試方式
+  document.querySelectorAll('#exammethodChips .chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const key = chip.dataset.method;
+      if (key === 'any') {
+        state.diag.methods.clear();
+        state.diag.methods.add('any');
+        document.querySelectorAll('#exammethodChips .chip').forEach(c => {
+          c.classList.toggle('selected', c.dataset.method === 'any');
+        });
+      } else {
+        state.diag.methods.delete('any');
+        document.querySelector('#exammethodChips .chip[data-method="any"]').classList.remove('selected');
+        if (state.diag.methods.has(key)) {
+          state.diag.methods.delete(key);
+          chip.classList.remove('selected');
+        } else {
+          state.diag.methods.add(key);
+          chip.classList.add('selected');
+        }
+        if (state.diag.methods.size === 0) {
+          state.diag.methods.add('any');
+          document.querySelector('#exammethodChips .chip[data-method="any"]').classList.add('selected');
+        }
+      }
+    });
+  });
+}
+
+// ============================================================
+// ラジオ
+// ============================================================
+function setupRadios() {
+  // 評定未定チェックボックス
+  const hyouteiUnknown = document.getElementById('hyouteiUnknownChk');
+  if (hyouteiUnknown) {
+    const apply = (checked) => {
+      state.diag.hyouteiUnknown = checked;
+      document.querySelector('.hyoutei-wrap')?.classList.toggle('unknown', checked);
+    };
+    hyouteiUnknown.addEventListener('change', e => apply(e.target.checked));
+    // 初期状態を反映（HTMLのchecked属性を反映）
+    apply(hyouteiUnknown.checked);
+  }
+  // 偏差値未定チェックボックス
+  const hensachiUnknown = document.getElementById('hensachiUnknownChk');
+  if (hensachiUnknown) {
+    const apply = (checked) => {
+      state.diag.hensachiUnknown = checked;
+      document.querySelectorAll('.hensachi-quick-btn, #hensachiInput').forEach(el => {
+        el.classList.toggle('disabled', checked);
+        el.disabled = checked;
+      });
+    };
+    hensachiUnknown.addEventListener('change', e => apply(e.target.checked));
+    apply(hensachiUnknown.checked);
+  }
+  // 偏差値入力
+  const hensachiInput = document.getElementById('hensachiInput');
+  if (hensachiInput) {
+    hensachiInput.addEventListener('input', e => {
+      const v = parseFloat(e.target.value);
+      if (!isNaN(v)) state.diag.hensachi = Math.min(75, Math.max(30, v));
+      // クイックボタンの選択ハイライト解除
+      document.querySelectorAll('.hensachi-quick-btn').forEach(b => b.classList.remove('selected'));
+    });
+    // 入力確定時に範囲外の値を表示上も補正
+    hensachiInput.addEventListener('change', e => {
+      const v = parseFloat(e.target.value);
+      if (!isNaN(v) && (v < 30 || v > 75)) e.target.value = Math.min(75, Math.max(30, v));
+    });
+  }
+  // 偏差値クイック選択ボタン
+  document.querySelectorAll('.hensachi-quick-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const v = parseFloat(btn.dataset.hen);
+      state.diag.hensachi = v;
+      if (hensachiInput) hensachiInput.value = v;
+      document.querySelectorAll('.hensachi-quick-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+    });
+  });
+  // 就職希望地域
+  document.querySelectorAll('input[name="workArea"]').forEach(r => {
+    r.addEventListener('change', e => state.diag.workArea = e.target.value);
+  });
+  // 模試基準
+  document.querySelectorAll('input[name="examSource"]').forEach(r => {
+    r.addEventListener('change', e => state.diag.examSource = e.target.value);
+  });
+  document.querySelectorAll('input[name="commute"]').forEach(r => {
+    r.addEventListener('change', e => state.diag.commute = e.target.value);
+  });
+  // 学費・費用を抑えたい
+  const costChk = document.getElementById('costPriorityChk');
+  if (costChk) {
+    costChk.addEventListener('change', e => state.diag.costPriority = e.target.checked);
+  }
+}
+
+// ============================================================
+// 診断ロジック
+// ============================================================
+function diagnose() {
+  const unis = allUnis();
+  const results = unis.map(u => {
+    const score = scoreUni(u);
+    return { uni: u, ...score };
+  });
+  // フィルタ（未定の場合はフィルタなし）
+  let filtered = results;
+  if (state.diag.commute === 'jitaku') {
+    filtered = filtered.filter(r => r.uni.access_from_shiga_min <= 90);
+  } else if (state.diag.commute === 'jitaku-flex') {
+    filtered = filtered.filter(r => r.uni.access_from_shiga_min <= 120);
+  }
+  // 'any' or 'unknown' → no filter
+
+  // 入試方式で「国公立のみ」を選んだ場合は国公立に絞る（私立が上位を占拠しないように）
+  const mth = state.diag.methods;
+  if (mth.has('kokkoritsu') && !mth.has('any') && !mth.has('sogo') && !mth.has('koubo') && !mth.has('ippan')) {
+    filtered = filtered.filter(r => /国立|公立/.test(r.uni.type || ''));
+  }
+  // ソート: 内部rawScore降順 → 同点は偏差値降順 → 50音順（データ順依存の偏りを防ぐ）
+  filtered.sort((a, b) => {
+    if (b.rawScore !== a.rawScore) return b.rawScore - a.rawScore;
+    const ha = getByid('ippan', a.uni.id)?.hensachi_representative ?? -1;
+    const hb = getByid('ippan', b.uni.id)?.hensachi_representative ?? -1;
+    if (hb !== ha) return hb - ha;
+    return a.uni.name.localeCompare(b.uni.name, 'ja');
+  });
+  return filtered;
+}
+
+function scoreUni(uni) {
+  const reasons = [];
+  const breakdown = []; // 内部スコア分解表示用
+  let score = 50; // ベースライン
+  breakdown.push({ label: '基本', value: 50 });
+
+  // ---------- 就職マッチ（rating軸とkeyword軸を分離計算） ----------
+  const emp = getByid('employment', uni.id);
+  const ippan = getByid('ippan', uni.id);
+  const depts = ippan?.departments || [];
+
+  // (1) rating軸を持つキャリア
+  const ratingCareerIds = [...state.diag.careers].filter(id => getCareerOption(id)?.rating);
+  if (ratingCareerIds.length > 0 && emp) {
+    let sum = 0;
+    let count = 0;
+    const matchedLabels = [];
+    ratingCareerIds.forEach(careerId => {
+      const opt = getCareerOption(careerId);
+      const r = emp.ratings?.[opt.rating];
+      if (r == null) return; // 評価データ未整備の職種は加点も減点もしない
+      sum += r;
+      count += 1;
+      if (opt.alt_rating && emp.ratings?.[opt.alt_rating] != null) {
+        sum += emp.ratings[opt.alt_rating] * 0.5;
+        count += 0.5;
+      }
+      if (r >= 4) matchedLabels.push(opt.label);
+    });
+    const avg = count > 0 ? sum / count : 3; // データなし = 中立
+    const careerBonus = (avg - 3) * 12;
+    score += careerBonus;
+    if (Math.abs(careerBonus) > 1) breakdown.push({ label: '就職マッチ', value: Math.round(careerBonus) });
+    if (matchedLabels.length > 0) {
+      // ストーリー化: strengths があればそれを優先して使う
+      const storyLine = emp.strengths?.[0];
+      if (storyLine) {
+        reasons.push(`💡 ${storyLine}`);
+      } else {
+        reasons.push(`${matchedLabels.slice(0,3).join('・')}に強い (評価${avg.toFixed(1)}/5)`);
+      }
+      // 数字のある実績があれば追加
+      const sj = uni.shingaku_jisseki;
+      if (sj) {
+        const nums = [];
+        if (state.diag.careers.has('kyoin') && sj.kyoin_count) nums.push(`教員 ${sj.kyoin_count}`);
+        if (state.diag.careers.has('keisatsu') && sj.keisatsu_count) nums.push(`警察 ${sj.keisatsu_count}`);
+        if (state.diag.careers.has('shōbō') && sj.shobo_count) nums.push(`消防 ${sj.shobo_count}`);
+        if (nums.length > 0) reasons.push(`📊 ${nums.join(' / ')}`);
+      }
+    }
+  }
+
+  // (2) keyword軸（学部キーワード・専門性で重み変える）
+  const keywordCareerIds = [...state.diag.careers].filter(id => getCareerOption(id)?.dept_keywords);
+  for (const careerId of keywordCareerIds) {
+    const opt = getCareerOption(careerId);
+    const matchingDept = depts.find(d =>
+      opt.dept_keywords.some(k => d.name?.includes(k)) &&
+      !(opt.exclude_keywords || []).some(k => d.name?.includes(k)));
+    if (matchingDept) {
+      // 学部マッチの重みを学部名の専門性で調整
+      const isProfessional = ['薬学', '看護', '医', '建築', '柔道整復', '理学療法', '作業療法', '救急救命'].some(k => matchingDept.name?.includes(k));
+      const bonus = isProfessional ? 10 : 5; // 専門学部は高評価
+      score += bonus;
+      breakdown.push({ label: `${opt.icon}${opt.label}学部`, value: bonus });
+      reasons.push(`${opt.icon} ${opt.label}向き学部 (${matchingDept.name})`);
+    } else if (!opt.rating) {
+      score -= 3;
+    }
+  }
+
+  // ---------- 興味分野マッチ（学部系統・上限あり） ----------
+  if (state.diag.interests.size > 0) {
+    let interestBonus = 0;
+    const matchedInterests = [];
+    for (const interestId of state.diag.interests) {
+      const opt = getInterestOption(interestId);
+      if (!opt) continue;
+      const matchingDept = depts.find(d => opt.dept_keywords.some(k => d.name?.includes(k)));
+      if (matchingDept) {
+        interestBonus += 6;
+        matchedInterests.push({ opt, dept: matchingDept });
+      }
+    }
+    interestBonus = Math.min(interestBonus, 12); // 上限
+    if (interestBonus > 0) {
+      score += interestBonus;
+      breakdown.push({ label: '📚興味分野', value: interestBonus });
+      const first = matchedInterests[0];
+      reasons.push(`📚 ${matchedInterests.map(m => m.opt.label).slice(0, 2).join('・')}が学べる (${first.dept.name}${matchedInterests.length > 1 ? ' 他' : ''})`);
+    } else {
+      // 選んだ興味分野の学部が1つもない大学は少し下げる
+      score -= 4;
+      breakdown.push({ label: '興味分野の学部なし', value: -4 });
+    }
+  }
+
+  // ---------- 評定平均 マッチ ----------
+  // 評定が低い場合、公募・一般を強みにする大学（評定不問）にプラス
+  // 評定が高い場合は同志社・関学などにプラス
+  const sogo = getByid('sogo', uni.id);
+  const koubo = getByid('koubo', uni.id);
+  const hyo = state.diag.hyoutei;
+
+  // 想定: 希望入試方式に応じて評定の足切りチェック
+  const useSogo = state.diag.methods.has('sogo') || state.diag.methods.has('any');
+  const useKoubo = state.diag.methods.has('koubo') || state.diag.methods.has('any');
+  const useIppan = state.diag.methods.has('ippan') || state.diag.methods.has('any');
+  const useKokkoritsu = state.diag.methods.has('kokkoritsu') || state.diag.methods.has('any');
+  const isKokkoritsuUni = /国立|公立/.test(uni.type || '');
+
+  // 評定が未定の場合は足切りチェックをスキップ
+  const checkHyo = !state.diag.hyouteiUnknown;
+  if (useSogo && sogo?.entry_methods?.length > 0) {
+    const passable = !checkHyo || sogo.entry_methods.some(m => !m.hyoutei_min || hyo >= m.hyoutei_min);
+    if (passable) { score += 6; }
+    else { score -= 4; reasons.push('総合型の評定条件に届かない方式あり'); }
+  }
+  if (useKoubo && koubo?.entry_methods?.length > 0) {
+    const passable = !checkHyo || koubo.entry_methods.some(m => !m.hyoutei_min || hyo >= m.hyoutei_min);
+    if (passable) { score += 4; }
+  }
+  if (useIppan && ippan?.entry_methods?.length > 0 && !isKokkoritsuUni) {
+    score += 2;
+  }
+  // 国公立（共テ＋二次）方式
+  if (isKokkoritsuUni) {
+    if (state.diag.methods.has('kokkoritsu')) {
+      // 明示的に国公立志望 → 大きめの加点
+      score += 15;
+      breakdown.push({ label: '🏛️国公立志望', value: 15 });
+      reasons.push(`🏛️ 国公立（${uni.type}）${ippan?.kyotsu_ratio ? `・共テ目安 ${ippan.kyotsu_ratio}` : ''}`);
+    } else if (state.diag.methods.has('any')) {
+      score += 2;
+    } else {
+      // 私立方式のみ希望なのに国公立 → 推薦枠がなければ下げる
+      const hasSuisen = (sogo?.entry_methods?.length || 0) + (koubo?.entry_methods?.length || 0) > 0;
+      if (!hasSuisen) { score -= 6; reasons.push('国公立のため希望方式と合わない可能性'); }
+    }
+  } else if (state.diag.methods.has('kokkoritsu') && !state.diag.methods.has('any') && state.diag.methods.size === 1) {
+    // 国公立のみ志望なのに私立 → 共テ利用があれば救済
+    const hasKyotsu = (ippan?.entry_methods || []).some(m => /共通テスト|共テ/.test(`${m.method_name || ''}${m.subjects || ''}${m.notes || ''}`));
+    if (hasKyotsu) { score += 2; }
+    else { score -= 4; }
+  }
+
+  // 偏差値マッチは Step 2 の挑戦度ロジックに統一（評定×偏差値ペナルティは廃止）
+  const repHensachi = ippan?.hensachi_representative;
+
+  // ---------- 偏差値挑戦度マッチ（模試基準を河合換算で統一・未定はスキップ） ----------
+  const myHen = adjustedHensachi();
+  const chal = state.diag.challenge;
+  if (repHensachi != null && myHen != null && chal && !state.diag.hensachiUnknown && chal !== 'unknown') {
+    const gap = repHensachi - myHen;
+    // 帯の境界は偏差値帯マップ（±3.5 / +3.5〜+10 / -3.5〜-10）と一致させている
+    if (chal === 'challenge') {
+      if (gap >= 3.5 && gap <= 10) { score += 12; reasons.push(`🚀 偏差値+${gap.toFixed(1)} 挑戦圏マッチ`); }
+      else if (gap >= 0 && gap < 3.5) { score += 5; }
+      else if (gap > 10) { score -= 2; } // 高すぎる
+      else if (gap < 0 && gap >= -3.5) { score -= 1; }
+      else { score -= 4; } // 易しすぎ
+    } else if (chal === 'standard') {
+      if (Math.abs(gap) <= 3.5) { score += 12; reasons.push(`🎯 偏差値ぴったり (差${gap >= 0 ? '+' : ''}${gap.toFixed(1)})`); }
+      else if (Math.abs(gap) <= 6) { score += 5; }
+      else if (Math.abs(gap) <= 8) { score -= 1; }
+      else { score -= 3; }
+    } else if (chal === 'safe') {
+      if (gap <= -3.5 && gap >= -10) { score += 12; reasons.push(`🛡️ 偏差値${gap.toFixed(1)} 安全圏マッチ`); }
+      else if (gap <= 0) { score += 5; }
+      else if (gap <= 3.5) { score -= 1; }
+      else { score -= 4; }
+    }
+  }
+
+  // ---------- 就職希望地域マッチ（未定はスキップ） ----------
+  // prefecture は「大阪府/京都府/滋賀県」のような複合値があるため、県単位に分割して完全一致で判定する
+  // （部分一致だと「東京都」が「京都」にマッチし、完全一致だけだと複合キャンパス校が漏れる）
+  const area = state.diag.workArea;
+  const prefParts = String(uni.prefecture || '').split(/[\/／・,、]/).map(s => s.trim()).filter(Boolean);
+  if (area === 'unknown') {
+    // スキップ
+  } else if (area === 'shiga') {
+    if (prefParts.includes('滋賀県')) { score += 15; reasons.push('🏞️ 滋賀の大学・地元就職に直結'); }
+    else if (uni.access_from_shiga_min <= 60) { score += 5; reasons.push('🏞️ 通学圏で滋賀就職可能'); }
+    else if (uni.access_from_shiga_min <= 120) { score -= 1; }
+    else { score -= 6; }
+  } else if (area === 'kansai') {
+    const kansaiPrefs = ['大阪府', '京都府', '兵庫県', '奈良県', '和歌山県', '滋賀県'];
+    if (prefParts.some(p => kansaiPrefs.includes(p))) { score += 10; reasons.push('🏯 関西圏で就職に有利'); }
+    else if (prefParts.some(p => ['愛知県', '岐阜県', '三重県'].includes(p))) { score += 2; }
+    else { score -= 6; }
+  }
+  // 'any' はニュートラル
+
+  // ---------- 通学距離（未定はボーナスなし） ----------
+  if (state.diag.commute !== 'unknown' && state.diag.commute === 'jitaku' && uni.access_from_shiga_min <= 60) {
+    score += 6;
+    reasons.push(`滋賀から近い (片道${uni.access_from_shiga_min}分)`);
+  }
+
+  // ---------- 学費・費用を抑えたい ----------
+  if (state.diag.costPriority) {
+    if (isKokkoritsuUni) {
+      score += 10;
+      breakdown.push({ label: '💴国公立で学費安', value: 10 });
+      reasons.push('💴 国公立で学費が私立の約半分（年約54万円）');
+    } else if (uni.commute_possible) {
+      score += 5;
+      breakdown.push({ label: '💴自宅通学で費用減', value: 5 });
+      reasons.push('💴 自宅通学で下宿費用（4年で300万円前後）を節約可');
+    } else {
+      score -= 3;
+      breakdown.push({ label: '私立×下宿で費用大', value: -3 });
+    }
+  }
+
+  // 内部スコアは保持。表示用は130までクリップ（差別化のため）
+  const rawScore = Math.round(score);
+  const displayScore = Math.max(0, Math.min(130, rawScore));
+  const grade = rawScore >= 115 ? 'S+' : rawScore >= 95 ? 'S' : rawScore >= 75 ? 'A' : rawScore >= 60 ? 'B' : 'C';
+  return { score: displayScore, rawScore, grade, reasons: reasons.slice(0, 5), breakdown };
+}
+
+// ============================================================
+// 結果レンダリング
+// ============================================================
+function renderResults() {
+  const r = state.lastResult || { zones: { challenge: [], match: [], safe: [] }, ungrouped: [], meta: {} };
+  const m = r.meta || {};
+  const summaryEl = document.getElementById('resultSummary');
+  const listEl = document.getElementById('resultList');
+
+  const conds = [];
+  if (!state.diag.hyouteiUnknown) conds.push(`評定 ${state.diag.hyoutei.toFixed(1)}`);
+  if (!state.diag.hensachiUnknown) {
+    const adj = m.adjustedHensachi;
+    const srcLbl = EXAM_SOURCE_LABEL[state.diag.examSource];
+    conds.push(srcLbl && adj != null && adj !== state.diag.hensachi
+      ? `偏差値 ${state.diag.hensachi}（${srcLbl}→河合換算 ${adj}）`
+      : `偏差値 ${state.diag.hensachi}`);
+  }
+  if (state.diag.careers.size > 0) {
+    const careerNames = [...state.diag.careers].map(c => getCareerOption(c)?.label).filter(Boolean);
+    conds.push(careerNames.slice(0, 3).join('・') + (careerNames.length > 3 ? ` 他${careerNames.length - 3}` : ''));
+  }
+  if (state.diag.interests.size > 0) {
+    const names = [...state.diag.interests].map(i => getInterestOption(i)?.label).filter(Boolean);
+    conds.push('📚 ' + names.slice(0, 3).join('・') + (names.length > 3 ? ` 他${names.length - 3}` : ''));
+  }
+  const areaLbl = { shiga: '🏞️滋賀', kansai: '🏯関西圏', any: '🗾どこでも' };
+  if (areaLbl[state.diag.workArea]) conds.push(areaLbl[state.diag.workArea]);
+  const commuteLbl = { 'jitaku': '🏠通い厳', 'jitaku-flex': '🏠通い緩', 'any': '🏘️下宿OK' };
+  if (commuteLbl[state.diag.commute]) conds.push(commuteLbl[state.diag.commute]);
+  if (state.diag.costPriority) conds.push('💴学費抑えめ');
+  if (!state.diag.methods.has('any')) {
+    const methodLabels = { sogo: '総合型', koubo: '公募・推薦', ippan: '一般', kokkoritsu: '国公立(共テ)' };
+    conds.push([...state.diag.methods].filter(x => x !== 'any').map(x => methodLabels[x]).filter(Boolean).join('・'));
+  }
+  const HOLLAND_JP = { R: '現実', I: '研究', A: '芸術', S: '社会', E: '企業', C: '慣習' };
+  if (m.hollandCode) conds.push(`🧭 ${[...m.hollandCode].map(c => HOLLAND_JP[c] || c).join('・')}`);
+  if (conds.length === 0) conds.push('🤷 すべて未定（適性順で表示）');
+
+  const z = r.zones || { challenge: [], match: [], safe: [] };
+  const total = z.challenge.length + z.match.length + z.safe.length;
+
+  summaryEl.innerHTML = `
+    <h2>あなたへのおすすめ学部</h2>
+    <p style="margin:0;color:var(--text-dim);font-size:13px">${total > 0 ? '条件に合う学部を「実力相応 / チャレンジ / 安全圏」に振り分けました' : '条件に合う学部を適性順に表示します'}</p>
+    <div class="conditions">
+      ${conds.map(c => `<span class="cond-tag">${escapeHtml(c)}</span>`).join('')}
+    </div>
+    ${m.lowSignal ? `<div class="nudge">適性チェックや興味分野を選ぶと、あなたの性格に合った学部が上位に来て精度が上がります。</div>` : ''}
+    ${state.diag.costPriority ? `<div class="nudge">💴 学費重視：国公立・自宅通学圏の学部を優先的に確認しましょう。</div>` : ''}
+    ${renderBunriHint()}
+    <p style="margin:10px 0 0;padding:8px 10px;background:rgba(245,158,11,0.12);border-left:3px solid var(--accent);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.6">⚠️ この結果は<strong>2026年7月時点の推定データによる目安</strong>です。志望校を決める前に、必ず<strong>担任・進路指導室</strong>と<strong>各大学の公式サイト</strong>で確認してください。</p>
+  `;
+
+  listEl.innerHTML = '';
+  const hasZones = total > 0;
+  if (m.adjustedHensachi == null || !hasZones) {
+    const list = (r.ungrouped && r.ungrouped.length) ? r.ungrouped : [...z.match, ...z.challenge, ...z.safe];
+    if (!list.length) {
+      listEl.innerHTML = `<p class="empty" style="padding:24px 8px;color:var(--text-dim);text-align:center;line-height:1.8">条件に合う学部が見つかりませんでした。<br>エリア・偏差値・入試方式の条件をゆるめてみてください。</p>`;
+      return;
+    }
+    const s = zoneSection('おすすめ（適性順）', list, m.adjustedHensachi == null ? '偏差値の入力がないため、適性・興味の一致度順です' : '');
+    if (s) listEl.appendChild(s);
+  } else {
+    [['🎯 実力相応', 'match', 'あなたの偏差値に近い、出願の中心になる学部'],
+     ['🚀 チャレンジ', 'challenge', '少し背伸びして狙える学部'],
+     ['🛡️ 安全圏', 'safe', '余裕をもって出願できる学部']].forEach(([t, k, sub]) => {
+      const s = zoneSection(t, z[k], sub); if (s) listEl.appendChild(s);
+    });
+  }
+  const u = zoneSection('📊 偏差値データなし', r.ungrouped, '偏差値が未収録の学部（参考）');
+  if (u) listEl.appendChild(u);
+}
+
+function zoneSection(title, arr, sub) {
+  if (!arr || !arr.length) return null;
+  const sec = document.createElement('div'); sec.className = 'zone-block';
+  const head = document.createElement('div');
+  head.innerHTML = `<h3 class="zone-title">${title} <span class="zone-count">${arr.length}</span></h3>` +
+    (sub ? `<p class="zone-sub">${sub}</p>` : '');
+  sec.appendChild(head);
+  arr.forEach(it => sec.appendChild(deptCard(it)));
+  return sec;
+}
+
+function deptToItem(d, u) {
+  const h = d.hensachi || {};
+  return {
+    dept_id: d.dept_id, uni_id: u.id, uni_name: u.name, dept_name: d.name,
+    hensachi: { min: h.min != null ? h.min : null, max: h.max != null ? h.max : null },
+    fitScore: null, reasons: [],
+  };
+}
+
+function deptCard(item) {
+  const el = document.createElement('div'); el.className = 'uni-card dept-card';
+  const h = item.hensachi || {};
+  const band = (h.min != null && h.max != null)
+    ? (h.min === h.max ? `偏差値 ${h.min}` : `偏差値 ${h.min}〜${h.max}`) : '偏差値データなし';
+  const fav = isFav(item.dept_id);
+  const badge = (item.fitScore != null) ? `<span class="fit-badge">適性 ${item.fitScore}</span>` : '';
+  const reasons = (item.reasons && item.reasons.length)
+    ? `<div class="uc-reasons">${item.reasons.map(x => `<span class="reason-chip">${escapeHtml(x)}</span>`).join('')}</div>` : '';
+  el.innerHTML =
+    `<div class="uc-head"><div class="uc-name">${escapeHtml(item.uni_name)}</div>` +
+    `<button class="fav-btn" data-fav="${item.dept_id}" aria-label="お気に入り">${fav ? '❤️' : '🤍'}</button></div>` +
+    `<div class="uc-dept">${escapeHtml(item.dept_name)}</div>` +
+    `<div class="uc-meta"><span class="uc-band">${band}</span>${badge}</div>` +
+    reasons +
+    `<button class="uc-detail-btn" data-detail="${item.dept_id}">詳しく見る →</button>`;
+  return el;
+}
+
+// 文理選択ヒント: 選んだ興味分野・職業から高1・高2向けに科目選択の示唆を出す
+function renderBunriHint() {
+  const RIKEI_INTERESTS = new Set(['rikō', 'jōhō', 'kenchiku', 'nōgaku', 'iryō']);
+  const BUNKEI_INTERESTS = new Set(['bungaku', 'gaikokugo', 'hōkei', 'keizai', 'shakai']);
+  const RIKEI_CAREERS = new Set(['ishi', 'shika_ishi', 'jūi', 'yakuzai', 'kango', 'hokenshi', 'pt_ot', 'gishi', 'eiyō', 'kenchiku', 'doboku', 'kikai_denki', 'IT', 'nōshoku']);
+  const hasRikei = [...state.diag.interests].some(i => RIKEI_INTERESTS.has(i)) || [...state.diag.careers].some(c => RIKEI_CAREERS.has(c));
+  const hasBunkei = [...state.diag.interests].some(i => BUNKEI_INTERESTS.has(i));
+  if (!hasRikei && !hasBunkei) return '';
+  let text = '';
+  if (hasRikei) {
+    text = 'あなたが選んだ分野・職業には<strong>理系科目（数学・理科）が必須の学部</strong>が含まれています。特に医療系・工学系は高校で理科2科目（物理/化学/生物）を取っていないと受験できない大学が多いので、<strong>文理選択・科目選択の前に必ず進路指導室で確認</strong>してください。';
+  } else {
+    text = 'あなたが選んだ分野は文系中心ですが、経済・経営系は<strong>数学が受験や入学後に活きる</strong>学部です。数学を早々に捨てない選択も検討を。';
+  }
+  return `<p style="margin:10px 0 0;padding:8px 10px;background:var(--primary-soft);border-left:3px solid var(--primary);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.6">🧭 <strong>文理選択ヒント（高1・高2向け）</strong><br />${text}</p>`;
+}
+
+// 偏差値帯マップ: チャレンジ/標準/堅実/安全 の4分類表示
+function renderHensachiMap(results) {
+  if (state.diag.hensachiUnknown || !state.diag.hensachi) return '';
+  const myHen = adjustedHensachi();
+  const buckets = {
+    challenge: { label: '🚀 チャレンジ校', subtitle: `偏差値 +3.5〜+10 (${myHen+3.5}〜${myHen+10})`, range: [3.5, 10], unis: [], color: '#ef4444' },
+    standard:  { label: '🎯 標準校',       subtitle: `偏差値 ±3.5 (${myHen-3.5}〜${myHen+3.5})`,    range: [-3.5, 3.5], unis: [], color: '#6366f1' },
+    safe:      { label: '🛡️ 堅実校',      subtitle: `偏差値 -3.5〜-10 (${myHen-10}〜${myHen-3.5})`,  range: [-10, -3.5], unis: [], color: '#10b981' },
+    secure:    { label: '🏆 安全圏',       subtitle: `偏差値 -10以下 (〜${myHen-10})`,         range: [-40, -10], unis: [], color: '#94a3b8' },
+  };
+  results.forEach(r => {
+    const ippan = getByid('ippan', r.uni.id);
+    const hen = ippan?.hensachi_representative;
+    if (hen == null) return;
+    const gap = hen - myHen;
+    for (const [k, b] of Object.entries(buckets)) {
+      if (gap >= b.range[0] && gap < b.range[1]) {
+        b.unis.push({ uni: r.uni, hen, gap, score: r.score });
+        break;
+      }
+    }
+  });
+
+  // 各バケットを score 順、上位6校に絞る
+  for (const b of Object.values(buckets)) {
+    b.unis.sort((a, b) => b.score - a.score);
+    b.unis = b.unis.slice(0, 8);
+  }
+
+  // すべて空なら表示しない
+  const totalInMap = Object.values(buckets).reduce((s, b) => s + b.unis.length, 0);
+  if (totalInMap === 0) return '';
+
+  return `
+    <div class="hensachi-map">
+      <div class="hensachi-map-head">📊 偏差値帯マップ <span class="hensachi-my">あなたの偏差値: ${myHen}</span></div>
+      ${Object.entries(buckets).map(([k, b]) => `
+        <div class="hensachi-bucket" style="border-left-color: ${b.color}">
+          <div class="hensachi-bucket-head">
+            <strong style="color: ${b.color}">${b.label}</strong>
+            <span class="hensachi-bucket-sub">${b.subtitle}</span>
+            <span class="hensachi-bucket-count">${b.unis.length}校</span>
+          </div>
+          <div class="hensachi-bucket-unis">
+            ${b.unis.length === 0
+              ? '<span class="hensachi-empty">該当なし</span>'
+              : b.unis.map(u => `<button class="hensachi-uni-chip" data-uni-detail="${u.uni.id}">${escapeHtml(u.uni.name_short || u.uni.name)} <small>偏差${u.hen}・${u.score}点</small></button>`).join('')}
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderUniCard({ uni, score, grade, rawScore, reasons, breakdown }) {
+  const region = getRegion(uni.region);
+  const ippan = getByid('ippan', uni.id);
+  const tags = [];
+  if (region) tags.push(`<span class="region-badge" style="background:${region.color}">${region.label}</span>`);
+  if (uni.type) tags.push(`<span class="meta-tag">${uni.type}</span>`);
+  if (uni.commute_possible) tags.push(`<span class="meta-tag">📍 片道${uni.access_from_shiga_min}分</span>`);
+  else tags.push(`<span class="meta-tag">🏠 下宿</span>`);
+  if (ippan?.hensachi_representative) tags.push(`<span class="meta-tag">偏差値 ${ippan.hensachi_representative}</span>`);
+
+  const gradeClass = `grade-${grade.replace('+','plus')}`;
+  const reasonHtml = reasons.length
+    ? `<ul>${reasons.map(r => `<li>${escapeHtml(r)}</li>`).join('')}</ul>`
+    : '';
+  const favBtn = `<button class="fav-btn ${isFav(uni.id) ? 'active' : ''}" data-fav="${uni.id}" title="お気に入りに追加">${isFav(uni.id) ? '❤️' : '🤍'}</button>`;
+  // S+ には王冠バッジ
+  const crownBadge = grade === 'S+' ? '<div class="crown-badge">👑 S+</div>' : '';
+
+  const breakdownHtml = (breakdown && breakdown.length > 1) ? `
+    <details class="score-breakdown">
+      <summary>内部スコア ${rawScore} の内訳</summary>
+      <div class="breakdown-items">
+        ${breakdown.map(b => `<span class="breakdown-item ${b.value < 0 ? 'minus' : ''}">${escapeHtml(b.label)} ${b.value >= 0 ? '+' : ''}${b.value}</span>`).join('')}
+      </div>
+    </details>
+  ` : '';
+  return `
+    <article class="uni-card" data-uni="${uni.id}">
+      <div class="uni-card-main">
+        ${crownBadge}
+        <h3 class="uni-name">${escapeHtml(uni.name)}</h3>
+        <div class="uni-meta">${tags.join('')}</div>
+        <div class="uni-reason">${reasonHtml}</div>
+        ${breakdownHtml}
+      </div>
+      <div class="match-score-col">
+        <div class="match-score ${gradeClass}">
+          <span class="num">${score}</span>
+          <span class="label">${grade}ランク</span>
+        </div>
+        ${favBtn}
+      </div>
+    </article>
+  `;
+}
+
+function bindUniCards() {
+  document.querySelectorAll('.uni-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+      // お気に入りボタンクリックは詳細遷移しない
+      if (e.target.closest('.fav-btn')) return;
+      state.currentDetail = card.dataset.uni;
+      state.currentTab = 'basic';
+      go('detail');
+      renderDetail();
+    });
+  });
+  document.querySelectorAll('.fav-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const id = btn.dataset.fav;
+      const nowFav = toggleFav(id);
+      btn.classList.toggle('active', nowFav);
+      btn.textContent = nowFav ? '❤️' : '🤍';
+    });
+  });
+  // 偏差値帯マップのチップ
+  document.querySelectorAll('.hensachi-uni-chip[data-uni-detail]').forEach(chip => {
+    chip.addEventListener('click', () => {
+      state.currentDetail = chip.dataset.uniDetail;
+      state.currentTab = 'basic';
+      go('detail');
+      renderDetail();
+    });
+  });
+}
+
+// ============================================================
+// 全大学リスト
+// ============================================================
+function renderList() {
+  const regionFilter = document.getElementById('regionFilter');
+  const searchInput = document.getElementById('searchInput');
+  const listEl = document.getElementById('listAll');
+
+  // セレクトの初期化
+  if (regionFilter.options.length <= 1) {
+    const regions = DATA_V2.regions || {};
+    for (const [id, r] of Object.entries(regions)) {
+      const opt = document.createElement('option');
+      opt.value = id;
+      opt.textContent = r.label;
+      regionFilter.appendChild(opt);
+    }
+    regionFilter.addEventListener('change', renderList);
+    searchInput.addEventListener('input', renderList);
+  }
+
+  const sel = regionFilter.value;
+  const q = (searchInput.value || '').trim();
+  const uniById = new Map(DATA_V2.universities.map(u => [u.id, u]));
+
+  const depts = DATA_V2.departments.filter(d => {
+    const u = uniById.get(d.uni_id);
+    if (!u) return false;
+    if (sel !== 'all' && u.region !== sel) return false;
+    if (q && !(u.name.includes(q) || (u.name_short || '').includes(q) || d.name.includes(q))) return false;
+    return true;
+  });
+
+  // 地域ごとに集約
+  const grouped = {};
+  depts.forEach(d => {
+    const reg = uniById.get(d.uni_id).region;
+    (grouped[reg] = grouped[reg] || []).push(d);
+  });
+  const REGION_ORDER = ['shiga', 'kyoto', 'osaka', 'hyogo', 'nara-wakayama', 'tokai', 'kanto', 'other'];
+  const orderedIds = [...REGION_ORDER.filter(r => grouped[r]), ...Object.keys(grouped).filter(r => !REGION_ORDER.includes(r))];
+  const midOf = (d) => { const h = d.hensachi || {}; return (h.min != null && h.max != null) ? (h.min + h.max) / 2 : (h.min != null ? h.min : (h.max != null ? h.max : -1)); };
+
+  listEl.innerHTML = '';
+  for (const regionId of orderedIds) {
+    const arr = grouped[regionId];
+    arr.sort((a, b) => (midOf(b) - midOf(a)) || uniById.get(a.uni_id).name.localeCompare(uniById.get(b.uni_id).name, 'ja'));
+    const region = (DATA_V2.regions && DATA_V2.regions[regionId]) || {};
+    const head = document.createElement('h3');
+    head.style.cssText = `margin:16px 0 8px;color:${region.color || 'var(--text)'};font-size:14px`;
+    head.textContent = `${region.label || regionId}（${arr.length}学部）`;
+    listEl.appendChild(head);
+    arr.forEach(d => listEl.appendChild(deptCard(deptToItem(d, uniById.get(d.uni_id)))));
+  }
+  if (!orderedIds.length) {
+    listEl.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:32px">該当する学部がありません</p>';
+  }
+}
+
+function renderUniCardSimple(uni) {
+  const region = getRegion(uni.region);
+  const ippan = getByid('ippan', uni.id);
+  const tags = [];
+  if (uni.type) tags.push(`<span class="meta-tag">${uni.type}</span>`);
+  if (uni.commute_possible) tags.push(`<span class="meta-tag">片道${uni.access_from_shiga_min}分</span>`);
+  if (ippan?.hensachi_representative) tags.push(`<span class="meta-tag">偏差値${ippan.hensachi_representative}</span>`);
+
+  return `
+    <article class="uni-card" data-uni="${uni.id}">
+      <div class="uni-card-main">
+        <h3 class="uni-name">${escapeHtml(uni.name)}</h3>
+        <div class="uni-meta">${tags.join('')}</div>
+        <div class="uni-reason">${escapeHtml(uni.commute_note || '')}</div>
+      </div>
+    </article>
+  `;
+}
+
+// ============================================================
+// 詳細画面
+// ============================================================
+// ============================================================
+// 詳細（data_v2 / 学部単位）
+// ============================================================
+function _esc(s) { return escapeHtml(String(s)); }
+function _row(k, v) { return (v == null || v === '') ? '' : `<dt>${k}</dt><dd>${v}</dd>`; }
+function _dl(rows) { const h = rows.filter(Boolean).join(''); return h ? `<dl class="meta-grid">${h}</dl>` : ''; }
+function _yen(n) { return (n != null && n !== '') ? Number(n).toLocaleString() + '円' : null; }
+function _joinArr(a) { return (a && a.length) ? a.map(_esc).join('、') : null; }
+function _link(url, label) { return url ? `<a href="${_esc(url)}" target="_blank" rel="noopener" class="detail-link">${label} ↗</a>` : ''; }
+const METHOD_TYPE_LABEL = { sogo: '総合型選抜', koubo: '学校推薦・公募', ippan: '一般選抜', kyotsu: '共テ利用' };
+
+function renderDetail(deptId) {
+  if (deptId != null) state.currentDetail = deptId;
+  const { dept, uni } = findDeptV2(state.currentDetail);
+  if (!dept || !uni) return;
+  const h = dept.hensachi || {};
+  const band = (h.min != null && h.max != null)
+    ? (h.min === h.max ? `偏差値 ${h.min}` : `偏差値 ${h.min}〜${h.max}`) : '偏差値データなし';
+  const region = (DATA_V2.regions && DATA_V2.regions[uni.region]) || {};
+  document.getElementById('detailHeader').innerHTML = `
+    <h2>${_esc(uni.name)}</h2>
+    <div class="detail-dept">${_esc(dept.name)}</div>
+    <div class="uni-meta">
+      <span class="region-badge" style="background:${region.color || '#666'}">${_esc(region.label || '')}</span>
+      <span class="meta-tag">${_esc(uni.type || '')}</span>
+      <span class="meta-tag">${_esc(uni.prefecture || '')}</span>
+      <span class="meta-tag">${band}</span>
+    </div>`;
+  renderTab(state.currentTab || 'basic');
+}
+
+function renderTab(tab) {
+  state.currentTab = tab;
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  const content = document.getElementById('tabContent');
+  const { dept, uni } = findDeptV2(state.currentDetail);
+  if (!dept || !uni) { content.innerHTML = ''; return; }
+  if (tab === 'basic') content.innerHTML = detailBasicV2(dept, uni);
+  else if (tab === 'entrance') content.innerHTML = detailEntranceV2(dept, uni);
+  else if (tab === 'employment') content.innerHTML = detailEmploymentV2(dept, uni);
+  else if (tab === 'life') content.innerHTML = detailLifeV2(dept, uni);
+}
+
+function detailBasicV2(dept, uni) {
+  const h = dept.hensachi || {};
+  const band = (h.min != null && h.max != null)
+    ? (h.min === h.max ? `${h.min}` : `${h.min}〜${h.max}`) + (h.basis ? `（${h.basis}基準）` : '') : null;
+  const bai = dept.bairitsu && dept.bairitsu.ippan
+    ? Object.entries(dept.bairitsu.ippan).filter(([k]) => /^\d{4}$/.test(k)).map(([y, v]) => `${y}年 ${v}倍`).join(' / ') : null;
+  const imap = new Map((DATA_V2.tags.interest || []).map(t => [t.id, t.label]));
+  const itags = (dept.interest_tags || []).map(id => imap.get(id)).filter(Boolean);
+  const zemi = (dept.zemi && dept.zemi.length) ? dept.zemi.join('、') : (typeof uni.zemi_features === 'string' ? uni.zemi_features : null);
+  const warn = dept.data_status === 'unconfirmed'
+    ? `<div class="estimated-banner">⚠️ この学部のデータは<strong>未確認</strong>です。必ず公式で確認してください。</div>` : '';
+  return warn +
+    (uni.feature ? `<p class="detail-lead">${_esc(uni.feature)}</p>` : '') +
+    _dl([
+      _row('偏差値', band),
+      _row('倍率（一般）', bai),
+      _row('キャンパス', _esc(dept.campus || uni.campus_main || '')),
+      _row('学べる分野', _joinArr(itags)),
+      _row('取得できる資格', _joinArr(dept.qualifications)),
+      _row('ゼミ・研究', zemi ? _esc(zemi) : null),
+    ]) +
+    (uni.official_links && uni.official_links.official_url ? `<div class="detail-links">${_link(uni.official_links.official_url, '公式サイト')}</div>` : '');
+}
+
+function detailEntranceV2(dept, uni) {
+  const methods = (dept.entry_methods || []);
+  const avail = methods.filter(m => m && m.available);
+  let html = '';
+  if (avail.length) {
+    html += `<h4 class="detail-h">使える入試方式</h4>`;
+    html += avail.map(m => {
+      const v = m.verified ? '<span class="ok-badge">✓確認済</span>' : '';
+      return `<div class="method-item"><div class="method-name">${_esc(METHOD_TYPE_LABEL[m.type] || m.type)} ${v}</div>` +
+        (m.note ? `<div class="method-note">${_esc(m.note)}</div>` : '') + `</div>`;
+    }).join('');
+  }
+  // 詳細（評定条件・選考内容・日程）
+  const emd = uni.entry_method_details || {};
+  const nd = uni.nyushi_details || {};
+  ['sogo', 'koubo', 'ippan', 'kyotsu'].forEach(tp => {
+    const rows = (emd[tp] || []);
+    const sched = (nd[tp] || []);
+    if (!rows.length && !sched.length) return;
+    html += `<h4 class="detail-h">${_esc(METHOD_TYPE_LABEL[tp] || tp)} の詳細</h4>`;
+    rows.forEach(r => {
+      html += `<div class="method-item"><div class="method-name">${_esc(r.method_name || '')}</div>` +
+        _dl([
+          _row('評定条件', r.hyoutei_note ? _esc(r.hyoutei_note) : (r.hyoutei_min != null ? `${r.hyoutei_min}以上` : null)),
+          _row('選考内容', _joinArr(r.selection_content)),
+          _row('求める活動', r.required_achievement ? _esc(r.required_achievement) : null),
+          _row('出願時期', r.application_period ? _esc(r.application_period) : null),
+        ]) + `</div>`;
+    });
+    sched.forEach(s => {
+      html += `<div class="method-item"><div class="method-name">${_esc(s.method_name || '日程')}</div>` +
+        _dl([
+          _row('出願期間', s.application_period ? _esc(s.application_period) : null),
+          _row('試験日', s.exam_date ? _esc(s.exam_date) : null),
+          _row('合格発表', s.result_date ? _esc(s.result_date) : null),
+        ]) + `</div>`;
+    });
+  });
+  const nyLink = uni.official_links && (uni.official_links.nyushi_url || uni.official_links.youkou_url);
+  html += `<div class="estimated-banner" style="margin-top:12px">⚠️ 日程・条件は<strong>参考値</strong>です。現高3生は2027年度入試。<strong>必ず公式の最新募集要項で確認</strong>してください。</div>`;
+  if (nyLink) html += `<div class="detail-links">${_link(nyLink, '入試情報・募集要項')}</div>`;
+  return html || '<p class="detail-lead">入試情報は公式サイトで確認してください。</p>';
+}
+
+function detailEmploymentV2(dept, uni) {
+  const emap = new Map((DATA_V2.tags.employment || []).map(t => [t.id, t.label]));
+  const fields = (dept.employment_fields || []).map(id => emap.get(id)).filter(Boolean);
+  const sj = uni.shingaku_jisseki || {};
+  const emp = uni.employment || {};
+  const cc = uni.career_center || {};
+  const stars = (n) => (n != null ? '★'.repeat(Math.max(0, Math.min(5, n))) + '☆'.repeat(5 - Math.max(0, Math.min(5, n))) : null);
+  return _dl([
+    _row('この学部の就職分野', _joinArr(fields)),
+    _row('就職率', sj.shushoku_rate ? _esc(sj.shushoku_rate) : null),
+    _row('主な就職先', _joinArr(sj.top_employers)),
+    _row('教員就職', sj.kyoin_count ? _esc(sj.kyoin_count) : null),
+    _row('強み', _joinArr(emp.strengths)),
+    _row('資格に強い', typeof uni.shikaku_gokakuritsu === 'string' ? _esc(uni.shikaku_gokakuritsu) : null),
+    _row('キャリア支援', _joinArr(cc.features)),
+    _row('支援の充実度', stars(cc.quality)),
+  ]) +
+    (uni.official_links && uni.official_links.shingaku_url ? `<div class="detail-links">${_link(uni.official_links.shingaku_url, '進路・就職実績')}</div>` : '') ||
+    '<p class="detail-lead">就職情報は公式サイトで確認してください。</p>';
+}
+
+function detailLifeV2(dept, uni) {
+  const lc = uni.living_cost || {};
+  const ac = uni.additional_costs || {};
+  const sg = uni.shogakukin || {};
+  const cn = uni.campus_neighborhood || {};
+  const oc = uni.open_campus || {};
+  const access = uni.access_from_shiga_min != null
+    ? `滋賀から片道 約${uni.access_from_shiga_min}分（${uni.commute_possible ? '通学可' : '下宿推奨'}）` : null;
+  let html = _dl([
+    _row('学費（年）', _yen(uni.tuition_yen_per_year)),
+    _row('学費の目安', uni.tuition_note ? _esc(uni.tuition_note) : null),
+    _row('家賃目安', (lc.rent_min != null) ? `月 ${Number(lc.rent_min).toLocaleString()}〜${Number(lc.rent_max).toLocaleString()}円` : null),
+    _row('生活費（月）', _yen(lc.monthly_total)),
+    _row('4年間の生活費目安', _yen(lc.four_year_total)),
+    _row('その他費用', [ac.textbook_yen_per_year ? '教材 約' + Number(ac.textbook_yen_per_year).toLocaleString() + '円/年' : null, ac.jisshu_hi ? _esc(ac.jisshu_hi) : null].filter(Boolean).join(' / ') || null),
+    _row('奨学金', sg.general_shogakukin ? _esc(sg.general_shogakukin) : null),
+    _row('アクセス', access),
+    _row('通学備考', uni.commute_note ? _esc(uni.commute_note) : null),
+    _row('最寄駅', cn.nearest_station ? _esc(cn.nearest_station) + (cn.walking_min_from_station ? `（徒歩${cn.walking_min_from_station}分）` : '') : null),
+    _row('周辺環境', cn.area_description ? _esc(cn.area_description) : null),
+    _row('オープンcampus', oc.open_campus_seasons ? _esc(oc.open_campus_seasons) : null),
+  ]);
+  const links = [
+    _link(sg.shogakukin_official_url, '奨学金情報'),
+    _link(oc.open_campus_url, 'オープンキャンパス'),
+  ].filter(Boolean).join('');
+  if (links) html += `<div class="detail-links">${links}</div>`;
+  return html || '<p class="detail-lead">生活情報は公式サイトで確認してください。</p>';
+}
+
+// ============================================================
+// 入試タブ（A総合/B公募/C一般 サブタブ）
+// ============================================================
+let entranceSubtab = 'sogo';
+function renderEntranceTab(id) {
+  const uni = getBase(id);
+  const verified = uni?.nyushi_details?.verified;
+  const year = uni?.nyushi_details?.verified_year || '';
+  const isLatest = year.includes('2027');
+  const verifiedBanner = verified ? `
+    <div class="verified-banner ${!isLatest ? 'warning' : ''}">
+      ${isLatest ? '✅' : '⚠️'} <strong>${escapeHtml(year)} 検証済み</strong>
+      (出典: ${escapeHtml(uni.nyushi_details.verified_source || '公式情報')})
+      ${isLatest
+        ? '<br /><span style="font-size:11px;color:var(--success)">✓ 現高3生が来春受ける入試</span>'
+        : '<br /><span style="font-size:11px;color:var(--accent)">※ <strong>過去の入試データ</strong>。現高3生は来春の2027年度入試を受験。日程は公式で要確認</span>'}
+    </div>
+  ` : `
+    <div class="estimated-banner">
+      ⚠️ <strong>推定データ</strong> — 出願期間・試験日は<strong>標準パターンの参考値</strong>です。<strong>必ず大学公式の最新募集要項で確認</strong>してください。
+    </div>
+  `;
+  // 公式リンクボタン（タブ上部に常に表示）
+  const ol = uni?.official_links || {};
+  const officialButtons = (ol.nyushi_url || ol.youkou_url) ? `
+    <div class="official-buttons-prominent">
+      ${ol.nyushi_url ? `<a class="official-btn nyushi" href="${escapeHtml(ol.nyushi_url)}" target="_blank">📋 公式入試サイト →</a>` : ''}
+      ${ol.youkou_url && ol.youkou_url !== ol.nyushi_url ? `<a class="official-btn youkou" href="${escapeHtml(ol.youkou_url)}" target="_blank">📄 募集要項 (PDF含) →</a>` : ''}
+    </div>
+  ` : `
+    <div class="no-url-notice">
+      🔎 <strong>公式URL未登録</strong> — 「${escapeHtml(uni.name)} 入試」で検索して最新の募集要項を確認してください
+      <div style="margin-top:6px"><a class="official-btn nyushi" href="https://www.google.com/search?q=${encodeURIComponent(uni.name + ' 入試 2026')}" target="_blank" style="flex:0 0 auto">🔍 Google で検索</a></div>
+    </div>
+  `;
+  return `
+    ${verifiedBanner}
+    ${officialButtons}
+    <div class="subtab-row">
+      <button class="subtab ${entranceSubtab==='sogo'?'active':''}" data-subtab="sogo">A:総合型</button>
+      <button class="subtab ${entranceSubtab==='koubo'?'active':''}" data-subtab="koubo">B:公募型</button>
+      <button class="subtab ${entranceSubtab==='ippan'?'active':''}" data-subtab="ippan">C:一般</button>
+    </div>
+    <div id="entranceSubtabContent">
+      ${renderNyushiDetails(id, entranceSubtab)}
+      ${entranceSubtab === 'sogo' ? renderMethodTab(id, 'sogo', 'A:総合型選抜') :
+        entranceSubtab === 'koubo' ? renderMethodTab(id, 'koubo', 'B:公募型選抜') :
+        renderIppanTab(id)}
+    </div>
+    ${renderBairitsuTrend(id)}
+  `;
+}
+
+// nyushi_details: 出願期間・必要書類・受験科目を表示（配列対応）
+function renderNyushiDetails(id, subtab) {
+  const uni = getBase(id);
+  const ndRaw = uni?.nyushi_details?.[subtab];
+  // 配列 or 単一オブジェクト or null に対応
+  const methods = Array.isArray(ndRaw) ? ndRaw : (ndRaw ? [ndRaw] : []);
+  if (methods.length === 0) return '';
+  const url = uni?.nyushi_details?.details_url;
+  return methods.map(nd => renderNyushiCard(nd, url)).join('');
+}
+
+function renderNyushiCard(nd, fallbackUrl) {
+  if (!nd || typeof nd !== 'object') return '';
+  const rows = [
+    ['📅 出願期間', nd.application_period],
+    ['📝 試験日', nd.exam_date],
+    ['📢 合格発表', nd.result_date],
+    ['✅ 手続き〆切', nd.enrollment_deadline],
+  ];
+  const validRows = rows.filter(([_, v]) => v);
+  const docs = (nd.required_documents || []).map(d => `<span class="nyushi-tag">${escapeHtml(d)}</span>`).join('');
+  const subjects = (nd.exam_subjects || []).map(s => `<span class="nyushi-tag accent">${escapeHtml(s)}</span>`).join('');
+  const link = nd.details_url || fallbackUrl;
+  if (validRows.length === 0 && !docs && !subjects && !nd.special_notes) return '';
+
+  return `
+    <div class="nyushi-card">
+      <div class="nyushi-card-head">
+        📋 ${escapeHtml(nd.method_name || '入試詳細')}
+        ${link ? `<a class="ext-link" href="${escapeHtml(link)}" target="_blank">公式募集要項 →</a>` : ''}
+      </div>
+      ${validRows.length ? `<div class="nyushi-dates">${validRows.map(([k, v]) => `<div class="nyushi-date-item"><span class="nyushi-date-label">${k}</span><span class="nyushi-date-value">${escapeHtml(String(v))}</span></div>`).join('')}</div>` : ''}
+      ${docs ? `<div class="nyushi-section"><strong>必要書類:</strong> <div class="nyushi-tags">${docs}</div></div>` : ''}
+      ${subjects ? `<div class="nyushi-section"><strong>試験科目:</strong> <div class="nyushi-tags">${subjects}</div></div>` : ''}
+      ${nd.special_notes ? `<p class="note" style="margin-top:8px">${escapeHtml(nd.special_notes)}</p>` : ''}
+    </div>
+  `;
+}
+
+function bindEntranceSubtabs(id) {
+  document.querySelectorAll('.subtab[data-subtab]').forEach(b => {
+    b.addEventListener('click', () => {
+      entranceSubtab = b.dataset.subtab;
+      document.getElementById('tabContent').innerHTML = renderEntranceTab(id);
+      bindEntranceSubtabs(id);
+    });
+  });
+}
+
+function renderBairitsuTrend(id) {
+  const uni = getBase(id);
+  const bt = uni?.bairitsu_trend;
+  if (!bt || (typeof bt !== 'object')) return '';
+  // 全データが「要確認」or null なら非表示
+  const allUnknown = ['sogo', 'koubo', 'ippan'].every(k => {
+    if (!bt[k]) return true;
+    if (typeof bt[k] !== 'object') return false;
+    return Object.values(bt[k]).every(v => !v || String(v).includes('要確認') || String(v).includes('不明'));
+  });
+  if (allUnknown) return '';
+  const has = ['sogo', 'koubo', 'ippan'].some(k => bt[k]);
+  if (!has) return '';
+  let html = '<h4 style="margin-top:24px">📈 倍率推移（参考）</h4><div class="bairitsu-trend-wrap"><table class="bairitsu-table"><thead><tr><th>方式</th>';
+  const years = new Set();
+  ['sogo', 'koubo', 'ippan'].forEach(k => {
+    if (bt[k] && typeof bt[k] === 'object') Object.keys(bt[k]).forEach(y => years.add(y));
+  });
+  const sortedYears = [...years].sort();
+  sortedYears.forEach(y => html += `<th>${escapeHtml(y)}</th>`);
+  html += '</tr></thead><tbody>';
+  for (const [k, lbl] of [['sogo', 'A:総合'], ['koubo', 'B:公募'], ['ippan', 'C:一般']]) {
+    if (!bt[k]) continue;
+    html += `<tr><th>${lbl}</th>`;
+    sortedYears.forEach(y => {
+      const v = bt[k][y];
+      const display = (!v || String(v).includes('要確認')) ? '—' : v;
+      html += `<td>${escapeHtml(String(display))}</td>`;
+    });
+    html += '</tr>';
+  }
+  html += '</tbody></table></div>';
+  return html;
+}
+
+// ============================================================
+// 生活タブ
+// ============================================================
+function renderLifeTab(id) {
+  const uni = getBase(id);
+  if (!uni) return '<div class="empty-state">データなし</div>';
+  const sections = [];
+
+  // 学費・生活費 カード
+  const lc = uni.living_cost || {};
+  const rich = [];
+  if (uni.tuition_yen_per_year) rich.push(`<div class="rich-card"><div class="rich-label">学費 (年)</div><div class="rich-value">¥${Math.round(uni.tuition_yen_per_year/10000)}万</div><div class="rich-sub">目安</div></div>`);
+  if (lc.rent_min) {
+    const max = lc.rent_max || lc.rent_min;
+    rich.push(`<div class="rich-card"><div class="rich-label">家賃 (月)</div><div class="rich-value">¥${Math.round(lc.rent_min/10000*10)/10}〜${Math.round(max/10000*10)/10}万</div></div>`);
+  }
+  if (lc.food_monthly) rich.push(`<div class="rich-card"><div class="rich-label">食費 (月)</div><div class="rich-value">¥${Math.round(lc.food_monthly/10000*10)/10}万</div></div>`);
+  if (lc.monthly_total) rich.push(`<div class="rich-card"><div class="rich-label">月 生活費</div><div class="rich-value">¥${Math.round(lc.monthly_total/10000*10)/10}万</div></div>`);
+  if (lc.four_year_total) rich.push(`<div class="rich-card"><div class="rich-label">4年 生活費</div><div class="rich-value">¥${Math.round(lc.four_year_total/10000)}万</div></div>`);
+  if (uni.dormitory != null) rich.push(`<div class="rich-card"><div class="rich-label">学生寮</div><div class="rich-value">${uni.dormitory ? '✅ あり' : '❌ なし'}</div></div>`);
+  if (rich.length) sections.push(`<h3>💰 学費・生活コスト</h3><div class="rich-grid">${rich.join('')}</div>`);
+  if (uni.tuition_note) sections.push(`<p class="note">💴 ${escapeHtml(uni.tuition_note)}</p>`);
+  if (lc.note) sections.push(`<p class="note">${escapeHtml(lc.note)}</p>`);
+
+  // キャンパス周辺
+  if (uni.campus_neighborhood) {
+    const cn = uni.campus_neighborhood;
+    sections.push(`<h3>🏘️ キャンパス周辺</h3>
+      <table><tbody>
+        ${cn.nearest_station ? `<tr><th>最寄り駅</th><td>${escapeHtml(cn.nearest_station)}${cn.walking_min_from_station ? ` (徒歩 ${cn.walking_min_from_station}分)` : ''}</td></tr>` : ''}
+        ${cn.area_description ? `<tr><th>エリア</th><td>${escapeHtml(cn.area_description)}</td></tr>` : ''}
+        ${cn.nearby_amenities ? `<tr><th>周辺施設</th><td>${escapeHtml(cn.nearby_amenities)}</td></tr>` : ''}
+        ${uni.campus_atmosphere ? `<tr><th>雰囲気</th><td>${escapeHtml(uni.campus_atmosphere)}</td></tr>` : ''}
+      </tbody></table>`);
+  }
+
+  // 奨学金・特待制度
+  if (uni.shogakukin) {
+    const sg = uni.shogakukin;
+    sections.push(`<h3>🎓 奨学金・特待制度</h3>
+      ${sg.sports_tokutai ? `<p><strong>スポーツ特待:</strong> ${escapeHtml(sg.sports_tokutai)}</p>` : ''}
+      ${sg.general_shogakukin ? `<p><strong>一般奨学金:</strong> ${escapeHtml(sg.general_shogakukin)}</p>` : ''}
+      ${sg.shogakukin_official_url ? `<p><a class="ext-link" href="${escapeHtml(sg.shogakukin_official_url)}" target="_blank">公式ページで詳細を見る →</a></p>` : ''}`);
+  }
+
+  // 追加費用
+  if (uni.additional_costs) {
+    const ac = uni.additional_costs;
+    sections.push(`<h3>💴 追加費用</h3>
+      ${ac.textbook_yen_per_year ? `<p>教科書代/年: 約¥${Math.round(ac.textbook_yen_per_year/10000*10)/10}万</p>` : ''}
+      ${ac.jisshu_hi ? `<p>${escapeHtml(ac.jisshu_hi)}</p>` : ''}`);
+  }
+
+  // ゼミ・研究室
+  if (uni.zemi_features) {
+    sections.push(`<h3>🔬 ゼミ・研究室</h3><p>${escapeHtml(uni.zemi_features)}</p>`);
+  }
+
+  // 海外留学
+  if (uni.ryugaku) {
+    const ry = uni.ryugaku;
+    sections.push(`<h3>🌏 海外留学制度</h3>
+      <p>${ry.available ? '✅ 制度あり' : (ry.available === false ? '❌ なし' : '要確認')}</p>
+      ${ry.destinations ? `<p><strong>主な留学先:</strong> ${escapeHtml(ry.destinations)}</p>` : ''}
+      ${ry.scholarship ? `<p><strong>奨学金:</strong> ${escapeHtml(ry.scholarship)}</p>` : ''}`);
+  }
+
+  // 学生属性
+  if (uni.student_demographics) {
+    const sd = uni.student_demographics;
+    sections.push(`<h3>👥 学生属性</h3>
+      ${sd.main_origin_prefs ? `<p><strong>主な出身地:</strong> ${escapeHtml(sd.main_origin_prefs)}</p>` : ''}
+      ${sd.gender_ratio ? `<p><strong>男女比:</strong> ${escapeHtml(sd.gender_ratio)}</p>` : ''}`);
+  }
+
+  // オープンキャンパス
+  if (uni.open_campus) {
+    const oc = uni.open_campus;
+    sections.push(`<h3>📅 オープンキャンパス</h3>
+      ${oc.open_campus_seasons ? `<p><strong>開催時期:</strong> ${escapeHtml(oc.open_campus_seasons)}</p>` : ''}
+      ${oc.open_campus_url ? `<p><a class="ext-link" href="${escapeHtml(oc.open_campus_url)}" target="_blank">オープンキャンパス情報 →</a></p>` : ''}`);
+  }
+
+  // 公式リンク
+  if (uni.official_links) {
+    const ol = uni.official_links;
+    const links = [];
+    if (ol.official_url) links.push(`<a class="ext-link-btn" href="${escapeHtml(ol.official_url)}" target="_blank">🏠 大学公式</a>`);
+    if (ol.nyushi_url) links.push(`<a class="ext-link-btn" href="${escapeHtml(ol.nyushi_url)}" target="_blank">📝 入試情報</a>`);
+    if (ol.shingaku_url) links.push(`<a class="ext-link-btn" href="${escapeHtml(ol.shingaku_url)}" target="_blank">💼 進路実績</a>`);
+    if (links.length) sections.push(`<h3>🔗 公式リンク</h3><div class="ext-link-row">${links.join('')}</div>`);
+  }
+
+  if (sections.length === 0) return '<div class="empty-state">生活情報のデータ準備中</div>';
+  return sections.join('');
+}
+
+function renderBasicTab(id) {
+  const sogo = getByid('sogo', id);
+  const koubo = getByid('koubo', id);
+  const ippan = getByid('ippan', id);
+  const emp = getByid('employment', id);
+  const uni = getBase(id);
+  const sections = [];
+
+  // 上部クイック情報カード（5指標）
+  const rich = [];
+  if (ippan?.hensachi_representative) rich.push(`<div class="rich-card hero"><div class="rich-label">偏差値</div><div class="rich-value">${ippan.hensachi_representative}</div></div>`);
+  if (uni.tuition_yen_per_year) rich.push(`<div class="rich-card"><div class="rich-label">学費(年)</div><div class="rich-value">¥${Math.round(uni.tuition_yen_per_year/10000)}万</div><div class="rich-sub">目安</div></div>`);
+  if (uni.living_cost?.four_year_total) rich.push(`<div class="rich-card"><div class="rich-label">4年 生活費</div><div class="rich-value">¥${Math.round(uni.living_cost.four_year_total/10000)}万</div></div>`);
+  rich.push(`<div class="rich-card"><div class="rich-label">滋賀から</div><div class="rich-value">${uni.access_from_shiga_min}分</div><div class="rich-sub">${uni.commute_possible ? '通学可' : '下宿推奨'}</div></div>`);
+  if (rich.length) sections.push(`<div class="rich-grid">${rich.join('')}</div>`);
+
+  // 特色（メインの差別化メッセージ）
+  if (uni.feature) {
+    sections.push(`
+      <div class="feature-block">
+        <h4>✨ この大学の特色</h4>
+        <p>${escapeHtml(uni.feature)}</p>
+      </div>
+    `);
+  }
+
+  // 差別化ポイント
+  if (uni.unique_point) {
+    sections.push(`
+      <div class="feature-block" style="border-left-color: var(--primary)">
+        <h4 style="color: var(--primary-hi)">💡 他大学との差別化ポイント</h4>
+        <p>${escapeHtml(uni.unique_point)}</p>
+      </div>
+    `);
+  }
+
+  // 就職強み
+  if (emp?.strengths?.length) {
+    sections.push(`
+      <h3>💼 就職の強み</h3>
+      <ul>${emp.strengths.map(s => `<li>${escapeHtml(s)}</li>`).join('')}</ul>
+      ${emp.summary ? `<p>${escapeHtml(emp.summary)}</p>` : ''}
+    `);
+  }
+
+  // 特筆すべき制度
+  if (uni.notable_programs?.length) {
+    sections.push(`
+      <h3>🎯 特筆すべき制度・プログラム</h3>
+      <ul>${uni.notable_programs.map(s => `<li>${escapeHtml(s)}</li>`).join('')}</ul>
+    `);
+  }
+
+  // 著名OB/OG
+  if (uni.notable_alumni?.length) {
+    sections.push(`
+      <h3>🎓 著名OB/OG</h3>
+      <p>${uni.notable_alumni.map(escapeHtml).join('、')}</p>
+    `);
+  }
+
+  // 入試方式サマリ
+  sections.push(`
+    <h3>📝 入試方式サマリ</h3>
+    <p>総合型: ${sogo?.entry_methods?.length || 0}方式 / 公募型: ${koubo?.entry_methods?.length || 0}方式 / 一般: ${ippan?.entry_methods?.length || 0}方式</p>
+  `);
+
+  return sections.join('') || '<div class="empty-state">データ準備中</div>';
+}
+
+function renderMethodTab(id, key, label) {
+  const data = getByid(key, id);
+  if (!data || !data.entry_methods || data.entry_methods.length === 0) {
+    const note = data?.notes ? `<p class="note">${escapeHtml(data.notes)}</p>` : '';
+    return `<h3>${label}</h3>${note}<div class="empty-state">${key === 'sogo' ? '総合型' : '公募型'}の枠は無い、または情報未登録</div>`;
+  }
+  const cards = data.entry_methods.map(m => `
+    <div class="method-card">
+      <h4>${escapeHtml(m.method_name)}</h4>
+      <table>
+        <tr><th>評定平均</th><td>${escapeHtml(m.hyoutei_note || (m.hyoutei_min ? `${m.hyoutei_min}以上` : '不問'))}</td></tr>
+        ${m.type ? `<tr><th>専願/併願</th><td>${escapeHtml(m.type)}</td></tr>` : ''}
+        <tr><th>選考内容</th><td>${(m.selection_content || []).map(s => `<span class="qualif-tag">${escapeHtml(s)}</span>`).join(' ') || '-'}</td></tr>
+        ${m.subjects ? `<tr><th>試験科目</th><td>${escapeHtml(m.subjects)}</td></tr>` : ''}
+        <tr><th>想定倍率</th><td>${escapeHtml(m.bairitsu || '-')}</td></tr>
+        ${m.required_achievement ? `<tr><th>必要実績</th><td>${escapeHtml(m.required_achievement)}</td></tr>` : ''}
+        <tr><th>出願時期</th><td>${escapeHtml(m.application_period || '-')}</td></tr>
+        ${m.notes ? `<tr><th>備考</th><td>${escapeHtml(m.notes)}</td></tr>` : ''}
+      </table>
+    </div>
+  `).join('');
+
+  return `<h3>${label}</h3>${cards}`;
+}
+
+function renderIppanTab(id) {
+  const data = getByid('ippan', id);
+  if (!data) return `<h3>C:一般選抜</h3><div class="empty-state">情報未登録</div>`;
+  const depts = (data.departments || []).map(d => `
+    <div class="dept-card">
+      <div class="dept-head">
+        <span class="dept-name">${escapeHtml(d.name)}</span>
+        <span class="hensachi">偏差値 ${d.hensachi_min ?? '?'}〜${d.hensachi_max ?? '?'}</span>
+      </div>
+      <div class="dept-meta">${escapeHtml(d.campus || '')}</div>
+      ${d.qualifications?.length ? `<div class="qualif-tags">${d.qualifications.map(q => `<span class="qualif-tag">${escapeHtml(q)}</span>`).join('')}${d.quals_estimated ? '<span style="font-size:10px;color:var(--text-muted);align-self:center">※学部系統からの目安</span>' : ''}</div>` : ''}
+    </div>
+  `).join('');
+  const methods = (data.entry_methods || []).map(m => `
+    <div class="method-card">
+      <h4>${escapeHtml(m.method_name)}</h4>
+      <table>
+        <tr><th>試験科目</th><td>${escapeHtml(m.subjects || '-')}</td></tr>
+        <tr><th>想定倍率</th><td>${escapeHtml(m.bairitsu || '-')}</td></tr>
+        ${m.application_period ? `<tr><th>出願時期</th><td>${escapeHtml(m.application_period)}</td></tr>` : ''}
+        ${m.notes ? `<tr><th>備考</th><td>${escapeHtml(m.notes)}</td></tr>` : ''}
+      </table>
+    </div>
+  `).join('');
+  return `
+    <h3>C:一般選抜</h3>
+    ${data.hensachi_representative ? `<p><strong>代表偏差値:</strong> ${data.hensachi_representative}</p>` : ''}
+    <h4>主要学部 (${(data.departments || []).length})</h4>
+    <div class="dept-list">${depts || '<div class="empty-state">学部データ未登録</div>'}</div>
+    <h4>一般入試方式 (${(data.entry_methods || []).length})</h4>
+    <div class="method-list">${methods || '<div class="empty-state">入試方式データ未登録</div>'}</div>
+  `;
+}
+
+function renderEmploymentTab(id) {
+  const data = getByid('employment', id);
+  const uni = getBase(id);
+  if (!data) return `<h3>💼 進路・就職</h3><div class="empty-state">情報未登録</div>`;
+
+  // 進路実績数字カード
+  const sj = uni?.shingaku_jisseki || {};
+  const numCards = [];
+  if (sj.shushoku_rate) numCards.push(`<div class="rich-card"><div class="rich-label">就職率</div><div class="rich-value" style="color:var(--success)">${escapeHtml(String(sj.shushoku_rate))}</div></div>`);
+  if (sj.kyoin_count) numCards.push(`<div class="rich-card"><div class="rich-label">教員合格</div><div class="rich-value">${escapeHtml(String(sj.kyoin_count))}</div></div>`);
+  if (sj.keisatsu_count) numCards.push(`<div class="rich-card"><div class="rich-label">警察合格</div><div class="rich-value">${escapeHtml(String(sj.keisatsu_count))}</div></div>`);
+  if (sj.shobo_count) numCards.push(`<div class="rich-card"><div class="rich-label">消防・救命</div><div class="rich-value">${escapeHtml(String(sj.shobo_count))}</div></div>`);
+
+  const r = data.ratings || {};
+  const bars = Object.entries(CAREER_LABEL).map(([key, label]) => {
+    const v = r[key] || 0;
+    return `
+      <div class="rating-bar">
+        <span class="label">${label}</span>
+        <div class="bar"><div class="bar-fill" style="width:${v * 20}%"></div></div>
+        <span class="num">${v}</span>
+      </div>
+    `;
+  }).join('');
+  const employers = [...(sj.top_employers || data.representative_employers || [])];
+  const employersHtml = employers.length ? employers.map(e => `<span class="qualif-tag">${escapeHtml(e)}</span>`).join(' ') : '';
+
+  // キャリアセンター
+  const cc = uni?.career_center || {};
+
+  return `
+    <h3>💼 進路・就職</h3>
+    ${data.summary ? `<p>${escapeHtml(data.summary)}</p>` : ''}
+    ${numCards.length ? `<h4>📊 実績数字</h4><div class="rich-grid">${numCards.join('')}</div>` : ''}
+    ${sj.note ? `<p class="note">${escapeHtml(sj.note)}</p>` : ''}
+    <h4>キャリア別 5段階評価</h4>
+    ${bars}
+    ${employersHtml ? `<h4>代表的な就職先</h4><div class="qualif-tags">${employersHtml}</div>` : ''}
+    ${data.strengths?.length ? `<h4>就職の強み</h4><ul>${data.strengths.map(s => `<li>${escapeHtml(s)}</li>`).join('')}</ul>` : ''}
+    ${cc.features?.length ? `<h4>🎯 キャリアセンターの特徴</h4>
+      ${cc.quality ? `<p>支援レベル: ${'★'.repeat(cc.quality)}${'☆'.repeat(5-cc.quality)} (${cc.quality}/5)</p>` : ''}
+      <ul>${cc.features.map(s => `<li>${escapeHtml(s)}</li>`).join('')}</ul>` : ''}
+    ${uni?.shikaku_gokakuritsu ? `<h4>✅ 資格・国試合格率</h4><p>${escapeHtml(uni.shikaku_gokakuritsu)}</p>` : ''}
+    ${data.notes ? `<p class="note">${escapeHtml(data.notes)}</p>` : ''}
+  `;
+}
+
+// ============================================================
+// お気に入り・比較画面
+// ============================================================
+function renderFavs() {
+  const el = document.getElementById('favsContent');
+  const favs = getFavs();
+  if (favs.length === 0) {
+    el.innerHTML = '<div class="empty-state" style="padding:48px 16px;text-align:center"><p>まだお気に入りが登録されていません。</p><p style="font-size:13px;color:var(--text-muted);margin-top:8px">診断結果や学部一覧の <strong>🤍</strong> ボタンで追加してください。</p></div>';
+    return;
+  }
+  el.innerHTML = `<p style="font-size:12px;color:var(--text-dim);margin:8px 0">${favs.length} 学部を登録中</p>`;
+  favs.forEach(deptId => {
+    const { dept, uni } = findDeptV2(deptId);
+    if (!dept || !uni) return;
+    el.appendChild(deptCard(deptToItem(dept, uni)));
+  });
+}
+
+// ============================================================
+// ホーム
+// ============================================================
+function renderHome() {
+  const statUni = document.getElementById('statUni');
+  const statRegion = document.getElementById('statRegion');
+  const dataCredit = document.getElementById('dataCredit');
+  if (statUni) statUni.textContent = (DATA_V2 && DATA_V2.universities) ? DATA_V2.universities.length : '—';
+  if (statRegion) statRegion.textContent = (DATA_V2 && DATA_V2.departments) ? DATA_V2.departments.length : '—';
+  if (dataCredit) dataCredit.textContent = `データ更新: ${(DATA_V2 && DATA_V2.updated) || '—'}`;
+}
+
+// ============================================================
+// 初期化
+// ============================================================
+async function init() {
+  go('loading', { noHistory: true });
+  if (!loadV2()) { console.error('v2データ/エンジンの読み込みに失敗しました'); }
+  buildRiasecScreen();
+  setupHyoutei();
+  setupChips();
+  setupRadios();
+
+  // ナビゲーション
+  document.querySelectorAll('[data-go]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.go;
+      if (target === 'list') renderList();
+      if (target === 'favs') renderFavs();
+      go(target);
+    });
+  });
+  document.getElementById('backBtn').addEventListener('click', back);
+  document.getElementById('fabBackBtn')?.addEventListener('click', back);
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    state.diag = { hyoutei: 3.5, hyouteiUnknown: false, hensachi: 50, hensachiUnknown: false, examSource: 'unknown', careers: new Set(), interests: new Set(), workArea: 'unknown', commute: 'unknown', costPriority: false, methods: new Set(['any']) };
+    state.riasecAnswers = [];
+    document.querySelectorAll('.riasec-opt.on').forEach(b => b.classList.remove('on'));
+    { const p = document.getElementById('riasecProgress'); if (p) p.textContent = '0'; }
+    // UIリセット
+    ['hyouteiUnknownChk', 'hensachiUnknownChk'].forEach(id => {
+      const chk = document.getElementById(id);
+      if (chk) { chk.checked = false; chk.dispatchEvent(new Event('change')); }
+    });
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('selected'));
+    document.querySelector('#exammethodChips .chip[data-method="any"]').classList.add('selected');
+    document.querySelectorAll('input[type="radio"]').forEach(r => { r.checked = r.value === 'unknown'; });
+    const costChk = document.getElementById('costPriorityChk');
+    if (costChk) costChk.checked = false;
+    document.getElementById('hyouteiInput').value = 3.5;
+    document.getElementById('hyouteiVal').textContent = '3.5';
+    go('diag-1');
+  });
+  document.getElementById('runDiagBtn').addEventListener('click', () => {
+    runDiagnose(state.riasecAnswers);
+  });
+  document.getElementById('skipRiasecBtn')?.addEventListener('click', () => {
+    runDiagnose([]);
+  });
+  document.getElementById('editDiagBtn').addEventListener('click', () => go('diag-1'));
+  document.querySelectorAll('.tab').forEach(t => {
+    t.addEventListener('click', () => renderTab(t.dataset.tab));
+  });
+
+  // 学部カードのお気に入り/詳細（イベント委譲）
+  document.addEventListener('click', (e) => {
+    const favBtn = e.target.closest('[data-fav]');
+    if (favBtn) {
+      e.stopPropagation();
+      const now = toggleFav(favBtn.getAttribute('data-fav'));
+      favBtn.textContent = now ? '❤️' : '🤍';
+      return;
+    }
+    const detBtn = e.target.closest('[data-detail]');
+    if (detBtn) {
+      renderDetail(detBtn.getAttribute('data-detail'));
+      go('detail');
+    }
+  });
+
+  renderHome();
+  go('home', { noHistory: true });
+}
+
+// ユーティリティ
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+document.addEventListener('DOMContentLoaded', init);
+
+</script>
+</body>
+</html>
