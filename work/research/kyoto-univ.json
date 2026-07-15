@@ -1,0 +1,142 @@
+{
+ "uni_id": "kyoto-univ",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0560/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html",
+  "https://search.keinet.ne.jp/1280/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "kyoto-univ-d01",
+   "campus": "吉田キャンパス（京都府京都市左京区吉田二本松町）",
+   "hensachi": { "min": 65.0, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.2, "2026": 3.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー88〜89%（河合塾・学内最高）" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "media"],
+   "unconfirmed": false,
+   "notes": "総合人間学部。偏差値65.0〜67.5、共テボーダー88〜89%。倍率は前期一般選抜（2025:3.2→2026:3.3）"
+  },
+  {
+   "dept_id": "kyoto-univ-bungaku",
+   "campus": "吉田キャンパス（京都府京都市左京区吉田本町）",
+   "hensachi": { "min": 67.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.3, "2026": 3.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー84%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "media", "koumuin"],
+   "unconfirmed": false,
+   "notes": "文学部（人文学科）。偏差値67.5、共テボーダー84%。倍率は前期一般選抜（2025:3.3→2026:3.1）"
+  },
+  {
+   "dept_id": "kyoto-univ-ho",
+   "campus": "吉田キャンパス（京都府京都市左京区吉田本町）",
+   "hensachi": { "min": 67.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.8, "2026": 2.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー84%（河合塾）" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部。偏差値67.5、共テボーダー84%。倍率は前期一般選抜（2025:2.8→2026:2.6）"
+  },
+  {
+   "dept_id": "kyoto-univ-keizai",
+   "campus": "吉田キャンパス（京都府京都市左京区吉田本町）",
+   "hensachi": { "min": 65.0, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9, "2026": 2.8 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程・文系/理系型／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー83〜84%（河合塾）" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部（一般・理系入試あり）。偏差値65.0〜67.5、共テボーダー83〜84%。倍率は前期一般選抜（2025:2.9→2026:2.8）"
+  },
+  {
+   "dept_id": "kyoto-univ-ri",
+   "campus": "吉田キャンパス（京都府京都市左京区北白川追分町）",
+   "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9, "2026": 2.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー85%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "理学部。偏差値65.0、共テボーダー85%。倍率は前期一般選抜（2025:2.9→2026:2.9）"
+  },
+  {
+   "dept_id": "kyoto-univ-ko",
+   "campus": "吉田キャンパス／桂キャンパス（京都府京都市西京区）",
+   "hensachi": { "min": 62.5, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9, "2026": 2.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）。学科別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー82〜85%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "工学部（地球工・建築・物理工・電気電子工・情報・工業化学）。偏差値62.5〜65.0、共テボーダー82〜85%。倍率は前期一般選抜（2025:2.9→2026:2.9）。専門課程は桂キャンパス"
+  },
+  {
+   "dept_id": "kyoto-univ-no",
+   "campus": "吉田キャンパス北部構内（京都府京都市左京区北白川追分町）",
+   "hensachi": { "min": 62.5, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.6, "2026": 2.8 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）。学科別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー83〜84%（河合塾）" }
+   ],
+   "employment_fields": ["shokuhin", "maker", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "農学部（資源生物・応用生命・地域環境工・食料環境経済・森林・食品生物）。偏差値62.5〜65.0、共テボーダー83〜84%。倍率は前期一般選抜（2025:2.6→2026:2.8）"
+  },
+  {
+   "dept_id": "kyoto-univ-kyoiku",
+   "campus": "吉田キャンパス（京都府京都市左京区吉田本町）",
+   "hensachi": { "min": 65.0, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0, "2026": 3.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程・文系/理系型／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー84%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin", "media"],
+   "unconfirmed": false,
+   "notes": "教育学部（教育科学科）。偏差値65.0〜67.5、共テボーダー84%。倍率は前期一般選抜（2025:3.0→2026:3.4、学内最大の上昇）"
+  },
+  {
+   "dept_id": "kyoto-univ-d02",
+   "campus": "吉田キャンパス医学部構内（京都府京都市左京区吉田近衛町）",
+   "hensachi": { "min": 60.0, "max": 70.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9, "2026": 2.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー77〜89%（医学科89%／人間健康科学77〜）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部（医学科／人間健康科学科）。偏差値60.0〜70.0（医学科最上位）、共テボーダー77〜89%。倍率は前期一般選抜（2025:2.9→2026:2.6）"
+  },
+  {
+   "dept_id": "kyoto-univ-yaku",
+   "campus": "吉田キャンパス（京都府京都市左京区吉田下阿達町）",
+   "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.5, "2026": 2.8 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー83%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi", "maker"],
+   "unconfirmed": false,
+   "notes": "薬学部（薬科学科6年制／薬学科）。偏差値65.0、共テボーダー83%。倍率は前期一般選抜（2025:2.5→2026:2.8）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度・2026-07-01更新）。倍率は河合塾Kei-Net掲載の前期日程一般選抜入試結果で2025・2026両年度（全学計は両年2.9倍）。最難関国立総合大。吉田キャンパス中心、工学部専門課程は桂キャンパス。特色入試（総合型）も実施だが偏差値・倍率は一般前期基準。看板ゼミは省略"
+}

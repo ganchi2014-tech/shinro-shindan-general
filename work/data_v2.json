@@ -51137,18 +51137,21 @@
    "dept_id": "kyoto-univ-d01",
    "uni_id": "kyoto-univ",
    "name": "総合人間学部",
-   "campus": "吉田",
+   "campus": "吉田キャンパス（京都府京都市左京区吉田二本松町）",
    "hensachi": {
     "min": 65,
     "max": 67.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.2,
+     "2026": 3.3
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51166,14 +51169,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー88〜89%（河合塾・学内最高）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51184,26 +51187,33 @@
    "interest_tags": [
     "unclassified"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "media"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-univ-bungaku",
    "uni_id": "kyoto-univ",
    "name": "文学部",
-   "campus": "吉田",
+   "campus": "吉田キャンパス（京都府京都市左京区吉田本町）",
    "hensachi": {
-    "min": 65,
+    "min": 67.5,
     "max": 67.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.3,
+     "2026": 3.1
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51221,14 +51231,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー84%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51238,26 +51248,33 @@
    "interest_tags": [
     "bungaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-univ-ho",
    "uni_id": "kyoto-univ",
    "name": "法学部",
-   "campus": "吉田",
+   "campus": "吉田キャンパス（京都府京都市左京区吉田本町）",
    "hensachi": {
     "min": 67.5,
     "max": 67.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.8,
+     "2026": 2.6
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51275,14 +51292,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー84%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51291,26 +51308,33 @@
    "interest_tags": [
     "hokei"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-univ-keizai",
    "uni_id": "kyoto-univ",
    "name": "経済学部",
-   "campus": "吉田",
+   "campus": "吉田キャンパス（京都府京都市左京区吉田本町）",
    "hensachi": {
     "min": 65,
     "max": 67.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.9,
+     "2026": 2.8
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51328,14 +51352,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程・文系/理系型／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー83〜84%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51344,26 +51368,33 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-univ-ri",
    "uni_id": "kyoto-univ",
    "name": "理学部",
-   "campus": "吉田",
+   "campus": "吉田キャンパス（京都府京都市左京区北白川追分町）",
    "hensachi": {
     "min": 65,
-    "max": 67.5,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.9,
+     "2026": 2.9
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51381,14 +51412,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー85%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51397,26 +51428,33 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-univ-ko",
    "uni_id": "kyoto-univ",
    "name": "工学部",
-   "campus": "吉田",
+   "campus": "吉田キャンパス／桂キャンパス（京都府京都市西京区）",
    "hensachi": {
     "min": 62.5,
-    "max": 67.5,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.9,
+     "2026": 2.9
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51434,14 +51472,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）。学科別募集",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー82〜85%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51451,26 +51489,33 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-univ-no",
    "uni_id": "kyoto-univ",
    "name": "農学部",
-   "campus": "吉田",
+   "campus": "吉田キャンパス北部構内（京都府京都市左京区北白川追分町）",
    "hensachi": {
     "min": 62.5,
     "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.6,
+     "2026": 2.8
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51488,14 +51533,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）。学科別募集",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー83〜84%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51504,26 +51549,33 @@
    "interest_tags": [
     "nogaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "shokuhin",
+    "maker",
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-univ-kyoiku",
    "uni_id": "kyoto-univ",
    "name": "教育学部",
-   "campus": "吉田",
+   "campus": "吉田キャンパス（京都府京都市左京区吉田本町）",
    "hensachi": {
     "min": 65,
-    "max": 65,
+    "max": 67.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3,
+     "2026": 3.4
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51541,14 +51593,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程・文系/理系型／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー84%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51558,26 +51610,33 @@
    "interest_tags": [
     "kyoiku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "media"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-univ-d02",
    "uni_id": "kyoto-univ",
    "name": "医学部（医・人間健康科学）",
-   "campus": "吉田",
+   "campus": "吉田キャンパス医学部構内（京都府京都市左京区吉田近衛町）",
    "hensachi": {
     "min": 60,
-    "max": 72.5,
+    "max": 70,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.9,
+     "2026": 2.6
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51595,14 +51654,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー77〜89%（医学科89%／人間健康科学77〜）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51614,26 +51673,31 @@
     "iryo",
     "sports"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-univ-yaku",
    "uni_id": "kyoto-univ",
    "name": "薬学部",
-   "campus": "吉田",
+   "campus": "吉田キャンパス（京都府京都市左京区吉田下阿達町）",
    "hensachi": {
     "min": 65,
     "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.5,
+     "2026": 2.8
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1280.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51651,14 +51715,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー83%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51667,9 +51731,12 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-univ-bungaku",
