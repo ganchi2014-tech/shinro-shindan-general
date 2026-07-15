@@ -1,0 +1,103 @@
+{
+ "uni_id": "komazawa",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/2430/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/2430/bairitsu/",
+  "https://search.keinet.ne.jp/2216/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "komazawa-d01",
+   "campus": "駒沢キャンパス（東京都世田谷区駒沢）",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（T方式全学部統一・S方式学部個別）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["service", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "仏教学部（禅・仏教）。学内最低偏差値40.0。倍率2025:1.7倍（学内最低）"
+  },
+  {
+   "dept_id": "komazawa-bungaku",
+   "campus": "駒沢キャンパス（東京都世田谷区駒沢）",
+   "hensachi": { "min": 45.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.3 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（T方式・S方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kyoiku", "media", "service"],
+   "unconfirmed": false,
+   "notes": "文学部（国文・英米文・地理・歴史・社会・心理）。偏差値45.0〜55.0。倍率2025:3.3倍"
+  },
+  {
+   "dept_id": "komazawa-keizai",
+   "campus": "駒沢キャンパス（東京都世田谷区駒沢）",
+   "hensachi": { "min": 47.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（T方式・S方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部（経済・商・現代応用経済）。偏差値47.5〜52.5。倍率2025:3.5倍"
+  },
+  {
+   "dept_id": "komazawa-ho",
+   "campus": "駒沢キャンパス（東京都世田谷区駒沢）",
+   "hensachi": { "min": 42.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（T方式・S方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部（法律・政治／フレックスA・B）。偏差値42.5〜52.5。倍率2025:2.7倍"
+  },
+  {
+   "dept_id": "komazawa-keiei",
+   "campus": "駒沢キャンパス（東京都世田谷区駒沢）",
+   "hensachi": { "min": 50.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.4 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（T方式・S方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "service"],
+   "unconfirmed": false,
+   "notes": "経営学部（経営・市場戦略）。偏差値50.0〜52.5。倍率2025:3.4倍"
+  },
+  {
+   "dept_id": "komazawa-d02",
+   "campus": "駒沢キャンパス（東京都世田谷区駒沢）",
+   "hensachi": { "min": 45.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.1 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（T方式・S方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["media", "service", "it"],
+   "unconfirmed": false,
+   "notes": "グローバル・メディア・スタディーズ学部 グローバルメディア学科。偏差値45.0〜50.0。倍率2025:3.1倍"
+  },
+  {
+   "dept_id": "komazawa-d03",
+   "campus": "玉川キャンパス（東京都世田谷区宇奈根）",
+   "hensachi": { "min": 47.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2430/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（T方式・S方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医療健康科学部 診療放射線技術科学科。偏差値47.5〜50.0。倍率2025:3.7倍"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度）。倍率は旺文社パスナビ掲載の一般選抜（2025年度・学部計）。私立総合大（日東駒専）。文系＝駒沢キャンパス、医療健康科学＝玉川キャンパス。看板ゼミは省略"
+}

@@ -1,0 +1,116 @@
+{
+ "uni_id": "senshu",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/2590/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/2590/bairitsu/",
+  "https://search.keinet.ne.jp/2233/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "senshu-ho",
+   "campus": "神田キャンパス（東京都千代田区神田神保町）",
+   "hensachi": { "min": 47.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.2 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／スカラシップ）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部（法律・政治）。偏差値47.5〜52.5。倍率2025:3.2倍"
+  },
+  {
+   "dept_id": "senshu-keizai",
+   "campus": "生田キャンパス（神奈川県川崎市多摩区東三田）",
+   "hensachi": { "min": 42.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／スカラシップ）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部（現代経済・国際経済・生活環境経済）。偏差値42.5〜50.0。倍率2025:3.0倍"
+  },
+  {
+   "dept_id": "senshu-keiei",
+   "campus": "生田キャンパス（神奈川県川崎市多摩区東三田）",
+   "hensachi": { "min": 45.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／スカラシップ）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "service"],
+   "unconfirmed": false,
+   "notes": "経営学部（経営・ビジネスデザイン）。偏差値45.0〜50.0。倍率2025:3.5倍"
+  },
+  {
+   "dept_id": "senshu-sho",
+   "campus": "神田キャンパス（東京都千代田区神田神保町）／生田キャンパス",
+   "hensachi": { "min": 47.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／スカラシップ）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "service"],
+   "unconfirmed": false,
+   "notes": "商学部（マーケティング・会計）。偏差値47.5〜52.5。倍率2025:4.0倍（学内上位）"
+  },
+  {
+   "dept_id": "senshu-bungaku",
+   "campus": "生田キャンパス（神奈川県川崎市多摩区東三田）",
+   "hensachi": { "min": 45.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／スカラシップ）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kyoiku", "media", "service"],
+   "unconfirmed": false,
+   "notes": "文学部（日本語日本文学・英語英米文学・哲学・歴史学・環境地理・ジャーナリズム）。偏差値45.0〜55.0。倍率2025:3.0倍"
+  },
+  {
+   "dept_id": "senshu-ningenkagaku",
+   "campus": "生田キャンパス（神奈川県川崎市多摩区東三田）",
+   "hensachi": { "min": 47.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.8 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／スカラシップ）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["iryo_fukushi", "service", "media"],
+   "unconfirmed": false,
+   "notes": "人間科学部（心理・社会）。偏差値47.5〜55.0。倍率2025:3.8倍"
+  },
+  {
+   "dept_id": "senshu-d01",
+   "campus": "神田キャンパス（東京都千代田区神田神保町）",
+   "hensachi": { "min": 50.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／スカラシップ）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["service", "media", "koumuin"],
+   "unconfirmed": false,
+   "notes": "国際コミュニケーション学部（日本語・異文化コミュニケーション）。学内最高偏差値50.0〜55.0。学内最高倍率、倍率2025:4.7倍"
+  },
+  {
+   "dept_id": "senshu-d02",
+   "campus": "生田キャンパス（神奈川県川崎市多摩区東三田）",
+   "hensachi": { "min": 42.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.2 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2590/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／スカラシップ）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["it", "maker", "service"],
+   "unconfirmed": false,
+   "notes": "ネットワーク情報学部 ネットワーク情報学科。偏差値42.5〜50.0。倍率2025:2.2倍（学内最低）"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度）。倍率は旺文社パスナビ掲載の一般選抜（2025年度・学部計）。私立総合大（日東駒専）。法・商・国際コミュニケーション＝神田キャンパス、その他＝生田キャンパス（川崎市）。看板ゼミは省略"
+}

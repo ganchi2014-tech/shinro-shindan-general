@@ -1,0 +1,155 @@
+{
+ "uni_id": "toyo-univ",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/2910/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/2910/bairitsu/",
+  "https://search.keinet.ne.jp/2265/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "toyo-univ-bungaku",
+   "campus": "白山キャンパス（東京都文京区白山）",
+   "hensachi": { "min": 45.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.1 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期／均等配点・ベスト2）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kyoiku", "media", "service"],
+   "unconfirmed": false,
+   "notes": "文学部第1部（哲・東洋思想文化・日本文学文化・英米文・史・教育・国際文化コミュニケーション）。偏差値45.0〜60.0。倍率2025:4.1倍"
+  },
+  {
+   "dept_id": "toyo-univ-keizai",
+   "campus": "白山キャンパス（東京都文京区白山）",
+   "hensachi": { "min": 42.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.6 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部第1部（経済・国際経済・総合政策）。偏差値42.5〜57.5。倍率2025:4.6倍"
+  },
+  {
+   "dept_id": "toyo-univ-keiei",
+   "campus": "白山キャンパス（東京都文京区白山）",
+   "hensachi": { "min": 45.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.3 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "service"],
+   "unconfirmed": false,
+   "notes": "経営学部第1部（経営・マーケティング・会計ファイナンス）。偏差値45.0〜57.5。倍率2025:5.3倍"
+  },
+  {
+   "dept_id": "toyo-univ-ho",
+   "campus": "白山キャンパス（東京都文京区白山）",
+   "hensachi": { "min": 42.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部第1部（法律・企業法）。偏差値42.5〜55.0。倍率2025:4.0倍"
+  },
+  {
+   "dept_id": "toyo-univ-shakai",
+   "campus": "白山キャンパス（東京都文京区白山）",
+   "hensachi": { "min": 42.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.3 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["media", "service", "koumuin"],
+   "unconfirmed": false,
+   "notes": "社会学部第1部（社会・社会文化システム・社会福祉・メディアコミュニケーション・社会心理）。偏差値42.5〜57.5。倍率2025:4.3倍"
+  },
+  {
+   "dept_id": "toyo-univ-kokusai",
+   "campus": "白山キャンパス（東京都文京区白山）",
+   "hensachi": { "min": 47.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.2 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["service", "media", "koumuin"],
+   "unconfirmed": false,
+   "notes": "国際学部（グローバル・イノベーション／国際地域）。偏差値47.5〜55.0。倍率2025:4.2倍"
+  },
+  {
+   "dept_id": "toyo-univ-d01",
+   "campus": "赤羽台キャンパス（東京都北区赤羽台）",
+   "hensachi": { "min": 47.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.1 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["it", "maker", "service"],
+   "unconfirmed": false,
+   "notes": "情報連携学部（INIAD、システム・コンピュータ・デザイン・ビジネス・シビル）。偏差値47.5〜52.5。倍率2025:3.1倍（学内最低）"
+  },
+  {
+   "dept_id": "toyo-univ-riko",
+   "campus": "川越キャンパス（埼玉県川越市鯨井）",
+   "hensachi": { "min": 47.5, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.1 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "理工学部（機械工・電気電子情報工・応用化学・都市環境デザイン・建築・生体医工学）。偏差値47.5〜50.0。倍率2025:3.1倍"
+  },
+  {
+   "dept_id": "toyo-univ-d02",
+   "campus": "赤羽台キャンパス（東京都北区赤羽台）",
+   "hensachi": { "min": 45.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["shokuhin", "iryo_fukushi", "maker"],
+   "unconfirmed": false,
+   "notes": "食環境科学部（食環境科学・フードデータサイエンス・生物環境科学・健康栄養）。偏差値45.0〜50.0。倍率2025:3.9倍。2025年に板倉から赤羽台へ移転"
+  },
+  {
+   "dept_id": "toyo-univ-d03",
+   "campus": "赤羽台キャンパス（東京都北区赤羽台）／朝霞キャンパス",
+   "hensachi": { "min": 47.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.8 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["iryo_fukushi", "service", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "福祉社会デザイン学部（2023年改組。社会福祉・子ども支援・人間環境デザイン）。偏差値47.5〜52.5。倍率2025:3.8倍"
+  },
+  {
+   "dept_id": "toyo-univ-d04",
+   "campus": "赤羽台キャンパス（東京都北区赤羽台）",
+   "hensachi": { "min": 45.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 5.8 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2910/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["sports_kenko", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "健康スポーツ科学部（2023年改組。健康スポーツ科学・栄養科学）。偏差値45.0〜52.5。学内最高倍率、倍率2025:5.8倍"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度）。倍率は旺文社パスナビ掲載の一般選抜第1部（2025年度・学部計）。私立総合大（日東駒専）。文系＝白山、理工＝川越、情報連携/食環境/福祉社会デザイン/健康スポーツ＝赤羽台キャンパス。看板ゼミは省略"
+}
