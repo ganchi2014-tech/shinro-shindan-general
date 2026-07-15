@@ -1486,6 +1486,12 @@ main {
   .hero h2 { font-size: 28px; }
   .step-title { font-size: 26px; }
 }
+/* ===== v2 追加スタイル ===== */
+.riasec-card { border: 1px solid var(--bg-card-hi); border-radius: 8px; padding: 10px; margin: 8px 0; background: var(--bg-card); }
+.riasec-btns { display: flex; gap: 4px; flex-wrap: wrap; }
+.riasec-opt { flex: 1; min-width: 70px; padding: 6px 4px; font-size: 12px; border-radius: 6px; }
+.riasec-opt.on { background: var(--accent, #2563eb); color: #fff; }
+.chip.on { background: var(--accent, #2563eb); color: #fff; }
   </style>
 </head>
 <body>
@@ -1533,6 +1539,14 @@ main {
         <label><input type="checkbox" class="em" value="kyotsu" checked>共テ利用</label>
       </div>
       <button class="primary-btn" data-next="diag-riasec">次へ</button>
+    </section>
+
+    <section class="screen" data-screen="diag-riasec" hidden>
+      <h2>適性チェック（<span id="riasecProgress">0</span>/12）</h2>
+      <p class="hint">直感でOK。時間がなければスキップできます。</p>
+      <div id="riasecItems"></div>
+      <button class="primary-btn" id="riasecRunBtn">この回答で診断</button>
+      <button class="secondary-btn" id="riasecSkipBtn">スキップ（偏差値順で見る）</button>
     </section>
 
     <section class="screen" data-screen="loading" hidden><p>診断中…</p></section>
@@ -1625,6 +1639,37 @@ main {
     DATA.tags.employment.forEach(t => makeChip(cc, t.id, t.label, state.careers));
   }
 
+  const RIASEC_LABELS = ['あてはまらない', 'ややあてはまる', 'あてはまる', 'とてもあてはまる'];
+
+  function buildRiasecScreen() {
+    const box = document.getElementById('riasecItems');
+    box.innerHTML = '';
+    RIASEC_DEF.items.forEach((it, i) => {
+      const card = document.createElement('div'); card.className = 'riasec-card';
+      const q = document.createElement('p'); q.textContent = `${i + 1}. ${it.text}`;
+      card.appendChild(q);
+      const row = document.createElement('div'); row.className = 'riasec-btns';
+      RIASEC_LABELS.forEach((lab, v) => {
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'riasec-opt'; b.textContent = lab;
+        b.addEventListener('click', () => {
+          state.riasecAnswers[i] = v;
+          [...row.children].forEach(c => c.classList.remove('on'));
+          b.classList.add('on');
+          document.getElementById('riasecProgress').textContent = Object.keys(state.riasecAnswers).length;
+        });
+        row.appendChild(b);
+      });
+      card.appendChild(row);
+      box.appendChild(card);
+    });
+  }
+
+  // 回答→12要素配列（未回答は中立1で埋める）
+  function riasecAnswersArray() {
+    return RIASEC_DEF.items.map((_, i) => (i in state.riasecAnswers ? state.riasecAnswers[i] : 1));
+  }
+
   function init() {
     ENGINE = loadEngine();
     DATA = loadJSON('inlineData');
@@ -1650,6 +1695,15 @@ main {
         go(btn.getAttribute('data-next'));
       });
     });
+
+    buildRiasecScreen();
+    document.getElementById('riasecRunBtn').addEventListener('click', () => {
+      if (Object.keys(state.riasecAnswers).length === 0) {
+        alert('最低1問答えるか、スキップを選んでください'); return;
+      }
+      runDiagnose(riasecAnswersArray());
+    });
+    document.getElementById('riasecSkipBtn').addEventListener('click', () => runDiagnose([]));
   }
   document.addEventListener('DOMContentLoaded', init);
   </script>
