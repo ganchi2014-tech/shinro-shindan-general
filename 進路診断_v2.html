@@ -1492,6 +1492,15 @@ main {
 .riasec-opt { flex: 1; min-width: 70px; padding: 6px 4px; font-size: 12px; border-radius: 6px; }
 .riasec-opt.on { background: var(--accent, #2563eb); color: #fff; }
 .chip.on { background: var(--accent, #2563eb); color: #fff; }
+.summary-band { background: var(--bg-card-hi); padding: 8px 10px; border-radius: 8px; font-weight: 600; }
+.nudge { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+.zone { margin-top: 14px; }
+.zone h3 { font-size: 14px; margin: 6px 0; }
+.dept-card { border: 1px solid var(--bg-card-hi); border-radius: 8px; padding: 10px; margin: 6px 0; background: var(--bg-card); }
+.dept-top { display: flex; justify-content: space-between; gap: 8px; }
+.fit-badge { font-weight: 700; color: var(--accent, #2563eb); }
+.reasons { margin-top: 4px; display: flex; gap: 4px; flex-wrap: wrap; }
+.rchip { font-size: 11px; background: var(--bg-card-hi); border-radius: 10px; padding: 2px 8px; }
   </style>
 </head>
 <body>
@@ -65629,6 +65638,87 @@ module.exports = {
   // 回答→12要素配列（未回答は中立1で埋める）
   function riasecAnswersArray() {
     return RIASEC_DEF.items.map((_, i) => (i in state.riasecAnswers ? state.riasecAnswers[i] : 1));
+  }
+
+  const HOLLAND_JP = { R: '現実的', I: '研究的', A: '芸術的', S: '社会的', E: '企業的', C: '慣習的' };
+
+  function userProfile(riasecArr) {
+    return {
+      hensachi: state.hensachiUnknown ? null : state.hensachi,
+      examSource: state.examSource,
+      regions: [...state.regions],
+      commuteOnly: state.commuteOnly,
+      interests: [...state.interests],
+      careers: [...state.careers],
+      examMethods: [...state.examMethods],
+      riasecAnswers: riasecArr,
+      budgetMax: null,
+    };
+  }
+
+  function runDiagnose(riasecArr) {
+    go('loading');
+    const profile = userProfile(riasecArr);
+    const r = ENGINE.diagnose(profile, DATA, DATA.tags, RIASEC_MAP);
+    state.lastResult = r;
+    renderResult(r);
+    go('result');
+  }
+
+  function deptCard(item) {
+    const el = document.createElement('div'); el.className = 'dept-card';
+    const h = item.hensachi || {};
+    const band = (h.min != null && h.max != null) ? `偏差${h.min}-${h.max}` : '偏差値データなし';
+    el.innerHTML =
+      `<div class="dept-top"><span class="dept-name">${item.uni_name} ${item.dept_name}</span>` +
+      `<span class="fit-badge">${item.fitScore}</span></div>` +
+      `<div class="dept-sub"><small>${band}</small></div>` +
+      `<div class="reasons">${(item.reasons || []).map(x => `<span class="rchip">${x}</span>`).join('')}</div>`;
+    el.addEventListener('click', () => showDetail(item.dept_id));
+    return el;
+  }
+
+  function zoneSection(title, arr) {
+    if (!arr || !arr.length) return null;
+    const sec = document.createElement('div'); sec.className = 'zone';
+    const h = document.createElement('h3'); h.textContent = `${title}（${arr.length}）`;
+    sec.appendChild(h);
+    arr.forEach(it => sec.appendChild(deptCard(it)));
+    return sec;
+  }
+
+  function renderResult(r) {
+    const m = r.meta || {};
+    const holland = m.hollandCode
+      ? `${m.hollandCode}（${[...m.hollandCode].map(c => HOLLAND_JP[c] || c).join('・')}）` : '—';
+    const summary = document.getElementById('resultSummary');
+    summary.innerHTML =
+      `<div class="summary-band">換算偏差値 ${m.adjustedHensachi ?? '—'} ｜ 適性 ${holland}</div>` +
+      (m.lowSignal ? `<div class="nudge">適性チェックや興味選択をすると精度が上がります</div>` : '');
+
+    const body = document.getElementById('resultBody');
+    body.innerHTML = '';
+
+    const z = r.zones || { challenge: [], match: [], safe: [] };
+    const hasZones = (z.challenge.length + z.match.length + z.safe.length) > 0;
+
+    if (m.adjustedHensachi == null || !hasZones) {
+      const list = (r.ungrouped && r.ungrouped.length) ? r.ungrouped
+        : [...z.match, ...z.challenge, ...z.safe];
+      if (!list.length) {
+        body.innerHTML = `<p>条件に合う学部が見つかりませんでした。エリアや偏差値を見直してください。</p>` +
+          `<small>除外: ${JSON.stringify(r.excluded || {})}</small>`;
+        return;
+      }
+      body.appendChild(zoneSection('おすすめ（適性順）', list));
+      return;
+    }
+
+    [['🎯 実力相応', z.match], ['🚀 挑戦', z.challenge], ['🛡️ 安全', z.safe]].forEach(([t, a]) => {
+      const s = zoneSection(t, a); if (s) body.appendChild(s);
+    });
+    const ung = zoneSection('偏差値データなし', r.ungrouped);
+    if (ung) body.appendChild(ung);
   }
 
   function init() {
