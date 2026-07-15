@@ -1566,6 +1566,18 @@ main {
 }
 .uc-detail-btn:hover { border-color: var(--accent); }
 
+/* ============================ 詳細（data_v2） ============================ */
+.detail-dept { font-size: 15px; color: var(--text-dim); margin: 2px 0 8px; font-weight: 600; }
+.detail-lead { font-size: 13px; line-height: 1.7; color: var(--text-dim); margin: 4px 0 12px; }
+.detail-h { font-size: 14px; margin: 16px 0 8px; color: var(--text); border-left: 3px solid var(--accent); padding-left: 8px; }
+.method-item { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
+.method-name { font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 4px; }
+.method-note { font-size: 12px; color: var(--text-dim); line-height: 1.6; }
+.ok-badge { font-size: 11px; color: var(--success, #16a085); font-weight: 600; }
+.detail-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.detail-link { font-size: 13px; color: var(--accent); text-decoration: none; border: 1px solid var(--border-hi); border-radius: 8px; padding: 6px 12px; }
+.detail-link:hover { border-color: var(--accent); }
+
 /* ============================ RESPONSIVE ============================ */
 @media (min-width: 720px) {
   .hero { padding: 48px 32px; }
@@ -1637,8 +1649,8 @@ main {
       </details>
       <div class="info-grid">
         <div class="info-card"><span class="info-num" id="statUni">—</span><span class="info-label">大学数</span></div>
-        <div class="info-card"><span class="info-num" id="statRegion">—</span><span class="info-label">地域</span></div>
-        <div class="info-card"><span class="info-num">7</span><span class="info-label">診断軸</span></div>
+        <div class="info-card"><span class="info-num" id="statRegion">—</span><span class="info-label">学部数</span></div>
+        <div class="info-card"><span class="info-num">3</span><span class="info-label">診断ゾーン</span></div>
       </div>
       <p class="data-credit" id="dataCredit">データ更新: —</p>
     </section>
@@ -2018,7 +2030,7 @@ function adjustedHensachi() {
 // ============================================================
 // お気に入り (localStorage)
 // ============================================================
-const FAV_KEY = 'favorites-v1';
+const FAV_KEY = 'favorites-v2ui';
 function getFavs() { try { return JSON.parse(localStorage.getItem(FAV_KEY) || '[]'); } catch { return []; } }
 function isFav(id) { return getFavs().includes(id); }
 function toggleFav(id) {
@@ -2744,18 +2756,30 @@ function zoneSection(title, arr, sub) {
   return sec;
 }
 
+function deptToItem(d, u) {
+  const h = d.hensachi || {};
+  return {
+    dept_id: d.dept_id, uni_id: u.id, uni_name: u.name, dept_name: d.name,
+    hensachi: { min: h.min != null ? h.min : null, max: h.max != null ? h.max : null },
+    fitScore: null, reasons: [],
+  };
+}
+
 function deptCard(item) {
   const el = document.createElement('div'); el.className = 'uni-card dept-card';
   const h = item.hensachi || {};
   const band = (h.min != null && h.max != null)
     ? (h.min === h.max ? `偏差値 ${h.min}` : `偏差値 ${h.min}〜${h.max}`) : '偏差値データなし';
   const fav = isFav(item.dept_id);
+  const badge = (item.fitScore != null) ? `<span class="fit-badge">適性 ${item.fitScore}</span>` : '';
+  const reasons = (item.reasons && item.reasons.length)
+    ? `<div class="uc-reasons">${item.reasons.map(x => `<span class="reason-chip">${escapeHtml(x)}</span>`).join('')}</div>` : '';
   el.innerHTML =
     `<div class="uc-head"><div class="uc-name">${escapeHtml(item.uni_name)}</div>` +
     `<button class="fav-btn" data-fav="${item.dept_id}" aria-label="お気に入り">${fav ? '❤️' : '🤍'}</button></div>` +
     `<div class="uc-dept">${escapeHtml(item.dept_name)}</div>` +
-    `<div class="uc-meta"><span class="uc-band">${band}</span><span class="fit-badge">適性 ${item.fitScore}</span></div>` +
-    `<div class="uc-reasons">${(item.reasons || []).map(x => `<span class="reason-chip">${escapeHtml(x)}</span>`).join('')}</div>` +
+    `<div class="uc-meta"><span class="uc-band">${band}</span>${badge}</div>` +
+    reasons +
     `<button class="uc-detail-btn" data-detail="${item.dept_id}">詳しく見る →</button>`;
   return el;
 }
@@ -2918,7 +2942,7 @@ function renderList() {
 
   // セレクトの初期化
   if (regionFilter.options.length <= 1) {
-    const regions = state.data.base?.regions || {};
+    const regions = DATA_V2.regions || {};
     for (const [id, r] of Object.entries(regions)) {
       const opt = document.createElement('option');
       opt.value = id;
@@ -2931,39 +2955,40 @@ function renderList() {
 
   const sel = regionFilter.value;
   const q = (searchInput.value || '').trim();
+  const uniById = new Map(DATA_V2.universities.map(u => [u.id, u]));
 
-  let unis = allUnis();
-  if (sel !== 'all') unis = unis.filter(u => u.region === sel);
-  if (q) unis = unis.filter(u => u.name.includes(q) || u.name_short?.includes(q));
+  const depts = DATA_V2.departments.filter(d => {
+    const u = uniById.get(d.uni_id);
+    if (!u) return false;
+    if (sel !== 'all' && u.region !== sel) return false;
+    if (q && !(u.name.includes(q) || (u.name_short || '').includes(q) || d.name.includes(q))) return false;
+    return true;
+  });
 
   // 地域ごとに集約
   const grouped = {};
-  unis.forEach(u => {
-    if (!grouped[u.region]) grouped[u.region] = [];
-    grouped[u.region].push(u);
+  depts.forEach(d => {
+    const reg = uniById.get(d.uni_id).region;
+    (grouped[reg] = grouped[reg] || []).push(d);
   });
-
-  // 地域は滋賀から近い順に固定、地域内は偏差値の高い順（不明は末尾で50音順）
   const REGION_ORDER = ['shiga', 'kyoto', 'osaka', 'hyogo', 'nara-wakayama', 'tokai', 'kanto', 'other'];
   const orderedIds = [...REGION_ORDER.filter(r => grouped[r]), ...Object.keys(grouped).filter(r => !REGION_ORDER.includes(r))];
+  const midOf = (d) => { const h = d.hensachi || {}; return (h.min != null && h.max != null) ? (h.min + h.max) / 2 : (h.min != null ? h.min : (h.max != null ? h.max : -1)); };
 
-  let html = '';
+  listEl.innerHTML = '';
   for (const regionId of orderedIds) {
     const arr = grouped[regionId];
-    arr.sort((a, b) => {
-      const ha = getByid('ippan', a.id)?.hensachi_representative;
-      const hb = getByid('ippan', b.id)?.hensachi_representative;
-      if (ha != null && hb != null && hb !== ha) return hb - ha;
-      if (ha == null && hb != null) return 1;
-      if (ha != null && hb == null) return -1;
-      return a.name.localeCompare(b.name, 'ja');
-    });
-    const region = getRegion(regionId);
-    html += `<h3 style="margin:16px 0 8px;color:${region?.color || 'var(--text)'};font-size:14px">${escapeHtml(region?.label || regionId)} (${arr.length}校)</h3>`;
-    html += arr.map(uni => renderUniCardSimple(uni)).join('');
+    arr.sort((a, b) => (midOf(b) - midOf(a)) || uniById.get(a.uni_id).name.localeCompare(uniById.get(b.uni_id).name, 'ja'));
+    const region = (DATA_V2.regions && DATA_V2.regions[regionId]) || {};
+    const head = document.createElement('h3');
+    head.style.cssText = `margin:16px 0 8px;color:${region.color || 'var(--text)'};font-size:14px`;
+    head.textContent = `${region.label || regionId}（${arr.length}学部）`;
+    listEl.appendChild(head);
+    arr.forEach(d => listEl.appendChild(deptCard(deptToItem(d, uniById.get(d.uni_id)))));
   }
-  listEl.innerHTML = html || '<p style="text-align:center;color:var(--text-muted);padding:32px">該当大学なし</p>';
-  bindUniCards();
+  if (!orderedIds.length) {
+    listEl.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:32px">該当する学部がありません</p>';
+  }
 }
 
 function renderUniCardSimple(uni) {
@@ -2988,51 +3013,166 @@ function renderUniCardSimple(uni) {
 // ============================================================
 // 詳細画面
 // ============================================================
-function renderDetail() {
-  const id = state.currentDetail;
-  const uni = getBase(id);
-  if (!uni) return;
+// ============================================================
+// 詳細（data_v2 / 学部単位）
+// ============================================================
+function _esc(s) { return escapeHtml(String(s)); }
+function _row(k, v) { return (v == null || v === '') ? '' : `<dt>${k}</dt><dd>${v}</dd>`; }
+function _dl(rows) { const h = rows.filter(Boolean).join(''); return h ? `<dl class="meta-grid">${h}</dl>` : ''; }
+function _yen(n) { return (n != null && n !== '') ? Number(n).toLocaleString() + '円' : null; }
+function _joinArr(a) { return (a && a.length) ? a.map(_esc).join('、') : null; }
+function _link(url, label) { return url ? `<a href="${_esc(url)}" target="_blank" rel="noopener" class="detail-link">${label} ↗</a>` : ''; }
+const METHOD_TYPE_LABEL = { sogo: '総合型選抜', koubo: '学校推薦・公募', ippan: '一般選抜', kyotsu: '共テ利用' };
 
-  const region = getRegion(uni.region);
-  const headerEl = document.getElementById('detailHeader');
-  const meta = [
-    ['地域', region?.label || '-'],
-    ['設置区分', uni.type],
-    ['所在地', uni.prefecture],
-    ['メインキャンパス', uni.campus_main],
-    ['滋賀から', `片道 約${uni.access_from_shiga_min}分 (${uni.commute_possible ? '通学可' : '下宿推奨'})`],
-    ['アクセス備考', uni.commute_note || '-'],
-  ];
-  headerEl.innerHTML = `
-    <h2>${escapeHtml(uni.name)}</h2>
+function renderDetail(deptId) {
+  if (deptId != null) state.currentDetail = deptId;
+  const { dept, uni } = findDeptV2(state.currentDetail);
+  if (!dept || !uni) return;
+  const h = dept.hensachi || {};
+  const band = (h.min != null && h.max != null)
+    ? (h.min === h.max ? `偏差値 ${h.min}` : `偏差値 ${h.min}〜${h.max}`) : '偏差値データなし';
+  const region = (DATA_V2.regions && DATA_V2.regions[uni.region]) || {};
+  document.getElementById('detailHeader').innerHTML = `
+    <h2>${_esc(uni.name)}</h2>
+    <div class="detail-dept">${_esc(dept.name)}</div>
     <div class="uni-meta">
-      <span class="region-badge" style="background:${region?.color || '#666'}">${escapeHtml(region?.label || '')}</span>
-      <span class="meta-tag">${escapeHtml(uni.type)}</span>
-      <span class="meta-tag">${escapeHtml(uni.prefecture)}</span>
-    </div>
-    <dl class="meta-grid">
-      ${meta.map(([k, v]) => `<dt>${k}</dt><dd>${escapeHtml(String(v ?? '-'))}</dd>`).join('')}
-    </dl>
-  `;
-  renderTab(state.currentTab);
+      <span class="region-badge" style="background:${region.color || '#666'}">${_esc(region.label || '')}</span>
+      <span class="meta-tag">${_esc(uni.type || '')}</span>
+      <span class="meta-tag">${_esc(uni.prefecture || '')}</span>
+      <span class="meta-tag">${band}</span>
+    </div>`;
+  renderTab(state.currentTab || 'basic');
 }
 
 function renderTab(tab) {
   state.currentTab = tab;
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
   const content = document.getElementById('tabContent');
-  const id = state.currentDetail;
+  const { dept, uni } = findDeptV2(state.currentDetail);
+  if (!dept || !uni) { content.innerHTML = ''; return; }
+  if (tab === 'basic') content.innerHTML = detailBasicV2(dept, uni);
+  else if (tab === 'entrance') content.innerHTML = detailEntranceV2(dept, uni);
+  else if (tab === 'employment') content.innerHTML = detailEmploymentV2(dept, uni);
+  else if (tab === 'life') content.innerHTML = detailLifeV2(dept, uni);
+}
 
-  if (tab === 'basic') {
-    content.innerHTML = renderBasicTab(id);
-  } else if (tab === 'entrance') {
-    content.innerHTML = renderEntranceTab(id);
-    bindEntranceSubtabs(id);
-  } else if (tab === 'employment') {
-    content.innerHTML = renderEmploymentTab(id);
-  } else if (tab === 'life') {
-    content.innerHTML = renderLifeTab(id);
+function detailBasicV2(dept, uni) {
+  const h = dept.hensachi || {};
+  const band = (h.min != null && h.max != null)
+    ? (h.min === h.max ? `${h.min}` : `${h.min}〜${h.max}`) + (h.basis ? `（${h.basis}基準）` : '') : null;
+  const bai = dept.bairitsu && dept.bairitsu.ippan
+    ? Object.entries(dept.bairitsu.ippan).filter(([k]) => /^\d{4}$/.test(k)).map(([y, v]) => `${y}年 ${v}倍`).join(' / ') : null;
+  const imap = new Map((DATA_V2.tags.interest || []).map(t => [t.id, t.label]));
+  const itags = (dept.interest_tags || []).map(id => imap.get(id)).filter(Boolean);
+  const zemi = (dept.zemi && dept.zemi.length) ? dept.zemi.join('、') : (typeof uni.zemi_features === 'string' ? uni.zemi_features : null);
+  const warn = dept.data_status === 'unconfirmed'
+    ? `<div class="estimated-banner">⚠️ この学部のデータは<strong>未確認</strong>です。必ず公式で確認してください。</div>` : '';
+  return warn +
+    (uni.feature ? `<p class="detail-lead">${_esc(uni.feature)}</p>` : '') +
+    _dl([
+      _row('偏差値', band),
+      _row('倍率（一般）', bai),
+      _row('キャンパス', _esc(dept.campus || uni.campus_main || '')),
+      _row('学べる分野', _joinArr(itags)),
+      _row('取得できる資格', _joinArr(dept.qualifications)),
+      _row('ゼミ・研究', zemi ? _esc(zemi) : null),
+    ]) +
+    (uni.official_links && uni.official_links.official_url ? `<div class="detail-links">${_link(uni.official_links.official_url, '公式サイト')}</div>` : '');
+}
+
+function detailEntranceV2(dept, uni) {
+  const methods = (dept.entry_methods || []);
+  const avail = methods.filter(m => m && m.available);
+  let html = '';
+  if (avail.length) {
+    html += `<h4 class="detail-h">使える入試方式</h4>`;
+    html += avail.map(m => {
+      const v = m.verified ? '<span class="ok-badge">✓確認済</span>' : '';
+      return `<div class="method-item"><div class="method-name">${_esc(METHOD_TYPE_LABEL[m.type] || m.type)} ${v}</div>` +
+        (m.note ? `<div class="method-note">${_esc(m.note)}</div>` : '') + `</div>`;
+    }).join('');
   }
+  // 詳細（評定条件・選考内容・日程）
+  const emd = uni.entry_method_details || {};
+  const nd = uni.nyushi_details || {};
+  ['sogo', 'koubo', 'ippan', 'kyotsu'].forEach(tp => {
+    const rows = (emd[tp] || []);
+    const sched = (nd[tp] || []);
+    if (!rows.length && !sched.length) return;
+    html += `<h4 class="detail-h">${_esc(METHOD_TYPE_LABEL[tp] || tp)} の詳細</h4>`;
+    rows.forEach(r => {
+      html += `<div class="method-item"><div class="method-name">${_esc(r.method_name || '')}</div>` +
+        _dl([
+          _row('評定条件', r.hyoutei_note ? _esc(r.hyoutei_note) : (r.hyoutei_min != null ? `${r.hyoutei_min}以上` : null)),
+          _row('選考内容', _joinArr(r.selection_content)),
+          _row('求める活動', r.required_achievement ? _esc(r.required_achievement) : null),
+          _row('出願時期', r.application_period ? _esc(r.application_period) : null),
+        ]) + `</div>`;
+    });
+    sched.forEach(s => {
+      html += `<div class="method-item"><div class="method-name">${_esc(s.method_name || '日程')}</div>` +
+        _dl([
+          _row('出願期間', s.application_period ? _esc(s.application_period) : null),
+          _row('試験日', s.exam_date ? _esc(s.exam_date) : null),
+          _row('合格発表', s.result_date ? _esc(s.result_date) : null),
+        ]) + `</div>`;
+    });
+  });
+  const nyLink = uni.official_links && (uni.official_links.nyushi_url || uni.official_links.youkou_url);
+  html += `<div class="estimated-banner" style="margin-top:12px">⚠️ 日程・条件は<strong>参考値</strong>です。現高3生は2027年度入試。<strong>必ず公式の最新募集要項で確認</strong>してください。</div>`;
+  if (nyLink) html += `<div class="detail-links">${_link(nyLink, '入試情報・募集要項')}</div>`;
+  return html || '<p class="detail-lead">入試情報は公式サイトで確認してください。</p>';
+}
+
+function detailEmploymentV2(dept, uni) {
+  const emap = new Map((DATA_V2.tags.employment || []).map(t => [t.id, t.label]));
+  const fields = (dept.employment_fields || []).map(id => emap.get(id)).filter(Boolean);
+  const sj = uni.shingaku_jisseki || {};
+  const emp = uni.employment || {};
+  const cc = uni.career_center || {};
+  const stars = (n) => (n != null ? '★'.repeat(Math.max(0, Math.min(5, n))) + '☆'.repeat(5 - Math.max(0, Math.min(5, n))) : null);
+  return _dl([
+    _row('この学部の就職分野', _joinArr(fields)),
+    _row('就職率', sj.shushoku_rate ? _esc(sj.shushoku_rate) : null),
+    _row('主な就職先', _joinArr(sj.top_employers)),
+    _row('教員就職', sj.kyoin_count ? _esc(sj.kyoin_count) : null),
+    _row('強み', _joinArr(emp.strengths)),
+    _row('資格に強い', typeof uni.shikaku_gokakuritsu === 'string' ? _esc(uni.shikaku_gokakuritsu) : null),
+    _row('キャリア支援', _joinArr(cc.features)),
+    _row('支援の充実度', stars(cc.quality)),
+  ]) +
+    (uni.official_links && uni.official_links.shingaku_url ? `<div class="detail-links">${_link(uni.official_links.shingaku_url, '進路・就職実績')}</div>` : '') ||
+    '<p class="detail-lead">就職情報は公式サイトで確認してください。</p>';
+}
+
+function detailLifeV2(dept, uni) {
+  const lc = uni.living_cost || {};
+  const ac = uni.additional_costs || {};
+  const sg = uni.shogakukin || {};
+  const cn = uni.campus_neighborhood || {};
+  const oc = uni.open_campus || {};
+  const access = uni.access_from_shiga_min != null
+    ? `滋賀から片道 約${uni.access_from_shiga_min}分（${uni.commute_possible ? '通学可' : '下宿推奨'}）` : null;
+  let html = _dl([
+    _row('学費（年）', _yen(uni.tuition_yen_per_year)),
+    _row('学費の目安', uni.tuition_note ? _esc(uni.tuition_note) : null),
+    _row('家賃目安', (lc.rent_min != null) ? `月 ${Number(lc.rent_min).toLocaleString()}〜${Number(lc.rent_max).toLocaleString()}円` : null),
+    _row('生活費（月）', _yen(lc.monthly_total)),
+    _row('4年間の生活費目安', _yen(lc.four_year_total)),
+    _row('その他費用', [ac.textbook_yen_per_year ? '教材 約' + Number(ac.textbook_yen_per_year).toLocaleString() + '円/年' : null, ac.jisshu_hi ? _esc(ac.jisshu_hi) : null].filter(Boolean).join(' / ') || null),
+    _row('奨学金', sg.general_shogakukin ? _esc(sg.general_shogakukin) : null),
+    _row('アクセス', access),
+    _row('通学備考', uni.commute_note ? _esc(uni.commute_note) : null),
+    _row('最寄駅', cn.nearest_station ? _esc(cn.nearest_station) + (cn.walking_min_from_station ? `（徒歩${cn.walking_min_from_station}分）` : '') : null),
+    _row('周辺環境', cn.area_description ? _esc(cn.area_description) : null),
+    _row('オープンcampus', oc.open_campus_seasons ? _esc(oc.open_campus_seasons) : null),
+  ]);
+  const links = [
+    _link(sg.shogakukin_official_url, '奨学金情報'),
+    _link(oc.open_campus_url, 'オープンキャンパス'),
+  ].filter(Boolean).join('');
+  if (links) html += `<div class="detail-links">${links}</div>`;
+  return html || '<p class="detail-lead">生活情報は公式サイトで確認してください。</p>';
 }
 
 // ============================================================
@@ -3452,57 +3592,14 @@ function renderFavs() {
   const el = document.getElementById('favsContent');
   const favs = getFavs();
   if (favs.length === 0) {
-    el.innerHTML = '<div class="empty-state" style="padding:48px 16px;text-align:center"><p>まだお気に入りが登録されていません。</p><p style="font-size:13px;color:var(--text-muted);margin-top:8px">診断結果や大学一覧の <strong>🤍</strong> ボタンで追加してください。</p></div>';
+    el.innerHTML = '<div class="empty-state" style="padding:48px 16px;text-align:center"><p>まだお気に入りが登録されていません。</p><p style="font-size:13px;color:var(--text-muted);margin-top:8px">診断結果や学部一覧の <strong>🤍</strong> ボタンで追加してください。</p></div>';
     return;
   }
-  const unis = favs.map(id => getBase(id)).filter(Boolean);
-  // 比較表
-  const rows = [
-    ['偏差値', u => getByid('ippan', u.id)?.hensachi_representative ?? '-'],
-    ['設置', u => u.type],
-    ['滋賀から', u => `${u.access_from_shiga_min}分`],
-    ['学費(年)', u => u.tuition_yen_per_year ? `¥${Math.round(u.tuition_yen_per_year/10000)}万` : '-'],
-    ['寮', u => u.dormitory != null ? (u.dormitory ? '✅' : '❌') : '-'],
-    ['4年生活費', u => u.living_cost?.four_year_total ? `¥${Math.round(u.living_cost.four_year_total/10000)}万` : '-'],
-    ['教員', u => getByid('employment', u.id)?.ratings?.kyoin ?? '-'],
-    ['公務員', u => getByid('employment', u.id)?.ratings?.kōmuin_ippan ?? '-'],
-    ['一般企業', u => getByid('employment', u.id)?.ratings?.kigyō_ippan ?? '-'],
-    ['医療・専門職', u => getByid('employment', u.id)?.ratings?.iryō ?? '-'],
-  ];
-  let table = `<div class="compare-wrap"><table class="compare-table"><thead><tr><th></th>`;
-  unis.forEach(u => {
-    table += `<th><div class="compare-uni-head">
-      <button class="compare-fav-rm" data-fav-rm="${u.id}" title="お気に入りから外す">×</button>
-      <a class="compare-uni-link" data-uni-detail="${u.id}">${escapeHtml(u.name_short || u.name)}</a>
-    </div></th>`;
-  });
-  table += '</tr></thead><tbody>';
-  for (const [label, fn] of rows) {
-    table += `<tr><th>${label}</th>`;
-    unis.forEach(u => {
-      table += `<td>${escapeHtml(String(fn(u) ?? '-'))}</td>`;
-    });
-    table += '</tr>';
-  }
-  table += '</tbody></table></div>';
-  const tooMany = unis.length > 6 ? '<p style="font-size:12px;color:var(--accent);margin:4px 0 8px">💡 比較は5校程度に絞ると見やすく、志望順位も考えやすくなります</p>' : '';
-  el.innerHTML = `<p style="font-size:12px;color:var(--text-dim);margin:8px 0">${unis.length} 校登録中</p>${tooMany}` + table;
-
-  // バインド
-  document.querySelectorAll('[data-fav-rm]').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      toggleFav(btn.dataset.favRm);
-      renderFavs();
-    });
-  });
-  document.querySelectorAll('[data-uni-detail]').forEach(a => {
-    a.addEventListener('click', () => {
-      state.currentDetail = a.dataset.uniDetail;
-      state.currentTab = 'basic';
-      go('detail');
-      renderDetail();
-    });
+  el.innerHTML = `<p style="font-size:12px;color:var(--text-dim);margin:8px 0">${favs.length} 学部を登録中</p>`;
+  favs.forEach(deptId => {
+    const { dept, uni } = findDeptV2(deptId);
+    if (!dept || !uni) return;
+    el.appendChild(deptCard(deptToItem(dept, uni)));
   });
 }
 
@@ -3513,10 +3610,9 @@ function renderHome() {
   const statUni = document.getElementById('statUni');
   const statRegion = document.getElementById('statRegion');
   const dataCredit = document.getElementById('dataCredit');
-  statUni.textContent = allUnis().length;
-  const regions = Object.keys(state.data.base?.regions || {});
-  statRegion.textContent = regions.length;
-  dataCredit.textContent = `データ更新: ${state.data.base?.updated || '—'}`;
+  if (statUni) statUni.textContent = (DATA_V2 && DATA_V2.universities) ? DATA_V2.universities.length : '—';
+  if (statRegion) statRegion.textContent = (DATA_V2 && DATA_V2.departments) ? DATA_V2.departments.length : '—';
+  if (dataCredit) dataCredit.textContent = `データ更新: ${(DATA_V2 && DATA_V2.updated) || '—'}`;
 }
 
 // ============================================================
@@ -3524,7 +3620,6 @@ function renderHome() {
 // ============================================================
 async function init() {
   go('loading', { noHistory: true });
-  await loadData();
   if (!loadV2()) { console.error('v2データ/エンジンの読み込みに失敗しました'); }
   buildRiasecScreen();
   setupHyoutei();
