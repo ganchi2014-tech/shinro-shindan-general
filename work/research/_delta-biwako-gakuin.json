@@ -1,0 +1,35 @@
+{
+ "uni_id": "biwako-gakuin",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3889/difficulty/",
+  "https://search.keinet.ne.jp/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "biwako-gakuin-d01",
+   "campus": "本部キャンパス（滋賀県東近江市布施町）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3889/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり。共テ得点率50〜57%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku"],
+   "unconfirmed": false,
+   "notes": "教育福祉学部 子ども学科（2025年より小学校教育・幼児教育・学校保健・総合マネジメントの4コース）。河合塾35.0、共テボーダー50〜57%。倍率はパスナビ未取得（低倍率帯）"
+  },
+  {
+   "dept_id": "biwako-gakuin-d02",
+   "campus": "本部キャンパス（滋賀県東近江市布施町）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3889/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["sports_kenko", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "教育福祉学部 スポーツ教育学科（2025年より体育教育・特別支援教育・スポーツマネジメントの3コース）。河合塾35.0。倍率はパスナビ未取得（低倍率帯）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。私立小規模の教育福祉系大、全学東近江キャンパス（滋賀県）。看板ゼミは省略"
+}

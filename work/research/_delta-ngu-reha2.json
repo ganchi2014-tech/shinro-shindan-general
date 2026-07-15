@@ -1,0 +1,23 @@
+{
+ "uni_id": "ngu",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3760/difficulty/?facultyID=040",
+  "https://search.keinet.ne.jp/2453/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "ngu-reha2",
+   "campus": "名古屋キャンパスひびの（愛知県名古屋市熱田区）",
+   "hensachi": { "min": 40.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3760/difficulty/?facultyID=040" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "リハビリテーション学部 作業療法学科（作業療法士養成）。河合塾偏差値40.0〜45.0（理学療法学科45.0に準ずる）。倍率はパスナビ学科別未取得（低倍率帯）"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度）。私立総合大、リハビリ系は名古屋キャンパスひびの。看板ゼミは省略"
+}

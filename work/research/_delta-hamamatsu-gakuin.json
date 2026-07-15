@@ -1,0 +1,35 @@
+{
+ "uni_id": "hamamatsu-gakuin",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3592/difficulty/",
+  "https://search.keinet.ne.jp/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "hamamatsu-gakuin-d01",
+   "campus": "浜松キャンパス（静岡県浜松市中央区布橋）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3592/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["service", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "現代コミュニケーション学部 地域共創学科（旧・地域共創学部系）。河合塾BF〜35.0。倍率はパスナビ未取得（BF水準）"
+  },
+  {
+   "dept_id": "hamamatsu-gakuin-d02",
+   "campus": "浜松キャンパス（静岡県浜松市中央区布橋）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3592/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["kyoiku"],
+   "unconfirmed": false,
+   "notes": "現代コミュニケーション学部 子どもコミュニケーション学科（保育・幼児教育）。河合塾BF〜35.0。倍率はパスナビ未取得（BF水準）"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度）。私立小規模大、全学浜松キャンパス（静岡県）。看板ゼミは省略"
+}

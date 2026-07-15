@@ -46957,13 +46957,13 @@
    "dept_id": "chukyo-gakuin-kango",
    "uni_id": "chukyo-gakuin",
    "name": "看護学部 看護学科",
-   "campus": "瑞浪キャンパス",
+   "campus": "中津川キャンパス（岐阜県中津川市駒場）",
    "hensachi": {
-    "min": 45,
-    "max": 50,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3565/difficulty/?facultyID=010",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {
@@ -46988,13 +46988,13 @@
     {
      "type": "ippan",
      "available": true,
-     "note": "前期（国語面接型／2科目受験型／1科目利用面接型）・後期（国語面接型／小論文面接型）。出典 https://secondhome.chukyogakuin-u.ac.jp/admissions/ippan/",
+     "note": "一般選抜（前期・後期）",
      "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": "共通テストプラス（併願）。出典 https://secondhome.chukyogakuin-u.ac.jp/admissions/ippan/",
+     "note": "共通テスト利用選抜あり。共テ得点率36%（河合塾）",
      "verified": true
     }
    ],
@@ -47006,11 +47006,10 @@
     "iryo"
    ],
    "employment_fields": [
-    "iryo_fukushi",
-    "kyoiku"
+    "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "chukyo-gakuin-keiei",
@@ -47685,13 +47684,13 @@
    "dept_id": "ngu-reha2",
    "uni_id": "ngu",
    "name": "リハビリテーション学部 作業療法学科",
-   "campus": "瀬戸",
+   "campus": "名古屋キャンパスひびの（愛知県名古屋市熱田区）",
    "hensachi": {
-    "min": 45,
-    "max": 50,
+    "min": 40,
+    "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3760/difficulty/?facultyID=040",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {
@@ -47717,13 +47716,13 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
+     "note": "一般選抜（前期・後期）",
      "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": "共テ利用の有無は要調査",
+     "note": "共通テスト利用選抜あり",
      "verified": true
     }
    ],
@@ -47737,7 +47736,7 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "ngu-d01",
@@ -50174,13 +50173,13 @@
    "dept_id": "hamamatsu-gakuin-d01",
    "uni_id": "hamamatsu-gakuin",
    "name": "現代コミュニケーション学部 地域共創学科",
-   "campus": "浜松キャンパス（静岡県浜松市中央区布橋三丁目）",
+   "campus": "浜松キャンパス（静岡県浜松市中央区布橋）",
    "hensachi": {
     "min": 35,
-    "max": 40,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3592/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {
@@ -50206,13 +50205,13 @@
     {
      "type": "ippan",
      "available": true,
-     "note": "一般選抜（A・B日程）",
+     "note": "一般選抜（前期・後期）",
      "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": "大学入学共通テスト利用入試（A・B・C日程）",
+     "note": "共通テスト利用選抜あり",
      "verified": true
     }
    ],
@@ -50224,24 +50223,24 @@
     "shakai"
    ],
    "employment_fields": [
-    "ryutsu",
     "service",
-    "koumuin"
+    "koumuin",
+    "ryutsu"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "hamamatsu-gakuin-d02",
    "uni_id": "hamamatsu-gakuin",
    "name": "現代コミュニケーション学部 子どもコミュニケーション学科",
-   "campus": "浜松キャンパス（静岡県浜松市中央区布橋三丁目）",
+   "campus": "浜松キャンパス（静岡県浜松市中央区布橋）",
    "hensachi": {
     "min": 35,
-    "max": 40,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3592/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {
@@ -50267,13 +50266,13 @@
     {
      "type": "ippan",
      "available": true,
-     "note": "一般選抜（A・B日程）",
+     "note": "一般選抜（前期・後期）",
      "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": "大学入学共通テスト利用入試（A・B・C日程）",
+     "note": "共通テスト利用選抜あり",
      "verified": true
     }
    ],
@@ -50286,11 +50285,10 @@
     "kyoiku"
    ],
    "employment_fields": [
-    "kyoiku",
-    "koumuin"
+    "kyoiku"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "gifu-kyoritsu-keizai",
@@ -62000,13 +61998,13 @@
    "dept_id": "seisen-d01",
    "uni_id": "seisen",
    "name": "人間学部（人間心理・カウンセリング）",
-   "campus": "彦根",
+   "campus": "本部キャンパス（滋賀県彦根市肥田町）",
    "hensachi": {
-    "min": 37.5,
-    "max": 40,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3884/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -62029,14 +62027,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -62046,21 +62044,24 @@
    "interest_tags": [
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "seisen-kango",
    "uni_id": "seisen",
    "name": "看護学部",
-   "campus": "彦根",
+   "campus": "本部キャンパス（滋賀県彦根市肥田町）",
    "hensachi": {
-    "min": 42.5,
-    "max": 45,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3884/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -62083,14 +62084,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり。共テ得点率49%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -62100,21 +62101,23 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "biwako-gakuin-d01",
    "uni_id": "biwako-gakuin",
    "name": "教育福祉学部（子ども学科）",
-   "campus": "東近江",
+   "campus": "本部キャンパス（滋賀県東近江市布施町）",
    "hensachi": {
-    "min": 37.5,
-    "max": 40,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3889/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -62137,14 +62140,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり。共テ得点率50〜57%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -62155,21 +62158,23 @@
    "interest_tags": [
     "kyoiku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "biwako-gakuin-d02",
    "uni_id": "biwako-gakuin",
    "name": "教育福祉学部（スポーツ教育学科）",
-   "campus": "東近江",
+   "campus": "本部キャンパス（滋賀県東近江市布施町）",
    "hensachi": {
-    "min": 37.5,
-    "max": 40,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3889/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -62192,14 +62197,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -62210,9 +62215,12 @@
     "kyoiku",
     "sports"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "sports_kenko",
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nagoya-univ-bungaku",
