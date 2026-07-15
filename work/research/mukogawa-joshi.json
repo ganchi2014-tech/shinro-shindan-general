@@ -1,0 +1,166 @@
+{
+ "uni_id": "mukogawa-joshi",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/",
+  "https://search.keinet.ne.jp/2576/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "mukogawa-joshi-d01",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.8 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー55〜57%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "薬学部（健康生命薬科学・6年制薬学）。偏差値42.5〜45.0、共テボーダー55〜57%。倍率2025:1.8倍"
+  },
+  {
+   "dept_id": "mukogawa-joshi-kango",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
+   "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー69%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "看護学部 看護学科。学内最高偏差値47.5、共テボーダー69%。倍率はパスナビ学部計表に非掲載のため未収録（現行推定値を保持）"
+  },
+  {
+   "dept_id": "mukogawa-joshi-kyoiku",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.8 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー57%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku"],
+   "unconfirmed": false,
+   "notes": "教育学部 教育学科（幼・小・中高教員養成）。偏差値45.0、共テボーダー57%。倍率2025:1.8倍"
+  },
+  {
+   "dept_id": "mukogawa-joshi-shokumotsueiyo",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー61〜63%（河合塾）" }
+   ],
+   "employment_fields": ["shokuhin", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "食物栄養科学部（食物栄養・食創造科学）。偏差値42.5〜45.0、共テボーダー61〜63%。管理栄養士養成。倍率2025:1.5倍"
+  },
+  {
+   "dept_id": "mukogawa-joshi-kenchiku",
+   "campus": "上甲子園キャンパス（兵庫県西宮市戸崎町）",
+   "hensachi": { "min": 40.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー59〜65%（河合塾）" }
+   ],
+   "employment_fields": ["kensetsu"],
+   "unconfirmed": false,
+   "notes": "建築学部（建築・景観建築）。日本の女子大初の建築学部。偏差値40.0〜45.0、共テボーダー59〜65%。倍率2025:1.9倍"
+  },
+  {
+   "dept_id": "mukogawa-joshi-bungaku",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
+   "hensachi": { "min": 40.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.3 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー53〜63%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "media", "service"],
+   "unconfirmed": false,
+   "notes": "文学部（日本語日本文・英語グローバル・心理社会〈一部〉）。偏差値40.0〜45.0、共テボーダー53〜63%。倍率2025:1.3倍"
+  },
+  {
+   "dept_id": "mukogawa-joshi-keiei",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー69%（河合塾）" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "service"],
+   "unconfirmed": false,
+   "notes": "経営学部 経営学科。学内最高倍率、偏差値42.5〜45.0、共テボーダー69%。倍率2025:2.5倍"
+  },
+  {
+   "dept_id": "mukogawa-joshi-d02",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.4 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー55〜64%（河合塾）" }
+   ],
+   "employment_fields": ["it", "media", "service"],
+   "unconfirmed": false,
+   "notes": "社会情報学部（社会情報・情報メディア）。偏差値42.5〜45.0、共テボーダー55〜64%。倍率2025:1.4倍"
+  },
+  {
+   "dept_id": "mukogawa-joshi-kenkosports",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
+   "hensachi": { "min": 40.0, "max": 42.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.4 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー51〜65%（河合塾）" }
+   ],
+   "employment_fields": ["sports_kenko", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "健康・スポーツ科学部（健康スポーツ科学・スポーツマネジメント）。偏差値40.0〜42.5、共テボーダー51〜65%。倍率2025:1.4倍"
+  },
+  {
+   "dept_id": "mukogawa-joshi-d03",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
+   "hensachi": { "min": 45.0, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.8 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー57〜67%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi", "service"],
+   "unconfirmed": false,
+   "notes": "心理・社会福祉学部（心理・社会福祉）。偏差値45.0〜47.5、共テボーダー57〜67%。公認心理師・社会福祉士系。倍率2025:1.8倍"
+  },
+  {
+   "dept_id": "mukogawa-joshi-d04",
+   "campus": "浜甲子園キャンパス（兵庫県西宮市甲子園九番町）",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.4 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー59%（河合塾）" }
+   ],
+   "employment_fields": ["kensetsu", "shokuhin", "service"],
+   "unconfirmed": false,
+   "notes": "環境共生学部（2025年新設、旧生活環境学部系の環境・共生分野）。偏差値42.5〜45.0、共テボーダー59%。倍率2025:1.4倍"
+  },
+  {
+   "dept_id": "mukogawa-joshi-ongaku",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
+   "hensachi": { "min": 35.0, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.1 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（実技を含む）" }
+   ],
+   "employment_fields": ["media", "kyoiku", "service"],
+   "unconfirmed": false,
+   "notes": "音楽学部（演奏・応用音楽）。河合塾BF〜37.5、共テ得点率データなし。実技中心選抜。倍率2025:1.1倍（学内最低）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度・第1回全統記述模試）。倍率は旺文社パスナビ掲載の一般選抜（2025年度・学部計）。看護学部は学部計倍率表に非掲載のため倍率未収録。私立の総合女子大（12学部）。主に中央キャンパス（西宮市）、建築＝上甲子園、環境共生＝浜甲子園キャンパス。2027年度に共学化予定。看板ゼミは省略"
+}

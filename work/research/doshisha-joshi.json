@@ -1,0 +1,90 @@
+{
+ "uni_id": "doshisha-joshi",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4000/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/",
+  "https://search.keinet.ne.jp/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "doshisha-joshi-d01",
+   "campus": "京田辺キャンパス（京都府京田辺市興戸）",
+   "hensachi": { "min": 45.0, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4000/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.6 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー61〜66%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "薬学部 医療薬学科（6年制）。偏差値45.0〜47.5、共テボーダー61〜66%。倍率2025:1.6倍"
+  },
+  {
+   "dept_id": "doshisha-joshi-kango",
+   "campus": "京田辺キャンパス（京都府京田辺市興戸）",
+   "hensachi": { "min": 50.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4000/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー69〜71%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "看護学部 看護学科。学内最高倍率、偏差値50.0、共テボーダー69〜71%。倍率2025:3.0倍"
+  },
+  {
+   "dept_id": "doshisha-joshi-gendaishakai",
+   "campus": "京田辺キャンパス（京都府京田辺市興戸）",
+   "hensachi": { "min": 45.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4000/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.3 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー59〜70%（河合塾）" }
+   ],
+   "employment_fields": ["service", "koumuin", "kinyu"],
+   "unconfirmed": false,
+   "notes": "現代社会学部（社会システム・現代こども）。偏差値45.0〜50.0、共テボーダー59〜70%。倍率2025:2.3倍"
+  },
+  {
+   "dept_id": "doshisha-joshi-d02",
+   "campus": "今出川キャンパス（京都府京都市上京区）",
+   "hensachi": { "min": 37.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4000/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー54〜68%（河合塾）" }
+   ],
+   "employment_fields": ["media", "service", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "学芸学部（音楽・メディア創造・国際教養）。偏差値37.5〜47.5と幅広い、共テボーダー54〜68%。倍率2025:1.7倍"
+  },
+  {
+   "dept_id": "doshisha-joshi-d03",
+   "campus": "今出川キャンパス（京都府京都市上京区）",
+   "hensachi": { "min": 45.0, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4000/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.6 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー61〜70%（河合塾）" }
+   ],
+   "employment_fields": ["media", "kyoiku", "service"],
+   "unconfirmed": false,
+   "notes": "表象文化学部（英語英文・日本語日本文）。偏差値45.0〜47.5、共テボーダー61〜70%。倍率2025:1.6倍"
+  },
+  {
+   "dept_id": "doshisha-joshi-seikatsukagaku",
+   "campus": "京田辺キャンパス（京都府京田辺市興戸）",
+   "hensachi": { "min": 45.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4000/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー67〜79%（河合塾）" }
+   ],
+   "employment_fields": ["shokuhin", "iryo_fukushi", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "生活科学部（人間生活・食物栄養科学）。学内上位、偏差値45.0〜50.0、共テボーダー67〜79%。管理栄養士養成。倍率2025:3.0倍"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度・第1回全統記述模試）。倍率は旺文社パスナビ掲載の一般選抜（2025年度・学部計）。私立女子大。薬・看護・現代社会・生活科学＝京田辺、学芸・表象文化＝今出川キャンパス。看板ゼミは省略"
+}

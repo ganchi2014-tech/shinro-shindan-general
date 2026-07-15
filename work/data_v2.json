@@ -54501,18 +54501,20 @@
    "dept_id": "kyoto-joshi-bungaku",
    "uni_id": "kyoto-joshi",
    "name": "文学部",
-   "campus": "東山",
+   "campus": "東山キャンパス（京都府京都市東山区今熊野北日吉町）",
    "hensachi": {
-    "min": 47.5,
-    "max": 52.5,
+    "min": 40,
+    "max": 50,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.2
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -54530,14 +54532,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期A/B・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー63〜68%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -54547,26 +54549,32 @@
    "interest_tags": [
     "bungaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-joshi-hattatsukyoiku",
    "uni_id": "kyoto-joshi",
    "name": "発達教育学部",
-   "campus": "東山",
+   "campus": "東山キャンパス（京都府京都市東山区今熊野北日吉町）",
    "hensachi": {
-    "min": 45,
-    "max": 50,
+    "min": 40,
+    "max": 42.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -54584,14 +54592,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期A/B・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー62〜64%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -54601,26 +54609,30 @@
    "interest_tags": [
     "kyoiku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-joshi-d01",
    "uni_id": "kyoto-joshi",
    "name": "心理共生学部",
-   "campus": "東山",
+   "campus": "東山キャンパス（京都府京都市東山区今熊野北日吉町）",
    "hensachi": {
-    "min": 47.5,
-    "max": 50,
+    "min": 42.5,
+    "max": 47.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -54638,14 +54650,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期A/B・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー72〜78%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -54655,26 +54667,31 @@
    "interest_tags": [
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-joshi-kasei",
    "uni_id": "kyoto-joshi",
    "name": "家政学部",
-   "campus": "東山",
+   "campus": "東山キャンパス（京都府京都市東山区今熊野北日吉町）",
    "hensachi": {
-    "min": 47.5,
-    "max": 52.5,
+    "min": 40,
+    "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.8
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -54692,14 +54709,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期A/B・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー67〜71%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -54709,26 +54726,32 @@
    "interest_tags": [
     "eiyo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "shokuhin",
+    "iryo_fukushi",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-joshi-gendaishakai",
    "uni_id": "kyoto-joshi",
    "name": "現代社会学部",
-   "campus": "東山",
+   "campus": "東山キャンパス（京都府京都市東山区今熊野北日吉町）",
    "hensachi": {
-    "min": 47.5,
-    "max": 50,
+    "min": 40,
+    "max": 42.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -54746,14 +54769,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期A/B・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー64〜67%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -54763,26 +54786,32 @@
    "interest_tags": [
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "koumuin",
+    "media"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-joshi-ho",
    "uni_id": "kyoto-joshi",
    "name": "法学部",
-   "campus": "東山",
+   "campus": "東山キャンパス（京都府京都市東山区今熊野北日吉町）",
    "hensachi": {
-    "min": 47.5,
-    "max": 47.5,
+    "min": 42.5,
+    "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -54800,14 +54829,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期A/B・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー68〜70%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -54819,26 +54848,32 @@
    "interest_tags": [
     "hokei"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-joshi-datascience",
    "uni_id": "kyoto-joshi",
    "name": "データサイエンス学部",
-   "campus": "東山",
+   "campus": "東山キャンパス（京都府京都市東山区今熊野北日吉町）",
    "hensachi": {
-    "min": 45,
-    "max": 47.5,
+    "min": 40,
+    "max": 42.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.6
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -54856,14 +54891,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期A/B・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー59〜62%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -54872,26 +54907,32 @@
    "interest_tags": [
     "joho"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "it",
+    "kinyu",
+    "maker"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "doshisha-joshi-d01",
    "uni_id": "doshisha-joshi",
    "name": "薬学部（6年制）",
-   "campus": "京田辺",
+   "campus": "京田辺キャンパス（京都府京田辺市興戸）",
    "hensachi": {
-    "min": 47.5,
-    "max": 50,
+    "min": 45,
+    "max": 47.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4000/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.6
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -54909,14 +54950,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー61〜66%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -54925,26 +54966,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "doshisha-joshi-kango",
    "uni_id": "doshisha-joshi",
    "name": "看護学部",
-   "campus": "京田辺",
+   "campus": "京田辺キャンパス（京都府京田辺市興戸）",
    "hensachi": {
-    "min": 47.5,
+    "min": 50,
     "max": 50,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4000/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -54962,14 +55007,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー69〜71%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -54979,26 +55024,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "doshisha-joshi-gendaishakai",
    "uni_id": "doshisha-joshi",
    "name": "現代社会学部",
-   "campus": "京田辺",
+   "campus": "京田辺キャンパス（京都府京田辺市興戸）",
    "hensachi": {
     "min": 45,
     "max": 50,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4000/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55016,14 +55065,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー59〜70%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55033,26 +55082,32 @@
    "interest_tags": [
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "koumuin",
+    "kinyu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "doshisha-joshi-d02",
    "uni_id": "doshisha-joshi",
    "name": "学芸学部",
-   "campus": "京田辺",
+   "campus": "今出川キャンパス（京都府京都市上京区）",
    "hensachi": {
-    "min": 42.5,
-    "max": 50,
+    "min": 37.5,
+    "max": 47.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4000/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55070,14 +55125,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー54〜68%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55087,26 +55142,32 @@
    "interest_tags": [
     "unclassified"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "media",
+    "service",
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "doshisha-joshi-d03",
    "uni_id": "doshisha-joshi",
    "name": "表象文化学部",
-   "campus": "今出川",
+   "campus": "今出川キャンパス（京都府京都市上京区）",
    "hensachi": {
     "min": 45,
     "max": 47.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4000/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.6
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55124,14 +55185,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー61〜70%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55141,26 +55202,32 @@
     "bungaku",
     "geijutsu"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "media",
+    "kyoiku",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "doshisha-joshi-seikatsukagaku",
    "uni_id": "doshisha-joshi",
    "name": "生活科学部",
-   "campus": "今出川",
+   "campus": "京田辺キャンパス（京都府京田辺市興戸）",
    "hensachi": {
     "min": 45,
     "max": 50,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4000/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4000/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55178,14 +55245,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー67〜79%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55195,26 +55262,32 @@
    "interest_tags": [
     "eiyo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "shokuhin",
+    "iryo_fukushi",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "mukogawa-joshi-d01",
    "uni_id": "mukogawa-joshi",
    "name": "薬学部（6年制）",
-   "campus": "浜甲子園",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
    "hensachi": {
     "min": 42.5,
-    "max": 47.5,
+    "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.8
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55232,14 +55305,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー55〜57%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55248,21 +55321,23 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "mukogawa-joshi-kango",
    "uni_id": "mukogawa-joshi",
    "name": "看護学部",
-   "campus": "中央",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
    "hensachi": {
     "min": 47.5,
-    "max": 50,
+    "max": 47.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -55285,14 +55360,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー69%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55302,26 +55377,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "mukogawa-joshi-kyoiku",
    "uni_id": "mukogawa-joshi",
    "name": "教育学部",
-   "campus": "中央",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
    "hensachi": {
     "min": 45,
-    "max": 47.5,
+    "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.8
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55339,14 +55418,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー57%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55357,26 +55436,30 @@
    "interest_tags": [
     "kyoiku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "mukogawa-joshi-shokumotsueiyo",
    "uni_id": "mukogawa-joshi",
    "name": "食物栄養科学部",
-   "campus": "中央",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
    "hensachi": {
-    "min": 45,
-    "max": 50,
+    "min": 42.5,
+    "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55394,14 +55477,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー61〜63%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55411,26 +55494,31 @@
     "nogaku",
     "eiyo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "shokuhin",
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "mukogawa-joshi-kenchiku",
    "uni_id": "mukogawa-joshi",
    "name": "建築学部",
-   "campus": "上甲子園",
+   "campus": "上甲子園キャンパス（兵庫県西宮市戸崎町）",
    "hensachi": {
-    "min": 45,
-    "max": 47.5,
+    "min": 40,
+    "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.9
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55448,14 +55536,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー59〜65%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55464,26 +55552,30 @@
    "interest_tags": [
     "kenchiku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "mukogawa-joshi-bungaku",
    "uni_id": "mukogawa-joshi",
    "name": "文学部",
-   "campus": "中央",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
    "hensachi": {
-    "min": 42.5,
-    "max": 47.5,
+    "min": 40,
+    "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55501,14 +55593,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー53〜63%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55518,26 +55610,32 @@
    "interest_tags": [
     "bungaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "mukogawa-joshi-keiei",
    "uni_id": "mukogawa-joshi",
    "name": "経営学部",
-   "campus": "中央",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
    "hensachi": {
     "min": 42.5,
     "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55555,14 +55653,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー69%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55574,26 +55672,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "ryutsu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "mukogawa-joshi-d02",
    "uni_id": "mukogawa-joshi",
    "name": "社会情報学部",
-   "campus": "中央",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
    "hensachi": {
     "min": 42.5,
     "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.4
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55611,14 +55715,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー55〜64%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55628,26 +55732,32 @@
     "shakai",
     "joho"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "it",
+    "media",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "mukogawa-joshi-kenkosports",
    "uni_id": "mukogawa-joshi",
    "name": "健康スポーツ科学部",
-   "campus": "中央",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
    "hensachi": {
-    "min": 42.5,
-    "max": 45,
+    "min": 40,
+    "max": 42.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.4
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55665,14 +55775,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー51〜65%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55682,26 +55792,31 @@
    "interest_tags": [
     "sports"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "sports_kenko",
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "mukogawa-joshi-d03",
    "uni_id": "mukogawa-joshi",
    "name": "心理・社会福祉学部",
-   "campus": "中央",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
    "hensachi": {
-    "min": 42.5,
-    "max": 45,
+    "min": 45,
+    "max": 47.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.8
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55719,14 +55834,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー57〜67%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55736,26 +55851,31 @@
    "interest_tags": [
     "shakai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "mukogawa-joshi-d04",
    "uni_id": "mukogawa-joshi",
    "name": "環境共生学部（2025年新設）",
-   "campus": "中央",
+   "campus": "浜甲子園キャンパス（兵庫県西宮市甲子園九番町）",
    "hensachi": {
     "min": 42.5,
     "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.4
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55773,14 +55893,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー59%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -55789,26 +55909,32 @@
    "interest_tags": [
     "nogaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kensetsu",
+    "shokuhin",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "mukogawa-joshi-ongaku",
    "uni_id": "mukogawa-joshi",
    "name": "音楽学部",
-   "campus": "中央",
+   "campus": "中央キャンパス（兵庫県西宮市池開町）",
    "hensachi": {
-    "min": 40,
-    "max": 42.5,
+    "min": 35,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.1
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4560/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -55826,8 +55952,8 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（実技を含む）",
+     "verified": true
     },
     {
      "type": "kyotsu",
@@ -55842,9 +55968,13 @@
    "interest_tags": [
     "geijutsu"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "media",
+    "kyoiku",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-jogakuin-d01",
