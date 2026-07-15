@@ -1,0 +1,21 @@
+{
+ "uni_id": "ritsumeikan",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4050/difficulty/?facultyID=080",
+  "https://search.keinet.ne.jp/2504/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "ritsumeikan-d04",
+   "campus": "大阪いばらきキャンパス（大阪府茨木市岩倉町）",
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（英語重視方式・IB入試・英語外部試験利用等）" }
+   ],
+   "employment_fields": ["service", "media", "kinyu"],
+   "unconfirmed": true,
+   "notes": "グローバル教養学部 グローバル教養学科（GLA、オーストラリア国立大学とのデュアルディグリー）。英語・IB中心の選抜のため河合塾偏差値・共テ得点率・一般選抜倍率はパスナビ非掲載。偏差値・倍率は未確定（立命館大全体は偏差値50.0〜67.5帯）"
+  }
+ ],
+ "notes": "立命館グローバル教養学部は英語基準・IB入試主体で河合塾偏差値ランク対象外。数値未確定のためunconfirmed。大阪いばらきキャンパス"
+}

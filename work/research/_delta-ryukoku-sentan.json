@@ -1,0 +1,25 @@
+{
+ "uni_id": "ryukoku",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4060/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/4060/bairitsu/?facultyID=042",
+  "https://search.keinet.ne.jp/2505/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "ryukoku-d02",
+   "campus": "瀬田キャンパス（滋賀県大津市瀬田大江町）",
+   "hensachi": { "min": 40.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/4060/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/4060/bairitsu/?facultyID=042" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期／スタンダード・高得点科目重視等）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "先端理工学部（数理・情報科学／知能情報メディア／電子情報通信／機械工学ロボティクス／応用化学／環境生態工学課程）。偏差値40.0〜45.0（知能情報メディア45.0が上位）。倍率2025:1.7倍。※2027年度に理工系再編予定"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度）。倍率は旺文社パスナビ掲載の先端理工学部一般選抜（2025年度・学部計）。私立総合大、理工系は瀬田キャンパス（大津市）。看板ゼミは省略"
+}

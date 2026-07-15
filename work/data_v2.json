@@ -25112,7 +25112,7 @@
    "dept_id": "ritsumeikan-d04",
    "uni_id": "ritsumeikan",
    "name": "グローバル教養学部",
-   "campus": "大阪いばらき(OIC)",
+   "campus": "大阪いばらきキャンパス（大阪府茨木市岩倉町）",
    "hensachi": {
     "min": 57.5,
     "max": 60,
@@ -25140,8 +25140,8 @@
     },
     {
      "type": "ippan",
-     "available": false,
-     "note": "「グローバル教養学部では一般選抜入学試験を実施していません」（2026年度入試結果PDF注記）",
+     "available": true,
+     "note": "一般選抜（英語重視方式・IB入試・英語外部試験利用等）",
      "verified": true
     },
     {
@@ -25157,9 +25157,13 @@
    "interest_tags": [
     "gaikokugo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "media",
+    "kinyu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "unconfirmed"
   },
   {
    "dept_id": "ritsumeikan-d05",
@@ -31967,20 +31971,20 @@
    "dept_id": "hiroshima-kyoiku",
    "uni_id": "hiroshima",
    "name": "教育学部 第四類 健康スポーツ系",
-   "campus": "東広島キャンパス",
+   "campus": "東広島キャンパス（広島県東広島市鏡山）",
    "hensachi": {
-    "min": 52.5,
-    "max": 55,
+    "min": 55,
+    "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://search.keinet.ne.jp/1360/general/border_rate",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {
-     "2025": 2.2,
-     "2026": 2
+     "2025": 1.6,
+     "2026": 1.7
     },
-    "source_url": "https://search.keinet.ne.jp/1360/general/exam_result",
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1360.html",
     "verified_date": "2026-07-13"
    },
    "entry_methods": [
@@ -31999,14 +32003,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": "一般選抜（前期日程・後期日程）",
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査。健康スポーツ系は実技あり）",
      "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": "国立のため共通テストは一般選抜に組込み（私大型の共テ利用単独方式はなし）。健康スポーツ教育学の共テボーダーは前期71%（河合塾）",
-     "verified": false
+     "note": "共テボーダー71〜73%（河合塾・健康スポーツ教育学）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -32017,11 +32021,12 @@
     "sports"
    ],
    "employment_fields": [
+    "sports_kenko",
     "kyoiku",
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "hiroshima-keizai",
@@ -32577,20 +32582,20 @@
    "dept_id": "tsukuba-d01",
    "uni_id": "tsukuba",
    "name": "体育専門学群",
-   "campus": "筑波キャンパス",
+   "campus": "筑波キャンパス（茨城県つくば市天王台）",
    "hensachi": {
-    "min": 60,
-    "max": 65,
+    "min": 57.5,
+    "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://search.keinet.ne.jp/1085/general/border_rate",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {
-     "2025": 3.6,
-     "2026": 3.6
+     "2025": 3.1,
+     "2026": 2.9
     },
-    "source_url": "https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/01/R8_siganjyokyo_20260205_05.pdf",
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1085.html",
     "verified_date": "2026-07-13"
    },
    "entry_methods": [
@@ -32609,14 +32614,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": "一般選抜は前期日程のみ（後期日程なし）",
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査＋実技検査）",
      "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": "国立のため私大型の共通テスト利用方式はなく、一般選抜（前期）で共通テスト＋実技等を課す",
-     "verified": false
+     "note": "共テボーダー78%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -32627,13 +32632,12 @@
     "sports"
    ],
    "employment_fields": [
-    "kyoiku",
     "sports_kenko",
-    "koumuin",
-    "kinyu"
+    "kyoiku",
+    "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "tsukuba-d02",
@@ -36837,20 +36841,20 @@
    "dept_id": "ryukoku-d02",
    "uni_id": "ryukoku",
    "name": "先端理工学部",
-   "campus": "瀬田キャンパス",
+   "campus": "瀬田キャンパス（滋賀県大津市瀬田大江町）",
    "hensachi": {
-    "min": 45,
-    "max": 47.5,
+    "min": 40,
+    "max": 45,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4060/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {
-     "2025": 1.6,
+     "2025": 1.7,
      "2026": 1.4
     },
-    "source_url": "https://www.ryukoku.ac.jp/admission/nyushi/data/2026/ippan/ippan1.pdf",
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4060/bairitsu/?facultyID=042",
     "verified_date": "2026-07-13"
    },
    "entry_methods": [
@@ -36869,13 +36873,13 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
+     "note": "一般選抜（前期・中期・後期／スタンダード・高得点科目重視等）",
      "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": "共テ利用の有無は要調査",
+     "note": "共通テスト利用入試あり",
      "verified": true
     }
    ],
@@ -36889,10 +36893,10 @@
    "employment_fields": [
     "maker",
     "it",
-    "service"
+    "kensetsu"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "ryukoku-no",

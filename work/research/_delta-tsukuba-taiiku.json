@@ -1,0 +1,25 @@
+{
+ "uni_id": "tsukuba",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0160/difficulty/?facultyID=040",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1085.html",
+  "https://search.keinet.ne.jp/1085/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "tsukuba-d01",
+   "campus": "筑波キャンパス（茨城県つくば市天王台）",
+   "hensachi": { "min": 57.5, "max": 57.5, "source_url": "https://search.keinet.ne.jp/1085/general/border_rate" },
+   "bairitsu": { "ippan": { "2025": 3.1, "2026": 2.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1085.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査＋実技検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー78%（河合塾）" }
+   ],
+   "employment_fields": ["sports_kenko", "kyoiku", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "体育専門学群。共テボーダー78%（学群の主指標）。河合塾の2次偏差値は実技系のため明示ランク非公表、Kei-Netランク帯57.5相当を採用。倍率は前期一般選抜（2025:3.1→2026:2.9、実技検査あり）。体育・スポーツ系の名門"
+  }
+ ],
+ "notes": "共テボーダーは河合塾（Kei-Net、2026年度）。倍率は河合塾Kei-Net掲載の前期日程一般選抜（体育専門学群、2025・2026）。偏差値は実技型のため河合塾明示ランク非公表につきKei-Net相当値。難関国立総合大、筑波キャンパス（つくば市）。看板ゼミは省略"
+}

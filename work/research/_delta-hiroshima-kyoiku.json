@@ -1,0 +1,25 @@
+{
+ "uni_id": "hiroshima",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0720/difficulty/?facultyID=015",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1360.html",
+  "https://search.keinet.ne.jp/1360/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "hiroshima-kyoiku",
+   "campus": "東広島キャンパス（広島県東広島市鏡山）",
+   "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://search.keinet.ne.jp/1360/general/border_rate" },
+   "bairitsu": { "ippan": { "2025": 1.6, "2026": 1.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1360.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査。健康スポーツ系は実技あり）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー71〜73%（河合塾・健康スポーツ教育学）" }
+   ],
+   "employment_fields": ["sports_kenko", "kyoiku", "koumuin"],
+   "unconfirmed": false,
+   "notes": "教育学部 第四類（生涯活動教育系）健康スポーツ教育学プログラム。共テボーダー71〜73%（前期71%・後期73%）。河合塾2次偏差値は実技系のため明示ランク非公表、Kei-Netランク帯55.0〜57.5相当を採用。倍率は教育学部前期一般選抜（学部計2025:1.6→2026:1.7）"
+ }
+ ],
+ "notes": "共テボーダーは河合塾（Kei-Net、2026年度）。倍率は河合塾Kei-Net掲載の広島大学教育学部前期一般選抜（学部計、2025・2026）。偏差値は健康スポーツ系が実技型のためKei-Net相当値。難関国立総合大、東広島キャンパス。看板ゼミは省略"
+}
