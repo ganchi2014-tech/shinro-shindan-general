@@ -7,7 +7,7 @@ const RIASEC_TYPES = ['R', 'I', 'A', 'S', 'E', 'C'];
 const RIASEC_ORDER = ['R', 'R', 'I', 'I', 'A', 'A', 'S', 'S', 'E', 'E', 'C', 'C'];
 
 // 模試種別→河合換算オフセット（v1 EXAM_SOURCE_OFFSET準拠。Task3で突き合わせ）
-const EXAM_SOURCE_OFFSET = { kawai: 0, zento: 0, shinken: -5, sundai: 2, toshin: -3, unknown: 0 };
+const EXAM_SOURCE_OFFSET = { kawai: 0, zento: 0, shinken: -7, sundai: 5, toshin: -3, unknown: 0 };
 
 // ゾーン閾値（gap = 学部偏差値mid − 換算偏差値）
 const ZONE = { CHALLENGE_MAX: 10, CHALLENGE_MIN: 2.5, MATCH_MIN: -2.5, SAFE_MIN: -10 };
@@ -27,7 +27,23 @@ function computeRiasecProfile(answers) {
   return { profile, hollandCode, answered: true };
 }
 
+function adjustedHensachi(hensachi, examSource) {
+  if (hensachi == null) return null;
+  const off = EXAM_SOURCE_OFFSET[examSource];
+  return hensachi + (off == null ? 0 : off);
+}
+
+// mid: 学部偏差値の中央値, adjHen: 換算偏差値(null可)
+function classifyZone(mid, adjHen) {
+  if (adjHen == null || mid == null) return adjHen == null ? 'ungrouped' : 'out';
+  const gap = mid - adjHen;
+  if (gap > ZONE.CHALLENGE_MAX || gap < ZONE.SAFE_MIN) return 'out';
+  if (gap >= ZONE.CHALLENGE_MIN) return 'challenge';
+  if (gap >= ZONE.MATCH_MIN) return 'match';
+  return 'safe';
+}
+
 module.exports = {
   RIASEC_TYPES, RIASEC_ORDER, EXAM_SOURCE_OFFSET, ZONE, DEFAULT_TOP_N,
-  computeRiasecProfile,
+  computeRiasecProfile, adjustedHensachi, classifyZone,
 };

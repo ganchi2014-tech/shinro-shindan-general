@@ -22,4 +22,26 @@ const E = require('./engine_v2.js');
   assert.strictEqual(profile.S, 0);
 }
 
+// ---- adjustedHensachi ----
+{
+  assert.strictEqual(E.adjustedHensachi(55, 'kawai'), 55);
+  assert.strictEqual(E.adjustedHensachi(55, 'shinken'), 48); // 進研は-7換算（v1準拠）
+  assert.strictEqual(E.adjustedHensachi(55, 'sundai'), 60);  // 駿台は+5換算（v1準拠）
+  assert.strictEqual(E.adjustedHensachi(null, 'kawai'), null);
+  assert.strictEqual(E.adjustedHensachi(55, 'unknownsrc'), 55); // 未知キーは0オフセット
+}
+// ---- classifyZone ----
+{
+  const adj = 50;
+  assert.strictEqual(E.classifyZone(52.5, adj), 'challenge'); // gap+2.5
+  assert.strictEqual(E.classifyZone(60, adj), 'challenge');   // gap+10
+  assert.strictEqual(E.classifyZone(52.4, adj), 'match');     // gap+2.4
+  assert.strictEqual(E.classifyZone(47.5, adj), 'match');     // gap-2.5
+  assert.strictEqual(E.classifyZone(47.4, adj), 'safe');      // gap-2.6
+  assert.strictEqual(E.classifyZone(40, adj), 'safe');        // gap-10
+  assert.strictEqual(E.classifyZone(60.1, adj), 'out');       // gap>+10
+  assert.strictEqual(E.classifyZone(39.9, adj), 'out');       // gap<-10
+  assert.strictEqual(E.classifyZone(55, null), 'ungrouped');  // 偏差値未入力
+}
+
 console.log('ALL OK');
