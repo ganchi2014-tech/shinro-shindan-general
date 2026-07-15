@@ -1547,6 +1547,24 @@ main {
   background: var(--card); border: 1px solid var(--border);
   border-radius: 999px; padding: 2px 9px; margin: 3px 4px 0 0;
 }
+.dept-card { margin-bottom: 12px; }
+.uc-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.uc-name { font-size: 16px; font-weight: 700; color: var(--text); line-height: 1.35; }
+.uc-dept { font-size: 13px; color: var(--text-dim); margin-top: 2px; }
+.uc-meta { display: flex; align-items: center; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
+.uc-band { font-size: 13px; font-weight: 600; color: var(--text); }
+.uc-reasons { margin-top: 6px; }
+.fav-btn {
+  background: transparent; border: none; font-size: 20px; line-height: 1;
+  cursor: pointer; padding: 2px 4px; flex-shrink: 0;
+}
+.uc-detail-btn {
+  margin-top: 10px; width: 100%;
+  background: var(--card); border: 1px solid var(--border-hi);
+  color: var(--accent); font-weight: 600; font-size: 13px;
+  border-radius: 10px; padding: 8px; cursor: pointer;
+}
+.uc-detail-btn:hover { border-color: var(--accent); }
 
 /* ============================ RESPONSIVE ============================ */
 @media (min-width: 720px) {
@@ -2644,78 +2662,102 @@ function scoreUni(uni) {
 // 結果レンダリング
 // ============================================================
 function renderResults() {
-  const results = diagnose();
+  const r = state.lastResult || { zones: { challenge: [], match: [], safe: [] }, ungrouped: [], meta: {} };
+  const m = r.meta || {};
   const summaryEl = document.getElementById('resultSummary');
   const listEl = document.getElementById('resultList');
 
   const conds = [];
-  // 評定（未定の場合は表示しない）
   if (!state.diag.hyouteiUnknown) conds.push(`評定 ${state.diag.hyoutei.toFixed(1)}`);
-  // 偏差値（未定の場合は表示しない・模試換算を明示）
   if (!state.diag.hensachiUnknown) {
-    const adj = adjustedHensachi();
+    const adj = m.adjustedHensachi;
     const srcLbl = EXAM_SOURCE_LABEL[state.diag.examSource];
-    conds.push(srcLbl && adj !== state.diag.hensachi
+    conds.push(srcLbl && adj != null && adj !== state.diag.hensachi
       ? `偏差値 ${state.diag.hensachi}（${srcLbl}→河合換算 ${adj}）`
       : `偏差値 ${state.diag.hensachi}`);
   }
-  // 挑戦度（未定除く）
-  const chalLbl = { challenge: '🚀挑戦', standard: '🎯標準', safe: '🛡️堅実' };
-  if (chalLbl[state.diag.challenge]) conds.push(chalLbl[state.diag.challenge]);
-  // 就職希望
   if (state.diag.careers.size > 0) {
-    const careerNames = [...state.diag.careers].map(c => getCareerOption(c)?.label || CAREER_LABEL[c]).filter(Boolean);
-    conds.push(careerNames.slice(0, 3).join('・') + (careerNames.length > 3 ? ` 他${careerNames.length-3}` : ''));
+    const careerNames = [...state.diag.careers].map(c => getCareerOption(c)?.label).filter(Boolean);
+    conds.push(careerNames.slice(0, 3).join('・') + (careerNames.length > 3 ? ` 他${careerNames.length - 3}` : ''));
   }
-  // 興味分野
   if (state.diag.interests.size > 0) {
     const names = [...state.diag.interests].map(i => getInterestOption(i)?.label).filter(Boolean);
-    conds.push('📚 ' + names.slice(0, 3).join('・') + (names.length > 3 ? ` 他${names.length-3}` : ''));
+    conds.push('📚 ' + names.slice(0, 3).join('・') + (names.length > 3 ? ` 他${names.length - 3}` : ''));
   }
-  // 地域（未定除く）
-  const areaLbl = { shiga: '🏞️滋賀就職', kansai: '🏯関西就職', any: '🗾どこでも' };
+  const areaLbl = { shiga: '🏞️滋賀', kansai: '🏯関西圏', any: '🗾どこでも' };
   if (areaLbl[state.diag.workArea]) conds.push(areaLbl[state.diag.workArea]);
-  // 通学（未定除く）
   const commuteLbl = { 'jitaku': '🏠通い厳', 'jitaku-flex': '🏠通い緩', 'any': '🏘️下宿OK' };
   if (commuteLbl[state.diag.commute]) conds.push(commuteLbl[state.diag.commute]);
-  // 学費
   if (state.diag.costPriority) conds.push('💴学費抑えめ');
-  // 入試方式（未定 'any' は表示しない）
   if (!state.diag.methods.has('any')) {
     const methodLabels = { sogo: '総合型', koubo: '公募・推薦', ippan: '一般', kokkoritsu: '国公立(共テ)' };
-    conds.push([...state.diag.methods].map(m => methodLabels[m]).join('・'));
+    conds.push([...state.diag.methods].filter(x => x !== 'any').map(x => methodLabels[x]).filter(Boolean).join('・'));
   }
-  // すべて未定なら明示
-  if (conds.length === 0) conds.push('🤷 すべて未定（全大学を中立スコアで表示）');
+  const HOLLAND_JP = { R: '現実', I: '研究', A: '芸術', S: '社会', E: '企業', C: '慣習' };
+  if (m.hollandCode) conds.push(`🧭 ${[...m.hollandCode].map(c => HOLLAND_JP[c] || c).join('・')}`);
+  if (conds.length === 0) conds.push('🤷 すべて未定（適性順で表示）');
 
-  // 収録データの偏差値上限を超えている場合の注意（挑戦圏が空になるケース）
-  let capNote = '';
-  const adjHen = adjustedHensachi();
-  if (adjHen != null) {
-    const allHens = allUnis().map(u => getByid('ippan', u.id)?.hensachi_representative).filter(h => h != null);
-    const maxHen = Math.max(...allHens);
-    if (adjHen + 3 > maxHen && state.diag.challenge === 'challenge') {
-      capNote = `<p style="margin:8px 0 0;color:var(--accent);font-size:12px">⚠️ 収録大学の最高偏差値は ${maxHen} のため、あなたの偏差値（換算 ${adjHen}）では「挑戦圏」に該当する大学がありません。「標準」「堅実」の視点で比較するか、先生に相談してください。</p>`;
-    }
-  }
+  const z = r.zones || { challenge: [], match: [], safe: [] };
+  const total = z.challenge.length + z.match.length + z.safe.length;
 
-  const shownCount = Math.min(25, results.length);
   summaryEl.innerHTML = `
-    <h2>あなたへのおすすめ 上位${shownCount}校</h2>
-    <p style="margin:0;color:var(--text-dim);font-size:13px">条件に合う ${results.length}校 のうちマッチ度の高い順に上位${shownCount}校を表示しています</p>
+    <h2>あなたへのおすすめ学部</h2>
+    <p style="margin:0;color:var(--text-dim);font-size:13px">${total > 0 ? '条件に合う学部を「実力相応 / チャレンジ / 安全圏」に振り分けました' : '条件に合う学部を適性順に表示します'}</p>
     <div class="conditions">
       ${conds.map(c => `<span class="cond-tag">${escapeHtml(c)}</span>`).join('')}
     </div>
-    ${capNote}
+    ${m.lowSignal ? `<div class="nudge">適性チェックや興味分野を選ぶと、あなたの性格に合った学部が上位に来て精度が上がります。</div>` : ''}
+    ${state.diag.costPriority ? `<div class="nudge">💴 学費重視：国公立・自宅通学圏の学部を優先的に確認しましょう。</div>` : ''}
     ${renderBunriHint()}
     <p style="margin:10px 0 0;padding:8px 10px;background:rgba(245,158,11,0.12);border-left:3px solid var(--accent);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.6">⚠️ この結果は<strong>2026年7月時点の推定データによる目安</strong>です。志望校を決める前に、必ず<strong>担任・進路指導室</strong>と<strong>各大学の公式サイト</strong>で確認してください。</p>
   `;
 
-  // 偏差値帯マップ (未定でない場合のみ)
-  const mapHtml = renderHensachiMap(results);
+  listEl.innerHTML = '';
+  const hasZones = total > 0;
+  if (m.adjustedHensachi == null || !hasZones) {
+    const list = (r.ungrouped && r.ungrouped.length) ? r.ungrouped : [...z.match, ...z.challenge, ...z.safe];
+    if (!list.length) {
+      listEl.innerHTML = `<p class="empty" style="padding:24px 8px;color:var(--text-dim);text-align:center;line-height:1.8">条件に合う学部が見つかりませんでした。<br>エリア・偏差値・入試方式の条件をゆるめてみてください。</p>`;
+      return;
+    }
+    const s = zoneSection('おすすめ（適性順）', list, m.adjustedHensachi == null ? '偏差値の入力がないため、適性・興味の一致度順です' : '');
+    if (s) listEl.appendChild(s);
+  } else {
+    [['🎯 実力相応', 'match', 'あなたの偏差値に近い、出願の中心になる学部'],
+     ['🚀 チャレンジ', 'challenge', '少し背伸びして狙える学部'],
+     ['🛡️ 安全圏', 'safe', '余裕をもって出願できる学部']].forEach(([t, k, sub]) => {
+      const s = zoneSection(t, z[k], sub); if (s) listEl.appendChild(s);
+    });
+  }
+  const u = zoneSection('📊 偏差値データなし', r.ungrouped, '偏差値が未収録の学部（参考）');
+  if (u) listEl.appendChild(u);
+}
 
-  listEl.innerHTML = mapHtml + results.slice(0, 25).map(r => renderUniCard(r)).join('');
-  bindUniCards();
+function zoneSection(title, arr, sub) {
+  if (!arr || !arr.length) return null;
+  const sec = document.createElement('div'); sec.className = 'zone-block';
+  const head = document.createElement('div');
+  head.innerHTML = `<h3 class="zone-title">${title} <span class="zone-count">${arr.length}</span></h3>` +
+    (sub ? `<p class="zone-sub">${sub}</p>` : '');
+  sec.appendChild(head);
+  arr.forEach(it => sec.appendChild(deptCard(it)));
+  return sec;
+}
+
+function deptCard(item) {
+  const el = document.createElement('div'); el.className = 'uni-card dept-card';
+  const h = item.hensachi || {};
+  const band = (h.min != null && h.max != null)
+    ? (h.min === h.max ? `偏差値 ${h.min}` : `偏差値 ${h.min}〜${h.max}`) : '偏差値データなし';
+  const fav = isFav(item.dept_id);
+  el.innerHTML =
+    `<div class="uc-head"><div class="uc-name">${escapeHtml(item.uni_name)}</div>` +
+    `<button class="fav-btn" data-fav="${item.dept_id}" aria-label="お気に入り">${fav ? '❤️' : '🤍'}</button></div>` +
+    `<div class="uc-dept">${escapeHtml(item.dept_name)}</div>` +
+    `<div class="uc-meta"><span class="uc-band">${band}</span><span class="fit-badge">適性 ${item.fitScore}</span></div>` +
+    `<div class="uc-reasons">${(item.reasons || []).map(x => `<span class="reason-chip">${escapeHtml(x)}</span>`).join('')}</div>` +
+    `<button class="uc-detail-btn" data-detail="${item.dept_id}">詳しく見る →</button>`;
+  return el;
 }
 
 // 文理選択ヒント: 選んだ興味分野・職業から高1・高2向けに科目選択の示唆を出す
@@ -3528,6 +3570,22 @@ async function init() {
   document.getElementById('editDiagBtn').addEventListener('click', () => go('diag-1'));
   document.querySelectorAll('.tab').forEach(t => {
     t.addEventListener('click', () => renderTab(t.dataset.tab));
+  });
+
+  // 学部カードのお気に入り/詳細（イベント委譲）
+  document.addEventListener('click', (e) => {
+    const favBtn = e.target.closest('[data-fav]');
+    if (favBtn) {
+      e.stopPropagation();
+      const now = toggleFav(favBtn.getAttribute('data-fav'));
+      favBtn.textContent = now ? '❤️' : '🤍';
+      return;
+    }
+    const detBtn = e.target.closest('[data-detail]');
+    if (detBtn) {
+      renderDetail(detBtn.getAttribute('data-detail'));
+      go('detail');
+    }
   });
 
   renderHome();
