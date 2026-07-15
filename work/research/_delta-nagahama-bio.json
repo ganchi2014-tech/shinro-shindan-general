@@ -1,0 +1,47 @@
+{
+ "uni_id": "nagahama-bio",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3886/difficulty/",
+  "https://search.keinet.ne.jp/2480/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "nagahama-bio-d01",
+   "campus": "長浜キャンパス（滋賀県長浜市田村町）",
+   "hensachi": { "min": 35.0, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3886/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり。共テ得点率51〜58%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "shokuhin", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "バイオサイエンス学部 フロンティアバイオサイエンス学科（バイオデータサイエンス系含む）。偏差値35.0〜37.5、共テボーダー51〜58%。倍率はパスナビ学科別未取得（BF〜低倍率帯）"
+  },
+  {
+   "dept_id": "nagahama-bio-d02",
+   "campus": "長浜キャンパス（滋賀県長浜市田村町）",
+   "hensachi": { "min": 37.5, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3886/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["iryo_fukushi", "maker"],
+   "unconfirmed": false,
+   "notes": "バイオサイエンス学部 メディカルバイオサイエンス学科（臨床検査技師系含む）。偏差値37.5、共テボーダー50%台。倍率は学科別未取得"
+  },
+  {
+   "dept_id": "nagahama-bio-d03",
+   "campus": "長浜キャンパス（滋賀県長浜市田村町）",
+   "hensachi": { "min": 40.0, "max": 40.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3886/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["iryo_fukushi", "shokuhin"],
+   "unconfirmed": false,
+   "notes": "バイオサイエンス学部 アニマルバイオサイエンス学科（動物系）。学内最高偏差値40.0。倍率は学科別未取得"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。私立バイオ系単科大、全学長浜キャンパス。倍率はパスナビ学科別未掲載のため未収録（現行推定値を保持、BF〜低倍率帯）。看板ゼミは省略"
+}

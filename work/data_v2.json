@@ -29711,13 +29711,13 @@
    "dept_id": "kansai-fukushi-d01",
    "uni_id": "kansai-fukushi",
    "name": "健康福祉学部 健康科学科",
-   "campus": "柏原",
+   "campus": "柏原キャンパス（大阪府柏原市旭ヶ丘）",
    "hensachi": {
     "min": 35,
-    "max": 35,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4255/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {
@@ -29742,13 +29742,13 @@
     {
      "type": "ippan",
      "available": true,
-     "note": "一般選抜",
+     "note": "一般選抜（前期・後期）",
      "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": "大学入学共通テスト利用選抜",
+     "note": "共通テスト利用選抜あり。共テ得点率51〜54%（河合塾）",
      "verified": true
     }
    ],
@@ -29761,10 +29761,10 @@
    ],
    "employment_fields": [
     "iryo_fukushi",
-    "service"
+    "sports_kenko"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kansai-fukushi-hokeniryo",
@@ -44671,13 +44671,13 @@
    "dept_id": "kobe-tokiwa-kyoiku",
    "uni_id": "kobe-tokiwa",
    "name": "教育学部",
-   "campus": "神戸キャンパス（兵庫県神戸市長田区大谷町2-6-2・単一キャンパス）",
+   "campus": "長田キャンパス（兵庫県神戸市長田区大谷町）",
    "hensachi": {
-    "min": 40,
-    "max": 45,
+    "min": 35,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/4475/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {
@@ -44703,13 +44703,13 @@
     {
      "type": "ippan",
      "available": true,
-     "note": "一般選抜前期・中期・後期",
+     "note": "一般選抜（前期・後期）",
      "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": "共通テスト利用1次・2次",
+     "note": "共通テスト利用選抜あり。共テ得点率53%（河合塾）",
      "verified": true
     }
    ],
@@ -44721,11 +44721,10 @@
     "kyoiku"
    ],
    "employment_fields": [
-    "kyoiku",
-    "koumuin"
+    "kyoiku"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kansai-iryo-hokeniryo",
@@ -46584,13 +46583,13 @@
    "dept_id": "nagoya-keizai-ho",
    "uni_id": "nagoya-keizai",
    "name": "法学部 ビジネス法学科",
-   "campus": "犬山キャンパス",
+   "campus": "犬山キャンパス（愛知県犬山市内久保）",
    "hensachi": {
-    "min": 37.5,
-    "max": 42.5,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3770/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {
@@ -46616,13 +46615,13 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
+     "note": "一般選抜（前期・後期）",
      "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": "共テ利用の有無は要調査",
+     "note": "共通テスト利用選抜あり。共テ得点率40%（河合塾）",
      "verified": true
     }
    ],
@@ -46637,23 +46636,23 @@
    ],
    "employment_fields": [
     "koumuin",
-    "ryutsu",
-    "kinyu"
+    "kinyu",
+    "service"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nagoya-keizai-d01",
    "uni_id": "nagoya-keizai",
    "name": "教育保育学部 子ども学科",
-   "campus": "犬山キャンパス",
+   "campus": "犬山キャンパス（愛知県犬山市内久保）",
    "hensachi": {
-    "min": 37.5,
-    "max": 42.5,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3770/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {
@@ -46679,13 +46678,13 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
+     "note": "一般選抜（前期・後期）",
      "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": "共テ利用の有無は要調査",
+     "note": "共通テスト利用選抜あり。共テ得点率35%（河合塾）",
      "verified": true
     }
    ],
@@ -46698,13 +46697,10 @@
     "kyoiku"
    ],
    "employment_fields": [
-    "koumuin",
-    "iryo_fukushi",
-    "kyoiku",
-    "ryutsu"
+    "kyoiku"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "aichi-toho-keiei",
@@ -57138,13 +57134,13 @@
    "dept_id": "toyota-kogyo-d01",
    "uni_id": "toyota-kogyo",
    "name": "工学部（先端工学基礎学科）",
-   "campus": "名古屋",
+   "campus": "名古屋キャンパス（愛知県名古屋市天白区久方）",
    "hensachi": {
-    "min": 57.5,
-    "max": 60,
+    "min": 62.5,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3730/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -57167,14 +57163,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）。少人数・高偏差値",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり（A方式）。共テボーダー79〜82%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -57184,9 +57180,12 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kanazawa-kogyo-ko",
@@ -61830,13 +61829,13 @@
    "dept_id": "nagahama-bio-d01",
    "uni_id": "nagahama-bio",
    "name": "バイオサイエンス学部（フロンティアバイオ）",
-   "campus": "長浜",
+   "campus": "長浜キャンパス（滋賀県長浜市田村町）",
    "hensachi": {
-    "min": 40,
-    "max": 42.5,
+    "min": 35,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3886/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -61859,14 +61858,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり。共テ得点率51〜58%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -61876,21 +61875,25 @@
    "interest_tags": [
     "nogaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "shokuhin",
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nagahama-bio-d02",
    "uni_id": "nagahama-bio",
    "name": "バイオサイエンス学部（メディカルバイオ）",
-   "campus": "長浜",
+   "campus": "長浜キャンパス（滋賀県長浜市田村町）",
    "hensachi": {
-    "min": 42.5,
-    "max": 45,
+    "min": 37.5,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3886/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -61913,14 +61916,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -61929,21 +61932,24 @@
    "interest_tags": [
     "nogaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nagahama-bio-d03",
    "uni_id": "nagahama-bio",
    "name": "バイオサイエンス学部（アニマルバイオ）",
-   "campus": "長浜",
+   "campus": "長浜キャンパス（滋賀県長浜市田村町）",
    "hensachi": {
     "min": 40,
-    "max": 42.5,
+    "max": 40,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3886/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -61966,14 +61972,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -61983,9 +61989,12 @@
    "interest_tags": [
     "nogaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "shokuhin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "seisen-d01",

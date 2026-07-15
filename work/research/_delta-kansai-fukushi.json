@@ -1,0 +1,23 @@
+{
+ "uni_id": "kansai-fukushi",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4255/difficulty/",
+  "https://search.keinet.ne.jp/2546/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "kansai-fukushi-d01",
+   "campus": "柏原キャンパス（大阪府柏原市旭ヶ丘）",
+   "hensachi": { "min": 35.0, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4255/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり。共テ得点率51〜54%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi", "sports_kenko"],
+   "unconfirmed": false,
+   "notes": "健康福祉学部 健康科学科（健康・スポーツ・リハビリ系）。河合塾BF〜37.5、共テボーダー51〜54%。倍率はパスナビ学科別未取得（BF水準）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。私立の福祉・医療系大、柏原キャンパス（大阪府柏原市）。看板ゼミは省略"
+}

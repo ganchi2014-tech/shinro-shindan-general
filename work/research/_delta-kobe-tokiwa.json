@@ -1,0 +1,23 @@
+{
+ "uni_id": "kobe-tokiwa",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/4475/difficulty/",
+  "https://search.keinet.ne.jp/2546/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "kobe-tokiwa-kyoiku",
+   "campus": "長田キャンパス（兵庫県神戸市長田区大谷町）",
+   "hensachi": { "min": 35.0, "max": 37.5, "source_url": "https://passnavi.obunsha.co.jp/univ/4475/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり。共テ得点率53%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku"],
+   "unconfirmed": false,
+   "notes": "教育学部 こども教育学科（保育・幼児教育コース／義務教育コース）。河合塾35.0〜37.5、共テボーダー53%。保育士・幼小中（理科）教員養成。倍率はパスナビ未取得（低倍率帯）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。私立の医療・教育系大、全学長田キャンパス（神戸市）。看板ゼミは省略"
+}

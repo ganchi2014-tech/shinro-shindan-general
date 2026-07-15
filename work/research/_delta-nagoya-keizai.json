@@ -1,0 +1,35 @@
+{
+ "uni_id": "nagoya-keizai",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3770/difficulty/",
+  "https://search.keinet.ne.jp/2454/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "nagoya-keizai-ho",
+   "campus": "犬山キャンパス（愛知県犬山市内久保）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3770/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり。共テ得点率40%（河合塾）" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部 ビジネス法学科。河合塾BF（35.0）、共テボーダー40%。倍率はパスナビ未取得（BF水準・実質全入に近い）"
+  },
+  {
+   "dept_id": "nagoya-keizai-d01",
+   "campus": "犬山キャンパス（愛知県犬山市内久保）",
+   "hensachi": { "min": 35.0, "max": 35.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3770/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり。共テ得点率35%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku"],
+   "unconfirmed": false,
+   "notes": "教育保育学部 子ども学科（現行は人間生活科学部 教育保育学科として運営）。河合塾BF（35.0）、共テボーダー35%。保育士・幼稚園・小学校教員養成。倍率はパスナビ未取得（BF水準）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。私立の経済系総合大、全学犬山キャンパス。BF水準。倍率未収録（現行推定値を保持）。看板ゼミは省略"
+}

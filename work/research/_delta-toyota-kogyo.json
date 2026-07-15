@@ -1,0 +1,23 @@
+{
+ "uni_id": "toyota-kogyo",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3730/difficulty/",
+  "https://search.keinet.ne.jp/2450/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "toyota-kogyo-d01",
+   "campus": "名古屋キャンパス（愛知県名古屋市天白区久方）",
+   "hensachi": { "min": 62.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3730/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期）。少人数・高偏差値" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり（A方式）。共テボーダー79〜82%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it"],
+   "unconfirmed": false,
+   "notes": "工学部 先端工学基礎学科（トヨタ自動車が設立した少人数・研究型工科大）。偏差値62.5、共テボーダー79〜82%。1学年約100名の少数精鋭。倍率はパスナビ未取得"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。私立工科単科大、名古屋キャンパス（天白区）。企業立で学費が安く研究環境が手厚い。看板ゼミは省略"
+}
