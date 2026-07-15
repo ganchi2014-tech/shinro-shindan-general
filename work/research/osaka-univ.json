@@ -1,0 +1,155 @@
+{
+ "uni_id": "osaka-univ",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0590/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html",
+  "https://search.keinet.ne.jp/1295/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "osaka-univ-bungaku",
+   "campus": "豊中キャンパス（大阪府豊中市待兼山町）",
+   "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.6, "2026": 2.8 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー82%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "media", "koumuin"],
+   "unconfirmed": false,
+   "notes": "文学部（人文学科）。偏差値65.0、共テボーダー82%。倍率は前期一般選抜（2025:2.6→2026:2.8）"
+  },
+  {
+   "dept_id": "osaka-univ-ho",
+   "campus": "豊中キャンパス（大阪府豊中市待兼山町）",
+   "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.2, "2026": 2.5 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー80〜81%（法81%／国際公共政策80%）" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部（法学科・国際公共政策学科）。偏差値65.0、共テボーダー80〜81%。倍率は前期一般選抜（2025:2.2→2026:2.5）"
+  },
+  {
+   "dept_id": "osaka-univ-keizai",
+   "campus": "豊中キャンパス（大阪府豊中市待兼山町）",
+   "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.5, "2026": 3.2 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー82%（河合塾）" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部。偏差値65.0、共テボーダー82%。倍率は前期一般選抜（2025:3.5→2026:3.2、学内最高倍率）"
+  },
+  {
+   "dept_id": "osaka-univ-ri",
+   "campus": "豊中キャンパス（大阪府豊中市待兼山町）",
+   "hensachi": { "min": 60.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.5, "2026": 2.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー78〜79%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "理学部（数学・物理・化学・生物・生命理学）。偏差値60.0〜62.5、共テボーダー78〜79%。倍率は前期一般選抜（2025:2.5→2026:2.6）"
+  },
+  {
+   "dept_id": "osaka-univ-ko",
+   "campus": "吹田キャンパス（大阪府吹田市山田丘）",
+   "hensachi": { "min": 60.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.1, "2026": 2.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）。学科別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー78〜79%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "工学部（応用自然科学・応用理工・電子情報工・環境エネルギー工・地球総合工）。偏差値60.0〜62.5、共テボーダー78〜79%。倍率は前期一般選抜（2025:2.1→2026:2.1）"
+  },
+  {
+   "dept_id": "osaka-univ-kisoko",
+   "campus": "豊中キャンパス（大阪府豊中市待兼山町）",
+   "hensachi": { "min": 62.5, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.9, "2026": 2.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）。学科別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー78〜81%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "基礎工学部（電子物理科学・化学応用科学・システム科学・情報科学）。偏差値62.5〜65.0、共テボーダー78〜81%。倍率は前期一般選抜（2025:1.9→2026:2.0）"
+  },
+  {
+   "dept_id": "osaka-univ-gaikokugo",
+   "campus": "箕面キャンパス（大阪府箕面市船場東）",
+   "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.0, "2026": 1.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）。専攻語別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー70〜75%（河合塾・専攻語により幅）" }
+   ],
+   "employment_fields": ["service", "media", "koumuin"],
+   "unconfirmed": false,
+   "notes": "外国語学部 外国語学科（25専攻語）。偏差値57.5〜62.5、共テボーダー70〜75%。倍率は前期一般選抜（2025:2.0→2026:1.9、学内最低）"
+  },
+  {
+   "dept_id": "osaka-univ-ningenkagaku",
+   "campus": "吹田キャンパス（大阪府吹田市山田丘）",
+   "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.3, "2026": 2.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程・文系/理系型／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー83%（河合塾）" }
+   ],
+   "employment_fields": ["service", "koumuin", "media"],
+   "unconfirmed": false,
+   "notes": "人間科学部 人間科学科。偏差値65.0、共テボーダー83%。倍率は前期一般選抜（2025:2.3→2026:2.3）"
+  },
+  {
+   "dept_id": "osaka-univ-d01",
+   "campus": "吹田キャンパス（大阪府吹田市山田丘）",
+   "hensachi": { "min": 57.5, "max": 70.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.0, "2026": 2.0 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー72〜88%（医学科88%／保健72〜73%）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部（医学科／保健学科）。偏差値57.5〜70.0（医学科70.0が学内最上位）、共テボーダー72〜88%。倍率は前期一般選抜（2025:2.0→2026:2.0）"
+  },
+  {
+   "dept_id": "osaka-univ-yaku",
+   "campus": "吹田キャンパス（大阪府吹田市山田丘）",
+   "hensachi": { "min": 62.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.0, "2026": 1.8 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー80%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi", "maker"],
+   "unconfirmed": false,
+   "notes": "薬学部（薬学科6年制／薬科学科）。偏差値62.5、共テボーダー80%。倍率は前期一般選抜（2025:2.0→2026:1.8）"
+  },
+  {
+   "dept_id": "osaka-univ-shi",
+   "campus": "吹田キャンパス（大阪府吹田市山田丘）",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.5, "2026": 2.3 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー78%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "歯学部 歯学科（6年制）。偏差値60.0、共テボーダー78%。倍率は前期一般選抜（2025:2.5→2026:2.3）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は河合塾Kei-Net掲載の前期日程一般選抜入試結果で2025・2026両年度（全学計は両年2.2倍）。最難関国立総合大。豊中（文法経理基礎工）・吹田（工医歯薬人間科学）・箕面（外国語）の3キャンパス。総合型・学校推薦型も一部あるが偏差値・倍率は一般前期基準。看板ゼミは省略"
+}

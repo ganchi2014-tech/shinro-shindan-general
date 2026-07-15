@@ -51742,18 +51742,21 @@
    "dept_id": "osaka-univ-bungaku",
    "uni_id": "osaka-univ",
    "name": "文学部",
-   "campus": "豊中",
+   "campus": "豊中キャンパス（大阪府豊中市待兼山町）",
    "hensachi": {
-    "min": 62.5,
+    "min": 65,
     "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.6,
+     "2026": 2.8
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51771,14 +51774,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー82%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51788,26 +51791,33 @@
    "interest_tags": [
     "bungaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-univ-ho",
    "uni_id": "osaka-univ",
    "name": "法学部",
-   "campus": "豊中",
+   "campus": "豊中キャンパス（大阪府豊中市待兼山町）",
    "hensachi": {
-    "min": 62.5,
+    "min": 65,
     "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.2,
+     "2026": 2.5
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51825,14 +51835,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー80〜81%（法81%／国際公共政策80%）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51844,26 +51854,33 @@
    "interest_tags": [
     "hokei"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-univ-keizai",
    "uni_id": "osaka-univ",
    "name": "経済学部",
-   "campus": "豊中",
+   "campus": "豊中キャンパス（大阪府豊中市待兼山町）",
    "hensachi": {
-    "min": 62.5,
+    "min": 65,
     "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.5,
+     "2026": 3.2
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51881,14 +51898,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー82%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51900,26 +51917,33 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-univ-ri",
    "uni_id": "osaka-univ",
    "name": "理学部",
-   "campus": "豊中",
+   "campus": "豊中キャンパス（大阪府豊中市待兼山町）",
    "hensachi": {
     "min": 60,
     "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.5,
+     "2026": 2.6
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51937,14 +51961,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー78〜79%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -51953,26 +51977,33 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-univ-ko",
    "uni_id": "osaka-univ",
    "name": "工学部",
-   "campus": "吹田",
+   "campus": "吹田キャンパス（大阪府吹田市山田丘）",
    "hensachi": {
     "min": 60,
     "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.1,
+     "2026": 2.1
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -51990,14 +52021,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）。学科別募集",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー78〜79%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52007,26 +52038,33 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-univ-kisoko",
    "uni_id": "osaka-univ",
    "name": "基礎工学部",
-   "campus": "豊中",
+   "campus": "豊中キャンパス（大阪府豊中市待兼山町）",
    "hensachi": {
-    "min": 60,
-    "max": 62.5,
+    "min": 62.5,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.9,
+     "2026": 2
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52044,14 +52082,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）。学科別募集",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー78〜81%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52063,26 +52101,33 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-univ-gaikokugo",
    "uni_id": "osaka-univ",
    "name": "外国語学部",
-   "campus": "箕面",
+   "campus": "箕面キャンパス（大阪府箕面市船場東）",
    "hensachi": {
     "min": 57.5,
     "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2,
+     "2026": 1.9
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52100,14 +52145,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）。専攻語別募集",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー70〜75%（河合塾・専攻語により幅）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52116,26 +52161,33 @@
    "interest_tags": [
     "gaikokugo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "media",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-univ-ningenkagaku",
    "uni_id": "osaka-univ",
    "name": "人間科学部",
-   "campus": "吹田",
+   "campus": "吹田キャンパス（大阪府吹田市山田丘）",
    "hensachi": {
-    "min": 62.5,
-    "max": 62.5,
+    "min": 65,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.3,
+     "2026": 2.3
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52153,14 +52205,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程・文系/理系型／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー83%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52170,26 +52222,33 @@
    "interest_tags": [
     "unclassified"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "koumuin",
+    "media"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-univ-d01",
    "uni_id": "osaka-univ",
    "name": "医学部（医・保健）",
-   "campus": "吹田",
+   "campus": "吹田キャンパス（大阪府吹田市山田丘）",
    "hensachi": {
     "min": 57.5,
     "max": 70,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2,
+     "2026": 2
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52207,14 +52266,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー72〜88%（医学科88%／保健72〜73%）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52226,26 +52285,31 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-univ-yaku",
    "uni_id": "osaka-univ",
    "name": "薬学部",
-   "campus": "吹田",
+   "campus": "吹田キャンパス（大阪府吹田市山田丘）",
    "hensachi": {
     "min": 62.5,
     "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2,
+     "2026": 1.8
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52263,14 +52327,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー80%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52279,26 +52343,32 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-univ-shi",
    "uni_id": "osaka-univ",
    "name": "歯学部",
-   "campus": "吹田",
+   "campus": "吹田キャンパス（大阪府吹田市山田丘）",
    "hensachi": {
     "min": 60,
     "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/0590/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.5,
+     "2026": 2.3
+    },
+    "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1295.html",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -52316,14 +52386,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期日程／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー78%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -52332,9 +52402,11 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kobe-univ-keiei",
