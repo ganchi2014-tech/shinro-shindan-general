@@ -1,0 +1,90 @@
+{
+ "uni_id": "fujita-hu",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/3840/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/",
+  "https://search.keinet.ne.jp/2459/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "fujita-hu-i",
+   "campus": "豊明キャンパス（愛知県豊明市沓掛町田楽ヶ窪）",
+   "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3840/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 7.1 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト併用方式あり）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー85%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部医学科（6年制）。私立医学部。偏差値65.0、共テボーダー85%。倍率は一般選抜合計2025:7.1倍。2026倍率は未掲載"
+  },
+  {
+   "dept_id": "fujita-hu-d01",
+   "campus": "豊明キャンパス（愛知県豊明市沓掛町田楽ヶ窪）",
+   "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3840/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.1 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期A/B日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー70%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "保健衛生学部 看護学科（batch表記は医療科学部だが実際は保健衛生学部）。偏差値47.5、共テボーダー70%。倍率は前期A日程2025:2.1倍（前期B日程5.5倍）"
+  },
+  {
+   "dept_id": "fujita-hu-d02",
+   "campus": "豊明キャンパス（愛知県豊明市沓掛町田楽ヶ窪）",
+   "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3840/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.3 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期A/B日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー66%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "保健衛生学部 リハビリテーション学科（理学療法・作業療法）。偏差値47.5、共テボーダー66%。倍率は前期A日程2025:2.3倍（前期B日程3.2倍）"
+  },
+  {
+   "dept_id": "fujita-hu-d03",
+   "campus": "豊明キャンパス（愛知県豊明市沓掛町田楽ヶ窪）",
+   "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3840/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期A/B日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー62%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医療科学部 医療検査学科（2年次後期に臨床検査技師/臨床工学技士コースを選択）。偏差値47.5、共テボーダー62%。倍率は前期A日程2025:4.5倍"
+  },
+  {
+   "dept_id": "fujita-hu-d04",
+   "campus": "豊明キャンパス（愛知県豊明市沓掛町田楽ヶ窪）",
+   "hensachi": { "min": 47.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/3840/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期A/B日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー61%（河合塾・医工共創/臨床工学系）" }
+   ],
+   "employment_fields": ["iryo_fukushi", "maker"],
+   "unconfirmed": false,
+   "notes": "医療科学部 臨床工学（医療検査学科の臨床工学技士コース／医工共創系）。偏差値47.5、共テボーダー61%。独立学科としては非掲載のため医療検査学科値を準用。倍率も医療検査学科前期A日程2025:4.5倍を準用"
+  },
+  {
+   "dept_id": "fujita-hu-d05",
+   "campus": "豊明キャンパス（愛知県豊明市沓掛町田楽ヶ窪）",
+   "hensachi": { "min": 50.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/3840/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期A/B日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜。共テボーダー63%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医療科学部 放射線学科（診療放射線技師）。偏差値50.0、共テボーダー63%。倍率は前期A日程2025:3.7倍（前期B日程5.5〜7.3倍）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度・第1回全統記述模試・2026-07-01更新）。倍率は旺文社パスナビ掲載の一般選抜（2025年度・前期A日程を代表値）。私立医療系総合大、全学豊明キャンパス。看護・リハビリはbatch表記の医療科学部ではなく保健衛生学部所属。看板ゼミは省略"
+}

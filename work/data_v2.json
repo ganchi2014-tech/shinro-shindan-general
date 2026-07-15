@@ -48518,18 +48518,20 @@
    "dept_id": "fujita-hu-i",
    "uni_id": "fujita-hu",
    "name": "医学部 医学科",
-   "campus": "豊明",
+   "campus": "豊明キャンパス（愛知県豊明市沓掛町田楽ヶ窪）",
    "hensachi": {
-    "min": 62.5,
-    "max": 67.5,
+    "min": 65,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3840/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 7.1
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -48547,14 +48549,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト併用方式あり）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー85%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -48563,26 +48565,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "fujita-hu-d01",
    "uni_id": "fujita-hu",
    "name": "医療科学部 看護学科",
-   "campus": "豊明",
+   "campus": "豊明キャンパス（愛知県豊明市沓掛町田楽ヶ窪）",
    "hensachi": {
     "min": 47.5,
-    "max": 55,
+    "max": 47.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3840/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.1
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -48600,14 +48606,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期A/B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー70%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -48617,26 +48623,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "fujita-hu-d02",
    "uni_id": "fujita-hu",
    "name": "医療科学部 リハビリテーション学科",
-   "campus": "豊明",
+   "campus": "豊明キャンパス（愛知県豊明市沓掛町田楽ヶ窪）",
    "hensachi": {
     "min": 47.5,
-    "max": 55,
+    "max": 47.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3840/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -48654,14 +48664,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期A/B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー66%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -48672,26 +48682,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "fujita-hu-d03",
    "uni_id": "fujita-hu",
    "name": "医療科学部 臨床検査学科",
-   "campus": "豊明",
+   "campus": "豊明キャンパス（愛知県豊明市沓掛町田楽ヶ窪）",
    "hensachi": {
     "min": 47.5,
-    "max": 52.5,
+    "max": 47.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3840/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -48709,14 +48723,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期A/B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー62%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -48725,26 +48739,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "fujita-hu-d04",
    "uni_id": "fujita-hu",
    "name": "医療科学部 臨床工学科",
-   "campus": "豊明",
+   "campus": "豊明キャンパス（愛知県豊明市沓掛町田楽ヶ窪）",
    "hensachi": {
     "min": 47.5,
-    "max": 52.5,
+    "max": 47.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3840/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -48762,14 +48780,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期A/B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー61%（河合塾・医工共創/臨床工学系）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -48779,26 +48797,31 @@
     "riko",
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "fujita-hu-d05",
    "uni_id": "fujita-hu",
    "name": "医療科学部 放射線学科",
-   "campus": "豊明",
+   "campus": "豊明キャンパス（愛知県豊明市沓掛町田楽ヶ窪）",
    "hensachi": {
     "min": 50,
-    "max": 55,
+    "max": 50,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3840/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3840/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -48816,14 +48839,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期A/B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー63%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -48832,26 +48855,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "suzuka-iryo-d01",
    "uni_id": "suzuka-iryo",
    "name": "保健衛生学部 理学療法学科",
-   "campus": "千代崎",
+   "campus": "千代崎キャンパス（三重県鈴鹿市岸岡町）",
    "hensachi": {
-    "min": 47.5,
-    "max": 52.5,
+    "min": 42.5,
+    "max": 42.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3865/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.8
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3865/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -48869,14 +48896,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A日程／B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー53〜55%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -48885,26 +48912,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "suzuka-iryo-d02",
    "uni_id": "suzuka-iryo",
    "name": "保健衛生学部 作業療法学科",
-   "campus": "千代崎",
+   "campus": "千代崎キャンパス（三重県鈴鹿市岸岡町）",
    "hensachi": {
-    "min": 45,
-    "max": 50,
+    "min": 37.5,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3865/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3865/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -48922,14 +48953,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A日程／B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー48〜57%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -48938,26 +48969,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "suzuka-iryo-d03",
    "uni_id": "suzuka-iryo",
    "name": "保健衛生学部 救急救命学科",
-   "campus": "千代崎",
+   "campus": "千代崎キャンパス（三重県鈴鹿市岸岡町）",
    "hensachi": {
-    "min": 45,
-    "max": 50,
+    "min": 40,
+    "max": 40,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3865/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3865/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -48975,14 +49010,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A日程／B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー55〜56%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -48991,26 +49026,31 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "suzuka-iryo-d04",
    "uni_id": "suzuka-iryo",
    "name": "医用工学部 臨床工学科",
-   "campus": "千代崎",
+   "campus": "千代崎キャンパス（三重県鈴鹿市岸岡町）",
    "hensachi": {
-    "min": 45,
-    "max": 50,
+    "min": 37.5,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3865/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.8
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3865/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -49028,14 +49068,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A日程／B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー51〜57%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49045,26 +49085,31 @@
     "riko",
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "suzuka-iryo-yaku",
    "uni_id": "suzuka-iryo",
    "name": "薬学部 薬学科",
-   "campus": "白子",
+   "campus": "白子キャンパス（三重県鈴鹿市南玉垣町）",
    "hensachi": {
-    "min": 45,
-    "max": 50,
+    "min": 35,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3865/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.2
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3865/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -49082,14 +49127,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A日程／B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー43〜46%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49098,26 +49143,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "suzuka-iryo-kango",
    "uni_id": "suzuka-iryo",
    "name": "看護学部 看護学科",
-   "campus": "千代崎",
+   "campus": "白子キャンパス（三重県鈴鹿市南玉垣町）",
    "hensachi": {
-    "min": 47.5,
-    "max": 52.5,
+    "min": 40,
+    "max": 40,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3865/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3865/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -49135,14 +49184,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A日程／B日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー56〜60%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49152,26 +49201,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "shigakkan-kenkokagaku",
    "uni_id": "shigakkan",
    "name": "健康科学部 体育科学科",
-   "campus": "大府",
+   "campus": "大府キャンパス（愛知県大府市横根町）",
    "hensachi": {
-    "min": 42.5,
-    "max": 47.5,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3700/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.75
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3700/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -49189,14 +49242,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（2科目/3科目型）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー62〜64%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49206,26 +49259,31 @@
    "interest_tags": [
     "sports"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "sports_kenko",
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "shigakkan-kenkokagaku2",
    "uni_id": "shigakkan",
    "name": "健康科学部 栄養科学科",
-   "campus": "大府",
+   "campus": "大府キャンパス（愛知県大府市横根町）",
    "hensachi": {
-    "min": 45,
-    "max": 50,
+    "min": 40,
+    "max": 40,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3700/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.15
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3700/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -49243,14 +49301,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（2科目/3科目型）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー57〜64%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49261,26 +49319,31 @@
     "eiyo",
     "sports"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "shokuhin",
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "shigakkan-kenkokagaku3",
    "uni_id": "shigakkan",
    "name": "健康科学部 こども健康・教育学科",
-   "campus": "大府",
+   "campus": "大府キャンパス（愛知県大府市横根町）",
    "hensachi": {
-    "min": 42.5,
-    "max": 47.5,
+    "min": 35,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3700/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.15
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3700/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -49298,14 +49361,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（2科目/3科目型）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー56〜60%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49317,26 +49380,30 @@
     "kyoiku",
     "sports"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "shigakkan-kenkokagaku4",
    "uni_id": "shigakkan",
    "name": "健康科学部 健康スポーツ科学科",
-   "campus": "大府",
+   "campus": "大府キャンパス（愛知県大府市横根町）",
    "hensachi": {
-    "min": 42.5,
-    "max": 47.5,
+    "min": 35,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3700/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3700/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -49354,14 +49421,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（2科目/3科目型）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー54〜61%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -49371,9 +49438,12 @@
    "interest_tags": [
     "sports"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "sports_kenko",
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "suzuka-d01",
@@ -50226,18 +50296,20 @@
    "dept_id": "gifu-kyoritsu-keizai",
    "uni_id": "gifu-kyoritsu",
    "name": "経済学部 経済学科",
-   "campus": "大垣",
+   "campus": "北方キャンパス（岐阜県大垣市北方町）",
    "hensachi": {
-    "min": 37.5,
-    "max": 42.5,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3540/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3540/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -50255,14 +50327,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー39%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -50273,26 +50345,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "gifu-kyoritsu-keiei",
    "uni_id": "gifu-kyoritsu",
    "name": "経営学部 経営学科",
-   "campus": "大垣",
+   "campus": "北方キャンパス（岐阜県大垣市北方町）",
    "hensachi": {
     "min": 37.5,
-    "max": 42.5,
+    "max": 37.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3540/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3540/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -50310,14 +50388,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー46%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -50327,26 +50405,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "gifu-kyoritsu-keiei2",
    "uni_id": "gifu-kyoritsu",
    "name": "経営学部 スポーツ経営学科",
-   "campus": "大垣",
+   "campus": "北方キャンパス（岐阜県大垣市北方町）",
    "hensachi": {
-    "min": 37.5,
-    "max": 42.5,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3540/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.6
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3540/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -50364,14 +50448,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー37%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -50382,26 +50466,32 @@
     "keizai",
     "sports"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "sports_kenko",
+    "service",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "gifu-kyoritsu-kango",
    "uni_id": "gifu-kyoritsu",
    "name": "看護学部 看護学科",
-   "campus": "大垣",
+   "campus": "北方キャンパス（岐阜県大垣市北方町）",
    "hensachi": {
-    "min": 45,
-    "max": 50,
+    "min": 35,
+    "max": 35,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3540/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 1.4
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/3540/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -50419,14 +50509,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜。共テボーダー38%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -50436,9 +50526,11 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "aichi-bunkyo-jinbun",
