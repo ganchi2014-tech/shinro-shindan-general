@@ -57380,18 +57380,20 @@
    "dept_id": "sophia-bungaku",
    "uni_id": "sophia",
    "name": "文学部",
-   "campus": "四谷",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
    "hensachi": {
-    "min": 57.5,
-    "max": 60,
+    "min": 60,
+    "max": 67.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2470/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.1
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -57409,14 +57411,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（学部学科試験・共通テスト併用方式／TEAPスコア利用方式）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用方式あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -57426,26 +57428,32 @@
    "interest_tags": [
     "bungaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "sophia-gaikokugo",
    "uni_id": "sophia",
    "name": "外国語学部",
-   "campus": "四谷",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
    "hensachi": {
     "min": 57.5,
-    "max": 62.5,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2470/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.2
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -57463,14 +57471,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（学部学科試験・共通テスト併用／TEAP利用）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用方式あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -57480,15 +57488,19 @@
    "interest_tags": [
     "gaikokugo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "media",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "sophia-kokusaikyoyo",
    "uni_id": "sophia",
    "name": "国際教養学部",
-   "campus": "四谷",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
    "hensachi": {
     "min": 65,
     "max": 65,
@@ -57511,8 +57523,8 @@
     {
      "type": "koubo",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "英語による選考（書類・推薦）中心。一般選抜（英語外部試験）も一部",
+     "verified": true
     },
     {
      "type": "ippan",
@@ -57535,26 +57547,32 @@
    "interest_tags": [
     "gaikokugo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "media",
+    "kinyu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "unconfirmed"
   },
   {
    "dept_id": "sophia-ho",
    "uni_id": "sophia",
    "name": "法学部",
-   "campus": "四谷",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
    "hensachi": {
-    "min": 57.5,
-    "max": 60,
+    "min": 60,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2470/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -57572,14 +57590,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（学部学科試験・共通テスト併用／TEAP利用）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用方式あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -57591,26 +57609,32 @@
    "interest_tags": [
     "hokei"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "sophia-keizai",
    "uni_id": "sophia",
    "name": "経済学部",
-   "campus": "四谷",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
    "hensachi": {
-    "min": 57.5,
-    "max": 60,
+    "min": 62.5,
+    "max": 70,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2470/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -57628,14 +57652,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（学部学科試験・共通テスト併用／TEAP利用）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用方式あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -57647,26 +57671,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "sophia-d01",
    "uni_id": "sophia",
    "name": "総合人間科学部",
-   "campus": "四谷",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
    "hensachi": {
-    "min": 55,
-    "max": 62.5,
+    "min": 52.5,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2470/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -57684,14 +57714,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（学部学科試験・共通テスト併用／TEAP利用）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用方式あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -57702,26 +57732,32 @@
    "interest_tags": [
     "unclassified"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "service",
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "sophia-riko",
    "uni_id": "sophia",
    "name": "理工学部",
-   "campus": "四谷",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
    "hensachi": {
-    "min": 55,
-    "max": 57.5,
+    "min": 57.5,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2470/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.9
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -57739,14 +57775,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（学部学科試験・共通テスト併用／TEAP利用）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用方式あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -57755,9 +57791,13 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "tokyo-rika-ri",
@@ -58089,18 +58129,20 @@
    "dept_id": "aoyama-gakuin-bungaku",
    "uni_id": "aoyama-gakuin",
    "name": "文学部",
-   "campus": "青山",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
    "hensachi": {
-    "min": 55,
-    "max": 60,
+    "min": 57.5,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.6
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58118,14 +58160,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部日程・個別学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58135,26 +58177,32 @@
    "interest_tags": [
     "bungaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "aoyama-gakuin-d01",
    "uni_id": "aoyama-gakuin",
    "name": "教育人間科学部",
-   "campus": "青山",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
    "hensachi": {
-    "min": 57.5,
-    "max": 57.5,
+    "min": 60,
+    "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.8
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58172,14 +58220,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部日程・個別学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58189,26 +58237,31 @@
    "interest_tags": [
     "kyoiku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "aoyama-gakuin-keizai",
    "uni_id": "aoyama-gakuin",
    "name": "経済学部",
-   "campus": "青山",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
    "hensachi": {
-    "min": 57.5,
-    "max": 57.5,
+    "min": 60,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 6.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58226,14 +58279,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部日程・個別学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58245,26 +58298,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "aoyama-gakuin-ho",
    "uni_id": "aoyama-gakuin",
    "name": "法学部",
-   "campus": "青山",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
    "hensachi": {
-    "min": 55,
-    "max": 57.5,
+    "min": 60,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58282,14 +58341,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部日程・個別学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58301,26 +58360,32 @@
    "interest_tags": [
     "hokei"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "aoyama-gakuin-keiei",
    "uni_id": "aoyama-gakuin",
    "name": "経営学部",
-   "campus": "青山",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
    "hensachi": {
-    "min": 57.5,
-    "max": 57.5,
+    "min": 60,
+    "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58338,14 +58403,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部日程・個別学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58357,26 +58422,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "ryutsu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "aoyama-gakuin-d02",
    "uni_id": "aoyama-gakuin",
    "name": "国際政治経済学部",
-   "campus": "青山",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
    "hensachi": {
     "min": 60,
-    "max": 62.5,
+    "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58394,14 +58465,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部日程・個別学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58413,26 +58484,32 @@
     "hokei",
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "media"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "aoyama-gakuin-d03",
    "uni_id": "aoyama-gakuin",
    "name": "総合文化政策学部",
-   "campus": "青山",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
    "hensachi": {
-    "min": 57.5,
+    "min": 60,
     "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.2
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58450,14 +58527,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部日程・個別学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58468,26 +58545,32 @@
     "bungaku",
     "hokei"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "media",
+    "service",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "aoyama-gakuin-riko",
    "uni_id": "aoyama-gakuin",
    "name": "理工学部",
-   "campus": "相模原",
+   "campus": "相模原キャンパス（神奈川県相模原市中央区淵野辺）",
    "hensachi": {
     "min": 52.5,
-    "max": 55,
+    "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.8
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58505,14 +58588,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部日程・個別学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58521,26 +58604,32 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "aoyama-gakuin-d04",
    "uni_id": "aoyama-gakuin",
    "name": "コミュニティ人間科学部",
-   "campus": "相模原",
+   "campus": "相模原キャンパス（神奈川県相模原市中央区淵野辺）",
    "hensachi": {
-    "min": 52.5,
-    "max": 55,
+    "min": 57.5,
+    "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58558,14 +58647,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（全学部日程・個別学部日程）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58576,9 +58665,12 @@
    "interest_tags": [
     "unclassified"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "service",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "rikkyo-bungaku",

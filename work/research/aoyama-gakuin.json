@@ -1,0 +1,129 @@
+{
+ "uni_id": "aoyama-gakuin",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/2260/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/",
+  "https://search.keinet.ne.jp/2200/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "aoyama-gakuin-bungaku",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
+   "hensachi": { "min": 57.5, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.6 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部日程・個別学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kyoiku", "media", "service"],
+   "unconfirmed": false,
+   "notes": "文学部（英米文・フランス文・日本文・史・比較芸術）。偏差値57.5〜65.0。倍率2025:3.6倍"
+  },
+  {
+   "dept_id": "aoyama-gakuin-d01",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.8 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部日程・個別学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kyoiku", "service"],
+   "unconfirmed": false,
+   "notes": "教育人間科学部（教育・心理）。偏差値60.0。倍率2025:3.8倍"
+  },
+  {
+   "dept_id": "aoyama-gakuin-keizai",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
+   "hensachi": { "min": 60.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 6.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部日程・個別学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部（経済・現代経済デザイン）。偏差値60.0〜62.5。学内最高倍率、倍率2025:6.7倍"
+  },
+  {
+   "dept_id": "aoyama-gakuin-ho",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
+   "hensachi": { "min": 60.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部日程・個別学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部（法・ヒューマンライツ）。偏差値60.0〜62.5。倍率2025:4.0倍"
+  },
+  {
+   "dept_id": "aoyama-gakuin-keiei",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.3 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部日程・個別学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "service"],
+   "unconfirmed": false,
+   "notes": "経営学部（経営・マーケティング）。偏差値60.0。倍率2025:4.3倍"
+  },
+  {
+   "dept_id": "aoyama-gakuin-d02",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
+   "hensachi": { "min": 60.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部日程・個別学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "media"],
+   "unconfirmed": false,
+   "notes": "国際政治経済学部（国際政治・国際経済・国際コミュニケーション）。偏差値60.0〜65.0。倍率2025:4.0倍"
+  },
+  {
+   "dept_id": "aoyama-gakuin-d03",
+   "campus": "青山キャンパス（東京都渋谷区渋谷）",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.2 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部日程・個別学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["media", "service", "koumuin"],
+   "unconfirmed": false,
+   "notes": "総合文化政策学部 総合文化政策学科。偏差値60.0。倍率2025:4.2倍"
+  },
+  {
+   "dept_id": "aoyama-gakuin-riko",
+   "campus": "相模原キャンパス（神奈川県相模原市中央区淵野辺）",
+   "hensachi": { "min": 52.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.8 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部日程・個別学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "理工学部（物理・数理・化学生命・電気電子・機械創造・経営システム・情報テクノロジー）。偏差値52.5〜60.0。倍率2025:3.8倍"
+  },
+  {
+   "dept_id": "aoyama-gakuin-d04",
+   "campus": "相模原キャンパス（神奈川県相模原市中央区淵野辺）",
+   "hensachi": { "min": 57.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2260/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（全学部日程・個別学部日程）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用入試あり" }
+   ],
+   "employment_fields": ["service", "koumuin"],
+   "unconfirmed": false,
+   "notes": "コミュニティ人間科学部 コミュニティ人間科学科。偏差値57.5。倍率2025:3.5倍（学内最低）"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度・第1回全統記述模試）。倍率は旺文社パスナビ掲載の一般選抜（2025年度・学部計）。私立難関大（MARCH）。文系＝青山キャンパス（渋谷）、理工・コミュニティ人間科学＝相模原キャンパス。看板ゼミは省略"
+}

@@ -1,0 +1,100 @@
+{
+ "uni_id": "sophia",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/2470/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/",
+  "https://search.keinet.ne.jp/2221/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "sophia-bungaku",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
+   "hensachi": { "min": 60.0, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2470/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.1 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（学部学科試験・共通テスト併用方式／TEAPスコア利用方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式あり" }
+   ],
+   "employment_fields": ["kyoiku", "media", "service"],
+   "unconfirmed": false,
+   "notes": "文学部（哲・史・国文・英文・独文・仏文・新聞）。偏差値60.0〜67.5。倍率2025:3.1倍"
+  },
+  {
+   "dept_id": "sophia-gaikokugo",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
+   "hensachi": { "min": 57.5, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2470/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.2 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（学部学科試験・共通テスト併用／TEAP利用）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式あり" }
+   ],
+   "employment_fields": ["service", "media", "koumuin"],
+   "unconfirmed": false,
+   "notes": "外国語学部（英・独・仏・西・葡・露）。偏差値57.5〜65.0。倍率2025:3.2倍"
+  },
+  {
+   "dept_id": "sophia-kokusaikyoyo",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
+   "entry_methods": [
+    { "type": "koubo", "available": true, "note": "英語による選考（書類・推薦）中心。一般選抜（英語外部試験）も一部" }
+   ],
+   "employment_fields": ["service", "media", "kinyu"],
+   "unconfirmed": true,
+   "notes": "国際教養学部 国際教養学科（英語で完結する学位課程）。河合塾偏差値は非掲載（公募推薦・書類選考中心のため）。偏差値・倍率はデータ取得できず未確定"
+  },
+  {
+   "dept_id": "sophia-ho",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
+   "hensachi": { "min": 60.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2470/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（学部学科試験・共通テスト併用／TEAP利用）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式あり" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部（法律・国際関係法・地球環境法）。偏差値60.0〜65.0。倍率2025:3.7倍"
+  },
+  {
+   "dept_id": "sophia-keizai",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
+   "hensachi": { "min": 62.5, "max": 70.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2470/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（学部学科試験・共通テスト併用／TEAP利用）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式あり" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部（経済・経営）。学内最難関、偏差値62.5〜70.0（経営70.0が学内最高）。倍率2025:3.5倍"
+  },
+  {
+   "dept_id": "sophia-d01",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
+   "hensachi": { "min": 52.5, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2470/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.3 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（学部学科試験・共通テスト併用／TEAP利用）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式あり" }
+   ],
+   "employment_fields": ["iryo_fukushi", "service", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "総合人間科学部（教育・心理・社会・社会福祉・看護）。偏差値52.5〜65.0（看護52.5が学内最低）。学内最高倍率、倍率2025:4.3倍"
+  },
+  {
+   "dept_id": "sophia-riko",
+   "campus": "四谷キャンパス（東京都千代田区紀尾井町）",
+   "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2470/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2470/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（学部学科試験・共通テスト併用／TEAP利用）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式あり" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "理工学部（物質生命理工・機能創造理工・情報理工）。偏差値57.5〜62.5。倍率2025:2.9倍（学内最低）"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度・第1回全統記述模試）。倍率は旺文社パスナビ掲載の一般選抜（2025年度・学部計）。私立難関大、全学四谷キャンパス。国際教養学部は英語選考中心で河合塾偏差値非掲載のため未確定。看板ゼミは省略"
+}
