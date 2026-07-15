@@ -53022,18 +53022,20 @@
    "dept_id": "osaka-koritsu-d01",
    "uni_id": "osaka-koritsu",
    "name": "現代システム科学域",
-   "campus": "中百舌鳥",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）／中百舌鳥キャンパス（理系）",
    "hensachi": {
-    "min": 55,
-    "max": 57.5,
+    "min": 52.5,
+    "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -53051,14 +53053,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・中期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "公立大につき共通テストを課す。共テボーダー70〜77%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -53068,26 +53070,32 @@
    "interest_tags": [
     "joho"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "it",
+    "service",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-koritsu-bungaku",
    "uni_id": "osaka-koritsu",
    "name": "文学部",
-   "campus": "杉本",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
    "hensachi": {
-    "min": 57.5,
+    "min": 60,
     "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.2
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -53105,14 +53113,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー77〜83%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -53122,26 +53130,32 @@
    "interest_tags": [
     "bungaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-koritsu-ho",
    "uni_id": "osaka-koritsu",
    "name": "法学部",
-   "campus": "杉本",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
    "hensachi": {
     "min": 57.5,
     "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.9
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -53159,14 +53173,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー75〜83%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -53178,26 +53192,32 @@
    "interest_tags": [
     "hokei"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-koritsu-sho",
    "uni_id": "osaka-koritsu",
    "name": "商学部",
-   "campus": "杉本",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
    "hensachi": {
-    "min": 57.5,
-    "max": 57.5,
+    "min": 60,
+    "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.2
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -53215,14 +53235,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー75〜84%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -53231,26 +53251,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "ryutsu",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-koritsu-keizai",
    "uni_id": "osaka-koritsu",
    "name": "経済学部",
-   "campus": "杉本",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
    "hensachi": {
     "min": 57.5,
     "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.9
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -53268,14 +53294,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー74〜84%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -53287,26 +53313,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-koritsu-ri",
    "uni_id": "osaka-koritsu",
    "name": "理学部",
-   "campus": "杉本",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
    "hensachi": {
-    "min": 55,
-    "max": 57.5,
+    "min": 52.5,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -53324,14 +53356,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）。学科別募集",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー70〜85%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -53340,26 +53372,32 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-koritsu-ko",
    "uni_id": "osaka-koritsu",
    "name": "工学部",
-   "campus": "中百舌鳥",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
    "hensachi": {
     "min": 55,
-    "max": 60,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.2
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -53377,14 +53415,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・中期・後期／共通テスト＋個別学力検査）。学科別募集",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー73〜82%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -53394,21 +53432,25 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-koritsu-no",
    "uni_id": "osaka-koritsu",
    "name": "農学部",
-   "campus": "中百舌鳥",
+   "campus": "中百舌鳥キャンパス（大阪府堺市中区学園町）",
    "hensachi": {
     "min": 55,
     "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -53431,14 +53473,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）。学科別募集",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー72〜80%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -53449,26 +53491,32 @@
    "interest_tags": [
     "nogaku"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "shokuhin",
+    "maker",
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-koritsu-d02",
    "uni_id": "osaka-koritsu",
    "name": "獣医学部",
-   "campus": "りんくう",
+   "campus": "りんくうキャンパス（大阪府泉佐野市りんくう往来北）",
    "hensachi": {
     "min": 62.5,
     "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.1
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -53486,14 +53534,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー80%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -53502,26 +53550,31 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-koritsu-d03",
    "uni_id": "osaka-koritsu",
    "name": "医学部（医・リハビリ）",
-   "campus": "阿倍野",
+   "campus": "阿倍野キャンパス（大阪府大阪市阿倍野区旭町）",
    "hensachi": {
-    "min": 55,
-    "max": 65,
+    "min": 52.5,
+    "max": 67.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -53539,14 +53592,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー68〜85%（医学科85%／リハビリ68〜）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -53557,26 +53610,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-koritsu-kango",
    "uni_id": "osaka-koritsu",
    "name": "看護学部",
-   "campus": "森之宮",
+   "campus": "羽曳野キャンパス（大阪府羽曳野市はびきの）",
    "hensachi": {
-    "min": 52.5,
-    "max": 52.5,
+    "min": 55,
+    "max": 55,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.4
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -53594,14 +53651,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期／共通テスト＋個別学力検査）",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー66〜70%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -53611,21 +53668,23 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "osaka-koritsu-seikatsukagaku",
    "uni_id": "osaka-koritsu",
    "name": "生活科学部",
-   "campus": "森之宮",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
    "hensachi": {
-    "min": 55,
-    "max": 57.5,
+    "min": 57.5,
+    "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
     "ippan": {},
@@ -53648,14 +53707,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）。学科別募集",
+     "verified": true
     },
     {
      "type": "kyotsu",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "共テボーダー72〜75%（河合塾）",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -53665,9 +53724,13 @@
    "interest_tags": [
     "eiyo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "shokuhin",
+    "iryo_fukushi",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "kyoto-furitsu-bungaku",

@@ -1,0 +1,166 @@
+{
+ "uni_id": "osaka-koritsu",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/1205/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/",
+  "https://search.keinet.ne.jp/1615/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "osaka-koritsu-d01",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）／中百舌鳥キャンパス（理系）",
+   "hensachi": { "min": 52.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.3 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "公立大につき共通テストを課す。共テボーダー70〜77%（河合塾）" }
+   ],
+   "employment_fields": ["it", "service", "koumuin"],
+   "unconfirmed": false,
+   "notes": "現代システム科学域（知識情報システム・環境社会システム・教育福祉・心理）。偏差値52.5〜60.0、共テボーダー70〜77%。倍率は前期2025:4.3倍（学内最高）"
+  },
+  {
+   "dept_id": "osaka-koritsu-bungaku",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.2 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー77〜83%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "media", "koumuin"],
+   "unconfirmed": false,
+   "notes": "文学部（哲学歴史・人間行動・言語文化・文化構想）。偏差値60.0、共テボーダー77〜83%。倍率は前期2025:3.2倍"
+  },
+  {
+   "dept_id": "osaka-koritsu-ho",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
+   "hensachi": { "min": 57.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー75〜83%（河合塾）" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部 法学科。偏差値57.5、共テボーダー75〜83%。倍率は前期2025:2.9倍"
+  },
+  {
+   "dept_id": "osaka-koritsu-sho",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.2 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー75〜84%（河合塾）" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "koumuin"],
+   "unconfirmed": false,
+   "notes": "商学部（商・公共経営）。偏差値60.0、共テボーダー75〜84%。倍率は前期2025:2.2倍"
+  },
+  {
+   "dept_id": "osaka-koritsu-keizai",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
+   "hensachi": { "min": 57.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー74〜84%（河合塾）" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部 経済学科。偏差値57.5、共テボーダー74〜84%。倍率は前期2025:2.9倍"
+  },
+  {
+   "dept_id": "osaka-koritsu-ri",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
+   "hensachi": { "min": 52.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）。学科別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー70〜85%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "理学部（数学・物理・化学・生物・地球・生物化学）。偏差値52.5〜62.5、共テボーダー70〜85%。倍率は前期2025:2.7倍"
+  },
+  {
+   "dept_id": "osaka-koritsu-ko",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
+   "hensachi": { "min": 55.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.2 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・中期・後期／共通テスト＋個別学力検査）。学科別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー73〜82%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "工学部（航空宇宙・海洋系・機械・建築・都市・電子物理・電気電子システム・情報・応用化学・化学工・マテリアル）。偏差値55.0〜62.5、共テボーダー73〜82%。倍率は前期2025:3.2倍"
+  },
+  {
+   "dept_id": "osaka-koritsu-no",
+   "campus": "中百舌鳥キャンパス（大阪府堺市中区学園町）",
+   "hensachi": { "min": 55.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）。学科別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー72〜80%（河合塾）" }
+   ],
+   "employment_fields": ["shokuhin", "maker", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "農学部（応用生物科学・生命機能化学・緑地環境科学）。偏差値55.0〜57.5、共テボーダー72〜80%。倍率は学科別のみ掲載のため学部計は未収録（現行推定値を保持）"
+  },
+  {
+   "dept_id": "osaka-koritsu-d02",
+   "campus": "りんくうキャンパス（大阪府泉佐野市りんくう往来北）",
+   "hensachi": { "min": 62.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.1 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー80%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi", "koumuin"],
+   "unconfirmed": false,
+   "notes": "獣医学部 獣医学科（6年制）。偏差値62.5、共テボーダー80%。倍率は前期2025:4.1倍（学内上位）"
+  },
+  {
+   "dept_id": "osaka-koritsu-d03",
+   "campus": "阿倍野キャンパス（大阪府大阪市阿倍野区旭町）",
+   "hensachi": { "min": 52.5, "max": 67.5, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー68〜85%（医学科85%／リハビリ68〜）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部（医学科／リハビリテーション学科）。偏差値52.5〜67.5（医学科最上位）、共テボーダー68〜85%。倍率は前期2025:2.5倍"
+  },
+  {
+   "dept_id": "osaka-koritsu-kango",
+   "campus": "羽曳野キャンパス（大阪府羽曳野市はびきの）",
+   "hensachi": { "min": 55.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.4 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー66〜70%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "看護学部 看護学科。偏差値55.0、共テボーダー66〜70%。倍率は前期2025:2.4倍"
+  },
+  {
+   "dept_id": "osaka-koritsu-seikatsukagaku",
+   "campus": "杉本キャンパス（大阪府大阪市住吉区杉本）",
+   "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/1205/difficulty/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期／共通テスト＋個別学力検査）。学科別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー72〜75%（河合塾）" }
+   ],
+   "employment_fields": ["shokuhin", "iryo_fukushi", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "生活科学部（食栄養学・居住環境学・人間福祉学）。偏差値57.5〜60.0、共テボーダー72〜75%。倍率は学科別のみ掲載のため学部計は未収録（現行推定値を保持）。管理栄養士養成"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度・第1回全統記述模試）。倍率は旺文社パスナビ掲載の前期日程一般選抜（2025年度・学部計。農・生活科学は学科別のみのため未収録）。2022年に大阪市大＋大阪府大が統合した公立総合大。杉本（文系・理・工）・中百舌鳥（農）・阿倍野（医）・羽曳野（看護）・りんくう（獣医）の多キャンパス。看板ゼミは省略"
+}
