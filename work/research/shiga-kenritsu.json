@@ -1,0 +1,64 @@
+{
+ "uni_id": "shiga-kenritsu",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/1155/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/1155/bairitsu/",
+  "https://search.keinet.ne.jp/1587/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "shiga-kenritsu-d01",
+   "campus": "彦根キャンパス（滋賀県彦根市八坂町）",
+   "hensachi": { "min": 42.5, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/1155/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1155/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "公立大学のため共通テストを課す。共テボーダー55〜66%（河合塾）" }
+   ],
+   "employment_fields": ["kensetsu", "maker", "koumuin"],
+   "unconfirmed": false,
+   "notes": "環境科学部（環境生態・環境政策計画・環境建築デザイン・生物資源管理）。偏差値42.5〜45.0、共テボーダー55〜66%。倍率は前期一般選抜2025:3.0（2026年度は未掲載）"
+  },
+  {
+   "dept_id": "shiga-kenritsu-ko",
+   "campus": "彦根キャンパス（滋賀県彦根市八坂町）",
+   "hensachi": { "min": 42.5, "max": 47.5, "source_url": "https://passnavi.obunsha.co.jp/univ/1155/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1155/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー51〜65%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "工学部（材料化学・機械システム工・電子システム工）。偏差値42.5〜47.5、共テボーダー51〜65%。倍率は前期一般選抜2025:1.9（2026未掲載）"
+  },
+  {
+   "dept_id": "shiga-kenritsu-d02",
+   "campus": "彦根キャンパス（滋賀県彦根市八坂町）",
+   "hensachi": { "min": 50.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/1155/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1155/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー61〜76%（河合塾）" }
+   ],
+   "employment_fields": ["koumuin", "service", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "人間文化学部（地域文化・生活デザイン・生活栄養・国際コミュニケーション・人間関係）。学内最難関、偏差値50.0〜52.5、共テボーダー61〜76%。倍率は前期一般選抜2025:2.9（2026未掲載）"
+  },
+  {
+   "dept_id": "shiga-kenritsu-d03",
+   "campus": "彦根キャンパス（滋賀県彦根市八坂町）",
+   "hensachi": { "min": 45.0, "max": 47.5, "source_url": "https://search.keinet.ne.jp/1587/general/border_rate" },
+   "bairitsu": { "ippan": { "2025": 1.4 }, "source_url": "https://passnavi.obunsha.co.jp/univ/1155/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー60〜61%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "人間看護学部 人間看護学科。共テボーダー60〜61%。偏差値はパスナビ「データなし」のためKei-Net河合塾ランク帯（45.0〜47.5）を採用。倍率は前期一般選抜2025:1.4（2026未掲載）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は旺文社パスナビ掲載の前期日程一般選抜倍率（2025年度＝志願者÷合格者）。2026年度倍率はパスナビ未掲載のため2025のみ収録。公立大につき一般前期＋共通テストを確認。学校推薦型・特別選抜も一部あるが偏差値・倍率は一般前期基準。看板ゼミは省略"
+}

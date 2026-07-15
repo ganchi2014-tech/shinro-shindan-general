@@ -1,0 +1,51 @@
+{
+ "uni_id": "kyoto-kosen",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0580/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1290.html",
+  "https://search.keinet.ne.jp/1290/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "kyoto-kosen-d01",
+   "campus": "松ヶ崎キャンパス（京都府京都市左京区松ヶ崎橋上町）",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0580/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.7, "2026": 3.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1290.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー64〜71%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "設計工学域（電子システム工学・情報工学・機械工学・デザイン建築設計系）。偏差値52.5〜55.0、共テボーダー64〜71%。学科別2026倍率＝機械4.1/電子3.1/情報3.4。倍率欄は学部全体（2025:2.7→2026:3.4）"
+  },
+  {
+   "dept_id": "kyoto-kosen-d02",
+   "campus": "松ヶ崎キャンパス（京都府京都市左京区松ヶ崎橋上町）",
+   "hensachi": { "min": 55.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0580/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.7, "2026": 3.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1290.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー68〜71%（河合塾）" }
+   ],
+   "employment_fields": ["maker", "it", "shokuhin"],
+   "unconfirmed": false,
+   "notes": "物質・材料/生命系（応用生物学・応用化学・材料系）。偏差値55.0、共テボーダー68〜71%。学科別2026倍率＝応用生物3.2/応用化学2.8。倍率欄は学部全体（2025:2.7→2026:3.4）"
+  },
+  {
+   "dept_id": "kyoto-kosen-d03",
+   "campus": "松ヶ崎キャンパス（京都府京都市左京区松ヶ崎橋上町）",
+   "hensachi": { "min": 55.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0580/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.7, "2026": 3.4 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1290.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー70〜72%（河合塾）" }
+   ],
+   "employment_fields": ["kensetsu", "media", "maker"],
+   "unconfirmed": false,
+   "notes": "デザイン科学域（デザイン・建築学課程）。偏差値55.0、共テボーダー70〜72%。2026倍率（デザイン・建築）3.9。倍率欄は学部全体（2025:2.7→2026:3.4）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度・2026-07-01更新）。倍率は河合塾Kei-Net掲載の前期日程一般選抜（学部全体2025:2.7→2026:3.4、学科別値はnotesに併記）。京都工繊は3学域制で募集は学域単位。国立大につき一般前期＋共通テストを確認。全学松ヶ崎キャンパス。看板ゼミは省略"
+}

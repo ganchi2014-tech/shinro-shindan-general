@@ -1,0 +1,51 @@
+{
+ "uni_id": "shiga-univ",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0540/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1270.html",
+  "https://search.keinet.ne.jp/1270/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "shiga-univ-keizai",
+   "campus": "彦根キャンパス（滋賀県彦根市馬場）",
+   "hensachi": { "min": 52.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0540/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.0, "2026": 2.7 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1270.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "国立大学のため共通テストを課す。共テ得点率ボーダー69〜78%（河合塾）" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu", "maker"],
+   "unconfirmed": false,
+   "notes": "経済学部（昼間主・夜間主）。偏差値52.5〜57.5、共テボーダー69〜78%。倍率は前期日程一般選抜（2025:4.0→2026:2.7）。夜間主コースは別枠"
+  },
+  {
+   "dept_id": "shiga-univ-kyoiku",
+   "campus": "大津キャンパス（滋賀県大津市平津）",
+   "hensachi": { "min": 45.0, "max": 45.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0540/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.8, "2026": 1.5 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1270.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テ得点率ボーダー51〜63%（河合塾）" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false,
+   "notes": "学校教育教員養成課程。偏差値45.0、共テボーダー51〜63%。倍率は前期一般選抜（2025:1.8→2026:1.5）"
+  },
+  {
+   "dept_id": "shiga-univ-datascience",
+   "campus": "彦根キャンパス（滋賀県彦根市馬場）",
+   "hensachi": { "min": 52.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0540/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9, "2026": 2.5 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1270.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テ得点率ボーダー65〜78%（河合塾）" }
+   ],
+   "employment_fields": ["it", "maker", "kinyu"],
+   "unconfirmed": false,
+   "notes": "日本初のデータサイエンス学部。偏差値52.5〜57.5、共テボーダー65〜78%。倍率は前期一般選抜（2025:2.9→2026:2.5）"
+  }
+ ],
+ "notes": "偏差値は旺文社パスナビ掲載の河合塾偏差値（2026年度／第1回全統記述模試・2026-07-01更新）。共テ得点率ボーダーも同河合塾。倍率は河合塾Kei-Net掲載の滋賀大学一般選抜（前期日程）入試結果で2025・2026両年度。国立大につき一般選抜（前期・後期）＋共通テストを全学で確認。学校推薦型・総合型選抜も一部学部で実施されるが本調査では偏差値・倍率は一般前期基準。看板ゼミは公式で特定困難のため省略"
+}

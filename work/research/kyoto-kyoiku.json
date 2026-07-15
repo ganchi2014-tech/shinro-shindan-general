@@ -1,0 +1,25 @@
+{
+ "uni_id": "kyoto-kyoiku",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0570/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1285.html",
+  "https://search.keinet.ne.jp/1285/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "kyoto-kyoiku-d01",
+   "campus": "藤森キャンパス（京都府京都市伏見区深草藤森町）",
+   "hensachi": { "min": 45.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/0570/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 1.8, "2026": 2.1 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1285.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期・後期日程／共通テスト＋個別学力検査）。専攻別募集" },
+    { "type": "kyotsu", "available": true, "note": "共テボーダー55〜73%（河合塾／専攻により幅）" }
+   ],
+   "employment_fields": ["kyoiku", "koumuin"],
+   "unconfirmed": false,
+   "notes": "教育学部（学校教育教員養成課程・各教科専攻）。偏差値45.0〜52.5、共テボーダー55〜73%（幼児教育65〜68%、体育62〜63%、教育学59%等）。倍率は前期一般選抜（2025:1.8→2026:2.1、2026は400志願→179合格）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は河合塾Kei-Net掲載の前期日程一般選抜入試結果で2025・2026両年度。国立の教員養成単科大学、全学藤森キャンパス。学校推薦型も一部専攻で実施だが偏差値・倍率は一般前期基準。看板ゼミは省略"
+}

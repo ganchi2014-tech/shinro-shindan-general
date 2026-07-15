@@ -1,0 +1,38 @@
+{
+ "uni_id": "shiga-ika",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/0550/difficulty/",
+  "https://www.keinet.ne.jp/exam/past/result/ippan/national/1275.html",
+  "https://search.keinet.ne.jp/1275/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "shiga-ika-i",
+   "campus": "瀬田キャンパス（滋賀県大津市瀬田月輪町）",
+   "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/0550/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.7, "2026": 3.9 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1275.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）。地域医療枠あり" },
+    { "type": "kyotsu", "available": true, "note": "共テ得点率ボーダー82%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi", "koumuin"],
+   "unconfirmed": false,
+   "notes": "医学部医学科（6年制）。偏差値65.0、共テボーダー82%。倍率は前期一般選抜（医学科：2025:3.7→2026:3.9、2026は238受験→61合格）。学校推薦型（地域医療推薦）も別枠であり"
+  },
+  {
+   "dept_id": "shiga-ika-i2",
+   "campus": "瀬田キャンパス（滋賀県大津市瀬田月輪町）",
+   "hensachi": { "min": 52.5, "max": 55.0, "source_url": "https://search.keinet.ne.jp/1275/general/border_rate" },
+   "bairitsu": { "ippan": { "2025": 2.8, "2026": 1.6 }, "source_url": "https://www.keinet.ne.jp/exam/past/result/ippan/national/1275.html" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（前期日程／共通テスト＋個別学力検査）" },
+    { "type": "kyotsu", "available": true, "note": "共テ得点率ボーダー64%（河合塾）" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部看護学科。共テボーダー64%（河合塾）。偏差値はパスナビ「データなし」のためKei-Net検索の河合塾ランク帯（52.5〜55.0）を採用。倍率は前期一般選抜（看護：2025:2.8→2026:1.6、2026は73受験→46合格）"
+  }
+ ],
+ "notes": "偏差値・共テボーダーは河合塾（旺文社パスナビ／Kei-Net、2026年度）。倍率は河合塾Kei-Net掲載の滋賀医科大学一般選抜（前期日程）入試結果で2025・2026両年度。国立大につき一般前期＋共通テストを確認。看板ゼミは省略"
+}
