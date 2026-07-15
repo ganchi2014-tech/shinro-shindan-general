@@ -57803,18 +57803,20 @@
    "dept_id": "tokyo-rika-ri",
    "uni_id": "tokyo-rika",
    "name": "理学部",
-   "campus": "神楽坂",
+   "campus": "神楽坂キャンパス（東京都新宿区神楽坂）",
    "hensachi": {
-    "min": 55,
-    "max": 60,
+    "min": 60,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2880/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -57832,14 +57834,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A方式=共テ利用／B方式=個別／C方式=併用／グローバル方式）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "A方式は共通テスト利用",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -57848,26 +57850,32 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "tokyo-rika-ko",
    "uni_id": "tokyo-rika",
    "name": "工学部",
-   "campus": "葛飾",
+   "campus": "葛飾キャンパス（東京都葛飾区新宿）",
    "hensachi": {
-    "min": 55,
-    "max": 60,
+    "min": 57.5,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2880/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.4
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -57885,14 +57893,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A方式=共テ利用／B方式=個別／C方式=併用）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "A方式は共通テスト利用",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -57902,26 +57910,32 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "tokyo-rika-d01",
    "uni_id": "tokyo-rika",
    "name": "創域理工学部",
-   "campus": "野田",
+   "campus": "野田キャンパス（千葉県野田市山崎）",
    "hensachi": {
-    "min": 52.5,
-    "max": 57.5,
+    "min": 55,
+    "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2880/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.9
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -57939,14 +57953,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A方式=共テ利用／B方式=個別／C方式=併用）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "A方式は共通テスト利用",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -57956,26 +57970,32 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "tokyo-rika-senshinko",
    "uni_id": "tokyo-rika",
    "name": "先進工学部",
-   "campus": "葛飾",
+   "campus": "葛飾キャンパス（東京都葛飾区新宿）",
    "hensachi": {
-    "min": 55,
-    "max": 57.5,
+    "min": 57.5,
+    "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2880/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.9
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -57993,14 +58013,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A方式=共テ利用／B方式=個別／C方式=併用）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "A方式は共通テスト利用",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58012,26 +58032,31 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "maker",
+    "it"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "tokyo-rika-d02",
    "uni_id": "tokyo-rika",
    "name": "薬学部（6年制）",
-   "campus": "野田",
+   "campus": "野田キャンパス（千葉県野田市山崎）",
    "hensachi": {
-    "min": 57.5,
-    "max": 57.5,
+    "min": 60,
+    "max": 60,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2880/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.8
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58049,14 +58074,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A方式=共テ利用／B方式=個別／C方式=併用）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "A方式は共通テスト利用",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58065,26 +58090,31 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "tokyo-rika-keiei",
    "uni_id": "tokyo-rika",
    "name": "経営学部",
-   "campus": "神楽坂",
+   "campus": "神楽坂キャンパス（東京都新宿区神楽坂）／北海道長万部キャンパス（1年次一部）",
    "hensachi": {
-    "min": 52.5,
+    "min": 57.5,
     "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2880/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.9
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -58102,14 +58132,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（A方式=共テ利用／B方式=個別／C方式=併用）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "A方式は共通テスト利用",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -58121,9 +58151,13 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "it",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "aoyama-gakuin-bungaku",
@@ -59584,18 +59618,20 @@
    "dept_id": "nihon-univ-ho",
    "uni_id": "nihon-univ",
    "name": "法学部",
-   "campus": "神田三崎町",
+   "campus": "神田三崎町キャンパス（東京都千代田区三崎町）",
    "hensachi": {
-    "min": 50,
-    "max": 52.5,
+    "min": 42.5,
+    "max": 55,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59613,14 +59649,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59632,26 +59668,32 @@
    "interest_tags": [
     "hokei"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nihon-univ-keizai",
    "uni_id": "nihon-univ",
    "name": "経済学部",
-   "campus": "水道橋",
+   "campus": "神田三崎町キャンパス（東京都千代田区三崎町）",
    "hensachi": {
-    "min": 50,
+    "min": 47.5,
     "max": 52.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.9
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59669,14 +59711,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59688,26 +59730,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "ryutsu"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nihon-univ-sho",
    "uni_id": "nihon-univ",
    "name": "商学部",
-   "campus": "砧",
+   "campus": "砧キャンパス（東京都世田谷区砧）",
    "hensachi": {
     "min": 50,
     "max": 52.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59725,14 +59773,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59741,26 +59789,32 @@
    "interest_tags": [
     "keizai"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kinyu",
+    "ryutsu",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nihon-univ-d01",
    "uni_id": "nihon-univ",
    "name": "文理学部",
-   "campus": "桜上水",
+   "campus": "文理学部キャンパス（東京都世田谷区桜上水）",
    "hensachi": {
-    "min": 47.5,
+    "min": 42.5,
     "max": 55,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.8
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59778,14 +59832,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59795,26 +59849,32 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nihon-univ-riko",
    "uni_id": "nihon-univ",
    "name": "理工学部",
-   "campus": "駿河台・船橋",
+   "campus": "駿河台キャンパス（東京都千代田区）／船橋キャンパス（千葉県船橋市）",
    "hensachi": {
-    "min": 47.5,
-    "max": 52.5,
+    "min": 45,
+    "max": 55,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59832,14 +59892,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59849,26 +59909,32 @@
    "interest_tags": [
     "riko"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "kensetsu",
+    "maker",
+    "it"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nihon-univ-geijutsu",
    "uni_id": "nihon-univ",
    "name": "芸術学部",
-   "campus": "江古田",
+   "campus": "江古田キャンパス（東京都練馬区旭丘）",
    "hensachi": {
-    "min": 47.5,
-    "max": 52.5,
+    "min": 50,
+    "max": 57.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 4.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59886,14 +59952,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（N全学統一方式・A個別方式=実技等）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59902,26 +59968,31 @@
    "interest_tags": [
     "geijutsu"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "media",
+    "service"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nihon-univ-sportskagaku",
    "uni_id": "nihon-univ",
    "name": "スポーツ科学部",
-   "campus": "三軒茶屋",
+   "campus": "三軒茶屋キャンパス（東京都世田谷区下馬）",
    "hensachi": {
     "min": 45,
-    "max": 47.5,
+    "max": 50,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 2.9
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59939,14 +60010,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -59956,26 +60027,31 @@
    "interest_tags": [
     "sports"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "sports_kenko",
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nihon-univ-d02",
    "uni_id": "nihon-univ",
    "name": "医学部（6年制）",
-   "campus": "板橋",
+   "campus": "板橋キャンパス（東京都板橋区大谷口上町）",
    "hensachi": {
     "min": 65,
     "max": 65,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 14.7
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -59993,14 +60069,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": false,
+     "note": "医学科は共通テスト利用なし",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -60009,26 +60085,30 @@
    "interest_tags": [
     "iryo"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "nihon-univ-d03",
    "uni_id": "nihon-univ",
    "name": "生物資源科学部",
-   "campus": "藤沢",
+   "campus": "湘南キャンパス（神奈川県藤沢市亀井野）",
    "hensachi": {
-    "min": 45,
-    "max": 52.5,
+    "min": 40,
+    "max": 62.5,
     "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/",
+    "verified_date": "2026-07-13"
    },
    "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
+    "ippan": {
+     "2025": 3.5
+    },
+    "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/",
+    "verified_date": "2026-07-13"
    },
    "entry_methods": [
     {
@@ -60046,14 +60126,14 @@
     {
      "type": "ippan",
      "available": true,
-     "note": null,
-     "verified": false
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": true
     },
     {
      "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": true
     }
    ],
    "qualifications": [
@@ -60063,9 +60143,13 @@
    "interest_tags": [
     "unclassified"
    ],
-   "employment_fields": [],
+   "employment_fields": [
+    "shokuhin",
+    "iryo_fukushi",
+    "maker"
+   ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "verified"
   },
   {
    "dept_id": "toyo-univ-bungaku",

@@ -1,0 +1,90 @@
+{
+ "uni_id": "tokyo-rika",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/2880/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/",
+  "https://search.keinet.ne.jp/2262/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "tokyo-rika-ri",
+   "campus": "神楽坂キャンパス（東京都新宿区神楽坂）",
+   "hensachi": { "min": 60.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2880/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（A方式=共テ利用／B方式=個別／C方式=併用／グローバル方式）" },
+    { "type": "kyotsu", "available": true, "note": "A方式は共通テスト利用" }
+   ],
+   "employment_fields": ["maker", "it", "kyoiku"],
+   "unconfirmed": false,
+   "notes": "理学部第一部（数学・物理・化学・応用数学・応用化学）。偏差値60.0〜62.5。倍率B方式2025:2.7倍"
+  },
+  {
+   "dept_id": "tokyo-rika-ko",
+   "campus": "葛飾キャンパス（東京都葛飾区新宿）",
+   "hensachi": { "min": 57.5, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2880/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.4 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（A方式=共テ利用／B方式=個別／C方式=併用）" },
+    { "type": "kyotsu", "available": true, "note": "A方式は共通テスト利用" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "工学部（建築・工業化学・電気工・情報工・機械工）。偏差値57.5〜62.5。倍率B方式2025:3.4倍"
+  },
+  {
+   "dept_id": "tokyo-rika-d01",
+   "campus": "野田キャンパス（千葉県野田市山崎）",
+   "hensachi": { "min": 55.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2880/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（A方式=共テ利用／B方式=個別／C方式=併用）" },
+    { "type": "kyotsu", "available": true, "note": "A方式は共通テスト利用" }
+   ],
+   "employment_fields": ["maker", "it", "kensetsu"],
+   "unconfirmed": false,
+   "notes": "創域理工学部（旧理工学部、数理科学・先端物理・情報計算科学・生命生物科学・建築・先端化学・電気電子・経営システム工・機械航空宇宙・社会基盤工）。偏差値55.0〜60.0。倍率B方式2025:2.9倍"
+  },
+  {
+   "dept_id": "tokyo-rika-senshinko",
+   "campus": "葛飾キャンパス（東京都葛飾区新宿）",
+   "hensachi": { "min": 57.5, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2880/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（A方式=共テ利用／B方式=個別／C方式=併用）" },
+    { "type": "kyotsu", "available": true, "note": "A方式は共通テスト利用" }
+   ],
+   "employment_fields": ["maker", "it"],
+   "unconfirmed": false,
+   "notes": "先進工学部（電子システム工・マテリアル創成工・生命システム工・物理工・機能デザイン工）。偏差値57.5〜60.0。倍率B方式2025:2.9倍"
+  },
+  {
+   "dept_id": "tokyo-rika-d02",
+   "campus": "野田キャンパス（千葉県野田市山崎）",
+   "hensachi": { "min": 60.0, "max": 60.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2880/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.8 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（A方式=共テ利用／B方式=個別／C方式=併用）" },
+    { "type": "kyotsu", "available": true, "note": "A方式は共通テスト利用" }
+   ],
+   "employment_fields": ["iryo_fukushi", "maker"],
+   "unconfirmed": false,
+   "notes": "薬学部（薬学科6年制・生命創薬科学科）。偏差値60.0。倍率B方式2025:3.8倍"
+  },
+  {
+   "dept_id": "tokyo-rika-keiei",
+   "campus": "神楽坂キャンパス（東京都新宿区神楽坂）／北海道長万部キャンパス（1年次一部）",
+   "hensachi": { "min": 57.5, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2880/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2880/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（A方式=共テ利用／B方式=個別／C方式=併用）" },
+    { "type": "kyotsu", "available": true, "note": "A方式は共通テスト利用" }
+   ],
+   "employment_fields": ["kinyu", "it", "service"],
+   "unconfirmed": false,
+   "notes": "経営学部（経営・ビジネスエコノミクス・国際デザイン経営）。偏差値57.5。学内最高倍率、倍率B方式2025:3.9倍"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度）。倍率は旺文社パスナビ掲載の一般B方式（個別試験、2025年度・学部計）。私立理系難関大。神楽坂（理・経営）・葛飾（工・先進工）・野田（創域理工・薬）の複数キャンパス。看板ゼミは省略"
+}

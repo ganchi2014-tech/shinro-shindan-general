@@ -1,0 +1,129 @@
+{
+ "uni_id": "nihon-univ",
+ "researched_date": "2026-07-13",
+ "sources": [
+  "https://passnavi.obunsha.co.jp/univ/2930/difficulty/",
+  "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/",
+  "https://search.keinet.ne.jp/2267/general/border_rate"
+ ],
+ "departments": [
+  {
+   "dept_id": "nihon-univ-ho",
+   "campus": "神田三崎町キャンパス（東京都千代田区三崎町）",
+   "hensachi": { "min": 42.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（N全学統一方式・A個別方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["koumuin", "kinyu", "service"],
+   "unconfirmed": false,
+   "notes": "法学部第一部（法律・政治経済・新聞・経営法・公共政策）。偏差値42.5〜55.0。倍率2025:2.5倍"
+  },
+  {
+   "dept_id": "nihon-univ-keizai",
+   "campus": "神田三崎町キャンパス（東京都千代田区三崎町）",
+   "hensachi": { "min": 47.5, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（N全学統一方式・A個別方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["kinyu", "koumuin", "ryutsu"],
+   "unconfirmed": false,
+   "notes": "経済学部（経済・産業経営・金融公共経済）。偏差値47.5〜52.5。倍率2025:2.9倍"
+  },
+  {
+   "dept_id": "nihon-univ-sho",
+   "campus": "砧キャンパス（東京都世田谷区砧）",
+   "hensachi": { "min": 50.0, "max": 52.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.0 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（N全学統一方式・A個別方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["kinyu", "ryutsu", "service"],
+   "unconfirmed": false,
+   "notes": "商学部（商業・経営・会計）。偏差値50.0〜52.5。倍率2025:3.0倍"
+  },
+  {
+   "dept_id": "nihon-univ-d01",
+   "campus": "文理学部キャンパス（東京都世田谷区桜上水）",
+   "hensachi": { "min": 42.5, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.8 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（N全学統一方式・A個別方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["kyoiku", "media", "service"],
+   "unconfirmed": false,
+   "notes": "文理学部（哲・史・国文・中国語中国文化・英文・ドイツ文・社会・社会福祉・教育・体育・心理・地理・地球科学・数学・情報科学・物理・生命科学・化学）。偏差値42.5〜55.0。倍率2025:2.8倍"
+  },
+  {
+   "dept_id": "nihon-univ-riko",
+   "campus": "駿河台キャンパス（東京都千代田区）／船橋キャンパス（千葉県船橋市）",
+   "hensachi": { "min": 45.0, "max": 55.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（N全学統一方式・A個別方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["kensetsu", "maker", "it"],
+   "unconfirmed": false,
+   "notes": "理工学部（土木工・交通システム工・建築・海洋建築工・まちづくり工・機械工・精密機械工・航空宇宙工・電気工・電子工・応用情報工・物質応用化学・物理・数学）。偏差値45.0〜55.0。倍率2025:2.7倍（学内最低）"
+  },
+  {
+   "dept_id": "nihon-univ-geijutsu",
+   "campus": "江古田キャンパス（東京都練馬区旭丘）",
+   "hensachi": { "min": 50.0, "max": 57.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 4.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（N全学統一方式・A個別方式=実技等）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["media", "service"],
+   "unconfirmed": false,
+   "notes": "芸術学部（写真・映画・美術・音楽・文芸・演劇・放送・デザイン）。通称「日芸」。偏差値50.0〜57.5。学内上位倍率、倍率2025:4.7倍"
+  },
+  {
+   "dept_id": "nihon-univ-sportskagaku",
+   "campus": "三軒茶屋キャンパス（東京都世田谷区下馬）",
+   "hensachi": { "min": 45.0, "max": 50.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 2.9 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（N全学統一方式・A個別方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["sports_kenko", "iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "スポーツ科学部 競技スポーツ学科。偏差値45.0〜50.0。倍率2025:2.9倍"
+  },
+  {
+   "dept_id": "nihon-univ-d02",
+   "campus": "板橋キャンパス（東京都板橋区大谷口上町）",
+   "hensachi": { "min": 65.0, "max": 65.0, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 14.7 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（N全学統一方式・A個別方式）" },
+    { "type": "kyotsu", "available": false, "note": "医学科は共通テスト利用なし" }
+   ],
+   "employment_fields": ["iryo_fukushi"],
+   "unconfirmed": false,
+   "notes": "医学部 医学科（6年制）。学内最難関、偏差値65.0。倍率2025:14.7倍（学内圧倒的最高）"
+  },
+  {
+   "dept_id": "nihon-univ-d03",
+   "campus": "湘南キャンパス（神奈川県藤沢市亀井野）",
+   "hensachi": { "min": 40.0, "max": 62.5, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/difficulty/" },
+   "bairitsu": { "ippan": { "2025": 3.5 }, "source_url": "https://passnavi.obunsha.co.jp/univ/2930/bairitsu/" },
+   "entry_methods": [
+    { "type": "ippan", "available": true, "note": "一般選抜（N全学統一方式・A個別方式）" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり" }
+   ],
+   "employment_fields": ["shokuhin", "iryo_fukushi", "maker"],
+   "unconfirmed": false,
+   "notes": "生物資源科学部（獣医・動物資源科学・食品開発・食品ビジネス・森林・海洋生物資源科学・生物環境工・くらしの生物・応用生物科学ほか）。偏差値40.0〜62.5（獣医学科62.5が最上位）。倍率2025:3.5倍"
+  }
+ ],
+ "notes": "偏差値は河合塾（旺文社パスナビ、2026年度・2026-07-01更新）。倍率は旺文社パスナビ掲載の一般選抜（2025年度・学部計）。日本最大規模の私立総合大（16学部だがbatch対象は主要9学部）。学部ごとに独立キャンパス。医学科は共テ利用なし。看板ゼミは省略"
+}
