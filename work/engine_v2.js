@@ -122,8 +122,55 @@ function computeFit(dept, uni, ctx) {
   return { fitScore: round1(fitScore), reasons: reasons.slice(0, 5), breakdown: { appt: round1(appt), emp, soft, riasecFit: round2(rf) } };
 }
 
+// diagnose(userProfile, dataV2, tagsDef, riasecMap, opts?)
+// tagsDef は将来の検証用に受けるが現状未使用（インターフェース安定のため引数に残す）
+function diagnose(userProfile, dataV2, tagsDef, riasecMap, opts = {}) {
+  const topN = opts.topN || DEFAULT_TOP_N;
+  const { profile, hollandCode, answered } = computeRiasecProfile(userProfile.riasecAnswers);
+  const interests = new Set(userProfile.interests || []);
+  const careers = new Set(userProfile.careers || []);
+  const examMethods = new Set(userProfile.examMethods || []);
+  const lowSignal = !answered && interests.size === 0;
+  const adjHen = adjustedHensachi(userProfile.hensachi, userProfile.examSource);
+
+  const { passed, excluded } = hardFilter(dataV2.departments, dataV2.universities, userProfile);
+  excluded.outOfRange = 0;
+
+  const ctx = { riasecProfile: profile, hollandCode, interests, careers, examMethods, budgetMax: userProfile.budgetMax ?? null, riasecMap };
+  const zones = { challenge: [], match: [], safe: [] };
+  const ungrouped = [];
+
+  for (const { dept, uni } of passed) {
+    const min = dept.hensachi ? dept.hensachi.min : null;
+    const max = dept.hensachi ? dept.hensachi.max : null;
+    const mid = (min != null && max != null) ? (min + max) / 2 : (min != null ? min : (max != null ? max : null));
+    const zone = classifyZone(mid, adjHen);
+    if (zone === 'out') { excluded.outOfRange++; continue; }
+    const fit = computeFit(dept, uni, ctx);
+    const item = {
+      dept_id: dept.dept_id, uni_id: uni.id, uni_name: uni.name, dept_name: dept.name,
+      campus: dept.campus, hensachi: { min, max, mid },
+      bairitsu: dept.bairitsu, zone: zone === 'ungrouped' ? null : zone,
+      fitScore: fit.fitScore, reasons: fit.reasons, breakdown: fit.breakdown,
+    };
+    if (zone === 'ungrouped') ungrouped.push(item);
+    else zones[zone].push(item);
+  }
+
+  const byFit = (a, b) => (b.fitScore - a.fitScore) || ((b.hensachi.mid || 0) - (a.hensachi.mid || 0));
+  for (const k of ['challenge', 'match', 'safe']) zones[k].sort(byFit);
+  ungrouped.sort(byFit);
+
+  return {
+    zones: { challenge: zones.challenge.slice(0, topN), match: zones.match.slice(0, topN), safe: zones.safe.slice(0, topN) },
+    ungrouped: ungrouped.slice(0, topN * 3),
+    excluded,
+    meta: { adjustedHensachi: adjHen, riasecProfile: profile, hollandCode, lowSignal },
+  };
+}
+
 module.exports = {
   RIASEC_TYPES, RIASEC_ORDER, EXAM_SOURCE_OFFSET, ZONE, DEFAULT_TOP_N,
   computeRiasecProfile, adjustedHensachi, classifyZone, hardFilter,
-  deptRiasecVector, riasecFitScore, computeFit,
+  deptRiasecVector, riasecFitScore, computeFit, diagnose,
 };

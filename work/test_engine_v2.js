@@ -114,4 +114,48 @@ const E = require('./engine_v2.js');
   assert.ok(bad.fitScore >= 0, 'クランプ下限0: ' + bad.fitScore);
 }
 
+// ---- diagnose 統合（合成フィクスチャ）----
+{
+  const riasecMap = require('./interest_riasec_map.json').map;
+  const universities = [
+    { id: 'u1', name: '滋賀A大', region: 'shiga', prefecture: '滋賀県', commute_possible: true, tuition_yen_per_year: 1200000 },
+    { id: 'u2', name: '関東B大', region: 'kanto', prefecture: '東京都', commute_possible: false, tuition_yen_per_year: 1300000 },
+  ];
+  const mkDept = (id, uni, tags, hmin, hmax, status = 'verified') => ({
+    dept_id: id, uni_id: uni, name: id + '学部', campus: 'C', data_status: status,
+    hensachi: { min: hmin, max: hmax }, bairitsu: { ippan: {} },
+    entry_methods: [{ type: 'ippan', available: true }], interest_tags: tags,
+    employment_fields: ['kinyu'], zemi: [],
+  });
+  const departments = [
+    mkDept('u1-keizai', 'u1', ['keizai'], 50, 52),   // mid51 gap+1 → 実力(換算50)
+    mkDept('u1-joho', 'u1', ['joho'], 55, 57),       // mid56 gap+6 → 挑戦
+    mkDept('u1-kyoiku', 'u1', ['kyoiku'], 44, 46),   // mid45 gap-5 → 安全
+    mkDept('u2-keizai', 'u2', ['keizai'], 50, 52),   // 関東 → 地域除外
+    mkDept('u1-x', 'u1', ['keizai'], 65, 67, 'unconfirmed'), // unconfirmed除外
+  ];
+  const dataV2 = { universities, departments };
+  const profile = {
+    hensachi: 50, examSource: 'kawai', regions: ['shiga'], commuteOnly: false,
+    riasecAnswers: [0, 0, 3, 3, 0, 0, 0, 0, 3, 3, 0, 0], // I高E高
+    interests: ['keizai'], careers: ['kinyu'], examMethods: ['ippan'], budgetMax: null,
+  };
+  const res = E.diagnose(profile, dataV2, null, riasecMap);
+  assert.strictEqual(res.zones.match.length, 1);
+  assert.strictEqual(res.zones.match[0].dept_id, 'u1-keizai');
+  assert.strictEqual(res.zones.challenge[0].dept_id, 'u1-joho');
+  assert.strictEqual(res.zones.safe[0].dept_id, 'u1-kyoiku');
+  assert.strictEqual(res.excluded.byRegion, 1);
+  assert.strictEqual(res.excluded.unconfirmed, 1);
+  assert.strictEqual(res.meta.adjustedHensachi, 50);
+  assert.ok(res.meta.hollandCode.length === 3);
+  assert.strictEqual(res.meta.lowSignal, false);
+  assert.ok(res.zones.match[0].fitScore > 0);
+  const res2 = E.diagnose({ ...profile, hensachi: null }, dataV2, null, riasecMap);
+  assert.strictEqual(res2.zones.challenge.length, 0);
+  assert.ok(res2.ungrouped.length >= 3);
+  const res3 = E.diagnose({ ...profile, riasecAnswers: [], interests: [] }, dataV2, null, riasecMap);
+  assert.strictEqual(res3.meta.lowSignal, true);
+}
+
 console.log('ALL OK');
