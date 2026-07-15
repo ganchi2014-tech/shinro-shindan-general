@@ -1491,6 +1491,63 @@ main {
   font-size: 11px;
 }
 
+/* ============================ RIASEC 適性チェック ============================ */
+.riasec-list { display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
+.riasec-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 14px 12px;
+}
+.riasec-q { margin: 0 0 10px; font-size: 14px; line-height: 1.6; color: var(--text); }
+.riasec-btns { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.riasec-opt {
+  border: 1px solid var(--border-hi);
+  background: var(--bg-elev, transparent);
+  color: var(--text-dim);
+  border-radius: 10px;
+  padding: 9px 4px;
+  font-size: 11px;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: all .12s ease;
+}
+.riasec-opt:hover { border-color: var(--accent); }
+.riasec-opt.on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ============================ 3ゾーン結果 ============================ */
+.result-band { font-size: 14px; color: var(--text); margin-bottom: 6px; }
+.result-band b { color: var(--accent); }
+.nudge {
+  background: var(--card); border: 1px dashed var(--border-hi);
+  border-radius: 10px; padding: 8px 12px; font-size: 12px; color: var(--text-dim);
+  margin-top: 6px;
+}
+.zone-block { margin-top: 22px; }
+.zone-title {
+  font-size: 17px; margin: 0 0 2px; display: flex; align-items: center; gap: 8px;
+}
+.zone-count {
+  font-size: 12px; background: var(--border-hi); color: var(--text-dim);
+  border-radius: 999px; padding: 1px 9px; font-weight: 600;
+}
+.zone-sub { margin: 0 0 10px; font-size: 12px; color: var(--text-muted); }
+.fit-badge {
+  font-size: 12px; font-weight: 700; color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  border-radius: 999px; padding: 2px 10px; white-space: nowrap;
+}
+.reason-chip {
+  display: inline-block; font-size: 11px; color: var(--text-dim);
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 999px; padding: 2px 9px; margin: 3px 4px 0 0;
+}
+
 /* ============================ RESPONSIVE ============================ */
 @media (min-width: 720px) {
   .hero { padding: 48px 32px; }
@@ -1573,6 +1630,7 @@ main {
       <div class="step-indicator">Step 1 / 7</div>
       <h2 class="step-title">あなたの評定平均は？</h2>
       <p class="step-sub">評定平均＝<strong>通知表（5段階）の全教科の平均</strong>。高3は「3年1学期まで」の平均、<strong>高1・高2は直近の通知表の平均でOK</strong>。推薦入試の出願条件に使われる数字です。</p>
+      <p class="step-sub" style="font-size:12px;color:var(--text-muted)">※ 推薦・総合型の出願条件の目安です。診断のマッチングスコアには影響しません。</p>
       <div class="hyoutei-wrap">
         <div class="hyoutei-display"><span id="hyouteiVal">3.5</span></div>
         <input type="range" min="1.0" max="5.0" step="0.1" value="3.5" id="hyouteiInput" />
@@ -1593,7 +1651,7 @@ main {
     <!-- ============================ DIAGNOSTIC: STEP 2 偏差値・挑戦度（NEW） ============================ -->
     <section class="screen" data-screen="diag-hensachi" hidden>
       <div class="step-indicator">Step 2 / 7</div>
-      <h2 class="step-title">あなたの偏差値と挑戦度は？</h2>
+      <h2 class="step-title">あなたの偏差値は？</h2>
       <p class="step-sub">自分のレベルと大学のミスマッチを防ぎます。</p>
       <p class="step-sub" style="margin-bottom:8px"><strong>📝 定期試験での目安をタップ</strong></p>
       <div class="hensachi-quick-buttons" id="hensachiQuickBtns">
@@ -1625,12 +1683,9 @@ main {
         <input type="checkbox" id="hensachiUnknownChk" />
         🤷 偏差値は未定（スコアに影響させない）
       </label>
-      <p class="step-sub" style="margin-top: 20px">挑戦度の方針:</p>
-      <div class="radio-list" id="challengeList">
-        <label class="radio-row"><input type="radio" name="challenge" value="challenge" /><span><strong>🚀 チャレンジ：背伸びしたい</strong><br />自分の偏差値+3.5〜+10の大学に挑戦</span></label>
-        <label class="radio-row"><input type="radio" name="challenge" value="standard" /><span><strong>🎯 標準：自分のレベル相応</strong><br />自分の偏差値±3.5以内の大学</span></label>
-        <label class="radio-row"><input type="radio" name="challenge" value="safe" /><span><strong>🛡️ 堅実：余裕をもって安全圏</strong><br />自分の偏差値-3.5以下の大学</span></label>
-        <label class="radio-row"><input type="radio" name="challenge" value="unknown" checked /><span><strong>🤷 未定（デフォルト）</strong><br />スコアに影響させない</span></label>
+      <div class="info-card" style="margin-top:16px;text-align:left;padding:10px 14px;font-size:12px;color:var(--text-dim);line-height:1.7">
+        <strong style="color:var(--text)">🎯 挑戦度は自動でおまかせ</strong><br />
+        結果は「実力相応 / チャレンジ / 安全圏」の3ゾーンに自動で振り分けます。方針を選ぶ必要はありません。
       </div>
       <div class="nav-row">
         <button class="secondary-btn" data-go="diag-1">← 戻る</button>
@@ -1721,7 +1776,20 @@ main {
       </div>
       <div class="nav-row">
         <button class="secondary-btn" data-go="diag-4">← 戻る</button>
-        <button class="primary-btn" id="runDiagBtn">🔍 診断する</button>
+        <button class="primary-btn" data-go="diag-riasec">次へ（適性チェック）→</button>
+      </div>
+    </section>
+
+    <!-- ============================ DIAGNOSTIC: 適性チェック RIASEC（任意） ============================ -->
+    <section class="screen" data-screen="diag-riasec" hidden>
+      <div class="step-indicator">適性チェック（任意）</div>
+      <h2 class="step-title">最後に、向いている学び方をチェック（<span id="riasecProgress">0</span>/12）</h2>
+      <p class="step-sub">直感でOK。時間がなければ<strong>スキップ</strong>できます。回答すると「あなたの性格に向いた学部」が上位に来やすくなり、診断の精度が上がります。</p>
+      <div id="riasecItems" class="riasec-list"></div>
+      <div class="nav-row" style="flex-wrap:wrap;gap:8px">
+        <button class="secondary-btn" data-go="diag-5">← 戻る</button>
+        <button class="primary-btn" id="runDiagBtn">🔍 この回答で診断</button>
+        <button class="ghost-btn" id="skipRiasecBtn">スキップして診断</button>
       </div>
     </section>
 
@@ -1812,6 +1880,8 @@ const state = {
   currentDetail: null,
   currentTab: 'basic',
   history: [],
+  riasecAnswers: [],   // 適性チェック（12要素 0-3、未回答は空）
+  lastResult: null,    // engine_v2 の診断結果
 };
 
 // ---------- 評定平均ヒント ----------
@@ -2018,6 +2088,44 @@ function findDeptV2(deptId) {
   return { dept, uni };
 }
 function regionLabelV2(id) { return (DATA_V2.regions && DATA_V2.regions[id] && DATA_V2.regions[id].label) || id; }
+
+// 適性チェック（RIASEC 12問）画面を生成
+const RIASEC_OPT_LABELS = ['あてはまらない', 'ややあてはまる', 'あてはまる', 'とてもあてはまる'];
+function buildRiasecScreen() {
+  const box = document.getElementById('riasecItems');
+  if (!box || !RIASEC_DEF) return;
+  box.innerHTML = '';
+  RIASEC_DEF.items.forEach((it, i) => {
+    const card = document.createElement('div'); card.className = 'riasec-card';
+    const q = document.createElement('p'); q.className = 'riasec-q'; q.textContent = `${i + 1}. ${it.text}`;
+    card.appendChild(q);
+    const row = document.createElement('div'); row.className = 'riasec-btns';
+    RIASEC_OPT_LABELS.forEach((lab, v) => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'riasec-opt'; b.textContent = lab;
+      b.addEventListener('click', () => {
+        state.riasecAnswers[i] = v;
+        [...row.children].forEach(c => c.classList.remove('on'));
+        b.classList.add('on');
+        const answered = state.riasecAnswers.filter(x => x != null).length;
+        const prog = document.getElementById('riasecProgress');
+        if (prog) prog.textContent = answered;
+      });
+      row.appendChild(b);
+    });
+    card.appendChild(row);
+    box.appendChild(card);
+  });
+}
+
+// 診断実行（engine_v2）
+function runDiagnose(riasecArr) {
+  go('loading');
+  const profile = BRIDGE.toUserProfile(state.diag, riasecArr || []);
+  state.lastResult = ENGINE.diagnose(profile, DATA_V2, DATA_V2.tags, RIASEC_MAP);
+  renderResults();
+  go('result');
+}
 
 // ============================================================
 // 画面遷移
@@ -2255,10 +2363,6 @@ function setupRadios() {
       document.querySelectorAll('.hensachi-quick-btn').forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
     });
-  });
-  // 挑戦度
-  document.querySelectorAll('input[name="challenge"]').forEach(r => {
-    r.addEventListener('change', e => state.diag.challenge = e.target.value);
   });
   // 就職希望地域
   document.querySelectorAll('input[name="workArea"]').forEach(r => {
@@ -3380,6 +3484,7 @@ async function init() {
   go('loading', { noHistory: true });
   await loadData();
   if (!loadV2()) { console.error('v2データ/エンジンの読み込みに失敗しました'); }
+  buildRiasecScreen();
   setupHyoutei();
   setupChips();
   setupRadios();
@@ -3396,7 +3501,10 @@ async function init() {
   document.getElementById('backBtn').addEventListener('click', back);
   document.getElementById('fabBackBtn')?.addEventListener('click', back);
   document.getElementById('resetBtn').addEventListener('click', () => {
-    state.diag = { hyoutei: 3.5, hyouteiUnknown: false, hensachi: 50, hensachiUnknown: false, examSource: 'unknown', challenge: 'unknown', careers: new Set(), interests: new Set(), workArea: 'unknown', commute: 'unknown', costPriority: false, methods: new Set(['any']) };
+    state.diag = { hyoutei: 3.5, hyouteiUnknown: false, hensachi: 50, hensachiUnknown: false, examSource: 'unknown', careers: new Set(), interests: new Set(), workArea: 'unknown', commute: 'unknown', costPriority: false, methods: new Set(['any']) };
+    state.riasecAnswers = [];
+    document.querySelectorAll('.riasec-opt.on').forEach(b => b.classList.remove('on'));
+    { const p = document.getElementById('riasecProgress'); if (p) p.textContent = '0'; }
     // UIリセット
     ['hyouteiUnknownChk', 'hensachiUnknownChk'].forEach(id => {
       const chk = document.getElementById(id);
@@ -3412,8 +3520,10 @@ async function init() {
     go('diag-1');
   });
   document.getElementById('runDiagBtn').addEventListener('click', () => {
-    renderResults();
-    go('result');
+    runDiagnose(state.riasecAnswers);
+  });
+  document.getElementById('skipRiasecBtn')?.addEventListener('click', () => {
+    runDiagnose([]);
   });
   document.getElementById('editDiagBtn').addEventListener('click', () => go('diag-1'));
   document.querySelectorAll('.tab').forEach(t => {
