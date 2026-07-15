@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>engine_v2 ハーネス（確認用）</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 16px; max-width: 900px; }
+  fieldset { margin-bottom: 12px; }
+  .zone { margin-top: 16px; }
+  .zone h2 { font-size: 15px; margin: 8px 0; }
+  .item { border: 1px solid #ccc; border-radius: 6px; padding: 8px; margin: 6px 0; }
+  .item .top { display: flex; justify-content: space-between; gap: 8px; }
+  .fit { font-weight: 700; color: #2563eb; }
+  .reasons { font-size: 12px; color: #555; margin-top: 4px; }
+  .meta { background: #f3f4f6; padding: 8px; border-radius: 6px; font-size: 13px; }
+  label { font-size: 13px; }
+  .riasec-q { display: block; margin: 2px 0; font-size: 12px; }
+  button { padding: 8px 16px; font-size: 14px; }
+</style>
+</head>
+<body>
+<h1>診断エンジンv2 確認ハーネス</h1>
+<p style="color:#b91c1c;font-size:12px">※ 目視確認専用。本番UIはフェーズ3で作成。</p>
+
+<fieldset><legend>偏差値・模試</legend>
+  偏差値 <input id="hensachi" type="number" value="52" style="width:70px">
+  模試 <select id="examSource"><option value="kawai">河合</option><option value="shinken">進研</option><option value="sundai">駿台</option><option value="toshin">東進</option></select>
+  <label><input id="hensachiNull" type="checkbox"> 未入力</label>
+</fieldset>
+<fieldset><legend>エリア（ハードフィルタ）</legend><span id="regions"></span>
+  <label><input id="commuteOnly" type="checkbox"> 通学可の大学のみ</label>
+</fieldset>
+<fieldset><legend>興味分野</legend><span id="interests"></span></fieldset>
+<fieldset><legend>希望就職系統</legend><span id="careers"></span></fieldset>
+<fieldset><legend>使える入試方式</legend>
+  <label><input type="checkbox" class="em" value="sogo">総合型</label>
+  <label><input type="checkbox" class="em" value="koubo">学校推薦</label>
+  <label><input type="checkbox" class="em" value="ippan" checked>一般</label>
+  <label><input type="checkbox" class="em" value="kyotsu" checked>共テ利用</label>
+</fieldset>
+<fieldset><legend>RIASEC（0〜3）</legend><div id="riasec"></div></fieldset>
+<button id="run">診断する</button>
+<div id="meta" class="meta"></div>
+<div id="out"></div>
+
+<script>
+async function loadJSON(p) { return (await fetch(p)).json(); }
+async function loadEngine() {
+  const src = await (await fetch('./engine_v2.js')).text();
+  const module = { exports: {} };
+  new Function('module', 'exports', src)(module, module.exports);
+  return module.exports;
+}
+let DATA, RIASEC_DEF, MAP, ENGINE;
+function chip(container, id, value, label, name) {
+  const l = document.createElement('label'); l.className = 'riasec-q';
+  l.innerHTML = `<input type="checkbox" data-${name}="${value}"> ${label}`;
+  container.appendChild(l);
+}
+(async function init() {
+  DATA = await loadJSON('./data_v2.json');
+  RIASEC_DEF = await loadJSON('./riasec_def.json');
+  MAP = (await loadJSON('./interest_riasec_map.json')).map;
+  ENGINE = await loadEngine();
+  const regionIds = [...new Set(DATA.universities.map(u => u.region))];
+  regionIds.forEach(r => chip(document.getElementById('regions'), r, r, r, 'region'));
+  DATA.tags.interest.forEach(t => chip(document.getElementById('interests'), t.id, t.id, t.label, 'interest'));
+  DATA.tags.employment.forEach(t => chip(document.getElementById('careers'), t.id, t.id, t.label, 'career'));
+  RIASEC_DEF.items.forEach((it, i) => {
+    const d = document.createElement('div'); d.className = 'riasec-q';
+    d.innerHTML = `${it.text} <input type="number" min="0" max="3" value="1" data-riasec="${i}" style="width:48px">`;
+    document.getElementById('riasec').appendChild(d);
+  });
+  document.querySelector('[data-region="shiga"]')?.click();
+})();
+function getChecked(attr) { return [...document.querySelectorAll(`[data-${attr}]`)].filter(e => e.checked).map(e => e.getAttribute(`data-${attr}`)); }
+document.getElementById('run').addEventListener('click', () => {
+  const answers = [...document.querySelectorAll('[data-riasec]')].map(e => Number(e.value) || 0);
+  const profile = {
+    hensachi: document.getElementById('hensachiNull').checked ? null : Number(document.getElementById('hensachi').value),
+    examSource: document.getElementById('examSource').value,
+    regions: getChecked('region'), commuteOnly: document.getElementById('commuteOnly').checked,
+    riasecAnswers: answers, interests: getChecked('interest'), careers: getChecked('career'),
+    examMethods: [...document.querySelectorAll('.em')].filter(e => e.checked).map(e => e.value), budgetMax: null,
+  };
+  const r = ENGINE.diagnose(profile, DATA, DATA.tags, MAP);
+  document.getElementById('meta').textContent =
+    `換算偏差値:${r.meta.adjustedHensachi} / ホランド:${r.meta.hollandCode} / lowSignal:${r.meta.lowSignal} / 除外:${JSON.stringify(r.excluded)}`;
+  const render = (title, arr) => {
+    if (!arr.length) return '';
+    return `<div class="zone"><h2>${title}（${arr.length}）</h2>` + arr.map(x =>
+      `<div class="item"><div class="top"><span>${x.uni_name} ${x.dept_name} <small>偏差${x.hensachi.min}-${x.hensachi.max}</small></span><span class="fit">${x.fitScore}</span></div><div class="reasons">${x.reasons.join(' ・ ')}</div></div>`).join('') + `</div>`;
+  };
+  const out = document.getElementById('out');
+  if (r.ungrouped.length) out.innerHTML = render('適性順（偏差値未入力）', r.ungrouped);
+  else out.innerHTML = render('🚀 挑戦', r.zones.challenge) + render('🎯 実力', r.zones.match) + render('🛡️ 安全', r.zones.safe);
+});
+</script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 // 進路診断v2 診断エンジン（純粋モジュール、依存なし）
 // spec: docs/superpowers/specs/2026-07-15-診断エンジンv2-design.md
 
