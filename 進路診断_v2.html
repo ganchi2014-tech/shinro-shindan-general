@@ -1578,6 +1578,35 @@ main {
 .detail-link { font-size: 13px; color: var(--accent); text-decoration: none; border: 1px solid var(--border-hi); border-radius: 8px; padding: 6px 12px; }
 .detail-link:hover { border-color: var(--accent); }
 
+/* ============================ 結果ビュー切替タブ ============================ */
+.view-tabs { display: flex; gap: 6px; margin: 12px 0 4px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 4px; }
+.view-tab {
+  flex: 1; border: none; background: transparent; color: var(--text-dim);
+  font-size: 13px; font-weight: 600; padding: 9px 6px; border-radius: 9px; cursor: pointer;
+  transition: all .12s ease;
+}
+.view-tab.active { background: var(--accent); color: #fff; }
+
+/* ============================ 大学ページ ============================ */
+.dept-more { font-size: 11px; color: var(--text-muted); }
+.uni-page-btn {
+  margin-top: 12px; width: 100%;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border: 1px solid var(--accent); color: var(--accent);
+  font-weight: 700; font-size: 13px; border-radius: 10px; padding: 10px; cursor: pointer;
+}
+.uni-page-btn:hover { background: color-mix(in srgb, var(--accent) 20%, transparent); }
+.uni-dept-list { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
+.uni-dept-row {
+  display: flex; align-items: center; gap: 8px; width: 100%; text-align: left;
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 11px 12px; cursor: pointer; color: var(--text);
+}
+.uni-dept-row:hover { border-color: var(--accent); }
+.udr-name { flex: 1; font-size: 13px; font-weight: 600; }
+.udr-band { font-size: 12px; color: var(--text-dim); white-space: nowrap; }
+.udr-go { color: var(--accent); font-weight: 700; }
+
 /* ============================ RESPONSIVE ============================ */
 @media (min-width: 720px) {
   .hero { padding: 48px 32px; }
@@ -65623,6 +65652,56 @@ function toUserProfile(diag, riasecAnswers) {
 module.exports = { INTEREST_MAP, CAREER_MAP, REGION_MAP, METHOD_MAP, mapSet, toUserProfile };
 
 ;window.BRIDGE_V2=module.exports;})();</script>
+<script>(function(){var module={exports:{}};var exports=module.exports;
+// engine_v2 の学部診断結果を「大学単位」に集約する純モジュール（依存なし）
+// spec: docs/superpowers/specs/2026-07-16-学部大学デュアル診断-design.md
+
+// zone内の学部項目配列 → uni_idごとに代表学部(最大fitScore)で集約
+function aggregateZone(items) {
+  const byUni = new Map();
+  for (const it of items || []) {
+    const cur = byUni.get(it.uni_id);
+    if (!cur) {
+      byUni.set(it.uni_id, { rep: it, count: 1 });
+    } else {
+      cur.count += 1;
+      if ((it.fitScore || 0) > (cur.rep.fitScore || 0)) cur.rep = it;
+    }
+  }
+  const out = [];
+  for (const { rep, count } of byUni.values()) {
+    out.push({
+      uni_id: rep.uni_id,
+      uni_name: rep.uni_name,
+      repDept: { dept_id: rep.dept_id, dept_name: rep.dept_name },
+      hensachi: rep.hensachi,
+      fitScore: rep.fitScore,
+      reasons: rep.reasons,
+      zone: rep.zone,
+      deptCount: count,
+    });
+  }
+  // 代表fit降順 → 偏差値mid降順
+  out.sort((a, b) => (b.fitScore - a.fitScore) ||
+    ((b.hensachi && b.hensachi.mid || 0) - (a.hensachi && a.hensachi.mid || 0)));
+  return out;
+}
+
+// result: engine_v2.diagnose の戻り値 { zones:{challenge,match,safe}, ungrouped, ... }
+// 戻り値: { challenge:[uniItem], match:[uniItem], safe:[uniItem], ungrouped:[uniItem] }
+function aggregateByUni(result) {
+  const z = (result && result.zones) || { challenge: [], match: [], safe: [] };
+  return {
+    challenge: aggregateZone(z.challenge),
+    match: aggregateZone(z.match),
+    safe: aggregateZone(z.safe),
+    ungrouped: aggregateZone((result && result.ungrouped) || []),
+  };
+}
+
+module.exports = { aggregateZone, aggregateByUni };
+
+;window.AGG_V2=module.exports;})();</script>
 
 </head>
 <body>
@@ -65863,6 +65942,10 @@ module.exports = { INTEREST_MAP, CAREER_MAP, REGION_MAP, METHOD_MAP, mapSet, toU
     <!-- ============================ RESULTS ============================ -->
     <section class="screen" data-screen="result" hidden>
       <div class="result-summary" id="resultSummary"></div>
+      <div class="view-tabs" id="resultViewTabs">
+        <button class="view-tab active" data-view="dept">🎓 学部で見る</button>
+        <button class="view-tab" data-view="uni">🏫 大学で見る</button>
+      </div>
       <div class="result-actions">
         <button class="ghost-btn" id="editDiagBtn">条件を編集</button>
         <button class="ghost-btn" data-go="list">全大学を見る</button>
@@ -65891,6 +65974,11 @@ module.exports = { INTEREST_MAP, CAREER_MAP, REGION_MAP, METHOD_MAP, mapSet, toU
         <button class="tab" data-tab="life">🌏 生活</button>
       </nav>
       <div class="tab-content" id="tabContent"></div>
+    </section>
+
+    <!-- ============================ UNIVERSITY WHOLE PAGE（大学全体） ============================ -->
+    <section class="screen" data-screen="uni-detail" hidden>
+      <div id="uniDetailBody"></div>
     </section>
 
     <!-- ============================ お気に入り・比較 ============================ -->
@@ -65949,6 +66037,8 @@ const state = {
   history: [],
   riasecAnswers: [],   // 適性チェック（12要素 0-3、未回答は空）
   lastResult: null,    // engine_v2 の診断結果
+  resultView: 'dept',  // 結果ビュー: 'dept'(学部) | 'uni'(大学)
+  currentUni: null,    // 大学全体ページで表示中の uni_id
 };
 
 // ---------- 評定平均ヒント ----------
@@ -66136,7 +66226,7 @@ function getRegion(regionId) { return state.data.base?.regions?.[regionId]; }
 // ============================================================
 // v2 データ / エンジン / ブリッジ（ビルドが <!-- INLINE_V2 --> に注入）
 // ============================================================
-let DATA_V2 = null, RIASEC_DEF = null, RIASEC_MAP = null, ENGINE = null, BRIDGE = null;
+let DATA_V2 = null, RIASEC_DEF = null, RIASEC_MAP = null, ENGINE = null, BRIDGE = null, AGG = null;
 function loadV2() {
   const dEl = document.getElementById('inlineDataV2');
   const rdEl = document.getElementById('inlineRiasecDef');
@@ -66146,8 +66236,11 @@ function loadV2() {
   RIASEC_MAP = rmEl ? JSON.parse(rmEl.textContent).map : null;
   ENGINE = window.ENGINE_V2 || null;
   BRIDGE = window.BRIDGE_V2 || null;
-  return !!(DATA_V2 && ENGINE && BRIDGE && RIASEC_DEF && RIASEC_MAP);
+  AGG = window.AGG_V2 || null;
+  return !!(DATA_V2 && ENGINE && BRIDGE && AGG && RIASEC_DEF && RIASEC_MAP);
 }
+function uniById(id) { return (DATA_V2.universities || []).find(u => u.id === id) || null; }
+function deptsOfUni(id) { return (DATA_V2.departments || []).filter(d => d.uni_id === id); }
 // v2データから dept / uni を引く
 function findDeptV2(deptId) {
   const dept = (DATA_V2.departments || []).find(d => d.dept_id === deptId) || null;
@@ -66750,8 +66843,8 @@ function renderResults() {
   const total = z.challenge.length + z.match.length + z.safe.length;
 
   summaryEl.innerHTML = `
-    <h2>あなたへのおすすめ学部</h2>
-    <p style="margin:0;color:var(--text-dim);font-size:13px">${total > 0 ? '条件に合う学部を「実力相応 / チャレンジ / 安全圏」に振り分けました' : '条件に合う学部を適性順に表示します'}</p>
+    <h2>あなたへのおすすめ${state.resultView === 'uni' ? '大学' : '学部'}</h2>
+    <p style="margin:0;color:var(--text-dim);font-size:13px">${total > 0 ? `条件に合う${state.resultView === 'uni' ? '大学' : '学部'}を「実力相応 / チャレンジ / 安全圏」に振り分けました` : `条件に合う${state.resultView === 'uni' ? '大学' : '学部'}を適性順に表示します`}</p>
     <div class="conditions">
       ${conds.map(c => `<span class="cond-tag">${escapeHtml(c)}</span>`).join('')}
     </div>
@@ -66761,14 +66854,48 @@ function renderResults() {
     <p style="margin:10px 0 0;padding:8px 10px;background:rgba(245,158,11,0.12);border-left:3px solid var(--accent);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.6">⚠️ この結果は<strong>2026年7月時点の推定データによる目安</strong>です。志望校を決める前に、必ず<strong>担任・進路指導室</strong>と<strong>各大学の公式サイト</strong>で確認してください。</p>
   `;
 
+  // ビュータブの見た目を同期
+  document.querySelectorAll('#resultViewTabs .view-tab').forEach(t =>
+    t.classList.toggle('active', t.dataset.view === state.resultView));
+
+  renderResultBody();
+}
+
+// 結果本体（学部/大学ビューで分岐）
+function renderResultBody() {
+  const r = state.lastResult || { zones: { challenge: [], match: [], safe: [] }, ungrouped: [], meta: {} };
+  const m = r.meta || {};
+  const z = r.zones || { challenge: [], match: [], safe: [] };
+  const listEl = document.getElementById('resultList');
   listEl.innerHTML = '';
-  const hasZones = total > 0;
-  if (m.adjustedHensachi == null || !hasZones) {
-    const list = (r.ungrouped && r.ungrouped.length) ? r.ungrouped : [...z.match, ...z.challenge, ...z.safe];
-    if (!list.length) {
-      listEl.innerHTML = `<p class="empty" style="padding:24px 8px;color:var(--text-dim);text-align:center;line-height:1.8">条件に合う学部が見つかりませんでした。<br>エリア・偏差値・入試方式の条件をゆるめてみてください。</p>`;
-      return;
+  const total = z.challenge.length + z.match.length + z.safe.length;
+  const noHen = m.adjustedHensachi == null || total === 0;
+  const kind = state.resultView === 'uni' ? '大学' : '学部';
+
+  if (state.resultView === 'uni') {
+    const agg = AGG.aggregateByUni(r);
+    const aggTotal = agg.challenge.length + agg.match.length + agg.safe.length;
+    if (noHen || aggTotal === 0) {
+      const list = (agg.ungrouped && agg.ungrouped.length) ? agg.ungrouped : [...agg.match, ...agg.challenge, ...agg.safe];
+      if (!list.length) { listEl.innerHTML = emptyResultHtml(kind); return; }
+      const s = zoneSectionUni('おすすめ（適性順）', list, m.adjustedHensachi == null ? '偏差値の入力がないため、適性・興味の一致度順です' : '');
+      if (s) listEl.appendChild(s);
+    } else {
+      [['🎯 実力相応', 'match', 'あなたの偏差値に近い、出願の中心になる大学'],
+       ['🚀 チャレンジ', 'challenge', '少し背伸びして狙える大学'],
+       ['🛡️ 安全圏', 'safe', '余裕をもって出願できる大学']].forEach(([t, k, sub]) => {
+        const s = zoneSectionUni(t, agg[k], sub); if (s) listEl.appendChild(s);
+      });
     }
+    const u = zoneSectionUni('📊 偏差値データなし', agg.ungrouped, '偏差値が未収録の大学（参考）');
+    if (u) listEl.appendChild(u);
+    return;
+  }
+
+  // 学部ビュー
+  if (noHen) {
+    const list = (r.ungrouped && r.ungrouped.length) ? r.ungrouped : [...z.match, ...z.challenge, ...z.safe];
+    if (!list.length) { listEl.innerHTML = emptyResultHtml(kind); return; }
     const s = zoneSection('おすすめ（適性順）', list, m.adjustedHensachi == null ? '偏差値の入力がないため、適性・興味の一致度順です' : '');
     if (s) listEl.appendChild(s);
   } else {
@@ -66780,6 +66907,41 @@ function renderResults() {
   }
   const u = zoneSection('📊 偏差値データなし', r.ungrouped, '偏差値が未収録の学部（参考）');
   if (u) listEl.appendChild(u);
+}
+
+function emptyResultHtml(kind) {
+  return `<p class="empty" style="padding:24px 8px;color:var(--text-dim);text-align:center;line-height:1.8">条件に合う${kind}が見つかりませんでした。<br>エリア・偏差値・入試方式の条件をゆるめてみてください。</p>`;
+}
+
+// 大学ゾーン節（大学カード）
+function zoneSectionUni(title, arr, sub) {
+  if (!arr || !arr.length) return null;
+  const sec = document.createElement('div'); sec.className = 'zone-block';
+  const head = document.createElement('div');
+  head.innerHTML = `<h3 class="zone-title">${title} <span class="zone-count">${arr.length}</span></h3>` +
+    (sub ? `<p class="zone-sub">${sub}</p>` : '');
+  sec.appendChild(head);
+  arr.forEach(it => sec.appendChild(uniCard(it)));
+  return sec;
+}
+
+// 大学カード（大学診断ビュー）
+function uniCard(item) {
+  const el = document.createElement('div'); el.className = 'uni-card dept-card';
+  const h = item.hensachi || {};
+  const band = (h.min != null && h.max != null)
+    ? (h.min === h.max ? `偏差値 ${h.min}` : `偏差値 ${h.min}〜${h.max}`) : '偏差値データなし';
+  const badge = (item.fitScore != null) ? `<span class="fit-badge">適性 ${item.fitScore}</span>` : '';
+  const reasons = (item.reasons && item.reasons.length)
+    ? `<div class="uc-reasons">${item.reasons.map(x => `<span class="reason-chip">${escapeHtml(x)}</span>`).join('')}</div>` : '';
+  const moreDept = item.deptCount > 1 ? `<span class="dept-more">ほか${item.deptCount - 1}学部</span>` : '';
+  el.innerHTML =
+    `<div class="uc-head"><div class="uc-name">${escapeHtml(item.uni_name)}</div></div>` +
+    `<div class="uc-dept">最も合う: ${escapeHtml(item.repDept.dept_name)} ${moreDept}</div>` +
+    `<div class="uc-meta"><span class="uc-band">${band}</span>${badge}</div>` +
+    reasons +
+    `<button class="uc-detail-btn" data-uni="${item.uni_id}">🏫 大学ページを見る →</button>`;
+  return el;
 }
 
 function zoneSection(title, arr, sub) {
@@ -66992,40 +67154,56 @@ function renderList() {
 
   const sel = regionFilter.value;
   const q = (searchInput.value || '').trim();
-  const uniById = new Map(DATA_V2.universities.map(u => [u.id, u]));
 
-  const depts = DATA_V2.departments.filter(d => {
-    const u = uniById.get(d.uni_id);
-    if (!u) return false;
+  const unis = DATA_V2.universities.filter(u => {
     if (sel !== 'all' && u.region !== sel) return false;
-    if (q && !(u.name.includes(q) || (u.name_short || '').includes(q) || d.name.includes(q))) return false;
+    if (q) {
+      const deptHit = deptsOfUni(u.id).some(d => d.name.includes(q));
+      if (!(u.name.includes(q) || (u.name_short || '').includes(q) || deptHit)) return false;
+    }
     return true;
   });
 
   // 地域ごとに集約
   const grouped = {};
-  depts.forEach(d => {
-    const reg = uniById.get(d.uni_id).region;
-    (grouped[reg] = grouped[reg] || []).push(d);
-  });
+  unis.forEach(u => { (grouped[u.region] = grouped[u.region] || []).push(u); });
   const REGION_ORDER = ['shiga', 'kyoto', 'osaka', 'hyogo', 'nara-wakayama', 'tokai', 'kanto', 'other'];
   const orderedIds = [...REGION_ORDER.filter(r => grouped[r]), ...Object.keys(grouped).filter(r => !REGION_ORDER.includes(r))];
-  const midOf = (d) => { const h = d.hensachi || {}; return (h.min != null && h.max != null) ? (h.min + h.max) / 2 : (h.min != null ? h.min : (h.max != null ? h.max : -1)); };
+  const repMid = (u) => {
+    const b = deptsOfUni(u.id).map(d => d.hensachi).filter(h => h && h.min != null && h.max != null).map(h => (h.min + h.max) / 2);
+    return b.length ? Math.max(...b) : -1;
+  };
 
   listEl.innerHTML = '';
   for (const regionId of orderedIds) {
     const arr = grouped[regionId];
-    arr.sort((a, b) => (midOf(b) - midOf(a)) || uniById.get(a.uni_id).name.localeCompare(uniById.get(b.uni_id).name, 'ja'));
+    arr.sort((a, b) => (repMid(b) - repMid(a)) || a.name.localeCompare(b.name, 'ja'));
     const region = (DATA_V2.regions && DATA_V2.regions[regionId]) || {};
     const head = document.createElement('h3');
     head.style.cssText = `margin:16px 0 8px;color:${region.color || 'var(--text)'};font-size:14px`;
-    head.textContent = `${region.label || regionId}（${arr.length}学部）`;
+    head.textContent = `${region.label || regionId}（${arr.length}大学）`;
     listEl.appendChild(head);
-    arr.forEach(d => listEl.appendChild(deptCard(deptToItem(d, uniById.get(d.uni_id)))));
+    arr.forEach(u => listEl.appendChild(uniListCard(u)));
   }
   if (!orderedIds.length) {
-    listEl.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:32px">該当する学部がありません</p>';
+    listEl.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:32px">該当する大学がありません</p>';
   }
+}
+
+function uniListCard(u) {
+  const el = document.createElement('div'); el.className = 'uni-card dept-card';
+  const depts = deptsOfUni(u.id);
+  const bounds = depts.map(d => d.hensachi).filter(h => h && h.min != null && h.max != null);
+  const mn = bounds.length ? Math.min(...bounds.map(h => h.min)) : null;
+  const mx = bounds.length ? Math.max(...bounds.map(h => h.max)) : null;
+  const band = mn != null ? (mn === mx ? `偏差値 ${mn}` : `偏差値 ${mn}〜${mx}`) : '偏差値データなし';
+  const region = (DATA_V2.regions && DATA_V2.regions[u.region]) || {};
+  el.innerHTML =
+    `<div class="uc-head"><div class="uc-name">${escapeHtml(u.name)}</div>` +
+    `<span class="region-badge" style="background:${region.color || '#666'}">${escapeHtml(region.label || '')}</span></div>` +
+    `<div class="uc-meta"><span class="meta-tag">${escapeHtml(u.type || '')}</span><span class="uc-band">${band}</span><span class="meta-tag">${depts.length}学部</span></div>` +
+    `<button class="uc-detail-btn" data-uni="${u.id}">🏫 大学ページを見る →</button>`;
+  return el;
 }
 
 function renderUniCardSimple(uni) {
@@ -67061,6 +67239,54 @@ function _joinArr(a) { return (a && a.length) ? a.map(_esc).join('、') : null; 
 function _link(url, label) { return url ? `<a href="${_esc(url)}" target="_blank" rel="noopener" class="detail-link">${label} ↗</a>` : ''; }
 const METHOD_TYPE_LABEL = { sogo: '総合型選抜', koubo: '学校推薦・公募', ippan: '一般選抜', kyotsu: '共テ利用' };
 
+// 大学全体ページ
+function renderUniPage(uniId) {
+  if (uniId != null) state.currentUni = uniId;
+  const uni = uniById(state.currentUni);
+  if (!uni) return;
+  const body = document.getElementById('uniDetailBody');
+  const depts = deptsOfUni(uni.id);
+  const midOf = (d) => { const h = d.hensachi || {}; return (h.min != null && h.max != null) ? (h.min + h.max) / 2 : (h.min != null ? h.min : (h.max != null ? h.max : -1)); };
+  const bounds = depts.map(d => d.hensachi).filter(h => h && h.min != null && h.max != null);
+  const allMin = bounds.length ? Math.min(...bounds.map(h => h.min)) : null;
+  const allMax = bounds.length ? Math.max(...bounds.map(h => h.max)) : null;
+  const band = (allMin != null) ? (allMin === allMax ? `偏差値 ${allMin}` : `偏差値 ${allMin}〜${allMax}`) : '偏差値データなし';
+  const region = (DATA_V2.regions && DATA_V2.regions[uni.region]) || {};
+  const lc = uni.living_cost || {};
+  const sj = uni.shingaku_jisseki || {};
+  const cc = uni.career_center || {};
+  const access = uni.access_from_shiga_min != null ? `滋賀から約${uni.access_from_shiga_min}分（${uni.commute_possible ? '通学可' : '下宿推奨'}）` : null;
+  const infoRows = _dl([
+    _row('区分', _esc(uni.type || '')),
+    _row('所在地', _esc(uni.prefecture || '') + (uni.campus_main ? (' / ' + _esc(uni.campus_main)) : '')),
+    _row('偏差値帯', band),
+    _row('アクセス', access),
+    _row('通学備考', uni.commute_note ? _esc(uni.commute_note) : null),
+    _row('学費（年）', _yen(uni.tuition_yen_per_year)),
+    _row('生活費（月）', _yen(lc.monthly_total)),
+    _row('就職率', sj.shushoku_rate ? _esc(sj.shushoku_rate) : null),
+    _row('主な就職先', _joinArr(sj.top_employers)),
+    _row('キャリア支援', _joinArr(cc.features)),
+  ]);
+  const ol = uni.official_links || {};
+  const links = [_link(ol.official_url, '公式サイト'), _link(ol.nyushi_url, '入試情報'), _link(ol.shingaku_url, '進路・就職')].filter(Boolean).join('');
+  const sorted = [...depts].sort((a, b) => midOf(b) - midOf(a));
+  const deptRows = sorted.map(d => {
+    const h = d.hensachi || {};
+    const b = (h.min != null && h.max != null) ? (h.min === h.max ? `偏差値 ${h.min}` : `偏差値 ${h.min}〜${h.max}`) : '—';
+    return `<button class="uni-dept-row" data-detail="${d.dept_id}"><span class="udr-name">${_esc(d.name)}</span><span class="udr-band">${b}</span><span class="udr-go">→</span></button>`;
+  }).join('');
+  body.innerHTML =
+    `<div class="detail-header"><h2>${_esc(uni.name)}</h2>` +
+    `<div class="uni-meta"><span class="region-badge" style="background:${region.color || '#666'}">${_esc(region.label || '')}</span>` +
+    `<span class="meta-tag">${_esc(uni.type || '')}</span><span class="meta-tag">${_esc(uni.prefecture || '')}</span><span class="meta-tag">${band}</span></div></div>` +
+    (uni.feature ? `<p class="detail-lead">${_esc(uni.feature)}</p>` : '') +
+    infoRows +
+    (links ? `<div class="detail-links">${links}</div>` : '') +
+    `<h4 class="detail-h">この大学の学部（${sorted.length}）— タップで学部ページへ</h4>` +
+    `<div class="uni-dept-list">${deptRows}</div>`;
+}
+
 function renderDetail(deptId) {
   if (deptId != null) state.currentDetail = deptId;
   const { dept, uni } = findDeptV2(state.currentDetail);
@@ -67077,7 +67303,8 @@ function renderDetail(deptId) {
       <span class="meta-tag">${_esc(uni.type || '')}</span>
       <span class="meta-tag">${_esc(uni.prefecture || '')}</span>
       <span class="meta-tag">${band}</span>
-    </div>`;
+    </div>
+    <button class="uni-page-btn" data-uni="${uni.id}">🏫 この大学の全体を見る →</button>`;
   renderTab(state.currentTab || 'basic');
 }
 
@@ -67677,6 +67904,7 @@ async function init() {
   document.getElementById('resetBtn').addEventListener('click', () => {
     state.diag = { hyoutei: 3.5, hyouteiUnknown: false, hensachi: 50, hensachiUnknown: false, examSource: 'unknown', careers: new Set(), interests: new Set(), workArea: 'unknown', commute: 'unknown', costPriority: false, methods: new Set(['any']) };
     state.riasecAnswers = [];
+    state.resultView = 'dept';
     document.querySelectorAll('.riasec-opt.on').forEach(b => b.classList.remove('on'));
     { const p = document.getElementById('riasecProgress'); if (p) p.textContent = '0'; }
     // UIリセット
@@ -67717,7 +67945,21 @@ async function init() {
     if (detBtn) {
       renderDetail(detBtn.getAttribute('data-detail'));
       go('detail');
+      return;
     }
+    const uniBtn = e.target.closest('[data-uni]');
+    if (uniBtn) {
+      renderUniPage(uniBtn.getAttribute('data-uni'));
+      go('uni-detail');
+    }
+  });
+
+  // 結果ビュー切替（学部 / 大学）
+  document.querySelectorAll('#resultViewTabs .view-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      state.resultView = tab.dataset.view;
+      renderResults();
+    });
   });
 
   renderHome();
