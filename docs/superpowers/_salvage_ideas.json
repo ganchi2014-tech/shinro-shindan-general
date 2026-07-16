@@ -1,0 +1,1550 @@
+{
+ "ideas": [
+  {
+   "page": "入試",
+   "title": "併願プラン自動提案（挑戦/実力相応/安全の3段階）",
+   "description": "表示中の学部の偏差値を基準に、全650学部から『挑戦(+3〜5)』『相応(±2)』『安全(-3〜5)』を各数校サジェストしカード横並び表示。方式が使えるかも併記。",
+   "why": "高校生が最も悩む『どこを併願すべきか』に具体的な校名で答えを出せる。1校見ているだけで自然に併願候補が並ぶ。",
+   "guessedData": "dept.hensachi.min/max, dept.name, dept.uni_id, dept.entry_methods[].available"
+  },
+  {
+   "page": "入試",
+   "title": "倍率トレンド矢印（去年より入りやすい/難化）",
+   "description": "dept.bairitsu.ippanの2025→2026を比較し ↑難化/↓易化/→横ばい を色付き矢印＋『去年より入りやすい』等の一言で相対表現。",
+   "why": "倍率の数字だけでは判断できない生徒に『今年は狙い目/避けるべき』の方向感を与える。449学部で2年分あり裏付け可能。",
+   "guessedData": "dept.bairitsu.ippan['2025'], dept.bairitsu.ippan['2026']"
+  },
+  {
+   "page": "入試",
+   "title": "受かりやすさ総合メーター（偏差値×倍率）",
+   "description": "偏差値と直近倍率を合成し、全学部内での相対『入りやすさ』を5段階メーターで表示。偏差値低くても倍率高い所は難ランクにする。",
+   "why": "偏差値と倍率を別々に見て混乱する生徒に、1つの直感的な指標で難易度感を渡せる。",
+   "guessedData": "dept.hensachi.min, dept.bairitsu.ippan(最新年)"
+  },
+  {
+   "page": "入試",
+   "title": "同じ難易度の他大学ヨコ並び",
+   "description": "表示中学部の偏差値±2に入る他大学の同系統学部を『同レベルの選択肢』として一覧。地域・国公私も添える。",
+   "why": "『この大学しか知らない』生徒に同ランクの比較対象を提示し、視野を広げて併願判断を助ける。",
+   "guessedData": "dept.hensachi.min, dept.uni_id→uni.region/type, dept.interest_tags"
+  },
+  {
+   "page": "入試",
+   "title": "評定平均を入れて『出せる方式』フィルタ",
+   "description": "生徒が自分の評定平均を入力すると、hyoutei_min≦評定 の推薦/総合型方式だけを『出願可能』とハイライト、届かない方式はグレーアウト。",
+   "why": "評定条件を1つずつ確認する手間を消し、『自分が実際に使える入試ルート』を即座に見せられる。105方式で評定下限あり。",
+   "guessedData": "uni.entry_method_details[type][].hyoutei_min, .hyoutei_note"
+  },
+  {
+   "page": "入試",
+   "title": "自分の偏差値で安全/相応/挑戦を色分け",
+   "description": "生徒の現在偏差値を入力すると、各学部・各方式カードを緑(安全)/黄(相応)/赤(挑戦)で自動色分け表示。",
+   "why": "模試偏差値を持っている生徒が、一覧をひと目で『受かりそう/厳しい』に仕分けでき出願戦略を立てやすい。",
+   "guessedData": "dept.hensachi.min/max（ユーザ入力偏差値と比較）"
+  },
+  {
+   "page": "入試",
+   "title": "併願日程カレンダー（試験日の衝突チェック）",
+   "description": "気になる複数校を選ぶと nyushi_details の exam_date を月別カレンダーに並べ、同日衝突や連日受験を警告表示。",
+   "why": "日程が重なって受けられない事故を未然に防ぐ。物理的に併願可能な組み合わせかを生徒自身が確認できる。",
+   "guessedData": "uni.nyushi_details[type][].exam_date, .application_period, .result_date"
+  },
+  {
+   "page": "入試",
+   "title": "出願締切カウントダウン/直近アラート",
+   "description": "今日(currentDate)を基準に application_period から『総合型の出願まであと○日』を各方式に表示。締切間近は赤で強調。",
+   "why": "出願忘れという致命的なミスを防ぐ。時期の意識が薄い高2〜高3前半の生徒に行動のきっかけを与える。",
+   "guessedData": "uni.nyushi_details[type][].application_period, .enrollment_deadline"
+  },
+  {
+   "page": "入試",
+   "title": "方式別ねらい目ハイライト",
+   "description": "総合/公募/一般の倍率文字列・評定下限・選考内容を横並べ比較し『評定が高い人は公募が有利』『倍率が低いのは総合型』等の一言アドバイスを自動付与。",
+   "why": "同じ大学でも入り方で難易度が大きく違うことを可視化し、生徒に最も受かりやすいルート選びを促す。",
+   "guessedData": "uni.entry_method_details[type][].{bairitsu, hyoutei_min, selection_content}"
+  },
+  {
+   "page": "入試",
+   "title": "受験科目マッチ度",
+   "description": "生徒の得意科目を選ぶと、各校 exam_subjects との一致数で『準備が活きる大学』をスコア表示。",
+   "why": "すでに勉強している科目で受けられる大学を見つけられ、限られた受験勉強を効率化する判断材料になる。",
+   "guessedData": "uni.nyushi_details[type][].exam_subjects, uni.entry_method_details[type][].subjects"
+  },
+  {
+   "page": "入試",
+   "title": "総合型併願の必要書類まとめ",
+   "description": "複数の総合型/推薦を選ぶと required_documents を集約し『志望理由書×3・推薦書×2必要』と準備負担を一覧化。共通で使える書類も表示。",
+   "why": "総合型を何校も出す生徒に、書類作成の総量と締切を見せて現実的に出せる校数を判断させる。",
+   "guessedData": "uni.nyushi_details[type][].required_documents"
+  },
+  {
+   "page": "入試",
+   "title": "滋賀から通える範囲の同レベル校",
+   "description": "access_from_shiga_min と commute_possible で『下宿せず通える』同ランク学部を抽出表示。下宿前提なら選択肢が増えることも示す。",
+   "why": "滋賀の生徒特有の『通えるか/下宿か』が併願判断に直結する。経済・生活面から現実的な受験校を絞れる。",
+   "guessedData": "uni.access_from_shiga_min, uni.commute_possible, dept.hensachi.min"
+  },
+  {
+   "page": "入試",
+   "title": "受験〜初年度コスト比較（国公私）",
+   "description": "選んだ併願校の受験料目安＋初年度学費を積み上げ、国公立/私立の組み合わせで『受験〜入学初年でいくら』を比較バー表示。",
+   "why": "併願校数と学費が家計に直結する。生徒・保護者が現実的な受験プランを組む判断材料になる。",
+   "guessedData": "uni.type, uni.tuition_yen_per_year, uni.additional_costs, uni.tuition_note"
+  },
+  {
+   "page": "入試",
+   "title": "『あと偏差値いくつ』ゲージ",
+   "description": "生徒の現在偏差値と目標学部 hensachi の差を『あと4』のようにゲージで可視化。届いていれば達成表示。",
+   "why": "目標までの距離を数値化し、受験勉強のモチベーションと出願判断(挑戦か安全か)の両方を支える。",
+   "guessedData": "dept.hensachi.min（ユーザ入力偏差値との差分）"
+  },
+  {
+   "page": "進路",
+   "title": "就職力レーダーチャート（8分野）",
+   "description": "employment.ratings の8軸(教員/小学校/警察/消防/一般公務員/一般企業/スポーツ企業/医療)を1つのレーダーで描画し大学の就職の『形』を可視化。",
+   "why": "『この大学は何に強い就職か』を一目で把握でき、自分の志望職種と合うかを直感判断できる。101校で5段階評価あり。",
+   "guessedData": "uni.employment.ratings.{kyoin,shogakkō,keisatsu,shōbō,kōmuin_ippan,kigyō_ippan,kigyō_supotsu,iryō}"
+  },
+  {
+   "page": "進路",
+   "title": "志望進路別『強い大学』ランキング",
+   "description": "『公務員志望』『教員志望』等を選ぶと、対応する ratings が高い順に大学を並べたランキングを表示。",
+   "why": "職業から逆算して大学を探す生徒に、就職実績で裏付けられた進学先候補を提示できる。",
+   "guessedData": "uni.employment.ratings[選択分野], uni.shingaku_jisseki.{kyoin_count,keisatsu_count,shobo_count}"
+  },
+  {
+   "page": "進路",
+   "title": "同じ難易度校との就職力比較",
+   "description": "表示中大学と偏差値が近い他大学を並べ employment.ratings 平均を比較し『同じ入りやすさでもここは就職が強い』とコスパを示す。",
+   "why": "入試難易度が同程度なら就職が強い方が得、という賢い選び方を生徒に提示できる。",
+   "guessedData": "uni.employment.ratings(平均), dept.hensachi.min"
+  },
+  {
+   "page": "進路",
+   "title": "就職率の平均比バッジ",
+   "description": "shushoku_rate を全大学平均と比較し『平均より高い』『トップクラス』等のバッジで相対表示。数字が高く見えがちな就職率を相対化。",
+   "why": "どこも90%台に見える就職率の中で本当に高いのはどこかを判断でき、就職の安心材料になる。123校で実数値あり。",
+   "guessedData": "uni.shingaku_jisseki.shushoku_rate"
+  },
+  {
+   "page": "進路",
+   "title": "キャリアセンター充実度メーター",
+   "description": "career_center.quality を☆1〜5で表示し features(講座・企業説明会等)を箇条書き。null校は『データ準備中』。",
+   "why": "就職は本人の努力に加え大学の支援体制も効く。サポートの手厚さで進学先を選ぶ判断材料になる。",
+   "guessedData": "uni.career_center.quality, uni.career_center.features"
+  },
+  {
+   "page": "進路",
+   "title": "代表的就職先の業界内訳",
+   "description": "representative_employers / top_employers を業界(メーカー/金融/公務員/IT等)に分類し『メーカー就職が多い大学』のように傾向を円グラフや帯で表示。",
+   "why": "就職先企業名を並べても高校生にはピンと来ない。業界の傾向にまとめることで進路イメージが湧く。",
+   "guessedData": "uni.employment.representative_employers, uni.shingaku_jisseki.top_employers"
+  },
+  {
+   "page": "進路",
+   "title": "教員/警察/消防の実人数バー比較",
+   "description": "shingaku_jisseki.kyoin_count/keisatsu_count/shobo_count を数値バーで表示し、公務員系志望校を人数で比較。",
+   "why": "『毎年何人が先生・警察官になっているか』という実数は評価より説得力があり、公務員志望の生徒の決め手になる。",
+   "guessedData": "uni.shingaku_jisseki.{kyoin_count,keisatsu_count,shobo_count}"
+  },
+  {
+   "page": "進路",
+   "title": "学部の就職分野→仕事イメージ変換",
+   "description": "dept.employment_fields(12分類)を分かりやすいラベル＋『この学部からはこんな仕事に進む人が多い』の説明に変換して表示。",
+   "why": "学部名だけでは将来が想像できない生徒に、その学部の卒業後の進路像を具体的に見せられる。650学部に付与済み。",
+   "guessedData": "dept.employment_fields[]（kyoiku,koumuin,it,maker,iryo_fukushi等12種）"
+  },
+  {
+   "page": "進路",
+   "title": "『この大学で就職大丈夫?』総合安心度スコア",
+   "description": "shushoku_rate＋career_center.quality＋ratings平均を合成した『就職安心度』を100点満点/5段階で表示し内訳も開示。",
+   "why": "生徒・保護者の最大の不安『就職できるのか』に、複数指標を束ねた1つの分かりやすい答えを返せる。",
+   "guessedData": "uni.shingaku_jisseki.shushoku_rate, uni.career_center.quality, uni.employment.ratings"
+  },
+  {
+   "page": "進路",
+   "title": "就職の強み読み比べ",
+   "description": "employment.strengths / summary を複数校ぶん並べて表示し、大学ごとの就職の個性を短文で読み比べできるようにする。",
+   "why": "数値化しづらい『この大学ならでは』の就職の強みを、生徒が言葉で比較して腹落ちできる。101校に記述あり。",
+   "guessedData": "uni.employment.strengths[], uni.employment.summary"
+  },
+  {
+   "page": "進路",
+   "title": "資格の実就職力（資格→合格・採用実績）",
+   "description": "dept.qualifications と uni.shikaku_gokakuritsu_data(obj: kyoin_saiyo等)を突き合わせ『この資格が実際どれだけ取れるか/採用に繋がるか』を表示。",
+   "why": "『資格が取れる』と『実際に就職に活きる』は別。取得後の実績まで見せて資格志望の判断精度を上げる。",
+   "guessedData": "dept.qualifications[], uni.shikaku_gokakuritsu_data(kyoin_saiyo/kouchikuin/note), uni.shikaku_gokakuritsu"
+  },
+  {
+   "page": "進路",
+   "title": "民間/公務員/専門職の色バランスグラフ",
+   "description": "ratings を『民間(企業系)』『公務員系』『専門(医療/教員)』の3グループに集約し帯グラフで大学の進路の色を表現。",
+   "why": "8軸レーダーより粗いが直感的。『この大学は公務員色が強い』等をひと目で掴め志望との相性を判断できる。",
+   "guessedData": "uni.employment.ratings（kigyō_ippan+kigyō_supotsu / keisatsu+shōbō+kōmuin_ippan / iryō+kyoin にグルーピング）"
+  },
+  {
+   "page": "進路",
+   "title": "専門就職の突出ハイライト（スポーツ/医療等）",
+   "description": "ratings.kigyō_supotsu や iryō が突出して高い大学に『スポーツ業界就職に全国上位』等のラベルを自動付与。",
+   "why": "ニッチだが強い分野を持つ大学を埋もれさせず、その道を志す生徒に刺さる情報として届けられる。",
+   "guessedData": "uni.employment.ratings.kigyō_supotsu, uni.employment.ratings.iryō, uni.employment.ratings.kyoin"
+  },
+  {
+   "page": "両方",
+   "title": "難易度×就職力の2軸散布図（コスパ発見）",
+   "description": "横軸=偏差値、縦軸=就職力平均で候補校をプロットし『入りやすくて就職が強い(お買い得ゾーン)』を強調表示。",
+   "why": "入試の入りやすさと出口の就職を同時に見て、賢い1校を発見できる。決定支援の中核ビュー。",
+   "guessedData": "dept.hensachi.min, uni.employment.ratings(平均), uni.shingaku_jisseki.shushoku_rate"
+  },
+  {
+   "page": "両方",
+   "title": "お気に入り複数校の総合比較表",
+   "description": "生徒が選んだ数校を、偏差値・倍率・学費・滋賀からの通学・就職率・キャリア充実度の列で並べた比較表を生成。",
+   "why": "最終的な志望校決定は複数観点の総合判断。バラバラの情報を1つの表に集約して意思決定を後押しする。",
+   "guessedData": "dept.hensachi.min, dept.bairitsu.ippan, uni.tuition_yen_per_year, uni.access_from_shiga_min, uni.shingaku_jisseki.shushoku_rate, uni.career_center.quality"
+  },
+  {
+   "page": "両方",
+   "title": "併願候補の総合スコアランキング",
+   "description": "生徒の偏差値・志望職種・通学可否の希望を入力すると、受かりやすさ＋就職力＋通学適性を合成したスコアで候補校を自動ランキング。",
+   "why": "膨大な123大学650学部から、自分の条件に合う『まず検討すべき順』を提示し探索の入口を作る。",
+   "guessedData": "dept.hensachi.min, uni.employment.ratings, uni.access_from_shiga_min, uni.commute_possible, dept.bairitsu.ippan"
+  },
+  {
+   "page": "進路",
+   "title": "進路の強さ8分野レーダー",
+   "description": "employment.ratingsは kyoin/shogakkō/keisatsu/shōbō/kōmuin_ippan/kigyō_ippan/kigyō_supotsu/iryō の8分野を1〜5で評価した完全未使用のリッチデータ（101大学）。これを★またはバーのミニレーダー/横棒で可視化し、進路タブ最上部に置く。現状は emp.strengths のテキストしか出していない。",
+   "why": "『この大学は何に強いのか』を数字1つずつで直感把握でき、志望職種（警察志望/教員志望など）ごとに大学を横比較できる。8分野を一望できるのは診断アプリの核心価値。",
+   "guessedData": "uni.employment.ratings.{kyoin,shogakkō,keisatsu,shōbō,kōmuin_ippan,kigyō_ippan,kigyō_supotsu,iryō}（各1-5）"
+  },
+  {
+   "page": "進路",
+   "title": "警察・消防への就職者数を表示",
+   "description": "shingaku_jisseki には keisatsu_count（警察 例:10-20名）と shobo_count（消防 例:5-10名）が各85大学に入っているのに、現状は kyoin_count（教員数）しか表示していない。教員就職の隣に『警察』『消防』の行を追加。",
+   "why": "公務員・公安職を志望する高校生は非常に多く、警察/消防の合格者数は志望校選びの決め手になる。既にデータがあるのに埋もれているのはもったいない。",
+   "guessedData": "uni.shingaku_jisseki.keisatsu_count, uni.shingaku_jisseki.shobo_count"
+  },
+  {
+   "page": "進路",
+   "title": "就職まとめの一言リード文",
+   "description": "employment.summary（例:『日本のスポーツ指導者の総本山』101大学）と shingaku_jisseki.note（例:『教員・警察・消防の合格者数は全国トップ級』123大学）を進路タブ冒頭のリード文として表示。現状どちらも未使用。",
+   "why": "数字の羅列の前に一言で『この大学の進路の性格』が分かると、高校生が読み進める動機になる。キャッチcoピー的に効く。",
+   "guessedData": "uni.employment.summary, uni.shingaku_jisseki.note"
+  },
+  {
+   "page": "進路",
+   "title": "進路の弱み・注意点も正直に表示",
+   "description": "employment.notes（例:『教員養成は保健体育が中心。教科全般の養成課程は限定的』101大学）が完全未使用。強みの下に『注意点』として控えめに表示する。",
+   "why": "良い面だけでなく制約を知れることでミスマッチ入学を防げる。高校生・保護者からの信頼につながり、診断アプリの誠実さを担保する。",
+   "guessedData": "uni.employment.notes"
+  },
+  {
+   "page": "進路",
+   "title": "代表的就職先と主な就職先の二層表示",
+   "description": "現状は shingaku_jisseki.top_employers（企業寄り。例:アシックス/ミズノ）だけ表示。employment.representative_employers（教委・公務員寄り。例:大阪府教育委員会/兵庫県教育委員会/大阪府警 101大学）は中身が違うのに未使用。『民間就職先』『公務員・団体就職先』として2列に。",
+   "why": "民間志望と公務員志望で見たい就職先が違う。両リストを分けて見せると、どちらの高校生も自分事として就職先を確認できる。",
+   "guessedData": "uni.employment.representative_employers（現状は uni.shingaku_jisseki.top_employers のみ表示）"
+  },
+  {
+   "page": "進路",
+   "title": "キャリアセンターの一言コメント追加",
+   "description": "現状はキャリア支援 features と quality（★）だけ。career_center.note（例:『教員・公務員サポートは国内トップ級』123大学に存在、非nullも多数）が未使用。★の横に一言添える。",
+   "why": "★の数字だけでは何が良いのか伝わらない。具体的な一言があると支援の実態がイメージできる。",
+   "guessedData": "uni.career_center.note"
+  },
+  {
+   "page": "進路",
+   "title": "難関資格・採用試験の合格実績を独立見出しに",
+   "description": "shikaku_gokakuritsu_data / shikaku_gokakuritsu（例:『司法試験・公認会計士・公務員試験合格者多数。教員採用試験対策プログラム充実』）を、就職先とは別の『資格・試験の合格実績』見出しで強調。現状は『資格に強い』の1行に圧縮されている。",
+   "why": "教員採用/公務員/難関士業を狙う層にとって合格実績は志望度に直結する情報。1行に埋もれさせず見出し化する価値が高い。",
+   "guessedData": "uni.shikaku_gokakuritsu_data, uni.shikaku_gokakuritsu, uni.shikaku_gokakuritsu_data"
+  },
+  {
+   "page": "進路",
+   "title": "有名OB・OGでロールモデル提示",
+   "description": "notable_alumni（例:『東海地区大手企業の経営層多数』『外交官・国際機関職員』22大学）が未使用。進路タブに『この大学の卒業生の活躍』として表示。",
+   "why": "具体的な卒業生の進路像は高校生のモチベを刺激する。22大学と数は限られるが、ある大学では強い訴求になる。",
+   "guessedData": "uni.notable_alumni"
+  },
+  {
+   "page": "進路",
+   "title": "進路支援プログラム（公務員講座・留学等）を別枠表示",
+   "description": "notable_programs（例:『公務員講座（外部講師招聘）』『海外留学プログラム』56大学）が未使用。career_center.features と重複しない形で『力を入れている支援プログラム』として表示。",
+   "why": "公務員講座の有無などは進路実現の手段として実利的に重要。56大学に具体データがあり活用余地が大きい。",
+   "guessedData": "uni.notable_programs"
+  },
+  {
+   "page": "進路",
+   "title": "留学実績を進路の選択肢として表示",
+   "description": "ryugaku.{available,destinations,scholarship}（例:destinations『アメリカ・イギリス…協定校70カ国以上』scholarship『あり』85大学）が進路タブでは未使用（生活タブ寄りだが進路にも関わる）。『グローバルな進路』として渡航先・奨学金を表示。",
+   "why": "国際志向・語学志望の高校生にとって留学先と留学奨学金の有無は志望校選びの軸。進路の幅を示せる。",
+   "guessedData": "uni.ryugaku.available, uni.ryugaku.destinations, uni.ryugaku.scholarship"
+  },
+  {
+   "page": "入試",
+   "title": "求める活動・実績（required_achievement）を表示",
+   "description": "entry_method_details.*[].required_achievement は156エントリに存在し、旧・学部関数 detailEntranceV2 では『求める活動』として出しているのに、現行の uniTabEntrance では表示から漏れている。総合型/公募の選考内容の下に『求める活動・実績』行を追加。",
+   "why": "総合型・公募は『何を持っていれば出せるか』が最大の関心事。既に他画面で使っているデータが大学ページ入試タブで欠落しているのは明確な取りこぼし。",
+   "guessedData": "uni.entry_method_details.sogo[].required_achievement, .koubo[].required_achievement, .ippan[].required_achievement"
+  },
+  {
+   "page": "入試",
+   "title": "スポーツ特待生・特別奨学金バッジ",
+   "description": "shogakukin.sports_tokutai（例:『スポーツ特待生制度あり。S・A・Bランク。学費全額〜一部免除』）は入試段階で判定される制度なのに入試タブで未使用。入試タブ上部に特待生バッジ＋公式リンクを表示。",
+   "why": "競技実績のある高校生にとって特待生の有無・ランクは受験先を左右する。学費免除は保護者の関心も極めて高い。入試タブに置くのが自然。",
+   "guessedData": "uni.shogakukin.sports_tokutai, uni.shogakukin.shogakukin_official_url"
+  },
+  {
+   "page": "入試",
+   "title": "出願〜合格発表〜手続きのタイムライン可視化",
+   "description": "nyushi_details.*[].{application_period,exam_date,result_date,enrollment_deadline} は表示済みだが縦のdl羅列。これを方式ごとの横棒タイムライン（出願→試験→発表→手続〆）にして時系列を視覚化する。",
+   "why": "『いつ何がある』を一目で把握でき、複数方式の併願スケジュールを組みやすい。日付データは既に揃っているので表現を変えるだけで価値が上がる。",
+   "guessedData": "uni.nyushi_details.sogo/koubo/ippan[].{application_period,exam_date,result_date,enrollment_deadline}"
+  },
+  {
+   "page": "入試",
+   "title": "『今から間に合う入試』ハイライト",
+   "description": "currentDate（例:今日）を基準に、nyushi_details の application_period がまだ先の方式だけを緑バッジで強調し、締切超過は淡色化。総合型9月出願などが『まだ間に合う』と分かる。",
+   "why": "高3の受験期に『残っている入試はどれか』は最も切実な問い。日付データを日付として解釈するだけで実用性が跳ね上がる。",
+   "guessedData": "uni.nyushi_details.*[].application_period（日付パース）, currentDate"
+  },
+  {
+   "page": "入試",
+   "title": "必要書類のチェックリスト化",
+   "description": "nyushi_details.*[].required_documents（例:調査書/志望理由書/競技歴証明書/推薦書）は現状カンマ区切り羅列。方式ごとにチェックボックス風リストにして準備物を管理しやすくする。",
+   "why": "総合型・公募は提出書類が多く準備漏れが致命的。チェックリスト表示は受験準備の実務に直結する。",
+   "guessedData": "uni.nyushi_details.sogo/koubo/ippan[].required_documents"
+  },
+  {
+   "page": "入試",
+   "title": "評定条件サマリーチップ（方式横断）",
+   "description": "entry_method_details.*[].{hyoutei_min,hyoutei_note} を集約し、入試タブ冒頭に『一般=評定不問／公募=3.2以上／総合=指定なし』のようなチップ列で早見表示。現状は各方式カード内に埋もれている。",
+   "why": "高校生が最初に気にするのは『自分の評定で出願できるか』。方式ごとの評定条件を最上部で一望できると足切りを即判断できる。",
+   "guessedData": "uni.entry_method_details.*[].hyoutei_min, .hyoutei_note"
+  },
+  {
+   "page": "入試",
+   "title": "想定倍率のヒート色バッジ",
+   "description": "entry_method_details.*[].{bairitsu,baiio}（例:『2.0〜3.5倍』、baiioは綴り誤りキー）を、低倍率=緑〜高倍率=赤の色バッジにして難易度を直感化。現状は文字表示のみ。",
+   "why": "倍率の数字を色で見せると、方式間・大学間の入りやすさ比較が瞬時にできる。既存データの見せ方改善で低コスト。",
+   "guessedData": "uni.entry_method_details.*[].bairitsu, uni.entry_method_details.*[].baiio"
+  },
+  {
+   "page": "入試",
+   "title": "併願可否・特記事項のバッジ抽出",
+   "description": "nyushi_details.*[].special_notes（例:『学校推薦型選抜と併願可能』『県・全国大会レベル』『全体評定3.0以上必須』266件）や entry_method_details.*[].notes から重要キーワードを抽出しバッジ化。現状は小さなnoteに全文埋没。",
+   "why": "『併願できるか』『実績レベルはどの程度必要か』は出願戦略の要。長文noteの中の決定的情報をバッジで前に出すと見落としを防げる。",
+   "guessedData": "uni.nyushi_details.*[].special_notes, uni.entry_method_details.*[].notes"
+  },
+  {
+   "page": "入試",
+   "title": "試験科目のタグ化＆方式間比較",
+   "description": "nyushi_details.*[].exam_subjects（例:小論文/面接/書類審査）と entry_method_details.*[].subjects（例:学科試験2科目）をタグ表示にし、方式ごとに『何が課されるか』を比較しやすくする。",
+   "why": "面接だけの方式か学科試験が要る方式かで対策が全く違う。タグ化により自分の得意な選考タイプの方式を選びやすくなる。",
+   "guessedData": "uni.nyushi_details.*[].exam_subjects, uni.entry_method_details.*[].subjects"
+  },
+  {
+   "page": "入試",
+   "title": "大学全体の一般倍率トレンド（実値のある大学）",
+   "description": "bairitsu_trend は多くが『要確認』だが、一部大学は実値（例:中京 2023:3.5倍→2024:3.2倍→2025:3.0倍、note『学部により1.5〜6倍』）。実値がある大学だけスパークライン風の年次推移＋noteを入試タブに表示。",
+   "why": "倍率が上昇/下降トレンドかは受験判断に効く。学部ページの倍率とは別に、大学全体の人気動向を示せる。要確認のみの大学は非表示にすれば品質も保てる。",
+   "guessedData": "uni.bairitsu_trend.{2023,2024,2025,note}（'要確認'を除外）"
+  },
+  {
+   "page": "両方",
+   "title": "共通テスト利用の可否を大学ページに集計表示",
+   "description": "大学ページは共テ利用を除外しているが、dept.entry_methods[]（type:'kyotsu', available, note, verified）に学部単位の可否がある。傘下学部を横断集計し『共テ利用: ○学部で可（学部一覧）』を入試タブに、就職と併せ判断材料として提示。",
+   "why": "共テ利用の有無は国公立志望者の私大併願戦略に直結する。学部データを集計すれば大学単位でも安全に情報提供できる。",
+   "guessedData": "dept.entry_methods[]{type:'kyotsu',available,note,verified}（uni_id で学部横断集計）"
+  },
+  {
+   "page": "両方",
+   "title": "診断興味と進路レーティングのマッチ度提示",
+   "description": "employment.ratings（8分野）と、ユーザーの興味タグ/RIASEC（interest_riasec_map.json）を突き合わせ、『あなたの志望（例:警察）ならこの大学の警察就職は★4』のようにパーソナライズ表示。入試タブでは評定条件との適合、進路タブでは職種適合を出す。",
+   "why": "診断アプリならではの主観的価値。汎用データを個人の志向に接続することで『自分にとっての良い大学か』を判断できる。",
+   "guessedData": "uni.employment.ratings.*, interest_riasec_map.json, state（ユーザー興味/志望職種）"
+  },
+  {
+   "page": "入試",
+   "title": "入試方式マトリクス（○×表）",
+   "description": "総合/公募/一般/共テ利用の4方式を1行の横並びグリッドにし、available=trueは緑の●＋『確認済✓』、falseは灰の×で色分け。noteはタップで展開。現状の『使える入試方式』縦リストを、4枠固定の一目マトリクスに置換する。",
+   "why": "自分が狙う方式（指定校しか無理/一般だけ/共テ併願したい等）でその学部が使えるか、スクロールせず一瞬で判定できる。志望校を絞る最初の関門を高速化。",
+   "guessedData": "dept.entry_methods[].type / .available / .verified / .note（sogo・koubo・ippan・kyotsu の4種が常在）"
+  },
+  {
+   "page": "入試",
+   "title": "倍率推移スパークライン",
+   "description": "dept.bairitsu.ippan の年度別数値を、40x16px程度のインラインSVGミニ折れ線＋各年ドットで描画。直近が前年より上昇=赤↑（難化）、下降=緑↓（易化）のトレンド矢印を右に添える。現状『2025年3.2倍 → 2026年2.1倍』のテキストを可視化。",
+   "why": "倍率が上がり続けているか落ち着いたかは受けやすさの重要シグナル。数字の羅列より線の傾きで直感的に難化/易化が伝わる。458学部に2年以上のデータあり。",
+   "guessedData": "dept.bairitsu.ippan{ '2024':n,'2025':n,'2026':n } / dept.bairitsu.source_url"
+  },
+  {
+   "page": "入試",
+   "title": "評定条件シグナル色バー",
+   "description": "総合/公募の hyoutei_min（例3.0）を1.0〜5.0スケールの水平バー上にマーカー表示し、≤3.0=緑（緩い）/3.5=黄/4.0以上=赤（厳しい）で信号色分け。hyoutei_note『指定なし』は灰の『評定不問』チップに。",
+   "why": "評定が足りず出願すらできないケースを未然に回避できる。数値だけでなく色で『自分の評定で届くか』が瞬時に分かる。",
+   "guessedData": "entry_method_details.sogo/koubo[].hyoutei_min / .hyoutei_note"
+  },
+  {
+   "page": "入試",
+   "title": "入試日程タイムライン",
+   "description": "nyushi_details の application_period(開始)/exam_date/result_date/enrollment_deadline を、9月〜翌3月の横軸上に4つのマイルストーンドットで配置した水平タイムライン。方式ごとに1本、SVGで描画。日付文字列をDateにパースして位置決め。",
+   "why": "総合は秋、一般は冬と時期が全く違う。複数方式の出願〜手続きの流れを時間軸で重ね見でき、併願スケジュールが立てやすい。",
+   "guessedData": "nyushi_details.sogo/koubo/ippan[].application_period / .exam_date / .result_date / .enrollment_deadline"
+  },
+  {
+   "page": "入試",
+   "title": "想定倍率サーモバー",
+   "description": "entry_method_details.*.bairitsu の文字列（例『4.0〜6.0倍』『2.0〜3.5倍』）を正規表現で数値レンジに解析し、0〜8倍スケールの水平サーモメーターバーで表示。低倍率=青緑、高倍率=赤のグラデ。レンジは帯で表現。",
+   "why": "『倍率』という言葉は分かっても数値の体感が難しい。バーの長さと色で『この方式は激戦/穴場』が視覚的に伝わる。方式選びの決め手になる。",
+   "guessedData": "entry_method_details.sogo/koubo/ippan[].bairitsu（文字列。『4.0〜6.0倍』等）"
+  },
+  {
+   "page": "入試",
+   "title": "試験科目アイコンチップ",
+   "description": "nyushi_details.exam_subjects[] と entry_method_details.subjects を、科目アイコン付きチップ化（国語📖/英語🔤/数学🔢/面接🗣/小論文✍/書類📄/共テ）。学科試験系=青、面接・書類系=橙で色分けし、学力型か非学力型か即判別。",
+   "why": "『何で評価されるか』が受験対策の全て。カンマ区切り文字列よりアイコンチップの方がスキャンが速く、面接が苦手/学科が得意など自分の適性と即マッチングできる。",
+   "guessedData": "nyushi_details.*[].exam_subjects[] / entry_method_details.*[].subjects / .selection_content[]"
+  },
+  {
+   "page": "入試",
+   "title": "必要書類チェックリスト",
+   "description": "nyushi_details.required_documents[]（調査書/志望理由書/活動報告書 等）をチェックボックス風アイコンリストで表示。志望理由書・活動報告書など準備に時間がかかる書類は⏳マーク付きで警告色。書類点数で準備負担を示唆。",
+   "why": "総合・公募は書類作成が本番。出願直前に慌てないよう、何を用意すべきかを一覧チェックリストで把握でき、準備の重さも一目で伝わる。",
+   "guessedData": "nyushi_details.sogo/koubo/ippan[].required_documents[]"
+  },
+  {
+   "page": "入試",
+   "title": "選考ステップフロー（総合/公募）",
+   "description": "entry_method_details.selection_content[]（例『講義受講→レポート→面接』）を、番号付きの矢印ステップフロー（①②③をチップ＋『→』で連結）として横並び描画。多段階選考の流れをフロー図化。",
+   "why": "総合型は一次二次と段階がある。単なる列挙より『まず何があり次に何が来るか』のフロー表示で当日の動きがイメージでき、対策の順番も立てやすい。",
+   "guessedData": "entry_method_details.sogo/koubo[].selection_content[]"
+  },
+  {
+   "page": "入試",
+   "title": "方式比較3カラムカード",
+   "description": "総合/公募/一般を横3カラムの比較カードにし、各カードで『評定条件・主な選考・想定倍率・試験日』の同じ4行を揃えて表示。空欄は—。方式間の違いを同一フォーマットで並置し差分を強調。",
+   "why": "『結局どの方式で受けるのが得か』の意思決定は横比較が必須。バラバラの見出しリストではなく揃った表形式で、評定・倍率・時期のトレードオフが一望できる。",
+   "guessedData": "entry_method_details.{sogo,koubo,ippan}[] / nyushi_details.{sogo,koubo,ippan}[]（横断で同一キーを抽出）"
+  },
+  {
+   "page": "入試",
+   "title": "出願〆切カウントダウン",
+   "description": "nyushi_details.application_period の終了日を解析し、currentDate(2026-07-16)との差分で『出願まであと◯日』または締切7日以内は赤『締切間近』チップを方式名の横に表示。2027年度日程が未確定な方式は『日程未定』灰チップ。",
+   "why": "受験は締切管理が命。今この瞬間から各方式の出願までの残り時間が数字で見えることで、行動の優先順位づけと出し忘れ防止になる。",
+   "guessedData": "nyushi_details.*[].application_period + currentContext.date（verified_year=2027かで有効性判定）"
+  },
+  {
+   "page": "入試",
+   "title": "共テ利用ハイライトバッジ",
+   "description": "dept.entry_methods の type=kyotsu の available を、ページ上部に『共テ利用 あり/なし』の大きめバッジで単独強調表示（noteをツールチップに）。他方式に埋もれさせず独立表示する。",
+   "why": "共通テストを受けるか・その大学に共テで出せるかは併願戦略の分岐点。現状kyotsuは大学入試タブから除外されており、学部ページで可否を目立たせる価値が高い。",
+   "guessedData": "dept.entry_methods[type=kyotsu].available / .note / .verified"
+  },
+  {
+   "page": "入試",
+   "title": "難易度2軸ドット（偏差値×倍率）",
+   "description": "dept.hensachi の中央値をY軸、dept.bairitsu.ippan の直近値をX軸に取り、小さなSVG平面上に対象学部を1ドットでプロット。象限を『高偏差×高倍率=最難関/低×低=穴場』等に色分けし、この学部の立ち位置を可視化。",
+   "why": "偏差値と倍率は別軸で、偏差値低くても倍率激戦の穴場落とし穴がある。2軸1点で『難関か穴場か』のポジションが直感的に掴め、志望校のリスク感覚が養える。",
+   "guessedData": "dept.hensachi.min/max / dept.bairitsu.ippan（直近年）"
+  },
+  {
+   "page": "入試",
+   "title": "あなたの受けやすさフィットメーター",
+   "description": "利用者が入力した評定平均・志望方式をもとに、各方式の hyoutei_min 達成可否（達成=緑○/未達=赤×）と想定倍率・偏差値差を合成して0〜100の『受けやすさスコア』を算出しメーター表示。方式ごとに『あなたは出願可/評定不足』を判定。",
+   "why": "一般論の倍率でなく『自分が』出せるか受かりやすいかが最重要。評定条件と自分のGPAを突き合わせた個別判定で、無駄な出願や見落としを防げる。",
+   "guessedData": "entry_method_details.*.hyoutei_min + 利用者入力の評定平均 / dept.hensachi / entry_method_details.*.bairitsu"
+  },
+  {
+   "page": "入試",
+   "title": "検証トラストバッジ（盾アイコン）",
+   "description": "nyushi_details.verified/verified_year/verified_source を、方式カード右上の小さな盾アイコンに集約。緑盾=2027検証済/琥珀盾=旧年度データ/灰盾=推定、をホバーで出典・検証日を表示。現状の大きな検証バナーを補完しカード単位で信頼度を明示。",
+   "why": "入試データは古いと致命的。どの情報が2027年度確定でどれが推定かをカード単位のアイコンで区別でき、生徒が公式確認すべき箇所を判断しやすくなる。",
+   "guessedData": "nyushi_details.verified / .verified_year / .verified_source / .verified_date"
+  },
+  {
+   "page": "進路",
+   "title": "就職分野レーダーチャート（8軸）",
+   "description": "employment.ratings の8軸（教員/小学校/警察/消防/公務員一般/企業一般/スポーツ企業/医療、各1〜5）をインラインSVGの正八角形レーダーで多角形塗り表示。この大学の就職の『形』を一目で提示。現状UI未使用のデータを主役化。",
+   "why": "『公務員に強い』『企業就職型』など大学のキャリアの個性が、8項目の羅列でなく形として直感的に伝わる。101/123大学にデータがあり実装価値が高い。",
+   "guessedData": "employment.ratings.{kyoin,shogakkō,keisatsu,shōbō,kōmuin_ippan,kigyō_ippan,kigyō_supotsu,iryō}（各1〜5）"
+  },
+  {
+   "page": "進路",
+   "title": "就職率ドーナツゲージ",
+   "description": "shingaku_jisseki.shushoku_rate（例『約97%』）を正規表現で数値化し、円形ドーナツ/半円ゲージで中央に『97%』を大きく表示。90%台=緑/80%台=黄で色分け。現状のテキスト値を数値ビジュアルに。",
+   "why": "就職率は進路ページで最も見られる数字。円ゲージにすると数値のインパクトと大学間比較の感覚が強まり、『ちゃんと就職できる大学か』の安心材料が一目で伝わる。123/123大学で有効。",
+   "guessedData": "shingaku_jisseki.shushoku_rate（文字列『約97%』等）"
+  },
+  {
+   "page": "進路",
+   "title": "就職先ロゴ風チップ（業種色）",
+   "description": "shingaku_jisseki.top_employers[] と employment.representative_employers[] を、角丸ピル型チップ化。企業名を業種推定して金融=紺/メーカー=灰青/公務=緑等のセクター色を付与し、ロゴ風の視認性に。現状のカンマ区切り文字列を置換。",
+   "why": "『どんな企業に行けるか』は志望動機に直結。文字の羅列よりロゴ的チップの方がスキャンが速く印象に残り、業種色でどの分野に強いかも同時に伝わる。",
+   "guessedData": "shingaku_jisseki.top_employers[] / employment.representative_employers[]"
+  },
+  {
+   "page": "進路",
+   "title": "就職分野バーランキング",
+   "description": "employment.ratings の8項目を値の降順に並べ替え、水平バー（1〜5を長さ）で上位から表示。トップ3を強調色に。レーダーより単純で、この大学が最も強い就職先カテゴリを順位で明示。",
+   "why": "レーダーが読みにくい層向けの代替。『1位:公務員 2位:企業 3位:医療』のようにランキング化することで、大学の就職の得意分野が最短で言語化される。",
+   "guessedData": "employment.ratings.*（8キーを値降順ソート）"
+  },
+  {
+   "page": "進路",
+   "title": "公務員内訳スタットタイル",
+   "description": "shingaku_jisseki の kyoin_count/keisatsu_count/shobo_count（例『約60名』『10-20名』）を、教員👨‍🏫・警察👮・消防🚒のアイコン付きスタットタイル3枚で並置。数値部分を大きく表示。",
+   "why": "公務員志望（滋賀の高校生に多い安定志向）にとって具体的な合格者数は説得力大。カテゴリ別タイルで教員・警察・消防のどれに強いかが即分かる。",
+   "guessedData": "shingaku_jisseki.kyoin_count / .keisatsu_count / .shobo_count（文字列『約60名』等）"
+  },
+  {
+   "page": "進路",
+   "title": "キャリア支援メーター＋機能チップ",
+   "description": "career_center.quality（1〜5）を★の代わりに5分割の塗りメーター（色付き）で表示し、career_center.features[]（就職講座/対策等）をアイコンチップで併記。現状の★☆表記を数量メーター＋チップに格上げ。",
+   "why": "面倒見の良さは大学選びの隠れた重要軸。塗りメーターで支援の手厚さが定量的に伝わり、機能チップで具体的に何をしてくれるかも一望できる。",
+   "guessedData": "career_center.quality（1〜5）/ career_center.features[]"
+  },
+  {
+   "page": "進路",
+   "title": "学部の就職分野 業種色タグ",
+   "description": "dept.employment_fields[]（koumuin/kinyu/maker等のid）を tags.employment のラベルへ変換し、12業種それぞれ固定のセクター色＋アイコンのチップで表示。学部ページの『この学部の就職分野』を色付きタグ化。",
+   "why": "同じ大学でも学部で就職先は激変する。学部固有の就職分野を業種色タグで示すことで、『この学部から自分の行きたい業界へ行けるか』が学部単位で即判断できる。611/650学部にデータあり。",
+   "guessedData": "dept.employment_fields[] + DATA_V2.tags.employment（id→label/色）"
+  },
+  {
+   "page": "進路",
+   "title": "取得資格チップ（アイコン）",
+   "description": "dept.qualifications[]（教員免許/看護師/保健体育教員 等）をアイコン付きチップ化し、国家資格系=赤/教員系=青/その他=灰で色分け。650/650学部にデータあり。現状カンマ区切りを置換。",
+   "why": "『何の資格が取れるか』は学部選びの決定打になりうる。資格チップの色とアイコンで、国家資格が狙えるか・教員免許が取れるかが瞬時に伝わる。",
+   "guessedData": "dept.qualifications[]"
+  },
+  {
+   "page": "進路",
+   "title": "強みハイライトカード",
+   "description": "employment.strengths[]（例『保健体育教員養成は西日本トップクラス』）を、引用符付きの目立つハイライト帯カード（アクセント背景）で1〜3件表示。定義リストの1行でなく訴求コピーとして見せる。",
+   "why": "大学の『ここが強い』という一言は志望動機作りに直結する魅力。地味なDL行から独立カードに昇格させることで、その大学ならではの推しポイントが刺さる。",
+   "guessedData": "employment.strengths[] / employment.summary"
+  },
+  {
+   "page": "進路",
+   "title": "進路タイプ・アーキタイプバッジ",
+   "description": "employment.ratings の最大値カテゴリから『公務員に強い大学』『企業就職型』『教員養成型』『医療系に強い』等のアーキタイプを判定し、進路タブ最上部に大きめの色付きバッジ＋1行説明を表示。8軸を1ラベルに要約。",
+   "why": "データを読み解く前に、その大学の進路の性格を一言で提示すると理解が早い。生徒が『自分の志向（公務員/民間）と合う大学か』を最初の3秒で判断できる。",
+   "guessedData": "employment.ratings.*（最大軸を判定）/ employment.summary"
+  },
+  {
+   "page": "進路",
+   "title": "学部別就職分野ヒートマトリクス",
+   "description": "大学ページに、その大学の全学部×12就職分野のヒートマップ表を配置。各セルは dept.employment_fields に含まれれば業種色で塗り、含まれなければ空白。行=学部、列=業種で大学全体の就職傾向を俯瞰。",
+   "why": "『この大学のどの学部がどの業界に強いか』を大学単位で一覧比較できる。学部選びで迷う生徒が、志望業界から逆算して学部を絞り込める強力なスキャン装置。",
+   "guessedData": "各 dept.employment_fields[]（uni_idで束ねる）+ tags.employment"
+  },
+  {
+   "page": "進路",
+   "title": "資格合格率ハイライトバッジ",
+   "description": "shikaku_gokakuritsu_data / shikaku_gokakuritsu の文字列から『合格率◯%』『高水準』等を抽出し、%が取れればゲージ、取れなければ『資格に強い』バッジ＋原文ツールチップで表示。85/123大学にデータあり。",
+   "why": "看護・教員・国家資格志望にとって合格率は進学先選びの核心。数値が取れる大学はゲージで、定性のみでも強みバッジで、資格の手厚さを視覚化できる。",
+   "guessedData": "shikaku_gokakuritsu_data / shikaku_gokakuritsu（文字列）"
+  },
+  {
+   "page": "進路",
+   "title": "編集部メモ引用カード",
+   "description": "employment.summary（例『日本のスポーツ指導者の総本山』）や employment.notes を、吹き出し/引用符付きのメモカードとして進路タブ末尾に配置。数値では出ない大学の性格を短文で添える。",
+   "why": "スペックだけでは伝わらない『その大学らしさ』を一言メモで補うことで、生徒の記憶と志望動機に残る。データの隙間を人間味で埋める。",
+   "guessedData": "employment.summary / employment.notes"
+  },
+  {
+   "page": "進路",
+   "title": "就職先 業種グルーピング表示",
+   "description": "shingaku_jisseki.top_employers[] を業種推定でセクター別に見出し分けし（金融/メーカー/公務/流通…）、各グループ下にチップを配置。単純な並びでなく業種ごとの塊で就職先の分布を提示。",
+   "why": "就職先が特定業界に集中しているか幅広いかが一目で分かる。業種グルーピングにより『金融に強い』『メーカー中心』等の就職カラーが数えなくても伝わる。",
+   "guessedData": "shingaku_jisseki.top_employers[]（業種辞書でグルーピング）"
+  },
+  {
+   "page": "両方",
+   "title": "業種カラーシステム共通トークン",
+   "description": "12業種（tags.employment）に固定のセクター色＋アイコンを定義したCSS変数トークン集を作り、入試ページの就職分野予測・進路ページの就職先チップ・学部の就職分野タグで共通利用。全画面で同じ業種は同じ色に統一。",
+   "why": "同じ『金融』が画面ごとに違う色だと混乱する。統一カラーシステムにより、生徒はアプリ全体で業種を色で記憶でき、入試〜進路の情報がひとつながりに読める。",
+   "guessedData": "DATA_V2.tags.employment[]（id/label）— 色定義はUI側で付与"
+  },
+  {
+   "page": "両方",
+   "title": "出典ⓘアイコン＋検証日ツールチップ",
+   "description": "各データが持つ source_url / verified_date（hensachi・bairitsu・nyushi_details等）を、値の右に小さなⓘ/📎アイコンで集約。ホバー/タップで『出典: kawai 2026-07-13』のツールチップと外部リンクを表示。長い出典リンク行を圧縮。",
+   "why": "進路診断は信頼性が命。どの数字がいつ・どこ由来かをアイコン一つで確認でき、生徒・保護者が安心して使える。画面もスッキリしスキャン性が上がる。",
+   "guessedData": "dept.hensachi.source_url/.verified_date / dept.bairitsu.source_url/.verified_date / nyushi_details.verified_source/.verified_date / zemi[].source_url"
+  },
+  {
+   "page": "入試",
+   "title": "偏差値の出典・基準・検証日を明示",
+   "description": "学部ページの偏差値行に、基準(河合塾)・出典リンク・検証日をバッジ表示し、『河合塾偏差値=合格可能性50%のボーダー偏差値』『模試の種類で変わる』の定義注記を添える。現状は『(kawai基準)』の一言のみで出典リンクも検証日も未表示。",
+   "why": "高校生は偏差値を絶対的な合否ラインと誤解しがち。50%ラインという定義と出典・鮮度を示すと過信・過小評価を防げる",
+   "guessedData": "dept.hensachi.basis(kawai), dept.hensachi.source_url, dept.hensachi.verified_date, dept.hensachi.min/max"
+  },
+  {
+   "page": "入試",
+   "title": "『国公立補正+N』がアプリ独自加工である明示",
+   "description": "国公立学部の偏差値バンドに付く『+2(国公立補正)』が、公式の河合塾偏差値ではなく科目数差を踏まえた当アプリ独自の目安であることを注記/ツールチップで明示し、元の河合塾値も併記する。",
+   "why": "加工後の数字を公式偏差値と誤解すると、他サイトやパスナビの値と食い違って混乱する。加工の事実と元値を出せば誤解を防げる",
+   "guessedData": "dept.hensachi.min/max, dept.hensachi.basis, isKokkoritsuUni()/uni.type, kkBonus()(アプリ内補正値・データ外)"
+  },
+  {
+   "page": "入試",
+   "title": "一般倍率の『最新年度が古い』警告バッジ",
+   "description": "bairitsu.ippanの最新年度が現在(2026)から2年以上前(例: 2024年しかない学部が13件、2025止まりが多数)の場合、『最新2024年・古い可能性』の注意バッジを出す。年度が飛んでいる場合も注記。",
+   "why": "倍率は年ごとに大きく動く。2年前の数字を最新と思って志望を決めると判断を誤る。鮮度が一目で分かると安全",
+   "guessedData": "dept.bairitsu.ippan(年度キー2024/2025/2026), dept.bairitsu.verified_date, dept.bairitsu.source_url"
+  },
+  {
+   "page": "入試",
+   "title": "倍率の定義と『方式別・年度別』である注記",
+   "description": "倍率が志願倍率か実質倍率か、また『一般選抜のみの倍率』であって総合/公募の倍率(entry_method_detailsの想定倍率)とは別物であることを注記。数字の分母(志願者/合格者 か 志願者/募集人員)の定義も添える。",
+   "why": "倍率の意味を知らないと、同じ『3.0倍』でも入りやすさが違うことに気づけない。方式ごとに倍率が別なことの理解が志望戦略に直結する",
+   "guessedData": "dept.bairitsu.ippan, uni.entry_method_details.sogo/koubo/ippan[].bairitsu, uni.bairitsu_trend.sogo/koubo/ippan"
+  },
+  {
+   "page": "入試",
+   "title": "入試情報の検証3段階＋学部方式可否のverified可視化",
+   "description": "大学ページのバナー(検証済2027/検証済過年度/未検証・推定)を踏襲しつつ、学部ページ『使える入試方式』の各方式にも available と verified を明示。『大学として実施』か『この学部で使えるか』の区別も注記する。",
+   "why": "推定情報を確定情報と誤解して出願計画を立てると危険。検証状態を色で段階表示すると、どこまで信じてよいか判断できる",
+   "guessedData": "uni.nyushi_details.verified/verified_year/verified_source, dept.entry_methods[].type/available/verified/note"
+  },
+  {
+   "page": "入試",
+   "title": "評定・倍率のレンジが学部差である方式別注記",
+   "description": "大学ページ入試タブの『評定3.0〜4.0(学部により)』『想定倍率3.0〜8.0倍』などレンジ値に、これは大学全体の代表値で志望学部の正確値は募集要項で要確認、と方式カードごとに注記を出す。",
+   "why": "大学ページの代表値を自分の志望学部の確定条件と思い込むと、評定不足や倍率誤認につながる。学部で違う旨の明示が誤解を防ぐ",
+   "guessedData": "uni.entry_method_details.sogo/koubo/ippan[].hyoutei_note/hyoutei_min/bairitsu/notes"
+  },
+  {
+   "page": "入試",
+   "title": "試験日・出願期間の年度整合を警告(過年度日程)",
+   "description": "nyushi_detailsの試験日が具体日付(例『2026年2月1日』)で、現高3の受験年度(2027)と食い違う場合、『これは前年度の日程例。来春の正確な日程は未発表の可能性』と自動警告。verified_yearと突き合わせて表示。",
+   "why": "去年の日程を今年のものと勘違いすると出願を逃す。現高3は2027年度受験という前提を毎回明示すると事故を防げる",
+   "guessedData": "uni.nyushi_details.ippan[].exam_date/application_period/result_date, uni.nyushi_details.verified_year"
+  },
+  {
+   "page": "入試",
+   "title": "募集要項リンクの年度鮮度とフォールバック",
+   "description": "details_urlが過年度PDF(例 .../2026/04-05.pdf)を指す場合、来年度版に差し替わる旨を注記し、リンク切れ時は公式入試トップ/Google検索へフォールバック。official_links.verifiedも反映。",
+   "why": "古いPDFや切れたリンクを最新と思って読むと条件を誤る。年度更新の注意と代替導線があれば必ず最新にたどり着ける",
+   "guessedData": "uni.nyushi_details.*.details_url, uni.official_links.nyushi_url/youkou_url/verified"
+  },
+  {
+   "page": "入試",
+   "title": "共通テスト利用の可否は学部ページで確認する誘導",
+   "description": "大学ページ入試タブに共テ利用(kyotsu)を出さない方針のため、『共通テスト利用の可否は学部ページで確認』の誘導注記を置く。学部ページ側は entry_methods の kyotsu available と理由(note)を明示。",
+   "why": "入試タブに共テ利用が無いと『この大学は共テ利用不可』と誤解する恐れ。どこを見れば分かるかを案内すると取りこぼしを防げる",
+   "guessedData": "dept.entry_methods[type=kyotsu].available/note/verified, METHOD_TYPE_LABEL"
+  },
+  {
+   "page": "入試",
+   "title": "評定の定義＋指定校/公募の区別注記",
+   "description": "評定条件を持つ方式に『評定=3年1学期までの全体の学習成績の状況』の定義注記を添え、公募制推薦と指定校推薦(type)の違い、『一般向け公募は実施なし・指定校のみ』等の重要な但し書きを目立たせる。",
+   "why": "評定の対象範囲や指定校/公募の違いを誤解すると、受けられない方式を当てにしてしまう。定義と区別の明示が出願ミスを防ぐ",
+   "guessedData": "uni.entry_method_details.koubo[].type/hyoutei_min/hyoutei_note/notes"
+  },
+  {
+   "page": "両方",
+   "title": "データ更新日をページ内に常時表示",
+   "description": "全体の更新日(DATA_V2.updated=2026-07-13)と、表示中の個票の検証日(偏差値・倍率・入試の各verified_date)をカード下部やフッターに常時表示し、『情報の鮮度』を一貫して見せる。",
+   "why": "いつ時点の情報かが分からないと鵜呑みにしてしまう。更新日を常に見せることで『最新は公式で確認』という行動を促せる",
+   "guessedData": "DATA_V2.updated, dept.hensachi.verified_date, dept.bairitsu.verified_date, uni.nyushi_details.verified_date"
+  },
+  {
+   "page": "入試",
+   "title": "募集人員が無い旨・少人数募集の倍率変動注記",
+   "description": "データに募集人員(定員)フィールドが無いため、倍率だけでは規模感が伝わらない旨を注記。『少人数募集の方式・学部は倍率が年で乱高下しやすい』という一般的注意を添える。",
+   "why": "定員10名と300名では同じ倍率でも意味が違う。定員未掲載であることと変動しやすさを伝えると倍率の過信を防げる",
+   "guessedData": "dept.bairitsu.ippan(募集人員フィールド無しの確認), dept.entry_methods[].note"
+  },
+  {
+   "page": "進路",
+   "title": "就職率の母数(就職希望者ベース)を注記",
+   "description": "就職率カードに『就職率=就職者÷就職希望者(卒業者数ベースではない)』の定義注記を必ず添える。約97%等が『卒業生の97%が就職』の意味ではないことを明示する。",
+   "why": "就職率の分母を誤解すると大学を過大評価する。進学者や未活動者が分母から除かれる仕組みを知ることが正しい比較の前提になる",
+   "guessedData": "shingaku_jisseki.shushoku_rate, shingaku_jisseki.note, employment.notes"
+  },
+  {
+   "page": "進路",
+   "title": "就職率の『約/要確認』推定ラベル",
+   "description": "shushoku_rateが『約97%』(83件)や『要確認』(16件)の場合、緑の大きな数値カードに推定/未確認バッジを付け、確定値と見えないようにする。要確認は数値表示せず『公式で確認』に置換。",
+   "why": "色付きで大きく出た数字は確定実績に見える。推定・未確認であることをラベルで区別すると、数字の信頼度を正しく受け取れる",
+   "guessedData": "shingaku_jisseki.shushoku_rate('約'/'要確認'含有判定), shingaku_jisseki.note"
+  },
+  {
+   "page": "進路",
+   "title": "主な就職先は大学全体で学部の実績とは限らない明示",
+   "description": "『主な就職先』(top_employers/representative_employers)が大学全体の代表例であり志望学部の就職先とは限らない旨を注記。学部ページの『この学部の就職分野』(employment_fields)との役割分担も示す。",
+   "why": "有名企業名を見て自分の学部からも行けると思い込むと期待外れになる。大学全体の実績であることの明示が学部/大学の混同を防ぐ",
+   "guessedData": "shingaku_jisseki.top_employers, employment.representative_employers, dept.employment_fields"
+  },
+  {
+   "page": "進路",
+   "title": "就職先リストの年度・採用人数が不明である注記",
+   "description": "top_employers/representative_employersに年度も採用人数も無いため、『代表例であり最新年度・採用人数は各年で変動』と注記し、正確な実績は公式の進路データ(shingaku_url)へ誘導する。",
+   "why": "何年の・何人の実績か分からないリストを鵜呑みにすると誤解する。代表例に過ぎないと示し公式へ導くと正確な情報に到達できる",
+   "guessedData": "shingaku_jisseki.top_employers, employment.representative_employers, uni.official_links.shingaku_url"
+  },
+  {
+   "page": "進路",
+   "title": "職種別★評価がアプリ主観推定である明示",
+   "description": "employment.ratings(教員/警察/消防/公務員/企業/医療など8カテゴリの1〜5評価)を★表示する箇所に、これは実績数値ではなく当アプリの編集判断による目安である旨のバッジを付ける。診断スコアにも使われる点も透明化。",
+   "why": "★評価が客観データに見えると、志望を左右する誤った根拠になる。主観推定と明示すれば参考程度に受け取れて過信を防げる",
+   "guessedData": "employment.ratings.{kyoin,keisatsu,shōbō,kōmuin_ippan,kigyō_ippan,kigyō_supotsu,iryō,shogakkō}, employment.summary"
+  },
+  {
+   "page": "進路",
+   "title": "合格者数と就職数の区別＋レンジ/要確認の扱い",
+   "description": "教員/警察/消防の合格者数(kyoin_count='約100名', keisatsu_count='20-30名', shobo_count='要確認')について、『合格者数≠その職に就いた人数』『大学全体の数字』『レンジ/未確認』であることを注記。要確認は数値化しない。",
+   "why": "合格者数を就職者数と混同したり、レンジ値を確定数と誤解すると期待を誤る。数字の意味と鮮度を区別すると正しく読める",
+   "guessedData": "shingaku_jisseki.kyoin_count/keisatsu_count/shobo_count, employment.ratings.kyoin/keisatsu/shōbō"
+  },
+  {
+   "page": "進路",
+   "title": "資格『合格者多数』等が数値でない旨の注記",
+   "description": "shikaku_gokakuritsu(_data)が『司法試験・公認会計士…合格者多数』のような定性文のみで具体的合格率・母数が無いことを注記し、数値実績は公式で確認するよう促す。",
+   "why": "『合格者多数』を高い合格率と誤解すると資格志望の判断を誤る。数値でない定性情報だと分かれば過大評価を避けられる",
+   "guessedData": "uni.shikaku_gokakuritsu, uni.shikaku_gokakuritsu_data, dept.qualifications"
+  },
+  {
+   "page": "進路",
+   "title": "取得資格は『取得可能』で全員取得ではない注記",
+   "description": "dept.qualifications(例『中高教員(保健体育)』)に、これは取得可能/受験資格が得られる資格であり全員が取得するわけではなく、国家資格は別途試験合格が必要、という注記を添える。",
+   "why": "資格名の羅列を『卒業すれば全員取れる』と誤解すると進路設計を誤る。取得条件と国家試験の存在を示すと現実的に判断できる",
+   "guessedData": "dept.qualifications, uni.shikaku_gokakuritsu"
+  },
+  {
+   "page": "進路",
+   "title": "キャリア支援の充実度★がアプリ主観評価である明示",
+   "description": "career_center.quality(1〜5の★)がデータ実績ではなく当アプリの編集評価である旨を注記し、具体的な支援内容(features)を根拠として併記する。",
+   "why": "★5を客観指標と誤解すると大学選びの根拠を誤る。主観評価と示しつつ具体の支援内容を見せると、実態で判断できる",
+   "guessedData": "career_center.quality, career_center.features, career_center.note"
+  },
+  {
+   "page": "両方",
+   "title": "学部別の就職・偏差値格差の注意(全体数値≠学部)",
+   "description": "大学全体の就職率(97%等)や大学ページの数値を学部ページで参照する際、『これは大学全体の数値。学部により就職状況・難易度は異なる』の注記を学部ページに常設する。",
+   "why": "大学全体の好数字を志望学部にそのまま当てはめると期待外れになりやすい。学部差の存在を明示すると誤った一般化を防げる",
+   "guessedData": "shingaku_jisseki.shushoku_rate, dept.employment_fields, employment.ratings(学部別データ無しの確認)"
+  },
+  {
+   "page": "進路",
+   "title": "進学(大学院進学)が就職率に含まれない構造の説明",
+   "description": "就職率カードの近くに『進学者は就職率の対象外。進学が多い学部は就職率だけで判断しない』旨を注記。データに進学率フィールドが無いことも明示し公式へ誘導する。",
+   "why": "理系や資格系は進学が多く就職率が実態を映さない。進学が別枠であることを知ると就職率の一面性に気づける",
+   "guessedData": "shingaku_jisseki.shushoku_rate, shingaku_jisseki.note(進学率フィールド有無), employment.notes"
+  },
+  {
+   "page": "進路",
+   "title": "『この学部の就職分野』はカテゴリ傾向で割合ではない注記",
+   "description": "dept.employment_fields(kyoiku/koumuin/sports_kenko等のタグ)を表示する際、これは就職の傾向カテゴリであり具体的な就職先や割合ではない旨を注記し、実数は大学全体実績と公式で確認するよう導く。",
+   "why": "分野タグを『この割合で就職する』と誤読すると期待を誤る。傾向を示すタグだと分かれば正しい粒度で受け取れる",
+   "guessedData": "dept.employment_fields, DATA_V2.tags.employment, shingaku_jisseki.top_employers"
+  },
+  {
+   "page": "進路",
+   "title": "専門職レーダーチャート",
+   "description": "employment.ratings の8軸（教員/小学校/警察/消防/一般公務員/一般企業/スポーツ企業/医療）を5段階レーダーチャートで表示し、大学ページ進路タブの先頭に置く。『この大学は何に強いか』を一目で把握できる。既存の数値実績（top_employers等）の上に置く要約ビジュアルとして機能。",
+   "why": "高校生は『この大学は結局どの道に強いのか』を最初に知りたい。8職種の相対的な強さを一目で比較でき、志望動機とマッチするか即判断できる。",
+   "guessedData": "employment.ratings.{kyoin,shogakkō,keisatsu,shōbō,kōmuin_ippan,kigyō_ippan,kigyō_supotsu,iryō}"
+  },
+  {
+   "page": "進路",
+   "title": "教員・警察・消防の実人数バッジ",
+   "description": "shingaku_jisseki.kyoin_count/keisatsu_count/shobo_count を『教員 約60名』『警察 10-20名』のような実績バッジで表示。『要確認』や欠損は非表示にする。専門職への合格実績を人数という具体で示す。",
+   "why": "『何%就職』より『毎年◯名が教員になっている』の方がリアルで信頼できる。公務員・専門職志望の高校生に決定的な判断材料。",
+   "guessedData": "shingaku_jisseki.kyoin_count, shingaku_jisseki.keisatsu_count, shingaku_jisseki.shobo_count"
+  },
+  {
+   "page": "進路",
+   "title": "就職先の“格”タグ化（有名企業率）",
+   "description": "top_employers と employment.representative_employers の企業名を『大手/専門職/公務員/地元』などにタグ分類し、割合バーとして表示。企業名リストの羅列を意味づけする。",
+   "why": "高校生は社名を並べられても価値が分からない。『大手企業◯割・公務員◯割』と可視化すれば、就職先の質を直感的に評価できる。",
+   "guessedData": "shingaku_jisseki.top_employers, employment.representative_employers"
+  },
+  {
+   "page": "進路",
+   "title": "地元（関西・滋賀）就職の強さ推定",
+   "description": "top_employers/representative_employers に含まれる『大阪府警』『兵庫県教育委員会』『京都府』等の地元自治体・企業名から地元就職度を推定し、『地元就職に強い』インジケータを表示（61/123大学で地元自治体名を検出可能）。",
+   "why": "滋賀の高校生の最大の関心は『卒業後に地元・関西に戻れるか』。全国区就職か地元密着かを示すことは進学先選びの核心。",
+   "guessedData": "shingaku_jisseki.top_employers, employment.representative_employers, employment.strengths"
+  },
+  {
+   "page": "進路",
+   "title": "キャリアセンター手厚さ★指標",
+   "description": "career_center.quality（★1-5, 83/123）と features リスト（教採対策講座/企業説明会等）を『就職サポートの手厚さ』カードで表示。星と支援メニューを併記。",
+   "why": "同じ偏差値帯でも就職支援の質で結果が変わる。『どんなサポートがあるか』は高校生・保護者が見落としがちだが重要な差別化要素。",
+   "guessedData": "career_center.quality, career_center.features"
+  },
+  {
+   "page": "進路",
+   "title": "資格→職業の接続マップ",
+   "description": "学部の qualifications（看護師/教員/公認会計士等）と大学の shikaku_gokakuritsu / employment.ratings を突き合わせ、『この資格を取ると→この職業に強い』という矢印動線で表示。資格と就職を結ぶ。",
+   "why": "高校生は『資格を取れる』とだけ言われても、それが就職にどう効くか分からない。資格→合格実績→職業を一本の線にすると価値が腑に落ちる。",
+   "guessedData": "dept.qualifications, uni.shikaku_gokakuritsu, uni.shikaku_gokakuritsu_data.kyoin_saiyo, uni.employment.ratings"
+  },
+  {
+   "page": "進路",
+   "title": "同一大学の学部別・就職分野比較",
+   "description": "同じ uni_id を持つ複数 department の employment_fields（12カテゴリ）を横並びで比較表示。『文学部→サービス/教育、経済→金融/流通』のように学部で就職先が違うことを見せる。",
+   "why": "高校生は『◯◯大学の就職』を一括りで見がち。同じ大学でも学部で進路が全く違う事実を可視化すれば、学部選びの重要性が伝わる。",
+   "guessedData": "dept.employment_fields, dept.name, dept.uni_id"
+  },
+  {
+   "page": "進路",
+   "title": "医療・看護 国家試験サポート実績",
+   "description": "employment_fields に iryo_fukushi を含む学部＋ shikaku_gokakuritsu_data.note（『薬剤師合格率約85-90%』等）や employment.ratings.iryō を組み合わせ、医療系国家資格の合格実績・支援を専用カードで表示。",
+   "why": "看護・薬学・リハビリ志望は『国試に受かるか』が全て。合格率やサポート実績は他学部以上に決定的な進学判断材料になる。",
+   "guessedData": "dept.employment_fields(iryo_fukushi), dept.qualifications(看護師/管理栄養士/理学療法士), uni.shikaku_gokakuritsu_data, uni.employment.ratings.iryō"
+  },
+  {
+   "page": "進路",
+   "title": "就職率の“業界内訳”ラベル抽出",
+   "description": "shushoku_rate 文字列の括弧内注記（例『約99%（福祉・医療業界中心）』）をパースして業界ラベルを抽出し、就職率の横にチップ表示。数字だけの就職率に意味を付与する。",
+   "why": "『就職率99%』は多くの大学で高止まりして差が出ない。どの業界に就職しているかを併記すれば、率の中身で比較できる。",
+   "guessedData": "shingaku_jisseki.shushoku_rate, employment.summary"
+  },
+  {
+   "page": "進路",
+   "title": "『公務員に強い大学』称号バッジ",
+   "description": "employment.ratings の kōmuin_ippan/keisatsu/shōbō が高い大学、または shikaku_gokakuritsu_data.kouchikuin に公務員講座記載がある大学に『公務員に強い』バッジを付与。進路タブ上部と一覧で表示。",
+   "why": "安定志向で公務員を目指す高校生は多いが、どの大学が公務員に強いかは調べにくい。称号化で発見しやすくなる。",
+   "guessedData": "employment.ratings.{kōmuin_ippan,keisatsu,shōbō}, shikaku_gokakuritsu_data.kouchikuin"
+  },
+  {
+   "page": "進路",
+   "title": "就職先の職種アイコン化",
+   "description": "top_employers/representative_employers を航空・金融・IT・教育・小売などの業種に分類し、アイコン付きで視覚表示（例 名古屋外語→ANA/JAL/JTBを航空・旅行アイコンで）。",
+   "why": "社名の文字列より業種アイコンの方が高校生に直感的。『この大学＝航空業界に強い』のようなイメージが一瞬で伝わる。",
+   "guessedData": "shingaku_jisseki.top_employers, employment.representative_employers"
+  },
+  {
+   "page": "進路",
+   "title": "卒業後の姿ストーリー（ゼミ→資格→分野）",
+   "description": "学部の zemi.theme（53学部）＋ qualifications ＋ employment_fields を1本のストーリーカードにし、『このゼミで学ぶ→この資格→この分野へ』という卒業後の具体像を提示。zemiがある学部限定。",
+   "why": "高校生は4年後の自分をイメージしにくい。ゼミの研究テーマから就職までを物語にすると、学びと将来が地続きに見える。",
+   "guessedData": "dept.zemi.theme, dept.qualifications, dept.employment_fields"
+  },
+  {
+   "page": "進路",
+   "title": "強み文ハイライトカード",
+   "description": "employment.strengths（『保健体育教員養成では西日本トップクラス』等）と summary を引用スタイルのハイライトカードで表示し、進路タブの最初の“つかみ”にする。",
+   "why": "数値の前に一言で『この大学の就職の売り』が分かると読み進めやすい。高校生の直感的な理解を助ける導入になる。",
+   "guessedData": "employment.strengths, employment.summary, employment.notes"
+  },
+  {
+   "page": "進路",
+   "title": "スポーツ・健康業界就職の強さ",
+   "description": "employment.ratings.kigyō_supotsu ＋ employment_fields に sports_kenko を含む学部 ＋ top_employers のスポーツ企業名（アシックス/ミズノ等）を束ね、スポーツ・健康業界への就職力を専用セクションで表示。",
+   "why": "部活を頑張ってきた高校生には『スポーツを仕事にできるか』が大テーマ。スポーツ企業・実業団・指導者への道の強さを明示できる。",
+   "guessedData": "employment.ratings.kigyō_supotsu, dept.employment_fields(sports_kenko), shingaku_jisseki.top_employers"
+  },
+  {
+   "page": "進路",
+   "title": "なりたい職業からの逆引き検索",
+   "description": "employment.ratings の8職種や dept.qualifications を起点に『教員になりたい→強い大学一覧』のように職業から大学・学部を逆引きできる進路検索モード。",
+   "why": "多くの高校生は大学名より先に『なりたい職業』が決まっている。職業起点で探せると、志望校探しの入口として自然。",
+   "guessedData": "employment.ratings.*, dept.qualifications, dept.employment_fields"
+  },
+  {
+   "page": "両方",
+   "title": "将来の職業から逆算した入試方式おすすめ",
+   "description": "なりたい職業（employment.ratings が高いカテゴリ）と、その職に強い学部の entry_methods 可否・評定条件（entry_method_details.hyoutei_min）を突き合わせ、『この職を目指すなら評定◯以上でこの方式が有利』と提案。入試タブと進路タブを橋渡し。",
+   "why": "高校生は入試方式と将来を切り離して考えがち。将来の職業から逆算して受け方を示すと、入試準備の目的が明確になる。",
+   "guessedData": "dept.entry_methods, entry_method_details.{sogo,koubo}.hyoutei_min, entry_method_details.*.hyoutei_note, uni.employment.ratings"
+  },
+  {
+   "page": "入試",
+   "title": "評定平均で狙える方式 早見表",
+   "description": "entry_method_details.{sogo,koubo}.hyoutei_min と nyushi_details.*.special_notes の評定記載を集計し、『評定3.2以上で使える方式』を早見表で表示。自分の評定を入力すると使える方式が絞られる。",
+   "why": "高校生は自分の評定で出願できる方式が分からず迷う。評定基準で使える入口を一覧化すれば、現実的な受験戦略が立てられる。",
+   "guessedData": "entry_method_details.koubo.hyoutei_min, entry_method_details.koubo.hyoutei_note, entry_method_details.sogo.hyoutei_min, nyushi_details.*.special_notes"
+  },
+  {
+   "page": "入試",
+   "title": "倍率の年度推移トレンド矢印",
+   "description": "dept.bairitsu.ippan.{2025,2026} の増減を↑↓矢印＋数値で表示し、『昨年より入りやすくなっている/厳しくなっている』を可視化（650学部で2年分あり）。",
+   "why": "倍率は年で大きく動く。直近のトレンドが分かれば、今年の受けやすさを高校生が肌感で掴め、出願判断に直結する。",
+   "guessedData": "dept.bairitsu.ippan.2025, dept.bairitsu.ippan.2026, entry_method_details.*.bairitsu"
+  },
+  {
+   "page": "入試",
+   "title": "偏差値×倍率 “穴場”検出",
+   "description": "dept.hensachi.min/max と dept.bairitsu.ippan を掛け合わせ、偏差値の割に倍率が低い学部を『穴場』としてタグ表示。学部一覧のソート軸にも使う。",
+   "why": "高校生は難易度を偏差値だけで見がちだが、倍率が低ければ実は入りやすい。お得な選択肢を発見でき、受験の視野が広がる。",
+   "guessedData": "dept.hensachi.min, dept.hensachi.max, dept.bairitsu.ippan.2026"
+  },
+  {
+   "page": "入試",
+   "title": "4方式カバレッジ ◯×グリッド",
+   "description": "dept.entry_methods[] の sogo/koubo/ippan/kyotsu の available を◯×グリッドで一覧表示し、note を併記。特に共通テスト利用（kyotsu）の有無を明確にする。",
+   "why": "『この学部は総合型が使えるか』『共テ利用はあるか』は出願前に必ず確認したい情報。可否を一目で押さえられると計画が立つ。",
+   "guessedData": "dept.entry_methods[].type, dept.entry_methods[].available, dept.entry_methods[].note"
+  },
+  {
+   "page": "入試",
+   "title": "入試日程カレンダー／締切カウントダウン",
+   "description": "nyushi_details.*.application_period/exam_date/result_date/enrollment_deadline を時系列カレンダーに並べ、出願締切までの残日数をカウントダウン表示。複数大学併願時の日程重複も警告。",
+   "why": "出願・試験・入学手続きの締切管理は高校生が最もミスしやすい部分。時系列＋カウントダウンでうっかり出し忘れを防げる。",
+   "guessedData": "nyushi_details.*.application_period, nyushi_details.*.exam_date, nyushi_details.*.result_date, nyushi_details.*.enrollment_deadline"
+  },
+  {
+   "page": "入試",
+   "title": "必要書類チェックリスト",
+   "description": "nyushi_details.*.required_documents（調査書/志望理由書/推薦書/競技歴証明書等）を方式別チェックリスト化。特に推薦書・競技歴証明など準備に時間がかかる書類を強調表示。",
+   "why": "総合型・推薦は書類準備が大変で、先生への依頼など前倒しが必要。チェックリスト化で『何をいつまでに揃えるか』が明確になる。",
+   "guessedData": "nyushi_details.*.required_documents, nyushi_details.*.method_name"
+  },
+  {
+   "page": "入試",
+   "title": "試験科目タイプ分類（学科／小論／実技）",
+   "description": "nyushi_details.*.exam_subjects と entry_method_details.ippan.subjects / selection_content を『学科型・小論文型・実技型・面接型』に自動分類してアイコン表示。対策の負担イメージを付ける。",
+   "why": "高校生は『小論だけ』『2科目』『実技あり』で準備量が全く違う。科目をタイプ分けすれば、自分に合った受け方を選びやすい。",
+   "guessedData": "nyushi_details.*.exam_subjects, entry_method_details.ippan.subjects, entry_method_details.*.selection_content"
+  },
+  {
+   "page": "入試",
+   "title": "入試情報の検証バッジ",
+   "description": "nyushi_details.verified / verified_year / verified_date / verified_source を『2027年度入試・出典マナビジョン・2026-05確認』のような信頼性バッジで各方式ブロックに表示。",
+   "why": "ネットの入試情報は古さが不安。いつ・どの出典で確認済みかが明示されると、高校生・保護者が安心して情報を使える。",
+   "guessedData": "nyushi_details.verified, nyushi_details.verified_year, nyushi_details.verified_date, nyushi_details.verified_source"
+  },
+  {
+   "page": "入試",
+   "title": "総合型／推薦の“選考内容”の中身",
+   "description": "entry_method_details.{sogo,koubo}.selection_content（講義受講/レポート/面接/適性検査）と required_achievement を展開表示し、面接・小論対策が要るかを可視化。",
+   "why": "総合型は『何をやらされるか』が分かりにくく敬遠されがち。選考の中身が見えれば、自分にできそうかを判断して挑戦しやすい。",
+   "guessedData": "entry_method_details.sogo.selection_content, entry_method_details.koubo.selection_content, entry_method_details.*.required_achievement"
+  },
+  {
+   "page": "入試",
+   "title": "募集要項リンク＆ネット出願導線",
+   "description": "nyushi_details.*.details_url と official_links を『募集要項を見る』ボタンに集約し、application_period 内の『ネット出願』注記を出願方法チップで表示。",
+   "why": "最終的には公式要項の確認が必須。信頼できる一次情報へワンタップで飛べる導線と出願方法の明示は、行動につながる。",
+   "guessedData": "nyushi_details.*.details_url, nyushi_details.*.application_period, uni.official_links"
+  },
+  {
+   "page": "両方",
+   "title": "資格が取れる×入りやすい学部マッチング",
+   "description": "dept.qualifications（看護師/教員/公認会計士等）× dept.hensachi × dept.entry_methods を掛け合わせ、『この国家資格を目指せて、偏差値・方式的に狙いやすい』学部を提案。進路の目標と入試難易度を同時に満たす候補を出す。",
+   "why": "『看護師になりたいが学力が不安』という高校生に、資格ゴールと現実的な入りやすさを両立する選択肢を提示できる。目標と実現性の橋渡し。",
+   "guessedData": "dept.qualifications, dept.hensachi.min, dept.bairitsu.ippan, dept.entry_methods"
+  },
+  {
+   "page": "入試",
+   "title": "スポーツ・実技特別入試の抽出（部活実績枠）",
+   "description": "nyushi_details の method_name/special_notes に『スポーツ特別』『競技歴』、required_documents に『競技歴証明書』を含む方式を抽出し『部活実績で狙える入試』としてハイライト。",
+   "why": "競技実績のある高校生には一般入試以外の道が有効だが埋もれがち。実績を活かせる特別入試を発見できると受験の選択肢が広がる。",
+   "guessedData": "nyushi_details.*.method_name, nyushi_details.*.special_notes, nyushi_details.*.required_documents"
+  },
+  {
+   "page": "入試",
+   "title": "評定不問の方式だけ絞り込み",
+   "description": "nyushi_details.*.special_notes が『評定不問』、または entry_method_details.*.hyoutei_note が『指定なし』/hyoutei_min が null の方式だけをフィルタ表示。評定に自信がない生徒向けの入口をまとめる。",
+   "why": "評定平均が低いと推薦系を諦めがちだが、評定不問の一般・総合型もある。それだけを抽出すれば、評定に縛られず戦える道が見える。",
+   "guessedData": "nyushi_details.ippan.special_notes, entry_method_details.*.hyoutei_note, entry_method_details.*.hyoutei_min"
+  },
+  {
+   "page": "入試",
+   "title": "滋賀から通える×日程が現実的か",
+   "description": "uni.access_from_shiga_min / commute_possible と nyushi_details.*.exam_date を組み合わせ、『滋賀から日帰り受験できるか』『併願校と試験日が重ならないか』を判定表示。",
+   "why": "滋賀の高校生は受験自体の移動負担が大きい。通学可否だけでなく受験日程の現実性まで示せば、無理のない併願プランが立てられる。",
+   "guessedData": "uni.access_from_shiga_min, uni.commute_possible, uni.commute_note, nyushi_details.*.exam_date"
+  }
+ ],
+ "critiques": [
+  {
+   "verdict": "REALISTIC",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "uni.career_center.note（string）。noteキーは123大学全件に存在するが、実データ(非null)はわずか10件のみ＝約8%（早稲田/慶應/明治/中央/法政/筑波/順天堂/日体大/国士舘/東海）。残り113件はnull、空文字は0件。現状uniTabEmployment(app_v2ui.html:3309-3324)は cc.features を「キャリア支援」、cc.quality を「支援の充実度★」として描画するのみで、note は完全に未使用。",
+   "where": "大学ページ進路タブ（uniTabEmployment、app_v2ui.html:3309-3324）。career_centerは大学共通情報で既にこのタブに集約済み＝学部/大学分離方針に完全適合、是正不要。",
+   "howTo": "uniTabEmployment内、既存の _row('支援の充実度', stars(cc.quality)) の直後に1行追加するだけ。_row/_dl は null/空を自動フィルタするので条件分岐は不要: _row('キャリアセンターの一言', cc.note ? _esc(cc.note) : null)。noteが無い113大学では行ごと非表示、あってもqualityがnullな早稲田等（quality:null,note有）でも独立行として正しく出る。「★の横に一言」を厳密にやるなら quality行のvalueに `(stars(cc.quality)||'') + (cc.note?` <span class=\\\"cc-note\\\">${_esc(cc.note)}</span>`:'')` を合成する手もあるが、早稲田のようにstarsがnullでnoteのみのケースがあるため独立行の方が堅牢で推奨。既存の _esc でXSS対策済み。",
+   "reason": "実装可否は○（実在フィールドで非null実データが10件あり、現状未使用のためREDUNDANTでもない。null安全な既存ヘルパで1行追加、コスト極小）。ただし提案の「非nullも多数」は誤り＝実データは10/123の約8%に過ぎず、91%の大学では何も表示されない。よってvalue=low。救いは非null10件が全て早稲田/慶應/MARCH/筑波など滋賀の高校生も志望しやすい高露出校に集中している点で、そこでは★の数字だけでは伝わらない「なぜ強いか」を一言で補える純増の価値がある。コスト対効果は正だが全体インパクトは限定的。NEEDS-DATA（フィールド皆無）でもLOW-VALUE（未使用の新規表示なので価値ゼロではない）でもなく、低コスト・低カバレッジの純増改善としてREALISTIC。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "high",
+   "cost": "low",
+   "where": "進路タブ(uniTabEmployment, L3309)の最上部。ratings は uni オブジェクト直下の大学共通の就職強み指標なので、学部/大学分離方針に整合（学部ページには置かない）。分離方針を壊さない。",
+   "dataSource": "uni.employment.ratings.{kyoin,shogakkō,keisatsu,shōbō,kōmuin_ippan,kigyō_ippan,kigyō_supotsu,iryō} 各1-5。保有=101/123大学（22大学は欠損）。分布は各分野で1〜5に実際にばらけており（例 keisatsu:16/21/38/18/8、iryō:14/18/28/18/23）プレースホルダーではない実データ。ラベルは既存 CAREER_LABEL(L1978) が8キー全てを日本語化済み(中高教員/小学校教員/警察官/消防士・救命士/一般公務員/一般企業/スポーツ関連企業/医療・専門職)。星描画は uniTabEmployment 内の stars() ヘルパー(L3313) が既存で流用可。",
+   "howTo": "uniTabEmployment(L3309) の _dl([...]) の直前に emp.ratings ミニ可視化ブロックを差し込む。CAREER_LABEL の8ラベルをループし、値を横棒(width: val/5*100%)または既存 stars(val) で描画。強み順に降順sortして上位分野を先頭に。emp.ratings が無い22大学は `if(!emp.ratings)` でブロックごとスキップ（フォールバックは現状の強みテキストのまま）。さらに state.diag.careers で選んだ職種の rating 軸（getCareerOption(id).rating）をハイライトすれば、scoreUni(L2522) の就職マッチ加点の根拠がユーザーに可視化され、診断結果とタブ表示が接続する。真のSVGレーダー多角形はMEDIUM工数になるので、星/横棒版を推奨（stars()・CAREER_LABEL 流用でlow）。",
+   "reason": "案の「完全未使用」は誤り—emp.ratings は既に scoreUni(L2520-2534) の就職マッチ加点で利用中。ただし進路タブの表示(uniTabEmployment L3314-3322)には強み(emp.strengths)テキストしか出ておらず、8分野レーティング自体は非可視化。よって「タブに可視化されていない」は正しく、可視化ギャップは実在する。データは101大学に実在し値の分布も本物、ラベル(CAREER_LABEL)と星ヘルパー(stars)が既存のため追加実装は軽量。大学共通指標なので進路タブ最上部で分離方針にも整合。診断で選んだ職種軸のハイライトで加点根拠の透明化という核心価値もある。以上より REDUNDANT ではなく REALISTIC。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "dataSource": "node -e 実測: uni.shingaku_jisseki.keisatsu_count=85/123件（うち実数値63件・\"要確認\"22件）, uni.shingaku_jisseki.shobo_count=85/123件（うち実数値42件・\"要確認\"43件）。型はすべて文字列レンジ（例:\"10-20名\"\"約15名\"\"若干名\"\"なし\"\"要確認\"）で精密な人数ではない。比較対象の kyoin_count は91件（実数値74/\"要確認\"17）。提案の「各85大学」は正確。",
+   "where": "進路タブ = uniTabEmployment（app_v2ui.html:3309-3324、呼出し3234）。keisatsu/shobo は shingaku_jisseki 配下の大学共通実績数値なので大学ページ配置で分離方針に合致・違反なし。",
+   "howTo": "uniTabEmployment の _row('教員就職', sj.kyoin_count ...)（3317行）直後に2行追加:\n  _row('警察官', sj.keisatsu_count && sj.keisatsu_count!=='要確認' ? _esc(sj.keisatsu_count) : null),\n  _row('消防・救命', sj.shobo_count && sj.shobo_count!=='要確認' ? _esc(sj.shobo_count) : null),\n_row/_esc は既存ヘルパでそのまま使える。'要確認'除外が必須（除外しないと警察22件/消防43件のプレースホルダ行が氾濫）。既存 kyoin_count 行も truthy チェックのみで\"要確認\"17件を素通し表示しているので、同じフィルタを付けると統一的で品質向上。補足: 未使用デッドコード renderEmploymentTab(3917) は既に警察合格/消防・救命カードを実装済み＝v2書換時に落ちた表示の実質復活。値がレンジ止まりのため学生への訴求は中程度。",
+   "reason": "必要データは実在（keisatsu_count/shobo_count が各85件）。実装は既存 教員就職 行を模した _row 2行追加のみで低コスト。公安職志望は多く価値はあるが、値が\"10-20名\"\"若干名\"等の粗いレンジで、特に消防は51%(43/85)が\"要確認\"プレースホルダのため実用価値は中程度。'要確認'除外フィルタを入れれば問題なく実装可能。分離方針違反なし。既存デッドコード(renderEmploymentTab)に同表示が残っており、これはv2書換で欠落した機能の復活に相当。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "dataSource": "uni.notable_alumni（string配列）を保有する大学は 123中22件（18%）。実在例: 南山[2]、愛知[2]、名古屋外国語[3:ANA/JAL CA多数・国際機関職員・通訳翻訳家]、名古屋商科[3:経営者・コンサル・起業家]、至学館[4:吉田沙保里・伊調馨/千春・登坂絵莉ほか]、藤田医科[3]、愛知工業[3:トヨタ系/デンソー系技術者・プロ野球選手]、岐阜協立[2:地銀職員・公務員]等。残り101件はフィールド無し。",
+   "where": "大学ページ 進路タブ（uniTabEmployment, app_v2ui.html:3309-3324）。notable_alumniは大学共通属性のため学部/大学分離方針に適合し是正不要。",
+   "howTo": "uniTabEmployment の _dl 配列末尾に _row('活躍する卒業生例', _joinArr(uni.notable_alumni)) を1行追加するだけで実装可（_joinArr が配列→「、」結合、null時は_rowが行ごと非表示。22件のみ表示され残101件は自然に出ない）。より目立たせるなら _dl の後に uni.notable_alumni?.length で条件分岐した独立セクション（見出し+ul）を追加。ロジックは既存のdead code renderBasicTab(3842-3847, 現状どこからも呼ばれず未使用)をそのまま流用可能。重要: ラベルは「有名OB・OG」でなく「卒業生の活躍例」等に。実データの多くは『東海地区中小企業経営者』『地元教員多数』等の集合的な進路類型で、名前入りの著名人は至学館・名古屋外国語・名商大など一部に限られるため、「有名OB・OG」の看板は誇大。",
+   "reason": "(1) データ存在: uni.notable_alumni は22/123大学が保有する実フィールドで、node確認済み。→NEEDS-DATAではない。(2) 現状ライブUIでは未表示: 唯一の参照は renderBasicTab(3842)だが同関数はファイル内でどこからも呼ばれないdead codeで、稼働中の進路タブ uniTabEmployment は notable_alumni を出していない。よって提案の「未使用」は実質正しく、REDUNDANTでもない。(3) 実装容易: 既存 _joinArr/_row/_dl でnull安全に1行追加でき、コスト低。(4) 価値は限定的でmedium: 保有は18%のみで82%は何も出ない。加えて内容は『地元教員多数』『中小企業経営者』等の汎用的な進路類型が大半で、高校生のモチベを刺激する『有名OB』は至学館(吉田沙保里)・名古屋外国語(CA)・名商大(起業家)など数校に留まる。→LOW-VALUEに落とすほどではないが、看板通りの訴求力があるのは一部校のみと理解した上で、ラベルを実態に合わせて控えめにすることが前提。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "dataSource": "uni.employment.notes は実在。ただしキーは全101 employment オブジェクトに存在するものの、非空は13大学のみ（123校中約10.6%）／残り88校は空文字列。非空の実例: 大阪体育大・日本体育大・びわこ成蹊スポーツ大「教員養成は保健体育が中心（教科全般の養成課程は限定的）」、京都看護大「学部1つで看護以外の進路なし」、神戸親和大「2023年に共学化したばかり。男子学生は少数派」、大阪青山大/大阪信愛学院大（女子大出自・男子少数）、帝塚山大/大手前大（知名度・ブランド中位）、大阪学院大/京都文教大/太成学院大（データ限定的）。同階層 emp.strengths=101件・emp.summary=101件は存在するがいずれもポジティブ寄りで notes と内容重複なし。現行 uniTabEmployment(app_v2ui.html 3309-3324) は strengths は表示するが notes は完全未使用。",
+   "where": "大学ページ進路タブ（uniTabEmployment / app_v2ui.html:3309-3324）。notes は大学単位の進路実績に対する注意点なので大学ページに置くのが正しく、学部/大学分離方針（大学共通の実績・注意点＝大学ページ）に合致。方針違反なし。",
+   "howTo": "uniTabEmployment の _dl 配列内、'強み' 行(3318)の直後に `_row('注意点', emp.notes)` を1行追加するだけ（_row は v==='' を空扱い、_dl が falsy をフィルタするので、空文字88校では行自体が出ず、非空13校のみ表示。emp.notes をそのまま渡してよい）。控えめ表示にするなら値を `emp.notes ? '<span class=\\\"detail-caution\\\">'+_esc(emp.notes)+'</span>' : null` の形にして CSS で .detail-caution{color:#8a8a8a;font-size:.9em} を足す。ラベルは内容が「教員養成の制約」「看護以外の進路なし」等の本質的注意と「データ限定的」等のデータ品質メタが混在するため『注意点』が無難。追加データ・DB改修は不要、実質約1行。",
+   "reason": "最大の指摘: 提案の「101大学」は誤り。101はキー存在数にすぎず、実コンテンツを持つのは13大学（88校は空文字列）。よって「101大学規模で信頼を担保」という前提は成立しない。ただし判定はREALISTIC — フィールドは実在し完全未使用、実装は _dl に1行足すだけの低コスト、_row/_dl が空値を自動で行ごと落とすため空文字校では非表示になり副作用なし。表示される13校では、体育大の「教員養成は保健体育中心」・看護単科大の「看護以外の進路なし」・共学化直後の「男子少数」など、strengthsやsummaryには出てこない真のミスマッチ防止情報を提供でき、提案趣旨（診断アプリの誠実さ担保）に合致。分離方針にも反しない。以上より実装可能で価値あり=REALISTIC。ただしカバレッジが約1割かつ「データ限定的」等のメタ的注意も混じるため、値はhigh not。value=medium。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "dataSource": "uni.notable_programs＝実在。56/123大学が非空（配列, 2〜4件/校, 計168項目）。keyword内訳: 公務員15/看護国試14/留学13/教員採用13/資格13。departmentsは0/650でuni専用フィールド。既存の参照はrenderBasicTab(L3834-3839)のみだが同関数は呼出0の死コードで、実UIの進路タブ(uniTabEmployment L3309)には未表示。cc.features(進路タブ「キャリア支援」で既表示)との重複は軽微＝ファジー重複9/56校・完全一致6項目/168のみ。",
+   "reason": "データは実在し提案前提（未使用）も実質正しい。notable_programsを唯一参照するrenderBasicTabはどこからも呼ばれない死コードのため、ライブ進路タブには表示されていない。56校に公務員講座/留学/教員採用対策/看護国試対策/資格支援など進路実現の手段として決定に効く具体データがあり価値はある。ただし(1)カバレッジは46%(56/123)で全校ではない、(2)一部でcc.featuresと文言が重複（龍谷「公務員講座」等）するため素の追加だと同義項目が二重表示になる、の2点で「高」ではなくmedium相当。uni-levelデータなので学部/大学分離方針には適合（是正不要）。実装は数行で済むためcost=low。",
+   "where": "進路タブ＝uniTabEmployment（大学ページ）。notable_programsはuni専用フィールド（departmentsは0件）なので大学共通情報として大学ページ進路タブが正位置。学部/大学分離方針に適合し是正不要。",
+   "howTo": "uniTabEmployment(L3309)の_dl配列に、既存「キャリア支援」(_row('キャリア支援', _joinArr(cc.features)))行の直後へ1行追加する。重複回避のため表示前にdedupする: const progs = (uni.notable_programs||[]).filter(p => !(cc.features||[]).some(f => f===p || (p.length>3&&f.length>3&&(p.includes(f)||f.includes(p))))); を作り、_row('力を入れている支援', _joinArr(progs)) を追加（progsが空なら_rowはnull返しで非表示になる想定）。ラベルはcc.featuresの「キャリア支援」と区別できる語（例:「注力プログラム」）にする。56校のみ表示・残り67校は条件で自動非表示。完全一致重複6件+ファジー9校だけなので上記の簡易filterで足り、career_center.featuresとの重複表示を防げる。あわせて死コードrenderBasicTab(およびrenderMethodTab/renderIppanTab/renderEntranceTab等の未呼出関数群)は別タスクで整理検討推奨。"
+  },
+  {
+   "value": "medium",
+   "cost": "low",
+   "verdict": "REALISTIC",
+   "dataSource": "uni.ryugaku（85/123大学に有効値・38大学は空）。ただし同一意味で2スキーマ併存: Shape A {available(bool), destinations(str), scholarship(str)}=45件（立命館/近畿/同志社/関学等）、Shape B {umu(bool), ryugakusaki(str), shogakukin(str)}=40件（中京/中部/名城/広島大等）。正規化(avail=available||umu, dest=destinations||ryugakusaki, schol=scholarship||shogakukin)すると avail/dest/schol とも85件充足。destinations例『アメリカ、イギリス…協定校世界70カ国以上』、scholarship例『あり（多数の留学奨学金プログラム）』。奨学金文字列: あり系63/要確認系5/その他17。案が推測した3フィールドはShape A(45件)しか拾えず、40件を取りこぼす。",
+   "reason": "データは実在し85大学(69%)で埋まっているためREALISTIC。ただし2点の是正が必須。(1)スキーマ二重化: 案の推測フィールドはavailable/destinations/scholarshipのみで45件しかカバーせず、umu/ryugakusaki/shogakukin系40件を落とす。両スキーマの正規化ヘルパで85件に引き上げる。(2)現状『進路タブでは未使用』は正確だが、実はライブ全体で未表示。ryugakuを描画するrenderLifeTab(3694行)はどこからも呼ばれないデッドコードで、実稼働の生活タブuniTabLife(3326)にも留学項目は無い。よってREDUNDANTではなく純粋な新規追加。学部/大学分離方針には抵触しない(ryugakuはuni直下=大学共通。進路タブuniTabEmploymentも大学レベルタブ)。留意: 留学は在学中プログラムで卒業後アウトカムたる『進路』とは意味的にややズレ、生活/国際寄りでもある。『グローバルな進路(留学)』の見出しで進路タブ末尾に置くのは許容範囲だが、価値はやや限定的(国際志向層向けのニッチ軸・データは自由記述で粒度不均一・要確認系5件)なのでvalue=medium。",
+   "where": "進路タブ = uniTabEmployment（work/app_v2ui.html 3309行）。大学レベルタブなので学部/大学分離方針に適合(ryugakuは大学共通情報)。見出しは既存の_dl就職情報の下に『🌏 グローバルな進路（留学）』として別セクション追加。※生活タブuniTabLife(3326)に置く選択肢も同等に妥当だが、案の意図どおり進路タブに配置しつつ、留学が在学中制度である点は見出し文言で誤解を避ける。",
+   "howTo": "uniTabEmployment(3309)を単一return式から文字列組み立てに小改修し、就職情報_dlの後ろに正規化した留学セクションを条件描画する。実装: `const ry = uni.ryugaku || {}; const avail = ry.available !== undefined ? ry.available : ry.umu; const dest = ry.destinations || ry.ryugakusaki; const schol = ry.scholarship || ry.shogakukin; if (avail === true || dest || schol) { html += '<h4 class=\\\"detail-h\\\">🌏 グローバルな進路（留学）</h4>' + _dl([ _row('留学制度', avail === true ? '✅ 協定校への留学制度あり' : (avail === false ? '❌ なし' : '要確認')), _row('主な留学先', dest ? _esc(dest) : null), _row('留学奨学金', schol ? _esc(schol) : null) ]); }` 既存の_esc/_dl/_rowをそのまま流用。両スキーマ吸収がキモで、これにより45→85件に拡大。ryugaku未保有38件は条件falseで非表示(空セクション出ない)。デッドコードrenderLifeTab(3694)は流用せず新規に書く(呼ばれていないため)。コスト低: 1関数・追加約10行・新規フィールド不要。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "dataSource": "uni.employment.summary=実在101/123件（9-37字/avg21字。例:大阪体育大学「日本のスポーツ指導者の総本山。」立命館「関関同立屈指の総合力…」）。uni.shingaku_jisseki.note=実在だが27/123件のみ（shingaku_jistekiオブジェクト自体は123件だが.noteフィールドは27件。提案の「123大学」は誤り。9-49字/avg24字。例:日体大「教員・警察・消防の合格者数は全国トップ級」）。両方保有27件/summaryのみ74件/noteのみ0件/両方無し22件。",
+   "where": "大学ページ進路タブ = uniTabEmployment(uni)（work/app_v2ui.html 3309行、dispatch 3234行）。両フィールドともuniオブジェクト直下＝大学共通情報なので大学ページが正しく、学部/大学分離方針を壊さない。",
+   "howTo": "live関数 uniTabEmployment(uni) の return を修正。現状は _dl([...]) 定義リストのみ。冒頭にリード文を差し込む: `const emp=uni.employment||{}; const sj=uni.shingaku_jisseki||{}; const lead = (emp.summary?`<p class=\"detail-lead\">${_esc(emp.summary)}</p>`:'') + (sj.note?`<p class=\"note\">${_esc(sj.note)}</p>`:'');` を作り、`return lead + _dl([...]) + (official_links...)` の順で結合。summaryは既存 .detail-lead クラス（キャッチ用）、noteは既存 .note クラス（小さめ補足）で視覚差別化。注意点: (1)実装先は uniTabEmployment のみ。renderEmploymentTab(3949/3951)・renderBasicTab(3829) は既に両フィールドを参照するが未呼出のデッドコードなのでそちらを触らない。(2)summary(82%)を主リード、note(22%)は補足という主従で置く。両方持つ27件は「見出し＋具体実績」で自然だが、内容が重なる場合の冗長さを避けるためsummary優先・note従属の並びにする。",
+   "reason": "node -eでdata_v2.json実測: employment.summary=101/123件、shingaku_jisseki.note=27/123件（提案の123は誤り）。いずれも9〜49字の短いキャッチで、リード文用途に適合。live進路タブ uniTabEmployment はこの2フィールドを一切使っておらず「未使用」の主張は正しい（3829/3949/3951の参照はデッド関数renderBasicTab/renderEmploymentTab内で未呼出）。データ実在＋live未使用＋分離方針適合のためREALISTIC。値=medium: summaryは82%カバレッジで数字カードの前に大学の進路キャラを一言で示す読ませ効果があり有効だが、決定に不可欠な新情報ではなく可読性/導入の改善に留まり、note側は27件と薄い。実装は uniTabEmployment に数行追加のみでcost=low。"
+  },
+  {
+   "verdict": "NEEDS-DATA",
+   "value": "low",
+   "cost": "low",
+   "where": "進路タブ uniTabEmployment（work/app_v2ui.html:3309-3324、「主な就職先」行が sj.top_employers を表示）",
+   "dataSource": "uni.shingaku_jisseki.top_employers=123/123件（非空123）、uni.employment.representative_employers=101/123件（非空101）。両フィールドとも「民間/公務員」で色分けされていない混在リスト。公務員系キーワード(県警/府警/市役所/県庁/教育委員会等)含有率: representative_employers=23.1%(92/399項目)、top_employers=13.7%(111/811項目)。rep項目のうち32%(129/399)は同大学のtopと重複。",
+   "howTo": "この案の「民間/公務員の2列」を実現するには、就職先ごとの民間/公務員・団体の分類フラグが必要だが data_v2 に存在しない。案の前提（rep=公務員寄り, top=企業寄り）は誤りで、そのまま2列にすると rep列に三井住友銀行/伊藤忠商事/京セラ等の民間が大量に入り、top列に大阪府警/市役所/教員が残るため両列とも誤ラベルになる。もし将来やるなら (A) 各employer文字列を県警/市役所/県庁/教育委員会/消防/自衛隊 等のキーワードで民間/公務員に自動仕分けし、top_employers単独を2列化する（representative_employersは不要・重複源なので使わない）— ただしキーワード一致は脆く「日本生命」等の団体は誤分類しうるので要検証バナー扱い。(B) 恒久的には各employerに sector:'private'|'public' タグをデータ側へ追加。現データのみでの二層表示は不可。",
+   "reason": "案の中核前提が data_v2 の実データと矛盾。representative_employers は「公務員・団体寄り」ではなく実測で77%が民間企業（同志社/立命館/関学の rep はほぼ全て銀行・商社・メーカー）、逆に top_employers は既に府警・市役所・教員を14%含む。よって「民間就職先/公務員・団体就職先」の2列化は両列とも誤ラベルになり、高校生に誤った就職先像を与える。加えて rep と top は平均32%重複しており、2列表示は複製が多い。representative_employers が実質未使用（uniTabEmployment は top_employers のみ使用、3941行のフォールバックは top 常在のため発火せず）である点は正しいが、それを公務員列として活用する道は現データでは開けない。民間志望/公務員志望を出し分けるという狙い自体は妥当だが、実現には employer 単位の民間/公務員分類データが必要=NEEDS-DATA。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "where": "大学ページ進路タブ（uniTabEmployment / app_v2ui.html line3309）。uni共通フィールドなので分離方針OK、学部ページには置かない。dead codeの renderEmploymentTab(3917)/detailEmploymentV2(3503) は触らない。",
+   "dataSource": "uni.shikaku_gokakuritsu 保有85/123件。型が混在: string型45件（散文「司法試験・公認会計士・公務員試験合格者多数」等）／object型40件（{kyoin_saiyo,kouchikuin,note}×30、{kyoin_menkyo_shutoku,athletic_trainer,notes}×10）。uni.shikaku_gokakuritsu_data は同フィールドの100%重複コピー（deep-equal 85/85）で不要—guessedDataが同名を2回挙げているのは冗長。現状ライブ描画はuniTabEmployment(line3319)の_row('資格に強い',_shikakuText())の1行のみ。",
+   "howTo": "(1) uniTabEmploymentの_dl配列から'資格に強い'行を外し、_dlの後ろに独立ブロックとして追記: uni.shikaku_gokakuritsuがある時だけ`<h4 class=\"detail-subhead\">資格・採用試験の強み</h4>`+本体を出力（38件のnull大学では見出しごと非表示）。(2) object型は_shikakuTextの' / '結合をやめ、ラベル付きサブ_dlに構造化: kyoin_saiyo→教員採用試験 / kouchikuin→公務員試験 / kyoin_menkyo_shutoku→取得できる教員免許 / athletic_trainer→アスレティックトレーナー等 / note・notes→備考。string型はそのまま1段落表示。(3) 参照はuni.shikaku_gokakuritsuのみ（_dataは無視）。(4) 見出し語は「合格実績」でなく「資格・採用試験の強み」等にする—中身は『合格者多数』系の定性表現が大半で、具体合格数/率を約束すると乖離するため。既存_shikakuTextは構造化サブ_dlを返す別関数に置換or拡張。",
+   "reason": "必要データは実在し85件で描画可能、UI再構成のみで新規データ収集は不要（NEEDS-DATAではない）。ただし『既に表示済みだが1行に埋もれている』状態で、見出し化はほぼ表示強調の変更＝価値は限定的。実質的な上積みは、現在' / 'でベタ結合されているobject型40件を教員採用/公務員/資格取得のサブ行に構造化する点にあり、滋賀の教員採用・公務員志望層には可読性向上として意味がある。一方、内容が定性的散文中心のため『合格実績』という数字を想起させる見出しは過剰約束になりやすく、見出し語の選定に注意が要る。分離方針は維持され違反なし。以上より低コスト・中価値のREALISTICと判定。"
+  },
+  {
+   "verdict": "NEEDS-DATA",
+   "value": "low",
+   "cost": "high",
+   "reason": "提案の前提「キーが156エントリ存在」は正しいが、決定的な見落としがある: その156件は全て値が null で実データがゼロ（node -e確認: present=156, nonNull=0, nonEmptyStr=0）。detailEntranceV2（app_v2ui.html:3484）と別表関数（:3873）は既に required_achievement を参照済みだが、いずれも truthy ガード（`r.required_achievement ? … : null`）付きのため null により実際には何も描画されていない。つまり「旧・学部関数では出している」は“コードはある”だけで“表示実績はゼロ”の誤認。uniTabEntrance（:3272-3282）が行を持たないのは事実だが、行を足しても全123大学で常に空表示。ボトルネックはコードではなくデータ。行追加はワンライナーだが、価値を生むには156エントリ（85大学×総合型/公募）の実績要件を手作業で収集・充填する必要があり整備コストが高い。学部/大学分離の観点では required_achievement は uni.entry_method_details（大学単位の入試方式条件）に属すため uniTabEntrance 配置は方針と整合し違反なし。ただし現状は表示すべき中身が無く NEEDS-DATA。",
+   "dataSource": "uni.entry_method_details.required_achievement は156エントリに存在（sogo 70 / koubo 86 / ippan 0、85大学）だが値は全件 null（present=156, nonNull=0, nonEmptyStr=0）。departments は entry_method_details 自体を持たない（0/650）。uni.nyushi_details のエントリにも required_achievement は無く、method_name/application_period/exam_date/exam_subjects/required_documents/special_notes 等の日程・書類系のみ。「求める活動」相当の充填済みフィールドは selection_content（選考内容、既に uniTabEntrance で表示済み）だけで、これは実績要件そのものではない。",
+   "howTo": "データ整備が前提。まず data_v2.json の156エントリ（uni.entry_method_details.sogo[]/koubo[] の required_achievement=null）に各大学の募集要項から出願資格の実績要件（例: 英検2級以上、部活動全国大会出場、指定資格、活動報告書提出 等）を文字列で充填する。充填後のコードフックは uniTabEntrance の _dl 配列（:3277 選考内容行の直下）に `_row('求める活動・実績', r.required_achievement ? _esc(r.required_achievement) : null)` を1行追加するだけ（_row は null で行非表示のため未充填大学は自動スキップされ安全）。ただし現時点は充填データが皆無で、コード追加のみ先行しても全大学で空行になり無価値。データ充填が済んだ分から段階的に表示される。",
+   "where": "入試タブ（uniTabEntrance）。required_achievement は uni.entry_method_details（大学単位の入試方式条件）に属すため大学ページ入試タブが正しく、学部/大学分離方針に違反しない。selection_content の直下（app_v2ui.html:3277付近）に配置。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "uni.nyushi_details.{sogo,koubo,ippan}[].required_documents（配列で実在）。保有=85/123大学。method単位: sogo 89/97・koubo 85/90・ippan 86/121。書類点数分布=1点:62 / 2点:84 / 3点:98 / 4点:15 / 5点:1（大半が1〜3点、内容も「調査書」等が反復）。CSS .nyushi-tag/.nyushi-tags は1146-1160に既存。",
+   "reason": "データは潤沢で NEEDS-DATA ではない。ライブ入試タブ uniTabEntrance(3293) は _joinArr(3186:「、」結合) で書類を羅列しており、提案の前提（羅列表示）は正しい。しかし(1)「チェックリスト化して準備物を管理」の価値の核＝永続チェック状態＝個人の出願準備トラッカーは、匿名・保存対象校なし・多数校を横断比較する本アプリのモデルに不適合。非永続の飾りチェックボックスは無意味、localStorageで uni×method 別に状態保存するのはスコープ過大。(2)書類は1〜3点かつ調査書など汎用項目の反復で\"管理\"すべき量ではない。(3)見た目だけの安価版（羅列→ピル）は純粋な装飾で、同フィールドをピル描画する renderNyushiCard(3627/3639) と .nyushi-tag CSS が既にコード内に存在（死にコード＝一度作って本採用されなかった）。データ問題ではなく価値が低い案。",
+   "where": "入試タブ（uniTabEntrance / app_v2ui.html:3293）。必要書類は大学共通情報なので配置は学部/大学分離方針に整合し、違反なし。",
+   "howTo": "もし着手するなら最小コストの見た目統一のみ現実的: uniTabEntrance の _row('必要書類', _joinArr(...)) と _row('試験科目', _joinArr(...)) を、既存の renderNyushiCard と同じ nyushi-tag ピル描画（3627-3640）に差し替える（.nyushi-tag CSS 流用、新規データ不要）。ただし機能付きチェックボックス（状態永続化＝個人トラッカー化）は本アプリのUX前提に合わず非推奨。実装するとしても純装飾で費用対効果は低い。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "medium",
+   "where": "入試タブ（uniTabEntrance＝大学ページ）。日程は大学共通データなので学部/大学分離方針と整合し、置き場所の是正は不要。既存の縦dl（app_v2ui.html:3284-3296）の直前または置換で横タイムラインを追加。",
+   "dataSource": "uni.nyushi_details.{sogo,koubo,ippan}[].{application_period, exam_date, result_date, enrollment_deadline}。保有: 85/123大学・308方式。存在率 application_period 308/308・exam_date 308/308・result_date 308/308・enrollment_deadline 286/308（22件空）。ただし全て自由記述の和暦文字列。日精度で3コア日付が揃うのは100/308（32%）のみ、月精度なら298/308（96.7%）が配置可。明示年あり244/308、月のみで年推定要64/308、年跨ぎ明示12件。nyushi_details無し38大学は対象外。",
+   "reason": "guessedDataのフィールドは実在し、現状は確かに縦dl羅列（uniTabEntrance line3284-3296で出願期間/試験日/合格発表/入学手続〆切を_dl表示）なので提案の前提は正確。ただし『日付データは既に揃っているので表現を変えるだけ』は過大評価。日付は\"11月\"\"12月中旬〜1月上旬\"\"9月（要確認）\"等の粒度バラバラな和文字列で、日精度で並ぶのは32%のみ。日単位の横棒は不可能、月単位の軸（9→3月）でのみ成立する。年跨ぎ・上旬中旬下旬・括弧注記・—/未実施/面接のみ等を吸収する和暦パーサと、パース不能10件＋データ無し38大学のグレースフルデグレードが必須なため『表現を変えるだけ』ではなく実装コストは中。日付は大学共通データで入試タブに置くのが分離方針通り、方針違反なし。価値は\"既に表示済みの情報の視覚化\"であり新情報ではないが、複数方式の併願スケジュール比較は月軸タイムラインで明確に改善するため中。",
+   "howTo": "(1) 和暦→{month, half}パーサを新設: parseJpDate(str, seasonYear) — 正規表現で[年]?(\\d+)月((\\d+)日|上旬|中旬|下旬)?を抽出、年は明示があれば採用・無ければ月から推定（9-12月=seasonYear, 1-3月=seasonYear+1）、範囲(〜)は先頭を開始点に。返り値は月軸座標 pos = (month-9+12)%12 + (上旬0/中旬0.33/下旬0.66/日→day/31)。パース不能(—/未実施/面接のみ/非公開)はnullを返す。(2) 軸は9月始まりの固定7〜8区間（9,10,11,12,1,2,3月）。方式ごとに1本の横trackを描画: 出願(application_period開始)〜手続〆(enrollment_deadline、無ければresult_date)を帯、試験日(exam_date)と合格発表(result_date)をマーカー点で重畳。CSSはflex/gridの%配置でレスポンシブ、色は既存のprefers-color-scheme/data-theme変数を流用しダーク両対応。(3) 各方式でコア3点がnull（10件相当）または nyushi_details無し（38大学）は従来の_dl表示にフォールバック。全方式を同一軸に積むと併願比較が一目化。(4) 既存の_dl（試験科目/必要書類/special_notes）はタイムライン下に残す（日付以外の情報は縦dlが適切）。実装規模: parser約40行＋描画約60行＋CSS約30行、単一HTML内で完結。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "where": "大学ページ入試タブ（uniTabEntrance）の「想定倍率」行のみ。line 3279 の _row('想定倍率', …) を差し替える。学部ページには触れない。",
+   "dataSource": "uni.entry_method_details.{sogo,koubo,ippan}[].bairitsu = 非null 203件、綴り誤りキー baiio = 44件（両者は排他、both:0）。合計247/336方式エントリ（73.5%、全123大学に分布）が値あり。残89は値なし（うちbairitsu:null 24件含む）。値は全て「2.0〜3.5倍」「1.1倍程度」「5.0〜15.0倍（医）」等の範囲文字列で、正規表現 /[0-9]+(?:\\.[0-9]+)?/g により247件すべて数値抽出成功（parseFail:0）。上限値バケットの分布 ≤2:49 / 2-3:79 / 3-5:71 / 5-8:34 / >8:14 でヒートスケールに十分な広がりあり。dept側の一般倍率（dept.bairitsu.ippan 年度推移）とは別データで、この案は触れない＝分離方針は保たれる。",
+   "howTo": "(1) ヘルパー _bairitsuBadge(str) を新規追加：文字列から /[0-9]+(?:\\.[0-9]+)?/g で数値配列を取り、上限=Math.max(...nums) を代表値にする。閾値で5段階に色分け（例 ≤2=緑, ≤3=黄緑, ≤5=琥珀, ≤8=橙, >8=赤）。返り値は `<span class=\"heat-badge\" style=\"--hb:色\">${_esc(str)}</span>`。数値抽出0件の異常系は素の _esc(str) を返す。(2) CSSに .heat-badge { display:inline-block; padding:1px 8px; border-radius:10px; font-size:12px; font-weight:600; background:var(--hb); color:#fff } を1つ追加。(3) line 3279 を `_row('想定倍率', (r.bairitsu||r.baiio) ? _bairitsuBadge(r.bairitsu||r.baiio) : null)` に変更。_row は v を `<dd>${v}</dd>` と生挿入（エスケープは呼び出し側責務）なのでバッジHTMLをそのまま渡せる。既存の _esc は badge内で行うのでXSSリスク無し。注意：値は「想定倍率＝推定値」であり既存の⚠️推定バナーがあるため、原色の強い赤緑ではなく彩度を落とした色にし、精度過信を招かないこと。範囲の代表値は上限採用（＝最も厳しい側）を明示。line 3872/3901 の m.bairitsu は renderEntranceTab 経由の到達不能な旧コード（liveディスパッチャ line3233 は uniTabEntrance を使用）なので改修不要。",
+   "reason": "必要データは既存で十分。全123大学の entry_method_details に想定倍率が bairitsu(203)+baiio(44)=247件あり、全件が数値パース可能で分布もヒート化に適する。現状は line 3279 で _esc による素の文字表示のみ（案の前提と一致、REDUNDANTではない）。_row が生HTMLを受ける実装のため注入口はクリーンで、追加は helper1関数+CSS1クラス+1行差し替えの低コスト。倍率は uni側の方式別想定倍率であり、学部固有の一般倍率年度推移(dept.bairitsu.ippan)とは別物なので学部/大学分離方針を壊さない。価値をhighでなくmediumとした理由：(a)カバレッジ73.5%で26%は値なしバッジ無し、(b)値が「推定の範囲」であり色の強弱が実際以上の精度・確実性を示唆する危険があるため彩度を抑える配慮が必須、(c)効果は既存データの見せ方改善に留まり新情報を足すものではない。以上より安易な機能追加ではなく妥当な範囲でREALISTIC。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "where": "入試タブ（uniTabEntrance）冒頭。verified/estimated バナー直後、sogo/koubo/ippan の h4 ループ（app_v2ui.html 3268行〜）の前に chip 列を挿入。評定条件は大学共通データなので大学ページ配置は分離方針と整合（学部固有の可否は学部ページ側のまま）。分離方針は壊さない。",
+   "dataSource": "uni.entry_method_details（objectキー sogo/koubo/ippan、各value配列）＝全123大学に存在。hyoutei_note 非null件数: koubo 85/119 methods・sogo 47/78 methods・ippan 0/139。hyoutei_min 非null: koubo 67・sogo 38・ippan 0。sogo は47大学が空配列（総合型なし）、koubo 空5、ippan 空0。koubo の hyoutei_note のうち33件が「学部により…/要確認」表記。ippan は hyoutei_min/note が全null で『評定不問』は notes 自由文にのみ存在（139中55件が評定/不問に言及）。多方式は稀（koubo>1が1大学・sogo>1が2大学）。現状は評定条件が各 method カードの _dl 先頭 _row（3275行）に埋もれており、タブ冒頭サマリーは未実装＝REDUNDANTではない。",
+   "howTo": "uniTabEntrance で banner 生成後・h4ループ前に、['sogo','koubo','ippan'] を走査してチップ列 `<div class=\"hyoutei-chips\">` を組む。各カテゴリの代表評定を hyoutei(arr) で算出: (1) 配列内で hyoutei_note が非nullの最初値をそのテキストのまま採用（「学部により異なる」等も verbatim 表示し数値捏造による誤誘導を回避）、(2) 無ければ hyoutei_min!=null で `${min}以上`、(3) 両方無い場合、ippan は全nullのため固定ラベル『評定不問（学科試験）』を静的付与（一般選抜は定義上GPA足切りが無く安全）、sogo/koubo で null は『要確認』。空配列カテゴリ（総合型なし47大学）はチップを出さない。出力例 `<span class=\"chip\">総合: 指定なし</span><span class=\"chip\">公募: 3.2以上</span><span class=\"chip\">一般: 評定不問</span>`。ラベルは既存 METHOD_TYPE_LABEL を流用、複数distinct値は「/」連結。CSSは既存 .chip 系を再利用（新規スタイル数行）。ippanの静的ラベルと『学部により異なる』表記は既存 estimated-banner（学部で評定条件が異なる旨の警告）と整合するため注記の追加不要。",
+   "reason": "node -e で data_v2.json を実査。案の中核（各方式の hyoutei を集約しタブ冒頭にチップ表示）は実データで成立する: 足切り判断で実際に評定が効く koubo/sogo は hyoutei_note の保有が厚い（koubo 85・sogo 47大学）。現状タブ冒頭にサマリーは無く（評定条件は各カード先頭行に散在）REDUNDANTではない。ただし2点の現実的制約: ①ippan は hyoutei_min/note が全139件null で、案の guessedData だけでは『一般=評定不問』を出せない→一般選抜の定義に基づく固定ラベルでの補完が必須（domain上安全なのでNEEDS-DATAには落とさない）。②koubo note の約4割が『学部により異なる/要確認』のため、単一数値化は誤誘導。note テキストをそのまま出す実装で回避可能。value=medium: 早見の実益はあるが評定条件は既に最初のカード先頭に見えており改善は限定的。cost=low: 表示層のみで既存 emd パースと .chip を再利用。分離方針は評定条件=大学共通のため大学ページ配置で整合し、破壊しない。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "medium",
+   "dataSource": "nyushi_details.{sogo,koubo,ippan}[].special_notes=187/308件が内容あり（案の「266件」は過大）。うち併願/専願の言及はわずか2件、評定=47件、実績/大会レベル=14件、共テ/試験地=15件。entry_method_details.{sogo,koubo,ippan}[].type=専願30/併願可4/両方あり8=計42/336件。entry_method_details.*[].notes=177/336件。※これらは既にuniTabEntranceで全て描画済み: L3275 評定条件=hyoutei_note, L3276 出願区分=r.type（＝併願可否そのもの）, L3282 notes全文=.method-note, L3295 special_notes全文=.method-note。",
+   "reason": "案の中核『併願可否バッジ』はデータで裏づかない。special_notesに併願/専願を含むのは187件中2件のみで、構造化された併願可否は entry_method_details.type（専願30/併願可4/両方あり8=42件）に存在するが、これは既にL3276『出願区分』行として明示描画済み（REDUNDANT）。special_notesから抽出できる最大クラスタの評定(47件)も既にL3275『評定条件』行で構造化表示済みで重複。notes/special_notesの全文自体もL3282/L3295で既に.method-noteとして表示されている。真に新規で埋没している情報は実績レベル(14件)や『公募制なし/指定校のみ』警告など約30件のみで、それも既に画面上のnote文中に見えている。加えて『評定不問』と『評定3.0以上必須』を機械抽出すると意味反転（極性）を誤るリスクがあり、狭い便益に対しヒューリスティックのコストと事故リスクが見合わない。学部/大学分離は入試タブ内で完結するため方針違反はない。",
+   "howTo": "推奨は不採用。もし限定実装するなら『併願可否』ではなく別軸で。(1) 出願戦略警告バッジのみ: special_notes/notesを正規表現で /公募.*実施(なし|していない)|指定校.*のみ/→⚠️『一般公募なし』、/専願/(type含む)→🔒『専願（併願不可）』、/評定不問|当日点重視/→『評定不問・当日点勝負』の3種に限定し、method-name横に小バッジ表示（該当は計30-40件程度）。(2) 評定・出願区分は既存行があるため新規バッジ化しない。極性反転を避けるため『評定N.N以上』の一般抽出は行わない。",
+   "where": "入試タブ（uniTabEntrance）内で完結。学部/大学分離方針への違反なし（併願可否・出願区分は大学共通の入試条件として大学ページで正しい配置）。"
+  },
+  {
+   "verdict": "NEEDS-DATA",
+   "value": "medium",
+   "cost": "high",
+   "dataSource": "nyushi_details.application_period（実在・85/123大学・方式308件100%充足, sogo/koubo/ippan各85）。ただし currentDate=2026-07-16 でパース検証すると: 締切が未来=9件のみ(大体大/中部大の2大学), 締切が過去=99件, 日精度なしの曖昧表記=200件(「9月（要確認）」「12月中旬〜1月上旬」「未実施（指定校のみ）」「1月〜3月で複数回」等)。verified_year=2027年度:2/2026年度:28/無し:55。出願開始年プレフィックス=2024:60,2025:107,2026:75,2027:1,年無し:65（年度混在・陳腐化）。代替の entry_method_details.application_period(336件)も約半数nullで同程度に曖昧。",
+   "where": "大学ページ入試タブ uniTabEntrance（入試日程は大学共通情報なので学部/大学分離は非違反）。ただし現行データでは実装不可。",
+   "howTo": "実装するには次のデータ整備が前提: (1)全85大学の nyushi_details を現行=2027年度入試サイクルに更新し、application_period を「開始/締切」の日精度ISO値で構造化保持（現状の200件の曖昧文字列を排除）。(2)年度混在(2024/2025/2026/2027)を解消し全件同一サイクルに統一。(3)静的JSONは毎年腐るため年次更新運用を確立。これらが揃えば uniTabEntrance の各方式カードで end>=today を緑バッジ、超過を淡色化する処理自体は容易（日本語日付レンジのパーサ+Date比較）。現状はデータ側が未整備。",
+   "reason": "フィールドは存在するが「日付として解釈するだけで成立」という前提が実データで崩壊。currentDate基準で未来締切として解釈できるのは308方式中わずか9件(2大学)のみ、99件は過去、200件は「要確認/月のみ/未実施/複数回」で日精度パース不能。加えて入試年度が2024〜2027で混在し大半が前年度以前の陳腐データのため、近大・同志社・関学・龍大等ほぼ全大学(83/85)で全方式が『締切超過』と誤表示され、実際は2027年度出願が未開始なだけなのに『もう間に合わない』と受験期高3を最も広く誤誘導する。機能を出さないより有害。よって未整備データが不足＝NEEDS-DATA。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "exam_subjects(nyushi_details.*[]): 303/308方式が保有・クリーンな文字列配列。selection_content(entry_method_details.*[]): 122/336方式が保有・文字列配列。subjects(entry_method_details.*[]): 204/336方式が保有だが自由文字列（\"学科試験（2科目）\"\"書類＋面接\"\"2教科型\"\"共通テスト＋二次試験\"等）で配列でない。distinct exam_subjects値=117種。",
+   "reason": "情報自体は既に表示済み＝タグ化は見た目の再スキンにすぎない。active な uniTabEntrance（L3252, dispatch L3233）は既に L3292 で exam_subjects を、L3277 で selection_content を、L3278 で subjects を「試験科目/選考内容」行として表示している（_joinArrで「、」連結のプレーンテキスト）。案の狙い『面接だけの方式か学科試験が要る方式か』は現状のテキスト行でそのまま読み取れる。さらにタグ描画コードは既に存在する dead code として残っており（renderNyushiCard L3628 が nyushi-tag accent、renderMethodTab L3870 が qualif-tag）、過去にタグ化を試みてDL行レイアウトに置換した経緯が見える。方式間比較も、既に sogo/koubo/ippan の3区分で各方式の科目が縦並び表示されており、単一大学ページ内で全方式の科目は一覧できるため専用比較マトリクスの増分価値は薄い。加えて案の guessedData 前提が崩れている：subjects は配列でなく自由文字列で、区切り文字が ＋/・/括弧内列挙とバラバラのため『科目ごとのタグ』に信頼して分割できない。データは在るので NEEDS-DATA ではなく、live UI にタグは無いので厳密な REDUNDANT でもなく、実装可能だが既存テキスト表示に対する上積みが装飾的で薄いため LOW-VALUE。",
+   "where": "入試タブ（uniTabEntrance）。入試方式・試験科目は大学共通情報なので大学ページが正しく、学部/大学分離方針は壊さない。ただし学部ページ deptOnlyBox の『使える入試方式の可否』とは別物（可否は学部固有・維持）。",
+   "howTo": "実装するなら低コスト：uniTabEntrance L3277/3292 の _row('選考内容', _joinArr(...)) / _row('試験科目', _joinArr(s.exam_subjects)) を、配列を span.tag 群に描くヘルパー _tagRow(label, arr) に差し替えるだけ（dead code の renderNyushiCard L3628 の nyushi-tag accent 描画をそのまま流用可）。ただし subjects(L3278) は自由文字列なので分割せず単一 pill 表示に留める（分割不可）。方式間比較を足すなら、sogo/koubo/ippan 横断で method_name×exam_subjects/selection_content の簡易マトリクス（行=方式、列=面接/小論文/書類/学科など頻出タグの◯）を uniTabEntrance 末尾に追加できるが、頻出タグの正規化辞書（面接150/書類審査119/小論文71/英語71/国語61…の表記ゆれ吸収）が必要で費用対効果が下がるため非推奨。基本はタグ化のみに留めるのが妥当。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "node -eで実データ確認（work/data_v2.json, 大学123件）。shogakukinは2スキーマ混在:\n【variant A：83校】sports_tokutai / general_shogakukin / shogakukin_official_url\n・sports_tokutai: キー保有45件、意味ある値18件（内訳:「スポーツ特待生制度」等の一文が16件、ランク/免除の詳細ありは大阪体育大「S・A・Bランク。学費全額〜一部免除」とびわこ成蹊スポーツ大「学費全額・半額・1/4等」の2件のみ）、null 16件、「要確認」10件、「なし」1件。\n【variant B：40校】tokuaisei(綴り誤りキー) / shogakukin / url\n・tokuaisei にスポーツ特待が入る: 日本体育大/筑波/国士舘/明治/順天堂 の5件が意味あり値。★guessedDataはこのフィールドを漏らしている。\n・合算でスポーツ特待の意味ある大学 = 23/123（19%）。この23校は全て奨学金URL(shogakukin_official_url 45件 or url 40件)を保有。\n・スポーツ特待専用URLは存在せず、あるのは一般奨学金ページURLのみ。\n・現状の表示: 能動コードでsports_tokutaiを表示している箇所はゼロ（uniTabLife/uniTabEntranceとも未使用。唯一表示するrenderLifeTabは呼び出し元0件の死にコード）。よって「未使用」の前提は入試タブに限らずアプリ全体で真=REDUNDANTではない。",
+   "reason": "データは実在し能動アプリで未表示（renderLifeTabは死にコード＝REDUNDANTではない）、大学単位の制度で入試タブ配置は分離方針に整合するため実装可能=REALISTIC。ただしvalueはlow: (1)対象は23/123校のみ、(2)うち21校は「スポーツ特待生制度」等の一文だけで、提案の目玉である「S・A・Bランク別バッジ」を満たすのは大阪体育大/びわこ成蹊スポーツ大の2校のみ、ランク/免除の構造化データは無い、(3)恩恵は競技実績のある高校生という狭いセグメント限定。実現物は「ランク付きリッチバッジ」ではなく「原文一文＋奨学金リンクの簡易バッジ」に留まる。致命的注意:guessedDataがsports_tokutaiのみを挙げているが、スポーツ特待情報は綴り誤りキーtokuaiseiにも分散しており、sports_tokutaiだけで実装すると日体大・筑波・明治・順天堂・国士舘という最もスポーツ関連の5校が黙って脱落する。両variant（フィールドもURLも）をORで拾うことが必須。",
+   "where": "大学ページ 入試タブ（uniTabEntrance, app_v2ui.html:3252）の検証バナー直後。特待生は大学単位の制度で、評定条件・入試日程と同じ「大学ページの入試情報群」に属すため、学部/大学分離方針に違反しない（学部固有情報ではない）。学部ページには置かない。",
+   "howTo": "uniTabEntranceのbanner生成直後に次を追加。両スキーマvariantをORで吸収するのが肝:\nconst sg = uni.shogakukin || {};\nconst sports = sg.sports_tokutai || sg.tokuaisei;         // ★typoキーtokuaiseiも必ず拾う\nconst surl = sg.shogakukin_official_url || sg.url;         // ★URLも両variant\nconst BAD = ['要確認','不明','なし',''];\nif (sports && !BAD.includes(sports)) {\n  banner += `<div class=\"tokutai-badge\">🏅 スポーツ特待生制度: ${_esc(sports)}` +\n            (surl ? ' ' + _link(surl, '奨学金情報') : '') + `</div>`;\n}\n表示方針: 値は原文一文をそのまま表示（ランク/免除の構造化データが無いため、S/A/Bランク別UIは実装不可。該当2校のみ文中にランク文字列が含まれる形で表示される）。「要確認/なし/不明/null」はバッジ非表示にフィルタ済み。CSSは既存のバッジ系クラス（verified-banner等）に倣い薄い枠+🏅で軽量に。23校のみ表示され残り100校は非表示になる点は許容（該当時のみ意味を持つバッジ）。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "uni.bairitsu_trend=123/123件。2形状: (a)year-flat 40件（2023/24/25 か 2022/23/24 + note、全40件が実値、39件note。提案の{2023,2024,2025,note}に一致するのはこの40件のみ）(b)method-nested 83件（sogo/koubo/ippan、主に2024単年レンジ、70件実値、年次推移ではない）。dept.bairitsu.ippan.{year}=650中625件が実値かつ625件全てsource_url付き（verified_date 2026-07-13、データは2025-2026）。year-flat 40大学のうち39大学は学部側に検証済み実値あり（欠けるのは愛知文教1件のみ）。",
+   "reason": "データは存在するが価値が薄く、かつ既存の検証済みデータと重複・矛盾するためLOW-VALUE（NEEDS-DATAではない＝欠損ではない／厳密なREDUNDANTではない＝該当ウィジェットはliveに未実装）。理由: (1)「一般倍率の年度推移」という受験判断ニーズは学部ページで既に、より新しく(2025-2026)・出典付き(625/625 source_url)・粒度細かく満たされている。uni.bairitsu_trendは出典なしの推定文字列(2023-2025)で品質が明確に劣る。(2)矛盾例: 中京大のuni trendは2025=3.0倍だが、同大の学部bairitsuは2025で2.7〜6.2倍（スポーツ/現代社会）。並置すると信頼を損なう。note自身が「学部により1.5〜6倍」と大学一括値が判断材料にならないことを認めている。(3)year-flat 40大学のうち39大学は学部側に検証済み実値があり、uni trendは新情報をほぼ足さない。(4)分離方針で倍率=学部固有→学部ページ。uni入試タブに倍率トレンドを載せるのは方針違反。(5)既存renderBairitsuTrend(3656行)はmethod-nested専用のdead code（live uniTabEntranceから未呼出、year-flat/note非対応）。",
+   "where": "提案は入試タブ(uniTabEntrance)だが不適。倍率トレンドは分離方針どおり学部ページ(deptOnlyBody)の既存「一般倍率の年度推移」に集約すべきで、そちらは既にdept.bairitsuの出典付き実値で実装済み。大学入試タブに数値倍率を持ち込む改変は方針を壊すのでREJECT。",
+   "howTo": "核心の数値スパークライン案は非推奨（学部の検証済み倍率と矛盾＋方針違反）。もし何か拾うなら救済案として、数値トレンドは出さず uni.bairitsu_trend.note の質的一言だけ（例: 名城「東海有数の人気私大、薬学部・理工系で高倍率」、中部大「工学部志望者多く理工系で安定」）を大学入試タブの検証バナー付近に『大学全体の人気傾向』テキスト1行として出す低コスト代替のみ検討可（39件がnote保有、矛盾しうる数値を排除できる）。ただし優先度は低く、まずdead codeのrenderBairitsuTrend系を整理するのが筋。数値年次推移そのものは実装しないこと。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "high",
+   "cost": "medium",
+   "dataSource": "全650学部で必要フィールドが揃っており、しかも比較可能性が担保されている点が決め手。node -e で確認: (1) dept.hensachi.min/max = 650/650が数値、範囲35〜70、basisは全件\"kawai\"の1種のみ→全学部が同一予備校基準で偏差値比較可能（異基準混在なら不成立だがクリア）。 (2) dept.name = 650/650。 (3) dept.uni_id → universities[].id で650/650解決（uni.name表示可、id欠損ゼロ）。 (4) dept.entry_methods[].type + .available = 全650学部が sogo/koubo/ippan/kyotsu の4方式すべてを available:true/false 付きで保有（各type 650件）→「方式が使えるか併記」は完全に裏付けあり。 (5) 追加武器: uni.access_from_shiga_min / commute_possible / prefecture が全大学にあり、滋賀通学圏の重み付け・バッジ付与が可能。 (6) 帯域密度: 中心偏差値ヒストグラムは各値6〜63件、高帯(68→5,70→3)でも±レンジ集計で候補は十分。既存 renderDetail(deptId)/data-detail ナビ・deptCard() 描画関数も流用可。",
+   "howTo": "buildHeiganSuggestions(currentDept): center=(hensachi.min+hensachi.max)/2 を基準に全650学部を走査。同一学部は除外、同一大学は任意（残すなら1大学1件に間引き推奨）。帯分け=挑戦:center+3〜+5 / 相応:center-2〜+2(自校除く) / 安全:center-5〜-3。各帯を|center差|昇順ソートし上位3〜4校。任意で uni.access_from_shiga_min<=90 または commute_possible を優先加点。描画=3カラム横並び(挑戦/相応/安全)。各カードは uni.name + dept.name + 偏差値(min-max) + 使える方式チップ(entry_methods を available:true で filter→ラベル 総合/公募/一般/共通)。滋賀通学圏には「滋賀から通える」バッジ。カードは既存 data-detail=\\\"${dept_id}\\\" を付与し renderDetail() 遷移を流用（新規ナビ不要）。deptToItem/deptCard も再利用可能でコスト圧縮。",
+   "where": "学部ページ = deptOnlyBody() 末尾（既存の偏差値/一般倍率推移/入試方式可否セクションの直後）。※提案の「入試タブ(uniTabEntrance)」は大学ページ側=大学共通の日程/評定条件を扱う枠であり、偏差値ベースの併願提案は学部固有機能。ここに置くと学部/大学分離方針に違反するため where を学部ページへ是正。偏差値・入試方式可否は既に学部ページに載っており、その文脈の延長として自然。",
+   "reason": "安易なREDUNDANT/NEEDS-DATAではなく、データ実在を全件検証した上でREALISTIC。決定的なのは basis が全650件\"kawai\"の単一基準である点で、異なる予備校偏差値が混在していれば「挑戦/相応/安全」の帯分けが破綻するが、それが無いため学部横断の偏差値比較が正当化される。entry_methods も全学部4方式フル保有で「方式併記」が確実に描ける。既存に併願サジェスト機能は無くREDUNDANTではない。追加データ取得不要でNEEDS-DATAでもない。価値は「どこを併願すべきか」という高校生最大の悩みに具体校名で答え、1学部閲覧が自然に候補群へ広がる回遊導線になる点でhigh。コストは帯域計算・大学重複間引き・滋賀重み付け・方式チップ描画が新規だが、renderDetail遷移とdeptCard描画を流用できるためmedium。唯一の注意はwhere（提案の入試タブ=大学ページは分離方針違反）で、学部ページ末尾へ是正すれば方針を保てる。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "dataSource": "dept.bairitsu.ippan（650/650学部が保有）。年度キー実測: 2026=449件, 2025=621件, 2024=13件。矢印計算に必要な「2025と2026の両方が数値」は447/650件（69%）。値は全1070個すべてtypeof number・非数値ゼロで、パース失敗の心配なし。ただし2024/2025/2026の3年連続を持つ学部は0件（2024保有13件は25・26の両方とは重ならない）＝トレンドは常に2点(2025→2026)の単年差分に限定。dept.bairitsu.source_url/verified_dateも各学部にあり出典表示済み。",
+   "where": "学部ページ（deptOnlyBody, app_v2ui.html L3386〜）。案のpage:\"入試\"は誤り。dept.bairitsu.ippanは学部固有データであり、大学ページ入試タブ(uniTabEntrance)に置くと学部/大学分離方針を壊す。入試タブには既に大学共通のuni.bairitsu_trend（123/123大学が保有、L3658の方式別倍率推移テーブル）がありレイヤーが別。矢印は既存「倍率（一般）」行(L3395付近, bai変数)の直下に置く。",
+   "howTo": "deptOnlyBodyの既存bai行(baiE配列)の直後に追記。const a=ippan['2025'], b=ippan['2026']; 両方が数値のときのみ描画（447件。単年174件・データ無27件は矢印非表示）。const diff=b-a; 閾値±0.3で3分岐: diff>=0.3→「↑ 前年より難化（{a}→{b}倍）」赤、diff<=-0.3→「↓ 前年より易化（{a}→{b}倍）」緑、それ以外→「→ ほぼ横ばい」灰。実測分布(閾値0.3): 難化193/易化80/横ばい174と偏りなく機能する。色付きバッジ＋一言をspanで既存行に付与、約15行・純粋なUI計算で新規データ不要。文言注意: 3年連続データが0件＝隔年現象を検出できない単年差分のため、コピーは「前年比」の相対表現に固定し「狙い目/避けるべき」等の絶対的な合否示唆は避ける（案のwhyにある『狙い目/避ける』は言い過ぎ→『前年より易化/難化』止まりにする）。",
+   "reason": "データは完全に揃っており実装可能なのでREALISTIC。ただし(1)既存学部ページは既に「2025年 3.2倍 → 2026年 2.1倍 出典」と生の年度推移を矢印付きで表示済みで、本案は数値の\"解釈\"（方向・色・一言）を上乗せする増補であり新機能ではない→価値はmediumが妥当（high評価は過大）。(2)3年連続データが1件も無く常に単年(2025→2026)差分のみで、一般入試倍率の隔年現象を吸収できず「入りやすい」判断が翌年反転するリスクがある→文言を相対表現に抑える是正が必須。(3)案のpage:\"入試\"は学部固有データを大学タブに置く分離方針違反で、where=学部ページに是正した。コストは既存データ・既存行への局所追記で低い。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "dept.entry_methods[] の type:'kyotsu' は 650/650学部に存在（node -e で全件確認）。available: true=614 / false=13 / null(=要調査)=23。verified: true=619 / false=31。note非空=650/650。uni_id集計（123/123大学が学部を保有、既存helper deptsOfUni(id) app_v2ui.html:2134）: 全学部可=105校、全学部不可=2校(例 osaka-taiiku)、混在=10校(例 ritsumeikan 16可/1不可)、要調査null含む=12校(例 kyoto-bunkyo 3学部全null verified=false)。全学部verified=109/123校。データ・helper・実装土台は完備。",
+   "reason": "実装可能性(feasibility)は完全に満たす: 必要フィールドは650/650学部に実在・検証フラグ付き、uni_id横断集計のhelper(deptsOfUni)も既存。よってNEEDS-DATAではない。しかし価値が薄い。(1)非識別的: 集計値は123大学中105校(85%)で「全学部で可」になる。私大の共テ利用はほぼ普遍で、大学単位のyes/noは判断をほとんど分けない。可否が意味を持つのは例外の約24校(不可2/混在10/要調査12)のみ。(2)部分的REDUNDANT: 併願戦略に実際に必要なのは科目型(7科目型/3教科型/後期型 等)で、これは学部ページ(detailEntranceV2:3459)の「使える入試方式」note に既に表示済み。大学ロールアップはその要約でしかなく、意思決定の核となる詳細は追加しない。(3)要調査ヘッジ: 12校はnull/verified=falseのため「可」と断定できず「要調査K件」の注記が必須で、これがさらに情報価値を希薄化。(4)方針リスク: line3268の意図的除外コメント(「kyotsuは大学単位詳細データ無し」)と整合させる必要があり、集計値である旨の明示が要る。以上より、労力は小さいが得られる判断材料が薄いLOW-VALUE。優先実装は非推奨。",
+   "where": "仮に実装するなら大学ページ入試タブ(uniTabEntrance, app_v2ui.html:3252)にロールアップ1行のみ。学部ごとの可否・科目型は学部ページ(detailEntranceV2:3459)に既存のため、大学ページでは学部別詳細を複製せず「集計サマリ＋各学部ページ誘導」に留めることで学部/大学分離方針を維持する。",
+   "howTo": "deptsOfUni(uni.id) で各学部の entry_methods.find(m=>m.type==='kyotsu') を集計。available===true / ===false / ==null(要調査) を3分類でカウント。表示例「共テ利用: N/M学部で可（要調査K件）」＋可の学部名を折りたたみリスト、末尾に「科目型・詳細は各学部ページ参照」。全学部trueなら「全M学部で可」、全falseなら「実施なし」、null含む場合は必ず要調査件数を明示し断定しない。line3268の除外コメントを「集計サマリのみ表示（詳細は学部ページ）」と改訂して整合。ただし前述の通り価値が薄く、実装優先度は低い。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "high",
+   "cost": "low",
+   "dataSource": "推測フィールドは全て実在・カバレッジ完璧。dept.hensachi.min=650/650（かつbasisが全件\"kawai\"＝河合塾の単一スケールなので大学横断比較が妥当）、dept.hensachi.max=650/650（レンジ帯表示に流用可）、dept.interest_tags=650/650（ただし\"unclassified\"のみ32件はマッチ対象外にする必要あり）、dept.uni_id/dept.dept_id/dept.name=650/650（dept_idは650件全ユニーク→ピア学部ページへ直リンク可能）。uni側: uni.region=123/123（全値がd.regions[region]で解決、.label＋.colorが取れるので地域チップに色付け可）、uni.type=国立15/公立4/私立104（国公私の3値クリーン）、uni.name/name_short。実測ピア分布（他大学・同系統実タグ・偏差値min±2）: median 6件/p75 9件/p90 13件、ピア0件は21件(3.2%)のみ。サンプル: 立命館 経済(min55,keizai)→関学商/関学経済/中央経済/法政経済/関大商/南山経営…と的確に列挙。",
+   "howTo": "単一HTMLに全650学部が読込済みなので新規データ収集ゼロ、クライアント側O(650)フィルタ＋描画のみ。関数 renderSameLevelDepts(dept){ const anchorTags = dept.interest_tags.filter(t=>t!=='unclassified'); if(!anchorTags.length) return 空状態; const peers = departments.filter(o=> o.dept_id!==dept.dept_id && o.uni_id!==dept.uni_id && o.interest_tags.some(t=>anchorTags.includes(t)) && Math.abs(o.hensachi.min - dept.hensachi.min)<=2); 並べ替えは |Δmin| 昇順→uni.type(国立→公立→私立)→region。各行= uniById[o.uni_id].name_short + o.name + 偏差値min(max≠minならmin–max帯) + 地域チップ(d.regions[u.region].label, backgroundは.color) + 国公私バッジ、行クリックでo.dept_idの学部ページへ遷移。件数は上位8〜10件でクランプし「他N件」を折り畳み。}。空状態2種を明示: (a)ピア0件(21学部)→「同レベルの同系統学部が近畿圏データ内に見つかりません」、(b)実タグ無し(unclassifiedのみ32学部)→「系統タグ未分類のため比較対象を抽出できません」。max−min帯は基準を注記(「偏差値は河合塾ボーダー・学部最小値で±2抽出」)して比較の前提を透明化。",
+   "where": "学部ページ deptOnlyBody（既存の偏差値／一般倍率年度推移ブロックの直後）。提案の「入試タブ」は uniTabEntrance＝大学ページのタブで、大学は複数学部を持ち単一の偏差値／系統を持たないため、そこにこの機能を置くと分離方針違反かつ挙動が破綻する。この機能は本質的に「この学部の偏差値・この学部の系統」を軸にした学部固有の横断比較なので、分離方針（偏差値・入試方式可否・就職分野＝学部ページ）に完全準拠して学部ページ側に配置するのが正しい。是正して採用。",
+   "reason": "推測フィールドが全て実在し欠損ゼロ（hensachi.min・interest_tags・uni_id・region・typeが650/123全件充足）で、かつhensachi.basisが全件\"kawai\"の単一スケールなので大学横断の偏差値比較という機能の根幹が統計的に妥当。実測でもピアmedian 6件・96.8%が1件以上ヒットし、サンプル出力（立命館経済→関学/中央/法政/関大/南山の同偏差値経済系）が意図通り機能する。新規データ収集不要でクライアント側フィルタのみ＝低コスト。既存機能は自学部の偏差値と入試方式可否を単独表示するだけで大学横断比較はどこにも無く、REDUNDANTではない。併願先探索は高校生のコア課題で「この大学しか知らない」層に同ランク選択肢を提示する価値は高い＝high。唯一の欠陥は配置先で、提案の入試タブ（大学ページ）は学部/大学分離方針に反するため学部ページへ是正して採用する。unclassified 32件・ピア0件21件は空状態でグレースフルに処理すれば実装上の障害なし。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "high",
+   "cost": "medium",
+   "where": "入試タブ（uniTabEntrance / 大学ページ）。detailEntranceV2 の emd行ループ（app_v2ui.html:3479-3487）を拡張。評定条件は分離方針で「大学共通」に割当済みのため、大学ページ入試タブに置くのは方針に完全合致。学部/大学分離は壊さない（REJECT不要）。",
+   "dataSource": "work/data_v2.json 実測: uni.entry_method_details[type][].hyoutei_min（数値）=105方式（sogo 38 + koubo 67 + ippan 0）で、案の「105方式」主張と完全一致。分布 3.5:32, 3.0:20, 4.0:17, 3.2:11, 2.7:8, 3.8:7, 4.3:3, 2.5:3, 3.3:3, 2.8:1。hyoutei_note（文字列）=全方式に存在（例「3.0以上」「3.5以上（英検2級以上推奨）」「学部により3.8〜4.3（要確認）」）。数値化不能な note-only=26方式（「学部により条件あり（要確認）」「設定なし（不要）」等）、null/「指定なし」=205方式。sogo/koubo保有123大学中、数値min≧1を持つ=77大学、数値min無し（要確認に縮退）=46大学。全123大学が entry_method_details 保有。",
+   "reason": "必要フィールド hyoutei_min / hyoutei_note が実在し、案の中核主張（105方式に評定下限）が実データと一致。現状は評定条件を「表示」するのみで、生徒GPAとの照合・ハイライトは未実装のため付加価値は明確（REDUNDANTでない）。評定平均は高校生が最も確実に知る自分の数値で、推薦/総合型のゲート判定に直結するため価値は高い。ただし単純な二値判定は不可：(1)hyoutei_min は「学部により3.8〜4.0」等レンジの下限であるケースが多く「出願可能」は楽観側に出る→hyoutei_note併記が必須、(2)note-only 26方式や null は誤ってグレーアウト/誤ハイライトしてはいけない→3状態設計が要る。この設計上の手当てが必要な分 cost=medium。",
+   "howTo": "3状態フィルタとして実装（二値にしない）。(1)uniTabEntrance 冒頭に「あなたの評定平均」number入力（step0.1, 2.0〜5.0）を追加し localStorage 保存で大学間を跨いで保持。(2)detailEntranceV2 の emd rows.forEach（3479-3487）で各方式の状態を算出: g=userGPA として、typeof r.hyoutei_min==='number' なら（min<=g → 状態=出願可能／min>g → 状態=届かない＝グレーアウト）；hyoutei_min==null かつ hyoutei_note が「指定なし/なし/不問/評定不問」→ 状態=評定不問（常に可、ippan 139方式もここ）；hyoutei_min==null かつ note が「学部により…/要確認/設定なし（不要）/実施なし」等の有意文字列 → 状態=要確認（グレーアウトも誤ハイライトもしない中立）。(3)method-item にバッジ（出願可能/届かない/評定不問/要確認）と class（.method-ok/.method-out/.method-neutral）を付与、CSSで .method-out を opacity/グレー。(4)hyoutei_note は既存表示（3482行）を維持し全状態で併記、note に「学部/学科/要確認」を含む数値minは「出願可能（学部により要確認）」表記に。(5)GPA未入力時は現状の全表示にフォールバック。新規データ不要、既存レンダリング済みカードへのclass切替のみで再描画も軽い。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "dept.hensachi.min=650/650件(100%,河合塾basis,値域35〜70の数値), dept.hensachi.max=650/650件. dept.bairitsu.ippan(最新年)=625/650件(96%,年度分布2026:449/2025:621/2024:13,値域0.6〜15倍,中央値3.1). 両方揃う=625/650件(96%). => データ自体は十分にある(NEEDS-DATAではない)。",
+   "where": "提案の「入試(大学入試タブ=uniTabEntrance)」は不可。偏差値・一般倍率は学部固有データで、大学は複数学部を持つため大学共通面に単一メーターは載せられない(分離方針違反)。載せるなら学部ページ(deptOnlyBody)。ただし下記の理由でそもそも実装非推奨。",
+   "howTo": "推奨しないが、価値を残すなら合成メーターではなく: 学部ページで河合塾偏差値帯→「やさしめ/標準/難しめ」の出典付き難易度目安(hensachi.min基準の単純band, source_urlそのまま流用)を出し、bairitsu.ippanは\"人気/競争の目安\"として別枠に併記する。偏差値×倍率を1つの『受かりやすさ』スコアに合成する形は採らない。",
+   "reason": "データは96%揃うので実装自体は可能だが価値が薄い。(1)冗長性: 学部ページdeptOnlyBodyが既に偏差値band(国公立補正込み)と一般倍率の年度推移を出典リンク付きで別表示済み。提案の2入力は両方すでに画面にある。(2)方法論が危険: 河合塾偏差値は既に競争難度を内包した指標であり、一般倍率は方式・募集人数に強く依存するノイズの大きい値(BF/低偏差値校でも定員少で倍率跳ね上がる)。これを単一の『受かりやすさ』へ合成し\"偏差値低い×倍率高い→難ランク\"とする前提は根拠不明の独自指標で、実際にはミスリードになりうる。合成スコアにはsource_url/verified_dateが存在せず、出典検証を徹底する本アプリの思想(検証バナー・出典リンク)に反する。(3)設置場所が分離方針違反(学部固有指標を大学入試タブに置けない)。以上より、生徒の混乱軽減という意図自体は妥当だが、提案の形(合成メーター)は冗長かつ誤誘導リスクがありLOW-VALUE。価値を残すなら偏差値単独の出典付き難易度目安+倍率別枠併記へ作り替えるべき。"
+  },
+  {
+   "verdict": "REDUNDANT",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "dept.hensachi.min/max = 650/650件（100%カバー・basis全件\"kawai\"・値域min35〜70/max35〜70・0や負のプレースホルダ無し・min===max291件/レンジ359件）。data_status: verified642/unconfirmed8。加えて色分け機構自体が既存: state.diag.hensachi（入力値）＋adjustedHensachi()（EXAM_SOURCE_OFFSETで模試ソース換算, app L2075/2654）、ippan.universities[].hensachi_representative（大学代表偏差値, getByid経由, L2104/2952）。",
+   "where": "該当なし（提案の中核は既存の診断結果画面に実装済み）。もし詳細ページへ延伸するなら分離方針上、入試タブ=uniTabEntranceではなく学部ページ=deptOnlyBodyの偏差値行(_row('偏差値',band) L3422)側が正。",
+   "howTo": "実装不要（既存）。非重複の唯一の余地は学部ページの偏差値行にstate.diag.hensachiとの個人化バッジ（安全/相応/挑戦）を1つ添える程度だが、既存ゾーン表示と重複し低価値のため非推奨。",
+   "reason": "データは100%揃い技術的には実装可能だが、提案の本質「生徒が偏差値を入力→各カードを緑安全/黄相応/赤挑戦に色分けし一覧をひと目で仕分け」は既に実装済み。具体的に(1)診断結果カードが🎯実力相応/🚀チャレンジ/🛡️安全圏の3ゾーンに分割表示(zoneSection L2816-2839)、(2)renderHensachiMap(L2940-)が『偏差値帯マップ』として赤#ef4444チャレンジ/藍#6366f1標準/緑#10b981堅実/灰安全圏に自動色分け、(3)スコアリング(L2657-2675)が提案と同一閾値(±3.5/+3.5〜+10/−3.5〜−10)でgap判定。しかも模試ソース換算・国公立偏差値補正+αまで備え提案より高機能。よってREDUNDANT。さらに提案の『各方式カード色分け』はデータ非対応=hensachiはdept単位の単一河合値で方式別に持たないため、総合型/学校推薦/共テ利用カードを一般偏差値で色付けすると誤誘導となりこの部分はREJECT。"
+  },
+  {
+   "verdict": "NEEDS-DATA",
+   "value": "medium",
+   "cost": "high",
+   "dataSource": "フィールドは実在。nyushi_details は 85/123大学のみ保有（38大学は日程データ皆無）。nyushi_details.{sogo,koubo,ippan}[] の各エントリに exam_date / application_period / result_date / method_name / enrollment_deadline / required_documents / exam_subjects が308件全てに100%populate。ただし値は自由記述文字列。exam_date 非空305件のうち「YYYY年M月D日」で単日パース可能なのは75件（25%）のみ。残りは範囲86件（例\"2026年2月1日〜2月4日\"）・複数日\"2026年2月2日・2月3日\"・年欠落の月表記\"10月〜11月\"\"11月下旬\"\"2月上旬\"・注記付き\"2026年11月4日（5日も可能）\"\"12月（要確認）\"・非日付\"面接のみ\"等。衝突判定が最重要な一般選抜(ippan)は総数121件中クリーン単日25件・範囲/複数日53件。単日を1つでも持つ大学は47/123のみ。application_period は本質的に範囲(単日0件)。年は2025/2026/2027が混在。既存の多校選択機構＝お気に入り(FAV_KEY='favorites-v2ui', localStorage)＋比較表(compare-table)が実装済。exam_date自体は入試タブで既に「試験日/📝試験日」行として表示済(app_v2ui.html L3289,3492,3622)。",
+   "howTo": "本命の「同日衝突を自動警告」を実現するには構造化日付フィールドの追加が前提。data_v2側に exam_date_norm:{start:\"2026-11-04\",end:\"2026-11-05\",isChoice:bool,ambiguous:bool}（年補完・範囲展開・自由選択制フラグ付き）を全308エントリに付与する必要がある。この正規化が入って初めて、月カレンダー配置＋同日/連日の集合演算による警告が安全に成立する。現状の自由記述25%カバレッジのまま実装すると、パース不能な75%を黙って落とし「衝突なし」と誤って安心させる=事故防止という目的に逆行するため実装すべきでない。／データ追加なしで今すぐ出せる縮小版は「受験スケジュール一覧（自動警告なし）」：お気に入り校の各方式を application_period→exam_date→result_date の生文字列のまま時系列ソートで縦並べ表示。exam_date から年月だけ緩く抽出できたものは月見出しでグルーピング、抽出不能は「日程要確認」タグを付けて末尾に。これは既存データで可能だが、提案の核である「同日衝突チェック警告」ではなく別物である点を明記した上で採否判断が必要。",
+   "where": "配置は個別大学の入試タブ(uniTabEntrance)ではなく、お気に入り・比較画面(favsBody)へ。理由: 提案は「気になる複数校を横断して衝突チェック」する多校集約ビューであり、単一大学の入試タブに置くと1校分のexam_dateしか扱えず機能が成立しない。既存のお気に入り/比較表が複数大学を束ねる唯一の場所なので、そこに新規サブビューとして追加するのが正しい。学部/大学分離方針との整合: nyushi_details(試験日程)は大学共通データなので大学側から引く形は方針通り。学部ページには持ち込まない。",
+   "reason": "フィールドは実在し308件全てにexam_date/application_period/result_dateが揃うが、提案の核である「同日衝突・連日受験の自動警告」に必要なのは単日にパースできる正規化日付。node確認の結果、exam_dateで単日パース可能は305件中75件(25%)のみ、残り75%は範囲・複数日・年欠落の月表記・注記・非日付の自由記述。衝突回避が最も効く一般選抜すら単日は25/121件で、しかも範囲エントリには「自由選択制(受験日を生徒が選ぶ)」が含まれ同日衝突という前提自体が崩れる。さらにnyushi_details保有は85/123大学どまりで38大学は日程データ皆無、年も2025〜2027混在で横断配置に年補完が要る。よって現データのまま自動衝突警告は不能で、無理に実装すると大多数を取りこぼし誤った安心を与える。多校選択機構(お気に入り)とexam_date表示自体は既存だが集約カレンダーは未実装なのでREDUNDANTではない。判定はNEEDS-DATA(exam_date_normの構造化追加が前提)。データ追加なしなら自動警告を外した時系列スケジュール一覧に縮小すれば既存データで可能だが、それは提案の価値提案(衝突警告)とは別物。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "dataSource": "uni.employment.ratings=101/123件・8キー(kyoin/shogakkō/keisatsu/shōbō/kōmuin_ippan/kigyō_ippan/kigyō_supotsu/iryō, 値1-5, 大学間で有意にばらつき有)。career→ratingの写像はapp_v2ui.html内にCAREER_OPTIONS(24職種, rating/alt_rating付, L1999-2048)として既存。state.diag.careers(Set, chipで投入 L2347)・state.diag.hyoutei(数値)・state.diag.interests(Set)も既存。入試側=uni.entry_method_details.{sogo,koubo,ippan}[].hyoutei_min/hyoutei_note(入試タブで既表示 L3275)。補強用にuni.shingaku_jisseki.kyoin_count/keisatsu_count/shobo_count。※提案のguessedDataにあるinterest_riasec_map.jsonは「学問興味タグ→RIASEC」専用で、8職種ratingへの橋渡しには使えない(誤り)。",
+   "howTo": "正しい橋渡しはRIASECではなくstate.diag.careers→getCareerOption(id).rating→uni.employment.ratings[key]（この写像は既存、interest_riasec_mapは不使用）。(A)進路タブ uniTabEmployment(L3309): state.diag.careersが非空なら本文先頭に「あなたの志望にマッチ」ブロックを追加し、各careerId毎に『👮 警察官: ★★★★☆ (4/5)』を出す。ratingsがnullの職種は「評価データ未整備」で中立表示、★4以上は強調色。alt_ratingは併記か0.5加重。加えてshingaku_jisseki.keisatsu_count等の実数があれば併記(scoreUni L2548-2551の既存ロジックを流用)。現状この進路タブはratingsを一切出していない(旧renderEmploymentTabは呼出無しの死コード)ので純増。(B)入試タブ uniTabEntrance(L3275)の評定条件_rowに、hyouteiUnknown=false かつ r.hyoutei_min!=null のとき『✅ あなたの評定3.8で出願可』/未達は『⚠️ あと+0.2必要』バッジを付与(scoreUni L2618の足切り判定を表示へ転用)。",
+   "where": "大学ページ進路タブ(uniTabEmployment L3309)と大学ページ入試タブ(uniTabEntrance L3252)。ratingsは大学集計値・評定条件も大学共通データなので両方とも大学ページに置くのが分離方針に合致。学部ページ(deptOnlyBody)には出さない——ratingsは学部別ではないため学部ページに置くと分離破壊かつミスリード。",
+   "reason": "データ・写像・state入力が全て既存で、詳細ページでは未実装(進路タブはratingsを一切表示せず、入試タブの評定条件は自分の評定と未照合)のため、追加データ無しで実装可能=REALISTIC。ただし提案の説明する機構は誤り: 8職種ratingへの橋渡しはRIASEC/interest_riasec_mapではなく既存のstate.diag.careers→CAREER_OPTIONS.ratingで、「警察」も興味タグでなく職種。値をmediumに留める理由は部分的重複——結果リストのscoreUniが既にcareer→rating加点と『警察に強い/警察○名』理由をカード上で提示済で、詳細ページ化はその再掲に近い。それでも詳細ページは結果タップ後の着地点でratingsが現状不可視なため、可視化＋評定バッジ化は純増のUX価値あり。cost lowは全必要データが同一HTML内に既在し、2関数の描画追記のみで済むため。"
+  },
+  {
+   "verdict": "NEEDS-DATA",
+   "value": "high",
+   "cost": "high",
+   "dataSource": "nyushi_details[sogo|koubo|ippan][].application_period = 308件全メソッドに存在。ただし全て自由文の日本語表示文字列（例 \"2026年9月1日〜9月11日\" / \"9月（要確認）\" / \"12月中旬〜1月上旬\" / \"詳細は公式募集要項を確認\"）。enrollment_deadlineは286件。ISO/構造化日付フィールドは無し。開始日をY-M-Dに機械解析できたのは108/308(35%)のみ、残り200/308(65%)は月のみ・上旬中旬・要確認で「あと○日」算出不能。解析可能108件の開始年は2024:30/2025:27/2026:50/2027:1と入試サイクル混在。currentDate 2026-07-16基準で「解析可能かつ未来」は9件のみ・大学は大阪体育大学と中部大学の2校のみ、99件は過去日（前年度サイクル、負のカウントダウンになる）。verified_yearは2027年度入試=2校/2026年度入試(既に経過)=28校/無し=55校。",
+   "reason": "案の狙い（出願忘れ防止）は価値が高いが、既存データでは成立しない。(1)application_periodは表示用の自由文で、65%(200/308)が「9月（要確認）」「12月中旬〜1月上旬」等の曖昧表現でありそもそも日数計算不能。(2)解析可能な35%も開始年が2024〜2027に散らばり、入試サイクルが正規化されていない。currentDate基準で正の（未来の）カウントダウンを出せるのは308メソッド中わずか9件・123大学中2校のみ。(3)残り99件の解析可能日は全て過去日（2026年度以前の前年度データ）で、カウントダウンを付けると「締切済み/あと-150日」等を表示し、実際にはまだ次年度日程が未発表なのに『締切を逃した』と誤認させる——出願忘れ防止機能が逆に致命的な誤情報源になる。実装コストはコード自体は軽いが、実現には(a)各メソッドにapplication_start_iso/end_iso等の構造化日付フィールドを新設し、(b)123大学全件を現行の前向きサイクル(2027年度入試)へ正規化・再検証、(c)毎年の日程更新パイプラインが必須。これはコード改修ではなくデータ収集・年次保守の問題のためNEEDS-DATA。なお日程はnyushi_details（大学共通=入試タブ）由来なので学部/大学分離方針には抵触しない（配置はuniTabEntranceの各方式カード内で正しい）。データ整備後に着手すべき案。",
+   "where": "大学ページ入試タブ uniTabEntrance の各方式カード内（application_period表示箇所の直下）。分離方針は遵守——日程は大学共通データなので大学ページで正しく、学部ページには置かない。",
+   "howTo": "現状データでは実装不可。実装するには先にデータ整備が必要: 各nyushi_detailsメソッドにapplication_start_iso / application_end_iso / enrollment_deadline_iso（YYYY-MM-DD）を追加し、全123大学を現行サイクル(2027年度入試)に正規化・再検証。その上で uniTabEntrance の方式カードに、start_isoとcurrentDateの差分から『総合型の出願まであと○日』を表示（7日以内は赤強調、締切後は非表示 or 『次年度日程は未発表』）。構造化日付が無い/曖昧な方式はバッジを出さず現行のapplication_period文字列表示にフォールバック。曖昧・過去日に対してカウントダウンを絶対に出さないガードが必須。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "high",
+   "cost": "medium",
+   "dataSource": "全guessedDataが実在・高保有。uni.access_from_shiga_min=123/123(数値・分単位)、uni.commute_possible=123/123(bool;true55/false68)、uni.commute_note(表示文字列)、dept.hensachi.min/max=650/650(basis:kawai等)。加えて同レベル抽出を「同分野」で意味あるものにするdept.interest_tags=650/650、dept.uni_id→uni連結=650/650(欠損0)。※employment_fieldsは611/650でやや欠けるためフィルタ主軸には非推奨。",
+   "reason": "node -eでdata_v2.jsonを実査した結果、案が必要とする全フィールドが100%保有・連結欠損0で実装に十分。既存HTMLではaccess/commuteは診断の絞り込み・スコアリング(2481,2687,2699行)と大学ページの「滋賀から片道X分(通学可/下宿推奨)」表示(3332,3801行)に使われるのみで、『特定学部の偏差値帯に対する同レベル併願候補校を通学可/下宿で分けて横断抽出する』機能は未実装＝非REDUNDANT。ただし偏差値min/maxのみで帯抽出すると±2.5でも通学可57〜77件と爆発し無価値化するため、interest_tagsによる同分野フィルタが必須(付与すると各3〜8件+下宿0〜14件の実用サイズに収束することをシミュレーションで確認)。滋賀生特有の通学/下宿×同レベル併願設計を学部ページ文脈で提供でき、既存の単一グローバル診断リストとは別価値のため高価値。",
+   "howTo": "deptOnlyBodyに「🏠 滋賀から通える同レベルの併願候補」節を追加。抽出関数extractCommutablePeers(refDept): refMid=(hensachi.min+max)/2、refTags=Set(interest_tags)を作り、departmentsを走査してuni_id≠自校 かつ |mid-refMid|<=2.5 かつ interest_tagsが1つ以上共有 の学部を候補化。既存uById(uni_idマップ)でuniを引き、u.commute_possible===trueを「通学可」群、falseを「下宿前提」群に分割。各群をu.access_from_shiga_min昇順ソートし上位6〜8件にcap。表示: 通学可群「下宿せず通える(片道X分/偏差値H)」、下宿群「下宿前提なら広がる選択肢」。各行は学部名/大学name_short/片道分/hensachiを出し、既存の学部ページ遷移ヘルパでその学部にディープリンク。通学可群が空なら「この学部レベルでは滋賀から通える同分野校が見つかりません（下宿前提の選択肢のみ）」を注記。commute_noteは代表校の補足として任意表示。",
+   "where": "学部ページ（deptOnlyBody）。提案の「入試タブ＝大学ページ」は偏差値起点のため学部/大学分離方針(偏差値=学部固有)に違反する。大学は複数偏差値帯を内包し単一基準を取れないので、現在閲覧中の学部のhensachi+interest_tagsを基準にする学部ページが正。通学/下宿の判定に使うaccess_from_shiga_min・commute_possible自体は大学共通データだが、抽出のアンカー(偏差値・分野)が学部固有なので配置は学部ページで方針整合。"
+  },
+  {
+   "verdict": "NEEDS-DATA",
+   "value": "medium",
+   "cost": "high",
+   "where": "入試タブ（uniTabEntrance, 大学ページ）。nyushi_details/entry_method_detailsは大学レベル保持なので分離方針は壊さない。ただし科目要件は本質的に学部・学科スコープで、データ自身が『学部により配点異なる/学部により異なる』と明記しており、大学単位のマッチ度スコアは意味的に弱い（本来は学部ページ寄りの情報）。",
+   "dataSource": "フィールドは存在するが構造化されていない。uni.nyushi_details.ippan[].exam_subjects＝85/123大学・計121方式に存在。ただし(1)概念的に科目名を含む文字列は66大学どまり、(2)121中67(55%)が『選択/から/または/or』の選択肢セマンティクスを含む（例『国語/英語/選択（数学・地歴公民）』）、(3)26件は『3教科』『2教科』等の科目数のみで科目情報ゼロ、(4)5件は『学部により異なる』、(5)残り38大学はnyushi_details自体が無い。uni.entry_method_details.ippan[].subjects＝139件あるが同様に自由文（『学科試験（2科目）』『共通テストの得点のみ』『3教科（英・国・選択）』）。=> 一致数スコアに必要な『科目トークンの構造化配列』は保有しておらず、既存データだけでは信頼できるマッチ度が出せない。",
+   "reason": "案が要求する『得意科目 × 各校exam_subjectsの一致数スコア』には、大学ごとに正規化された科目トークン配列（例 required:[英,国], choice:[数,地歴公民]）が必要。しかし実データは自由文字列で、(a)半数超が『選択』を含みOR論理のパースが要る、(b)『3教科』等の科目数のみが26件で科目シグナルゼロ、(c)38大学が科目データ皆無、(d)科目要件は学部で変わるのにnyushi_detailsは大学粒度――のため、スコア化すると欠測だらけ＆選択肢ノイズで『準備が活きる大学』ランキングが誤誘導になりうる。フィールドは在るが中身が構造化されていない典型的なNEEDS-DATA。実装するなら先に121方式分の科目正規化（required/choiceトークン化）と欠測38大学の補填という前処理データが必須で、そのコストが高い。REDUNDANTではない（未実装）が、安易なREALISTIC化は不可。",
+   "howTo": "REALISTIC化に必要な前提データ: 各uni.nyushi_details.ippan[]に構造化科目フィールドを新設し、例 exam_subjects_struct:{required:['英','国'], choice:['数','地歴公民'], choose_n:1} の形で121方式を人手正規化＋欠測38大学を補填。これが揃えば実装は、生徒が得意科目チェック（国/数/英/理/地歴公民）→ score = required一致数 + (choice群に得意科目が1つでも入れば+choose_n分) で算出し、入試タブに『あなたの得意科目で受けやすい方式』バッジ表示が可能。学部差は『※学部で科目が変わる場合あり』注記で緩和。前処理なしの現状データでは、66大学のみ対象・選択肢は近似一致・26件は科目数のみ『判定不可』表示となり、カバレッジと信頼性が不足するため非推奨。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "medium",
+   "where": "大学ページ「進路タブ」= uniTabEmployment(3309行) の先頭。ratingsは uni.employment 直下＝大学共通データのため、学部/大学分離方針に適合（違反なし）。学部ページには置かない。",
+   "dataSource": "uni.employment.ratings.{kyoin,shogakkō,keisatsu,shōbō,kōmuin_ippan,kigyō_ippan,kigyō_supotsu,iryō} を node -e で確認。保有 101/123校(82%)。全101校が8軸完全一致(distinct keyset=1)・値1〜5・欠損ゼロ(値分布 1:116/2:139/3:283/4:166/5:104=808=101×8)。8軸の日本語ラベルは既存 CAREER_LABEL(app_v2ui.html 1978-1987行) にそのまま存在し流用可。現状ratingsは診断スコアリング(2522,2527行)のみで消費、可視化は未実装。SVG/polygon/canvas描画は本体に皆無(faviconのdata URI以外ヒットなし)＝REDUNDANTでない。",
+   "howTo": "新規 renderEmpRadar(ratings) を追加し、uniTabEmployment の返却HTML先頭（_dl テキスト行の前）に挿入。実装: (1)8軸を22.5度オフセット45度刻みで円周配置、値/5で半径スケール→SVG <polygon>で塗り＋各軸に1〜5のグリッドリング(<polygon>薄線)と軸線・端点ラベルを描画。ラベルは CAREER_LABEL を流用(中高教員/小学校教員/警察官/消防士・救命士/一般公務員/一般企業/スポーツ関連企業/医療・専門職)。(2)色はテーマ変数(currentColor/CSS var)で light/dark 対応、viewBox固定＋width:100%でモバイル可変。(3)ガード: emp.ratings が無い22校(!emp.ratings)ではレーダーを描画せず既存テキスト行のみ返す。(4)caveat: 値は編集部の5段階主観評価のため、既存の推定バナー系スタイルで「※就職の傾向を示す編集部評価（5段階）」の注記を1行添える。追加規模は自己完結のJS+CSSで約60〜100行、外部ライブラリ不要。",
+   "reason": "データは実在・高品質（101校で8軸完全一致・欠損ゼロ・値1〜5・ラベル既存）で、現状は診断スコアにしか使われず可視化は未実装のためREDUNDANTではない。uni直下データで進路タブ配置は分離方針に適合。REALISTIC判定。ただし value=medium 止まり: (a)8軸は硬い統計でなく編集部の主観5段階評価で、注記が必須、(b)coverage 82%で22校は非表示フォールバックが要る、(c)8軸レーダーはモバイルで密になりやすくラベル可読性の設計配慮が必要。cost=medium: 流用できるSVG描画ヘルパーが本体に無く、レーダーはグリッド/軸/ラベル/テーマ対応込みでフルスクラッチ実装になるため（データ整形自体は自明で容易だが描画コンポーネントが新規）。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "medium",
+   "where": "入試タブ（uniTabEntrance内）。entry_method_detailsは大学単位なので分離方針は壊さない。ただし倍率は学部ページに実測があり衝突リスクあり。",
+   "dataSource": "uni.entry_method_details[sogo|koubo|ippan][] = 123/123大学に存在。ただし方式別カバレッジが不均衡: bairitsu(文字列レンジ「2.0〜3.5倍」)= sogo19/76・koubo64/118・ippan101/123。hyoutei_min(数値)= sogo37・koubo67・ippan0/123（一般は評定不要=構造的に空）。selection_content(配列)= sogo45・koubo74・ippan0/123（一般はsubjectsを使用）。横並べ比較の前提「3方式に3項目が揃う」を満たす大学は極少: 2方式以上でbairitsu解析可=52/123、3方式全部でbairitsu有=10/123のみ。",
+   "reason": "データ自体は存在するが、案の核心である「横並べ＋自動アドバイス」は既存データで安全に成立しない。(1)冗長: 評定条件/選考内容/試験科目/想定倍率/出願時期はuniTabEntrance(app_v2ui.html:3272-3283)で既に方式別に全表示済み。横並べは同データの再レイアウトで新規価値が薄い。(2)構造不整合: 一般はhyoutei_min 0/123・selection_content 0/123（設計上、評定不問・subjects使用）。よって「評定下限」「選考内容」の3列比較は一般列が常に空で、真の3方式比較が成立しない。(3)目玉アドバイスがデータ不足: 「倍率が低いのは総合型」は2方式以上でbairitsu解析可な52/123（全3方式は10/123）でしか算出できず、過半の大学で出せない。しかもbairitsuは「〜倍（要確認）」の推定レンジで、これで「受かりやすいルート」を断定するのは受験生に対しリスク。(4)平板な決まり文句: 「評定が高い人は公募が有利」は一般に評定ゲートが無いという構造的事実の言い換えで、大学横断でほぼ同文になり誤誘導しやすい。(5)整合性リスク: 大学単位のippan.bairitsu推定（例 大阪体育大 4.0〜6.0倍）は、学部ページが持つ実測年度推移（体育学部 3.2→2.1倍）と矛盾し、同アプリ内でより精密な数値を打ち消す。以上より必要フィールドは在るが付加価値が低い=LOW-VALUE。",
+   "howTo": "全面実装は非推奨。もし軽量に救済するなら「自動アドバイス断定」を捨て、事実提示に留める版: uniTabEntrance末尾に方式別サマリ行（総合/公募/一般の想定倍率と評定ゲート有無だけを1行チップで併記、hyoutei_min/selection_contentが無い一般は『評定不問・学科試験』と固定表記）。倍率レンジは_parseB()で中央値を出さず原文字列のまま並べ、比較の断定文（○○が有利/受かりやすい）は生成しない。倍率が2方式以上解析可の52大学に限り控えめな注記「一般に総合型は評定不問、公募は評定◯以上」程度の事実注記に留める。学部ページの実測倍率と矛盾しないよう、この行では『大学全体の目安（学部別の実倍率は各学部ページ参照）』と明記する。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "high",
+   "cost": "medium",
+   "where": "お気に入り・比較画面（renderFavs / #favsContent）。提案の page=「入試」は誤り。単一大学の入試タブに「他校を横断集約した書類まとめ」を置くのは筋が通らない。複数校を既に集めている唯一の画面＝比較(favs)画面の先頭にサマリーブロックを追加するのが正しい。これは学部/大学分離方針に違反しない（比較画面は横断ビューであり、大学共通データのrequired_documents/日程を読むのは方針通り。学部ページ・大学ページの改変ではない）。",
+   "dataSource": "実在確認済み（node -eでdata_v2.json精査）。(1) uni.nyushi_details.sogo[].required_documents / .koubo[].required_documents = 総合型+推薦の187方式中174方式が保有（nyushi_details保有は85大学/123）。ラベルは18種で正規化可能: 調査書174・志望理由書105・推薦書85(＋変種「推薦書（校長）」14/「推薦書（顧問・校長）」1)・活動報告書75・自己推薦書4・志願票4等。(2) 締切データも高被覆: application_period 187/187・enrollment_deadline 180/187・exam_date 187/187・result_date 187/187。(3) dept.entry_methods[].{type:'sogo'|'koubo',available} = 650/650学部が保有（学部単位の方式可否）。(4) お気に入りはgetFovs()がdept_idを保存、findDeptV2(deptId)→{dept,uni}でuni.nyushi_detailsに到達可能。単一校のrequired_documentsは既にL3627/L3639(入試タブ)とL3293(詳細)で表示済みだが、横断集約は未実装＝REDUNDANTではない。【データ欠落】書類を「共通で使える(再利用可)」と判定するフィールドは無い。志望理由書は各校別執筆で実際は再利用不可、調査書のみ学校一括請求可、という区別はデータに存在しないため「共通で使える書類も表示」はデータ駆動不可＝アプリ側の固定ラベル分類で近似するしかない。",
+   "howTo": "renderFavs()の先頭に集約ブロックを追加。手順: (a) getFavs()の各dept_idをfindDeptV2で{dept,uni}化。(b) 各学部のdept.entry_methodsでsogo/kouboがavailableな方式だけ対象化し、uni.nyushi_details[sogo|koubo][].required_documentsを収集。(c) ラベル正規化マップで括弧書き修飾を除去(例:「推薦書（校長）」→「推薦書」)し、志望理由書/調査書/活動報告書はそのまま。(d) ラベル別に「必要校数」を集計→『志望理由書×3・推薦書×2・調査書×3』とタグ表示。(e) 各方式のapplication_period(締切)を昇順ソートし、直近の出願締切トップ3を「最短締切」として警告表示、enrollment_deadlineも併記。(f) 「共通で使える」はデータ無しのため、固定分類で『調査書＝高校に一括請求可(枚数だけ)／志望理由書＝各校ごとに執筆が必要』の注記を出す(アプリ側ロジック、データ駆動不可を明記)。実装規模: renderFavs内に約60-100行のJS＋正規化マップ＋小CSS、新規データ不要。方式選択が保存されていない点は「総合型・学校推薦型で出願する場合」という前提文言で吸収する。",
+   "reason": "必要データは全て実在し高被覆(required_documents 174/187方式・締切187/187・学部別可否650/650)。単一校の書類表示は既存だが複数校横断の集約は未実装で価値が新規＝総合型を多数出願する生徒に準備総量と最短締切を可視化する狙いに合致。ただし提案の配置page=入試は誤りで、比較(favs)画面に是正が必須。また「共通で使える書類」判定フィールドはデータに無く固定分類での近似に留まる(コアの集計と締切はデータ駆動で成立)。正規化(推薦書の3変種)も要るが低コスト。以上より配置是正・再利用注記の注意付きでREALISTIC。value=high(既存データを一覧化して初めて使える計画ツール化)、cost=medium(集計＋正規化＋締切ソートの新規UI、巨大ではない)。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "dataSource": "目標側: dept.hensachi.min = 650/650件が非null（range 35-70, basis全件kawai）。dept.hensachi.max も650/650（min===max が291件、min<max が359件）。source_url/verified_date/basis も全件保有。ユーザ側: state.diag.hensachi（30-75, クイックボタン52/48/43 or 直接入力, app_v2ui.html:2426-2450）と adjustedHensachi()（app_v2ui.html:2074 = 偏差値+EXAM_SOURCE_OFFSET[examSource] 河合換算）が既に存在。国公立補正 kkBonus()=8（app_v2ui.html:3173）と isKokkoritsuUni(uni) も deptOnlyBody 内で既に呼べる。guessedData の dept.hensachi.min は実在・全件保有で正しい。",
+   "where": "学部ページ deptOnlyBody（app_v2ui.html:3386, 既存の _row('偏差値', band) の直後）。案の page:\"入試\" は誤り。偏差値は学部固有データで分離方針上は学部ページに置くもの。大学ページの入試タブ(uniTabEntrance)は評定条件・日程など大学共通のみを扱い学部固有hensachiを持たない設計なので、そこにゲージを置くと分離方針を壊す。学部ページなら uni も引数で渡っており国公立補正も計算できるため矛盾なく実装可。REDUNDANTではない: 結果一覧の偏差値帯マップ(app_v2ui.html:2975)と scoreの挑戦圏/安全圏reasonは「一覧レベルで uni代表偏差値ベース」の距離表示で、個別学部詳細ページには本人偏差値との比較が一切無い（grep で adjustedHensachi/gap/あと の参照ゼロを確認済み）。しかも詳細では uni.hensachi_representative より精緻な dept.hensachi を使えるため加点的。",
+   "howTo": "deptOnlyBody 内で myHen = adjustedHensachi() を取得。未入力ガード（state.diag.hensachiUnknown || !state.diag.hensachi → ゲージ非表示 or「偏差値を入力すると『あと何』が出ます」CTA。既存 line2942 と同パターン）。比較の目標値は表示中の band と一致させるため国公立補正込みで target = h.min + (kk ? kb : 0)（kk/kb は同関数内で既算出）。gap = target - myHen。gap<=0 なら「✓ 到達（達成）」緑表示、gap>0 なら「あと ${gap.toFixed(1)}」。ゲージは (target-15)〜(h.max+kk補正) を軸に myHen の位置を CSS width%（clamp 0-100）で塗る横バー1本＋目標マーカー。挑戦/安全の色は既存帯マップ境界(±3.5 / +3.5〜+10 / -3.5〜-10)を流用して色分けし一貫性を担保。max行はサブに「合格圏まで満たすには ${h.max} まで」。新規レンダ1ブロック（~30行）＋既存CSS変数流用のみでロジック追加ほぼ不要。",
+   "reason": "必要データは全て実在し欠損ゼロ（目標偏差値 dept.hensachi.min/max 650/650件、ユーザ偏差値と河合換算・国公立補正も既実装）。ゲージ算出に使う gap ロジックと帯境界は既にコードにあり流用可能、実装コストは低い。個別学部詳細ページには本人偏差値との距離表示が現状皆無なので REDUNDANT ではなく加点的。ただし価値は medium 止まり: 結果一覧の偏差値帯マップと score reason が既に挑戦圏/安全圏という「出願判断」の主要ニーズを一覧レベルで満たしており、本案はそれを個別詳細ページに焦点化する増分改善のため。案の page:\"入試\"（大学ページ入試タブ）は分離方針違反なので where を学部ページ deptOnlyBody に是正して初めて成立する。"
+  },
+  {
+   "verdict": "NEEDS-DATA",
+   "value": "medium",
+   "cost": "medium",
+   "reason": "提案の2本柱（受験料の積み上げ・初年度学費）を支える構造化データが data_v2 に無い。node -e 確認: 受験料/検定料フィールドは0件（nyushi_details.special_notes の自由文2件のみ）、入学金の数値も構造化0件（tuition_note の自由文で国公立「約28万円」に触れるだけ、私立104校は完全欠落）。tuition_yen_per_year(123/123)は年間授業料であって初年度費ではなく、入学金を欠いた『初年度』表示は誤りになる。さらに受験料の啓発（私立3.5万/国公立1.7万・併願は保護者相談）と学費目安は app_v2ui.html line1682-1690「💰お金の基礎知識」に静的実装済みで、この提案の啓発価値は一部REDUNDANT。実装するには受験料・入学金を全国標準の type別定数としてコード注入した簡易試算へ縮退が必須で、これは『既存data_v2だけで実装』の条件を満たさない。安易にREALISTIC化せずNEEDS-DATAとする。",
+   "dataSource": "実在=uni.type(123/123: 私立104/国立15/公立4)・uni.tuition_yen_per_year(123/123, 年額のみ・国公立は535,800固定/私立は73万〜650万と分散)。部分的=uni.additional_costs(85/123, 教科書・実習費のみでキー不統一: textbook_yen_per_year/kyokasho_man_yearly/jisshu_hi/jisshuhi/jisshu_hi_yen、入学金なし)・uni.tuition_note(59/123, 大半が「私立文系ベースの目安」ボイラープレート)。データ無し=受験料/検定料の数値(0件)・入学金の数値(0件)・初年度合計(0件)。",
+   "howTo": "縮退版(REALISTIC-lite)なら実装可: 受験料・入学金を data_v2 でなくコード内 type別定数で定義（受験料=私立35,000円/回・国公立17,000円+共通テスト18,000円、入学金=私立約250,000円・国立282,000円・公立は県外約390,000/県内優遇）。生徒が併願校を複数選択→各校ごとに (受験料 + 入学金 + tuition_yen_per_year) を3層積み上げ棒で並置し、合計『受験〜初年度でいくら』を表示。棒は層別に色分けし、定数部分には「目安・要確認」バナー必須。ただし実データは tuition_yen_per_year のみで校差が反映されるのは初年度授業料層だけ、他2層は全校一律の見せかけになる点を明記。既存の静的啓発文(line1688)と重複しないよう役割を差別化すること。",
+   "where": "単一大学の uniTabEntrance(入試タブ)は不適=これは複数併願校の横断比較なので単一大学ページに置けない。トップの「💰お金の基礎知識」(line1682)付近、または診断結果下の独立セクション「受験コスト試算」に配置すべき。費用は大学共通情報のため学部/大学分離方針は非侵害（学部ページには置かない）。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "uni.shingaku_jisseki.shushoku_rate = 123/123校保有。ただし全件string型。数値抽出可能122/123（1件「国家試験合格率いずれも高水準」は率なし）。値の質:91/123が「約○%」「○%前後」「概ね〜以上」の概算表現、decimal精度28件、plain 3件。分布:min70(単独外れ値)/max100/mean97.12/median97。floorバケット{95:6,96:14,97:57,98:33,99:6,100:5,70:1}でp75=98,p90=98.5。既存表示:app_v2ui.html L3925で素の緑rich-cardとして就職率を表示済み。",
+   "reason": "データは全校揃うが2点で価値が薄い。(1)分布が極端に圧縮=実質95〜98%、平均97.12・中央値97で90/122校が97-98に集中。「平均より高い/トップクラス」の境界は97%対98%という差になり、判断材料としてほぼ無情報。(2)値の91/123が「約」「前後」の自己申告概算文字列。この丸め誤差レベルの数値に相対ランクバッジを付けると false precision（見せかけの精度）で、97%校より98%校が明確に安全と誤誘導する恐れ。提案の前提「本当に高いのはどこか」自体がデータ上成立せず、実態はどこも横並び。相対化バッジは誤った安心/不安を生む方が大きい。現状は緑数値カードで表示済みでバッジ追加の増分価値は低い。REDUNDANTではない(バッジ未実装)がLOW-VALUE。",
+   "where": "進路タブ(uniTabEmployment)。就職率は大学共通の実績数値なので配置自体は学部/大学分離方針と整合（学部ページではなく大学ページで正しい）。分離方針は壊さない。",
+   "howTo": "採用非推奨。もし文脈化するなら個別ランクバッジではなく、就職率カードに「私大の就職率はどこも概ね95〜98%で差は出にくい」という共通の注記を一度だけ添え、数値の過大評価を抑える方が誠実。数値の相対ランク付け（平均比/トップクラス判定）は概算データの上では実装しない。"
+  },
+  {
+   "verdict": "REDUNDANT",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "employment.ratings: 101/123大学が保有。8キー(kyoin/shogakkō/keisatsu/shōbō/kōmuin_ippan/kigyō_ippan/kigyō_supotsu/iryō)すべて1-5の数値で完全充填、分布良好(例 kyoin: 1×8/2×9/3×49/4×23/5×12)→ランキング駆動に十分。shingaku_jisseki.{kyoin_count 91/123, keisatsu_count 85/123, shobo_count 85/123, shushoku_rate 123/123}は全て自由記述文字列(\"約100名\"\"10-20名\"\"要確認\")で数値ソート不可、注記表示専用。",
+   "reason": "提案機能は既に本体診断フローに実装済み。app_v2ui.html: CAREER_OPTIONS(L1999-2048)が教員/警察/消防/一般公務員/スポーツ/医療など33志望をrating軸にマップ→scoreUni(L2503, `emp.ratings?.[opt.rating]`で加点、提案のuni.employment.ratings[選択分野]と同一)→diagnose(L2472)が全大学を採点しfiltered.sort(b.rawScore-a.rawScore)で降順ランキング化→#resultListに「教員・警察に強い(評価4.5/5)」等の理由付きで表示。さらにL2545-2551で提案の第2データ源shingaku_jisseki.{kyoin_count,keisatsu_count,shobo_count}を「📊教員 約100名/警察 20-30名」として既に注記。志望進路を選ぶと就職実績で裏付けた大学が上位に並ぶという提案要件は既存機能そのもの。データも実在し追加不要。",
+   "where": "これは横断的な進路発見機能で、大学ページの進路タブ(uniTabEmployment=単一大学詳細)ではなく既存の診断フロー(state.diag.careers→resultList)が正しい置き場所。employment.ratingsは大学単位(大学共通)なので学部/大学分離方針には抵触しない。既にその位置に実装済みのため新規配置は不要。",
+   "howTo": "REDUNDANTのため新規実装不要。差別化しうる唯一の余地は「単一志望を1つ選んだ純ランキング(overallスコアに通勤/偏差値ギャップ等を混ぜず、選択分野ratingのみ厳密降順、同点はshushoku_rate等で緩く分け)」を軽量な閲覧導線として出す案だが、診断結果が既に志望別強豪校を上位表示しており、かつ偏差値帯グルーピングビュー(L2957-2986)も存在するため付加価値は限定的(LOW-VALUE相当)。実装するならshingaku_jissekiのcount文字列は数値化不能なのでソートには使えず注記のみ、という制約を踏襲すること。"
+  },
+  {
+   "verdict": "REDUNDANT",
+   "value": "low",
+   "cost": "low",
+   "reason": "提案の中核（career_center.quality の5段階★表示＋features の箇条書き）は既に3箇所で実装済み。進路タブ uniTabEmployment（work/app_v2ui.html:3320-3321）が _row('キャリア支援', _joinArr(cc.features)) と _row('支援の充実度', stars(cc.quality)) を持ち、stars() は ★×n＋☆×(5-n) の5段階メーターそのもの。detailEmploymentV2（3517-3518）も同一2行、旧レンダラ（3956-3958）は「🎯キャリアセンターの特徴」見出しで ★n/5＋<ul>箇条書きを既描画。データ実測でも quality=3/4/5(83件)/null(40件)、features=内容あり83件と、提案が想定する形で既に活きている。提案の追加分は『null校=データ準備中』表示のみだが、現状は _row が null行を非表示にする方が40校分のプレースホルダ乱立を避けられ望ましく、価値薄。よってREDUNDANT。",
+   "dataSource": "career_center.quality: number 83件(値は3/4/5のみ、1・2は存在せず)、null 40件 ／ career_center.features: 内容ありの配列83件・空配列30件・文字列10件(早稲田/慶應/明治等) ／ career_center.note: 10件のみ値あり(早稲田「OB・OG人脈が日本最強級」慶應「三田会の人脈は日本随一」等)・113件null=どこにも未表示。実装参照: work/app_v2ui.html の uniTabEmployment(3312,3320-3321)/detailEmploymentV2(3508,3517-3518)/旧レンダラ(3945,3956-3958)、_joinArr(3183)は文字列も安全処理済み。",
+   "howTo": "新規実装は不要（既実装）。もし小さく上積みするなら、提案の『データ準備中』ではなく未活用の career_center.note(10件のみ)を進路タブに追加するのが唯一の意味ある差分。uniTabEmployment/detailEmploymentV2 の stars行の直後に _row('支援の特色', cc.note ? _esc(cc.note) : null) を1行足すだけ（大学共通情報なので進路タブ=大学ページ側で分離方針に整合）。ただし対象10校のみで全体価値は限定的。",
+   "where": "進路タブ（uni ページの uniTabEmployment）。大学共通の支援体制情報なので現在の配置＝大学ページで分離方針に整合しており是正不要。"
+  },
+  {
+   "verdict": "NEEDS-DATA",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "uni.shingaku_jisseki.{kyoin_count, keisatsu_count, shobo_count} は123大学全件に配下存在するが値は全てフリーテキスト文字列（数値型ではない）。充填/内訳: kyoin_count=91/123充填（clean数値27・数値＋注記18・範囲2・定性22「若干名/年間100名超」・要確認22・なし空32）／keisatsu_count=85/123充填（clean27・範囲24「10-20名」・定性9・要確認22・空なし41）／shobo_count=85/123充填だが要確認43が最多でclean27・範囲3・定性9・空なし41（実質2/3が数値化不能）。3フィールドは既に renderEmploymentTab（進路タブ）app_v2ui.html L3926-3928 でtextカード「教員合格/警察合格/消防・救命」として値そのまま表示済み。",
+   "where": "進路タブ（uniTabEmployment / renderEmploymentTab）。既に同フィールドを表示済みの場所。学部/大学分離方針とは矛盾しない（公務員実績数値は大学共通情報で大学ページが正しい）。",
+   "howTo": "実装不可のため howTo なし。バー化に進むなら前提データが必要: (1) 各count用に kyoin_num/keisatsu_num/shobo_num の clean整数フィールドを新設し全123校を検証入力、(2) 推定/未確認を示す confidence フラグを併設、(3) 単一校内の3バーは教員が常に支配し非情報的なため、比較軸は不採用か「教員だけ経年」等に再設計。いずれも既存data_v2に無い新規データ整備が前提。",
+   "reason": "案の核心「実人数バー」は単一数値を要するが、実データは数値化できない文字列（clean数値は各22-41%のみ、shobo_countは要確認43件で3割弱しか数値化不能、「10-20名/若干名/年間100名超/約60名（保健体育中心）」等）。一本の棒長に潰すと誤情報。加えて値に「要確認」マーカー多数＝検証済み実数ではなくAI推定で、案の売り『実数は評価より説得力がある』という前提自体が崩れる。さらに「志望校を人数で比較」はページ横断比較を要求するが本アプリは大学ページ単位で比較サーフェス不在、単一校内3バーにしても教員(20-250)>>警察(10-40)>>消防(5-30)で常に教員が支配し非情報的。表示自体は既にtextカードで実装済みのため新規性はバー化のみだが、そのバー化が既存データでは不可能。clean整数＋信頼度フラグの新規データ整備が前提となるため NEEDS-DATA。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "dataSource": "dept.employment_fields = 611/650学部に存在(39空)。12カテゴリ実測件数: maker209/koumuin209/service208/kinyu197/ryutsu159/it158/iryo_fukushi152/kyoiku130/media66/kensetsu54/sports_kenko44/shokuhin35。tags.employment=12件のID→ラベル対応(koumuin→公務員・行政 等)も存在。ただし『仕事イメージの説明文・具体的職種例』は data_v2 に無く、コード側の12件固定辞書として実装者が記述するもの(既存 METHOD_TYPE_LABEL と同型)。追加のper-dept JSONデータは不要。",
+   "howTo": "(1)コード側に12カテゴリの静的辞書を追加: 例 EMP_FIELD_INFO = { koumuin:{label:'公務員・行政', jobs:'市役所・県庁・警察官・消防・国家公務員 など'}, service:{label:'サービス・観光', jobs:'ホテル・旅行・ブライダル・テーマパーク など'}, iryo_fukushi:{...}, ... 全12ID }。ラベルは tags.employment から流用可。(2)deptOnlyBody(line3427)の `_row('この学部の就職分野', _joinArr(empf))` を、リード文『この学部からは、こんな仕事に進む人が多いです』＋dept.employment_fields各IDをチップ表示＋その職種例1行、という構造ブロックに置換。(3)フォールバック: employment_fields空の39学部は当該ブロックを非表示(または interest_tags で代替)。単一HTML内で完結、データ改変なし・カテゴリ12件辞書のみで工数小。dead codeの detailEmploymentV2 は触らない。",
+   "where": "学部ページ deptOnlyBody の既存「この学部の就職分野」行を置換して実装(employment_fieldsは学部固有データなので分離方針に合致)。案の page:進路 は是正: 大学ページ進路タブ uniTabEmployment は uni 専用引数で dept 非表示のため据え置き、就職実績数値は大学共通のまま維持。分離方針は壊さない。",
+   "reason": "必要な per-dept データ(employment_fields)は611/650学部に付与済みで実在確認、tags.employmentのラベル対応も存在。『仕事イメージ』の説明文・職種例は data_v2 に無いが、これは12カテゴリの固定辞書としてコード側に書けばよく新規データ収集は不要のため NEEDS-DATA ではない。ただしラベル表示自体は deptOnlyBody で既に実装済み(部分REDUNDANT)で、増分は職種例＋文脈化の演出に留まる。またemployment_fieldsは多学部で共通(体育系4種一律・教育系kyoiku/koumuin等)のためカテゴリ単位の汎用イメージで学部固有性は薄い。この2点で価値は high ではなく medium。工数は12件辞書＋1行置換で low。将来像を想像できない生徒への効果は的確で費用対効果は良好なため REALISTIC 判定。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "medium",
+   "where": "進路タブ(renderEmploymentTab)。就職率・career_centerは大学共通指標なので分離方針とは矛盾しない(学部ページには置かない)。ただし本案自体は非推奨。",
+   "dataSource": "node -eで実測: (1)uni.shingaku_jisseki.shushoku_rate=123/123存在、%数値パース可122/123。ただし分布が95-100%に密集し97-98%が90/122・中央値97%・実質の外れ値は70%の1件のみ=識別力ほぼゼロ。(2)uni.career_center.quality=83/123(40件null=33%欠損、値域3-5のみ)。(3)uni.employment.ratings=101/123(8経路別1-5評価)。3指標すべて揃う大学は82/123(41件は欠損)。3指標はいずれも進路タブで既に個別表示済み(就職率カード:3925行 / キャリア別5段階バー×8:3930-3940行 / 支援レベル★:3957行)、ratingsは診断エンジンが経路別に既利用(2522行)。",
+   "reason": "データは概ね存在するため『データ不足』ではなく、合成スコア自体の価値が低く一部有害。理由4点: (1)就職率が95-100%に密集(97-98%=90/122)で識別力皆無。合成の主軸に据えると全大学がほぼ満点となり『大丈夫』という誤った安心を量産する。日本の大学就職率が構造的に高止まりする既知の罠。 (2)employment.ratingsは意図的に経路別(教員/警察/消防/企業/医療…)。本アプリは進路診断であり生徒は既に志望方向を選ぶ。8指標を単純平均すると『スポーツ企業5・小学校教員2』の大学が3.5になり志望者に無意味かつ誤誘導。既に経路別に表示・診断利用している設計からの後退。 (3)%・1-5・平均1-5を任意の重みで『100点満点』化するのは検証不能な擬似精度。既存の検証バナー文化(データ正直性重視)と衝突し、重い注釈が必要になり『1つの分かりやすい答え』という狙いを自壊させる。 (4)3指標は全て進路タブで既に個別可視化済みで、新データを生まず抽象化層を重ねるだけ(REDUNDANT寄り)。加えてquality33%欠損・3指標完備82/123のため看板スコアが1/3の大学で空欄/劣化。総合してLOW-VALUE。",
+   "howTo": "非REALISTICのため実装非推奨。もし就職安心度の切り口を残すなら、単一合成スコアではなく『診断で選んだ志望経路のratingsを個別に強調表示』する方が既存データに忠実で誤誘導が少ない(平均化しない)。就職率は密集のため点数化せず参考表示に留めるべき。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "medium",
+   "where": "進路タブ（大学ページ／uniTabEmployment）。ただし難易度帯は「表示中大学」ではなく生徒のstate.hensachiを軸にする（下記howTo）。employmentは大学共通なので進路タブが正。学部固有の偏差値を大学レベルに集約して大学ページに持ち込むのは分離方針違反になるため回避する。",
+   "dataSource": "uni.employment.ratings=101/123大学（8職域キー kyoin/shogakkō/keisatsu/shōbō/kōmuin_ippan/kigyō_ippan/kigyō_supotsu/iryō、各1-5の職域別評価。汎用就職力スコアではない）。dept.hensachi.min=650/650学部。大学レベルの偏差値フィールドは存在しない。同一±2.5帯のピア大学数=中央値25校（サンプルは十分）。既存line2515-2534が既にratingsを職域別マッチで使用（平均は取っていない）。",
+   "howTo": "提案どおり「ratings平均で就職力比較」は実装すべきでない。理由は下記reason。もし作るなら大幅な設計変更が前提: (1)平均を捨て、生徒がstate.diag.careersで選んだ職域のemployment.ratings[opt.rating]のみで比較（既存getCareerOption().rating/line2522の流用）。職種未選択なら非表示。(2)難易度帯は「表示中大学の偏差値」ではなく生徒のstate.hensachi中心±2.5で取り、既存renderHensachiMap(line2941)のバケット生成を流用（大学に単一偏差値が無い問題を回避しつつ分離方針も維持）。(3)表示は「同じ偏差値帯◯校中、あなたの志望する〇〇職への評価が★4以上はこの大学含む△校」。ratings未整備22大学は帯から除外。",
+   "reason": "必要フィールド自体は実在する（ratings101/123・hensachi.min650/650、ピアも中央値25校と十分）ので純粋なNEEDS-DATAではないが、提案の核心メカニズムが2軸で破綻しており価値薄。①「ratings平均＝就職力」が誤り: 8項目は教員/警察/消防/公務員/企業/スポーツ企業/医療の直交する職域評価で、平均すると分布が中央値3・IQR2.63-3.5に圧縮され判別力ゼロ。スポーツ特化校(スポーツ5/医療1)が平均で「並」に見え、生徒が本当に気にする職域シグナルを消す。既存アプリが職域別マッチで正しく扱っている情報をわざわざ劣化させる。②難易度軸の粒度不一致: hensachiは学部属性で大学単一偏差値は存在せず、学部間spreadは中央値5・最大25、25/101校が10以上跨ぐため「この大学の難易度」自体が不定。表示中大学を軸にすると破綻し、大学レベルへ集約すると学部/大学分離方針に反する。③既存の職域別ランキング（診断結果の並び＝偏差値適合×就職適合の実質コスパ順）と機能が重複。上記howToの設計変更（平均→職域別、大学軸→生徒偏差値軸）で救済は可能だが、その版は既存機能との差分が小さく、コスパ訴求としての増分価値は限定的。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "dataSource": "uni.employment.summary（101/123校、1行の個性ヘッドライン）＋uni.employment.strengths[]（101/123校、各3〜4項目）。101校すべてで両方同時に存在。summary===strengths[0]は0件でsummaryは独立した価値。欠損22校はほぼ東海地方で主対象圏外。現状strengthsはuniTabEmployment@3318で単一大学の「強み」行として既出だが、summaryはアクティブ経路で未表示（renderBasicTab@3829/detailEmploymentV2@3949は共にdead code）。横並び比較ビューは非存在（compare-table CSS@1435-1476は残骸でJS未使用、renderFavs@3967はdeptCard縦積みのみ）。",
+   "howTo": "renderFavs（お気に入り・比較画面、3967行）に「就職の個性 読み比べ」セクションを追加。お気に入りdept群からfindDeptV2でuniを取り、uni.idで重複排除（同一大学の複数学部登録で強みが重複しないように）。各大学カードに uni.name＋employment.summary をヘッドライン、strengths[] を箇条書きで並べて縦カード/2カラムで表示。これで(1)現状死んでいるsummaryを初めて活用し(2)単一大学ページでは不可能な複数校の横並び読み比較を実現する。employment欠損22校はカードから除外またはnull表示でガード。残骸のcompare CSSを再利用可。",
+   "where": "お気に入り・比較画面（renderFavs）。単一大学の進路タブではない——1大学ページからは複数校を並べられず「読み比べ」が成立しないため。案のpage=進路は要是正。employment.strengths/summaryは大学共通データなので、比較画面に大学単位ブロックとして置けば学部/大学分離方針を壊さない（学部ページには置かない）。",
+   "reason": "データは実在し実装可能なのでNEEDS-DATAではない。summaryはアクティブ経路で未表示かつstrengths[0]と非重複のため、これを表に出す点＋複数校の横並び比較という新規インタラクションは既存の単一大学「強み」行とは別物でREDUNDANTでもない。ただし価値をhighにはしない：(1)strengthsは大学ごとに軸の異なるマーケ的キャッチ（例「就職支援が『おせっかい』」）で、共通軸に整列しない定性文の読み比べは腹落ち補助に留まり数値比較のような決定力はない (2)strengths自体は単一大学ページで既出のため一部は増分。一方、死蔵中のsummary活用と比較画面という正しい置き場での新規体験は実データだけで低コスト実装できるため、置き場を進路タブ→比較画面に是正した上でREALISTIC/medium/lowと判定。"
+  },
+  {
+   "verdict": "NEEDS-DATA",
+   "value": "medium",
+   "cost": "high",
+   "dataSource": "原材料は存在: shingaku_jisseki.top_employers=123/123大学(平均6.6件,min2/max10)、employment.representative_employers=101/123大学(平均4.0件)。計1210メンション/530種、全てプレーン文字列。ただし業界分類軸フィールドは皆無(by_industry/gyoukai/sector/内訳=0件)。近い既存軸 employment.ratings=101件だが kyoin/keisatsu/shōbō/kōmuin_ippan/kigyō_ippan/kigyō_supotsu/iryō の教員・公務員中心8固定軸で、民間は全てkigyō_ippanに一括のためメーカー/金融/IT分割不可。",
+   "reason": "案が要求する「メーカー/金融/公務員/IT等の業界内訳」を出す分類軸データが存在しない。node -eで実測: 語尾キーワードで機械分類できるのは公務員(県警/市役所/県庁)・教員・金融(銀行/証券)・医療福祉(病院/福祉)のみで48%(579/1210)止まり。残り52%は京セラ22/トヨタ20/デンソー18/パナソニック16/任天堂/アクセンチュア/電通/三菱商事等の企業名で、メーカーvsIT vs商社vs広告vsインフラは語から導けず企業→業界辞書が必須。手作り辞書はtop200社でも73%・top267社で78%とロングテールで、確度の高い円グラフを既存データだけでは生成不能。加えて各大学4〜7件しかなく5枚程度の円グラフはほぼ企業名の貼替で傾向として薄い。実現には各employerへ業界タグを付与(data_v2の1210エントリ)か250〜530社の分類辞書オーサリングという新規データ作業が必要なためNEEDS-DATA。",
+   "howTo": "現状はNEEDS-DATA。既存データだけで成立する縮退版なら: (A) 語尾キーワード規則で「公務員・教員」「金融」「医療・福祉」の3〜4カテゴリのみ確定分類し、残り全部を『民間企業』一括にして帯グラフ化 → 『公務員・教員に強い大学』『民間就職中心』程度の粗い傾向表示は辞書不要で堅牢に実装可。ただし案の狙い(メーカー/IT等の細分)は出せない。案の完全版を実現するには data_v2 側に employer毎の industry タグ(例 top_employers を {name,industry} 化)を追加するデータ更新が前提。フロントは classifyEmployer() で集計しCSSの積み上げ帯(divのflex幅%)で描画、円グラフ用ライブラリは単一HTML制約上不要。",
+   "where": "大学ページ進路タブ(uniTabEmployment)。top_employers/representative_employersは大学共通データで既に同タブ表示済みのため、集計追加は学部/大学分離方針を壊さない(是正不要)。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "uni.employment.ratings = 101/123大学が保有(22件欠損)。8キー(kyoin/shogakkō/keisatsu/shōbō/kōmuin_ippan/kigyō_ippan/kigyō_supotsu/iryō)各1〜5の絶対強度スコア(分布 1:116/2:139/3:283/4:166/5:104、平均≒3)。行合計は12〜34で可変=構成比ではない。CAREER_LABELで既に8キー全部を日本語ラベル化済み。",
+   "where": "大学ページ進路タブ(renderEmploymentTab, L3930-3940)。ratingsはuni.employment配下=大学共通データなので配置自体は学部/大学分離方針に適合(学部ページ移設は不要)。",
+   "howTo": "仮に実装するなら「帯(100%積み上げ)」は避ける: ratingsは絶対強度スコアで行合計が可変のため、正規化すると全軸3のフラット大学を『均等な進路色』と誤読させ、卒業者構成比と誤認させる。採用するならグループ内平均を1〜5スケールのまま3本バー(民間=kigyō_ippan,kigyō_supotsu / 公務員=keisatsu,shōbō,kōmuin_ippan / 教員・専門=kyoin,shogakkō,iryō ※案が漏らしたshogakkōを教員側へ回収)で、既存8バーの直上に『要約→詳細』として置く形が唯一妥当。CAREER_LABELの既存キーで実装可。",
+   "reason": "データ的には自明に集計可能なのでNEEDS-DATAではないが、価値が薄い。(1)冗長性: 同じratings8軸は既にrenderEmploymentTab(L3930-3940)で「キャリア別5段階評価」8バーとして全表示済み。3グループはその粗い再集計で新規情報ゼロ、しかも要約が真下の詳細と隣接し情報が二重化。(2)誤表現リスク: 案の中核である『帯グラフ』は100%積み上げ=構成比表現だが、ratingsは行合計12〜34の絶対強度スコア(構成比ではないことをnode -eで確認)。正規化すると帝塚山大のような全軸同値のフラット型を『バランス良い進路色』と見せ、実際の卒業者進路割合と誤認させる。(3)グルーピングの粗さ: 案はshogakkō(小学校教員)を取りこぼし、kyoin(中高教員)を医療と同じ『専門』へ混在。以上より実装は容易(cost:low)だが既存表示に対する限界価値が低くLOW-VALUE。8軸が細かすぎるという課題があるなら、新規帯グラフ追加ではなく既存8バーの見せ方改善(色分け・グループ小見出し)で足りる。"
+  },
+  {
+   "verdict": "NEEDS-DATA",
+   "value": "medium",
+   "cost": "high",
+   "dataSource": "dept.qualifications=650/650(配列・資格名のみ、計1391件、合格率数値なし)。uni.shikaku_gokakuritsu_data=85/123(型混在:文字列45+オブジェクト40、null38)。オブジェクト形はkyoin_saiyo/kouchikuin/noteの3キーのみ(主に教員/公務員)で、数字を含むのは40件中7件のみ→資格別の合格率・取得者数データは実質無し。guessedDataの前提(常にkyoin_saiyo付きobj)は不正確。uni.shikaku_gokakuritsu=85/123(文字列、既にuniTabEmployment『✅資格・国試合格率』app_v2ui.html:3959で表示済)。shikaku_gokakuritsu_dataはHTML未参照(未使用)。突き合わせ検証:dept資格1391件のうちuni文の中に名称が文字列一致するのは275件=19.8%のみ(しかも名称の言及であって合格率ではない)、219/650学部はuni側に_data自体が無し。",
+   "reason": "案の核心価値『この資格が実際どれだけ取れるか/採用に繋がるか』は資格別の合格率・取得者数・採用実績という数値データを要するが、それが data_v2 に存在しない。uni.shikaku_gokakuritsu_dataは大学単位の自由文ブラーブ(オブジェクト形も教員/公務員の3キーのみ、数字含有7/40)で、突き合わせても資格名が文中に19.8%現れるだけ・数値は取れない。34%の学部はuni側にデータすら無い。dept.qualificationsは資格名のみで実績ゼロ。よって『資格→合格・採用実績』のマッチングは既存データで再現不可能=NEEDS-DATA。concept自体(取得可能と就職貢献の区別)は資格志望者に有意義だが、実装には資格別実績の新規収集(123大学×多数資格の合格率/採用数)が必要でコスト高。無理に既存データで作ると、大学単位の『多数/合格者』文を学部の資格リスト横に並べ実在しない因果を示唆する誤解表示になり、むしろ有害。",
+   "howTo": "実装可能にするには不足データの新規収集が前提:各学部(または大学×資格)ごとに『資格別 合格率/取得者数/その資格を活かした採用実績』の構造化フィールド(例 dept.qualification_outcomes:[{name,pass_rate,n_passed,employed_note,year,source}])が必要。既存の自由文blurbでは代替不可。分離方針の是正:資格別実績は学部固有なので学部ページ(deptOnlyBodyの『取得資格』直下)に置くべきで、案のpage=進路(uni進路タブ)は不整合。もし新データ無しで今できる最小策に留めるなら、未使用のuni.shikaku_gokakuritsu_data(kyoin_saiyo/kouchikuin/note、既存_shikakuTextヘルパで描画可)をuni進路タブに補足表示するだけ→ただしこれは『資格→実績の突き合わせ』ではなく大学単位の補足に過ぎずLOW-VALUE、既表示のshikaku_gokakuritsuとも近く、案の目的は満たさない。",
+   "where": "案はpage=進路(大学ページ進路タブ)だが、資格別実績は学部固有情報のため学部ページ(取得資格セクション直下)が正当。現状の大学単位blurbを進路タブに置く限り学部粒度の『実就職力』は表現できず分離方針とも齟齬。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "high",
+   "cost": "low",
+   "where": "お気に入り・比較画面（favs / renderFavs）。入試タブ・進路タブ・学部ページには置かない。比較表は複数校を横断集約する読み取り専用ビューであり、フィールドの所有ページを移す訳ではないので学部/大学分離方針は壊さない（分離方針は各詳細ページの主たる表示責務を規定するもの）。CSSも .compare-uni-head 等で大学単位のグルーピングを想定済み。",
+   "dataSource": "全6フィールドが data_v2.json に実在。dept.hensachi.min=650/650(数値)、dept.bairitsu.ippan=650/650(ただし{年:値}オブジェクトで最新年抽出が必要、非null年を持つのは625/650)、uni.tuition_yen_per_year=123/123、uni.access_from_shiga_min=123/123、uni.shingaku_jisseki.shushoku_rate=123/123(ただし\"約97%\"の文字列)、uni.career_center.quality=83/123(int3-5、40件null)。連結: dept.uni_id→uni.id は findDeptV2(deptId) が {dept,uni} で解決済み。お気に入りは dept_id 配列で localStorage 保存(getFavs)。",
+   "howTo": "renderFavs()(line3967)を、現状の deptCard 縦積みから <table class=\"compare-table\"> 生成に差し替える。既存の未使用CSS(.compare-wrap/.compare-table/.compare-uni-head/.compare-fav-rm, line1435-1476)をそのまま流用。行=お気に入り学部、getFavs()の各 dept_id を findDeptV2 で {dept,uni} 解決。列: 学部名(tbody th、大学名は .compare-uni-head で表示)/偏差値(dept.hensachi.min)/一般倍率(dept.bairitsu.ippan の最大年キーを取る getLatestBairitsu ヘルパー。倍率推移表 line3669 に既存の年キー処理があるので再利用/共通化)/学費(uni.tuition_yen_per_year を1万円単位に整形)/滋賀から(uni.access_from_shiga_min+'分')/就職率(uni.shingaku_jisseki.shushoku_rate をそのまま文字列表示)/キャリア充実度(uni.career_center.quality を★×n)。欠損は必ず '—' フォールバック(特に quality 40件null・bairitsu 25件・整形前nullチェック)。各行に .compare-fav-rm の解除ボタン(既存 removeFav/toggle 経路を使い、押下後 renderFavs 再描画)。表は .compare-wrap の overflow-x:auto で横スクロール、thead は position:sticky 済み。就職率は文字列なので数値ソートは非対応(表示のみ)と割り切る。データ追加・スキーマ変更は不要、renderFavs の書き換えのみで完結。",
+   "reason": "node -e で全6フィールドの実在と保有件数を確認: 4件は123/123完備、hensachi.minは650/650、bairitsu.ippanも650/650(最新年抽出要)。REDUNDANTを疑い renderFavs を精査したが、現状は deptCard の縦積みのみで比較「表」は未実装。しかも .compare-table 系CSSが未使用のまま先行実装されており、この案は当初想定された未完成機能の完成にあたる。お気に入り基盤(dept_id保存・findDeptVで大学連結)が既にあり、追加データ・分離方針違反なしに renderFavs 書き換えだけで実装可能なため低コスト・高価値。留意点は career_center.quality 33%欠損と bairitsu の年オブジェクト構造・shushoku_rate が文字列である点で、いずれも '—' フォールバックと文字列表示で吸収できる。"
+  },
+  {
+   "verdict": "REDUNDANT",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "推測フィールドは実在。employment.ratings.kigyō_supotsu / iryō ともに101/123大学が保有（1〜5の相対編集スコア）。kigyō_supotsu=5は7校（大阪体育/日本体育/中京/筑波/早稲田/慶應/順天堂）、iryō=5は23校。employment.strengths（就職の強み自由文）は101/123校が保有し、既に進路タブの『強み』行で表示中。",
+   "where": "配置自体は進路タブ（uniTabEmployment）で分離方針とは整合（ratingsは大学共通の就職データ、学部側の『この学部の就職分野』とは別軸）。分離違反ではない。",
+   "reason": "データは存在し技術的には実装可能だが、同じ情報が既に2経路で提供済みのためREDUNDANT。(1)進路タブ uniTabEmployment(3318行)が emp.strengths を『強み』行で表示済で、スポ=5の7校は7/7、医療=5の23校は19/23がstrengths自由文で当該分野を明言済（大阪体育大『スポーツ関連企業・実業団への就職に絶大』等）。手作業キュレーション文の方が粒度が高い。(2)診断エンジン(2515-2542行)が既に同じratingsで就職マッチ加点し、r>=4でstrengths[0]をストーリー表示して該当校を浮上させており『埋もれさせない』目的は達成済。加えて致命的な編集リスク: ratingsは本データ(近畿偏重101校)内の相対1〜5編集スコアであり、iryō=5には関西福祉科学大/兵庫大/神戸常盤大等の地域特化校が含まれる。これらに『全国上位』ラベルを自動付与するのは根拠不在の誇大表現で、本プロジェクトの検証バナー文化に反する。追加価値は機械的フィルタ化と、strengthsに医療言及の無い4校の補完のみで限定的。",
+   "howTo": "推奨せず。もし進めるなら『全国上位』等のランキング断定は不可（1〜5は相対編集スコアで全国順位ではない）。ラベルは『スポーツ業界への就職に強み』『医療・専門職への就職に強み』程度の非断定表現に限定し、かつstrengths自由文が当該分野に言及していない場合のみ補完表示する（strengths優先・rating補完のフォールバック）にすれば重複を避けられるが、対象は医療4校程度で費用対効果は薄い。"
+  },
+  {
+   "verdict": "NEEDS-DATA",
+   "value": "medium",
+   "cost": "high",
+   "dataSource": "X軸候補=dept.hensachi.min: 650/650件 全て数値。実装可。／Y軸「就職力平均」に該当する妥当な実在フィールドは無い。(1) uni.shingaku_jisseki.shushoku_rate: 123/123件だが全て文字列(数値0件)。parse後の分布は mean97.1% sd2.67、96-99%に90/122件が密集=判別力ほぼゼロ。83/123件に「約」「(福祉・医療業界中心)」等の注記あり、京都教育大は「教員就職率 約70%」と別指標が混入。(2) uni.employment.ratings: 101/123件。ただし中身はkyoin/keisatsu/shōbō/kigyō_ippan/kigyō_supotsu/iryō等の8分野別1-5スコア=セクター別得意度であり就職の絶対的強さではない。平均化は無効(専門特化校ほど低く出る、実avg1.50-4.25)。dept.employment_fields=611/650(分野タグの配列、連続値でない)。",
+   "reason": "横軸(偏差値=dept.hensachi.min 650/650数値)は問題なく取れるが、縦軸の「就職力平均」に相当する妥当な連続値が data_v2 に存在しない。就職率(shushoku_rate)は全大学が約97%に飽和(sd2.67, 90/122件が96-99%)し『就職が強い/弱い』を視覚的に区別できず、しかも全て文字列で1件は教員限定70%と意味が異なる。もう一方のemployment.ratingsは分野別の得意度スコアで、平均を取ると総合大学より専門特化の強豪校が低く出る=『お買い得ゾーン』の判定が逆転し学生を誤誘導する。つまり案の中核価値(入りやすさ×就出口の強さの同時比較)を誠実に計算できるYデータが無い。加えて構造上、X=学部単位(650)・Y=大学単位(123)で粒度が不一致——学部でプロットすると同一大学の学部がY同値で縦一列に積み上がり、大学に集約すると偏差値幅(1大学で45-65等)を潰し学部/大学分離方針に反する。設置場所も、複数校横断の発見ビューは単一エンティティの大学/学部詳細ページ(uniTabEmployment/deptOnlyBody)には収まらず、page=両方は既存タブ構造に適合しない。有効な連続的就職アウトカム指標(実就職率の分散ある値、または進路の質の正規化スコア)を新規収集すれば実装可能なため NEEDS-DATA。無理に既存ratings平均で作ると LOW-VALUE(誤誘導)リスク。",
+   "howTo": "実装前に不足データの収集が必要。Y軸に使える『比較可能で分散のある就職アウトカム指標』が無いのが致命。候補: (a)大学院進学率を除いた実就職率を数値型(number)で再収集し分散を確認、(b)分野別ratingsではなく総合的な就職の質スコア(例: 有名企業就職率や進路決定率)を1指標追加、いずれも123大学分の一次ソース確認が要る。加えて粒度を揃える設計判断が必須——学部ごとにプロットするなら就職指標も学部単位(dept)に持たせて分離方針を維持し、大学単位でプロットするなら偏差値は大学代表値の扱いを定義する。設置は既存の単一詳細ページではなく新規の横断比較サーフェスが前提(page=両方のままでは不可)。現状データのみでの実装は非推奨。",
+   "where": "両方の詳細ページ(uniTabEmployment/deptOnlyBody)には不適合。横断発見ビューは単一エンティティページに収まらず、新規の比較専用画面が必要。学部/大学分離方針との整合上、Y(就職)を学部単位に持たせるか大学代表偏差値を定義してから配置を決めるべき。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "dataSource": "work/data_v2.json の departments[].hensachi を node -e で全650件検査。全650件が {min,max,basis,source_url,verified_date} を持つオブジェクト。実在フィールドと保有件数: dept.hensachi.basis=650/650（全て \"kawai\"）, dept.hensachi.min/max=650/650（全て数値）, dept.hensachi.source_url=643/650（7件null: ritsumeikan-d04, sophia-kokusaikyoyo 等）, dept.hensachi.verified_date=643/650（全て \"2026-07-13\"、7件null）。現状 deptOnlyBody（L3390-3391,3422）は band に basis のみ描画＝『45（kawai基準）』。source_url と verified_date は存在するが未描画（grep で hensachi の source_url/verified_date 描画箇所ゼロ、_link は bairitsu.source_url にのみ使用 L3395）。案の guessedData は basis/min/max/source_url/verified_date すべて実在。",
+   "where": "学部ページ（deptOnlyBody の偏差値行）。偏差値は学部固有データなので分離方針どおり学部ページで正しい。大学ページ側は触らない=方針維持。",
+   "howTo": "deptOnlyBody（L3386-3391）の band 生成後、偏差値 dd に既存 _link ヘルパー（L3197）で出典リンクと検証日バッジを追記: `_row('偏差値', band + (h.source_url ? ' '+_link(h.source_url,'出典') : '') + (h.verified_date ? ` <span class=\"ok-badge\">${h.verified_date}時点</span>` : ''))`。7件のnullは三項でリンク/日付を省略しbasisバンドのみ残す（既存 baiSrc と同じ堅牢化パターン）。定義注記は静的テキストで既存 .detail-note を流用: 偏差値行直後に `<p class=\"detail-note\">📐 これは合格可能性50%のボーダー偏差値です。模試の種類（進研/駿台など）で数値が変わるため、上の『どの模試？』の基準で自動換算しています。</p>`。データ不要。ただし1点是正必須: source_url は passnavi.obunsha.co.jp（旺文社パスナビ）だが basis は \"kawai\"（河合塾）。出典リンク文言と基準表記が不一致なので、注記は『河合塾偏差値』と断定せず『旺文社パスナビ掲載の河合塾ボーダー偏差値』等に整合させること。basisバッジ『（kawai基準）』は既に表示済み=この部分のみREDUNDANT、net-newは出典リンク＋検証日＋50%定義注記。",
+   "reason": "guessedData のフィールドは全て data_v2 に実在し、source_url(643/650) と verified_date(643/650) は現状未描画のため net-new で実装価値あり=REALISTIC。ただし basis『（kawai基準）』は既に deptOnlyBody で表示済みで、この小部分は REDUNDANT。真の価値は (1)出典リンク+検証日の透明性（既存 verified-banner/検証バナー方針と一貫）、(2)『50%ボーダー』定義注記（データ不要の静的テキストで、誤解防止という why に最も直結する高価値部分）。value=medium とするのは、偏差値自体は既に表示済みでこれはメタ情報＋注記の追加＝増分的改善であり新規コア情報ではないため。cost=low（deptOnlyBody 数行、既存 _link/ok-badge/detail-note を流用、bairitsu 出典と同型）。分離方針違反なし（偏差値=学部固有→学部ページ）。要注意の是正点: basis=kawai だが source_url=旺文社パスナビで出典と基準がズレており、注記で『河合塾偏差値』と断定すると出典リンクと矛盾するため文言整合が必須。"
+  },
+  {
+   "verdict": "REDUNDANT",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "全5フィールド実在・データ十分。dept.hensachi.min=650/650、dept.bairitsu.ippan=625/650、uni.access_from_shiga_min=123/123、uni.commute_possible=123/123(true55/false68)、uni.employment.ratings=101/123(kyoin/shogakkō/keisatsu/shōbō/kōmuin_ippan/kigyō_ippan/kigyō_supotsu/iryōの8職種を各1-5で保有、22件欠損)。ただし全て既存のscoreUni()が既に消費済み。",
+   "where": "この案はそもそも大学ページ/学部ページ(入試タブ・進路タブ)に置くものではなく、ホームの診断フロー(diagnose→renderResults、resultViewで大学/学部トグル)そのもの。両方ページに個別ランキングを置く構想は全体横断ツールの性質と噛み合わず不要。",
+   "howTo": "新規実装不要。提案の中核はwork/app_v2ui.html L2472 diagnose()／L2503 scoreUni()／L2730 renderResults()で既に稼働。もし追加するなら「合成スコア=受かりやすさ＋就職力＋通学適性」の3成分を明示ラベル化する程度だが、scoreUniのbreakdown(就職マッチ/偏差値挑戦度/通学/学費)が既に成分分解表示を持つため差分は僅少。",
+   "reason": "提案「偏差値・志望職種・通学可否を入力→受かりやすさ＋就職力＋通学適性の合成スコアで自動ランキング」は、既存のホーム診断エンジンと完全に一致し実装済み。(1)偏差値: adjustedHensachi()＋challenge/standard/safeの挑戦度マッチ(L2653-2676)=受かりやすさ。(2)志望職種: state.diag.careers(CAREER_OPTIONS L1999-、各careerがrating→emp.ratingsの8職種にマップ)→careerBonus=(avg-3)*12(L2510-2554)=就職力。(3)通学可否: state.diag.commute(jitaku≤90分/jitaku-flex≤120分でaccess_from_shiga_minフィルタL2480-2484＋近接ボーナスL2699)=通学適性。さらに興味分野・評定・入試方式・就職地域・学費も加点。出力はdiagnose()がrawScore降順ソートし、renderResultsがzones{challenge/match/safe}に振り分け=まさに「併願(チャレンジ/実力相応/安全圏)」候補ランキング。guessedData5項目は全て既に消費済み(hensachi→ippan.hensachi_representative経由、bairitsu.ippanはrenderBairitsuTrendで学部ページ表示)。よって新価値ほぼ無し=REDUNDANT。学部/大学分離方針にも抵触しないが、そもそも作る必要がない。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "where": "学部ページ（deptOnlyBody）の既存「倍率（一般）」行の直後。入試タブ(uniTabEntrance)ではない。bairitsuは学部固有データで既に学部ページに表示されており、大学入試タブに置くと分離方針違反＆重複になるため、案のpage=\"入試\"は却下し学部ページに是正する。",
+   "dataSource": "実在確認済(node -e): dept.bairitsu.ippan=650/650だが空{}が25件・実データ625件 / dept.bairitsu.verified_date=625件(例\"2026-07-13\") / dept.bairitsu.source_url=625件。最新年度の分布=2026が449件/2025が174件/2024が2件のみ。HTML側でverified_dateは現在0箇所使用(未活用)、鮮度バッジ未実装。",
+   "howTo": "deptOnlyBody(app_v2ui.html:3392付近)で既にbaiE(年度昇順配列)を算出済み。最終年度 latestY=Number(baiE[baiE.length-1][0]) を取り、DATASET_MAX=2026(data_v2.updated基準の定数)と比較。(1)latestY<DATASET_MAX なら『最新◯◯年・より新しい年度の可能性あり』の注意バッジを倍率行に付す(該当176件=2025止まり174+2024の2で全体の27%、実用的)。案の『2年以上前(≤2024)』閾値は2件しか光らず無価値なので閾値を『最新でない=<DATASET_MAX』に是正。(2)年度キーに欠番があれば(例2024と2026だけで2025欠落)『年度に飛びあり』注記。(3)verified_dateを『確認: 2026-07』形式で小さく併記(現在完全未使用)。(4)ippanが空{}の25件はbaiがnullで倍率行自体が非表示→『一般倍率データなし(要確認)』の代替行を追加。既存baiE/source_urlロジックに数行追加のみでcost低。",
+   "reason": "必要フィールドは全て実在(ippanの年度キー・verified_date 625件・source_url 625件)しデータ面はREALISTIC。ただし案には2つの問題があり是正が必要。(1)配置: bairitsuは学部固有で既に学部ページに表示済み、案の『入試タブ』設置は学部/大学分離方針違反かつ重複→学部ページに是正。(2)閾値と件数が誤り: 案の『最新2年以上前(≤2024)』は実データ上わずか2件しか該当せずほぼ無価値。『13件』も誤り(latest=2024は2件、13は2024キーを含む学部の数)。鮮度警告という着想自体は有効なので、閾値を『データセット最新年(2026)未満』に直すと176件(27%)＋空データ25件が対象となり実用価値が出る。verified_dateはHTMLで現在0回使用の未活用資産で、REDUNDANTではない。倍率年度は既に行内に表示されている(生徒は最新年を目視可能)ため新規データ軸ではなく既存表示への安全性補強→value medium。実装は既存baiEロジックに数行追加でcost low。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "low",
+   "reason": "必要データは全て揃っており実装自体は容易だが、提案の中核はほぼ実装済みで純新規部分の価値が小さい。(1)「元の河合塾値も併記」→ fmtBand(app_v2ui.html:3175-3178)は生バンド\"55〜57\"に\"+8\"を折り込まず併記しており合算値を隠さないため、元値は全ヘッダ/一覧で既に可視。deptOnlyBody(3390-3391)も\"55〜57+8（kawai基準・国公立補正+8）\"と出典基準まで表示済み＝この半分はREDUNDANT。(2)加工の事実と理由→診断結果の凡例(2776行:『共通テスト(5〜7科目)＋2次で実質難度が高いため+8した偏差値でゾーン判定』)で既に開示。純粋な未実装は『河合塾公式ではなく当アプリ独自の目安』という一語の明示のみで、合算値を隠さない設計上、誤解リスクは既に大きく緩和済み。加えて提案のguessedData『+2(国公立補正)』は誤りで実値は+8(engine_v2.js:15 KOKKORITSU_BONUS=8)＝前提が古い。分離方針の観点では問題なし(偏差値は元々学部固有で注記追加のみ、分離は壊れない)。</reason>\n<parameter name=\"dataSource\">既存データで実装可能(NEEDS-DATAではない): dept.hensachi.min/max=河合塾の生バンド 650/650件、dept.hensachi.basis=\"kawai\" 650/650件、dept.hensachi.source_url 650/650件(585=passnavi/旺文社・58=keinet/河合塾)、verified_date 650/650件。国公立補正の対象は国公立学部 104/650件。補正値はデータ外のアプリ内定数=engine_v2.js:15 KOKKORITSU_BONUS=8(kkBonus()/ENGINE.KOKKORITSU_BONUS)。isKokkoritsuUni()も uni.type の /国立|公立/ 判定でデータ内。",
+   "where": "主: 学部ページ deptOnlyBody の偏差値行。副: 共通ヘッダ fmtBand を使う renderDetail/renderUniPage(uniBand)/uniTabDepts の\"+N\"表示。分離方針は維持(注記追加のみ、偏差値の所在は変えない)。",
+   "howTo": "やるなら小改修: 既存の\"(kawai基準・国公立補正+8)\"注記に『河合塾公式偏差値ではなく、共テ＋2次の科目数差を踏まえた当アプリ独自の目安』の1文/ツールチップ(title属性)を追記し、fmtBandの\"+N\"にも title で同旨のツールチップを付す。元値(min〜max=河合塾生値)の併記は既に全表示箇所で満たされているため新規実装不要。"
+  },
+  {
+   "verdict": "REDUNDANT",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "entry_method_details.{sogo,koubo,ippan}[]（method数 sogo78/koubo119/ippan139）。bairitsu=203件全て「〜」レンジ（うち79件は既に（要確認/学部により）を値内に内包、124件は素のレンジ）。hyoutei_note=132件（うち「学部」含む30件・「要確認」含む39件、例「学部により3.0〜4.0」「3.8〜4.0以上（学部により）」）。hyoutei_min=数値。nyushi_details.verified===true=30件 / !==true=93件。guessedDataのフィールドは全て実在。",
+   "reason": "案の主張（＝これは大学全体の代表値・志望学部の正確値は募集要項で要確認・学部で違う旨の明示）は、既に uniTabEntrance:3264 の estimated-banner が「学部により評定条件等が異なる場合があります。必ず公式の最新募集要項で確認してください」と一字一句同義でタブ冒頭に出しており、対象は123校中93校（76%）。さらにデータ自体も bairitsu 79件・hyoutei_note 30件超が値内に（学部により）（要確認）を内包済み。よって方式カード毎に同文注記を足すと、大学ページで既出のバナー文言を2〜4回反復する冗長UIになり、確立済みの「タブに1バナー」方式を崩すだけ。実利用上の隙間は、verified===true の30校（verified-banner:3260-3262）が〜レンジを出しつつ学部差の断りを持たない点のみ。",
+   "where": "入試タブ（uniTabEntrance, work/app_v2ui.html:3252）。entry_method_detailsは元来大学単位データでバナーも大学単位のため、学部/大学分離方針は崩さない（学部固有の偏差値/倍率は学部ページ側で別途表示済み）。",
+   "howTo": "案どおりの方式カード毎注記は実装しない（既存 estimated-banner と重複しノイズ化）。唯一の増分価値は verified-banner分岐（3260-3262）の30校をカバーすること。ここに一文「評定・倍率は大学全体の代表値です。志望学部の正確な条件は募集要項で要確認」を追記すれば、estimated側93校が既に持つ学部差の断りと同水準に揃い、全123校が最低限の誤認防止文言を持つ。実装は静的テキスト1行の追加のみで新データ不要。"
+  },
+  {
+   "verdict": "REDUNDANT",
+   "value": "low",
+   "cost": "low",
+   "where": "入試タブ（大学バナー）＋学部ページ「使える入試方式」",
+   "dataSource": "案の推測フィールドは全て実在するが、描画も既存。①uni.nyushi_details.verified(bool)/verified_year/verified_date/verified_source＝30/123大学(nyushi_details保有85中30)。②dept.entry_methods[].type/available/verified/note＝650/650学部・計2600方式で4フィールド全て100%充足。available×verified内訳: available+verified 1879, available+未verified 436, NOTavailable+verified 39(全て非実施理由noteあり例「共テ利用の記載なし」), NOTavailable+未verified 246。",
+   "reason": "提案の2大機構は既に実装済み。(1)大学バナーの3段階検証は uniTabEntrance L3258-3265 と renderEntranceTab L3563-3569 で nd.verified を使い「✅2027検証済(最新)／⚠️過年度warning／未検証は estimated-banner」を既に出し分け済み。(2)学部『使える入試方式』の available/verified 明示も deptOnlyBody L3407-3411 と detailEntranceV2 L3464-3470 で `m.available` フィルタ＋`m.verified`→`✓確認済`バッジとして既に描画済み。よって案の骨子はREDUNDANT。さらに『大学として実施か／学部で使えるか』の区別を1方式に併記する専用フラグはデータに無く(dept.entry_methods=学部で使えるか、uni.nyushi_details/entry_method_details=大学として実施、という構造分離で既に表現)、案のこの注記部分はNEEDS-DATA相当で分離方針とも重複。残る真の差分は小さい: (a)available=true+未verifiedの436方式が現状バッジ無しで確認済と視覚的に区別できない、(b)非実施理由note付きのNOTavailable+verified 39方式(39/650学部=6%)が現状 available フィルタで完全に非表示。いずれも軽微でLOW〜REDUNDANT。",
+   "howTo": "（REDUNDANTのため新規実装は不要。救済可能な微差分のみ記載）学部ページのバッジを2状態→3状態化: L3408/L3466 の三項を `m.verified?'<span class=\"ok-badge\">✓確認済</span>':'<span class=\"warn-badge\">△推定</span>'` にし、available+未verifiedの436方式を推定として明示。加えて available=false でも verified=true かつ note ありの39方式のみ別枠「実施なし（確認済）」として note 付きで表示(`avail`とは別に `notOffered=methods.filter(m=>!m.available&&m.verified&&m.note)`)。分離方針は不変(学部=entry_methods、大学=nyushi_details)。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "low",
+   "cost": "low",
+   "reason": "提案は2要素の混在。(1)「一般選抜のみの倍率で、総合/公募の想定倍率とは別物」という方式別注記は、dept.bairitsuがippanキーのみ・entry_method_detailsが方式別に別bairitsuを持つという構造事実に基づき静的テキストで正しく実装可能。(2)しかし中核の『志願倍率か実質倍率か』『分母=志願者/合格者 か 志願者/募集人員』を数値ごとに添える点は、data_v2にその定義を記録したフィールドが皆無で断定不能。追記すれば捏造(この部分単体ならNEEDS-DATA)。よって実装は静的な方式別注記＋「定義の詳細は各大学の出典で要確認」ポインタに限定される。既存でも学部ページは「倍率（一般）」ラベル、入試タブは「想定倍率」ラベル、大学ページ倍率推移表はA総合/B公募/C一般行で方式区別済みのため、純新規価値は短い凡例のみ→value=low。定義文言はgrep 0件なのでREDUNDANTではないが価値は限定的。</reason>\n<parameter name=\"dataSource\">dept.bairitsu.ippan=650/650学部(数値625/非数値25)。ただしbairitsuのサブキーはippan/source_url/verified_dateのみで、志願・実質の別や分母定義のフィールドは0件(definition0/type0/sogo・kouboキー0)。uni.entry_method_details.{ippan,koubo,sogo}[].bairitsu=文字列レンジ、埋まりはippan67/koubo31/sogo11(of123)。uni.bairitsu_trend.{sogo,koubo,ippan}=123/123だが値の多くが\"要確認\"、note/notesは大学別自由記述(倍率定義ではない)。倍率の定義を記録したフィールドはデータ全体に無し。",
+   "howTo": "honestな部分のみ実装し、分母・志願/実質の断定はしない。(1)学部ページ deptOnlyBody の「倍率（一般）」行(app_v2ui.html:3423)直後にdetail-noteを1行追加:「この倍率は一般選抜のみ。総合型/公募推薦の倍率は大学ページ入試タブの方式別『想定倍率』を参照(=別物)。志願倍率/実質倍率の別・分母は各大学の出典要項で異なるため要確認」。(2)大学ページ renderBairitsuTrend の表下(3687付近)と uniTabEntrance の想定倍率セクション(3279付近)に共通凡例1行:「A総合/B公募/C一般は別方式=倍率も別。数値の定義(志願倍率/実質倍率・分母)は大学の出典により異なる」。(3)志願/実質・分母の具体値はデータに無いので変数化せず静的文言のみ。個別数値へ「志願倍率」等の断定ラベルは付けない。",
+   "where": "学部ページ=倍率（一般）行の直後に注記(dept固有の年度推移に添える)。大学ページ入試タブ=倍率推移表(renderBairitsuTrend)の下＋想定倍率(uniTabEntrance)付近に凡例。分離方針は維持: 方式別の想定倍率数値は大学ページ側に置き、学部ページからは「入試タブの方式別想定倍率を参照」とリンク誘導のみにする。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "low",
+   "where": "入試タブ（uniTabEntrance, work/app_v2ui.html L3252-3307）。学部/大学分離方針には抵触しない（入試日程・募集要項リンクは大学共通データで大学ページに正しく置かれている）。",
+   "dataSource": "uni.nyushi_details.*[].details_url = 249/308方式に存在（ユニーク106）。ただしPDF直リンク=わずか4件、年度トークン(/2026/等)を含むURL=4件のみ（立命館 .../2026/04-05.pdf・早稲田 waseda-2026.pdf・中央 .../2026/...ippan_schedule.pdf・京都橘 point_2026/）。残る245は www.ouhs.jp/nyushi/ 型のディレクトリ/ランディングで年度非依存＝陳腐化しない。uni.official_links.verified = 123件全存在（true 37/false 86）、nyushi_url 非null 75/youkou_url 非null 7。既存実装: uniTabEntrance L3299-3303 が nyushi_url/youkou_url ボタン＋無い時 Google検索(48大学で発火)を実装済、バナー L3258 は nd.verified(true 30) を使用。",
+   "reason": "データ自体は存在するのでNEEDS-DATAではないが、案の中核的価値が成立しない。(1) 「過年度PDFの注記」が想定する年度固定URLは249中わずか4件(1.6%)。残り9割超はディレクトリ型で年度更新に伴うリンク切れが起きない=対処すべき問題が事実上存在しない。しかもその注記文言(『来年度版に差し替わる/最新を確認』)は既存の検証バナー・推定バナー(『必ず公式の最新募集要項で確認』L3264/3573)と重複。(2) 「リンク切れ時にフォールバック」は単一HTMLのクライアントから外部リンクの404を検知不能(CORS/opaqueでfetch判定できない)。実際に作れるのは『常に貼るGoogle/公式トップ導線』だけで、それは既にL3303で実装済(この部分はREDUNDANT)。(3) official_links.verified(37件) を現行バナーの nd.verified(30件) に反映しても差は7件と僅少で、ユーザー体験の改善はごく限定的。総じて費用対効果が低い。",
+   "howTo": "非REALISTIC。救える最小スライスのみ記す（採用は任意）: A) details_url が /20\\d\\d/ もしくは .pdf を含む4件に限り、ボタン脇に静的な小注記『※年度版PDF。最新年度は公式入試トップで確認』を付与し、同時に必ず ol.nyushi_url へのボタンも併記して代替導線を確保（L3285・L3301周辺、正規表現1本＋三項でreDeployなし）。B) バナー判定を nd.verified から (nd.verified || ol.verified) に緩め、official_links側で検証済の+7件にも✅を出す（L3258）。いずれもクライアントでのリンク切れ検知は行わない（不可能）。これ以上は投資に見合わない。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "dataSource": "dept.entry_methods[type=kyotsu] は全650学部が保有（type分布 sogo/koubo/ippan/kyotsu 各650）。available=true 614件 / false 13件 / null 23件、note は 650/650 が非空、verified=true 619件。null 23件の note は「共テ利用の有無は要調査」「記載なし（未確認）」等で\"不可\"とは別物。ラベル定数 METHOD_TYPE_LABEL.kyotsu='共テ利用' は既存(app_v2ui.html:3198)。大学ページ入試タブ uniTabEntrance(3252-3307) は ['sogo','koubo','ippan'] のみループしkyotsuを意図的に除外済み(3268にコメント「可否は学部ページ」)。学部ページ deptOnlyBody(3404-3411) は avail=filter(m=>m.available) で available truthy のみ表示。",
+   "where": "2箇所。(1)大学ページ入試タブ=uniTabEntrance(3252) に静的の誘導注記のみ。(2)学部ページ=deptOnlyBody(3386-3432) に共テ可否の明示行。学部/大学分離方針は維持：可否データ本体は学部側(entry_methods)に置き、大学側は「学部ページで確認」の誘導文のみ。可否そのものは大学ページに載せないので方針は壊れない。",
+   "howTo": "(1)uniTabEntrance: sogo/koubo/ippanのループ後、return文のhtml末尾（公式リンク前）に静的注記1行を追加。例 `<p class=\"detail-note\">💡 共通テスト利用の可否・理由は学部ごとに異なります。各学部ページの「使える入試方式」欄で確認してください。</p>`。データ参照不要。\n(2)deptOnlyBody: 現状 avail=filter(m=>m.available) は available=true の614件だけ「共テ利用 ✓確認済」+noteを表示し、false13/null23の計36件は沈黙して「不可なのか未記載なのか」判別不能。そこで methodsHtml とは別に kyotsu 専用行を常時出す。const ky=(dept.entry_methods||[]).find(m=>m.type==='kyotsu'); で取り出し、ky.available===true→「共テ利用：可」、===false→「共テ利用：不可」、それ以外(null)→「共テ利用：要確認」に3分岐（null を false と混同しないことが必須。noteが「要調査」のため）、ky.note を method-note、ky.verified で ✓確認済バッジ。既存の「使える入試方式」で true が二重表示にならないよう、availフィルタから kyotsu を除外し kyotsu だけこの専用行に集約するのが綺麗。",
+   "reason": "必要データ（dept.entry_methods kyotsu の available/note/verified）は全650学部に完備し、ラベル定数も既存のため実装可能＝REALISTIC。ただし手放しで高評価にはしない：available=true の614件は既に deptOnlyBody「使える入試方式」に「共テ利用」として表示済みで、その部分は REDUNDANT。本案の正味の新規価値は (a) 入試タブの誘導注記（誤解防止・データ不要で極小コスト）と (b) 学部ページで unavailable/unknown の36件を沈黙させず明示する点に限られる。よって value=medium（誤解「この大学は共テ不可」を防ぐ実利はあるがUX微調整の範囲）、cost=low。実装上の必須注意はnull(23件)を「不可」と誤表示しない3分岐。分離方針は可否を学部データに置き大学側は誘導文のみとすることで維持され、REJECT理由なし。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "DATA_V2.updated='2026-07-13'（単一・全体で1値）。dept.hensachi.verified_date=643/650件だが全件'2026-07-13'（=updatedと完全一致、差分0件）。dept.bairitsu.verified_date=625/650件も全件'2026-07-13'（差分0件）。uni.nyushi_details.verified_date=30/123件のみで全件'2026-05-26'。uni.entry_method_detailsにverified_dateキーは存在しない（sogo/koubo/ippanのみ）。既存表示: DATA_V2.updatedはホームのdataCredit(L3991)で既出、入試タブはverified_year/verified_sourceの検証バナー(L3256-3262/L3561-3566)で鮮度を提示済み。",
+   "reason": "案の核『個票ごとのverified_dateを常時出して\"鮮度の差\"を一貫して見せる』はデータ上成立しない。dept.hensachi/bairitsuのverified_dateは643/625件すべてglobal updated(2026-07-13)と同値で、差分は0件。個票に併記しても同じ日付を3回反復するだけの冗長表示＝実際には変動しない項目に日付を付す\"偽の精度\"になり、むしろ信頼を損なう。唯一値が異なるuni.nyushi_details.verified_date(2026-05-26)は30/123件のみで、しかも入試タブは既に検証バナー(verified_year/verified_source)で鮮度を提示済み＝二重。全体updatedもホームdataCreditで既出。よって実装自体は可能だが、案の狙い(個票別の鮮度差の可視化)は達成できず、残る有効部分は\"全体updatedを詳細ページ下部にも1行出す\"程度で新規価値が薄い。",
+   "howTo": "個票別verified_dateの併記は不採用（全件同値で冗長・偽精度）。もし入れるなら単一のDATA_V2.updatedだけを流用し、学部/大学ページ下部に『データ更新: 2026-07-13 ／ 最新は各大学公式で確認』の一文を1回だけ追加する（既存dataCreditの文言を再利用）。入試タブは既存の検証バナー(verified_year/verified_source)で十分なため触らない。nyushi_details.verified_dateはバナーが実装済みのため新規表示不要。",
+   "where": "学部ページ=deptOnlyBody末尾のdetail-note付近、大学ページ=uniTab共通フッター（両ページとも下部に控えめな1行）。日付は学部/大学共通メタなので分離方針には抵触しない。ただし追加は単一のupdated値のみに限定し、個票フィールドの併記はしない。"
+  },
+  {
+   "verdict": "REDUNDANT",
+   "value": "low",
+   "cost": "medium",
+   "dataSource": "uni.nyushi_details 保有=85/123大学。uni.nyushi_details.{sogo,koubo,ippan}[].exam_date/application_period/result_date/enrollment_deadline は実在。exam_date は計308件(82%が『20XX年M月』の4桁年入り、18%は『10月〜11月』『2月上旬』『面接のみ』『—』で年不明)。トップ直属メタ uni.nyushi_details.verified/verified_year/verified_date/verified_source も実在。ただし verified:true は30校のみ(verified_year=2027年度入試=2校[大阪体育大/中部大], 2026年度入試=28校), verified_year 無し=55校。学年度判定(9-12月→翌年度)で実測すると、現high3のcohort(2027年度入試)の実日程を持つのは上記2校だけ。80校は全日程が過年度(2026年度/一部2025年度)、3校は日付なし。",
+   "reason": "提案の主目的『現高3=2027年度受験の前提を毎回明示し過年度日程を警告』は既に uniTabEntrance に実装済み。検証バナー(L3260-3262)が verified_year 非2027時に warning クラス＋『現高3生は2027年度入試。日程は公式で要確認』、推定バナー(L3264)が未検証時に『現高3生は2027年度入試。必ず公式の最新募集要項で確認』を表示する。データ実測でも実日程保有85校中83校(過年度80＋日付なし3)が非2027=既存バナーが全件で警告/推定表示になり、ページ冒頭で既に注意喚起済み。よって新規の自動警告としての価値は無い(REDUNDANT)。加えて guessedData の中核『exam_date×verified_year 突合』は verified_year が30校しか無く55校で駆動不能。per-date化しても80校で全日付に同一タグが付くだけで冒頭バナーの重複・ノイズ化。さらに素朴な年一致では 2027年度入試の秋日程(例2026年10月)を誤って過年度扱いする危険があり、正しくは学年度(9-12月=翌年度)の月解析が必須だが18%は年欠落。学部/大学分離方針の違反は無い(日程は大学共通情報で大学ページに正置)。",
+   "howTo": "新規実装は不要。既存の検証バナー(verified_year 非2027→warning)/推定バナーが年度前提の明示という提案の狙いを既に満たしている。強化するなら per-date タグ追加ではなく、verified_year=2026年度入試の28校のバナー文言を『これは2026年度入試の実日程。2027年度は未発表の可能性』のように一段具体化する程度に留める(バナー1箇所の文言変更のみ、L3260-3262)。per-date 警告は academic-year 月解析＋18%の年欠落ハンドリングが必要で実利がほぼ無い割にコスト高のため非推奨。",
+   "where": "大学ページ入試タブ(uniTabEntrance, work/app_v2ui.html L3252-3307)。日程・年度前提は大学共通情報なので大学ページに置くのが正しく、学部/大学分離方針の違反は無い。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "where": "大学ページ入試タブ（renderMethodTab の koubo カード）。評定の定義・「実施なし/指定校のみ」但し書きは大学共通情報なので大学ページ配置で分離方針に整合。学部固有の入試方式可否(dept.entry_methods)は学部ページのまま触らない。",
+   "dataSource": "node -e で work/data_v2.json (大学123/学部650) を確認。(1) uni.entry_method_details.koubo[].hyoutei_note = 85/119件、うち「実施なし/指定校のみ」パターン=8件(立命館「設定なし（指定校のみ）」/同志社/関学/早稲田/慶應/明治/法政/南山)。(2) uni.entry_method_details.koubo[].notes = 56/119件、指定校言及7件(「一般向けの公募制推薦は実施なし。推薦は指定校…が中心」等)。(3) uni.entry_method_details.koubo[].type = 42/119件のみ、値は専願30/両方あり8/併願可4 → 専願/併願の区別であり公募/指定校ではない。(4) 「評定=3年1学期まで/全体の学習成績の状況」の定義テキストはdata_v2に0件(『学習成績の状況』0/『3年1学期』0/『全体の学習成績』0)。診断Step1(app_v2ui.html:1704)に類似定義が既存。",
+   "reason": "3部分の混在案。(A)評定の定義注記=データ非依存の固定文で実装可、ただし診断Step1に既存のため一部冗長。(B)『公募vs指定校をtypeで区別』=guessedDataの前提が事実誤り。typeは専願/併願で、アプリは既にline3869で「専願/併願」と正しく描画済み。公募/指定校を分ける構造化フィールドは存在せず、区別は自由文(hyoutei_note/notes)にしか無いため、type起点の区別UIは作れない。(C)『実施なし・指定校のみ』の但し書き=データは8件実在するが既に評定平均行・備考行として表示済み。よって新情報の追加ではなく『埋もれた警告の昇格表示(目立たせる)』という純粋なUX改善に留まる。実装可能で高stakes大学(早慶/関関同立上位)をカバーするため価値はあるが、既存表示との重複と誤前提の是正が必要なためvalue=medium。分離方針は壊さない。",
+   "howTo": "renderMethodTab(app_v2ui.html:3858-3881, key='koubo')を改修。(1)【評定定義・固定文】kouboカード群の先頭に静的注記を1回だけ挿入(データ不要):「評定＝高3は『3年1学期まで』の全体の学習成績の状況（全科目の5段階平均）」。診断Step1(行1704)の文言を流用し重複表現を避ける。(2)【実施なし警告の昇格】各koubo方式で m.hyoutei_note/m.notes を /実施(なし|していない)|指定校のみ|限定的/ で判定し、該当時(8件)は表セル内ではなく method-card 上部に警告バナー(例: ⚠️『一般向けの公募制推薦は実施なし。推薦は指定校・スポーツ/AO等が中心』)を昇格表示。バナー本文は hyoutei_note+notes の実文をそのまま使う。(3)【誤前提の是正】typeは公募/指定校の区別に使わない(=専願/併願で確定、line3869は現状維持)。指定校/公募の構造化区別は不可のため、専用の区別ラベルは作らず自由文の強調に限定する。学部ページ側(detailEntranceV2/dept.entry_methods)は変更しない。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "確認済(node -e): dept.bairitsu.ippan=650件だが中身は年度キーのみ(2024:13/2025:621/2026:449)で募集人員・定員フィールドは存在しない(前提は正しい)。dept.entry_methods[].note=650件だが定員/若干名等に言及するnoteは1件のみ。raw文字列で定員=0/募集人員=1/若干名=12件(全て自由記述内)。既存の注意喚起: app_v2ui.html L1656「倍率は年度ごとに変動→公式要項確認」, L1665-1671「偏差値・倍率・評定は推定値/過去参考パターンを含む→最新募集要項で確認」の3枚のwarning-bannerがトップに常設。",
+   "reason": "上記の通り。",
+   "where": "実装するなら学部ページ deptOnlyBody() の「倍率（一般）」行(L3423付近)。倍率は学部固有情報なので学部ページ配置は分離方針に違反しない(大学ページには置かない)。",
+   "howTo": "推奨は非実装。どうしても入れるなら新規バナーは増やさず、既存トップcaveatとの重複を避けて倍率行の脚注1文に留める案: baiE.length>0 のとき _row('倍率（一般）', bai) の直後に小さな detail-note を1行だけ追加(例:「※募集人員は未掲載。少人数募集の方式は倍率が年で乱高下しやすいため単年の数値で判断しない」)。単年データのみ(192件, Object.keys(ippan).length===1)の学部に限定表示すれば反復ノイズを抑えられ多少はマシ。ただしそれでも既存L1656/L1665注意書きと機能的に重複するため、費用対効果は低いまま。"
+  },
+  {
+   "verdict": "REALISTIC",
+   "value": "medium",
+   "cost": "low",
+   "where": "大学ページ進路タブ = uniTabEmployment（app_v2ui.html 3309-3324）。就職率は大学共通データなので分離方針に合致（学部ページには置かない）。なお同種の dept 版 detailEmploymentV2(3503) は未呼出しの死にコードなので対象外。",
+   "dataSource": "この注記は本来「静的な定義キャプション」で、表示に新規データは不要。現状表示に使う shingaku_jisseki.shushoku_rate=123/123 存在（例:「約97%」）。guessedDataのうち shingaku_jisseki.note は field自体はあるが非null 27/123、employment.notes は非null 13/123 で、いずれも今回の注記実装には不要（誤ったguess）。分母概念(希望者/分母/卒業者)に言及済みの大学=0/123 なので未実装＝REDUNDANTではない。脚注CSS .detail-note は既存(1579-1580、dept側3431で使用実績)。official_links.shingaku_url=85/123 で公式進路データへのCTAは既にuniTabEmploymentに実装済み。",
+   "howTo": "uniTabEmployment の就職率行の下（またはタブ末尾）に既存 class=\"detail-note\" の静的脚注を1つ追加。sj.shushoku_rate がある時だけ描画。ただし提案文どおりの断定「就職率=就職者÷就職希望者と必ず添える」はデータ実態に反するため要修正: 本アプリの shushoku_rate は手入力の概算値で、26/123 は算出基準が違う修飾付き（例 筑波大「進学含め概ね95%以上」=進学を含みむしろ卒業者ベース寄り、医療系「約99%」「約100%（看護師需要高）」等）。特定分母を断言すると自データを誤表示する。よって「多くの大学の公表就職率は『就職者÷就職希望者』で算出され、進学者や未活動者を分母に含まないため、卒業生全体に対する就職者割合とは異なります。本アプリの値は目安で算出基準は大学ごとに異なるため、正確な定義・最新値は公式の進路データでご確認ください」という緩めのリテラシー注記にする（既存の進路実績リンクへ誘導）。実装は文字列1本追加のみ。",
+   "reason": "(1) 実装可能性: 注記は静的キャプションで新規データ不要。表示に使う shushoku_rate は123/123存在し、脚注用 .detail-note CSSと公式進路リンクも既存。追加は文字列1本でcost=low。(2) 非重複: 分母概念に触れる大学は0/123で未実装、有効なリテラシー改善。(3) 修正必須: 提案の「必ず就職者÷就職希望者と定義注記」は断定しすぎ。自データの shushoku_rate は概算＋26/123が別基準の修飾付き（筑波「進学含め概ね95%以上」は進学を分母に含み提案の定義と矛盾）。特定分母を断言すると自データの出所を誤って権威付けする。緩めの一般注記＋公式確認導線に是正すればREALISTIC。(4) 価値: 過大評価防止のリテラシー効果は本物だが、全大学同一の静的脚注で大学間の比較差別化には寄与しないためvalue=medium。(5) 分離方針: 就職率は大学共通→大学ページに置くので違反なし。"
+  },
+  {
+   "verdict": "LOW-VALUE",
+   "value": "low",
+   "cost": "low",
+   "dataSource": "node -eでwork/data_v2.json(大学123件)を確認。shingaku_jisseki.top_employers=123/123だが中身は企業名のみの配列(例:立命館「パナソニック,ダイキン工業,京セラ,...」)で年度・採用人数フィールドは一切なし。employment.representative_employers=101/123も同形の企業名配列で年度/人数なし。official_links.shingaku_url=85/123 truthy。shingaku_jisseki.note=27/123 truthyだが内容は強みコメント(「警察・消防への実績トップクラス」等)で年度/人数の注記ではない。",
+   "reason": "案は2部分に分解できる。(1)公式進路データ(shingaku_url)への誘導=既に実装済み。uniTabEmployment(app_v2ui.html:3309-3324)は行3322で shingaku_url を「進路・就職実績」リンクとして既に出しており、この半分はREDUNDANT。(2)『代表例であり年度・採用人数は変動』注記=未実装だが、これは新データ不要の完全静的テキスト(top_employers/representative_employersに年度・人数が無いのはデータで確認済みなので事実としては正しい)。ただし『主な就職先』という見出し自体が既に代表例であることを示唆しており、汎用的な免責文は一般ユーザーが暗黙に前提する内容に近く増分価値が薄い。誘導は既存・残りはボイラープレートのため総合LOW-VALUE。NEEDS-DATAではない(データは不要)。",
+   "howTo": "実装するなら極小: uniTabEmployment内の _row('主な就職先', ...) 直下(または_dl配下)に静的キャプション1行を追加するだけ。例: 主な就職先の値末尾に `<div class=\"detail-note\">※代表例です。最新年度・採用人数は各年で変動します。正確な実績は下部の公式リンクをご確認ください。</div>` を付す。既存の shingaku_url リンク(行3322)がそのまま誘導先になるので新規リンク追加は不要。データ参照・新フィールドは一切不要。",
+   "where": "大学ページ進路タブ(uniTabEmployment)。top_employers/representative_employersはshingaku_jisseki/employment配下の大学共通(実績)フィールドであり、学部/大学分離方針(大学共通の実績数値は大学ページ)に合致。学部ページの『この学部の就職分野』は企業名でなく分野なので無関係、方針違反なし。"
+  }
+ ]
+}
