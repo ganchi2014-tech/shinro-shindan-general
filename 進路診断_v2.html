@@ -65457,7 +65457,11 @@ function hardFilter(departments, universities, userProfile) {
     if (!uni) continue;
     if (d.data_status === 'unconfirmed') { excluded.unconfirmed++; continue; }
     if (regions.size && !regions.has(uni.region)) { excluded.byRegion++; continue; }
-    if (userProfile.commuteOnly && uni.commute_possible !== true) { excluded.byRegion++; continue; }
+    // 通学: 距離しきい値(分)があれば滋賀からの所要時間で絞る（厳しめ90/緩め120）。無ければ従来のcommute_possible。
+    const maxMin = userProfile.commuteMaxMin;
+    if (maxMin != null) {
+      if (uni.access_from_shiga_min == null || uni.access_from_shiga_min > maxMin) { excluded.byRegion++; continue; }
+    } else if (userProfile.commuteOnly && uni.commute_possible !== true) { excluded.byRegion++; continue; }
     passed.push({ dept: d, uni });
   }
   return { passed, excluded };
@@ -65638,16 +65642,20 @@ function mapSet(srcSet, map) {
 
 // diag: v1 state.diag（careers/interests/methods は Set）
 // 戻り値: engine_v2 diagnose に渡す userProfile
+// 滋賀からの通学しきい値（分）。厳しめ=90分以内 / 緩め=120分以内 / それ以外=制限なし
+const COMMUTE_MAX_MIN = { jitaku: 90, 'jitaku-flex': 120 };
+
 function toUserProfile(diag, riasecAnswers) {
   const regions = REGION_MAP[diag.workArea] || [];
   const commuteOnly = diag.commute === 'jitaku' || diag.commute === 'jitaku-flex';
+  const commuteMaxMin = COMMUTE_MAX_MIN[diag.commute] ?? null;
   const hensachi = diag.hensachiUnknown ? null : Number(diag.hensachi);
   const interests = mapSet(diag.interests, INTEREST_MAP);
   const careers = mapSet(diag.careers, CAREER_MAP);
   const methodSet = new Set([...diag.methods].filter((m) => m !== 'any'));
   const examMethods = mapSet(methodSet, METHOD_MAP);
   return {
-    regions, commuteOnly, hensachi,
+    regions, commuteOnly, commuteMaxMin, hensachi,
     examSource: diag.examSource || 'unknown',
     riasecAnswers: riasecAnswers || [],
     interests, careers, examMethods,

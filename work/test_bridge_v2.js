@@ -24,8 +24,17 @@ const p2 = toUserProfile({
 }, [3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
 assert.strictEqual(p2.hensachi, null);
 assert.strictEqual(p2.commuteOnly, true);
+assert.strictEqual(p2.commuteMaxMin, 90, '通い厳しめ→90分以内');
 assert.deepStrictEqual(p2.examMethods.sort(), ['kyotsu', 'sogo']);
 assert.strictEqual(p2.riasecAnswers.length, 12);
+
+// 通学しきい値: 厳しめ90 / 緩め120 / 下宿OK・未定はnull
+const mk = (commute) => toUserProfile({ workArea: 'unknown', commute, hensachi: 50, hensachiUnknown: false, examSource: 'kawai', interests: new Set(), careers: new Set(), methods: new Set(['any']) }, []);
+assert.strictEqual(mk('jitaku').commuteMaxMin, 90);
+assert.strictEqual(mk('jitaku-flex').commuteMaxMin, 120);
+assert.strictEqual(mk('any').commuteMaxMin, null);
+assert.strictEqual(mk('unknown').commuteMaxMin, null);
+assert.strictEqual(mk('any').commuteOnly, false);
 
 console.log('bridge_v2: all pass');
 
