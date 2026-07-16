@@ -11,6 +11,9 @@ const EXAM_SOURCE_OFFSET = { kawai: 0, zento: 0, shinken: -7, sundai: 5, toshin:
 // ゾーン閾値（gap = 学部偏差値mid − 換算偏差値）
 const ZONE = { CHALLENGE_MAX: 10, CHALLENGE_MIN: 2.5, MATCH_MIN: -2.5, SAFE_MIN: -10 };
 const DEFAULT_TOP_N = 12;
+// 国公立は共通テスト＋2次で実質難度が高いため、ゾーン判定時に偏差値へ加える補正
+const KOKKORITSU_BONUS = 5;
+const isKokkoritsu = (uni) => /国立|公立/.test((uni && uni.type) || '');
 
 const round1 = (x) => Math.round(x * 10) / 10;
 const round2 = (x) => Math.round(x * 100) / 100;
@@ -147,12 +150,16 @@ function diagnose(userProfile, dataV2, tagsDef, riasecMap, opts = {}) {
     const min = dept.hensachi ? dept.hensachi.min : null;
     const max = dept.hensachi ? dept.hensachi.max : null;
     const mid = (min != null && max != null) ? (min + max) / 2 : (min != null ? min : (max != null ? max : null));
-    const zone = classifyZone(mid, adjHen);
+    // 国公立は共テ＋2次の実質難度を反映して +KOKKORITSU_BONUS した偏差値でゾーン判定
+    const kokkoritsu = isKokkoritsu(uni);
+    const bonus = kokkoritsu ? KOKKORITSU_BONUS : 0;
+    const effMid = (mid != null) ? mid + bonus : null;
+    const zone = classifyZone(effMid, adjHen);
     if (zone === 'out') { excluded.outOfRange++; continue; }
     const fit = computeFit(dept, uni, ctx);
     const item = {
       dept_id: dept.dept_id, uni_id: uni.id, uni_name: uni.name, dept_name: dept.name,
-      campus: dept.campus, hensachi: { min, max, mid },
+      campus: dept.campus, hensachi: { min, max, mid }, kokkoritsu, hensachiBonus: bonus,
       bairitsu: dept.bairitsu, zone: zone === 'ungrouped' ? null : zone,
       fitScore: fit.fitScore, reasons: fit.reasons, breakdown: fit.breakdown,
     };
@@ -173,7 +180,7 @@ function diagnose(userProfile, dataV2, tagsDef, riasecMap, opts = {}) {
 }
 
 module.exports = {
-  RIASEC_TYPES, RIASEC_ORDER, EXAM_SOURCE_OFFSET, ZONE, DEFAULT_TOP_N,
-  computeRiasecProfile, adjustedHensachi, classifyZone, hardFilter,
+  RIASEC_TYPES, RIASEC_ORDER, EXAM_SOURCE_OFFSET, ZONE, DEFAULT_TOP_N, KOKKORITSU_BONUS,
+  computeRiasecProfile, adjustedHensachi, classifyZone, hardFilter, isKokkoritsu,
   deptRiasecVector, riasecFitScore, computeFit, diagnose,
 };
