@@ -81,6 +81,7 @@ body {
   text-align: center;
   letter-spacing: 0.5px;
 }
+.nav-btns { display: flex; gap: 6px; align-items: center; }
 .back-btn, .ghost-btn {
   background: transparent;
   border: 1px solid var(--border);
@@ -1330,6 +1331,8 @@ main {
 .fab-back:hover { background: var(--primary); color: white; transform: translateX(2px); }
 .fab-back:active { transform: scale(0.95); }
 .fab-back[hidden] { display: none; }
+.fab-fwd { left: auto; right: 16px; }
+.fab-fwd:hover { transform: translateX(-2px); }
 
 /* ============================ ESTIMATED BANNER ============================ */
 .estimated-banner {
@@ -1625,15 +1628,19 @@ main {
 </head>
 <body>
   <header class="app-header">
-    <button class="back-btn" id="backBtn" hidden>← 戻る</button>
+    <div class="nav-btns">
+      <button class="back-btn" id="backBtn" hidden>← 戻る</button>
+      <button class="back-btn" id="fwdBtn" hidden>進む →</button>
+    </div>
     <h1 class="app-title" id="appTitle">進路診断</h1>
     <button class="ghost-btn" id="resetBtn" hidden>リセット</button>
   </header>
   <div class="progress-bar" id="progressBar" hidden>
     <div class="progress-fill" id="progressFill"></div>
   </div>
-  <!-- Floating Back Button (親指届く位置) -->
+  <!-- Floating Back/Forward Buttons (親指届く位置) -->
   <button class="fab-back" id="fabBackBtn" hidden>← 戻る</button>
+  <button class="fab-back fab-fwd" id="fabFwdBtn" hidden>進む →</button>
 
   <main id="app">
     <!-- ============================ HOME SCREEN ============================ -->
@@ -1948,6 +1955,7 @@ const state = {
   currentDetail: null,
   currentTab: 'basic',
   history: [],
+  forward: [],   // 「進む」用スタック（backで積み、goで新規遷移時にクリア）
   riasecAnswers: [],   // 適性チェック（12要素 0-3、未回答は空）
   lastResult: null,    // engine_v2 の診断結果
   resultView: 'dept',  // 結果ビュー: 'dept'(学部) | 'uni'(大学)
@@ -2182,6 +2190,7 @@ function go(screenId, opts = {}) {
   // 'loading' は瞬間表示の中間画面なので履歴に残さない（結果→戻るでloadingに詰むのを防ぐ）
   if (!opts.noHistory && state.currentScreen !== screenId && state.currentScreen !== 'loading') {
     state.history.push(state.currentScreen);
+    state.forward = []; // 新規遷移（次へ/タブ等）が起きたら「進む」履歴は破棄（ブラウザ同様）
   }
   document.querySelectorAll('.screen').forEach(s => {
     s.hidden = s.dataset.screen !== screenId;
@@ -2197,10 +2206,22 @@ function back() {
     state.history.pop();
   }
   if (state.history.length > 0) {
+    state.forward.push(state.currentScreen); // 今の画面を「進む」へ退避
     const prev = state.history.pop();
     go(prev, { noHistory: true });
   } else {
     go('home', { noHistory: true });
+  }
+}
+
+function forward() {
+  while (state.forward.length > 0 && state.forward[state.forward.length - 1] === 'loading') {
+    state.forward.pop();
+  }
+  if (state.forward.length > 0) {
+    state.history.push(state.currentScreen); // 今の画面を「戻る」へ
+    const next = state.forward.pop();
+    go(next, { noHistory: true });
   }
 }
 
@@ -2224,6 +2245,13 @@ function updateHeader() {
 
   // Floating Back Button - ホーム以外で常に表示
   if (fabBack) fabBack.hidden = (screen === 'home' || screen === 'loading');
+
+  // 「進む」ボタン - 戻った後だけ表示（進む履歴があるとき）
+  const canFwd = state.forward.length > 0 && screen !== 'home' && screen !== 'loading';
+  const fwdBtn = document.getElementById('fwdBtn');
+  const fabFwd = document.getElementById('fabFwdBtn');
+  if (fwdBtn) fwdBtn.hidden = !canFwd;
+  if (fabFwd) fabFwd.hidden = !canFwd;
 
   if (screen === 'home') {
     backBtn.hidden = true;
@@ -3947,6 +3975,8 @@ async function init() {
   });
   document.getElementById('backBtn').addEventListener('click', back);
   document.getElementById('fabBackBtn')?.addEventListener('click', back);
+  document.getElementById('fwdBtn')?.addEventListener('click', forward);
+  document.getElementById('fabFwdBtn')?.addEventListener('click', forward);
   document.getElementById('resetBtn').addEventListener('click', () => {
     state.diag = { hyoutei: 3.5, hyouteiUnknown: false, hensachi: 50, hensachiUnknown: false, examSource: 'unknown', careers: new Set(), interests: new Set(), workArea: 'unknown', commute: 'unknown', costPriority: false, methods: new Set(['any']) };
     state.riasecAnswers = [];
