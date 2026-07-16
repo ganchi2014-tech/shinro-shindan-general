@@ -2773,7 +2773,7 @@ function renderResults() {
       ${conds.map(c => `<span class="cond-tag">${escapeHtml(c)}</span>`).join('')}
     </div>
     ${m.hollandCode && !m.lowSignal ? `<p class="summary-legend">🧭 はあなたの<strong>適性タイプ</strong>（R現実・I研究・A芸術・S社会・E企業・C慣習の上位3つ）。各カードの<strong>「適性 ○○」は100点満点で高いほどあなた向き</strong>の目安です。</p>` : ''}
-    ${m.adjustedHensachi != null ? `<p class="summary-legend">🏛️ <strong>国公立は偏差値「＋5」表記</strong>。共通テスト＋2次で実質難度が高いため、+5した偏差値でゾーン判定しています。</p>` : ''}
+    ${m.adjustedHensachi != null ? `<p class="summary-legend">🏛️ <strong>国公立は偏差値「＋${kkBonus()}」表記</strong>。共通テスト（5〜7科目）＋2次で実質難度が高いため、+${kkBonus()}した偏差値でゾーン判定しています。</p>` : ''}
     ${m.lowSignal ? `<div class="nudge">適性チェックや興味分野を選ぶと、あなたの性格に合った学部が上位に来て精度が上がります。</div>` : ''}
     ${state.diag.costPriority ? `<div class="nudge">💴 学費が心配な人へ：各大学の「生活」タブで学費・奨学金・下宿費を確認できます。国公立や自宅から通える大学は費用を抑えやすいです。</div>` : ''}
     ${renderBunriHint()}
@@ -3170,11 +3170,12 @@ function renderUniCardSimple(uni) {
 // ============================================================
 function _esc(s) { return escapeHtml(String(s)); }
 function isKokkoritsuUni(uni) { return /国立|公立/.test((uni && uni.type) || ''); }
-// 偏差値バンド表示。国公立は共テ＋2次の実質難度で +5 補正して判定するため "+5" を付す
+function kkBonus() { return (ENGINE && ENGINE.KOKKORITSU_BONUS) || 8; }  // エンジン定数と同期
+// 偏差値バンド表示。国公立は共テ＋2次の実質難度で補正して判定するため "+N" を付す
 function fmtBand(h, kk) {
   if (!h || h.min == null || h.max == null) return '偏差値データなし';
   const base = (h.min === h.max) ? `${h.min}` : `${h.min}〜${h.max}`;
-  return `偏差値 ${base}${kk ? '+5' : ''}`;
+  return `偏差値 ${base}${kk ? '+' + kkBonus() : ''}`;
 }
 function _row(k, v) { return (v == null || v === '') ? '' : `<dt>${k}</dt><dd>${v}</dd>`; }
 function _dl(rows) { const h = rows.filter(Boolean).join(''); return h ? `<dl class="meta-grid">${h}</dl>` : ''; }
@@ -3385,8 +3386,9 @@ function renderDetail(deptId) {
 function deptOnlyBody(dept, uni) {
   const h = dept.hensachi || {};
   const kk = isKokkoritsuUni(uni);
+  const kb = kkBonus();
   const band = (h.min != null && h.max != null)
-    ? ((h.min === h.max ? `${h.min}` : `${h.min}〜${h.max}`) + (kk ? '+5' : '') + (h.basis ? `（${h.basis}基準${kk ? '・国公立補正+5' : ''}）` : (kk ? '（国公立補正+5）' : ''))) : null;
+    ? ((h.min === h.max ? `${h.min}` : `${h.min}〜${h.max}`) + (kk ? '+' + kb : '') + (h.basis ? `（${h.basis}基準${kk ? '・国公立補正+' + kb : ''}）` : (kk ? `（国公立補正+${kb}）` : ''))) : null;
   // 一般倍率: 年度昇順で推移表示＋出典
   const baiE = (dept.bairitsu && dept.bairitsu.ippan)
     ? Object.entries(dept.bairitsu.ippan).filter(([k]) => /^\d{4}$/.test(k)).sort((a, b) => Number(a[0]) - Number(b[0])) : [];

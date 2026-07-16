@@ -185,10 +185,10 @@ const E = require('./engine_v2.js');
   const r = E.diagnose(profile, dataV2, null, riasecMap, { topN: 99 });
   const zoneOf = (id) => ['challenge', 'match', 'safe'].find(z => r.zones[z].some(it => it.dept_id === id));
   assert.strictEqual(zoneOf('pv-a'), 'match', '私立50はmatch(gap0)');
-  assert.strictEqual(zoneOf('kk-a'), 'challenge', '国立50は実質55でchallenge(gap+5)');
+  assert.strictEqual(zoneOf('kk-a'), 'challenge', `国立50は実質${50 + E.KOKKORITSU_BONUS}でchallenge`);
   const kkItem = r.zones.challenge.find(it => it.dept_id === 'kk-a');
   assert.strictEqual(kkItem.kokkoritsu, true);
-  assert.strictEqual(kkItem.hensachiBonus, 5);
+  assert.strictEqual(kkItem.hensachiBonus, E.KOKKORITSU_BONUS);
   assert.strictEqual(kkItem.hensachi.min, 50, '表示用の元偏差値は50のまま');
 }
 

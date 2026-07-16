@@ -11,8 +11,8 @@ const EXAM_SOURCE_OFFSET = { kawai: 0, zento: 0, shinken: -7, sundai: 5, toshin:
 // ゾーン閾値（gap = 学部偏差値mid − 換算偏差値）
 const ZONE = { CHALLENGE_MAX: 10, CHALLENGE_MIN: 2.5, MATCH_MIN: -2.5, SAFE_MIN: -10 };
 const DEFAULT_TOP_N = 12;
-// 国公立は共通テスト＋2次で実質難度が高いため、ゾーン判定時に偏差値へ加える補正
-const KOKKORITSU_BONUS = 5;
+// 国公立は共通テスト（5〜7科目）＋2次で実質難度が高いため、ゾーン判定時に偏差値へ加える補正
+const KOKKORITSU_BONUS = 8;
 const isKokkoritsu = (uni) => /国立|公立/.test((uni && uni.type) || '');
 
 const round1 = (x) => Math.round(x * 10) / 10;
