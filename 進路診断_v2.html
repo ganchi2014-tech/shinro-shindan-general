@@ -81,6 +81,7 @@ body {
   text-align: center;
   letter-spacing: 0.5px;
 }
+.nav-btns { display: flex; gap: 6px; align-items: center; }
 .back-btn, .ghost-btn {
   background: transparent;
   border: 1px solid var(--border);
@@ -1330,6 +1331,8 @@ main {
 .fab-back:hover { background: var(--primary); color: white; transform: translateX(2px); }
 .fab-back:active { transform: scale(0.95); }
 .fab-back[hidden] { display: none; }
+.fab-fwd { left: auto; right: 16px; }
+.fab-fwd:hover { transform: translateX(-2px); }
 
 /* ============================ ESTIMATED BANNER ============================ */
 .estimated-banner {
@@ -65416,6 +65419,9 @@ const EXAM_SOURCE_OFFSET = { kawai: 0, zento: 0, shinken: -7, sundai: 5, toshin:
 // ゾーン閾値（gap = 学部偏差値mid − 換算偏差値）
 const ZONE = { CHALLENGE_MAX: 10, CHALLENGE_MIN: 2.5, MATCH_MIN: -2.5, SAFE_MIN: -10 };
 const DEFAULT_TOP_N = 12;
+// 国公立は共通テスト＋2次で実質難度が高いため、ゾーン判定時に偏差値へ加える補正
+const KOKKORITSU_BONUS = 5;
+const isKokkoritsu = (uni) => /国立|公立/.test((uni && uni.type) || '');
 
 const round1 = (x) => Math.round(x * 10) / 10;
 const round2 = (x) => Math.round(x * 100) / 100;
@@ -65552,12 +65558,16 @@ function diagnose(userProfile, dataV2, tagsDef, riasecMap, opts = {}) {
     const min = dept.hensachi ? dept.hensachi.min : null;
     const max = dept.hensachi ? dept.hensachi.max : null;
     const mid = (min != null && max != null) ? (min + max) / 2 : (min != null ? min : (max != null ? max : null));
-    const zone = classifyZone(mid, adjHen);
+    // 国公立は共テ＋2次の実質難度を反映して +KOKKORITSU_BONUS した偏差値でゾーン判定
+    const kokkoritsu = isKokkoritsu(uni);
+    const bonus = kokkoritsu ? KOKKORITSU_BONUS : 0;
+    const effMid = (mid != null) ? mid + bonus : null;
+    const zone = classifyZone(effMid, adjHen);
     if (zone === 'out') { excluded.outOfRange++; continue; }
     const fit = computeFit(dept, uni, ctx);
     const item = {
       dept_id: dept.dept_id, uni_id: uni.id, uni_name: uni.name, dept_name: dept.name,
-      campus: dept.campus, hensachi: { min, max, mid },
+      campus: dept.campus, hensachi: { min, max, mid }, kokkoritsu, hensachiBonus: bonus,
       bairitsu: dept.bairitsu, zone: zone === 'ungrouped' ? null : zone,
       fitScore: fit.fitScore, reasons: fit.reasons, breakdown: fit.breakdown,
     };
@@ -65578,8 +65588,8 @@ function diagnose(userProfile, dataV2, tagsDef, riasecMap, opts = {}) {
 }
 
 module.exports = {
-  RIASEC_TYPES, RIASEC_ORDER, EXAM_SOURCE_OFFSET, ZONE, DEFAULT_TOP_N,
-  computeRiasecProfile, adjustedHensachi, classifyZone, hardFilter,
+  RIASEC_TYPES, RIASEC_ORDER, EXAM_SOURCE_OFFSET, ZONE, DEFAULT_TOP_N, KOKKORITSU_BONUS,
+  computeRiasecProfile, adjustedHensachi, classifyZone, hardFilter, isKokkoritsu,
   deptRiasecVector, riasecFitScore, computeFit, diagnose,
 };
 
@@ -65752,15 +65762,19 @@ module.exports = { aggregateZone, aggregateByUni };
 </head>
 <body>
   <header class="app-header">
-    <button class="back-btn" id="backBtn" hidden>← 戻る</button>
+    <div class="nav-btns">
+      <button class="back-btn" id="backBtn" hidden>← 戻る</button>
+      <button class="back-btn" id="fwdBtn" hidden>進む →</button>
+    </div>
     <h1 class="app-title" id="appTitle">進路診断</h1>
     <button class="ghost-btn" id="resetBtn" hidden>リセット</button>
   </header>
   <div class="progress-bar" id="progressBar" hidden>
     <div class="progress-fill" id="progressFill"></div>
   </div>
-  <!-- Floating Back Button (親指届く位置) -->
+  <!-- Floating Back/Forward Buttons (親指届く位置) -->
   <button class="fab-back" id="fabBackBtn" hidden>← 戻る</button>
+  <button class="fab-back fab-fwd" id="fabFwdBtn" hidden>進む →</button>
 
   <main id="app">
     <!-- ============================ HOME SCREEN ============================ -->
@@ -66075,6 +66089,7 @@ const state = {
   currentDetail: null,
   currentTab: 'basic',
   history: [],
+  forward: [],   // 「進む」用スタック（backで積み、goで新規遷移時にクリア）
   riasecAnswers: [],   // 適性チェック（12要素 0-3、未回答は空）
   lastResult: null,    // engine_v2 の診断結果
   resultView: 'dept',  // 結果ビュー: 'dept'(学部) | 'uni'(大学)
@@ -66309,6 +66324,7 @@ function go(screenId, opts = {}) {
   // 'loading' は瞬間表示の中間画面なので履歴に残さない（結果→戻るでloadingに詰むのを防ぐ）
   if (!opts.noHistory && state.currentScreen !== screenId && state.currentScreen !== 'loading') {
     state.history.push(state.currentScreen);
+    state.forward = []; // 新規遷移（次へ/タブ等）が起きたら「進む」履歴は破棄（ブラウザ同様）
   }
   document.querySelectorAll('.screen').forEach(s => {
     s.hidden = s.dataset.screen !== screenId;
@@ -66324,10 +66340,22 @@ function back() {
     state.history.pop();
   }
   if (state.history.length > 0) {
+    state.forward.push(state.currentScreen); // 今の画面を「進む」へ退避
     const prev = state.history.pop();
     go(prev, { noHistory: true });
   } else {
     go('home', { noHistory: true });
+  }
+}
+
+function forward() {
+  while (state.forward.length > 0 && state.forward[state.forward.length - 1] === 'loading') {
+    state.forward.pop();
+  }
+  if (state.forward.length > 0) {
+    state.history.push(state.currentScreen); // 今の画面を「戻る」へ
+    const next = state.forward.pop();
+    go(next, { noHistory: true });
   }
 }
 
@@ -66351,6 +66379,13 @@ function updateHeader() {
 
   // Floating Back Button - ホーム以外で常に表示
   if (fabBack) fabBack.hidden = (screen === 'home' || screen === 'loading');
+
+  // 「進む」ボタン - 戻った後だけ表示（進む履歴があるとき）
+  const canFwd = state.forward.length > 0 && screen !== 'home' && screen !== 'loading';
+  const fwdBtn = document.getElementById('fwdBtn');
+  const fabFwd = document.getElementById('fabFwdBtn');
+  if (fwdBtn) fwdBtn.hidden = !canFwd;
+  if (fabFwd) fabFwd.hidden = !canFwd;
 
   if (screen === 'home') {
     backBtn.hidden = true;
@@ -66872,6 +66907,7 @@ function renderResults() {
       ${conds.map(c => `<span class="cond-tag">${escapeHtml(c)}</span>`).join('')}
     </div>
     ${m.hollandCode && !m.lowSignal ? `<p class="summary-legend">🧭 はあなたの<strong>適性タイプ</strong>（R現実・I研究・A芸術・S社会・E企業・C慣習の上位3つ）。各カードの<strong>「適性 ○○」は100点満点で高いほどあなた向き</strong>の目安です。</p>` : ''}
+    ${m.adjustedHensachi != null ? `<p class="summary-legend">🏛️ <strong>国公立は偏差値「＋5」表記</strong>。共通テスト＋2次で実質難度が高いため、+5した偏差値でゾーン判定しています。</p>` : ''}
     ${m.lowSignal ? `<div class="nudge">適性チェックや興味分野を選ぶと、あなたの性格に合った学部が上位に来て精度が上がります。</div>` : ''}
     ${state.diag.costPriority ? `<div class="nudge">💴 学費が心配な人へ：各大学の「生活」タブで学費・奨学金・下宿費を確認できます。国公立や自宅から通える大学は費用を抑えやすいです。</div>` : ''}
     ${renderBunriHint()}
@@ -66965,8 +67001,7 @@ function _fitBadge(item) {
 function uniCard(item) {
   const el = document.createElement('div'); el.className = 'uni-card dept-card';
   const h = item.hensachi || {};
-  const band = (h.min != null && h.max != null)
-    ? (h.min === h.max ? `偏差値 ${h.min}` : `偏差値 ${h.min}〜${h.max}`) : '偏差値データなし';
+  const band = fmtBand(h, item.kokkoritsu);
   const badge = _fitBadge(item);
   const reasons = (item.reasons && item.reasons.length)
     ? `<div class="uc-reasons">${item.reasons.map(x => `<span class="reason-chip">${escapeHtml(x)}</span>`).join('')}</div>` : '';
@@ -66996,6 +67031,7 @@ function deptToItem(d, u) {
   return {
     dept_id: d.dept_id, uni_id: u.id, uni_name: u.name, dept_name: d.name,
     hensachi: { min: h.min != null ? h.min : null, max: h.max != null ? h.max : null },
+    kokkoritsu: isKokkoritsuUni(u),
     fitScore: null, reasons: [],
   };
 }
@@ -67003,8 +67039,7 @@ function deptToItem(d, u) {
 function deptCard(item) {
   const el = document.createElement('div'); el.className = 'uni-card dept-card';
   const h = item.hensachi || {};
-  const band = (h.min != null && h.max != null)
-    ? (h.min === h.max ? `偏差値 ${h.min}` : `偏差値 ${h.min}〜${h.max}`) : '偏差値データなし';
+  const band = fmtBand(h, item.kokkoritsu);
   const fav = isFav(item.dept_id);
   const badge = _fitBadge(item);
   const reasons = (item.reasons && item.reasons.length)
@@ -67232,7 +67267,7 @@ function uniListCard(u) {
   const bounds = depts.map(d => d.hensachi).filter(h => h && h.min != null && h.max != null);
   const mn = bounds.length ? Math.min(...bounds.map(h => h.min)) : null;
   const mx = bounds.length ? Math.max(...bounds.map(h => h.max)) : null;
-  const band = mn != null ? (mn === mx ? `偏差値 ${mn}` : `偏差値 ${mn}〜${mx}`) : '偏差値データなし';
+  const band = mn != null ? fmtBand({ min: mn, max: mx }, isKokkoritsuUni(u)) : '偏差値データなし';
   const region = (DATA_V2.regions && DATA_V2.regions[u.region]) || {};
   el.innerHTML =
     `<div class="uc-head"><div class="uc-name">${escapeHtml(u.name)}</div>` +
@@ -67268,6 +67303,13 @@ function renderUniCardSimple(uni) {
 // 詳細（data_v2 / 学部単位）
 // ============================================================
 function _esc(s) { return escapeHtml(String(s)); }
+function isKokkoritsuUni(uni) { return /国立|公立/.test((uni && uni.type) || ''); }
+// 偏差値バンド表示。国公立は共テ＋2次の実質難度で +5 補正して判定するため "+5" を付す
+function fmtBand(h, kk) {
+  if (!h || h.min == null || h.max == null) return '偏差値データなし';
+  const base = (h.min === h.max) ? `${h.min}` : `${h.min}〜${h.max}`;
+  return `偏差値 ${base}${kk ? '+5' : ''}`;
+}
 function _row(k, v) { return (v == null || v === '') ? '' : `<dt>${k}</dt><dd>${v}</dd>`; }
 function _dl(rows) { const h = rows.filter(Boolean).join(''); return h ? `<dl class="meta-grid">${h}</dl>` : ''; }
 function _yen(n) { return (n != null && n !== '') ? Number(n).toLocaleString() + '円' : null; }
@@ -67293,7 +67335,7 @@ function uniBand(uni) {
   const bounds = deptsOfUni(uni.id).map(d => d.hensachi).filter(h => h && h.min != null && h.max != null);
   if (!bounds.length) return '偏差値データなし';
   const mn = Math.min(...bounds.map(h => h.min)), mx = Math.max(...bounds.map(h => h.max));
-  return mn === mx ? `偏差値 ${mn}` : `偏差値 ${mn}〜${mx}`;
+  return fmtBand({ min: mn, max: mx }, isKokkoritsuUni(uni));
 }
 
 // 大学全体ページ（共通情報を一括・タブ表示）
@@ -67343,8 +67385,20 @@ function uniTabOverview(uni) {
 function uniTabEntrance(uni) {
   const emd = uni.entry_method_details || {};
   const nd = uni.nyushi_details || {};
+
+  // 検証済み/推定バナー（nyushi_details のトップ直属メタ）
+  let banner;
+  if (nd.verified === true) {
+    const latest = String(nd.verified_year || '').includes('2027');
+    banner = `<div class="verified-banner${latest ? '' : ' warning'}">✅ ${_esc(nd.verified_year || '')} 検証済み` +
+      (nd.verified_source ? `（出典: ${_esc(nd.verified_source)}）` : '') +
+      (latest ? ' — 現高3生が来春受ける入試' : ' ／ 現高3生は2027年度入試。日程は公式で要確認') + `</div>`;
+  } else {
+    banner = `<div class="estimated-banner">⚠️ 日程・条件は<strong>推定の参考値</strong>で、学部により評定条件等が異なる場合があります。現高3生は2027年度入試。<strong>必ず公式の最新募集要項で確認</strong>してください。</div>`;
+  }
+
   let html = '';
-  ['sogo', 'koubo', 'ippan', 'kyotsu'].forEach(tp => {
+  ['sogo', 'koubo', 'ippan'].forEach(tp => {  // kyotsu(共テ利用)は大学単位の詳細データが無いため出さない（可否は学部ページ）
     const rows = (emd[tp] || []); const sched = (nd[tp] || []);
     if (!rows.length && !sched.length) return;
     html += `<h4 class="detail-h">${_esc(METHOD_TYPE_LABEL[tp] || tp)}</h4>`;
@@ -67352,24 +67406,37 @@ function uniTabEntrance(uni) {
       html += `<div class="method-item"><div class="method-name">${_esc(r.method_name || '')}</div>` +
         _dl([
           _row('評定条件', r.hyoutei_note ? _esc(r.hyoutei_note) : (r.hyoutei_min != null ? `${r.hyoutei_min}以上` : null)),
+          _row('出願区分', r.type ? _esc(r.type) : null),
           _row('選考内容', _joinArr(r.selection_content)),
-          _row('求める活動', r.required_achievement ? _esc(r.required_achievement) : null),
+          _row('試験科目', r.subjects ? _esc(r.subjects) : null),
+          _row('想定倍率', (r.bairitsu || r.baiio) ? _esc(r.bairitsu || r.baiio) : null),  // baiioは綴り誤りキーの吸収
           _row('出願時期', r.application_period ? _esc(r.application_period) : null),
-        ]) + `</div>`;
+        ]) +
+        (r.notes ? `<div class="method-note">${_esc(r.notes)}</div>` : '') + `</div>`;
     });
     sched.forEach(s => {
-      html += `<div class="method-item"><div class="method-name">${_esc(s.method_name || '日程')}</div>` +
+      const dl = _link(s.details_url || nd.details_url, '募集要項');
+      html += `<div class="method-item"><div class="method-name">${_esc(s.method_name || '日程')} ${dl}</div>` +
         _dl([
           _row('出願期間', s.application_period ? _esc(s.application_period) : null),
           _row('試験日', s.exam_date ? _esc(s.exam_date) : null),
           _row('合格発表', s.result_date ? _esc(s.result_date) : null),
-        ]) + `</div>`;
+          _row('入学手続〆切', s.enrollment_deadline ? _esc(s.enrollment_deadline) : null),
+          _row('試験科目', _joinArr(s.exam_subjects)),
+          _row('必要書類', _joinArr(s.required_documents)),
+        ]) +
+        (s.special_notes ? `<div class="method-note">${_esc(s.special_notes)}</div>` : '') + `</div>`;
     });
   });
-  const nyLink = uni.official_links && (uni.official_links.nyushi_url || uni.official_links.youkou_url);
-  html += `<div class="estimated-banner" style="margin-top:12px">⚠️ 日程・条件は<strong>参考値</strong>で、学部により評定条件等が異なる場合があります。現高3生は2027年度入試。<strong>必ず公式の最新募集要項で確認</strong>してください。</div>`;
-  if (nyLink) html += `<div class="detail-links">${_link(nyLink, '入試情報・募集要項')}</div>`;
-  return html || '<p class="detail-lead">入試の詳細は公式サイトで確認してください。</p>';
+
+  // 公式リンク（入試サイト/募集要項の別ボタン。無ければGoogle検索）
+  const ol = uni.official_links || {};
+  let links = _link(ol.nyushi_url, '📋 公式入試サイト');
+  if (ol.youkou_url && ol.youkou_url !== ol.nyushi_url) links += _link(ol.youkou_url, '📄 募集要項');
+  if (!links) links = `<a class="detail-link" href="https://www.google.com/search?q=${encodeURIComponent(uni.name + ' 入試 2027')}" target="_blank" rel="noopener">🔍 Googleで「${_esc(uni.name)} 入試」を検索 ↗</a>`;
+
+  return banner + (html || '<p class="detail-lead">入試方式の詳細は公式サイトで確認してください。</p>') +
+    `<div class="detail-links">${links}</div>`;
 }
 
 function uniTabEmployment(uni) {
@@ -67419,9 +67486,10 @@ function uniTabLife(uni) {
 function uniTabDepts(uni) {
   const midOf = (d) => { const h = d.hensachi || {}; return (h.min != null && h.max != null) ? (h.min + h.max) / 2 : (h.min != null ? h.min : (h.max != null ? h.max : -1)); };
   const sorted = [...deptsOfUni(uni.id)].sort((a, b) => midOf(b) - midOf(a));
+  const kk = isKokkoritsuUni(uni);
   const rows = sorted.map(d => {
     const h = d.hensachi || {};
-    const b = (h.min != null && h.max != null) ? (h.min === h.max ? `偏差値 ${h.min}` : `偏差値 ${h.min}〜${h.max}`) : '—';
+    const b = (h.min != null && h.max != null) ? fmtBand(h, kk) : '—';
     return `<button class="uni-dept-row" data-detail="${d.dept_id}"><span class="udr-name">${_esc(d.name)}</span><span class="udr-band">${b}</span><span class="udr-go">→</span></button>`;
   }).join('');
   return `<p class="detail-lead">タップで学部ページへ（学部固有の偏差値・倍率・資格・入試方式）</p><div class="uni-dept-list">${rows}</div>`;
@@ -67433,8 +67501,7 @@ function renderDetail(deptId) {
   const { dept, uni } = findDeptV2(state.currentDetail);
   if (!dept || !uni) return;
   const h = dept.hensachi || {};
-  const band = (h.min != null && h.max != null)
-    ? (h.min === h.max ? `偏差値 ${h.min}` : `偏差値 ${h.min}〜${h.max}`) : '偏差値データなし';
+  const band = fmtBand(h, isKokkoritsuUni(uni));
   const region = (DATA_V2.regions && DATA_V2.regions[uni.region]) || {};
   document.getElementById('detailHeader').innerHTML = `
     <h2>${_esc(uni.name)}</h2>
@@ -67451,10 +67518,14 @@ function renderDetail(deptId) {
 // 学部固有情報のみ（倍率・キャンパス・資格・ゼミ・入試方式の可否・就職分野）
 function deptOnlyBody(dept, uni) {
   const h = dept.hensachi || {};
+  const kk = isKokkoritsuUni(uni);
   const band = (h.min != null && h.max != null)
-    ? ((h.min === h.max ? `${h.min}` : `${h.min}〜${h.max}`) + (h.basis ? `（${h.basis}基準）` : '')) : null;
-  const bai = dept.bairitsu && dept.bairitsu.ippan
-    ? Object.entries(dept.bairitsu.ippan).filter(([k]) => /^\d{4}$/.test(k)).map(([y, v]) => `${y}年 ${v}倍`).join(' / ') : null;
+    ? ((h.min === h.max ? `${h.min}` : `${h.min}〜${h.max}`) + (kk ? '+5' : '') + (h.basis ? `（${h.basis}基準${kk ? '・国公立補正+5' : ''}）` : (kk ? '（国公立補正+5）' : ''))) : null;
+  // 一般倍率: 年度昇順で推移表示＋出典
+  const baiE = (dept.bairitsu && dept.bairitsu.ippan)
+    ? Object.entries(dept.bairitsu.ippan).filter(([k]) => /^\d{4}$/.test(k)).sort((a, b) => Number(a[0]) - Number(b[0])) : [];
+  const baiSrc = (dept.bairitsu && dept.bairitsu.source_url) ? _link(dept.bairitsu.source_url, '出典') : '';
+  const bai = baiE.length ? (baiE.map(([y, v]) => `${y}年 ${v}倍`).join(' → ') + (baiSrc ? ' ' + baiSrc : '')) : null;
   const imap = new Map((DATA_V2.tags.interest || []).map(t => [t.id, t.label]));
   const itags = (dept.interest_tags || []).map(id => imap.get(id)).filter(Boolean);
   const emap = new Map((DATA_V2.tags.employment || []).map(t => [t.id, t.label]));
@@ -68074,6 +68145,8 @@ async function init() {
   });
   document.getElementById('backBtn').addEventListener('click', back);
   document.getElementById('fabBackBtn')?.addEventListener('click', back);
+  document.getElementById('fwdBtn')?.addEventListener('click', forward);
+  document.getElementById('fabFwdBtn')?.addEventListener('click', forward);
   document.getElementById('resetBtn').addEventListener('click', () => {
     state.diag = { hyoutei: 3.5, hyouteiUnknown: false, hensachi: 50, hensachiUnknown: false, examSource: 'unknown', careers: new Set(), interests: new Set(), workArea: 'unknown', commute: 'unknown', costPriority: false, methods: new Set(['any']) };
     state.riasecAnswers = [];

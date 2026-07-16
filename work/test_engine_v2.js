@@ -167,4 +167,29 @@ const E = require('./engine_v2.js');
   assert.strictEqual(res3.meta.lowSignal, true);
 }
 
+// ---- 国公立+5補正（同じ偏差値50でも国公立はゾーンが1段上がる）----
+{
+  assert.strictEqual(E.isKokkoritsu({ type: '国立' }), true);
+  assert.strictEqual(E.isKokkoritsu({ type: '公立' }), true);
+  assert.strictEqual(E.isKokkoritsu({ type: '私立' }), false);
+  const riasecMap = require('./interest_riasec_map.json').map;
+  const universities = [
+    { id: 'kk', name: '国立大', region: 'shiga', prefecture: '滋賀県', type: '国立' },
+    { id: 'pv', name: '私立大', region: 'shiga', prefecture: '滋賀県', type: '私立' },
+  ];
+  const mk = (id, uni) => ({ dept_id: id, uni_id: uni, name: id, campus: 'C', data_status: 'verified',
+    hensachi: { min: 50, max: 50 }, bairitsu: { ippan: {} }, entry_methods: [{ type: 'ippan', available: true }],
+    interest_tags: [], employment_fields: [], zemi: [] });
+  const dataV2 = { universities, departments: [mk('kk-a', 'kk'), mk('pv-a', 'pv')] };
+  const profile = { hensachi: 50, examSource: 'kawai', regions: [], riasecAnswers: [], interests: [], careers: [], examMethods: [], budgetMax: null };
+  const r = E.diagnose(profile, dataV2, null, riasecMap, { topN: 99 });
+  const zoneOf = (id) => ['challenge', 'match', 'safe'].find(z => r.zones[z].some(it => it.dept_id === id));
+  assert.strictEqual(zoneOf('pv-a'), 'match', '私立50はmatch(gap0)');
+  assert.strictEqual(zoneOf('kk-a'), 'challenge', '国立50は実質55でchallenge(gap+5)');
+  const kkItem = r.zones.challenge.find(it => it.dept_id === 'kk-a');
+  assert.strictEqual(kkItem.kokkoritsu, true);
+  assert.strictEqual(kkItem.hensachiBonus, 5);
+  assert.strictEqual(kkItem.hensachi.min, 50, '表示用の元偏差値は50のまま');
+}
+
 console.log('ALL OK');
