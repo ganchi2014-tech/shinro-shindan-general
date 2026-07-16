@@ -31,6 +31,23 @@ assert.strictEqual(byUni.match.length, 2);
 assert.strictEqual(byUni.safe.length, 0);
 assert.strictEqual(byUni.ungrouped.length, 0);
 
+// 大学が複数ゾーンに跨る場合、優先度 match>challenge>safe で1ゾーンにのみ出る（重複排除）
+const spanResult = {
+  zones: {
+    challenge: [{ uni_id: 'X', uni_name: 'X大', dept_id: 'X-1', dept_name: 'a', fitScore: 20, hensachi: { min: 60, max: 60, mid: 60 }, reasons: [], zone: 'challenge' }],
+    match: [{ uni_id: 'X', uni_name: 'X大', dept_id: 'X-2', dept_name: 'b', fitScore: 50, hensachi: { min: 52, max: 52, mid: 52 }, reasons: [], zone: 'match' }],
+    safe: [{ uni_id: 'X', uni_name: 'X大', dept_id: 'X-3', dept_name: 'c', fitScore: 90, hensachi: { min: 45, max: 45, mid: 45 }, reasons: [], zone: 'safe' }],
+  },
+  ungrouped: [],
+};
+const sp = aggregateByUni(spanResult);
+assert.strictEqual(sp.match.length, 1, 'X大はmatchに1件のみ');
+assert.strictEqual(sp.match[0].uni_id, 'X');
+assert.strictEqual(sp.match[0].repDept.dept_id, 'X-2', 'match内の学部が代表（safeのfit90は採らない）');
+assert.strictEqual(sp.match[0].deptCount, 1, 'matchゾーン内の学部数=1');
+assert.strictEqual(sp.challenge.length, 0, 'challengeに重複表示しない');
+assert.strictEqual(sp.safe.length, 0, 'safeに重複表示しない');
+
 console.log('agg_v2: all pass');
 
 // 実データ結線: engine → aggregate

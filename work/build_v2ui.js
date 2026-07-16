@@ -32,7 +32,8 @@ if (!html.includes('<!-- INLINE_V2 -->')) {
   console.error('ERROR: マーカー <!-- INLINE_V2 --> が見つかりません');
   process.exit(1);
 }
-html = html.replace('<!-- INLINE_V2 -->', inlineBlocks);
+// 関数置換で $ の特殊解釈($&,$1,$'等)を回避（インライン内容の$破壊防止）
+html = html.replace('<!-- INLINE_V2 -->', () => inlineBlocks);
 
 const out = path.join(__dirname, '..', '進路診断_v2.html');
 fs.writeFileSync(out, html);
