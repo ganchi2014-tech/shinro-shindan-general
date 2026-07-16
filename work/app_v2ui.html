@@ -3251,8 +3251,20 @@ function uniTabOverview(uni) {
 function uniTabEntrance(uni) {
   const emd = uni.entry_method_details || {};
   const nd = uni.nyushi_details || {};
+
+  // 検証済み/推定バナー（nyushi_details のトップ直属メタ）
+  let banner;
+  if (nd.verified === true) {
+    const latest = String(nd.verified_year || '').includes('2027');
+    banner = `<div class="verified-banner${latest ? '' : ' warning'}">✅ ${_esc(nd.verified_year || '')} 検証済み` +
+      (nd.verified_source ? `（出典: ${_esc(nd.verified_source)}）` : '') +
+      (latest ? ' — 現高3生が来春受ける入試' : ' ／ 現高3生は2027年度入試。日程は公式で要確認') + `</div>`;
+  } else {
+    banner = `<div class="estimated-banner">⚠️ 日程・条件は<strong>推定の参考値</strong>で、学部により評定条件等が異なる場合があります。現高3生は2027年度入試。<strong>必ず公式の最新募集要項で確認</strong>してください。</div>`;
+  }
+
   let html = '';
-  ['sogo', 'koubo', 'ippan', 'kyotsu'].forEach(tp => {
+  ['sogo', 'koubo', 'ippan'].forEach(tp => {  // kyotsu(共テ利用)は大学単位の詳細データが無いため出さない（可否は学部ページ）
     const rows = (emd[tp] || []); const sched = (nd[tp] || []);
     if (!rows.length && !sched.length) return;
     html += `<h4 class="detail-h">${_esc(METHOD_TYPE_LABEL[tp] || tp)}</h4>`;
@@ -3260,24 +3272,37 @@ function uniTabEntrance(uni) {
       html += `<div class="method-item"><div class="method-name">${_esc(r.method_name || '')}</div>` +
         _dl([
           _row('評定条件', r.hyoutei_note ? _esc(r.hyoutei_note) : (r.hyoutei_min != null ? `${r.hyoutei_min}以上` : null)),
+          _row('出願区分', r.type ? _esc(r.type) : null),
           _row('選考内容', _joinArr(r.selection_content)),
-          _row('求める活動', r.required_achievement ? _esc(r.required_achievement) : null),
+          _row('試験科目', r.subjects ? _esc(r.subjects) : null),
+          _row('想定倍率', (r.bairitsu || r.baiio) ? _esc(r.bairitsu || r.baiio) : null),  // baiioは綴り誤りキーの吸収
           _row('出願時期', r.application_period ? _esc(r.application_period) : null),
-        ]) + `</div>`;
+        ]) +
+        (r.notes ? `<div class="method-note">${_esc(r.notes)}</div>` : '') + `</div>`;
     });
     sched.forEach(s => {
-      html += `<div class="method-item"><div class="method-name">${_esc(s.method_name || '日程')}</div>` +
+      const dl = _link(s.details_url || nd.details_url, '募集要項');
+      html += `<div class="method-item"><div class="method-name">${_esc(s.method_name || '日程')} ${dl}</div>` +
         _dl([
           _row('出願期間', s.application_period ? _esc(s.application_period) : null),
           _row('試験日', s.exam_date ? _esc(s.exam_date) : null),
           _row('合格発表', s.result_date ? _esc(s.result_date) : null),
-        ]) + `</div>`;
+          _row('入学手続〆切', s.enrollment_deadline ? _esc(s.enrollment_deadline) : null),
+          _row('試験科目', _joinArr(s.exam_subjects)),
+          _row('必要書類', _joinArr(s.required_documents)),
+        ]) +
+        (s.special_notes ? `<div class="method-note">${_esc(s.special_notes)}</div>` : '') + `</div>`;
     });
   });
-  const nyLink = uni.official_links && (uni.official_links.nyushi_url || uni.official_links.youkou_url);
-  html += `<div class="estimated-banner" style="margin-top:12px">⚠️ 日程・条件は<strong>参考値</strong>で、学部により評定条件等が異なる場合があります。現高3生は2027年度入試。<strong>必ず公式の最新募集要項で確認</strong>してください。</div>`;
-  if (nyLink) html += `<div class="detail-links">${_link(nyLink, '入試情報・募集要項')}</div>`;
-  return html || '<p class="detail-lead">入試の詳細は公式サイトで確認してください。</p>';
+
+  // 公式リンク（入試サイト/募集要項の別ボタン。無ければGoogle検索）
+  const ol = uni.official_links || {};
+  let links = _link(ol.nyushi_url, '📋 公式入試サイト');
+  if (ol.youkou_url && ol.youkou_url !== ol.nyushi_url) links += _link(ol.youkou_url, '📄 募集要項');
+  if (!links) links = `<a class="detail-link" href="https://www.google.com/search?q=${encodeURIComponent(uni.name + ' 入試 2027')}" target="_blank" rel="noopener">🔍 Googleで「${_esc(uni.name)} 入試」を検索 ↗</a>`;
+
+  return banner + (html || '<p class="detail-lead">入試方式の詳細は公式サイトで確認してください。</p>') +
+    `<div class="detail-links">${links}</div>`;
 }
 
 function uniTabEmployment(uni) {
@@ -3362,8 +3387,11 @@ function deptOnlyBody(dept, uni) {
   const kk = isKokkoritsuUni(uni);
   const band = (h.min != null && h.max != null)
     ? ((h.min === h.max ? `${h.min}` : `${h.min}〜${h.max}`) + (kk ? '+5' : '') + (h.basis ? `（${h.basis}基準${kk ? '・国公立補正+5' : ''}）` : (kk ? '（国公立補正+5）' : ''))) : null;
-  const bai = dept.bairitsu && dept.bairitsu.ippan
-    ? Object.entries(dept.bairitsu.ippan).filter(([k]) => /^\d{4}$/.test(k)).map(([y, v]) => `${y}年 ${v}倍`).join(' / ') : null;
+  // 一般倍率: 年度昇順で推移表示＋出典
+  const baiE = (dept.bairitsu && dept.bairitsu.ippan)
+    ? Object.entries(dept.bairitsu.ippan).filter(([k]) => /^\d{4}$/.test(k)).sort((a, b) => Number(a[0]) - Number(b[0])) : [];
+  const baiSrc = (dept.bairitsu && dept.bairitsu.source_url) ? _link(dept.bairitsu.source_url, '出典') : '';
+  const bai = baiE.length ? (baiE.map(([y, v]) => `${y}年 ${v}倍`).join(' → ') + (baiSrc ? ' ' + baiSrc : '')) : null;
   const imap = new Map((DATA_V2.tags.interest || []).map(t => [t.id, t.label]));
   const itags = (dept.interest_tags || []).map(id => imap.get(id)).filter(Boolean);
   const emap = new Map((DATA_V2.tags.employment || []).map(t => [t.id, t.label]));
