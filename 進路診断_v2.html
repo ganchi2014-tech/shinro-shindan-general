@@ -1586,6 +1586,48 @@ main {
 .detail-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
 .detail-link { font-size: 13px; color: var(--accent); text-decoration: none; border: 1px solid var(--border-hi); border-radius: 8px; padding: 6px 12px; }
 .detail-link:hover { border-color: var(--accent); }
+.detail-caution { color: var(--text-dim); font-size: 12px; }
+
+/* 進路タブ: 就職の強み8分野の横棒 */
+.emp-ratings { display: flex; flex-direction: column; gap: 6px; margin: 8px 0 4px; }
+.emp-rating-row { display: grid; grid-template-columns: 10.4em 1fr 2.6em; align-items: center; gap: 8px; font-size: 12px; }
+.emp-rating-row.mine .err-label { color: var(--accent); font-weight: 700; }
+.err-label { color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.err-bar { height: 8px; background: var(--bg-card-hi); border-radius: 4px; overflow: hidden; }
+.err-fill { display: block; height: 100%; background: var(--primary); border-radius: 4px; }
+.err-val { color: var(--text-muted); text-align: right; font-variant-numeric: tabular-nums; }
+
+/* 入試タブ: 評定条件チップ・倍率ヒートバッジ */
+.hyoutei-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 4px; }
+.hyoutei-chips .hchip { font-size: 12px; font-weight: 600; color: var(--text); background: var(--card); border: 1px solid var(--border-hi); border-radius: 999px; padding: 4px 10px; }
+.hyoutei-chips .hchip b { color: var(--accent); font-weight: 700; }
+.heat-badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; font-weight: 600; background: var(--hb, var(--bg-card-hi)); color: #10131c; }
+
+/* 入試タブ: 日程の横タイムライン（ラベル列は両gridで同一pxにして月境界を揃える） */
+.sched-timeline { margin: 6px 0 12px; overflow-x: auto; }
+.sched-tl-inner { min-width: 340px; }
+.sched-axis { display: grid; grid-template-columns: 96px repeat(7, 1fr); font-size: 10px; color: var(--text-muted); margin-bottom: 2px; }
+.sched-axis span { border-left: 1px solid var(--border); padding-left: 3px; }
+.sched-axis span:first-child { border-left: none; }
+.sched-row { display: grid; grid-template-columns: 96px 1fr; align-items: center; gap: 0; margin-bottom: 5px; }
+.sched-row-label { font-size: 11px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 6px; }
+.sched-track { position: relative; height: 16px; background: repeating-linear-gradient(to right, var(--border) 0, var(--border) 1px, transparent 1px, transparent calc(100% / 7)); border-radius: 3px; }
+.sched-band { position: absolute; top: 3px; height: 10px; background: var(--primary-soft); border: 1px solid var(--primary); border-radius: 5px; }
+.sched-band.est { border-style: dashed; opacity: .7; }
+.sched-dot { position: absolute; top: 1px; width: 14px; height: 14px; line-height: 14px; font-size: 10px; text-align: center; transform: translateX(-50%); }
+
+/* 学部ページ: 倍率トレンド・併願候補 */
+.trend-badge { display: inline-block; margin-left: 6px; font-size: 11px; font-weight: 700; border-radius: 8px; padding: 1px 7px; }
+.trend-badge.up { color: #f87171; background: rgba(239, 68, 68, 0.14); }  /* --danger直はAA未達(4.19)のため明色化(5.70) */
+.trend-badge.down { color: var(--success); background: rgba(16, 185, 129, 0.14); }
+.trend-badge.flat { color: var(--text-dim); background: var(--bg-card-hi); }
+.peer-row { display: flex; align-items: center; gap: 8px; width: 100%; text-align: left; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px; margin-bottom: 6px; cursor: pointer; color: var(--text); font-size: 12px; }
+.peer-row:hover { border-color: var(--border-hi); }
+.peer-name { flex: 1; min-width: 0; font-weight: 600; }
+.peer-name small { display: block; color: var(--text-dim); font-weight: 400; }
+.peer-band { color: var(--accent); font-weight: 700; white-space: nowrap; }
+.peer-type { font-size: 10px; border-radius: 6px; padding: 1px 6px; background: var(--bg-card-hi); color: var(--text-dim); white-space: nowrap; }
+.peer-more summary { cursor: pointer; font-size: 12px; color: var(--text-dim); margin: 4px 0 8px; }
 
 /* ============================ 結果ビュー切替タブ ============================ */
 .view-tabs { display: flex; gap: 6px; margin: 12px 0 4px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 4px; }
@@ -67331,6 +67373,70 @@ function _shikakuText(v) {
 function _link(url, label) { return url ? `<a href="${_esc(url)}" target="_blank" rel="noopener" class="detail-link">${label} ↗</a>` : ''; }
 const METHOD_TYPE_LABEL = { sogo: '総合型選抜', koubo: '学校推薦・公募', ippan: '一般選抜', kyotsu: '共テ利用' };
 
+// 想定倍率をヒートバッジ化。範囲文字列（例"2.0〜3.5倍"）の最大値（=厳しい側）で5段階に色分け
+function _bairitsuBadge(str) {
+  const nums = (String(str).match(/[0-9]+(?:\.[0-9]+)?/g) || []).map(Number)
+    .filter(n => n > 0 && n <= 100);  // 「2024年度実績」等の年号を倍率と誤認しないようガード
+  if (!nums.length) return _esc(str);
+  const top = Math.max.apply(null, nums);
+  const c = top <= 2 ? '#34d399' : top <= 3 ? '#a3e635' : top <= 5 ? '#fbbf24' : top <= 8 ? '#fb923c' : '#f87171';
+  return `<span class="heat-badge" style="--hb:${c}">${_esc(str)}</span>`;
+}
+
+// 和暦っぽい日付文字列 → 9月起点7ヶ月軸（9〜3月）上の%位置。月精度・4〜8月や解釈不能はnull
+function _jpDatePos(str) {
+  if (!str) return null;
+  const m = String(str).match(/(\d{1,2})月(?:(上旬|中旬|下旬)|\s*(\d{1,2})日)?/);
+  if (!m) return null;
+  const mo = Number(m[1]);
+  let frac = 0.5;                                              // 月のみ→月央
+  if (m[2]) frac = m[2] === '上旬' ? 0.17 : (m[2] === '中旬' ? 0.5 : 0.83);
+  else if (m[3]) frac = Math.min(0.97, Math.max(0.03, (Number(m[3]) - 0.5) / 31));
+  let idx;
+  if (mo >= 9 && mo <= 12) idx = mo - 9;
+  else if (mo >= 1 && mo <= 3) idx = mo + 3;
+  else return null;
+  return (idx + frac) / 7 * 100;
+}
+
+// 入試日程の横タイムライン（全方式を同一軸に積んで併願比較しやすく）
+// 帯=出願できる期間そのもの（手続〆切は⏰の別マーカー。帯に混ぜると出願期限と誤読されるため）
+function _schedTimeline(nd) {
+  const TL = { sogo: '総合', koubo: '公募', ippan: '一般' };
+  const rows = [];
+  let early = false;
+  ['sogo', 'koubo', 'ippan'].forEach(tp => (nd[tp] || []).forEach(s => {
+    const parts = String(s.application_period || '').split(/[〜~]/);
+    let start = _jpDatePos(parts[0]);
+    let clamp = false;
+    if (start == null && /[4-8]月/.test(parts[0] || '')) { start = 0; clamp = true; early = true; }  // 8月以前開始は左端に
+    const end = parts[1] ? _jpDatePos(parts[1]) : null;
+    const exam = _jpDatePos(s.exam_date);
+    const res = _jpDatePos(s.result_date);
+    const dead = _jpDatePos(s.enrollment_deadline);
+    if (start == null && exam == null && res == null && dead == null) return;  // 軸に置けない方式はスキップ（下の詳細には出る）
+    rows.push({ label: (clamp ? '◀ ' : '') + `${TL[tp]}: ${s.method_name || '日程'}`, start, end, exam, res, dead });
+  }));
+  if (!rows.length) return '';
+  const MONTHS = ['9月', '10月', '11月', '12月', '1月', '2月', '3月'];
+  let h = `<h4 class="detail-h">日程ざっくりタイムライン</h4><div class="sched-timeline"><div class="sched-tl-inner">` +
+    `<div class="sched-axis"><span></span>${MONTHS.map(m => `<span>${m}</span>`).join('')}</div>`;
+  rows.forEach(r => {
+    let track = '';
+    if (r.start != null) {
+      // 出願終了が読めない時は目安の短帯（点線）にして期間を捏造しない
+      const est = !(r.end != null && r.end > r.start);
+      const e = est ? Math.min(100, r.start + 3) : r.end;
+      track += `<span class="sched-band${est ? ' est' : ''}" style="left:${r.start.toFixed(1)}%;width:${Math.max(2, e - r.start).toFixed(1)}%"></span>`;
+    }
+    if (r.exam != null) track += `<span class="sched-dot" style="left:${r.exam.toFixed(1)}%">📝</span>`;
+    if (r.res != null) track += `<span class="sched-dot" style="left:${r.res.toFixed(1)}%">🌸</span>`;
+    if (r.dead != null) track += `<span class="sched-dot" style="left:${r.dead.toFixed(1)}%">⏰</span>`;
+    h += `<div class="sched-row"><span class="sched-row-label">${_esc(r.label)}</span><div class="sched-track">${track}</div></div>`;
+  });
+  return h + `</div></div><p class="detail-note">帯 = 出願できる期間（点線は終了日が読み取れず目安）、📝 = 試験日、🌸 = 合格発表、⏰ = 入学手続〆切（合格後に入学金を納める期限。出願の締切ではありません）${early ? '、◀ = 8月以前から出願開始' : ''}。月単位の目安なので、正確な日付は下の各方式・公式要項で確認してください。</p>`;
+}
+
 // 大学全体ページ
 function uniBand(uni) {
   const bounds = deptsOfUni(uni.id).map(d => d.hensachi).filter(h => h && h.min != null && h.max != null);
@@ -67378,6 +67484,7 @@ function uniTabOverview(uni) {
       _row('区分', _esc(uni.type || '')),
       _row('所在地', _esc(uni.prefecture || '') + (uni.campus_main ? (' / ' + _esc(uni.campus_main)) : '')),
       _row('偏差値帯（全学部）', uniBand(uni)),
+      _row('ここが違う', uni.unique_point ? _esc(uni.unique_point) : null),
       _row('ゼミ・研究の傾向', zemi ? _esc(zemi) : null),
     ]) +
     (ol.official_url ? `<div class="detail-links">${_link(ol.official_url, '公式サイト')}</div>` : '');
@@ -67398,6 +67505,32 @@ function uniTabEntrance(uni) {
     banner = `<div class="estimated-banner">⚠️ 日程・条件は<strong>推定の参考値</strong>で、学部により評定条件等が異なる場合があります。現高3生は2027年度入試。<strong>必ず公式の最新募集要項で確認</strong>してください。</div>`;
   }
 
+  // 評定条件のチップ一覧（タブ冒頭サマリー。詳細は各方式カードに既出）
+  const chipLabel = { sogo: '総合型', koubo: '公募推薦', ippan: '一般' };
+  const myG = (!state.diag.hyouteiUnknown && state.diag.hyoutei != null) ? Number(state.diag.hyoutei) : null;
+  const chips = [];
+  let marked = false;
+  ['sogo', 'koubo', 'ippan'].forEach(tp => {
+    const arr = emd[tp] || [];
+    if (!arr.length) return;                                   // 方式なし（総合型なし47大学等）はチップも出さない
+    // 条件はデータから導出（現データではippanは全件評定nullなので固定文言にフォールバック）
+    let vals = [...new Set(arr.map(r => r.hyoutei_note || (r.hyoutei_min != null ? `${r.hyoutei_min}以上` : null)).filter(Boolean))];
+    if (!vals.length) vals = tp === 'ippan' ? ['評定は関係なし（当日の学力試験で決まる）'] : ['要確認'];
+    // 診断で入力した自分の評定と照合（数値条件が読める方式のみ）
+    let mark = '';
+    if (myG != null && tp !== 'ippan') {
+      const mins = arr.map(r => r.hyoutei_min != null ? r.hyoutei_min : (String(r.hyoutei_note || '').match(/([0-9]\.[0-9])/) || [])[1])
+        .filter(v => v != null).map(Number);
+      if (mins.length) { mark = myG >= Math.min.apply(null, mins) ? ' ✅' : ' ⚠️'; marked = true; }
+    }
+    chips.push(`<span class="hchip">${chipLabel[tp]}: <b>${_esc(vals.join(' / '))}</b>${mark}</span>`);
+  });
+  if (chips.length && myG != null) chips.unshift(`<span class="hchip">あなたの評定: <b>${_esc(myG)}</b></span>`);
+  const chipHtml = chips.length
+    ? `<div class="hyoutei-chips"><span style="font-size:12px;color:var(--text-muted);align-self:center">📊 評定条件</span>${chips.join('')}</div>` +
+      (marked ? `<p class="detail-note">✅ = あなたの評定で条件を満たせる見込み ／ ⚠️ = 条件に届いていない可能性。学部により条件が違うことがあるので目安です。</p>` : '')
+    : '';
+
   let html = '';
   ['sogo', 'koubo', 'ippan'].forEach(tp => {  // kyotsu(共テ利用)は大学単位の詳細データが無いため出さない（可否は学部ページ）
     const rows = (emd[tp] || []); const sched = (nd[tp] || []);
@@ -67410,7 +67543,7 @@ function uniTabEntrance(uni) {
           _row('出願区分', r.type ? _esc(r.type) : null),
           _row('選考内容', _joinArr(r.selection_content)),
           _row('試験科目', r.subjects ? _esc(r.subjects) : null),
-          _row('想定倍率', (r.bairitsu || r.baiio) ? _esc(r.bairitsu || r.baiio) : null),  // baiioは綴り誤りキーの吸収
+          _row('想定倍率', (r.bairitsu || r.baiio) ? _bairitsuBadge(r.bairitsu || r.baiio) : null),  // baiioは綴り誤りキーの吸収
           _row('出願時期', r.application_period ? _esc(r.application_period) : null),
         ]) +
         (r.notes ? `<div class="method-note">${_esc(r.notes)}</div>` : '') + `</div>`;
@@ -67436,7 +67569,11 @@ function uniTabEntrance(uni) {
   if (ol.youkou_url && ol.youkou_url !== ol.nyushi_url) links += _link(ol.youkou_url, '📄 募集要項');
   if (!links) links = `<a class="detail-link" href="https://www.google.com/search?q=${encodeURIComponent(uni.name + ' 入試 2027')}" target="_blank" rel="noopener">🔍 Googleで「${_esc(uni.name)} 入試」を検索 ↗</a>`;
 
-  return banner + (html || '<p class="detail-lead">入試方式の詳細は公式サイトで確認してください。</p>') +
+  // 想定倍率ヒートバッジを使った場合のみ色の凡例を出す
+  if (html.indexOf('heat-badge') !== -1) {
+    html += `<p class="detail-note">🎨 想定倍率の色は<strong>赤に近いほど競争が激しい</strong>（倍率が高い＝受ける人が多く不合格も多い）目安です。</p>`;
+  }
+  return banner + chipHtml + _schedTimeline(nd) + (html || '<p class="detail-lead">入試方式の詳細は公式サイトで確認してください。</p>') +
     `<div class="detail-links">${links}</div>`;
 }
 
@@ -67445,16 +67582,91 @@ function uniTabEmployment(uni) {
   const emp = uni.employment || {};
   const cc = uni.career_center || {};
   const stars = (n) => (n != null ? '★'.repeat(Math.max(0, Math.min(5, n))) + '☆'.repeat(5 - Math.max(0, Math.min(5, n))) : null);
-  return _dl([
+  const noCheck = (v) => (v && !/要確認/.test(String(v))) ? _esc(v) : null;  // '要確認（〜）'等の揺れも含めプレースホルダは行ごと出さない
+
+  // リード: summary=1行の個性、note=実績の補足
+  let html = (emp.summary ? `<p class="detail-lead">${_esc(emp.summary)}</p>` : '') +
+    (sj.note ? `<p class="detail-note">${_esc(sj.note)}</p>` : '');
+
+  // 就職の強み8分野（編集部5段階）を横棒で可視化。診断で選んだ職種に対応する軸は🎯で強調
+  if (emp.ratings) {
+    const myKeys = new Set();
+    (state.diag.careers ? [...state.diag.careers] : []).forEach(id => {
+      const c = getCareerOption(id);
+      if (c) { if (c.rating) myKeys.add(c.rating); if (c.alt_rating) myKeys.add(c.alt_rating); }
+    });
+    const keys = Object.keys(CAREER_LABEL).filter(k => emp.ratings[k] != null)
+      .sort((a, b) => (emp.ratings[b] - emp.ratings[a]) || (myKeys.has(b) - myKeys.has(a)));
+    if (keys.length) {
+      const marked = keys.some(k => myKeys.has(k));
+      html += `<h4 class="detail-h">就職の強み（分野別・本アプリ独自の目安）</h4><div class="emp-ratings">` +
+        keys.map(k => {
+          const v = emp.ratings[k];
+          const mine = myKeys.has(k);
+          return `<div class="emp-rating-row${mine ? ' mine' : ''}">` +
+            `<span class="err-label">${mine ? '🎯 ' : ''}${_esc(CAREER_LABEL[k])}</span>` +
+            `<span class="err-bar"><span class="err-fill" style="width:${v / 5 * 100}%"></span></span>` +
+            `<span class="err-val">${v}/5</span></div>`;
+        }).join('') +
+        `</div><p class="detail-note">※ 就職の傾向を示す本アプリ編集部の5段階の目安で、<strong>実際の就職率・合格率のデータではありません</strong>${marked ? '。🎯 = 診断で選んだ志望に関係する分野' : ''}。</p>`;
+    }
+  }
+
+  // 注力プログラム: キャリア支援(cc.features)との重複を除いて表示
+  const feats = Array.isArray(cc.features) ? cc.features : (cc.features ? [cc.features] : []);
+  const progs = (Array.isArray(uni.notable_programs) ? uni.notable_programs : [])
+    .filter(p => !feats.some(f => f === p || (p.length > 3 && f.length > 3 && (p.includes(f) || f.includes(p)))));
+
+  html += _dl([
     _row('就職率', sj.shushoku_rate ? _esc(sj.shushoku_rate) : null),
     _row('主な就職先', _joinArr(sj.top_employers)),
-    _row('教員就職', sj.kyoin_count ? _esc(sj.kyoin_count) : null),
+    _row('教員就職', noCheck(sj.kyoin_count)),
+    _row('警察官', noCheck(sj.keisatsu_count)),
+    _row('消防・救命', noCheck(sj.shobo_count)),
     _row('強み', _joinArr(emp.strengths)),
-    _row('資格に強い', _shikakuText(uni.shikaku_gokakuritsu)),
+    _row('注意点', emp.notes ? `<span class="detail-caution">${_esc(emp.notes)}</span>` : null),
     _row('キャリア支援', _joinArr(cc.features)),
+    _row('注力プログラム', _joinArr(progs)),
     _row('支援の充実度', stars(cc.quality)),
-  ]) + (uni.official_links && uni.official_links.shingaku_url ? `<div class="detail-links">${_link(uni.official_links.shingaku_url, '進路・就職実績')}</div>` : '')
-    || '<p class="detail-lead">就職情報は公式サイトで確認してください。</p>';
+    _row('キャリアセンターの一言', cc.note ? _esc(cc.note) : null),
+    _row('卒業生の活躍例', _joinArr(uni.notable_alumni)),
+  ]);
+
+  // 就職率のリテラシー注記（分母は大学ごとに異なるため断定しない）
+  if (sj.shushoku_rate) {
+    html += `<p class="detail-note">ℹ️ 多くの大学が公表する「就職率」は<strong>就職者÷就職希望者</strong>で計算され、進学者などは分母に含まれません。本アプリの値は目安で、算出基準は大学ごとに異なります。正確な定義・最新値は下の公式リンクで確認してください。</p>`;
+  }
+
+  // 資格・採用試験の強み（string/objectの2形式を構造化して独立セクションに）
+  const shk = uni.shikaku_gokakuritsu;
+  if (shk) {
+    let body = '';
+    if (typeof shk === 'string') body = `<p class="detail-lead">${_esc(shk)}</p>`;
+    else if (typeof shk === 'object') body = _dl([
+      _row('教員採用試験', shk.kyoin_saiyo ? _esc(shk.kyoin_saiyo) : null),
+      _row('公務員試験', shk.kouchikuin ? _esc(shk.kouchikuin) : null),
+      _row('取得できる教員免許', shk.kyoin_menkyo_shutoku ? _esc(shk.kyoin_menkyo_shutoku) : null),
+      _row('トレーナー資格等', shk.athletic_trainer ? _esc(shk.athletic_trainer) : null),
+      _row('備考', (shk.note || shk.notes) ? _esc(shk.note || shk.notes) : null),
+    ]);
+    if (body) html += `<h4 class="detail-h">資格・採用試験の強み</h4>` + body;
+  }
+
+  // グローバルな進路（留学）: 2スキーマ {available,destinations,scholarship} / {umu,ryugakusaki,shogakukin} を吸収
+  const ry = uni.ryugaku || {};
+  const ryAvail = ry.available !== undefined ? ry.available : ry.umu;
+  const ryDest = ry.destinations || ry.ryugakusaki;   // string or 配列
+  const rySchol = ry.scholarship || ry.shogakukin;
+  if (ryAvail === true || ryDest || rySchol) {
+    html += `<h4 class="detail-h">グローバルな進路（留学）</h4>` + _dl([
+      _row('留学制度', ryAvail === true ? '✅ 協定校への留学制度あり' : (ryAvail === false ? 'なし' : '要確認')),
+      _row('主な留学先', _joinArr(ryDest)),
+      _row('留学奨学金', rySchol ? _esc(rySchol) : null),
+    ]) + (ry.notes ? `<div class="method-note">${_esc(ry.notes)}</div>` : '');
+  }
+
+  if (uni.official_links && uni.official_links.shingaku_url) html += `<div class="detail-links">${_link(uni.official_links.shingaku_url, '進路・就職実績')}</div>`;
+  return html || '<p class="detail-lead">就職情報は公式サイトで確認してください。</p>';
 }
 
 function uniTabLife(uni) {
@@ -67516,6 +67728,41 @@ function renderDetail(deptId) {
   document.getElementById('tabContent').innerHTML = deptOnlyBody(dept, uni);
 }
 
+// 同レベル併願候補: 同系統タグ × 実効偏差値±2 の他大学学部（クライアント側O(650)フィルタ）
+// 「同レベル」の比較はアプリ全体の難度モデルに合わせ、国公立に+kkBonus()した実効値で行う（生値比較だと定義が二重化する）
+function renderSameLevelPeers(dept, uni) {
+  const h = dept.hensachi || {};
+  const anchorTags = (dept.interest_tags || []).filter(t => t !== 'unclassified');
+  const head = `<h4 class="detail-h">同レベルの併願候補</h4>`;
+  if (!anchorTags.length) return head + `<p class="detail-note">この学部は分野の分類データが未整備のため、似た学部を探せませんでした。</p>`;
+  if (h.min == null) return '';
+  const kb = kkBonus();
+  const eff = (d, u) => d.hensachi.min + (isKokkoritsuUni(u) ? kb : 0);   // 実効難度
+  const myEff = eff(dept, uni);
+  const typeOrder = { '国立': 0, '公立': 1, '私立': 2 };
+  const rows = (DATA_V2.departments || [])
+    .filter(o => o.dept_id !== dept.dept_id && o.uni_id !== dept.uni_id &&
+      o.hensachi && o.hensachi.min != null &&
+      (o.interest_tags || []).some(t => anchorTags.includes(t)))
+    .map(o => ({ o, u: uniById(o.uni_id) }))
+    .filter(r => r.u && Math.abs(eff(r.o, r.u) - myEff) <= 2);
+  if (!rows.length) return head + `<p class="detail-note">同レベル・同系統の学部が収録データ内に見つかりません。</p>`;
+  rows.sort((x, y) => (Math.abs(eff(x.o, x.u) - myEff) - Math.abs(eff(y.o, y.u) - myEff)) ||
+    ((typeOrder[x.u.type] != null ? typeOrder[x.u.type] : 3) - (typeOrder[y.u.type] != null ? typeOrder[y.u.type] : 3)));
+  const mk = (r) => {
+    const reg = (DATA_V2.regions && DATA_V2.regions[r.u.region]) || {};
+    return `<button class="peer-row" data-detail="${r.o.dept_id}">` +
+      `<span class="peer-name">${_esc(r.o.name)}<small>${_esc(r.u.name_short || r.u.name)}</small></span>` +
+      `<span class="region-badge" style="background:${reg.color || '#666'}">${_esc(reg.label || '')}</span>` +
+      `<span class="peer-type">${_esc(r.u.type || '')}</span>` +
+      `<span class="peer-band">${fmtBand(r.o.hensachi, isKokkoritsuUni(r.u))}</span></button>`;
+  };
+  let body = rows.slice(0, 8).map(mk).join('');
+  if (rows.length > 8) body += `<details class="peer-more"><summary>他${rows.length - 8}件を表示</summary>${rows.slice(8).map(mk).join('')}</details>`;
+  return head + body +
+    `<p class="detail-note">📌 学べる分野が近く、難易度がこの学部とほぼ同じ（偏差値の低いほうの数字で±2以内。国公立は実質難度+${kb}で比較）学部を、近い順に並べています。タップでその学部のページへ。<br>💡 併願 = 本命と同じ時期に、他の大学にも出願しておくこと。</p>`;
+}
+
 // 学部固有情報のみ（倍率・キャンパス・資格・ゼミ・入試方式の可否・就職分野）
 function deptOnlyBody(dept, uni) {
   const h = dept.hensachi || {};
@@ -67523,11 +67770,23 @@ function deptOnlyBody(dept, uni) {
   const kb = kkBonus();
   const band = (h.min != null && h.max != null)
     ? ((h.min === h.max ? `${h.min}` : `${h.min}〜${h.max}`) + (kk ? '+' + kb : '') + (h.basis ? `（${h.basis}基準${kk ? '・国公立補正+' + kb : ''}）` : (kk ? `（国公立補正+${kb}）` : ''))) : null;
-  // 一般倍率: 年度昇順で推移表示＋出典
+  // 一般倍率: 年度昇順で推移表示＋前年比バッジ＋出典
   const baiE = (dept.bairitsu && dept.bairitsu.ippan)
     ? Object.entries(dept.bairitsu.ippan).filter(([k]) => /^\d{4}$/.test(k)).sort((a, b) => Number(a[0]) - Number(b[0])) : [];
   const baiSrc = (dept.bairitsu && dept.bairitsu.source_url) ? _link(dept.bairitsu.source_url, '出典') : '';
-  const bai = baiE.length ? (baiE.map(([y, v]) => `${y}年 ${v}倍`).join(' → ') + (baiSrc ? ' ' + baiSrc : '')) : null;
+  // 前年比: 最新の連続2年が両方数値のときのみ（年度キーはハードコードせず動的に取る。
+  // 単年差分なので隔年現象は判定できない＝「狙い目」等の絶対表現はせず相対表現に留める）
+  let trend = '';
+  if (baiE.length >= 2) {
+    const prev = baiE[baiE.length - 2], last = baiE[baiE.length - 1];
+    if (Number(last[0]) - Number(prev[0]) === 1 && typeof prev[1] === 'number' && typeof last[1] === 'number') {
+      const diff = last[1] - prev[1];
+      trend = diff >= 0.3 ? ' <span class="trend-badge up">↑ 前年より倍率アップ</span>'
+        : diff <= -0.3 ? ' <span class="trend-badge down">↓ 前年より倍率ダウン</span>'
+          : ' <span class="trend-badge flat">→ ほぼ横ばい</span>';
+    }
+  }
+  const bai = baiE.length ? (baiE.map(([y, v]) => `${y}年 ${v}倍`).join(' → ') + trend + (baiSrc ? ' ' + baiSrc : '')) : null;
   const imap = new Map((DATA_V2.tags.interest || []).map(t => [t.id, t.label]));
   const itags = (dept.interest_tags || []).map(id => imap.get(id)).filter(Boolean);
   const emap = new Map((DATA_V2.tags.employment || []).map(t => [t.id, t.label]));
@@ -67550,18 +67809,25 @@ function deptOnlyBody(dept, uni) {
       zemiList.map(z => `<div class="method-item"><div class="method-name">${_esc(z.name || '')}</div>` +
         (z.theme ? `<div class="method-note">${_esc(z.theme)}</div>` : '') + `</div>`).join('');
   }
+  // 偏差値の出典リンク＋検証日（source_urlはパスナビ掲載の河合ボーダー。7件nullは省略）
+  const hSrc = h.source_url ? ' ' + _link(h.source_url, '出典') : '';
+  const hDate = h.verified_date ? ` <span class="ok-badge">${_esc(h.verified_date)}時点</span>` : '';
+  const hensachiNote = band
+    ? `<p class="detail-note">📐 偏差値は<strong>合格可能性50%</strong>のボーダーライン（旺文社パスナビ掲載の河合塾ボーダー）です。模試によって数値の意味が変わるため、診断では「どの模試？」の回答で自動換算しています。</p>` : '';
   return warn +
     `<h4 class="detail-h">この学部の情報</h4>` +
     _dl([
-      _row('偏差値', band),
+      _row('偏差値', band ? band + hSrc + hDate : null),
       _row('倍率（一般）', bai),
       _row('キャンパス', dept.campus ? _esc(dept.campus) : null),
       _row('学べる分野', _joinArr(itags)),
       _row('取得できる資格', _joinArr(dept.qualifications)),
       _row('この学部の就職分野', _joinArr(empf)),
     ]) +
+    hensachiNote +
     zemiHtml +
     methodsHtml +
+    renderSameLevelPeers(dept, uni) +
     `<p class="detail-note">💡 特徴・学費・生活・就職実績・入試日程は大学共通です。下のボタンから大学ページで確認できます。</p>` +
     `<button class="uni-page-btn" data-uni="${uni.id}">🏫 この大学の全体（特徴・費用・生活・就職実績・入試日程）を見る →</button>`;
 }
