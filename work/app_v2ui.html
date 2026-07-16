@@ -1569,6 +1569,7 @@ main {
 /* ============================ 詳細（data_v2） ============================ */
 .detail-dept { font-size: 15px; color: var(--text-dim); margin: 2px 0 8px; font-weight: 600; }
 .detail-lead { font-size: 13px; line-height: 1.7; color: var(--text-dim); margin: 4px 0 12px; }
+.detail-note { font-size: 12px; line-height: 1.6; color: var(--text-muted); margin: 16px 0 8px; padding: 8px 10px; background: var(--card); border-radius: 8px; }
 .detail-h { font-size: 14px; margin: 16px 0 8px; color: var(--text); border-left: 3px solid var(--accent); padding-left: 8px; }
 .method-item { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
 .method-name { font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 4px; }
@@ -1880,12 +1881,6 @@ main {
     <!-- ============================ UNIVERSITY DETAIL ============================ -->
     <section class="screen" data-screen="detail" hidden>
       <div class="detail-header" id="detailHeader"></div>
-      <nav class="tab-row">
-        <button class="tab active" data-tab="basic">🏠 概要</button>
-        <button class="tab" data-tab="entrance">📝 入試</button>
-        <button class="tab" data-tab="employment">💼 進路</button>
-        <button class="tab" data-tab="life">🌏 生活</button>
-      </nav>
       <div class="tab-content" id="tabContent"></div>
     </section>
 
@@ -1952,6 +1947,7 @@ const state = {
   lastResult: null,    // engine_v2 の診断結果
   resultView: 'dept',  // 結果ビュー: 'dept'(学部) | 'uni'(大学)
   currentUni: null,    // 大学全体ページで表示中の uni_id
+  currentUniTab: 'overview', // 大学ページのタブ
 };
 
 // ---------- 評定平均ヒント ----------
@@ -3153,53 +3149,145 @@ function _link(url, label) { return url ? `<a href="${_esc(url)}" target="_blank
 const METHOD_TYPE_LABEL = { sogo: '総合型選抜', koubo: '学校推薦・公募', ippan: '一般選抜', kyotsu: '共テ利用' };
 
 // 大学全体ページ
+function uniBand(uni) {
+  const bounds = deptsOfUni(uni.id).map(d => d.hensachi).filter(h => h && h.min != null && h.max != null);
+  if (!bounds.length) return '偏差値データなし';
+  const mn = Math.min(...bounds.map(h => h.min)), mx = Math.max(...bounds.map(h => h.max));
+  return mn === mx ? `偏差値 ${mn}` : `偏差値 ${mn}〜${mx}`;
+}
+
+// 大学全体ページ（共通情報を一括・タブ表示）
 function renderUniPage(uniId) {
-  if (uniId != null) state.currentUni = uniId;
+  if (uniId != null) { state.currentUni = uniId; state.currentUniTab = 'overview'; }
   const uni = uniById(state.currentUni);
   if (!uni) return;
-  const body = document.getElementById('uniDetailBody');
-  const depts = deptsOfUni(uni.id);
-  const midOf = (d) => { const h = d.hensachi || {}; return (h.min != null && h.max != null) ? (h.min + h.max) / 2 : (h.min != null ? h.min : (h.max != null ? h.max : -1)); };
-  const bounds = depts.map(d => d.hensachi).filter(h => h && h.min != null && h.max != null);
-  const allMin = bounds.length ? Math.min(...bounds.map(h => h.min)) : null;
-  const allMax = bounds.length ? Math.max(...bounds.map(h => h.max)) : null;
-  const band = (allMin != null) ? (allMin === allMax ? `偏差値 ${allMin}` : `偏差値 ${allMin}〜${allMax}`) : '偏差値データなし';
   const region = (DATA_V2.regions && DATA_V2.regions[uni.region]) || {};
-  const lc = uni.living_cost || {};
+  const band = uniBand(uni);
+  const tabs = [['overview', '🏠 概要'], ['entrance', '📝 入試'], ['employment', '💼 進路'], ['life', '🌏 生活'], ['depts', '🎓 学部']];
+  const tab = state.currentUniTab || 'overview';
+  document.getElementById('uniDetailBody').innerHTML =
+    `<div class="detail-header"><h2>${_esc(uni.name)}</h2>` +
+    `<div class="uni-meta"><span class="region-badge" style="background:${region.color || '#666'}">${_esc(region.label || '')}</span>` +
+    `<span class="meta-tag">${_esc(uni.type || '')}</span><span class="meta-tag">${_esc(uni.prefecture || '')}</span><span class="meta-tag">${band}</span></div></div>` +
+    `<nav class="tab-row">${tabs.map(([k, l]) => `<button class="tab${k === tab ? ' active' : ''}" data-utab="${k}">${l}</button>`).join('')}</nav>` +
+    `<div class="tab-content" id="uniTabContent"></div>`;
+  renderUniTab(tab);
+}
+
+function renderUniTab(tab) {
+  state.currentUniTab = tab;
+  document.querySelectorAll('#uniDetailBody .tab').forEach(t => t.classList.toggle('active', t.dataset.utab === tab));
+  const uni = uniById(state.currentUni);
+  const el = document.getElementById('uniTabContent');
+  if (!uni) { el.innerHTML = ''; return; }
+  if (tab === 'overview') el.innerHTML = uniTabOverview(uni);
+  else if (tab === 'entrance') el.innerHTML = uniTabEntrance(uni);
+  else if (tab === 'employment') el.innerHTML = uniTabEmployment(uni);
+  else if (tab === 'life') el.innerHTML = uniTabLife(uni);
+  else if (tab === 'depts') el.innerHTML = uniTabDepts(uni);
+}
+
+function uniTabOverview(uni) {
+  const zemi = typeof uni.zemi_features === 'string' ? uni.zemi_features : null;
+  const ol = uni.official_links || {};
+  return (uni.feature ? `<p class="detail-lead">${_esc(uni.feature)}</p>` : '') +
+    _dl([
+      _row('区分', _esc(uni.type || '')),
+      _row('所在地', _esc(uni.prefecture || '') + (uni.campus_main ? (' / ' + _esc(uni.campus_main)) : '')),
+      _row('偏差値帯（全学部）', uniBand(uni)),
+      _row('ゼミ・研究の傾向', zemi ? _esc(zemi) : null),
+    ]) +
+    (ol.official_url ? `<div class="detail-links">${_link(ol.official_url, '公式サイト')}</div>` : '');
+}
+
+function uniTabEntrance(uni) {
+  const emd = uni.entry_method_details || {};
+  const nd = uni.nyushi_details || {};
+  let html = '';
+  ['sogo', 'koubo', 'ippan', 'kyotsu'].forEach(tp => {
+    const rows = (emd[tp] || []); const sched = (nd[tp] || []);
+    if (!rows.length && !sched.length) return;
+    html += `<h4 class="detail-h">${_esc(METHOD_TYPE_LABEL[tp] || tp)}</h4>`;
+    rows.forEach(r => {
+      html += `<div class="method-item"><div class="method-name">${_esc(r.method_name || '')}</div>` +
+        _dl([
+          _row('評定条件', r.hyoutei_note ? _esc(r.hyoutei_note) : (r.hyoutei_min != null ? `${r.hyoutei_min}以上` : null)),
+          _row('選考内容', _joinArr(r.selection_content)),
+          _row('求める活動', r.required_achievement ? _esc(r.required_achievement) : null),
+          _row('出願時期', r.application_period ? _esc(r.application_period) : null),
+        ]) + `</div>`;
+    });
+    sched.forEach(s => {
+      html += `<div class="method-item"><div class="method-name">${_esc(s.method_name || '日程')}</div>` +
+        _dl([
+          _row('出願期間', s.application_period ? _esc(s.application_period) : null),
+          _row('試験日', s.exam_date ? _esc(s.exam_date) : null),
+          _row('合格発表', s.result_date ? _esc(s.result_date) : null),
+        ]) + `</div>`;
+    });
+  });
+  const nyLink = uni.official_links && (uni.official_links.nyushi_url || uni.official_links.youkou_url);
+  html += `<div class="estimated-banner" style="margin-top:12px">⚠️ 日程・条件は<strong>参考値</strong>で、学部により評定条件等が異なる場合があります。現高3生は2027年度入試。<strong>必ず公式の最新募集要項で確認</strong>してください。</div>`;
+  if (nyLink) html += `<div class="detail-links">${_link(nyLink, '入試情報・募集要項')}</div>`;
+  return html || '<p class="detail-lead">入試の詳細は公式サイトで確認してください。</p>';
+}
+
+function uniTabEmployment(uni) {
   const sj = uni.shingaku_jisseki || {};
+  const emp = uni.employment || {};
   const cc = uni.career_center || {};
-  const access = uni.access_from_shiga_min != null ? `滋賀から約${uni.access_from_shiga_min}分（${uni.commute_possible ? '通学可' : '下宿推奨'}）` : null;
-  const infoRows = _dl([
-    _row('区分', _esc(uni.type || '')),
-    _row('所在地', _esc(uni.prefecture || '') + (uni.campus_main ? (' / ' + _esc(uni.campus_main)) : '')),
-    _row('偏差値帯', band),
-    _row('アクセス', access),
-    _row('通学備考', uni.commute_note ? _esc(uni.commute_note) : null),
-    _row('学費（年）', _yen(uni.tuition_yen_per_year)),
-    _row('生活費（月）', _yen(lc.monthly_total)),
+  const stars = (n) => (n != null ? '★'.repeat(Math.max(0, Math.min(5, n))) + '☆'.repeat(5 - Math.max(0, Math.min(5, n))) : null);
+  return _dl([
     _row('就職率', sj.shushoku_rate ? _esc(sj.shushoku_rate) : null),
     _row('主な就職先', _joinArr(sj.top_employers)),
+    _row('教員就職', sj.kyoin_count ? _esc(sj.kyoin_count) : null),
+    _row('強み', _joinArr(emp.strengths)),
+    _row('資格に強い', typeof uni.shikaku_gokakuritsu === 'string' ? _esc(uni.shikaku_gokakuritsu) : null),
     _row('キャリア支援', _joinArr(cc.features)),
+    _row('支援の充実度', stars(cc.quality)),
+  ]) + (uni.official_links && uni.official_links.shingaku_url ? `<div class="detail-links">${_link(uni.official_links.shingaku_url, '進路・就職実績')}</div>` : '')
+    || '<p class="detail-lead">就職情報は公式サイトで確認してください。</p>';
+}
+
+function uniTabLife(uni) {
+  const lc = uni.living_cost || {};
+  const ac = uni.additional_costs || {};
+  const sg = uni.shogakukin || {};
+  const cn = uni.campus_neighborhood || {};
+  const oc = uni.open_campus || {};
+  const access = uni.access_from_shiga_min != null
+    ? `滋賀から片道 約${uni.access_from_shiga_min}分（${uni.commute_possible ? '通学可' : '下宿推奨'}）` : null;
+  let html = _dl([
+    _row('学費（年）', _yen(uni.tuition_yen_per_year)),
+    _row('学費の目安', uni.tuition_note ? _esc(uni.tuition_note) : null),
+    _row('家賃目安', (lc.rent_min != null) ? `月 ${Number(lc.rent_min).toLocaleString()}〜${Number(lc.rent_max).toLocaleString()}円` : null),
+    _row('生活費（月）', _yen(lc.monthly_total)),
+    _row('4年間の生活費目安', _yen(lc.four_year_total)),
+    _row('その他費用', [ac.textbook_yen_per_year ? '教材 約' + Number(ac.textbook_yen_per_year).toLocaleString() + '円/年' : null, ac.jisshu_hi ? _esc(ac.jisshu_hi) : null].filter(Boolean).join(' / ') || null),
+    _row('奨学金', sg.general_shogakukin ? _esc(sg.general_shogakukin) : null),
+    _row('アクセス', access),
+    _row('通学備考', uni.commute_note ? _esc(uni.commute_note) : null),
+    _row('最寄駅', cn.nearest_station ? _esc(cn.nearest_station) + (cn.walking_min_from_station ? `（徒歩${cn.walking_min_from_station}分）` : '') : null),
+    _row('周辺環境', cn.area_description ? _esc(cn.area_description) : null),
+    _row('オープンcampus', oc.open_campus_seasons ? _esc(oc.open_campus_seasons) : null),
   ]);
-  const ol = uni.official_links || {};
-  const links = [_link(ol.official_url, '公式サイト'), _link(ol.nyushi_url, '入試情報'), _link(ol.shingaku_url, '進路・就職')].filter(Boolean).join('');
-  const sorted = [...depts].sort((a, b) => midOf(b) - midOf(a));
-  const deptRows = sorted.map(d => {
+  const links = [_link(sg.shogakukin_official_url, '奨学金情報'), _link(oc.open_campus_url, 'オープンキャンパス')].filter(Boolean).join('');
+  if (links) html += `<div class="detail-links">${links}</div>`;
+  return html || '<p class="detail-lead">生活情報は公式サイトで確認してください。</p>';
+}
+
+function uniTabDepts(uni) {
+  const midOf = (d) => { const h = d.hensachi || {}; return (h.min != null && h.max != null) ? (h.min + h.max) / 2 : (h.min != null ? h.min : (h.max != null ? h.max : -1)); };
+  const sorted = [...deptsOfUni(uni.id)].sort((a, b) => midOf(b) - midOf(a));
+  const rows = sorted.map(d => {
     const h = d.hensachi || {};
     const b = (h.min != null && h.max != null) ? (h.min === h.max ? `偏差値 ${h.min}` : `偏差値 ${h.min}〜${h.max}`) : '—';
     return `<button class="uni-dept-row" data-detail="${d.dept_id}"><span class="udr-name">${_esc(d.name)}</span><span class="udr-band">${b}</span><span class="udr-go">→</span></button>`;
   }).join('');
-  body.innerHTML =
-    `<div class="detail-header"><h2>${_esc(uni.name)}</h2>` +
-    `<div class="uni-meta"><span class="region-badge" style="background:${region.color || '#666'}">${_esc(region.label || '')}</span>` +
-    `<span class="meta-tag">${_esc(uni.type || '')}</span><span class="meta-tag">${_esc(uni.prefecture || '')}</span><span class="meta-tag">${band}</span></div></div>` +
-    (uni.feature ? `<p class="detail-lead">${_esc(uni.feature)}</p>` : '') +
-    infoRows +
-    (links ? `<div class="detail-links">${links}</div>` : '') +
-    `<h4 class="detail-h">この大学の学部（${sorted.length}）— タップで学部ページへ</h4>` +
-    `<div class="uni-dept-list">${deptRows}</div>`;
+  return `<p class="detail-lead">タップで学部ページへ（学部固有の偏差値・倍率・資格・入試方式）</p><div class="uni-dept-list">${rows}</div>`;
 }
 
+// 学部ページ（学部固有情報のみ）
 function renderDetail(deptId) {
   if (deptId != null) state.currentDetail = deptId;
   const { dept, uni } = findDeptV2(state.currentDetail);
@@ -3216,21 +3304,53 @@ function renderDetail(deptId) {
       <span class="meta-tag">${_esc(uni.type || '')}</span>
       <span class="meta-tag">${_esc(uni.prefecture || '')}</span>
       <span class="meta-tag">${band}</span>
-    </div>
-    <button class="uni-page-btn" data-uni="${uni.id}">🏫 この大学の全体を見る →</button>`;
-  renderTab(state.currentTab || 'basic');
+    </div>`;
+  document.getElementById('tabContent').innerHTML = deptOnlyBody(dept, uni);
 }
 
-function renderTab(tab) {
-  state.currentTab = tab;
-  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
-  const content = document.getElementById('tabContent');
-  const { dept, uni } = findDeptV2(state.currentDetail);
-  if (!dept || !uni) { content.innerHTML = ''; return; }
-  if (tab === 'basic') content.innerHTML = detailBasicV2(dept, uni);
-  else if (tab === 'entrance') content.innerHTML = detailEntranceV2(dept, uni);
-  else if (tab === 'employment') content.innerHTML = detailEmploymentV2(dept, uni);
-  else if (tab === 'life') content.innerHTML = detailLifeV2(dept, uni);
+// 学部固有情報のみ（倍率・キャンパス・資格・ゼミ・入試方式の可否・就職分野）
+function deptOnlyBody(dept, uni) {
+  const h = dept.hensachi || {};
+  const band = (h.min != null && h.max != null)
+    ? ((h.min === h.max ? `${h.min}` : `${h.min}〜${h.max}`) + (h.basis ? `（${h.basis}基準）` : '')) : null;
+  const bai = dept.bairitsu && dept.bairitsu.ippan
+    ? Object.entries(dept.bairitsu.ippan).filter(([k]) => /^\d{4}$/.test(k)).map(([y, v]) => `${y}年 ${v}倍`).join(' / ') : null;
+  const imap = new Map((DATA_V2.tags.interest || []).map(t => [t.id, t.label]));
+  const itags = (dept.interest_tags || []).map(id => imap.get(id)).filter(Boolean);
+  const emap = new Map((DATA_V2.tags.employment || []).map(t => [t.id, t.label]));
+  const empf = (dept.employment_fields || []).map(id => emap.get(id)).filter(Boolean);
+  const zemiList = (dept.zemi && dept.zemi.length) ? dept.zemi : [];
+  const warn = dept.data_status === 'unconfirmed'
+    ? `<div class="estimated-banner">⚠️ この学部のデータは<strong>未確認</strong>です。必ず公式で確認してください。</div>` : '';
+  const avail = (dept.entry_methods || []).filter(m => m && m.available);
+  let methodsHtml = '';
+  if (avail.length) {
+    methodsHtml = `<h4 class="detail-h">使える入試方式</h4>` + avail.map(m => {
+      const v = m.verified ? '<span class="ok-badge">✓確認済</span>' : '';
+      return `<div class="method-item"><div class="method-name">${_esc(METHOD_TYPE_LABEL[m.type] || m.type)} ${v}</div>` +
+        (m.note ? `<div class="method-note">${_esc(m.note)}</div>` : '') + `</div>`;
+    }).join('');
+  }
+  let zemiHtml = '';
+  if (zemiList.length) {
+    zemiHtml = `<h4 class="detail-h">看板ゼミ・研究（${zemiList.length}）</h4>` +
+      zemiList.map(z => `<div class="method-item"><div class="method-name">${_esc(z.name || '')}</div>` +
+        (z.theme ? `<div class="method-note">${_esc(z.theme)}</div>` : '') + `</div>`).join('');
+  }
+  return warn +
+    `<h4 class="detail-h">この学部の情報</h4>` +
+    _dl([
+      _row('偏差値', band),
+      _row('倍率（一般）', bai),
+      _row('キャンパス', dept.campus ? _esc(dept.campus) : null),
+      _row('学べる分野', _joinArr(itags)),
+      _row('取得できる資格', _joinArr(dept.qualifications)),
+      _row('この学部の就職分野', _joinArr(empf)),
+    ]) +
+    zemiHtml +
+    methodsHtml +
+    `<p class="detail-note">💡 特徴・学費・生活・就職実績・入試日程は大学共通です。下のボタンから大学ページで確認できます。</p>` +
+    `<button class="uni-page-btn" data-uni="${uni.id}">🏫 この大学の全体（特徴・費用・生活・就職実績・入試日程）を見る →</button>`;
 }
 
 function detailBasicV2(dept, uni) {
@@ -3841,9 +3961,6 @@ async function init() {
     runDiagnose([]);
   });
   document.getElementById('editDiagBtn').addEventListener('click', () => go('diag-1'));
-  document.querySelectorAll('.tab').forEach(t => {
-    t.addEventListener('click', () => renderTab(t.dataset.tab));
-  });
 
   // 学部カードのお気に入り/詳細（イベント委譲）
   document.addEventListener('click', (e) => {
@@ -3864,6 +3981,11 @@ async function init() {
     if (uniBtn) {
       renderUniPage(uniBtn.getAttribute('data-uni'));
       go('uni-detail');
+      return;
+    }
+    const utab = e.target.closest('[data-utab]');
+    if (utab) {
+      renderUniTab(utab.getAttribute('data-utab'));
     }
   });
 
