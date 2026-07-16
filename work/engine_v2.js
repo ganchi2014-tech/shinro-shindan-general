@@ -52,7 +52,11 @@ function hardFilter(departments, universities, userProfile) {
     if (!uni) continue;
     if (d.data_status === 'unconfirmed') { excluded.unconfirmed++; continue; }
     if (regions.size && !regions.has(uni.region)) { excluded.byRegion++; continue; }
-    if (userProfile.commuteOnly && uni.commute_possible !== true) { excluded.byRegion++; continue; }
+    // 通学: 距離しきい値(分)があれば滋賀からの所要時間で絞る（厳しめ90/緩め120）。無ければ従来のcommute_possible。
+    const maxMin = userProfile.commuteMaxMin;
+    if (maxMin != null) {
+      if (uni.access_from_shiga_min == null || uni.access_from_shiga_min > maxMin) { excluded.byRegion++; continue; }
+    } else if (userProfile.commuteOnly && uni.commute_possible !== true) { excluded.byRegion++; continue; }
     passed.push({ dept: d, uni });
   }
   return { passed, excluded };

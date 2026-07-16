@@ -47,8 +47,8 @@ const E = require('./engine_v2.js');
 // ---- hardFilter ----
 {
   const universities = [
-    { id: 'ushiga', name: '滋賀大', region: 'shiga', commute_possible: true },
-    { id: 'ukanto', name: '関東大', region: 'kanto', commute_possible: false },
+    { id: 'ushiga', name: '滋賀大', region: 'shiga', commute_possible: true, access_from_shiga_min: 30 },
+    { id: 'ukanto', name: '関東大', region: 'kanto', commute_possible: false, access_from_shiga_min: 200 },
   ];
   const departments = [
     { dept_id: 'ushiga-a', uni_id: 'ushiga', data_status: 'verified' },
@@ -66,6 +66,15 @@ const E = require('./engine_v2.js');
   const r3 = E.hardFilter(departments, universities, { regions: [], commuteOnly: true });
   assert.strictEqual(r3.passed.length, 1);
   assert.strictEqual(r3.passed[0].dept.dept_id, 'ushiga-a');
+  // commuteMaxMin: 滋賀30分は残る、関東200分は除外（厳しめ90 / 緩め120 とも）
+  const r90 = E.hardFilter(departments, universities, { regions: [], commuteMaxMin: 90 });
+  assert.strictEqual(r90.passed.length, 1);
+  assert.strictEqual(r90.passed[0].dept.dept_id, 'ushiga-a');
+  // access_from_shiga_min が無い大学は距離指定時は除外される
+  const uNoAccess = [{ id: 'ux', name: 'X', region: 'other', commute_possible: true }];
+  const dNoAccess = [{ dept_id: 'ux-a', uni_id: 'ux', data_status: 'verified' }];
+  const rNo = E.hardFilter(dNoAccess, uNoAccess, { regions: [], commuteMaxMin: 120 });
+  assert.strictEqual(rNo.passed.length, 0, '所要時間不明は距離指定時に除外');
 }
 
 // ---- deptRiasecVector / riasecFitScore ----
