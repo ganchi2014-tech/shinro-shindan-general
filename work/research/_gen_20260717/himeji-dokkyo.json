@@ -1,0 +1,359 @@
+{
+ "uni": {
+  "id": "himeji-dokkyo",
+  "name": "姫路獨協大学",
+  "name_short": "姫路獨協大",
+  "prefecture": "兵庫県",
+  "type": "私立",
+  "campus_main": "本部キャンパス（姫路市上大野）",
+  "tuition_yen_per_year": 1150000,
+  "tuition_note": "人間社会学群の概算（要確認）。医療保健学部は約160万円、薬学部は約190〜210万円、看護学部は約160万円と学部により大きく異なる（要確認）",
+  "access_from_shiga_min": 160,
+  "commute_possible": false,
+  "commute_note": "草津からJR新快速で姫路まで約115分＋姫路駅から神姫バスで約20〜25分。通学は現実的でなく下宿前提",
+  "feature": "1987年に姫路市と獨協学園の公私協力方式で開学した大学。語学・法律・経済経営を横断的に学べる人間社会学群と、医療保健学部（理学療法・作業療法・言語聴覚）、薬学部、看護学部を持つ。文系と医療系が同じキャンパスにある中規模大学で、少人数教育と国家資格取得サポートが特色。姫路市街の北部に位置し、落ち着いた環境で学べる。",
+  "living_cost": {
+   "rent_min": 30000,
+   "rent_max": 50000,
+   "food_monthly": 25000,
+   "monthly_total": 80000,
+   "four_year_total": 3800000,
+   "note": "姫路市内は関西圏では家賃が安め。大学周辺・姫路駅周辺での下宿が一般的（相場は要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約95%（要確認）",
+   "top_employers": [
+    "兵庫県内・播磨地域の病院",
+    "調剤薬局・ドラッグストア",
+    "リハビリテーション施設",
+    "公務員（市町村職員・警察等）",
+    "地元金融機関・一般企業"
+   ],
+   "note": "医療系学部は資格職への就職が中心。薬剤師国家試験の合格率は年度により変動が大きい（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR姫路駅から神姫バス約20〜25分（大学直通バスあり・要確認）",
+   "walking_min_from_station": null,
+   "nearby_amenities": "キャンパス周辺は住宅地。買い物や遊びは姫路駅周辺が中心",
+   "area_description": "姫路市街地の北部、落ち着いた住宅・文教エリア。姫路城や駅前商業地までバスでアクセス"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入試成績による特待生制度・独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "医療系国家試験の対策サポート",
+    "少人数制の個別就職支援",
+    "播磨地域の病院・企業とのつながり"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.himeji-du.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "薬剤師・看護師・理学療法士などの医療系国家資格を、比較的入りやすい偏差値帯で目指せる大学。ただし滋賀からの通学は不可能に近く、姫路での下宿が前提になる。",
+  "employment": {
+   "ratings": {
+    "kyoin": 1,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 2,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 4
+   },
+   "strengths": [
+    "薬・看護・リハビリ系の国家資格取得ルートが揃っている",
+    "播磨地域の医療機関への就職に強い",
+    "少人数で面倒見がよく資格試験サポートが手厚い"
+   ],
+   "representative_employers": [
+    "兵庫県内・播磨地域の病院",
+    "調剤薬局・ドラッグストアチェーン",
+    "リハビリ・福祉施設",
+    "地元企業・公務員"
+   ],
+   "summary": "医療系資格職に強い播磨の中規模私大。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文または基礎学力確認（学部により異なる・要確認）"
+     ],
+     "bairitsu": "1.0〜1.3倍（要確認）",
+     "notes": "医療系学部でも実施。専願・併願の扱いは学部により異なる（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は緩やか（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力試験",
+      "面接（学部により・要確認）"
+     ],
+     "bairitsu": "1.0〜1.5倍（要確認）",
+     "notes": null
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期・後期）",
+     "subjects": "2教科型が中心（薬・看護・医療保健は理科重視の科目指定あり・要確認）",
+     "bairitsu": "1.0〜1.5倍（要確認）",
+     "notes": "共通テスト利用選抜もあり。定員割れ傾向の年もあり実質倍率は低め（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "himeji-dokkyo-ningen",
+   "uni_id": "himeji-dokkyo",
+   "name": "人間社会学群",
+   "campus": "本部キャンパス（兵庫県姫路市上大野）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許（英語）（要確認）",
+    "TOEIC・宅地建物取引士など資格取得サポート（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "ryutsu",
+    "service",
+    "kinyu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "himeji-dokkyo-iryohoken",
+   "uni_id": "himeji-dokkyo",
+   "name": "医療保健学部（理学療法・作業療法・言語聴覚療法）",
+   "campus": "本部キャンパス（兵庫県姫路市上大野）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "理学療法士（国家試験受験資格）",
+    "作業療法士（国家試験受験資格）",
+    "言語聴覚士（国家試験受験資格）"
+   ],
+   "interest_tags": [
+    "iryo",
+    "sports"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "sports_kenko"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "himeji-dokkyo-yaku",
+   "uni_id": "himeji-dokkyo",
+   "name": "薬学部（医療薬学科・6年制）",
+   "campus": "本部キャンパス（兵庫県姫路市上大野）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）。理科（化学）を含む科目指定（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師（国家試験受験資格）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "himeji-dokkyo-kango",
+   "uni_id": "himeji-dokkyo",
+   "name": "看護学部",
+   "campus": "本部キャンパス（兵庫県姫路市上大野）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師（国家試験受験資格）",
+    "保健師（国家試験受験資格・選抜制）（要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

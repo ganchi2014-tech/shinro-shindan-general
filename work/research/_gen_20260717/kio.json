@@ -1,0 +1,423 @@
+{
+ "uni": {
+  "id": "kio",
+  "name": "畿央大学",
+  "name_short": "畿央大",
+  "prefecture": "奈良県",
+  "type": "私立",
+  "campus_main": "本部キャンパス（奈良県北葛城郡広陵町）",
+  "tuition_yen_per_year": 1500000,
+  "tuition_note": "学科により年間約135万〜175万円。理学療法・看護は高め、教育は低め（要確認）",
+  "access_from_shiga_min": 140,
+  "commute_possible": false,
+  "commute_note": "草津からJRで京都へ出て近鉄で大和八木・五位堂へ、駅からさらにバス。片道2時間超のため下宿が現実的",
+  "feature": "健康科学部と教育学部の2学部からなる健康・教育特化型の私立大学。「就職に強い大学」として関西で広く知られ、卒業生の就職決定率は毎年ほぼ100%近い水準を公表している。理学療法士国家試験の合格率は全国トップクラスで、小学校教員採用試験の合格実績も私立大学で屈指。少人数教育と担任制によるきめ細かい指導が特色。",
+  "living_cost": {
+   "rent_min": 35000,
+   "rent_max": 55000,
+   "food_monthly": 25000,
+   "monthly_total": 80000,
+   "four_year_total": 3900000,
+   "note": "五位堂駅（香芝市）周辺や広陵町内での下宿が中心。奈良県郊外のため家賃は関西圏では安め（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約99%（要確認）",
+   "top_employers": [
+    "奈良県・大阪府など近畿圏の公立小学校教員",
+    "近畿圏の病院・リハビリテーション施設",
+    "公立・私立幼稚園、保育所",
+    "給食受託・食品関連企業",
+    "住宅・建設関連企業",
+    "自治体（保健師・行政職）"
+   ],
+   "note": "理学療法士国家試験の合格率はほぼ毎年100%近く、看護師・管理栄養士の国家試験も高い合格率を維持（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "近鉄大阪線 五位堂駅からバス約15分（徒歩だと約40分）（要確認）",
+   "walking_min_from_station": 40,
+   "nearby_amenities": "五位堂駅前にスーパー・飲食店あり。大学近隣に大型商業施設エコール・マミ",
+   "area_description": "奈良県北西部・広陵町の落ち着いた住宅地。近鉄で大阪難波方面へ出やすく、生活費を抑えつつ大阪圏にもアクセスできる"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入学時成績優秀者特待生制度など大学独自の奨学金・特待制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "担任制と連動した1人ひとりへの個別就職支援",
+    "教員採用試験対策講座（学内対策・面接練習）が非常に充実",
+    "理学療法士・看護師・管理栄養士など国家試験対策サポート"
+   ],
+   "quality": 5,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.kio.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「小学校の先生になりたい」「理学療法士になりたい」なら偏差値以上の価値がある実績特化型大学。就職決定率ほぼ100%を長年維持し、教員採用と医療系国家試験の面倒見の良さは関西私大でも屈指。",
+  "employment": {
+   "ratings": {
+    "kyoin": 5,
+    "shogakkō": 5,
+    "keisatsu": 2,
+    "shōbō": 2,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 1,
+    "iryō": 5
+   },
+   "strengths": [
+    "小学校教員採用試験の合格実績が私立大学トップクラス",
+    "理学療法士国家試験合格率ほぼ100%で病院・リハビリ施設就職に直結",
+    "看護師・保健師・管理栄養士など医療・健康系資格職に強い",
+    "担任制＋キャリアセンターの個別支援で就職決定率ほぼ100%"
+   ],
+   "representative_employers": [
+    "近畿圏の公立小学校・幼稚園（教員）",
+    "奈良県立医科大学附属病院など近畿圏の病院",
+    "リハビリテーション施設・福祉施設",
+    "給食受託・食品関連企業",
+    "住宅メーカー・建設関連企業"
+   ],
+   "summary": "教員と医療職に特化して圧倒的な実績を出す就職特化型。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "基礎学力テストまたは適性検査（要確認）",
+      "面接"
+     ],
+     "bairitsu": "1〜3倍（要確認）",
+     "notes": "実施学科・内容は年度により異なる（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "公募推薦選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は設けない年が多い（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力検査（2科目型）"
+     ],
+     "bairitsu": "2〜6倍（要確認）",
+     "notes": "関西私大型の2科目公募。人気校のため理学療法・教育は倍率が高くなりやすい（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期・中期・後期）",
+     "subjects": "2〜3科目（英語・国語・数学・理科などから選択）",
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "共通テスト利用選抜あり。理学療法など医療系学科は高倍率になりやすい（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "kio-rigaku",
+   "uni_id": "kio",
+   "name": "健康科学部 理学療法学科",
+   "campus": "本部キャンパス（奈良県北葛城郡広陵町）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施状況は年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦（2科目型）。倍率高め（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・中期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "理学療法士（国家試験受験資格）"
+   ],
+   "interest_tags": [
+    "iryo",
+    "sports"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "sports_kenko"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kio-kango",
+   "uni_id": "kio",
+   "name": "健康科学部 看護医療学科",
+   "campus": "本部キャンパス（奈良県北葛城郡広陵町）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施状況は年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦（2科目型）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・中期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師（国家試験受験資格）",
+    "保健師（選択制・国家試験受験資格）",
+    "助産師（選択制・国家試験受験資格）（要確認）",
+    "養護教諭一種免許状（選択制）（要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kio-eiyo",
+   "uni_id": "kio",
+   "name": "健康科学部 健康栄養学科",
+   "campus": "本部キャンパス（奈良県北葛城郡広陵町）",
+   "hensachi": {
+    "min": 45,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施状況は年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦（2科目型）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・中期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "管理栄養士（国家試験受験資格）",
+    "栄養士",
+    "栄養教諭一種免許状（要確認）"
+   ],
+   "interest_tags": [
+    "eiyo"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "iryo_fukushi",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kio-design",
+   "uni_id": "kio",
+   "name": "健康科学部 人間環境デザイン学科",
+   "campus": "本部キャンパス（奈良県北葛城郡広陵町）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施状況は年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦（2科目型）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・中期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士（国家試験受験資格・要実務経験）",
+    "二級建築士（国家試験受験資格）",
+    "中学校・高等学校教諭一種免許状（家庭）（要確認）"
+   ],
+   "interest_tags": [
+    "kenchiku",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "kensetsu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kio-kyoiku",
+   "uni_id": "kio",
+   "name": "教育学部 現代教育学科",
+   "campus": "本部キャンパス（奈良県北葛城郡広陵町）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施状況は年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦（2科目型）。人気学部のため倍率高め（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・中期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "幼稚園教諭一種免許状",
+    "保育士",
+    "養護教諭一種免許状（コースによる）（要確認）",
+    "特別支援学校教諭一種免許状（要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

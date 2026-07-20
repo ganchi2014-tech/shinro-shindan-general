@@ -1,0 +1,599 @@
+{
+ "uni": {
+  "id": "tamagawa",
+  "name": "玉川大学",
+  "name_short": "玉川大",
+  "prefecture": "東京都",
+  "type": "私立",
+  "campus_main": "玉川学園キャンパス",
+  "tuition_yen_per_year": 1750000,
+  "tuition_note": "学費は私大の中でも高め。学部により差があり、芸術・農・工はさらに高くなる傾向（要確認）",
+  "access_from_shiga_min": 220,
+  "commute_possible": false,
+  "commute_note": "草津・大津から京都経由で新幹線＋横浜線＋小田急線で片道約3時間半〜4時間。下宿前提",
+  "feature": "幼稚園から大学院までが同じ丘に集まる「全人教育」で知られる総合大学。特に教育学部は小学校教員の輩出数で全国私大トップクラスの実績を持つ。教育・文・芸術・経営・観光・リベラルアーツ・農・工の8学部がワンキャンパスに集まり、学部を越えた学びがしやすい。緑豊かな広大なキャンパスと、実習・体験を重視した授業が特色。",
+  "living_cost": {
+   "rent_min": 55000,
+   "rent_max": 80000,
+   "food_monthly": 30000,
+   "monthly_total": 110000,
+   "four_year_total": 5300000,
+   "note": "玉川学園前・町田周辺は東京都内では家賃が比較的抑えめ。都心部に住むと家賃はさらに上がる（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "公立小学校教員（東京都・神奈川県ほか全国）",
+    "幼稚園・保育所・認定こども園",
+    "中学校・高校教員（音楽・美術・数学など）",
+    "JTBなど旅行・ホテル業界",
+    "食品・農業関連企業",
+    "IT・ソフトウェア企業",
+    "一般企業（流通・サービス）"
+   ],
+   "note": "小学校教員採用者数は私立大学で毎年全国上位（要確認）。教員以外too観光・芸術・農学系など学部ごとの専門就職も多い"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "小田急線 玉川学園前駅 徒歩約3分",
+   "walking_min_from_station": 3,
+   "nearby_amenities": "駅前に商店・スーパーあり。町田駅（小田急で約4分）に出れば大型商業施設が揃う",
+   "area_description": "東京都町田市の閑静な住宅街に広がる丘陵キャンパス。新宿へ小田急線で約35〜40分と都心アクセスも可能"
+  },
+  "shogakukin": {
+   "general_shogakukin": "玉川奨学金など大学独自の給付型奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "教師教育リサーチセンターによる教員採用試験対策が充実",
+    "教員志望者向けの学内講座・模擬面接・実習支援",
+    "一般企業向けにも個別相談・学内企業説明会を実施"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.tamagawa.jp/university/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「小学校や幼稚園の先生になりたい」なら私大では全国最高クラスの実績と対策体制。滋賀からは下宿前提だが、ワンキャンパスの落ち着いた環境で教員採用試験まで面倒を見てもらえるのが強み。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 5,
+    "shogakkō": 5,
+    "keisatsu": 2,
+    "shōbō": 2,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 2,
+    "iryō": 1
+   },
+   "strengths": [
+    "小学校・幼稚園教員の採用実績が私大トップクラス",
+    "教師教育リサーチセンターなど教員採用試験対策の専門組織がある",
+    "観光・芸術・農学など学部ごとの専門分野就職にも対応",
+    "ワンキャンパスで学部横断の学びと支援を受けやすい"
+   ],
+   "representative_employers": [
+    "東京都・神奈川県などの公立小学校",
+    "私立幼稚園・認定こども園",
+    "旅行・ホテル業界（JTBほか）",
+    "食品・農業関連企業",
+    "IT・ソフトウェア企業"
+   ],
+   "summary": "小学校教員養成の名門私大。教育以外の学部も専門就職に対応。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "学部により基準が異なる（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文・課題",
+      "面接（学部により実技・プレゼンあり）"
+     ],
+     "bairitsu": "1.5〜3倍（要確認）",
+     "notes": "芸術学部は実技系の審査が課される場合あり（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "3.5前後〜（学部により異なる・要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": "指定校推薦が中心。公募制の実施学部は要確認"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "3教科型が基本（英語＋国語＋選択科目。学部により2教科型・実技あり）（要確認）",
+     "notes": "複数日程あり。共通テスト利用選抜も実施",
+     "bairitsu": "2〜4倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "tamagawa-kyoiku",
+   "uni_id": "tamagawa",
+   "name": "教育学部",
+   "campus": "玉川学園キャンパス（東京都町田市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "指定校推薦が中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "幼稚園教諭一種免許状",
+    "中学校・高校教諭一種免許状（社会・保健体育など）（要確認）",
+    "保育士（乳幼児発達学科）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tamagawa-bun",
+   "uni_id": "tamagawa",
+   "name": "文学部",
+   "campus": "玉川学園キャンパス（東京都町田市）",
+   "hensachi": {
+    "min": 45,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "指定校推薦が中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高校教諭一種免許状（国語・英語）",
+    "小学校教諭免許（教育学部との連携プログラム）（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "service",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tamagawa-geijutsu",
+   "uni_id": "tamagawa",
+   "name": "芸術学部",
+   "campus": "玉川学園キャンパス（東京都町田市）",
+   "hensachi": {
+    "min": 40,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり。実技・作品審査を課す場合あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "指定校推薦が中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（学科により実技あり・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高校教諭一種免許状（音楽・美術）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "kyoiku",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tamagawa-keiei",
+   "uni_id": "tamagawa",
+   "name": "経営学部",
+   "campus": "玉川学園キャンパス（東京都町田市）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "指定校推薦が中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "日商簿記などの資格取得支援（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "maker",
+    "kinyu",
+    "ryutsu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tamagawa-kanko",
+   "uni_id": "tamagawa",
+   "name": "観光学部",
+   "campus": "玉川学園キャンパス（東京都町田市）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "指定校推薦が中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "旅行業務取扱管理者などの資格取得支援（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tamagawa-la",
+   "uni_id": "tamagawa",
+   "name": "リベラルアーツ学部",
+   "campus": "玉川学園キャンパス（東京都町田市）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "指定校推薦が中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "分野横断型のため入学後に選択（教職課程の履修可否は要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "shakai"
+   ],
+   "employment_fields": [
+    "service",
+    "maker",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tamagawa-nogaku",
+   "uni_id": "tamagawa",
+   "name": "農学部",
+   "campus": "玉川学園キャンパス（東京都町田市）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "指定校推薦が中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高校教諭一種免許状（理科・農業）（要確認）",
+    "食品衛生管理者（任用）（要確認）"
+   ],
+   "interest_tags": [
+    "nogaku"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "maker",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tamagawa-kogaku",
+   "uni_id": "tamagawa",
+   "name": "工学部",
+   "campus": "玉川学園キャンパス（東京都町田市）",
+   "hensachi": {
+    "min": 40,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "指定校推薦が中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高校教諭一種免許状（数学）（数学教員養成プログラムあり・要確認）",
+    "基本情報技術者などIT系資格の取得支援（要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "it",
+    "maker",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

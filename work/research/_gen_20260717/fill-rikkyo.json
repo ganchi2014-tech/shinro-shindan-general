@@ -1,0 +1,122 @@
+{
+  "uni_id": "rikkyo",
+  "departments": [
+    {
+      "dept_id": "rikkyo-fukushi",
+      "uni_id": "rikkyo",
+      "name": "コミュニティ福祉学部",
+      "campus": "新座キャンパス（埼玉県新座市北野）",
+      "hensachi": {
+        "min": 55,
+        "max": 57.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "自由選抜入試（総合型）あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "一般入試（個別学部日程）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試あり",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "社会福祉士（国家試験受験資格）",
+        "精神保健福祉士（国家試験受験資格）",
+        "社会調査士",
+        "中学校・高等学校教諭一種免許状（社会・公民など）（要確認）"
+      ],
+      "interest_tags": [
+        "shakai",
+        "iryo"
+      ],
+      "employment_fields": [
+        "iryo_fukushi",
+        "koumuin",
+        "service"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "rikkyo-kankyo",
+      "uni_id": "rikkyo",
+      "name": "環境学部",
+      "campus": "池袋キャンパス（東京都豊島区西池袋）",
+      "hensachi": {
+        "min": 57.5,
+        "max": 57.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "自由選抜入試（総合型）あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "一般入試（個別学部日程）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試あり（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [],
+      "interest_tags": [
+        "riko",
+        "shakai"
+      ],
+      "employment_fields": [
+        "koumuin",
+        "maker",
+        "kensetsu"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    }
+  ]
+}

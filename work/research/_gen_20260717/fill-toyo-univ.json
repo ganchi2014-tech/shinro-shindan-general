@@ -1,0 +1,184 @@
+{
+  "uni_id": "toyo-univ",
+  "departments": [
+    {
+      "dept_id": "toyo-univ-kankokanko",
+      "uni_id": "toyo-univ",
+      "name": "国際観光学部",
+      "campus": "白山キャンパス（東京都文京区白山）",
+      "hensachi": {
+        "min": 47.5,
+        "max": 55,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": null,
+          "note": "AO型推薦入試の実施有無は年度により異なる（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦入試（公募制）あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "一般選抜（前期・中期・後期）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試あり",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "総合旅行業務取扱管理者（試験）",
+        "国内旅行業務取扱管理者（試験）",
+        "通訳案内士（試験）"
+      ],
+      "interest_tags": [
+        "gaikokugo",
+        "keizai"
+      ],
+      "employment_fields": [
+        "service",
+        "ryutsu",
+        "media"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "toyo-univ-sogojoho",
+      "uni_id": "toyo-univ",
+      "name": "総合情報学部",
+      "campus": "川越キャンパス（埼玉県川越市鯨井）",
+      "hensachi": {
+        "min": 45,
+        "max": 50,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": null,
+          "note": "AO型推薦入試の実施有無は年度により異なる（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦入試（公募制）あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "一般選抜（前期・中期・後期）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試あり",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "高校教諭一種（情報）（要確認）",
+        "基本情報技術者（試験）",
+        "ITパスポート（試験）"
+      ],
+      "interest_tags": [
+        "joho"
+      ],
+      "employment_fields": [
+        "it",
+        "maker",
+        "media"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "toyo-univ-seimei",
+      "uni_id": "toyo-univ",
+      "name": "生命科学部",
+      "campus": "朝霞キャンパス（埼玉県朝霞市）",
+      "hensachi": {
+        "min": 45,
+        "max": 50,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": null,
+          "note": "AO型推薦入試の実施有無は年度により異なる（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦入試（公募制）あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "一般選抜（前期・中期・後期）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試あり",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中学・高校教諭一種（理科）（要確認）",
+        "バイオ技術者認定試験",
+        "危険物取扱者（試験）"
+      ],
+      "interest_tags": [
+        "riko",
+        "nogaku"
+      ],
+      "employment_fields": [
+        "maker",
+        "shokuhin",
+        "iryo_fukushi"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    }
+  ]
+}

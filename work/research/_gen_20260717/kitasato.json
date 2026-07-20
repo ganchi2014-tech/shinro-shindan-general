@@ -1,0 +1,655 @@
+{
+ "uni": {
+  "id": "kitasato",
+  "name": "北里大学",
+  "name_short": "北里大",
+  "prefecture": "神奈川県",
+  "type": "私立",
+  "campus_main": "相模原キャンパス",
+  "tuition_yen_per_year": 1700000,
+  "tuition_note": "学部により大きく異なる。理・海洋生命・未来工は年間約150〜170万円、看護・医療衛生は約180〜200万円、薬・獣医は約200〜240万円、医学部は年間約900万円（いずれも要確認）",
+  "access_from_shiga_min": 240,
+  "commute_possible": false,
+  "commute_note": "相模原キャンパスまで新幹線＋在来線＋バスで片道約4時間。下宿前提。",
+  "feature": "医学・薬学・獣医学から看護・医療衛生・海洋生命科学まで、生命科学系の学部がそろう医療系総合大学。母体の北里研究所は「日本の細菌学の父」北里柴三郎が創設し、2015年ノーベル生理学・医学賞を受賞した大村智博士の研究拠点でもある。主要キャンパスは神奈川県相模原市で、付属の北里大学病院を活かした「チーム医療教育」が大きな特色。獣医学部は青森県十和田市、健康科学部は新潟県南魚沼市など、学部によりキャンパスが異なる。",
+  "living_cost": {
+   "rent_min": 40000,
+   "rent_max": 65000,
+   "food_monthly": 25000,
+   "monthly_total": 100000,
+   "four_year_total": 4800000,
+   "note": "相模原市周辺の相場。首都圏としては家賃が抑えめ。獣医学部（青森県十和田市）・健康科学部（新潟県南魚沼市）は家賃3〜4万円台とさらに安い（要確認）",
+   "living_at_home_possible": false
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約98%（要確認）",
+   "top_employers": [
+    "北里大学病院・北里研究所病院",
+    "全国の大学病院・総合病院",
+    "製薬企業（研究・開発・MR）",
+    "臨床検査会社・医療機器メーカー",
+    "食品・化学メーカー",
+    "公務員（衛生・農林水産系）"
+   ],
+   "note": "医師・薬剤師・看護師・臨床検査技師など医療系国家試験の合格率は全国平均を上回る学科が多い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "小田急線相模大野駅またはJR横浜線相模原駅からバス約25分（相模原キャンパス）",
+   "walking_min_from_station": null,
+   "nearby_amenities": "キャンパス周辺は住宅街。相模大野・町田まで出れば商業施設が充実",
+   "area_description": "相模原市南区の落ち着いた文教・住宅エリア。同じ敷地に北里大学病院があり医療系実習に便利"
+  },
+  "shogakukin": {
+   "general_shogakukin": "北里大学特別待遇奨学生（PPA）など成績優秀者向け給付型のほか、学部独自の給付・貸与奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "医療系国家試験対策と実習支援が充実",
+    "北里大学病院など付属・関連病院への就職ネットワーク",
+    "製薬・生命科学系メーカーの研究職・MR職への支援"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.kitasato-u.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「医療・生命科学の道に進みたい」なら医・薬・獣医・看護・検査・リハビリまで一つの大学で選べる全国有数の医療系総合大学。付属病院での実習環境とノーベル賞研究者を生んだ研究力が魅力。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 1,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 1,
+    "iryō": 5
+   },
+   "strengths": [
+    "医療系国家資格の合格実績と病院就職に圧倒的に強い",
+    "製薬・食品・化学など生命科学系メーカーへの就職ルートが太い",
+    "付属の北里大学病院・北里研究所病院での実習と就職が直結",
+    "獣医・海洋など動物・自然系の専門職にも進める"
+   ],
+   "representative_employers": [
+    "北里大学病院",
+    "全国の大学病院・総合病院",
+    "製薬企業（研究・開発・MR）",
+    "臨床検査会社",
+    "食品・化学メーカー",
+    "動物病院・農林水産系団体"
+   ],
+   "summary": "医療・生命科学分野の専門職就職に特化した総合力。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（学部により実施）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "小論文・適性検査等",
+      "面接"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "未来工学部・海洋生命科学部・健康科学部など一部学部で実施（要確認）。医学部・薬学部は原則実施なし（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制・指定校制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "学科により3.3〜4.0以上（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力検査",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "1.5〜4倍（要確認）",
+     "notes": "多くの学部で実施。医学部の推薦は指定校制・地域枠が中心（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期・後期）",
+     "subjects": "英語・数学・理科の理系3科目が基本。医学部は3科目＋小論文・面接",
+     "notes": "学部により中期・後期日程あり（要確認）。共通テスト利用の有無は学部により異なる（要確認）",
+     "bairitsu": "2〜10倍（要確認・医学部は高倍率）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "kitasato-igaku",
+   "uni_id": "kitasato",
+   "name": "医学部",
+   "campus": "相模原キャンパス（神奈川県相模原市南区）",
+   "hensachi": {
+    "min": 65,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は原則なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "指定校推薦・地域枠等が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（学力試験＋小論文・面接）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": null,
+     "note": "共通テスト利用の有無は要確認",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kitasato-yaku",
+   "uni_id": "kitasato",
+   "name": "薬学部",
+   "campus": "白金キャンパス（東京都港区）※1年次は相模原キャンパス（要確認）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "指定校制中心・公募の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（理系3科目）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": null,
+     "note": "共通テスト利用の有無は要確認",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師国家試験受験資格（6年制薬学科）",
+    "研究職向け4年制（生命創薬科学科）"
+   ],
+   "interest_tags": [
+    "iryo",
+    "riko"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kitasato-jui",
+   "uni_id": "kitasato",
+   "name": "獣医学部",
+   "campus": "十和田キャンパス（青森県十和田市）※1年次は相模原キャンパス（要確認）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 62.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "動物資源科学科等で実施の可能性あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）。獣医学科は高倍率",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": null,
+     "note": "共通テスト利用の有無は要確認",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "獣医師国家試験受験資格（獣医学科）",
+    "家畜人工授精師（要確認）",
+    "食品衛生管理者（要確認）"
+   ],
+   "interest_tags": [
+    "nogaku",
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin",
+    "shokuhin",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kitasato-kango",
+   "uni_id": "kitasato",
+   "name": "看護学部",
+   "campus": "相模原キャンパス（神奈川県相模原市南区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "指定校・公募推薦あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": null,
+     "note": "共通テスト利用の有無は要確認",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格（選抜制・要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kitasato-rigaku",
+   "uni_id": "kitasato",
+   "name": "理学部",
+   "campus": "相模原キャンパス（神奈川県相模原市南区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（理系3科目）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": null,
+     "note": "共通テスト利用の有無は要確認",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教諭一種免許状（理科）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kitasato-eisei",
+   "uni_id": "kitasato",
+   "name": "医療衛生学部",
+   "campus": "相模原キャンパス（神奈川県相模原市南区）",
+   "hensachi": {
+    "min": 45,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "指定校・公募推薦あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": null,
+     "note": "共通テスト利用の有無は要確認",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "臨床検査技師国家試験受験資格",
+    "臨床工学技士国家試験受験資格",
+    "診療放射線技師国家試験受験資格",
+    "理学療法士・作業療法士・言語聴覚士・視能訓練士国家試験受験資格（学科・専攻による）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kitasato-kaiyo",
+   "uni_id": "kitasato",
+   "name": "海洋生命科学部",
+   "campus": "相模原キャンパス（神奈川県相模原市南区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": null,
+     "note": "共通テスト利用の有無は要確認",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）",
+    "食品衛生管理者・食品衛生監視員（任用・要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "nogaku"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "maker",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kitasato-mirai",
+   "uni_id": "kitasato",
+   "name": "未来工学部（データサイエンス）",
+   "campus": "相模原キャンパス（神奈川県相模原市南区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": null,
+     "note": "共通テスト利用の有無は要確認",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "特定の国家資格なし（データサイエンス系科目の履修が中心）"
+   ],
+   "interest_tags": [
+    "joho",
+    "riko"
+   ],
+   "employment_fields": [
+    "it",
+    "maker",
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kitasato-kenko",
+   "uni_id": "kitasato",
+   "name": "健康科学部",
+   "campus": "新潟キャンパス（新潟県南魚沼市）",
+   "hensachi": {
+    "min": 40,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": null,
+     "note": "共通テスト利用の有無は要確認",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師国家試験受験資格（看護学科）",
+    "臨床検査技師国家試験受験資格（医療検査学科）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

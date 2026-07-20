@@ -1,0 +1,487 @@
+{
+ "uni": {
+  "id": "hyogo-kenritsu",
+  "name": "兵庫県立大学",
+  "name_short": "兵庫県立大",
+  "prefecture": "兵庫県",
+  "type": "公立",
+  "campus_main": "神戸商科キャンパス（神戸市西区）ほか学部別に5キャンパス",
+  "tuition_yen_per_year": 535800,
+  "tuition_note": "授業料は国公立標準額の535,800円/年。入学金は兵庫県内出身者と県外出身者で差がある（県外は40万円超・要確認）",
+  "access_from_shiga_min": 115,
+  "commute_possible": false,
+  "commute_note": "草津から神戸商科キャンパス（地下鉄学園都市駅）まで片道約2時間。姫路・播磨・明石の各キャンパスはさらに遠く、いずれの学部も下宿が現実的",
+  "feature": "神戸商科大学・姫路工業大学・兵庫県立看護大学などが統合して2004年に発足した、全国でも有数の規模を持つ公立総合大学。国際商経・社会情報科学（神戸）、工学（姫路）、理学（播磨）、環境人間（姫路）、看護（明石）と学部ごとにキャンパスが分かれる。旧姫路工業大学の流れをくむ工学部・理学部は研究力に定評があり、播磨理学キャンパスは大型放射光施設SPring-8に近接。2019年設置の社会情報科学部はデータサイエンス系学部の先駆けとして人気が高い。",
+  "living_cost": {
+   "rent_min": 35000,
+   "rent_max": 60000,
+   "food_monthly": 25000,
+   "monthly_total": 100000,
+   "four_year_total": 4800000,
+   "note": "神戸（学園都市周辺）・姫路とも家賃は都心部より手頃。キャンパス所在地により相場が異なる（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "兵庫県庁・神戸市役所などの公務員",
+    "川崎重工業",
+    "神戸製鋼所",
+    "パナソニック",
+    "三井住友銀行",
+    "県内外の病院（看護）"
+   ],
+   "note": "工学部・理学部は大学院進学率が高く、院修了後に大手メーカー技術職へ進む流れが主流（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "神戸市営地下鉄「学園都市」駅 徒歩約5〜10分（神戸商科キャンパス）",
+   "walking_min_from_station": 8,
+   "nearby_amenities": "学園都市駅前に商業施設・飲食店。複数の大学が集まる学生街",
+   "area_description": "神戸研究学園都市の落ち着いた文教エリア。学部により姫路・播磨科学公園都市・明石など環境は大きく異なる"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、大学独自の授業料減免・奨学金制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "キャンパスごとに就職支援窓口があり学部特性に合わせた支援",
+    "理系は大学院進学・技術職就職のサポートが手厚い",
+    "公務員志望者向けの対策支援あり（要確認）"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.u-hyogo.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "経済・データサイエンスから工学・理学・看護まで幅広く選べる関西の中堅上位公立大。神戸大よりボーダーが一段低く、共通テスト次第で十分狙える現実的な国公立の選択肢。ただしキャンパスが学部ごとに離れており下宿前提。",
+  "region": "kansai",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 2,
+    "kōmuin_ippan": 4,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 1,
+    "iryō": 4
+   },
+   "strengths": [
+    "兵庫県庁・神戸市など地元公務員への就職に強い",
+    "旧姫路工業大学以来の伝統で関西大手メーカーの技術職に実績",
+    "看護学部は兵庫県立病院など県内医療機関に直結",
+    "公立の学費で専門性の高い教育を受けられる"
+   ],
+   "representative_employers": [
+    "兵庫県庁",
+    "神戸市役所",
+    "川崎重工業",
+    "神戸製鋼所",
+    "三井住友銀行",
+    "兵庫県立病院（看護）"
+   ],
+   "summary": "公務員・製造業・金融に強い実力派公立。理系は院進が主流。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（国際商経学部グローバルビジネスコースなど一部で実施）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "小論文・英語による課題等",
+      "面接"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "実施学部・選考内容は年度により異なる（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": 4,
+     "hyoutei_note": "4.0前後・学部により異なる（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接",
+      "学部により共通テストを課す"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "多くの学部で実施。兵庫県内高校対象の枠を設ける学部もある（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別学力検査（学部により2〜3教科）",
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "共通テストの配点比重が大きい学部が多い（要確認）"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト＋小論文・面接または学力検査（学部により異なる）",
+     "bairitsu": "3〜8倍（要確認）",
+     "notes": "後期は募集人員が少なく倍率が上がりやすい（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "hyogo-kenritsu-shokei",
+   "uni_id": "hyogo-kenritsu",
+   "name": "国際商経学部",
+   "campus": "神戸商科キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "グローバルビジネスコース（英語で学ぶコース）で総合型選抜を実施（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国公立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "日商簿記・TOEIC等の取得支援（国家資格直結の課程はなし）（要確認）"
+   ],
+   "interest_tags": [
+    "keizai",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "ryutsu",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hyogo-kenritsu-joho",
+   "uni_id": "hyogo-kenritsu",
+   "name": "社会情報科学部",
+   "campus": "神戸商科キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次試験）。二次は数学重視の傾向（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国公立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "統計検定・情報処理技術者試験等の取得支援（要確認）"
+   ],
+   "interest_tags": [
+    "joho",
+    "shakai"
+   ],
+   "employment_fields": [
+    "it",
+    "kinyu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hyogo-kenritsu-ko",
+   "uni_id": "hyogo-kenritsu",
+   "name": "工学部",
+   "campus": "姫路工学キャンパス（兵庫県姫路市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次試験。二次は数学・理科・英語中心）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国公立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（工業）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hyogo-kenritsu-ri",
+   "uni_id": "hyogo-kenritsu",
+   "name": "理学部",
+   "campus": "播磨理学キャンパス（兵庫県赤穂郡上郡町・播磨科学公園都市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国公立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（理科）（要確認）",
+    "中学校教諭一種免許状（理科）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hyogo-kenritsu-kankyo",
+   "uni_id": "hyogo-kenritsu",
+   "name": "環境人間学部",
+   "campus": "姫路環境人間キャンパス（兵庫県姫路市）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次試験）。管理栄養士を目指す食環境栄養課程は別区分で募集（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国公立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "管理栄養士国家試験受験資格（食環境栄養課程）",
+    "栄養士（食環境栄養課程）",
+    "社会調査士（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "eiyo"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "koumuin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hyogo-kenritsu-kango",
+   "uni_id": "hyogo-kenritsu",
+   "name": "看護学部",
+   "campus": "明石看護キャンパス（兵庫県明石市）",
+   "hensachi": {
+    "min": 50,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり。兵庫県内対象の枠がある可能性（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程中心（共通テスト＋二次試験）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国公立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格（選抜制）（要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

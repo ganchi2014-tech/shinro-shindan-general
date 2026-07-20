@@ -1,0 +1,251 @@
+{
+ "uni": {
+  "id": "nara-idai",
+  "name": "奈良県立医科大学",
+  "name_short": "奈良県立医大",
+  "prefecture": "奈良県",
+  "type": "公立",
+  "campus_main": "橿原キャンパス",
+  "tuition_yen_per_year": 535800,
+  "tuition_note": "国公立標準額。入学金は県内出身者と県外出身者で金額が異なる（要確認）。医学科は6年制のため総額は長期になる",
+  "access_from_shiga_min": 125,
+  "commute_possible": false,
+  "commute_note": "草津・大津から京都経由（JR→近鉄京都線・橿原線）で片道約2時間超。通学は非現実的で下宿が前提",
+  "feature": "1945年創立の奈良県立の医科単科大学。医学部のみを置き、医学科（6年制）と看護学科（4年制）で構成される。附属病院がキャンパスに隣接し、低学年から臨床現場に触れられる環境が強み。奈良県の地域医療を担う医師・看護職の育成を使命とし、卒業生の多くが県内外の基幹病院で活躍している。",
+  "living_cost": {
+   "rent_min": 35000,
+   "rent_max": 55000,
+   "food_monthly": 25000,
+   "monthly_total": 95000,
+   "four_year_total": 4560000,
+   "note": "橿原市周辺の下宿相場。家賃は奈良県内では手頃。医学科は6年制のため総額はさらに大きくなる（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約100%（要確認）",
+   "top_employers": [
+    "奈良県立医科大学附属病院",
+    "奈良県内の公立・基幹病院",
+    "近畿圏の大学病院・市中病院",
+    "奈良県庁・市町村（保健師等）"
+   ],
+   "note": "医師国家試験・看護師国家試験ともに合格率は全国平均以上の高水準（要確認）。卒業後は臨床研修・病院就職がほぼ全員"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "近鉄橿原線 八木西口駅 徒歩約8分",
+   "walking_min_from_station": 8,
+   "nearby_amenities": "大和八木駅周辺に商業施設・飲食店・スーパーが揃い、一人暮らしの生活はしやすい",
+   "area_description": "橿原市の中心市街地に近く、附属病院と一体になったメディカルキャンパス。京都・大阪へも近鉄で1時間圏"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、奈良県の緊急医師確保修学資金など地域枠向けの修学資金制度あり（県内勤務等の条件で返還免除）（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "附属病院への就職・臨床研修に直結した支援",
+    "医師臨床研修マッチング・国家試験対策のサポート",
+    "看護学科は県内医療機関との強いつながり"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.naramed-u.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "関西圏で医師・看護師を国公立の学費で目指せる貴重な選択肢。医学科は後期日程の募集人員が多いことで全国的に知られ、難関国立医学部志望者の重要な受験先になっている。",
+  "region": "kansai",
+  "employment": {
+   "ratings": {
+    "kyoin": 1,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 1,
+    "kigyō_supotsu": 1,
+    "iryō": 5
+   },
+   "strengths": [
+    "附属病院を核に医師・看護師のキャリアに直結",
+    "国家試験合格率が高水準で医療職就職はほぼ100%（要確認）",
+    "国公立のため私立医大に比べ学費負担が圧倒的に軽い"
+   ],
+   "representative_employers": [
+    "奈良県立医科大学附属病院",
+    "奈良県総合医療センターなど県内基幹病院",
+    "近畿圏の大学病院・市中病院",
+    "自治体（保健師等）"
+   ],
+   "summary": "医療特化の公立単科大。医師・看護師養成に完全特化。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（医学科：地域枠・緊急医師確保枠等）",
+     "hyoutei_min": null,
+     "hyoutei_note": "4.0以上が目安（要確認）",
+     "selection_content": [
+      "書類",
+      "共通テスト",
+      "面接"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "奈良県内高校出身者などを対象とする枠が中心で、県外（滋賀）からは対象外の枠が多い（要確認）。卒業後の県内勤務義務がある枠あり"
+    },
+    {
+     "method_name": "学校推薦型選抜（看護学科）",
+     "hyoutei_min": null,
+     "hyoutei_note": "4.0以上が目安（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "1.5〜3倍（要確認）",
+     "notes": "県内高校対象の枠が中心の可能性あり。出願資格は要確認"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜 前期日程（医学科）",
+     "subjects": "共通テスト＋二次試験（英語・数学・理科2科目）＋面接",
+     "bairitsu": "5〜10倍（要確認）",
+     "notes": "前期の募集人員は少なめ。共通テスト得点率85%前後が目安（要確認）"
+    },
+    {
+     "method_name": "一般選抜 後期日程（医学科）",
+     "subjects": "共通テスト＋二次試験（学科試験＋面接）",
+     "bairitsu": "10〜20倍（要確認）",
+     "notes": "後期の募集人員が前期より多いのが全国的にも珍しい特徴。難関国立医学部志望者の併願先として非常に高倍率"
+    },
+    {
+     "method_name": "一般選抜（看護学科）",
+     "subjects": "共通テスト＋面接・小論文等（要確認）",
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "二次試験の内容は年度により異なる可能性があるため要確認"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "nara-idai-igaku",
+   "uni_id": "nara-idai",
+   "name": "医学部 医学科",
+   "campus": "橿原キャンパス（奈良県橿原市四条町）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 70,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜は地域枠・緊急医師確保枠が中心で、奈良県内出身者対象の枠が多い（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程。後期の募集人員が多いのが特徴",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（二次試験と併用）。得点率85%前後が目安（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nara-idai-kango",
+   "uni_id": "nara-idai",
+   "name": "医学部 看護学科",
+   "campus": "橿原キャンパス（奈良県橿原市四条町）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり。県内高校対象枠が中心の可能性があるため出願資格は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程中心（後期の有無・二次内容は要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（二次と併用）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格（選抜制・要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

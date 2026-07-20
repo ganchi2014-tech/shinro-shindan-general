@@ -1,0 +1,432 @@
+{
+ "uni": {
+  "id": "tokyo-denki",
+  "name": "東京電機大学",
+  "name_short": "電機大",
+  "prefecture": "東京都",
+  "type": "私立",
+  "campus_main": "東京千住キャンパス",
+  "tuition_yen_per_year": 1600000,
+  "tuition_note": "工学部・未来科学部等の年間授業料＋施設費等の概算（要確認）。工学部第二部（夜間）は年間約65万円と大幅に安い（要確認）",
+  "access_from_shiga_min": 200,
+  "commute_possible": false,
+  "commute_note": "草津・大津から新幹線利用でも片道3時間超。下宿前提",
+  "feature": "1907年創立の電機学校を起源とする理工系の伝統私大。「実学尊重」を建学の精神とし、実験・実習を重視したものづくり教育で知られる。メーカー・IT企業への就職の強さに定評があり「就職に強い電機大」と呼ばれる。本部の東京千住キャンパスは北千住駅から徒歩1分の都市型キャンパス。",
+  "living_cost": {
+   "rent_min": 60000,
+   "rent_max": 90000,
+   "food_monthly": 30000,
+   "monthly_total": 125000,
+   "four_year_total": 6000000,
+   "note": "北千住周辺は都心より家賃がやや抑えめ。足立区・葛飾区・埼玉方面に住む学生も多い。理工学部（埼玉鳩山）は周辺家賃が安い"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約98%（要確認）",
+   "top_employers": [
+    "本田技研工業",
+    "SUBARU",
+    "日立製作所",
+    "三菱電機",
+    "NEC",
+    "NTTデータグループ",
+    "JR東日本",
+    "大手電力・通信会社"
+   ],
+   "note": "卒業生ネットワーク（校友会）が産業界に広く、技術系就職に強い（要確認）。大学院進学者も一定数"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "北千住駅（JR常磐線・東京メトロ千代田線/日比谷線・東武・つくばエクスプレス）徒歩約1分",
+   "walking_min_from_station": 1,
+   "nearby_amenities": "駅ビル（ルミネ・マルイ）、商店街、飲食店が豊富",
+   "area_description": "東京都足立区の北千住駅前。5路線が使える巨大ターミナルで、上野・秋葉原・大手町へ直通の便利な立地"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入試成績優秀者特待制度や大学独自の給付奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "技術系企業に特化した就職支援と豊富な求人",
+    "卒業生（校友会）ネットワークを生かしたOB・OG接点",
+    "低学年からのキャリア教育・インターンシップ支援"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.dendai.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「手に職」をつけてメーカー・IT企業に就職したい人向けの、実学重視の理工系私大。北千住駅徒歩1分という抜群の立地で、滋賀からは下宿前提だが首都圏の技術系就職を狙うなら有力な選択肢。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 5,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "大手メーカー・IT企業への技術系就職に非常に強い",
+    "実験・実習重視の教育で即戦力の技術力が身につく",
+    "技術系公務員（特別区・都県庁の技術職等）にも実績（要確認）",
+    "数学・理科・情報・工業の教員免許が取得可能"
+   ],
+   "representative_employers": [
+    "本田技研工業",
+    "日立製作所",
+    "三菱電機",
+    "NEC",
+    "NTTデータグループ",
+    "JR東日本"
+   ],
+   "summary": "メーカー・ITへの技術系就職が看板の理工系私大。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（AO入試等）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "課題・基礎学力確認等"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": "工学部第二部（夜間）を中心に実施。昼間部での実施状況は学部・年度により異なる（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "学部・学科により評定基準あり（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "基礎学力検査等"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": "数学・理科の履修状況など出願要件に注意（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期・後期）",
+     "subjects": "数学・理科・英語の3教科型が中心。学科により配点・選択科目が異なる",
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "英語外部試験利用方式あり（要確認）"
+    },
+    {
+     "method_name": "共通テスト利用選抜",
+     "subjects": "共通テストの数学・理科・英語等を利用",
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "個別試験なしで出願できる方式あり（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "tokyo-denki-kogaku",
+   "uni_id": "tokyo-denki",
+   "name": "工学部",
+   "campus": "東京千住キャンパス（東京都足立区）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "昼間部での実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）。数学・理科・英語型",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種（数学・理科・情報・工業）（要確認）",
+    "電気主任技術者（所定科目履修で実務経験により取得可・要確認）",
+    "各種技術系資格の受験対策"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-denki-mirai",
+   "uni_id": "tokyo-denki",
+   "name": "未来科学部",
+   "campus": "東京千住キャンパス（東京都足立区）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "昼間部での実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士受験資格（建築学科・要確認）",
+    "二級建築士受験資格（建築学科・要確認）",
+    "高等学校教諭一種（数学・情報等）（要確認）"
+   ],
+   "interest_tags": [
+    "kenchiku",
+    "joho"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-denki-sd",
+   "uni_id": "tokyo-denki",
+   "name": "システムデザイン工学部",
+   "campus": "東京千住キャンパス（東京都足立区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "昼間部での実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種（数学・情報）（要確認）",
+    "ITパスポート・基本情報技術者等の受験対策"
+   ],
+   "interest_tags": [
+    "joho",
+    "riko"
+   ],
+   "employment_fields": [
+    "it",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-denki-riko",
+   "uni_id": "tokyo-denki",
+   "name": "理工学部",
+   "campus": "埼玉鳩山キャンパス（埼玉県比企郡鳩山町）",
+   "hensachi": {
+    "min": 45,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種（数学・理科・情報等）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-denki-kogaku2",
+   "uni_id": "tokyo-denki",
+   "name": "工学部第二部（夜間）",
+   "campus": "東京千住キャンパス（東京都足立区）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "AO入試・はたらく学生入試など独自方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜あり",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種（数学・理科・工業等）（要確認）",
+    "電気主任技術者関連科目の履修（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

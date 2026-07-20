@@ -1,0 +1,66 @@
+{
+  "uni_id": "gakushuin",
+  "departments": [
+    {
+      "dept_id": "gakushuin-kokusaibunka",
+      "uni_id": "gakushuin",
+      "name": "国際文化交流学部",
+      "campus": "戸山キャンパス（東京都新宿区戸山）",
+      "hensachi": {
+        "min": 52.5,
+        "max": 55,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": null,
+          "note": "実施有無は要確認（旧学習院女子大ではAO型選抜を実施）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": null,
+          "note": "公募制推薦の実施有無は要確認",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "一般選抜（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": null,
+          "note": "共通テスト利用の有無は要確認",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中高教員（国語・英語）（要確認）",
+        "学芸員（要確認）",
+        "日本語教育関連科目（要確認）"
+      ],
+      "interest_tags": [
+        "gaikokugo",
+        "bungaku"
+      ],
+      "employment_fields": [
+        "service",
+        "media",
+        "ryutsu",
+        "maker"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+ "uni": {
+  "id": "fukuchiyama-koritsu",
+  "name": "福知山公立大学",
+  "name_short": "福知山公立大",
+  "prefecture": "京都府",
+  "type": "公立",
+  "campus_main": "本部キャンパス（京都府福知山市）",
+  "tuition_yen_per_year": 535800,
+  "tuition_note": "公立大学の標準額。入学金は福知山市内出身者と市外出身者で差がある（要確認）",
+  "access_from_shiga_min": 160,
+  "commute_possible": false,
+  "commute_note": "草津・大津から京都経由で特急利用でも片道約2時間半〜3時間。下宿前提",
+  "feature": "2016年に私立の成美大学を公立化して誕生した、京都府北部・福知山市にある小規模公立大学。地域経営学部と情報学部の2学部で、1学年200人程度の少人数教育が特徴。「地域協働型教育」を掲げ、北近畿の自治体・企業と連携したフィールドワークが豊富。公立のため学費が国立並みに安く、地方で腰を据えて学びたい人に向く。",
+  "living_cost": {
+   "rent_min": 25000,
+   "rent_max": 45000,
+   "food_monthly": 25000,
+   "monthly_total": 75000,
+   "four_year_total": 3600000,
+   "note": "福知山市は家賃相場が非常に安く、下宿費用は京都市内の半分程度で済む"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約98%（要確認）",
+   "top_employers": [
+    "北近畿の自治体（福知山市役所など）",
+    "京都銀行・京都北都信用金庫など地元金融",
+    "北近畿の地元企業",
+    "病院・医療法人（事務系）",
+    "IT企業（情報学部）",
+    "公務員（一般行政職）"
+   ],
+   "note": "小規模大学のため就職支援は個別対応が中心。地元北近畿への就職に強い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR福知山駅からバス約8分・徒歩約25分（要確認）",
+   "walking_min_from_station": 25,
+   "nearby_amenities": "福知山駅周辺に商業施設・スーパーあり。市中心部が生活圏",
+   "area_description": "福知山城の城下町として栄えた京都府北部の中核都市。落ち着いた地方都市で生活費が安い"
+  },
+  "shogakukin": {
+   "general_shogakukin": "大学独自の奨学金・入学金減免制度あり（要確認）。日本学生支援機構奨学金利用可",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "小規模を活かした個別就職支援",
+    "北近畿の自治体・企業との連携インターンシップ",
+    "公務員試験対策の支援"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.fukuchiyama.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "国公立志望だけど都市部の難関校は厳しい…という場合の現実的な公立選択肢。学費が年間約54万円と安く、下宿しても私立自宅通学より総費用を抑えられるケースがある。",
+  "region": "kyoto-north",
+  "employment": {
+   "ratings": {
+    "kyoin": 1,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 2,
+    "kōmuin_ippan": 4,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 1,
+    "iryō": 2
+   },
+   "strengths": [
+    "北近畿の自治体・地元企業への就職に強い",
+    "公立で学費が安く費用対効果が高い",
+    "少人数教育で就職支援が手厚い",
+    "医療福祉経営分野では病院事務・診療情報管理の専門人材を育成"
+   ],
+   "representative_employers": [
+    "福知山市役所など北近畿の自治体",
+    "京都北都信用金庫など地元金融機関",
+    "北近畿の製造業・小売業",
+    "病院・医療法人（事務部門）",
+    "IT企業"
+   ],
+   "summary": "北近畿密着の公立大。公務員・地元企業・病院事務に強み。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（要確認）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文・プレゼンテーション等"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "実施学部・年度により内容が異なる可能性あり（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（全国枠・地域枠）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準あり（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "北近畿など地元出身者向けの地域枠が設けられている（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋小論文・面接等の二次試験（要確認）",
+     "notes": "二次は学科試験よりも小論文等の比重が大きいとされる（要確認）",
+     "bairitsu": "2〜5倍（要確認）"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト＋面接等（要確認）",
+     "notes": "後期は募集人員が少なく倍率が高くなりやすい（要確認）",
+     "bairitsu": "3〜8倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "fukuchiyama-koritsu-keiei",
+   "uni_id": "fukuchiyama-koritsu",
+   "name": "地域経営学部（地域経営学科・医療福祉経営学科）",
+   "campus": "本部キャンパス（京都府福知山市）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施有無・内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（全国枠・地域枠）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストを課す選抜が中心",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "診療情報管理士（受験資格・医療福祉経営学科）（要確認）",
+    "社会調査関連の学び（資格ではなく科目として）"
+   ],
+   "interest_tags": [
+    "keizai",
+    "shakai"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "iryo_fukushi",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "fukuchiyama-koritsu-joho",
+   "uni_id": "fukuchiyama-koritsu",
+   "name": "情報学部（情報学科）",
+   "campus": "本部キャンパス（京都府福知山市）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（全国枠・地域枠）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストを課す選抜が中心",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "基本情報技術者など情報系国家試験の受験支援（課程による自動取得資格ではない）"
+   ],
+   "interest_tags": [
+    "joho",
+    "riko"
+   ],
+   "employment_fields": [
+    "it",
+    "maker",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

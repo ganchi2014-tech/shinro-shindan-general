@@ -1,0 +1,525 @@
+{
+ "uni": {
+  "id": "nagoya-kogyo",
+  "name": "名古屋工業大学",
+  "name_short": "名工大",
+  "prefecture": "愛知県",
+  "type": "国立",
+  "campus_main": "御器所キャンパス",
+  "tuition_yen_per_year": 535800,
+  "access_from_shiga_min": 150,
+  "commute_possible": false,
+  "commute_note": "草津から在来線で片道約2時間半（米原乗換）。通学は非現実的で名古屋市内での下宿が前提",
+  "feature": "工学系単科の国立大学で、名古屋市中心部に近い都市型キャンパスを持つ。トヨタ自動車・デンソーをはじめとする東海圏の製造業への就職実績が全国トップクラス。学部卒業生の多くが大学院に進学し、研究開発・技術系総合職へ進む。2016年の改組で高度工学教育課程（5学科）・創造工学教育課程（学部大学院6年一貫）・基幹工学教育課程（夜間主）の構成となった。",
+  "living_cost": {
+   "rent_min": 40000,
+   "rent_max": 60000,
+   "food_monthly": 25000,
+   "monthly_total": 100000,
+   "four_year_total": 4800000,
+   "note": "名古屋市昭和区・瑞穂区周辺の相場（要確認）。名古屋は京阪神より家賃はやや安め"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約98%（要確認）",
+   "top_employers": [
+    "トヨタ自動車",
+    "デンソー",
+    "アイシン",
+    "三菱電機",
+    "豊田自動織機",
+    "中部電力",
+    "ブラザー工業",
+    "NTTデータ"
+   ],
+   "note": "学部卒業生の6〜7割程度が大学院へ進学（要確認）。院卒での技術職就職が主流"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR中央本線・地下鉄鶴舞線「鶴舞駅」徒歩約10分",
+   "walking_min_from_station": 10,
+   "nearby_amenities": "鶴舞公園が隣接。名古屋駅・栄まで電車で10分前後と生活至便",
+   "area_description": "名古屋市昭和区の市街地。都心に近い立地ながら落ち着いた文教エリア"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、国立大学の授業料免除・大学独自の支援制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "東海圏メーカーとの強固なパイプと豊富な推薦求人（要確認）",
+    "工学単科ならではの専門分野別の就職支援",
+    "大学院進学も含めた進路指導"
+   ],
+   "quality": 5,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.nitech.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "偏差値の割に就職実績が突出して高い「ものづくり志望の狙い目国立」。京都・大阪の国立よりボーダーは手が届きやすく、トヨタ系など東海圏大手メーカーへの太いパイプが魅力。",
+  "region": "tokai",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 5,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "トヨタ系をはじめ東海圏製造業への就職に非常に強い",
+    "大学院進学率が高く、研究開発・技術系総合職に直結",
+    "工学単科のため企業からの学校推薦・求人が豊富（要確認）",
+    "情報系はIT大手・通信への就職も好調"
+   ],
+   "representative_employers": [
+    "トヨタ自動車",
+    "デンソー",
+    "アイシン",
+    "三菱電機",
+    "中部電力",
+    "NTTデータ"
+   ],
+   "summary": "東海圏ものづくり就職で最強クラスの国立工科大。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "学科により基準・実施状況が異なる（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "共通テスト（学科により課す場合あり）"
+     ],
+     "bairitsu": "2〜3倍（要確認）",
+     "notes": "実施学科・共通テストの要否は年度・学科により異なる（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別試験（数学・理科・英語）",
+     "notes": "個別試験は数学・理科の配点が高め（要確認）",
+     "bairitsu": "2〜4倍（要確認）"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト＋個別試験",
+     "notes": "後期は募集人員が少なく倍率が高い",
+     "bairitsu": "5〜10倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "nagoya-kogyo-seimei",
+   "uni_id": "nagoya-kogyo",
+   "name": "工学部 生命・応用化学科",
+   "campus": "御器所キャンパス（愛知県名古屋市昭和区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（実施状況は要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは前期・後期とも必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（理科・工業）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "shokuhin",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-kogyo-butsuri",
+   "uni_id": "nagoya-kogyo",
+   "name": "工学部 物理工学科",
+   "campus": "御器所キャンパス（愛知県名古屋市昭和区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（実施状況は要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは前期・後期とも必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（理科・工業）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-kogyo-denki-kikai",
+   "uni_id": "nagoya-kogyo",
+   "name": "工学部 電気・機械工学科",
+   "campus": "御器所キャンパス（愛知県名古屋市昭和区）",
+   "hensachi": {
+    "min": 55,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（実施状況は要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは前期・後期とも必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（工業）（要確認）",
+    "電気主任技術者（卒業後の実務経験等による）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-kogyo-joho",
+   "uni_id": "nagoya-kogyo",
+   "name": "工学部 情報工学科",
+   "campus": "御器所キャンパス（愛知県名古屋市昭和区）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（実施状況は要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは前期・後期とも必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（数学・情報）（要確認）"
+   ],
+   "interest_tags": [
+    "joho",
+    "riko"
+   ],
+   "employment_fields": [
+    "it",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-kogyo-shakai",
+   "uni_id": "nagoya-kogyo",
+   "name": "工学部 社会工学科",
+   "campus": "御器所キャンパス（愛知県名古屋市昭和区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（実施状況は要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは前期・後期とも必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級・二級建築士受験資格（建築・デザイン分野）（要確認）",
+    "高等学校教諭一種免許状（工業）（要確認）"
+   ],
+   "interest_tags": [
+    "kenchiku",
+    "riko"
+   ],
+   "employment_fields": [
+    "kensetsu",
+    "maker",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-kogyo-sozo",
+   "uni_id": "nagoya-kogyo",
+   "name": "工学部 創造工学教育課程（学部大学院6年一貫）",
+   "campus": "御器所キャンパス（愛知県名古屋市昭和区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（実施状況は要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次試験）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（工業）（要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-kogyo-kikan",
+   "uni_id": "nagoya-kogyo",
+   "name": "工学部 基幹工学教育課程（夜間主）",
+   "campus": "御器所キャンパス（愛知県名古屋市昭和区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（実施状況は要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "夜間主課程。授業料が昼間課程より低額（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（工業）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "kensetsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

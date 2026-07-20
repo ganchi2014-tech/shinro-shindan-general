@@ -1,0 +1,461 @@
+{
+ "uni": {
+  "id": "yokohama-shiritsu",
+  "name": "横浜市立大学",
+  "name_short": "横浜市大",
+  "prefecture": "神奈川県",
+  "type": "公立",
+  "campus_main": "金沢八景キャンパス",
+  "tuition_yen_per_year": 557400,
+  "tuition_note": "公立のため学費は国立並みに安い。入学金は横浜市内出身者と市外出身者で金額が異なる（要確認）",
+  "access_from_shiga_min": 210,
+  "commute_possible": false,
+  "commute_note": "草津・大津から新幹線利用でも片道3時間超（京都→新横浜→金沢八景）。下宿前提",
+  "feature": "国際教養・国際商・理・データサイエンス・医の5学部を持つ横浜市立の公立大学。少人数教育と英語教育に力を入れており、国際系学部では実践的な英語運用力が鍛えられる。データサイエンス学部は全国の公立大でも先駆け的存在。医学部は附属2病院を持ち、首都圏の公立医大として高い実績がある。",
+  "living_cost": {
+   "rent_min": 50000,
+   "rent_max": 75000,
+   "food_monthly": 25000,
+   "monthly_total": 110000,
+   "four_year_total": 5300000,
+   "note": "下宿前提。金沢八景周辺は横浜中心部より家賃が抑えめだが首都圏相場（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "横浜市役所",
+    "神奈川県庁",
+    "横浜銀行",
+    "日産自動車",
+    "富士通",
+    "附属病院・県内医療機関",
+    "大手IT・コンサル企業"
+   ],
+   "note": "公務員（横浜市・神奈川県）と首都圏大手企業の両方に実績。医学科は医師国家試験合格率が高水準（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "京急線 金沢八景駅 徒歩約5分",
+   "walking_min_from_station": 5,
+   "nearby_amenities": "金沢八景駅周辺にスーパー・飲食店。横浜駅へ電車約20分、都心へも1本",
+   "area_description": "横浜市南部の海に近い落ち着いた文教・住宅エリア。八景島や鎌倉・逗子も近い"
+  },
+  "shogakukin": {
+   "general_shogakukin": "国の高等教育修学支援制度＋大学独自の授業料減免・奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "少人数規模を活かした個別キャリア支援",
+    "横浜市・神奈川県の自治体や首都圏企業とのつながり",
+    "低学年からのキャリア形成科目"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.yokohama-cu.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "国立並みの学費で「横浜で国際系・データサイエンス・医療系を学ぶ」が実現できる首都圏の公立大。滋賀からは下宿前提だが、家賃を除けば学費負担は滋賀の国公立と同水準。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 4,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 1,
+    "iryō": 5
+   },
+   "strengths": [
+    "横浜市役所・神奈川県庁など地元自治体の公務員に強い",
+    "附属2病院を持ち、医師・看護師など医療系就職が堅い",
+    "国際系・データサイエンス系は首都圏の大手企業・金融・ITへの就職が良好"
+   ],
+   "representative_employers": [
+    "横浜市役所",
+    "神奈川県庁",
+    "横浜銀行",
+    "日産自動車",
+    "富士通",
+    "横浜市立大学附属病院"
+   ],
+   "summary": "公務員・首都圏大手企業・医療の三本柱で堅実。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": 4,
+     "hyoutei_note": "4.0以上程度（学部・学科により異なる。医学科はさらに高い基準・要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "医学科は神奈川県内高校対象の地域医療枠等の推薦あり（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別学力検査。医学科は面接あり",
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "国際教養・国際商など一部学部は出願時に英語資格・検定試験のスコア基準あり（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "yokohama-shiritsu-kyoyo",
+   "uni_id": "yokohama-shiritsu",
+   "name": "国際教養学部",
+   "campus": "金沢八景キャンパス（神奈川県横浜市金沢区）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は原則実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査。英語資格の出願基準あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストを課す（国公立標準型）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭免許（英語等・課程認定は要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "service",
+    "media",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "yokohama-shiritsu-shogaku",
+   "uni_id": "yokohama-shiritsu",
+   "name": "国際商学部",
+   "campus": "金沢八景キャンパス（神奈川県横浜市金沢区）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は原則実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査。英語資格の出願基準あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストを課す（国公立標準型）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "特別な国家資格はなし（経営・会計系の検定取得支援あり・要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "ryutsu",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "yokohama-shiritsu-rigaku",
+   "uni_id": "yokohama-shiritsu",
+   "name": "理学部",
+   "campus": "金沢八景キャンパス（神奈川県横浜市金沢区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は原則実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査（理科・数学重視）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストを課す（国公立標準型）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭免許（理科・課程認定は要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "shokuhin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "yokohama-shiritsu-ds",
+   "uni_id": "yokohama-shiritsu",
+   "name": "データサイエンス学部",
+   "campus": "金沢八景キャンパス（神奈川県横浜市金沢区）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は原則実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査（数学重視）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストを課す（国公立標準型）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "統計・情報系の民間資格取得を支援（要確認）"
+   ],
+   "interest_tags": [
+    "joho"
+   ],
+   "employment_fields": [
+    "it",
+    "kinyu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "yokohama-shiritsu-igaku",
+   "uni_id": "yokohama-shiritsu",
+   "name": "医学部 医学科",
+   "campus": "福浦キャンパス（神奈川県横浜市金沢区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 70,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は原則実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "地域医療枠など神奈川県内高校対象の推薦が中心（滋賀の高校からは対象外の可能性大・要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査＋面接。最難関レベル",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストを課す（国公立標準型）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "yokohama-shiritsu-kango",
+   "uni_id": "yokohama-shiritsu",
+   "name": "医学部 看護学科",
+   "campus": "福浦キャンパス（神奈川県横浜市金沢区）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は原則実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査・面接等（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストを課す（国公立標準型）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格（選抜制・要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

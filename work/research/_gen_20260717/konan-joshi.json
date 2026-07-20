@@ -1,0 +1,425 @@
+{
+ "uni": {
+  "id": "konan-joshi",
+  "name": "甲南女子大学",
+  "name_short": "甲南女子大",
+  "prefecture": "兵庫県",
+  "type": "私立",
+  "campus_main": "本部キャンパス（神戸市東灘区）",
+  "tuition_yen_per_year": 1300000,
+  "tuition_note": "文系学部の概算。看護リハビリテーション学部・医療栄養学部は年間170〜190万円程度（要確認）",
+  "access_from_shiga_min": 95,
+  "commute_possible": true,
+  "commute_note": "草津・大津からJR新快速で芦屋まで直通、普通に乗換1回でJR甲南山手駅。駅から坂道を徒歩約10分。片道約90〜100分で通学圏ぎりぎり",
+  "feature": "神戸市東灘区の高台にキャンパスを構える伝統ある女子大学。国際・文・人間科学の文系3学部に加え、看護リハビリテーション学部と医療栄養学部を持ち、女子大としては医療系資格に強いのが特色。少人数教育と面倒見のよい就職支援で知られ、就職率は高水準。女子大のため男子学生は入学できない。",
+  "living_cost": {
+   "rent_min": 45000,
+   "rent_max": 65000,
+   "food_monthly": 25000,
+   "monthly_total": 105000,
+   "four_year_total": 5000000,
+   "note": "阪神間（東灘・芦屋エリア）は家賃やや高め。滋賀県南部からは自宅通学も可能圏"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約98%（要確認）",
+   "top_employers": [
+    "阪神間・神戸市内の病院（看護・リハビリ）",
+    "航空・ホテル・ブライダル業界",
+    "地方銀行・信用金庫",
+    "保育園・幼稚園・こども園",
+    "食品・製薬メーカー",
+    "一般企業（事務・販売）"
+   ],
+   "note": "看護師・理学療法士・管理栄養士の国家試験合格率は高水準（要確認）。文系はサービス・金融の事務系就職が中心"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR甲南山手駅 徒歩約10分（坂道）",
+   "walking_min_from_station": 10,
+   "nearby_amenities": "岡本・摂津本山エリアのカフェや商店街が生活圏。三宮へ電車で約15分",
+   "area_description": "神戸市東灘区の閑静な住宅街・文教エリア。高台からの見晴らしがよい"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入試成績による特待生制度・独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "少人数の個別キャリア支援・面接対策",
+    "医療系学部は国家試験対策と実習先経由の就職ルートが確立",
+    "エアライン・ホテル等サービス業界向け支援に伝統"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.konan-wu.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "滋賀からJR新快速＋乗換1回で通える神戸の女子大。看護師・理学療法士・管理栄養士などの医療系国家資格と、国際・心理・子どもなど文系の学びの両方が1つのキャンパスに揃う。",
+  "region": "kansai",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 2,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 1,
+    "iryō": 4
+   },
+   "strengths": [
+    "看護・理学療法・管理栄養の医療系国家資格取得から阪神間の病院就職に直結",
+    "保育士・幼稚園教諭など子ども系の資格就職に実績",
+    "航空・ホテル・ブライダルなどサービス業界への就職に伝統的な強み",
+    "個別対応の就職支援で就職率が高い"
+   ],
+   "representative_employers": [
+    "神戸市・阪神間の総合病院（要確認）",
+    "航空・ホテル系企業（要確認）",
+    "地方銀行・信用金庫",
+    "保育園・幼稚園・こども園",
+    "食品メーカー"
+   ],
+   "summary": "医療系資格＋女子大の丁寧な就職支援。",
+   "notes": "女子大のため男子は出願不可"
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文・課題等"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": "学部・学科により内容が異なる。看護・医療系は実施の有無を要確認"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は緩やか〜なし（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力テスト（2科目型中心）"
+     ],
+     "bairitsu": "1〜3倍（要確認）",
+     "notes": "看護学科・理学療法学科は倍率が高くなりやすい（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期・後期）",
+     "subjects": "2科目型中心（英語＋国語または選択科目等）",
+     "notes": "共通テスト利用選抜あり。医療系学部は理科が課される方式あり（要確認）",
+     "bairitsu": "1〜3倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "konan-joshi-kokusai",
+   "uni_id": "konan-joshi",
+   "name": "国際学部",
+   "campus": "本部キャンパス（兵庫県神戸市東灘区）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種（英語）（要確認）",
+    "TOEIC等の語学資格取得支援"
+   ],
+   "interest_tags": [
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "konan-joshi-bun",
+   "uni_id": "konan-joshi",
+   "name": "文学部",
+   "campus": "本部キャンパス（兵庫県神戸市東灘区）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種（国語）（要確認）",
+    "図書館司書（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku"
+   ],
+   "employment_fields": [
+    "media",
+    "service",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "konan-joshi-ningen",
+   "uni_id": "konan-joshi",
+   "name": "人間科学部",
+   "campus": "本部キャンパス（兵庫県神戸市東灘区）",
+   "hensachi": {
+    "min": 40,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "認定心理士",
+    "公認心理師（大学院等の要件あり・要確認）",
+    "保育士",
+    "幼稚園教諭一種",
+    "小学校教諭一種（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "iryo_fukushi",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "konan-joshi-kango-riha",
+   "uni_id": "konan-joshi",
+   "name": "看護リハビリテーション学部",
+   "campus": "本部キャンパス（兵庫県神戸市東灘区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施の有無・学科は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）。理科選択が課される方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師（国家試験受験資格）",
+    "保健師（選抜制・要確認）",
+    "理学療法士（国家試験受験資格）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "konan-joshi-iryo-eiyo",
+   "uni_id": "konan-joshi",
+   "name": "医療栄養学部",
+   "campus": "本部キャンパス（兵庫県神戸市東灘区）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）。理科が課される方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "管理栄養士（国家試験受験資格）",
+    "栄養士",
+    "栄養教諭一種（要確認）"
+   ],
+   "interest_tags": [
+    "eiyo",
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "shokuhin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

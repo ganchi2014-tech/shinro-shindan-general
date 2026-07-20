@@ -1,0 +1,357 @@
+{
+ "uni": {
+  "id": "seijo",
+  "name": "成城大学",
+  "name_short": "成城大",
+  "prefecture": "東京都",
+  "type": "私立",
+  "campus_main": "成城キャンパス",
+  "tuition_yen_per_year": 1100000,
+  "tuition_note": "文系のみの大学で学部間の学費差は小さい（要確認）",
+  "access_from_shiga_min": 220,
+  "commute_possible": false,
+  "commute_note": "東京・世田谷区。新幹線を使っても片道約3.5時間で下宿前提",
+  "feature": "経済・文芸・法・社会イノベーションの4学部が世田谷区成城のワンキャンパスに集まる小規模私大。「成成明学」と呼ばれるグループの一角で、MARCHに次ぐ難易度帯として知られる。1年次からの少人数ゼミ教育が伝統で「ゼミの成城」と言われるほど教員との距離が近い。落ち着いた高級住宅街の中にある緑豊かなキャンパスも特徴。",
+  "living_cost": {
+   "rent_min": 55000,
+   "rent_max": 90000,
+   "food_monthly": 30000,
+   "monthly_total": 120000,
+   "four_year_total": 5800000,
+   "note": "世田谷区周辺は家賃が高め。小田急線で郊外方面に住むとやや抑えられる"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約96%（要確認）",
+   "top_employers": [
+    "メガバンク・信託銀行",
+    "大手損害保険・生命保険",
+    "航空・旅行・ホテル",
+    "マスコミ・広告",
+    "大手小売・サービス",
+    "特別区・都庁など公務員"
+   ],
+   "note": "金融・保険・マスコミなど東京の文系総合職に強い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "小田急線 成城学園前駅 徒歩約4分",
+   "walking_min_from_station": 4,
+   "nearby_amenities": "駅直結の商業施設や商店街があり生活には困らない",
+   "area_description": "都内有数の高級住宅街・成城の中にある落ち着いた文教エリア。新宿まで小田急線で約15分"
+  },
+  "shogakukin": {
+   "general_shogakukin": "成城大学澤柳奨学金など独自の給付型奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "小規模大学ならではの個別・対面型キャリア支援",
+    "成城学園の同窓ネットワークを生かしたOB・OG訪問",
+    "低学年からのキャリア教育プログラム"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.seijo.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「東京の私大で少人数ゼミ中心にじっくり学びたい」人向け。MARCHより一段入りやすい難易度で、全学部が新宿から15分の一つのキャンパスに集まる安心感が滋賀からの上京組にも魅力。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "金融・保険・マスコミなど東京の大手文系就職に強い",
+    "少人数ゼミで培う対話力が面接で評価されやすい",
+    "小規模ゆえにキャリア支援が一人ひとりに行き届く"
+   ],
+   "representative_employers": [
+    "メガバンク・大手信託銀行",
+    "東京海上日動など大手損保",
+    "大手生命保険",
+    "航空・旅行大手",
+    "マスコミ・広告関連",
+    "特別区・都庁など公務員"
+   ],
+   "summary": "東京の文系総合職に強い少人数ワンキャンパス私大。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [],
+   "ippan": [
+    {
+     "method_name": "一般選抜S方式（全学部統一選抜）",
+     "subjects": "2教科型で複数学部の併願がしやすい（要確認）",
+     "notes": "同一日程で全学部に出願できる方式（要確認）",
+     "bairitsu": "3〜7倍（要確認）"
+    },
+    {
+     "method_name": "一般選抜A方式（3教科型）",
+     "subjects": "英語＋国語＋選択科目の3教科（要確認）",
+     "notes": "学部ごとの個別試験。募集人数が最も多い主力方式（要確認）",
+     "bairitsu": "2〜5倍（要確認）"
+    },
+    {
+     "method_name": "共通テスト利用入試",
+     "subjects": "共通テスト3教科型など（要確認）",
+     "notes": "個別試験なしで出願可能（要確認）",
+     "bairitsu": "2〜6倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "seijo-keizai",
+   "uni_id": "seijo",
+   "name": "経済学部",
+   "campus": "成城キャンパス（東京都世田谷区成城）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜の実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "指定校推薦が中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "S方式（全学部統一）・A方式（3教科）など（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（社会）（要確認）",
+    "高等学校教諭一種（地歴・公民）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "it",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "seijo-bungei",
+   "uni_id": "seijo",
+   "name": "文芸学部",
+   "campus": "成城キャンパス（東京都世田谷区成城）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜の実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "指定校推薦が中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "S方式（全学部統一）・A方式（3教科）など（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（国語・英語・社会）（要確認）",
+    "高等学校教諭一種（国語・英語・地歴）（要確認）",
+    "学芸員（要確認）",
+    "司書（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "service",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "seijo-ho",
+   "uni_id": "seijo",
+   "name": "法学部",
+   "campus": "成城キャンパス（東京都世田谷区成城）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜の実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "指定校推薦が中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "S方式（全学部統一）・A方式（3教科）など（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（社会）（要確認）",
+    "高等学校教諭一種（公民）（要確認）",
+    "法学検定・行政書士など資格試験対策の土台（受験資格ではない）"
+   ],
+   "interest_tags": [
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "seijo-shakai-inobe",
+   "uni_id": "seijo",
+   "name": "社会イノベーション学部",
+   "campus": "成城キャンパス（東京都世田谷区成城）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜の実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "指定校推薦が中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "S方式（全学部統一）・A方式（3教科）など（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "認定心理士（心理社会学科）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "keizai"
+   ],
+   "employment_fields": [
+    "it",
+    "service",
+    "media",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

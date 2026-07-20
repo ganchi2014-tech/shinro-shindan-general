@@ -1,0 +1,586 @@
+{
+ "uni": {
+  "id": "nagoya-shiritsu",
+  "name": "名古屋市立大学",
+  "name_short": "名市大",
+  "prefecture": "愛知県",
+  "type": "公立",
+  "campus_main": "桜山キャンパス",
+  "tuition_yen_per_year": 535800,
+  "tuition_note": "授業料は公立標準額535,800円/年。入学金は名古屋市民と市外出身者で差がある（市外は30万円台・要確認）",
+  "access_from_shiga_min": 140,
+  "commute_possible": false,
+  "commute_note": "草津からJR東海道線で名古屋まで約90分、さらに地下鉄で20〜30分。片道2時間超のため下宿前提",
+  "feature": "名古屋市が設置する公立の総合大学で、医学部・薬学部を持つ公立大として全国的に知られる。経済・人文社会・芸術工学・看護・総合生命理学・データサイエンスまで文理幅広い8学部体制。学費は国公立水準に抑えられ、附属病院を核とした医療系教育と、東海圏での公務員・大手企業就職の双方に実績がある。薬学部の一般選抜は公立大中期日程で、全国から受験生が集まる。",
+  "living_cost": {
+   "rent_min": 40000,
+   "rent_max": 65000,
+   "food_monthly": 25000,
+   "monthly_total": 100000,
+   "four_year_total": 4800000,
+   "note": "名古屋市内（瑞穂区・昭和区周辺）の下宿相場。地下鉄沿線でも家賃は京阪神より抑えめ"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "名古屋市立大学病院ほか東海圏の病院",
+    "名古屋市役所",
+    "愛知県庁",
+    "トヨタ自動車・デンソーなどトヨタ系企業",
+    "東海地方の金融機関",
+    "製薬企業・ドラッグストア（薬学）",
+    "国家公務員・国税専門官"
+   ],
+   "note": "医師・薬剤師・看護師の国家試験合格率は高水準（要確認）。文系学部は東海圏の公務員・大手企業に強い"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "地下鉄桜通線「桜山」駅 徒歩約3分（桜山キャンパス）",
+   "walking_min_from_station": 3,
+   "nearby_amenities": "桜山駅周辺に飲食店・スーパー・名古屋市博物館。栄・名古屋駅へ地下鉄で直結",
+   "area_description": "名古屋市瑞穂区の落ち着いた文教・住宅エリア。経済・人文社会系の滝子キャンパス、芸術工学部の北千種キャンパスなど市内に複数キャンパスが分かれる"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、大学独自の授業料減免・奨学金制度あり（要確認）。名古屋市民は入学金が減額される",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "医療系は附属病院・東海圏医療機関との強いつながり",
+    "文系学部向けに公務員試験対策・個別就職支援",
+    "東海圏企業とのマッチング機会が多い"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.nagoya-cu.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "滋賀からは下宿前提だが、公立の学費で医・薬・看護からデータサイエンスまで選べる貴重な総合大学。特に薬学部は公立中期日程のため、国公立薬学志望なら前期と組み合わせて狙える。",
+  "region": "tokai",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 4,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 1,
+    "iryō": 5
+   },
+   "strengths": [
+    "医師・薬剤師・看護師など医療系国家資格職に直結",
+    "名古屋市役所・愛知県庁など東海圏の公務員就職に強い",
+    "トヨタ系をはじめ東海圏大手メーカー・金融への就職実績",
+    "公立大で学費が安く、都市部でのキャリア形成がしやすい"
+   ],
+   "representative_employers": [
+    "名古屋市立大学病院・東海圏の病院",
+    "名古屋市役所",
+    "愛知県庁",
+    "トヨタ自動車",
+    "デンソー",
+    "製薬企業（要確認）"
+   ],
+   "summary": "公立総合大学として医療系と東海圏の公務員・大手企業就職の双方に強い。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "学部により4.0前後以上（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接",
+      "共通テスト（課す方式の学部あり）"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "医学部の地域枠推薦など、愛知県内・名古屋市内出身者を対象とする枠がある学部も（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別学力検査（学部により2〜4教科、医学部は面接あり）",
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "多くの学部の主力方式"
+    },
+    {
+     "method_name": "一般選抜（中期・後期日程）",
+     "subjects": "薬学部は公立大学中期日程。後期日程は一部学部で実施（要確認）",
+     "bairitsu": "5〜15倍（要確認）",
+     "notes": "薬学部中期は全国の国公立薬学志望者が併願するため高倍率"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "nagoya-shiritsu-igaku",
+   "uni_id": "nagoya-shiritsu",
+   "name": "医学部（医学科）",
+   "campus": "桜山キャンパス（愛知県名古屋市瑞穂区）",
+   "hensachi": {
+    "min": 65,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（地域枠等・要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋二次学力試験＋面接）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須。高得点率が必要",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-shiritsu-yaku",
+   "uni_id": "nagoya-shiritsu",
+   "name": "薬学部（薬学科・生命薬科学科）",
+   "campus": "田辺通キャンパス（愛知県名古屋市瑞穂区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "公立大学中期日程（全国から併願が集まり高倍率）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師国家試験受験資格（6年制薬学科）",
+    "生命薬科学科（4年制）は研究職向けで薬剤師資格は取得不可"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-shiritsu-keizai",
+   "uni_id": "nagoya-shiritsu",
+   "name": "経済学部",
+   "campus": "滝子キャンパス（愛知県名古屋市瑞穂区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "特になし（学芸員等は要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-shiritsu-jinbun",
+   "uni_id": "nagoya-shiritsu",
+   "name": "人文社会学部",
+   "campus": "滝子キャンパス（愛知県名古屋市瑞穂区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "認定心理士（心理教育学科・要確認）",
+    "公認心理師カリキュラム対応（要確認）",
+    "教員免許（一部学科・要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "bungaku"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "service",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-shiritsu-geikou",
+   "uni_id": "nagoya-shiritsu",
+   "name": "芸術工学部",
+   "campus": "北千種キャンパス（愛知県名古屋市千種区）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程。学科により実技（デッサン等）や数学中心の試験（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士受験資格（建築都市デザイン学科・要確認）",
+    "二級建築士受験資格（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu",
+    "kenchiku"
+   ],
+   "employment_fields": [
+    "kensetsu",
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-shiritsu-kango",
+   "uni_id": "nagoya-shiritsu",
+   "name": "看護学部",
+   "campus": "桜山キャンパス（愛知県名古屋市瑞穂区）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋二次）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格（選抜制・要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-shiritsu-seimei",
+   "uni_id": "nagoya-shiritsu",
+   "name": "総合生命理学部",
+   "campus": "滝子キャンパス（愛知県名古屋市瑞穂区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教員免許（理科）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "shokuhin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nagoya-shiritsu-data",
+   "uni_id": "nagoya-shiritsu",
+   "name": "データサイエンス学部",
+   "campus": "滝子キャンパス（愛知県名古屋市瑞穂区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋二次、数学重視・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "統計・情報系資格の取得支援（要確認）"
+   ],
+   "interest_tags": [
+    "joho",
+    "riko"
+   ],
+   "employment_fields": [
+    "it",
+    "kinyu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

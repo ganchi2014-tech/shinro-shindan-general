@@ -1,0 +1,180 @@
+{
+ "uni": {
+  "id": "nara-kenritsu",
+  "name": "奈良県立大学",
+  "name_short": "奈良県立大",
+  "prefecture": "奈良県",
+  "type": "公立",
+  "campus_main": "本部キャンパス",
+  "tuition_yen_per_year": 535800,
+  "tuition_note": "公立大学の標準額。入学金は奈良県内出身者が減額される（要確認）",
+  "access_from_shiga_min": 95,
+  "commute_possible": true,
+  "commute_note": "草津からJR琵琶湖線→京都でみやこ路快速に乗換→JR奈良駅下車。片道約1時間半・乗換1回で通学圏だがやや遠め",
+  "feature": "地域創造学部のみの小規模公立大学で、学生数は全体で約600人と非常にコンパクト。「コモンズ」と呼ばれる少人数ゼミ型の教育システムが特色で、観光・まちづくり・地域経済・都市文化などを実践的に学ぶ。JR奈良駅から徒歩圏という立地を生かし、奈良のまちや観光を題材にしたフィールドワークが豊富。公立のため学費が安く、文系で国公立を目指す受験生の選択肢になる。",
+  "living_cost": {
+   "rent_min": 40000,
+   "rent_max": 60000,
+   "food_monthly": 25000,
+   "monthly_total": 80000,
+   "four_year_total": 3800000,
+   "note": "奈良市中心部の下宿相場。京都・大阪より家賃はやや安め（要確認）。滋賀南部からは自宅通学も可能"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "奈良県庁・県内市町村",
+    "南都銀行（要確認）",
+    "観光・ホテル関連企業",
+    "小売・サービス業",
+    "一般企業（メーカー・流通）"
+   ],
+   "note": "小規模大学ながら地方公務員への就職に一定の実績（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR奈良駅 徒歩約10分",
+   "walking_min_from_station": 10,
+   "nearby_amenities": "JR奈良駅周辺の商業施設・飲食店が生活圏。近鉄奈良駅や奈良公園・ならまちも徒歩圏",
+   "area_description": "奈良市の中心市街地。世界的観光地に近い落ち着いた環境で、まちづくり・観光の学びの題材がすぐそばにある"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、公立大学として授業料減免制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "超小規模ならではの個別就職支援",
+    "公務員志望者向けの支援・ガイダンス（要確認）"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.narapu.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "京都乗換1回・片道約1時間半で通える「公立」の文系大学。観光やまちづくりを少人数で学びたい人、国公立志望で共通テストの負担を抑えたい文系に刺さる選択肢。",
+  "region": "kansai",
+  "employment": {
+   "ratings": {
+    "kyoin": 1,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 4,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "奈良県庁・市町村など地方公務員への就職実績",
+    "観光・まちづくり分野の学びが地域系企業への就職に直結しやすい",
+    "少人数教育で教員との距離が近く面倒見がよい",
+    "公立で学費が安く経済的負担が小さい"
+   ],
+   "representative_employers": [
+    "奈良県庁・県内市町村",
+    "南都銀行（要確認）",
+    "観光・ホテル関連企業",
+    "小売・サービス業"
+   ],
+   "summary": "地方公務員と観光・地域系企業に強い超小規模公立。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "4.0前後（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "奈良県内高校対象の枠と全国対象の枠がある（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別試験（小論文等）（要確認）",
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "共通テストの科目負担が国公立の中では比較的軽め（要確認）"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト＋個別試験（要確認）",
+     "bairitsu": "5〜15倍（要確認）",
+     "notes": "後期は募集人員が少なく高倍率になりやすい（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "nara-kenritsu-chiiki",
+   "uni_id": "nara-kenritsu",
+   "name": "地域創造学部",
+   "campus": "本部キャンパス（奈良県奈良市船橋町）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜の実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（県内枠・全国枠あり、要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜前期・後期（共通テスト＋個別試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "一般選抜で共通テストを利用",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "資格直結型ではない（取得可能資格は要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "keizai"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "service",
+    "kinyu",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,483 @@
+{
+ "uni": {
+  "id": "kobe-geijutsu-koka",
+  "name": "神戸芸術工科大学",
+  "name_short": "神戸芸工大",
+  "prefecture": "兵庫県",
+  "type": "私立",
+  "campus_main": "本部キャンパス（神戸市西区学園西町）",
+  "tuition_yen_per_year": 1700000,
+  "tuition_note": "芸術系のため実習費・施設費込みで高め。学科により差あり（要確認）",
+  "access_from_shiga_min": 125,
+  "commute_possible": false,
+  "commute_note": "草津・大津からJR新快速で三ノ宮へ約70〜80分、神戸市営地下鉄西神・山手線に乗り換え学園都市駅まで約25分。片道2時間超のため下宿が現実的",
+  "feature": "1989年開学のデザイン・芸術系の私立大学で、芸術工学部の1学部体制。環境デザインからプロダクト、ビジュアル、まんが、映像、アート・クラフトまでデザイン領域を幅広くカバーする。「まんが表現」を学科として持つ全国でも数少ない大学として知られ、プロのクリエイター教員による実技中心の教育が特色。神戸研究学園都市に位置し、周辺大学との単位互換制度もある。",
+  "living_cost": {
+   "rent_min": 35000,
+   "rent_max": 55000,
+   "food_monthly": 25000,
+   "monthly_total": 90000,
+   "four_year_total": 4300000,
+   "note": "神戸市西区・学園都市エリアは神戸中心部より家賃が安め（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約90%（要確認）",
+   "top_employers": [
+    "ゲーム・アニメ・映像制作会社",
+    "デザイン事務所・広告制作会社",
+    "印刷関連企業",
+    "住宅・建設・インテリア関連企業",
+    "アパレル・雑貨メーカー",
+    "一般企業（企画・販売職等）"
+   ],
+   "note": "クリエイター職での就職や作家・フリーランスとしての活動など進路は多様（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "神戸市営地下鉄西神・山手線 学園都市駅 徒歩約7分（要確認）",
+   "walking_min_from_station": 7,
+   "nearby_amenities": "学園都市駅周辺に商業施設・飲食店あり。神戸研究学園都市として複数大学が集まる学生街",
+   "area_description": "神戸市西区のニュータウン・文教エリア。三宮へ地下鉄で約25分"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入試成績による特待生制度・独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "ポートフォリオ（作品集）指導など美大特化の就職支援",
+    "デザイン・ゲーム・映像業界とのつながりを活かした求人紹介",
+    "クリエイター系企業の学内説明会"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.kobe-du.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「まんが・アニメ・ゲーム・デザインを本気で学びたい」なら関西で有力な選択肢。実技・面接型の入試が中心で学科試験のハードルは低めだが、作品づくりへの熱意が問われる。",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 1,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "デザイン・映像・ゲーム業界などクリエイティブ職への就職に強み",
+    "まんが家・イラストレーターなど作家デビューの実績（要確認）",
+    "中高美術の教員免許や建築系資格など専門資格も取得可能"
+   ],
+   "representative_employers": [
+    "ゲーム制作会社",
+    "アニメ・映像制作会社",
+    "デザイン事務所",
+    "印刷・広告関連企業",
+    "住宅・インテリア関連企業"
+   ],
+   "summary": "クリエイティブ業界特化型。一般企業や公務員志向には不向き。",
+   "notes": "学科再編が行われる可能性があるため最新の募集学科は公式サイトで要確認"
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（AO入試）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "実技・作品提出またはプレゼンテーション（要確認）"
+     ],
+     "bairitsu": "1.0〜1.5倍（要確認）",
+     "notes": "体験授業型・作品持参型など複数方式があるとされる（要確認）。芸術系のため入学者の多くが総合型・推薦型で入学"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は緩やか（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "実技または小論文（要確認）"
+     ],
+     "bairitsu": "1.0〜1.5倍（要確認）",
+     "notes": null
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "学科試験（国語・英語等）または実技試験の選択制（要確認）",
+     "bairitsu": "1.0〜2倍（要確認）",
+     "notes": "共通テスト利用選抜あり。実技型と学科型を選べるのが芸術系大学の特徴（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "kobe-geijutsu-koka-kankyo",
+   "uni_id": "kobe-geijutsu-koka",
+   "name": "芸術工学部 環境デザイン学科",
+   "campus": "本部キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（AO入試）あり",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "学科試験または実技選択（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士受験資格（要確認）",
+    "二級建築士受験資格（要確認）",
+    "商業施設士補（要確認）",
+    "中学校・高等学校教諭一種免許状（美術）（要確認）"
+   ],
+   "interest_tags": [
+    "kenchiku",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "kensetsu",
+    "maker",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kobe-geijutsu-koka-product",
+   "uni_id": "kobe-geijutsu-koka",
+   "name": "芸術工学部 プロダクト・インテリアデザイン学科",
+   "campus": "本部キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（AO入試）あり",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "学科試験または実技選択（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "インテリアプランナー登録資格（要確認）",
+    "商業施設士補（要確認）",
+    "中学校・高等学校教諭一種免許状（美術）（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu",
+    "kenchiku"
+   ],
+   "employment_fields": [
+    "maker",
+    "kensetsu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kobe-geijutsu-koka-visual",
+   "uni_id": "kobe-geijutsu-koka",
+   "name": "芸術工学部 ビジュアルデザイン学科",
+   "campus": "本部キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（AO入試）あり",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "学科試験または実技選択（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（美術）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kobe-geijutsu-koka-manga",
+   "uni_id": "kobe-geijutsu-koka",
+   "name": "芸術工学部 まんが表現学科",
+   "campus": "本部キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（AO入試）あり。作品提出型が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "学科試験または実技選択（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）",
+    "中学校・高等学校教諭一種免許状（美術）（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "it",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kobe-geijutsu-koka-eizo",
+   "uni_id": "kobe-geijutsu-koka",
+   "name": "芸術工学部 映像表現学科",
+   "campus": "本部キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（AO入試）あり",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "学科試験または実技選択（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）",
+    "中学校・高等学校教諭一種免許状（美術）（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu",
+    "joho"
+   ],
+   "employment_fields": [
+    "media",
+    "it",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kobe-geijutsu-koka-art-craft",
+   "uni_id": "kobe-geijutsu-koka",
+   "name": "芸術工学部 アート・クラフト学科",
+   "campus": "本部キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（AO入試）あり",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "学科試験または実技選択（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（美術）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "maker",
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,545 @@
+{
+ "uni": {
+  "id": "bunkyo-univ",
+  "name": "文教大学",
+  "name_short": "文教大",
+  "prefecture": "埼玉県",
+  "type": "私立",
+  "campus_main": "越谷キャンパス",
+  "tuition_yen_per_year": 1250000,
+  "tuition_note": "学部により異なる。健康栄養学部はやや高め（概算・要確認）",
+  "access_from_shiga_min": 230,
+  "commute_possible": false,
+  "commute_note": "下宿前提。キャンパスは埼玉（越谷）・東京（あだち）・神奈川（湘南）の首都圏3拠点",
+  "feature": "「教員養成の文教」として知られる私立大学。小学校教員の採用者数は全国の私立大学でトップクラスの実績を誇り、教員志望者が全国から集まる。主力の越谷キャンパス（教育・人間科学・文学）のほか、東京あだちキャンパス（国際・経営）、湘南キャンパス（情報・健康栄養）を展開。教職支援体制が手厚く、採用試験対策講座や面接指導が充実している。",
+  "living_cost": {
+   "rent_min": 50000,
+   "rent_max": 75000,
+   "food_monthly": 30000,
+   "monthly_total": 115000,
+   "four_year_total": 5500000,
+   "note": "越谷・足立エリアは都心より家賃が安め。湘南（茅ヶ崎）も同程度の相場（概算・要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "埼玉県・東京都・神奈川県などの公立学校教員",
+    "埼玉県内・都内の市区町村立小学校",
+    "公務員（県庁・市役所）",
+    "情報通信・IT企業",
+    "金融・サービス業",
+    "食品・給食関連企業（健康栄養）"
+   ],
+   "note": "小学校教員採用者数は私立大学で毎年全国トップ級（要確認）。教員採用試験の現役合格支援が強み"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "東武スカイツリーライン北越谷駅 徒歩約10分（越谷キャンパス）",
+   "walking_min_from_station": 10,
+   "nearby_amenities": "北越谷駅周辺にスーパー・飲食店が揃い、北千住・上野など都心へ電車30分前後",
+   "area_description": "埼玉県越谷市の落ち着いた住宅エリア。元荒川沿いのキャンパスで、春は桜並木が名物"
+  },
+  "shogakukin": {
+   "general_shogakukin": "文教大学独自の奨学金・特待生制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "教職支援（採用試験対策講座・模擬面接・論作文指導）が全国トップクラス",
+    "学部ごとのキャリア支援と一般企業向け就職支援も実施"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.bunkyo.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「先生になりたい」なら私大最強クラスの選択肢。小学校教員採用数は全国私大トップ級で、教員志望なら首都圏に下宿してでも通う価値がある大学。",
+  "employment": {
+   "ratings": {
+    "kyoin": 5,
+    "shogakkō": 5,
+    "keisatsu": 2,
+    "shōbō": 2,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 1,
+    "iryō": 2
+   },
+   "strengths": [
+    "小学校教員採用者数が全国私大トップクラス",
+    "幼稚園・中学・高校・特別支援まで教員養成の層が厚い",
+    "教員採用試験対策の学内支援が充実",
+    "心理・栄養・情報など教職以外の専門就職ルートもある"
+   ],
+   "representative_employers": [
+    "埼玉県・東京都・神奈川県の公立学校（教員）",
+    "首都圏の市区町村立小学校・幼稚園",
+    "県庁・市役所などの公務員",
+    "IT・情報通信企業",
+    "食品・給食・病院（管理栄養士）"
+   ],
+   "summary": "教員養成、特に小学校教員で圧倒的実績を持つ首都圏私大。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文・プレゼン等"
+     ],
+     "bairitsu": "1.5〜3倍（要確認）",
+     "notes": "実施学部・選考内容は年度により異なる（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募）",
+     "hyoutei_min": null,
+     "hyoutei_note": "3.5前後・学部により異なる（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文・適性検査等"
+     ],
+     "bairitsu": "1.5〜3倍（要確認）",
+     "notes": "指定校推薦もあり（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（全国入試・A日程等）",
+     "subjects": "3教科型（国語・英語＋選択科目）が中心",
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "教育学部は人気が高く倍率が高めになりやすい（要確認）。共通テスト利用入試あり"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "bunkyo-univ-kyoiku",
+   "uni_id": "bunkyo-univ",
+   "name": "教育学部",
+   "campus": "越谷キャンパス（埼玉県越谷市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（3教科型中心）。人気が高く倍率高め（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "中学校・高等学校教諭一種免許状（専修により異なる）",
+    "幼稚園教諭一種免許状",
+    "特別支援学校教諭一種免許状（課程による・要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "bunkyo-univ-ningen",
+   "uni_id": "bunkyo-univ",
+   "name": "人間科学部",
+   "campus": "越谷キャンパス（埼玉県越谷市）",
+   "hensachi": {
+    "min": 45,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（3教科型中心）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "認定心理士",
+    "公認心理師（大学院進学等の要件あり・要確認）",
+    "社会福祉主事（任用）",
+    "中学校・高等学校教諭一種免許状（学科による・要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "service",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "bunkyo-univ-bungaku",
+   "uni_id": "bunkyo-univ",
+   "name": "文学部",
+   "campus": "越谷キャンパス（埼玉県越谷市）",
+   "hensachi": {
+    "min": 45,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（3教科型中心）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（国語・英語・中国語など学科による）",
+    "日本語教員養成課程（要確認）",
+    "司書・司書教諭（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "service",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "bunkyo-univ-joho",
+   "uni_id": "bunkyo-univ",
+   "name": "情報学部",
+   "campus": "湘南キャンパス（神奈川県茅ヶ崎市）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（3教科型中心）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（情報など・要確認）",
+    "司書（要確認）"
+   ],
+   "interest_tags": [
+    "joho"
+   ],
+   "employment_fields": [
+    "it",
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "bunkyo-univ-kokusai",
+   "uni_id": "bunkyo-univ",
+   "name": "国際学部",
+   "campus": "東京あだちキャンパス（東京都足立区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（3教科型中心）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語・要確認）",
+    "旅行・観光関連資格の受験サポート（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "shakai"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "bunkyo-univ-keiei",
+   "uni_id": "bunkyo-univ",
+   "name": "経営学部",
+   "campus": "東京あだちキャンパス（東京都足立区）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（3教科型中心）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（商業など・要確認）",
+    "簿記・販売士等の資格取得サポート（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "service",
+    "ryutsu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "bunkyo-univ-kenko-eiyo",
+   "uni_id": "bunkyo-univ",
+   "name": "健康栄養学部",
+   "campus": "湘南キャンパス（神奈川県茅ヶ崎市）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（理科または国語等の選択含む・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "管理栄養士（国家試験受験資格）",
+    "栄養士",
+    "栄養教諭一種免許状（要確認）",
+    "食品衛生管理者（任用・要確認）"
+   ],
+   "interest_tags": [
+    "eiyo"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "iryo_fukushi",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

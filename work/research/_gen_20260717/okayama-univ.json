@@ -1,0 +1,719 @@
+{
+ "uni": {
+  "id": "okayama-univ",
+  "name": "岡山大学",
+  "name_short": "岡山大",
+  "prefecture": "岡山県",
+  "type": "国立",
+  "campus_main": "津島キャンパス",
+  "tuition_yen_per_year": 535800,
+  "access_from_shiga_min": 150,
+  "commute_possible": false,
+  "commute_note": "下宿前提。京都から新幹線で岡山まで約1時間強だが、日常通学は非現実的",
+  "feature": "旧制第六高等学校などを母体とする中四国地方を代表する総合国立大学。文系から理系、医・歯・薬まで10学部を擁し、特に医療系学部が同一大学内に揃うのが強み。メインの津島キャンパスは西日本有数の広さで、緑豊かなワンキャンパスに多くの学部が集まる。地元岡山はもちろん、関西・中四国の企業や官公庁への就職実績も厚い。",
+  "living_cost": {
+   "rent_min": 30000,
+   "rent_max": 55000,
+   "food_monthly": 25000,
+   "monthly_total": 85000,
+   "four_year_total": 4200000,
+   "note": "岡山市は政令指定都市の中では家賃相場が安め。大学周辺に学生向け物件が豊富（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約96%（要確認）",
+   "top_employers": [
+    "岡山県庁・岡山市役所などの官公庁",
+    "岡山大学病院など医療機関",
+    "中国銀行（要確認）",
+    "中国電力（要確認）",
+    "ベネッセコーポレーション（要確認）",
+    "国家公務員（要確認）",
+    "大手メーカー各社（要確認）"
+   ],
+   "note": "医療系は国家資格を経て病院就職が中心。文系は公務員・金融・地元有力企業に強い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR法界院駅 徒歩約10〜15分（津島キャンパス）／岡山駅からバス約10分",
+   "walking_min_from_station": 12,
+   "nearby_amenities": "岡山駅周辺の市街地が生活圏。キャンパス周辺にスーパー・飲食店・学生向けアパートが多い",
+   "area_description": "岡山市北区の文教エリア。津島キャンパスは広大で緑が多く、医・歯学部は市中心部寄りの鹿田キャンパス"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、大学独自の奨学金・授業料減免制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "全学のキャリア支援センターと学部ごとの就職支援の二本立て",
+    "公務員試験・教員採用試験の対策支援",
+    "中四国・関西圏の企業とのつながりが強い"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.okayama-u.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「関西圏の国公立はやや厳しいが地方の総合国立でしっかり学びたい」滋賀の受験生にとって現実的な本命候補。医・歯・薬・保健まで揃う医療系の充実度は中四国トップクラスで、新幹線1本で帰省しやすいのも安心材料。",
+  "region": "chugoku",
+  "employment": {
+   "ratings": {
+    "kyoin": 4,
+    "shogakkō": 4,
+    "keisatsu": 3,
+    "shōbō": 2,
+    "kōmuin_ippan": 4,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 2,
+    "iryō": 5
+   },
+   "strengths": [
+    "医・歯・薬・保健の医療系が揃い、岡山大学病院を核に医療就職に直結",
+    "教育学部の伝統があり教員採用に強い",
+    "官公庁・地元有力企業（金融・インフラ）への就職が厚い",
+    "総合大学として大学院進学・研究職ルートも太い"
+   ],
+   "representative_employers": [
+    "岡山大学病院・中四国の基幹病院",
+    "岡山県庁・岡山市役所・国家公務員",
+    "岡山県・広島県などの教育委員会（教員）",
+    "中国銀行（要確認）",
+    "中国電力（要確認）",
+    "ベネッセコーポレーション（要確認）"
+   ],
+   "summary": "中四国トップ級の総合国立。医療・教員・公務員に強い。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接・プレゼンテーション等",
+      "小論文等（学部により異なる）"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "実施学部・募集人数は限定的。年度により変動するため必ず募集要項で確認（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "学部により評定4.0前後を求める場合あり（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文等",
+      "共通テスト（課す型の場合）"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "共通テストを課す型・課さない型があり、実施学部・条件は学部ごとに異なる。医学部医学科には地域枠推薦あり（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト（5教科7科目型が基本）＋個別学力検査（2〜3教科、学部により異なる）",
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "配点比率は学部により異なる。医学科は面接あり（要確認）"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト＋小論文・面接等（実施学部のみ）",
+     "bairitsu": "3〜8倍（要確認）",
+     "notes": "後期日程は一部学部のみ実施。募集人数が少なく倍率は高め（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "okayama-univ-bun",
+   "uni_id": "okayama-univ",
+   "name": "文学部",
+   "campus": "津島キャンパス（岡山県岡山市北区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "学校推薦型選抜の実施は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋個別学力検査）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（国語・社会・英語等）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "shakai"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kyoiku",
+    "service",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "okayama-univ-kyoiku",
+   "uni_id": "okayama-univ",
+   "name": "教育学部",
+   "campus": "津島キャンパス（岡山県岡山市北区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無はコースにより異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋個別学力検査・実技等）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "中学校・高等学校教諭一種免許状",
+    "幼稚園教諭一種免許状（コースによる）（要確認）",
+    "特別支援学校教諭一種免許状（コースによる）（要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "okayama-univ-ho",
+   "uni_id": "okayama-univ",
+   "name": "法学部",
+   "campus": "津島キャンパス（岡山県岡山市北区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "学校推薦型選抜の実施は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程あり（要確認）。夜間主コースも設置",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（社会・公民）（要確認）"
+   ],
+   "interest_tags": [
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "okayama-univ-keizai",
+   "uni_id": "okayama-univ",
+   "name": "経済学部",
+   "campus": "津島キャンパス（岡山県岡山市北区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "学校推薦型選抜の実施は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程あり（要確認）。夜間主コースも設置",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（社会・公民）（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "maker",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "okayama-univ-ri",
+   "uni_id": "okayama-univ",
+   "name": "理学部",
+   "campus": "津島キャンパス（岡山県岡山市北区）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は学科により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（学科による）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（数学・理科）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "okayama-univ-i",
+   "uni_id": "okayama-univ",
+   "name": "医学部（医学科・保健学科）",
+   "campus": "鹿田キャンパス（岡山県岡山市北区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は学科・年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "医学科は地域枠を含む学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程。医学科は面接あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格（医学科）",
+    "看護師国家試験受験資格（保健学科看護学専攻）",
+    "保健師・助産師（保健学科・選抜制）（要確認）",
+    "臨床検査技師・診療放射線技師（保健学科の各専攻）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "okayama-univ-shi",
+   "uni_id": "okayama-univ",
+   "name": "歯学部",
+   "campus": "鹿田キャンパス（岡山県岡山市北区）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程。面接あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "歯科医師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "okayama-univ-yaku",
+   "uni_id": "okayama-univ",
+   "name": "薬学部",
+   "campus": "津島キャンパス（岡山県岡山市北区）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "学校推薦型選抜の実施は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋個別学力検査）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師国家試験受験資格（薬学科・6年制）",
+    "創薬科学科（4年制）は研究者養成が中心で薬剤師受験資格なし"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "okayama-univ-ko",
+   "uni_id": "okayama-univ",
+   "name": "工学部",
+   "campus": "津島キャンパス（岡山県岡山市北区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は系・年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（系による）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程あり（要確認）。機械システム系・情報・電気・数理データサイエンス系・化学・生命系・環境・社会基盤系の4系で募集",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（工業・数学等）（要確認）",
+    "技術士補（JABEE認定コースの場合）（要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "okayama-univ-no",
+   "uni_id": "okayama-univ",
+   "name": "農学部",
+   "campus": "津島キャンパス（岡山県岡山市北区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（理科・農業）（要確認）",
+    "食品衛生管理者・食品衛生監視員（任用）（要確認）",
+    "樹木医補（要確認）"
+   ],
+   "interest_tags": [
+    "nogaku"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "maker",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

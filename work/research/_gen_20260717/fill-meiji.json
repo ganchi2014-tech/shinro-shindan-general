@@ -1,0 +1,242 @@
+{
+  "uni_id": "meiji",
+  "departments": [
+    {
+      "dept_id": "meiji-riko",
+      "uni_id": "meiji",
+      "name": "理工学部",
+      "campus": "生田キャンパス（神奈川県川崎市多摩区）",
+      "hensachi": {
+        "min": 55,
+        "max": 60,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": null,
+          "note": "一部学科でAO・自己推薦系入試の実施例あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": null,
+          "note": "公募制推薦の有無は要確認",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "学部別入学試験・全学部統一入学試験",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "大学入学共通テスト利用入学試験",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中高教員（数学・理科）",
+        "建築士受験資格（建築学科）",
+        "電気主任技術者（要件充足で・要確認）"
+      ],
+      "interest_tags": [
+        "riko",
+        "kenchiku"
+      ],
+      "employment_fields": [
+        "maker",
+        "it",
+        "kensetsu"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "meiji-nogaku",
+      "uni_id": "meiji",
+      "name": "農学部",
+      "campus": "生田キャンパス（神奈川県川崎市多摩区）",
+      "hensachi": {
+        "min": 57.5,
+        "max": 62.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "自己推薦特別入学試験（実施学科は要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": null,
+          "note": "公募制推薦の有無は要確認",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "学部別入学試験・全学部統一入学試験",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "大学入学共通テスト利用入学試験",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中高教員（理科）",
+        "食品衛生管理者（任用資格・要確認）",
+        "学芸員"
+      ],
+      "interest_tags": [
+        "nogaku"
+      ],
+      "employment_fields": [
+        "shokuhin",
+        "maker",
+        "koumuin"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "meiji-kokusainihon",
+      "uni_id": "meiji",
+      "name": "国際日本学部",
+      "campus": "中野キャンパス（東京都中野区）",
+      "hensachi": {
+        "min": 60,
+        "max": 62.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "自己推薦特別入学試験・イングリッシュ・トラック入学試験（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": null,
+          "note": "公募制推薦の有無は要確認",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "学部別入学試験・全学部統一入学試験（英語資格・検定試験の活用あり・要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "大学入学共通テスト利用入学試験",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中高教員（英語）",
+        "日本語教員（課程履修・要確認）"
+      ],
+      "interest_tags": [
+        "gaikokugo",
+        "shakai"
+      ],
+      "employment_fields": [
+        "service",
+        "media",
+        "ryutsu"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "meiji-sogosuri",
+      "uni_id": "meiji",
+      "name": "総合数理学部",
+      "campus": "中野キャンパス（東京都中野区）",
+      "hensachi": {
+        "min": 55,
+        "max": 60,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "総合型選抜（AO入試）を一部学科で実施（先端メディアサイエンス学科等・要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": null,
+          "note": "公募制推薦の有無は要確認",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "学部別入学試験・全学部統一入学試験",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "大学入学共通テスト利用入学試験",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中高教員（数学）",
+        "情報系資格の受験対策科目あり（要確認）"
+      ],
+      "interest_tags": [
+        "joho",
+        "riko"
+      ],
+      "employment_fields": [
+        "it",
+        "maker",
+        "kinyu"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+{
+ "uni": {
+  "id": "meiji-gakuin",
+  "name": "明治学院大学",
+  "name_short": "明学大",
+  "prefecture": "東京都",
+  "type": "私立",
+  "campus_main": "白金キャンパス",
+  "tuition_yen_per_year": 1200000,
+  "tuition_note": "学部・学科により異なる。情報数理学部はやや高め（要確認）",
+  "access_from_shiga_min": 200,
+  "commute_possible": false,
+  "commute_note": "東京・横浜のため下宿前提。草津から新幹線利用でも片道約3時間超",
+  "feature": "1863年のヘボン塾を起源とする日本最古級のミッション系（プロテスタント）大学。教育理念\"Do for Others（他者への貢献）\"のもと、英語教育とボランティア・国際交流に伝統がある。文・経済・社会・法・国際・心理・情報数理の7学部を擁し、成蹊・成城・獨協・國學院・武蔵と並ぶ「成成明学獨國武」グループとして関東の有名私大の一角を占める。1・2年は横浜キャンパス、3・4年は東京・白金の都心キャンパスで学ぶ学部が多い。",
+  "living_cost": {
+   "rent_min": 55000,
+   "rent_max": 90000,
+   "food_monthly": 30000,
+   "monthly_total": 125000,
+   "four_year_total": 6000000,
+   "note": "多くの学部は1・2年が横浜（戸塚）、3・4年が白金。戸塚・湘南エリアは家賃がやや抑えめだが、都内寄りに住むと高くなる"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "全日本空輸（ANA）・日本航空（JAL）等の航空業界",
+    "みずほフィナンシャルグループ等の金融",
+    "東京都特別区・国家公務員一般職",
+    "ニトリ・良品計画等の流通・小売",
+    "大手旅行・ホテル等のサービス業",
+    "情報通信（IT）企業"
+   ],
+   "note": "航空・旅行・金融などサービス系の就職に強い伝統。女子学生の就職支援にも定評（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "白金：地下鉄白金台駅・白金高輪駅 徒歩約7分／横浜：JR戸塚駅からバス約12分",
+   "walking_min_from_station": 7,
+   "nearby_amenities": "白金は港区の高級住宅街で品川・目黒・恵比寿が生活圏。横浜キャンパスは戸塚の丘の上の緑豊かな環境",
+   "area_description": "白金キャンパスは「都心のミッションスクール」らしい洗練された雰囲気。歴史的建造物の礼拝堂やインブリー館が有名"
+  },
+  "shogakukin": {
+   "general_shogakukin": "白金の丘奨学金（入学前予約型・要確認）など独自奨学金あり",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "個別面談中心のキャリア支援",
+    "航空・マスコミなど業界別対策講座",
+    "卒業生ネットワークを活かしたOB・OG訪問支援"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.meijigakuin.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「東京のおしゃれな都心キャンパスで英語・国際系を学びたい」人に刺さる、MARCHに次ぐ難易度帯の有名ミッション系大学。関西の関学・同志社に近い雰囲気を関東で求めるならここが代表格。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 3,
+    "shogakkō": 3,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 2,
+    "iryō": 1
+   },
+   "strengths": [
+    "航空・旅行・ホテルなどサービス業界への就職に伝統的に強い",
+    "英語力を活かした商社・国際系企業への就職",
+    "心理学部教育発達学科から小学校教員を養成",
+    "社会学部社会福祉学科は福祉系専門職への実績が長い"
+   ],
+   "representative_employers": [
+    "ANA・JALなど航空業界",
+    "みずほフィナンシャルグループなど大手金融",
+    "東京都特別区などの公務員",
+    "大手旅行・ホテル",
+    "情報通信企業"
+   ],
+   "summary": "英語×サービス・国際系就職に強い都心ミッション系。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "自己推薦入学試験（AO・総合型選抜）",
+     "hyoutei_min": null,
+     "hyoutei_note": "学科により評定・英語資格等の出願基準あり（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "3〜8倍（要確認）",
+     "notes": "実施学科は年度により異なる。国際・心理・社会・芸術系学科などで実施（要確認）"
+    }
+   ],
+   "koubo": [],
+   "ippan": [
+    {
+     "method_name": "一般入試（A日程）",
+     "subjects": "3教科型（英語＋国語＋地歴公民・数学等から選択）",
+     "bairitsu": "3〜6倍（要確認）",
+     "notes": "学科ごとの個別日程。英語の配点が高い学科が多い（要確認）"
+    },
+    {
+     "method_name": "全学部日程",
+     "subjects": "3教科型（1日で複数学科に出願可）",
+     "bairitsu": "4〜8倍（要確認）",
+     "notes": "A日程より募集人数が少なく倍率は高め（要確認）"
+    },
+    {
+     "method_name": "大学入学共通テスト利用入試",
+     "subjects": "共通テスト3〜5科目（個別試験なし）",
+     "bairitsu": "2〜6倍（要確認）",
+     "notes": "得点率の目安は7〜8割程度（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "meiji-gakuin-bun",
+   "uni_id": "meiji-gakuin",
+   "name": "文学部",
+   "campus": "白金キャンパス（東京都港区）※1・2年は横浜キャンパス（神奈川県横浜市戸塚区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "芸術学科等で自己推薦AO実施（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦は原則なし（指定校・系列校中心）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "A日程・全学部日程",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語・国語等）（要確認）",
+    "学芸員",
+    "図書館司書（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "media",
+    "service",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "meiji-gakuin-keizai",
+   "uni_id": "meiji-gakuin",
+   "name": "経済学部",
+   "campus": "白金キャンパス（東京都港区）※1・2年は横浜キャンパス（神奈川県横浜市戸塚区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施学科・年度は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦は原則なし（指定校・系列校中心）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "A日程・全学部日程",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（社会・公民・商業等）（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "ryutsu",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "meiji-gakuin-shakai",
+   "uni_id": "meiji-gakuin",
+   "name": "社会学部",
+   "campus": "白金キャンパス（東京都港区）※1・2年は横浜キャンパス（神奈川県横浜市戸塚区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "自己推薦AO実施（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦は原則なし（指定校・系列校中心）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "A日程・全学部日程",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "社会福祉士（国家試験受験資格・社会福祉学科）（要確認）",
+    "精神保健福祉士（国家試験受験資格・選抜制）（要確認）",
+    "社会調査士"
+   ],
+   "interest_tags": [
+    "shakai"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "service",
+    "media",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "meiji-gakuin-ho",
+   "uni_id": "meiji-gakuin",
+   "name": "法学部",
+   "campus": "白金キャンパス（東京都港区）※1・2年は横浜キャンパス（神奈川県横浜市戸塚区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "グローバル法学科等で自己推薦AO実施（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦は原則なし（指定校・系列校中心）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "A日程・全学部日程",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（社会・公民）（要確認）"
+   ],
+   "interest_tags": [
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "meiji-gakuin-kokusai",
+   "uni_id": "meiji-gakuin",
+   "name": "国際学部",
+   "campus": "横浜キャンパス（神奈川県横浜市戸塚区）※4年間横浜",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "自己推薦AO・英語資格を活かせる方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦は原則なし（指定校・系列校中心）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "A日程・全学部日程",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語・社会等）（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "shakai"
+   ],
+   "employment_fields": [
+    "maker",
+    "service",
+    "ryutsu",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "meiji-gakuin-shinri",
+   "uni_id": "meiji-gakuin",
+   "name": "心理学部",
+   "campus": "白金キャンパス（東京都港区）※教育発達学科の1・2年は横浜キャンパス（要確認）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "教育発達学科等で自己推薦AO実施（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦は原則なし（指定校・系列校中心）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "A日程・全学部日程",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "認定心理士",
+    "公認心理師（受験資格・大学院進学等が必要）",
+    "小学校教諭一種免許状（教育発達学科）",
+    "幼稚園教諭一種免許状（教育発達学科）（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "iryo_fukushi",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "meiji-gakuin-joho",
+   "uni_id": "meiji-gakuin",
+   "name": "情報数理学部",
+   "campus": "横浜キャンパス（神奈川県横浜市戸塚区）※4年間横浜（要確認）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "2024年新設のため実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦は原則なし（指定校・系列校中心）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "数学重視の理系型入試（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（数学・情報）（要確認）"
+   ],
+   "interest_tags": [
+    "joho",
+    "riko"
+   ],
+   "employment_fields": [
+    "it",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

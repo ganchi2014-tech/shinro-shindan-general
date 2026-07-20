@@ -1,0 +1,700 @@
+{
+ "uni": {
+  "id": "tokyo-kagaku",
+  "name": "東京科学大学",
+  "name_short": "東京科学大",
+  "prefecture": "東京都",
+  "type": "国立",
+  "campus_main": "大岡山キャンパス",
+  "tuition_yen_per_year": 635400,
+  "tuition_note": "旧東京工業大学が授業料を年63万5,400円に引き上げており、統合後も同水準（要確認）。医学部・歯学部の医学科・歯学科は6年制",
+  "access_from_shiga_min": 210,
+  "commute_possible": false,
+  "commute_note": "東京のため下宿前提。京都駅から新幹線でも片道3時間超",
+  "feature": "2024年に東京工業大学と東京医科歯科大学が統合して誕生した国立大学。理工系6学院（理学院・工学院・物質理工学院・情報理工学院・生命理工学院・環境・社会理工学院）と医学部・歯学部を持ち、理工系・医歯系ともに国内最高峰クラス。理工系は約9割が大学院へ進学し、研究者・開発職への道が太い（要確認）。医療系と理工系の融合研究（医工連携）が統合の看板。",
+  "living_cost": {
+   "rent_min": 60000,
+   "rent_max": 90000,
+   "food_monthly": 30000,
+   "monthly_total": 125000,
+   "four_year_total": 6000000,
+   "note": "東京・目黒区周辺の相場は高め。神奈川・川崎方面に住むと家賃を抑えやすい（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約98%（要確認）",
+   "top_employers": [
+    "ソニーグループ",
+    "トヨタ自動車",
+    "日立製作所",
+    "NTTデータグループ",
+    "富士通",
+    "三菱電機",
+    "アクセンチュア",
+    "大学附属病院（医・歯）"
+   ],
+   "note": "理工系は約9割が大学院進学のため、就職は修士修了後が主流（要確認）。医学科・歯学科は国家試験を経て医師・歯科医師へ"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "東急大岡山駅 徒歩約1分（大岡山キャンパス）",
+   "walking_min_from_station": 1,
+   "nearby_amenities": "大岡山駅前の商店街が生活圏。自由が丘・目黒が近い",
+   "area_description": "大岡山は目黒区の落ち着いた文教エリア。医歯系の湯島キャンパスは御茶ノ水駅近くの都心にあり、附属病院が隣接"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、大学独自の奨学金・入学料/授業料免除制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "理工系トップ校として大手メーカー・IT企業からの求人が豊富",
+    "大学院進学を前提にしたキャリア支援・研究室経由の推薦就職",
+    "医歯系は附属病院での臨床研修に直結"
+   ],
+   "quality": 5,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.isct.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "旧東工大＋旧医科歯科大の統合で生まれた「理工×医療」の国内最高峰の一つ。関西圏の京大・阪大と並べて、理系トップ層が全国区で挑戦する価値のある選択肢。",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 5,
+    "kigyō_supotsu": 1,
+    "iryō": 5
+   },
+   "strengths": [
+    "大手メーカー・IT・コンサルへの就職に圧倒的に強い",
+    "医学部・歯学部は附属病院を核に医師・歯科医師へ直結",
+    "大学院進学率が高く、研究職・開発職に進みやすい",
+    "国家公務員（技術系）や研究機関への進路もある"
+   ],
+   "representative_employers": [
+    "ソニーグループ",
+    "トヨタ自動車",
+    "日立製作所",
+    "NTTデータグループ",
+    "アクセンチュア",
+    "大学附属病院（医・歯）"
+   ],
+   "summary": "理工系・医歯系トップ校。メーカー・IT・医療の最上位進路に強い。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（理工系学院・女子枠を含む）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "共通テスト",
+      "筆記・課題",
+      "面接"
+     ],
+     "bairitsu": "3〜8倍（要確認）",
+     "notes": "旧東工大系の各学院で実施。全学院に女子枠が設けられている（要確認）。内容は学院により異なる"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（医学部医学科ほか）",
+     "hyoutei_min": null,
+     "hyoutei_note": "高水準の評定が必要（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "共通テスト等"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "医学科は地域枠等の推薦区分あり（要確認）。理工系学院の女子枠にも学校推薦型を用いる区分がある（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別試験。理工系学院は数学・英語・物理・化学（共通テストは主に第1段階選抜に使用し、個別試験の比重が非常に大きい）。医歯系は共通テスト＋学力試験・面接",
+     "notes": "理工系は二次力（特に数学・理科）で決まる入試。後期日程は原則なし（要確認）",
+     "bairitsu": "2〜5倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "tokyo-kagaku-rigakuin",
+   "uni_id": "tokyo-kagaku",
+   "name": "理学院",
+   "campus": "大岡山キャンパス（東京都目黒区）",
+   "hensachi": {
+    "min": 65,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり。女子枠あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "女子枠等で学校推薦型を用いる場合あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋個別試験。個別試験重視）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト単独利用はなし。前期日程で共テ受験必須（主に第1段階選抜に使用）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教員免許（数学・理科）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-kagaku-kogakuin",
+   "uni_id": "tokyo-kagaku",
+   "name": "工学院",
+   "campus": "大岡山キャンパス（東京都目黒区）",
+   "hensachi": {
+    "min": 65,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり。女子枠あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "女子枠等で学校推薦型を用いる場合あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋個別試験。個別試験重視）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト単独利用はなし。前期日程で共テ受験必須（主に第1段階選抜に使用）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教員免許（数学・理科等）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-kagaku-busshitsu",
+   "uni_id": "tokyo-kagaku",
+   "name": "物質理工学院",
+   "campus": "大岡山キャンパス（東京都目黒区）",
+   "hensachi": {
+    "min": 62.5,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり。女子枠あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "女子枠等で学校推薦型を用いる場合あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋個別試験。個別試験重視）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト単独利用はなし。前期日程で共テ受験必須（主に第1段階選抜に使用）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教員免許（理科）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-kagaku-johorikogakuin",
+   "uni_id": "tokyo-kagaku",
+   "name": "情報理工学院",
+   "campus": "大岡山キャンパス（東京都目黒区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり。女子枠あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "女子枠等で学校推薦型を用いる場合あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋個別試験。個別試験重視）。学内でも最難関クラス",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト単独利用はなし。前期日程で共テ受験必須（主に第1段階選抜に使用）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教員免許（数学・情報）（要確認）"
+   ],
+   "interest_tags": [
+    "joho",
+    "riko"
+   ],
+   "employment_fields": [
+    "it",
+    "maker",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-kagaku-seimei",
+   "uni_id": "tokyo-kagaku",
+   "name": "生命理工学院",
+   "campus": "大岡山キャンパス（東京都目黒区）／すずかけ台キャンパス（神奈川県横浜市緑区・主に高学年）",
+   "hensachi": {
+    "min": 62.5,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり。女子枠あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "女子枠等で学校推薦型を用いる場合あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋個別試験。個別試験重視）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト単独利用はなし。前期日程で共テ受験必須（主に第1段階選抜に使用）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教員免許（理科）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "shokuhin",
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-kagaku-kankyoshakai",
+   "uni_id": "tokyo-kagaku",
+   "name": "環境・社会理工学院",
+   "campus": "大岡山キャンパス（東京都目黒区）",
+   "hensachi": {
+    "min": 65,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり。女子枠あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "女子枠等で学校推薦型を用いる場合あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋個別試験。個別試験重視）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト単独利用はなし。前期日程で共テ受験必須（主に第1段階選抜に使用）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士受験資格（建築学系・要確認）",
+    "中学・高校教員免許（数学・理科等）（要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "kenchiku"
+   ],
+   "employment_fields": [
+    "kensetsu",
+    "maker",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-kagaku-igaku",
+   "uni_id": "tokyo-kagaku",
+   "name": "医学部（医学科）",
+   "campus": "湯島キャンパス（東京都文京区）※1年次は国府台キャンパス（千葉県市川市）（要確認）",
+   "hensachi": {
+    "min": 70,
+    "max": 70,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "国際バカロレア選抜等の特別選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（地域枠等）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋学力試験・面接）。6年制",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須。高得点率が必要",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-kagaku-hoken",
+   "uni_id": "tokyo-kagaku",
+   "name": "医学部（保健衛生学科：看護学・検査技術学）",
+   "campus": "湯島キャンパス（東京都文京区）※1年次は国府台キャンパス（千葉県市川市）（要確認）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋学力試験・面接等）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師国家試験受験資格（看護学専攻）",
+    "保健師国家試験受験資格（選抜制・要確認）",
+    "臨床検査技師国家試験受験資格（検査技術学専攻）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-kagaku-shigaku",
+   "uni_id": "tokyo-kagaku",
+   "name": "歯学部（歯学科）",
+   "campus": "湯島キャンパス（東京都文京区）※1年次は国府台キャンパス（千葉県市川市）（要確認）",
+   "hensachi": {
+    "min": 60,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋学力試験・面接）。6年制。国立歯学部の最難関クラス",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "歯科医師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-kagaku-koku",
+   "uni_id": "tokyo-kagaku",
+   "name": "歯学部（口腔保健学科：口腔保健衛生学・口腔保健工学）",
+   "campus": "湯島キャンパス（東京都文京区）※1年次は国府台キャンパス（千葉県市川市）（要確認）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋学力試験・面接等）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "歯科衛生士国家試験受験資格（口腔保健衛生学専攻）",
+    "歯科技工士国家試験受験資格（口腔保健工学専攻）（要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

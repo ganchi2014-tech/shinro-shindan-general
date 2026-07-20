@@ -1,0 +1,533 @@
+{
+  "uni_id": "hosei",
+  "departments": [
+    {
+      "dept_id": "hosei-kokusaibunka",
+      "uni_id": "hosei",
+      "name": "国際文化学部",
+      "campus": "市ケ谷キャンパス（東京都千代田区）",
+      "hensachi": {
+        "min": 60,
+        "max": 62.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": null,
+          "note": "自己推薦型入試の実施状況は要確認",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": "指定校推薦が中心（公募制推薦は原則なし・要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "T日程（統一日程）・A方式（個別日程）・英語外部試験利用入試",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試（B方式）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中学校・高等学校教諭一種免許状（英語）（要確認）",
+        "学芸員（要確認）"
+      ],
+      "interest_tags": [
+        "gaikokugo",
+        "bungaku"
+      ],
+      "employment_fields": [
+        "media",
+        "service",
+        "it",
+        "ryutsu"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "hosei-ningenkankyo",
+      "uni_id": "hosei",
+      "name": "人間環境学部",
+      "campus": "市ケ谷キャンパス（東京都千代田区）",
+      "hensachi": {
+        "min": 57.5,
+        "max": 60,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": null,
+          "note": "自己推薦型入試の実施状況は要確認",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": "指定校推薦が中心（公募制推薦は原則なし・要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "T日程（統一日程）・A方式（個別日程）・英語外部試験利用入試",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試（B方式）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中学校・高等学校教諭一種免許状（社会・公民）（要確認）"
+      ],
+      "interest_tags": [
+        "shakai",
+        "keizai"
+      ],
+      "employment_fields": [
+        "maker",
+        "service",
+        "koumuin",
+        "kinyu"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "hosei-fukushi",
+      "uni_id": "hosei",
+      "name": "現代福祉学部",
+      "campus": "多摩キャンパス（東京都町田市）",
+      "hensachi": {
+        "min": 55,
+        "max": 57.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "まちづくりチャレンジ自己推薦入試（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": "指定校推薦が中心（公募制推薦は原則なし・要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "T日程（統一日程）・A方式（個別日程）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試（B方式）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "社会福祉士（受験資格）",
+        "精神保健福祉士（受験資格）（要確認）",
+        "認定心理士（臨床心理学科）（要確認）"
+      ],
+      "interest_tags": [
+        "shakai"
+      ],
+      "employment_fields": [
+        "iryo_fukushi",
+        "koumuin",
+        "service"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "hosei-career",
+      "uni_id": "hosei",
+      "name": "キャリアデザイン学部",
+      "campus": "市ケ谷キャンパス（東京都千代田区）",
+      "hensachi": {
+        "min": 57.5,
+        "max": 60,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "自己推薦入試あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": "指定校推薦が中心（公募制推薦は原則なし・要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "T日程（統一日程）・A方式（個別日程）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試（B方式）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中学校・高等学校教諭一種免許状（要確認）",
+        "図書館司書（要確認）"
+      ],
+      "interest_tags": [
+        "shakai",
+        "kyoiku"
+      ],
+      "employment_fields": [
+        "service",
+        "media",
+        "kinyu",
+        "ryutsu"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "hosei-gis",
+      "uni_id": "hosei",
+      "name": "グローバル教養学部（GIS）",
+      "campus": "市ケ谷キャンパス（東京都千代田区）",
+      "hensachi": {
+        "min": 60,
+        "max": 62.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "自己推薦入試（英語資格を重視）あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": "指定校推薦が中心（公募制推薦は原則なし・要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "A方式・T日程・英語外部試験利用入試（授業はほぼ全て英語で実施）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": null,
+          "note": "共通テスト利用の実施有無は要確認",
+          "verified": false
+        }
+      ],
+      "qualifications": [],
+      "interest_tags": [
+        "gaikokugo"
+      ],
+      "employment_fields": [
+        "it",
+        "media",
+        "service",
+        "kinyu"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "hosei-joho",
+      "uni_id": "hosei",
+      "name": "情報科学部",
+      "campus": "小金井キャンパス（東京都小金井市）",
+      "hensachi": {
+        "min": 55,
+        "max": 57.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": null,
+          "note": "実施状況は要確認",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": "指定校推薦が中心（公募制推薦は原則なし・要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "T日程（統一日程）・A方式（個別日程）・英語外部試験利用入試",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試（B方式）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "高等学校教諭一種免許状（情報・数学）（要確認）",
+        "基本情報技術者など情報系資格の学習支援（要確認）"
+      ],
+      "interest_tags": [
+        "joho"
+      ],
+      "employment_fields": [
+        "it",
+        "maker"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "hosei-designko",
+      "uni_id": "hosei",
+      "name": "デザイン工学部",
+      "campus": "市ケ谷田町キャンパス（東京都新宿区）",
+      "hensachi": {
+        "min": 55,
+        "max": 57.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": null,
+          "note": "実施状況は要確認",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": "指定校推薦が中心（公募制推薦は原則なし・要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "T日程（統一日程）・A方式（個別日程）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試（B方式）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "一級建築士（受験資格・建築学科）",
+        "二級建築士（受験資格・建築学科）",
+        "商業施設士補（要確認）"
+      ],
+      "interest_tags": [
+        "kenchiku",
+        "riko"
+      ],
+      "employment_fields": [
+        "kensetsu",
+        "maker",
+        "it"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "hosei-riko",
+      "uni_id": "hosei",
+      "name": "理工学部",
+      "campus": "小金井キャンパス（東京都小金井市）",
+      "hensachi": {
+        "min": 52.5,
+        "max": 57.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": null,
+          "note": "実施状況は要確認",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": "指定校推薦が中心（公募制推薦は原則なし・要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "T日程（統一日程）・A方式（個別日程）・英語外部試験利用入試",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試（B方式）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中学校・高等学校教諭一種免許状（数学・理科）（要確認）",
+        "電気主任技術者（認定・電気電子工学科）（要確認）"
+      ],
+      "interest_tags": [
+        "riko"
+      ],
+      "employment_fields": [
+        "maker",
+        "it",
+        "kensetsu"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "hosei-seimei",
+      "uni_id": "hosei",
+      "name": "生命科学部",
+      "campus": "小金井キャンパス（東京都小金井市）",
+      "hensachi": {
+        "min": 52.5,
+        "max": 55,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": null,
+          "note": "実施状況は要確認",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": "指定校推薦が中心（公募制推薦は原則なし・要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "T日程（統一日程）・A方式（個別日程）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試（B方式）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中学校・高等学校教諭一種免許状（理科）（要確認）",
+        "学芸員（要確認）"
+      ],
+      "interest_tags": [
+        "riko",
+        "nogaku"
+      ],
+      "employment_fields": [
+        "maker",
+        "shokuhin",
+        "it"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    }
+  ]
+}

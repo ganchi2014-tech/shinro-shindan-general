@@ -1,0 +1,652 @@
+{
+ "uni": {
+  "id": "osaka-kyoiku",
+  "name": "大阪教育大学",
+  "name_short": "大教大",
+  "prefecture": "大阪府",
+  "type": "国立",
+  "campus_main": "柏原キャンパス",
+  "tuition_yen_per_year": 535800,
+  "tuition_note": "国立大学の標準額（授業料53.58万円/年）。入学金28.2万円が別途必要。夜間5年コースは学費が昼間より低い（要確認）",
+  "access_from_shiga_min": 130,
+  "commute_possible": false,
+  "commute_note": "草津からJRで大阪・鶴橋経由、近鉄大阪線「大阪教育大前」駅まで乗換込みで片道約2時間強。駅から丘の上のキャンパスまでさらに徒歩・エスカレーター移動があり、通学はかなり厳しく下宿が現実的",
+  "feature": "西日本最大級の国立教員養成大学で、明治期の師範学校を源流とする長い伝統を持つ。教育学部の1学部体制だが、小・中・高・特別支援・養護教諭まで幅広い教員免許に対応し、教員採用試験の合格実績は全国トップクラス。教員養成以外にも教育協働学科があり、心理・理数情報・グローバル・芸術・スポーツなど「教育×専門分野」を学べる。附属学校（池田・天王寺・平野）を持ち、教育実習の環境が充実している。",
+  "living_cost": {
+   "rent_min": 35000,
+   "rent_max": 55000,
+   "food_monthly": 25000,
+   "monthly_total": 85000,
+   "four_year_total": 4100000,
+   "note": "柏原・八尾エリアは大阪市内より家賃が安め。大学周辺〜近鉄沿線での下宿が一般的（相場は要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約96%（要確認）",
+   "top_employers": [
+    "大阪府・大阪市・堺市の公立学校（教員）",
+    "兵庫県・京都府・奈良県・滋賀県など近畿圏の公立学校（教員）",
+    "幼稚園・特別支援学校",
+    "大阪府庁・市町村役場（公務員）",
+    "教育関連企業",
+    "一般企業（メーカー・IT等）"
+   ],
+   "note": "教員就職者数は全国の国立教員養成系大学の中でもトップクラス（要確認）。大学院進学者も一定数いる"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "近鉄大阪線「大阪教育大前」駅 徒歩約15分（丘の上・長いエスカレーターあり）",
+   "walking_min_from_station": 15,
+   "nearby_amenities": "駅周辺は店が少なめ。買い物や遊びは八尾・布施・天王寺方面へ出るのが一般的",
+   "area_description": "大阪府柏原市の丘陵地にある緑豊かな郊外型キャンパス。大阪市中心部（天王寺）へは近鉄で30分前後"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、国の修学支援新制度による入学料・授業料減免、大学独自の修学支援制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "教員採用試験対策（筆記・面接・模擬授業）の支援が全国トップクラス",
+    "教職キャリア支援体制が手厚く、現役合格者が多い",
+    "教育協働学科向けに一般企業・公務員就職の支援も実施"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://osaka-kyoiku.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「関西で先生になりたい」なら最有力の国立教員養成大学。国立なので学費が年約54万円と安く、下宿費を含めても私大より総費用を抑えられる場合が多い。滋賀県の教員採用試験の合格者も毎年出ており（要確認）、地元に戻って教員になる進路も描きやすい。",
+  "employment": {
+   "ratings": {
+    "kyoin": 5,
+    "shogakkō": 5,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 2,
+    "iryō": 1
+   },
+   "strengths": [
+    "西日本最大級の教員養成大学で、教員採用試験の合格実績・対策ノウハウが豊富",
+    "小学校・特別支援など教員免許の種類が幅広く、複数免許の同時取得がしやすい",
+    "附属学校での教育実習など実践的な養成環境が充実",
+    "国立で学費が安く、教員志望でない場合も教育協働学科から企業・公務員への道がある"
+   ],
+   "representative_employers": [
+    "大阪府教育委員会（公立学校教員）",
+    "大阪市教育委員会",
+    "堺市教育委員会",
+    "近畿圏各府県市の教育委員会（滋賀県含む・要確認）",
+    "市町村役場（公務員）",
+    "教育関連企業"
+   ],
+   "summary": "関西で教員を目指すなら最有力の国立教員養成拠点。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": 4,
+     "hyoutei_note": "4.0以上程度（専攻により異なる・要確認）",
+     "selection_content": [
+      "書類（推薦書・調査書）",
+      "小論文",
+      "面接",
+      "実技（音楽・美術・体育系の専攻）"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "多くの専攻で実施。共通テストを課さない方式が中心（専攻ごとの実施有無・内容は要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋二次試験（専攻により教科試験・小論文・面接・実技など。共テ配点比率が高い専攻が多い）",
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "共通テストは5教科型が基本（専攻により科目数・配点が異なるため要確認）"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト＋小論文・面接・実技など（専攻により異なる）",
+     "bairitsu": "3〜8倍（要確認）",
+     "notes": "後期は募集人員が少なく倍率が上がりやすい"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "osaka-kyoiku-gakko",
+   "uni_id": "osaka-kyoiku",
+   "name": "教育学部 学校教育教員養成課程",
+   "campus": "柏原キャンパス（大阪府柏原市）",
+   "hensachi": {
+    "min": 45,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜の実施有無・対象専攻は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜を多くの専攻で実施（専攻ごとの詳細は要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期・後期）。幼児教育・小中教育・中等教育・特別支援教育など専攻別募集",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "中学校教諭一種免許状（教科別）",
+    "高等学校教諭一種免許状（教科別）",
+    "特別支援学校教諭一種免許状（該当専攻）",
+    "幼稚園教諭一種免許状（該当専攻）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-kyoiku-yogo",
+   "uni_id": "osaka-kyoiku",
+   "name": "教育学部 養護教諭養成課程",
+   "campus": "柏原キャンパス（大阪府柏原市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜の実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "養護教諭一種免許状"
+   ],
+   "interest_tags": [
+    "kyoiku",
+    "iryo"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-kyoiku-shinri",
+   "uni_id": "osaka-kyoiku",
+   "name": "教育学部 教育協働学科 教育心理科学専攻",
+   "campus": "柏原キャンパス（大阪府柏原市）",
+   "hensachi": {
+    "min": 50,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜の実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "認定心理士",
+    "公認心理師対応カリキュラム（大学院進学等が別途必要・要確認）",
+    "中学校・高等学校教諭一種免許状（教職課程履修により取得可・要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "iryo_fukushi",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-kyoiku-kenko",
+   "uni_id": "osaka-kyoiku",
+   "name": "教育学部 教育協働学科 健康安全科学専攻",
+   "campus": "柏原キャンパス（大阪府柏原市）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜の実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（保健等・教職課程履修により取得可・要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku",
+    "sports"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-kyoiku-risu",
+   "uni_id": "osaka-kyoiku",
+   "name": "教育学部 教育協働学科 理数情報専攻",
+   "campus": "柏原キャンパス（大阪府柏原市）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜の実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期・後期）。理数系科目中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（数学・理科・情報等・教職課程履修により取得可・要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "it",
+    "maker",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-kyoiku-global",
+   "uni_id": "osaka-kyoiku",
+   "name": "教育学部 教育協働学科 グローバル教育専攻",
+   "campus": "柏原キャンパス（大阪府柏原市）",
+   "hensachi": {
+    "min": 50,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜の実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期・後期）。英語重視の配点の可能性（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語等・教職課程履修により取得可・要確認）",
+    "日本語教育関連科目の履修（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "service",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-kyoiku-geijutsu",
+   "uni_id": "osaka-kyoiku",
+   "name": "教育学部 教育協働学科 芸術表現専攻",
+   "campus": "柏原キャンパス（大阪府柏原市）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実技を評価する選抜を実施する可能性あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（実技を課す可能性・要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（音楽・美術等の実技を含む・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（音楽・美術・書道等・教職課程履修により取得可・要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu",
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-kyoiku-sports",
+   "uni_id": "osaka-kyoiku",
+   "name": "教育学部 教育協働学科 スポーツ科学専攻",
+   "campus": "柏原キャンパス（大阪府柏原市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "スポーツ実績を評価する選抜を実施する可能性あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（実技を課す可能性・要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（実技を含む可能性・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（保健体育・教職課程履修により取得可・要確認）",
+    "スポーツ関連指導者資格（要確認）"
+   ],
+   "interest_tags": [
+    "sports",
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "sports_kenko",
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-kyoiku-yakan",
+   "uni_id": "osaka-kyoiku",
+   "name": "教育学部 初等教育教員養成課程（夜間5年コース）",
+   "campus": "天王寺キャンパス（大阪府大阪市天王寺区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜・社会人選抜の実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験。夜間コースのため昼間より負担が軽い科目構成（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

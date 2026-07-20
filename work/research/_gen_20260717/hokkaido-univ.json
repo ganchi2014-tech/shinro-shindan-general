@@ -1,0 +1,879 @@
+{
+ "uni": {
+  "id": "hokkaido-univ",
+  "name": "北海道大学",
+  "name_short": "北大",
+  "prefecture": "北海道",
+  "type": "国立",
+  "campus_main": "札幌キャンパス",
+  "tuition_yen_per_year": 535800,
+  "access_from_shiga_min": 360,
+  "commute_possible": false,
+  "commute_note": "通学不可。伊丹・関空から新千歳空港経由で片道約6時間、下宿必須",
+  "feature": "旧帝国大学の一つで、札幌駅徒歩圏に日本最大級の広大なキャンパスを持つ総合大学。「総合入試」制度により文系・理系の大枠で入学し、1年次の成績をもとに2年次から学部を選べるのが最大の特色。農学・獣医学・水産学など北海道ならではの分野が全国トップクラスで、理系は大学院進学率も高い。クラーク博士の「Boys, be ambitious」に象徴されるフロンティア精神を掲げる。",
+  "living_cost": {
+   "rent_min": 25000,
+   "rent_max": 45000,
+   "food_monthly": 25000,
+   "monthly_total": 85000,
+   "four_year_total": 4100000,
+   "note": "札幌は政令指定都市の中でも家賃が安く生活費を抑えやすい。冬の暖房費と帰省の飛行機代は別途かかる"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約96%（要確認）",
+   "top_employers": [
+    "北海道庁・札幌市役所",
+    "国家公務員（各省庁）",
+    "NTTグループ",
+    "日立製作所",
+    "富士通",
+    "トヨタ自動車",
+    "北海道電力",
+    "大手金融機関"
+   ],
+   "note": "理系学部は大学院進学が主流（工・理・農で6〜8割程度・要確認）。就職は北海道内にとどまらず全国区"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR札幌駅 徒歩約7分（正門）",
+   "walking_min_from_station": 7,
+   "nearby_amenities": "札幌駅・大通の中心市街地が徒歩圏で、買い物・飲食の利便性は非常に高い",
+   "area_description": "札幌市中心部に隣接しながら緑豊かな超広大キャンパス。ポプラ並木やイチョウ並木は観光名所にもなっている"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、フロンティア基金による大学独自の奨学金・授業料減免制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "全国区の大手企業・官公庁への就職実績とOB・OGネットワーク",
+    "大学院進学・研究職まで含めた進路支援",
+    "低学年からのキャリア教育プログラム"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.hokudai.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「総合入試」で入学後に成績次第で学部を選び直せるため、やりたいことが固まっていない人でも旧帝大レベルの環境に飛び込める。札幌は家賃が安く、京阪神の私大下宿より総費用を抑えられる場合もある。",
+  "employment": {
+   "ratings": {
+    "kyoin": 3,
+    "shogakkō": 2,
+    "keisatsu": 2,
+    "shōbō": 2,
+    "kōmuin_ippan": 4,
+    "kigyō_ippan": 5,
+    "kigyō_supotsu": 2,
+    "iryō": 5
+   },
+   "strengths": [
+    "旧帝大ブランドで大手企業・中央省庁への就職に強い",
+    "医・歯・薬・獣医・看護など医療系国家資格ルートが揃う",
+    "理系は大学院経由で研究職・技術職への道が太い",
+    "北海道庁・札幌市など道内公務員にも強い"
+   ],
+   "representative_employers": [
+    "各省庁・北海道庁・札幌市役所",
+    "NTTグループ",
+    "日立製作所",
+    "トヨタ自動車",
+    "富士通",
+    "大学病院・道内基幹病院"
+   ],
+   "summary": "旧帝大の総合力で公務員・大手企業・医療・研究職まで全方位に強い。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（フロンティア入試）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接・課題論文等",
+      "共通テスト（タイプにより課される）"
+     ],
+     "bairitsu": "3〜6倍（要確認）",
+     "notes": "タイプI（共テなし）・タイプII（共テあり）があり、実施学部・募集人員は学部により異なる（要確認）"
+    }
+   ],
+   "koubo": [],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋二次試験。総合入試（文系・理系）は学部を決めずに一括募集、学部別入試も併設",
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "総合入試で入学した場合は1年次の成績等により2年進級時に学部・学科へ移行"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト＋二次試験（実施学部のみ）",
+     "bairitsu": "5〜10倍（要確認）",
+     "notes": "後期日程は一部学部のみ実施（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "hokkaido-univ-bun",
+   "uni_id": "hokkaido-univ",
+   "name": "文学部",
+   "campus": "札幌キャンパス（北海道札幌市北区）",
+   "hensachi": {
+    "min": 60,
+    "max": 62.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "フロンティア入試（総合型選抜）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（総合入試文系または学部別入試）＋後期日程（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教諭一種免許（国語・社会・英語等）（要確認）",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "bungaku"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kyoiku",
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hokkaido-univ-kyoiku",
+   "uni_id": "hokkaido-univ",
+   "name": "教育学部",
+   "campus": "札幌キャンパス（北海道札幌市北区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "フロンティア入試（総合型選抜）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（総合入試文系または学部別入試）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教諭一種免許（社会・保健体育等）（要確認）",
+    "社会教育主事（任用）（要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku",
+    "shakai"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hokkaido-univ-hou",
+   "uni_id": "hokkaido-univ",
+   "name": "法学部",
+   "campus": "札幌キャンパス（北海道札幌市北区）",
+   "hensachi": {
+    "min": 60,
+    "max": 62.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "フロンティア入試（総合型選抜）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（総合入試文系または学部別入試）＋後期日程（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "法曹（法科大学院経由）への進学ルート",
+    "各種公務員試験に対応した学び"
+   ],
+   "interest_tags": [
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hokkaido-univ-keizai",
+   "uni_id": "hokkaido-univ",
+   "name": "経済学部",
+   "campus": "札幌キャンパス（北海道札幌市北区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "フロンティア入試（総合型選抜）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（総合入試文系または学部別入試）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "公認会計士・税理士等への学習基盤",
+    "統計・データ分析スキル"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "it",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hokkaido-univ-ri",
+   "uni_id": "hokkaido-univ",
+   "name": "理学部",
+   "campus": "札幌キャンパス（北海道札幌市北区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "フロンティア入試（総合型選抜）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（総合入試理系）＋後期日程（一部学科・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教諭一種免許（数学・理科）（要確認）",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hokkaido-univ-igaku",
+   "uni_id": "hokkaido-univ",
+   "name": "医学部医学科",
+   "campus": "札幌キャンパス（北海道札幌市北区）",
+   "hensachi": {
+    "min": 65,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "フロンティア入試（総合型選抜）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（学部別入試）。面接あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格（6年制）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hokkaido-univ-hoken",
+   "uni_id": "hokkaido-univ",
+   "name": "医学部保健学科",
+   "campus": "札幌キャンパス（北海道札幌市北区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "フロンティア入試（総合型選抜）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（専攻別募集）＋後期日程（一部専攻・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師・保健師（看護学専攻）",
+    "臨床検査技師（検査技術科学専攻）",
+    "診療放射線技師（放射線技術科学専攻）",
+    "理学療法士・作業療法士（各専攻）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hokkaido-univ-shigaku",
+   "uni_id": "hokkaido-univ",
+   "name": "歯学部",
+   "campus": "札幌キャンパス（北海道札幌市北区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "フロンティア入試（総合型選抜）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程＋後期日程（要確認）。面接あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "歯科医師国家試験受験資格（6年制）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hokkaido-univ-yaku",
+   "uni_id": "hokkaido-univ",
+   "name": "薬学部",
+   "campus": "札幌キャンパス（北海道札幌市北区）",
+   "hensachi": {
+    "min": 60,
+    "max": 62.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は実施していない可能性が高い（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "入学は主に総合入試理系経由。2年進級時に薬学科（6年制）・薬科学科（4年制）へ配属（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師国家試験受験資格（薬学科6年制）"
+   ],
+   "interest_tags": [
+    "iryo",
+    "riko"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hokkaido-univ-kogaku",
+   "uni_id": "hokkaido-univ",
+   "name": "工学部",
+   "campus": "札幌キャンパス（北海道札幌市北区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "フロンティア入試（総合型選抜）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（総合入試理系または学部別入試）＋後期日程（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教諭一種免許（数学・理科・工業）（要確認）",
+    "技術士補・建築士等の受験資格の基礎（学科による・要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hokkaido-univ-nogaku",
+   "uni_id": "hokkaido-univ",
+   "name": "農学部",
+   "campus": "札幌キャンパス（北海道札幌市北区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "フロンティア入試（総合型選抜）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "入学は主に総合入試理系経由。2年進級時に学科へ配属（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教諭一種免許（理科・農業）（要確認）",
+    "食品衛生管理者・食品衛生監視員（任用・課程による・要確認）"
+   ],
+   "interest_tags": [
+    "nogaku"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "maker",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hokkaido-univ-juigaku",
+   "uni_id": "hokkaido-univ",
+   "name": "獣医学部",
+   "campus": "札幌キャンパス（北海道札幌市北区）",
+   "hensachi": {
+    "min": 62.5,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "フロンティア入試（総合型選抜）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程＋後期日程（要確認）。国内最難関クラスの獣医課程",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "獣医師国家試験受験資格（6年制）"
+   ],
+   "interest_tags": [
+    "nogaku",
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin",
+    "shokuhin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hokkaido-univ-suisan",
+   "uni_id": "hokkaido-univ",
+   "name": "水産学部",
+   "campus": "函館キャンパス（北海道函館市）※1・2年次は札幌キャンパス",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "フロンティア入試（総合型選抜）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（総合入試理系または学部別入試）＋後期日程（要確認）。3年次から函館キャンパス",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一般選抜の一次として）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教諭一種免許（理科・水産）（要確認）",
+    "食品衛生管理者（任用・課程による・要確認）",
+    "海技士（養成課程による・要確認）"
+   ],
+   "interest_tags": [
+    "nogaku",
+    "riko"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "maker",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,407 @@
+{
+ "uni": {
+  "id": "hitotsubashi",
+  "name": "一橋大学",
+  "name_short": "一橋大",
+  "prefecture": "東京都",
+  "type": "国立",
+  "campus_main": "国立キャンパス",
+  "tuition_yen_per_year": 642960,
+  "tuition_note": "国立大の標準額（535,800円）より約2割高い年額642,960円（要確認）。入学金282,000円は別途",
+  "access_from_shiga_min": 230,
+  "commute_possible": false,
+  "commute_note": "通学不可・下宿前提。草津・大津から京都経由で新幹線＋中央線を乗り継ぎ、東京都国立市まで片道約4時間",
+  "feature": "商学・経済学・法学・社会学など社会科学に特化した国立大学。全学部でゼミナールが必修となる少人数教育が伝統で、「キャプテンズ・オブ・インダストリー（産業界のリーダー）」の育成を掲げる。卒業生ネットワーク「如水会」の結束が強く、商社・金融・コンサルへの就職力は全国トップクラス。2023年には文理融合のソーシャル・データサイエンス学部を新設した。",
+  "living_cost": {
+   "rent_min": 55000,
+   "rent_max": 85000,
+   "food_monthly": 25000,
+   "monthly_total": 120000,
+   "four_year_total": 5800000,
+   "note": "国立市・立川市など東京多摩地区での下宿前提。23区内よりは家賃を抑えられる（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "三菱商事・三井物産など総合商社",
+    "三菱UFJ銀行・三井住友銀行など大手金融",
+    "東京海上日動火災保険",
+    "アクセンチュア・PwCなどコンサルティング",
+    "国家公務員（総合職）",
+    "楽天グループ・大手IT"
+   ],
+   "note": "学生数あたりの大手企業役員輩出率は全国最上位クラスと言われる（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR中央線 国立駅 徒歩約8分",
+   "walking_min_from_station": 8,
+   "nearby_amenities": "国立駅前の「大学通り」沿いにカフェ・書店・飲食店。2駅隣の立川駅に大型商業施設が集積",
+   "area_description": "文教地区に指定された緑豊かな学園都市。落ち着いた住宅街で治安が良く、新宿へは中央線特快で約30分"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、一橋大学独自の奨学金や同窓会（如水会）系の奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "如水会（同窓会）のOB・OGネットワークを活かした就職支援",
+    "商社・金融・コンサル志望者向けの情報が集まりやすい環境",
+    "ゼミ単位での縦のつながりによる就活サポート"
+   ],
+   "quality": 5,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.hit-u.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "社会科学系で日本最難関クラスの国立大学。京大の経済・法と並ぶ選択肢で、「東京で商社・金融・コンサル・起業を目指したい」文系トップ層に最適。少人数ゼミで面倒見も良い。",
+  "region": "kanto",
+  "notable_alumni": [
+   "三木谷浩史（楽天グループ創業者・商学部）",
+   "竹中平蔵（経済学者・元経済財政政策担当大臣）",
+   "石原慎太郎（作家・元東京都知事）"
+  ],
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 4,
+    "kigyō_ippan": 5,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "総合商社・大手金融・コンサルへの就職力は全国トップクラス",
+    "如水会（同窓会）の強力なOB・OGネットワーク",
+    "国家公務員総合職・シンクタンクなど政策系進路にも強い",
+    "少人数ゼミ出身者としての評価が採用市場で高い"
+   ],
+   "representative_employers": [
+    "三菱商事",
+    "三井物産",
+    "三菱UFJ銀行",
+    "東京海上日動火災保険",
+    "アクセンチュア",
+    "国家公務員（総合職）"
+   ],
+   "summary": "社会科学特化の最難関国立。商社・金融・コンサル就職では東大と並ぶ最強クラス。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別試験（英語・数学・国語・地歴等）。学部により配点比重が大きく異なり、全体に数学・英語の比重が高い",
+     "notes": "全学部で実施。二次試験は記述量が多く、数学は文系最難関レベルとされる",
+     "bairitsu": "2.5〜3.5倍（要確認）"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト＋個別試験（英語・数学中心）",
+     "notes": "経済学部・ソーシャル・データサイエンス学部のみ実施（要確認）。定員が少なく高倍率",
+     "bairitsu": "5〜10倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "hitotsubashi-sho",
+   "uni_id": "hitotsubashi",
+   "name": "商学部",
+   "campus": "国立キャンパス（東京都国立市）",
+   "hensachi": {
+    "min": 65,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "過去に学校推薦型選抜の実施歴あり。現在の実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一次選抜・配点に利用）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（商業・公民など、教職課程履修で）（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "it",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hitotsubashi-keizai",
+   "uni_id": "hitotsubashi",
+   "name": "経済学部",
+   "campus": "国立キャンパス（東京都国立市）",
+   "hensachi": {
+    "min": 65,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程に加え後期日程も実施（後期は数学の比重が特に高い・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一次選抜・配点に利用）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（公民・地理歴史など、教職課程履修で）（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hitotsubashi-ho",
+   "uni_id": "hitotsubashi",
+   "name": "法学部",
+   "campus": "国立キャンパス（東京都国立市）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一次選抜・配点に利用）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（公民など、教職課程履修で）（要確認）",
+    "法曹（弁護士・裁判官・検察官）は法科大学院進学・司法試験合格が別途必要"
+   ],
+   "interest_tags": [
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hitotsubashi-shakai",
+   "uni_id": "hitotsubashi",
+   "name": "社会学部",
+   "campus": "国立キャンパス（東京都国立市）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋二次試験）。二次は地歴・国語の比重が高め（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一次選抜・配点に利用）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（社会・公民など、教職課程履修で）（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "bungaku"
+   ],
+   "employment_fields": [
+    "media",
+    "koumuin",
+    "maker",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hitotsubashi-sds",
+   "uni_id": "hitotsubashi",
+   "name": "ソーシャル・データサイエンス学部",
+   "campus": "国立キャンパス（東京都国立市）",
+   "hensachi": {
+    "min": 65,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "総合型選抜の実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程に加え後期日程も実施（要確認）。数学の比重が高い",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（一次選抜・配点に利用）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "統計・データサイエンス関連の学修（資格は別途試験・要確認）"
+   ],
+   "interest_tags": [
+    "joho",
+    "keizai"
+   ],
+   "employment_fields": [
+    "it",
+    "kinyu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

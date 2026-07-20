@@ -1,0 +1,548 @@
+{
+ "uni": {
+  "id": "osaka-shoin",
+  "name": "大阪樟蔭女子大学",
+  "name_short": "大阪樟蔭女子大",
+  "prefecture": "大阪府",
+  "type": "私立",
+  "campus_main": "小阪キャンパス",
+  "tuition_yen_per_year": 1300000,
+  "tuition_note": "学科により異なる。健康栄養学部（管理栄養士養成）はやや高め（要確認）",
+  "access_from_shiga_min": 105,
+  "commute_possible": false,
+  "commute_note": "草津からJRで大阪・鶴橋経由、近鉄奈良線河内小阪駅下車で片道約105分・乗換2回。通学は不可能ではないが下宿も検討圏",
+  "feature": "1917年創立の樟蔭高等女学校を母体とする伝統ある女子大学。学芸・児童教育・健康栄養の3学部を東大阪市の小阪キャンパスに集約している。日本の大学では珍しい「化粧ファッション学科」があり、美容・コスメ・アパレル業界を目指す学生に特色ある学びを提供。作家・田辺聖子の母校としても知られ、キャンパス内に田辺聖子文学館がある。",
+  "living_cost": {
+   "rent_min": 40000,
+   "rent_max": 60000,
+   "food_monthly": 25000,
+   "monthly_total": 95000,
+   "four_year_total": 4600000,
+   "note": "東大阪市小阪周辺の下宿相場。大阪市中心部より家賃はやや抑えめ。難波・鶴橋へ電車ですぐ"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "公私立幼稚園・保育所（大阪府内中心）",
+    "小学校（大阪府等）",
+    "化粧品・美容関連企業",
+    "アパレル企業",
+    "病院・福祉施設（管理栄養士・栄養士）",
+    "食品メーカー",
+    "一般企業（事務・販売職）"
+   ],
+   "note": "教育・保育、美容・ファッション、栄養の各分野で専門職就職が中心（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "近鉄奈良線 河内小阪駅 徒歩約4分（JRおおさか東線 JR河内永和駅 徒歩約5分）",
+   "walking_min_from_station": 4,
+   "nearby_amenities": "駅前商店街が生活圏。難波・鶴橋まで近鉄で10分台と大阪市内へのアクセス良好",
+   "area_description": "東大阪市の住宅・商店街エリア。近隣に司馬遼太郎記念館がある落ち着いた文教地区"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入試成績優秀者への特待生制度・独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "教員・保育士採用試験対策の支援",
+    "美容・ファッション業界とのつながりを生かした就職支援",
+    "女子大ならではの少人数個別サポート"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.osaka-shoin.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「化粧・美容を大学で学びたい」なら全国でも希少な選択肢で、美容師国家試験受験資格を目指せるコースもある（要確認）。保育・小学校教員や管理栄養士など資格直結の学部がそろい、女子大の落ち着いた環境で専門職を目指せる。",
+  "notable_alumni": [
+   "田辺聖子（作家）"
+  ],
+  "employment": {
+   "ratings": {
+    "kyoin": 3,
+    "shogakkō": 3,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 1,
+    "iryō": 2
+   },
+   "strengths": [
+    "幼稚園教諭・保育士・小学校教員養成の伝統と実績",
+    "化粧品・美容・アパレル業界への就職に強い独自分野",
+    "管理栄養士養成課程から病院・福祉・食品分野へ",
+    "女子大ならではのきめ細かい個別就職支援"
+   ],
+   "representative_employers": [
+    "大阪府内の公私立幼稚園・保育所",
+    "小学校（大阪府等）",
+    "化粧品・美容関連企業",
+    "アパレル企業",
+    "病院・福祉施設",
+    "食品メーカー"
+   ],
+   "summary": "教育・保育、美容・ファッション、栄養の3分野に強い女子大。",
+   "notes": "女子大学のため男子学生は入学できない。"
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "課題・プレゼンテーション等（学科により異なる）"
+     ],
+     "bairitsu": "1〜1.5倍（要確認）",
+     "notes": "学科ごとに選考内容が異なる（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準なし・調査書を点数化（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力検査（2教科型中心）"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": null
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "2教科型中心（国語・英語等から選択、学科により指定あり）",
+     "notes": "共通テスト利用選抜あり。人気の化粧ファッション・児童教育はやや倍率が上がる傾向（要確認）",
+     "bairitsu": "1〜2.5倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "osaka-shoin-kokubun",
+   "uni_id": "osaka-shoin",
+   "name": "学芸学部 国文学科",
+   "campus": "小阪キャンパス（大阪府東大阪市）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（国語）",
+    "高等学校教諭一種（国語）",
+    "司書",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "service",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-shoin-eigo",
+   "uni_id": "osaka-shoin",
+   "name": "学芸学部 国際英語学科",
+   "campus": "小阪キャンパス（大阪府東大阪市）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（英語）",
+    "高等学校教諭一種（英語）",
+    "司書（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "service",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-shoin-shinri",
+   "uni_id": "osaka-shoin",
+   "name": "学芸学部 心理学科",
+   "campus": "小阪キャンパス（大阪府東大阪市）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "認定心理士",
+    "公認心理師（対応カリキュラム・大学院進学等が必要）（要確認）"
+   ],
+   "interest_tags": [
+    "shakai"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-shoin-life",
+   "uni_id": "osaka-shoin",
+   "name": "学芸学部 ライフプランニング学科",
+   "campus": "小阪キャンパス（大阪府東大阪市）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "フードスペシャリスト（要確認）",
+    "ファイナンシャル・プランニング技能士（受験対策）（要確認）",
+    "高等学校教諭一種（家庭）（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "keizai"
+   ],
+   "employment_fields": [
+    "service",
+    "kinyu",
+    "shokuhin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-shoin-kesho",
+   "uni_id": "osaka-shoin",
+   "name": "学芸学部 化粧ファッション学科",
+   "campus": "小阪キャンパス（大阪府東大阪市）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "人気学科のため総合型・推薦での志願が多い傾向（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "美容師国家試験受験資格（美容コース）（要確認）",
+    "衣料管理士（テキスタイルアドバイザー）（要確認）",
+    "色彩検定等の検定対策（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-shoin-jido",
+   "uni_id": "osaka-shoin",
+   "name": "児童教育学部 児童教育学科",
+   "campus": "小阪キャンパス（大阪府東大阪市）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種",
+    "幼稚園教諭一種",
+    "保育士"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-shoin-eiyo",
+   "uni_id": "osaka-shoin",
+   "name": "健康栄養学部 健康栄養学科",
+   "campus": "小阪キャンパス（大阪府東大阪市）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "管理栄養士（国家試験受験資格・管理栄養士専攻）",
+    "栄養士",
+    "栄養教諭（要確認）",
+    "フードスペシャリスト（要確認）"
+   ],
+   "interest_tags": [
+    "eiyo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "shokuhin",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,367 @@
+{
+ "uni": {
+  "id": "baika",
+  "name": "梅花女子大学",
+  "name_short": "梅花女子大",
+  "prefecture": "大阪府",
+  "type": "私立",
+  "campus_main": "本部キャンパス（茨木市）",
+  "tuition_yen_per_year": 1300000,
+  "tuition_note": "文系学部の概算（要確認）。看護学科・管理栄養系は年間180万円前後と高め（要確認）",
+  "access_from_shiga_min": 100,
+  "commute_possible": true,
+  "commute_note": "大津・草津からJRで茨木駅まで約40〜50分＋スクールバス約25分。片道100分前後で通学圏ギリギリ（要確認）",
+  "feature": "1878年創立の梅花女学校を起源とする、関西でも歴史の長いキリスト教主義の女子大学。文化表現・心理こども・食文化・看護保健の4学部を持ち、看護師・管理栄養士・保育士・歯科衛生士など資格直結の学びが中心。少人数で面倒見がよく、チアリーディング部「レイダース」は全国トップレベルで有名。女子大のため男子学生は入学できない。",
+  "living_cost": {
+   "rent_min": 40000,
+   "rent_max": 60000,
+   "food_monthly": 25000,
+   "monthly_total": 100000,
+   "four_year_total": 4800000,
+   "note": "茨木・北摂エリアの下宿相場（要確認）。滋賀県南部からは自宅通学も一応可能な距離"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約98%（要確認）",
+   "top_employers": [
+    "大阪府内・北摂の病院（看護）",
+    "保育園・幼稚園・認定こども園",
+    "歯科医院・歯科クリニック",
+    "食品メーカー・給食受託会社",
+    "金融機関（信用金庫等）",
+    "小売・サービス業"
+   ],
+   "note": "資格系学科（看護・管理栄養・保育・歯科衛生）は資格を活かした就職が中心（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR茨木駅・阪急北千里駅などからスクールバス（大阪モノレール彩都西駅からも近い）（要確認）",
+   "walking_min_from_station": null,
+   "nearby_amenities": "キャンパス周辺は郊外の丘陵地。買い物は茨木市街や彩都エリアが生活圏",
+   "area_description": "大阪府茨木市北部の緑の多い丘陵地。ニュータウン「彩都」に近い落ち着いた環境"
+  },
+  "shogakukin": {
+   "general_shogakukin": "成績優秀者特待生・資格取得者対象の減免など独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "女子大ならではの少人数・個別対応のキャリア支援",
+    "資格系学科ごとの国家試験・就職サポート",
+    "1年次からのキャリア教育科目"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.baika.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「女子大で看護・栄養・保育などの資格をしっかり取りたい」人向けの選択肢。偏差値のハードルは低めで、面接・書類中心の入試方式も多い。滋賀からはJR茨木経由で通える距離だが片道100分前後かかる点は要検討。",
+  "region": "osaka",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 2,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 4
+   },
+   "strengths": [
+    "看護師・歯科衛生士・管理栄養士など医療系国家資格に直結",
+    "保育士・幼稚園教諭・小学校教諭を目指せるこども教育系",
+    "少人数の女子大で就職支援がきめ細かい"
+   ],
+   "representative_employers": [
+    "北摂・大阪府内の病院",
+    "保育園・幼稚園",
+    "歯科医院",
+    "食品・給食関連企業",
+    "地元金融機関・一般企業"
+   ],
+   "summary": "医療・保育・栄養の資格系に強い小規模女子大。",
+   "notes": "女子大のため男子学生は入学できない。"
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は緩やか（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "課題・プレゼン等（方式による）"
+     ],
+     "bairitsu": "1〜1.5倍（要確認）",
+     "notes": "複数回実施され、専願・併願方式がある（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準なし〜緩やか（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力テストまたは面接（方式による）"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": "看護など医療系はやや倍率が高め（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "2教科型（英語・国語など選択）が中心（要確認）",
+     "notes": "複数日程あり。共通テスト利用選抜もあり",
+     "bairitsu": "1〜2倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "baika-bunka",
+   "uni_id": "baika",
+   "name": "文化表現学部",
+   "campus": "本部キャンパス（大阪府茨木市宿久庄）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種（英語・国語）（要確認）",
+    "司書",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "baika-shinri-kodomo",
+   "uni_id": "baika",
+   "name": "心理こども学部",
+   "campus": "本部キャンパス（大阪府茨木市宿久庄）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "保育士",
+    "幼稚園教諭一種",
+    "小学校教諭一種（要確認）",
+    "認定心理士"
+   ],
+   "interest_tags": [
+    "kyoiku",
+    "shakai"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "iryo_fukushi",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "baika-shoku",
+   "uni_id": "baika",
+   "name": "食文化学部",
+   "campus": "本部キャンパス（大阪府茨木市宿久庄）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "管理栄養士（国家試験受験資格・管理栄養学科）",
+    "栄養士（管理栄養学科）",
+    "調理師（食文化学科・要確認）",
+    "フードスペシャリスト（要確認）"
+   ],
+   "interest_tags": [
+    "eiyo"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "iryo_fukushi",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "baika-kango",
+   "uni_id": "baika",
+   "name": "看護保健学部",
+   "campus": "本部キャンパス（大阪府茨木市宿久庄）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師（看護学科）",
+    "保健師（選抜制・要確認）",
+    "歯科衛生士（口腔保健学科）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+  "uni_id": "aoyama-gakuin",
+  "departments": [
+    {
+      "dept_id": "aoyama-gakuin-shakaijoho",
+      "uni_id": "aoyama-gakuin",
+      "name": "社会情報学部",
+      "campus": "相模原キャンパス（神奈川県相模原市中央区淵野辺）",
+      "hensachi": {
+        "min": 55,
+        "max": 60,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "自己推薦入試（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "一般選抜（全学部日程・個別学部日程）。方式により数学重視型あり",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試あり（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中学教諭一種（数学）（要確認）",
+        "高校教諭一種（数学・情報）（要確認）",
+        "社会調査士（要確認）"
+      ],
+      "interest_tags": [
+        "joho",
+        "shakai"
+      ],
+      "employment_fields": [
+        "it",
+        "kinyu",
+        "maker",
+        "service"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "aoyama-gakuin-chikyu",
+      "uni_id": "aoyama-gakuin",
+      "name": "地球社会共生学部",
+      "campus": "相模原キャンパス（神奈川県相模原市中央区淵野辺）",
+      "hensachi": {
+        "min": 55,
+        "max": 57.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "自己推薦入試（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "一般選抜（全学部日程・個別学部日程）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試あり（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "特定の国家資格なし。東南アジア等への半期留学が必修（要確認）"
+      ],
+      "interest_tags": [
+        "shakai",
+        "gaikokugo"
+      ],
+      "employment_fields": [
+        "service",
+        "ryutsu",
+        "media"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    }
+  ]
+}

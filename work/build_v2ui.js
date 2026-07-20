@@ -7,11 +7,13 @@ const R = (p) => fs.readFileSync(path.join(__dirname, p), 'utf8');
 
 // JSON文字列中の </script を無害化（HTML埋め込み安全化）
 const safeJson = (s) => s.replace(/<\/script/gi, '<\\/script');
+// 配布HTMLを軽くするためインラインJSONはミニファイ（data_v2.json自体は編集用にpretty維持）
+const minify = (s) => JSON.stringify(JSON.parse(s));
 
 let html = R('app_v2ui.html');
-const data = safeJson(R('data_v2.json'));
-const riasecDef = safeJson(R('riasec_def.json'));
-const riasecMap = safeJson(R('interest_riasec_map.json'));
+const data = safeJson(minify(R('data_v2.json')));
+const riasecDef = safeJson(minify(R('riasec_def.json')));
+const riasecMap = safeJson(minify(R('interest_riasec_map.json')));
 const engine = R('engine_v2.js');
 const bridge = R('bridge_v2.js');
 const agg = R('agg_v2.js');

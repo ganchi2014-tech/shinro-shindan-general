@@ -1,0 +1,501 @@
+{
+ "uni": {
+  "id": "tokyo-nodai",
+  "name": "東京農業大学",
+  "name_short": "東京農大",
+  "prefecture": "東京都",
+  "type": "私立",
+  "campus_main": "世田谷キャンパス",
+  "tuition_yen_per_year": 1300000,
+  "tuition_note": "学部・学科により異なる（栄養科学科等はやや高め）（要確認）",
+  "access_from_shiga_min": 220,
+  "commute_possible": false,
+  "commute_note": "草津・大津から新幹線利用でも片道3時間半前後。完全に下宿前提",
+  "feature": "1891年創立、日本で最も歴史のある農学系私立大学。「食」「農」「環境」「生命科学」の分野では私大トップクラスの規模と伝統を誇り、醸造科学など全国的にここでしか学べない分野もある。世田谷（東京）・厚木（神奈川）・オホーツク（北海道網走）の3キャンパスに6学部を展開。食品業界への就職ネットワークが非常に強い。",
+  "living_cost": {
+   "rent_min": 60000,
+   "rent_max": 90000,
+   "food_monthly": 30000,
+   "monthly_total": 125000,
+   "four_year_total": 6000000,
+   "note": "世田谷キャンパス周辺の相場。厚木・網走（オホーツク）は家賃3〜5万円台と大幅に安い（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "味の素グループ",
+    "キユーピー",
+    "山崎製パン",
+    "サントリーグループ",
+    "雪印メグミルク",
+    "農林水産省・地方公務員（農業・林業職）",
+    "JAグループ",
+    "食品・飲料・種苗メーカー各社"
+   ],
+   "note": "食品・農業関連業界への就職は私大随一の実績。公務員の農業職・林業職にも強い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "小田急線 経堂駅 徒歩約15分（世田谷キャンパス）",
+   "walking_min_from_station": 15,
+   "nearby_amenities": "経堂・千歳船橋の商店街が生活圏。渋谷・新宿へ電車で20〜30分",
+   "area_description": "世田谷区の閑静な住宅街。馬事公苑に隣接し、都心アクセスと落ち着いた環境を両立"
+  },
+  "shogakukin": {
+   "general_shogakukin": "成績優秀者奨学金・経済支援型の独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "食品・農業関連業界への強力なOB・OGネットワーク",
+    "公務員（農業職・林業職等）対策の支援講座",
+    "学科ごとの専門分野に対応した就職支援"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.nodai.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「食・農・バイオ・環境」を本気で学ぶなら全国屈指の選択肢で、醸造や造園など他大学にほぼない学科がある。滋賀からは下宿前提だが、食品業界・農業系公務員を目指すなら関西の大学にない強みを持つ。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 2,
+    "iryō": 2
+   },
+   "strengths": [
+    "食品・飲料メーカーへの就職実績が私大トップクラス",
+    "公務員の農業職・林業職・食品衛生分野に強い",
+    "醸造・造園・森林など専門性の高い分野で業界直結",
+    "全国に広がる卒業生ネットワーク（農業・食品業界）"
+   ],
+   "representative_employers": [
+    "味の素グループ",
+    "キユーピー",
+    "サントリーグループ",
+    "山崎製パン",
+    "農林水産省・都道府県庁（農業職）",
+    "JAグループ"
+   ],
+   "summary": "食品・農業・環境分野への就職に圧倒的な強みを持つ農学系私大の名門。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（キャリアデザイン総合型等）",
+     "hyoutei_min": null,
+     "hyoutei_note": "学科により基準が異なる（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文・課題",
+      "面接・プレゼンテーション"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "農業・食への関心や活動実績を重視する方式（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": 3.5,
+     "hyoutei_note": "3.5以上目安・学科により異なる（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": null
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（A日程・B日程）",
+     "subjects": "3教科型が基本（英語＋理科または国語＋選択科目。学科により指定あり）",
+     "notes": "地方試験会場あり（要確認）。共通テスト利用選抜も実施",
+     "bairitsu": "2〜5倍（要確認）"
+    },
+    {
+     "method_name": "大学入学共通テスト利用選抜",
+     "subjects": "共通テスト3教科型など（学科により異なる）",
+     "notes": "個別試験なしで出願可能（要確認）",
+     "bairitsu": "2〜6倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "tokyo-nodai-nogaku",
+   "uni_id": "tokyo-nodai",
+   "name": "農学部",
+   "campus": "厚木キャンパス（神奈川県厚木市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（A日程・B日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種（理科・農業）",
+    "家畜人工授精師（受験資格）",
+    "学芸員",
+    "食の6次産業化プロデューサー（要確認）"
+   ],
+   "interest_tags": [
+    "nogaku"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "maker",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-nodai-oyoseibutsu",
+   "uni_id": "tokyo-nodai",
+   "name": "応用生物科学部",
+   "campus": "世田谷キャンパス（東京都世田谷区）",
+   "hensachi": {
+    "min": 50,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（A日程・B日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "食品衛生管理者・食品衛生監視員（任用資格）",
+    "管理栄養士（受験資格・栄養科学科）",
+    "栄養士（栄養科学科）",
+    "高等学校教諭一種（理科・農業）"
+   ],
+   "interest_tags": [
+    "nogaku",
+    "eiyo"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "maker",
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-nodai-seimei",
+   "uni_id": "tokyo-nodai",
+   "name": "生命科学部",
+   "campus": "世田谷キャンパス（東京都世田谷区）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（A日程・B日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種（理科）",
+    "バイオ技術者認定試験（受験資格）（要確認）",
+    "危険物取扱者（受験に有利）（要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "nogaku"
+   ],
+   "employment_fields": [
+    "maker",
+    "shokuhin",
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-nodai-chiiki",
+   "uni_id": "tokyo-nodai",
+   "name": "地域環境科学部",
+   "campus": "世田谷キャンパス（東京都世田谷区）",
+   "hensachi": {
+    "min": 45,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（A日程・B日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "測量士補",
+    "造園施工管理技士（受験資格）",
+    "樹木医補（要確認）",
+    "高等学校教諭一種（理科・農業）"
+   ],
+   "interest_tags": [
+    "nogaku",
+    "kenchiku"
+   ],
+   "employment_fields": [
+    "kensetsu",
+    "koumuin",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-nodai-kokusai",
+   "uni_id": "tokyo-nodai",
+   "name": "国際食料情報学部",
+   "campus": "世田谷キャンパス（東京都世田谷区）",
+   "hensachi": {
+    "min": 45,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（A日程・B日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種（農業・公民）（要確認）",
+    "食の6次産業化プロデューサー（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "nogaku",
+    "keizai"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "ryutsu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-nodai-seibutsusangyo",
+   "uni_id": "tokyo-nodai",
+   "name": "生物産業学部",
+   "campus": "オホーツクキャンパス（北海道網走市）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（A日程・B日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種（理科・農業）",
+    "学芸員",
+    "食品衛生管理者・食品衛生監視員（任用資格）（要確認）"
+   ],
+   "interest_tags": [
+    "nogaku"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "koumuin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

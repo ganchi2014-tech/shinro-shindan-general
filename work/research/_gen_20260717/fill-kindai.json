@@ -1,0 +1,128 @@
+{
+  "uni_id": "kindai",
+  "departments": [
+    {
+      "dept_id": "kindai-kogaku",
+      "uni_id": "kindai",
+      "name": "工学部",
+      "campus": "広島キャンパス（広島県東広島市）",
+      "hensachi": {
+        "min": 40,
+        "max": 45,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "総合型選抜（AO入試）を実施（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "推薦入試（一般公募）を実施",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "一般入試 前期・後期。東大阪ほか全国の会場でも受験可（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用方式あり（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "一級建築士受験資格（建築学科・要確認）",
+        "二級建築士受験資格（建築学科・要確認）",
+        "高等学校教諭一種免許（工業・要確認）",
+        "機械・電気系技術職"
+      ],
+      "interest_tags": [
+        "riko",
+        "kenchiku"
+      ],
+      "employment_fields": [
+        "maker",
+        "it",
+        "kensetsu"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "kindai-sanriko",
+      "uni_id": "kindai",
+      "name": "産業理工学部",
+      "campus": "福岡キャンパス（福岡県飯塚市）",
+      "hensachi": {
+        "min": 37.5,
+        "max": 42.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "総合型選抜（AO入試）を実施（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "推薦入試（一般公募）を実施",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "一般入試 前期・後期。理工系5学科に加え文系の経営ビジネス学科もある（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用方式あり（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "一級建築士受験資格（建築・デザイン学科・要確認）",
+        "危険物取扱者（受験対策・要確認）",
+        "高等学校教諭一種免許（工業・要確認）",
+        "情報・電気系技術職"
+      ],
+      "interest_tags": [
+        "riko",
+        "joho"
+      ],
+      "employment_fields": [
+        "maker",
+        "it",
+        "kensetsu",
+        "service"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    }
+  ]
+}

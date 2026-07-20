@@ -1,0 +1,366 @@
+{
+ "uni": {
+  "id": "musashi",
+  "name": "武蔵大学",
+  "name_short": "武蔵大",
+  "prefecture": "東京都",
+  "type": "私立",
+  "campus_main": "江古田キャンパス",
+  "tuition_yen_per_year": 1150000,
+  "tuition_note": "経済・人文・社会学部の概算。国際教養学部は留学・連携プログラム費用によりさらに高くなる（要確認）",
+  "access_from_shiga_min": 225,
+  "commute_possible": false,
+  "commute_note": "東京・練馬のため下宿前提。京都駅から新幹線＋在来線で片道約3.5〜4時間",
+  "feature": "1922年創立の旧制武蔵高等学校を前身とする、東京・練馬のワンキャンパス私立大学。「ゼミの武蔵」と呼ばれ、1年次から全員が少人数ゼミに所属して4年間鍛えられるのが最大の特色。経済・人文・社会・国際教養の4学部がひとつのキャンパスに集まり、小規模ながら成蹊・成城・明治学院と並ぶ人気校。国際教養学部ではロンドン大学と連携した並行学位（パラレル・ディグリー）プログラムも展開している。",
+  "living_cost": {
+   "rent_min": 55000,
+   "rent_max": 80000,
+   "food_monthly": 25000,
+   "monthly_total": 115000,
+   "four_year_total": 5500000,
+   "note": "練馬区江古田周辺の一人暮らし相場。都心（池袋）に近い割に家賃は比較的手頃な学生街"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約96%（要確認）",
+   "top_employers": [
+    "都市銀行・信託銀行",
+    "生命保険・損害保険",
+    "情報通信（SIer・通信系）",
+    "公務員（東京都特別区・都道府県）",
+    "大手メーカー（食品・化学など）",
+    "流通・サービス"
+   ],
+   "note": "少人数ゼミで鍛えた分析力・発信力が評価され、規模の割に大手企業就職に強いとされる（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "西武池袋線 江古田駅 徒歩約6分（西武有楽町線 新桜台駅、都営大江戸線 新江古田駅も利用可）",
+   "walking_min_from_station": 6,
+   "nearby_amenities": "江古田駅周辺は昔ながらの商店街と学生向け飲食店が豊富。池袋まで電車で約10分",
+   "area_description": "練馬区の落ち着いた住宅・学生街。緑の多いコンパクトなワンキャンパスに全学部が集まる"
+  },
+  "shogakukin": {
+   "general_shogakukin": "武蔵大学奨学金（給付型）や入試成績優秀者向けの特別奨学金など独自制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "小規模大学ならではの個別・少人数キャリア支援",
+    "ゼミ教員と連携した進路指導",
+    "低学年からのキャリア教育プログラム"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.musashi.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「大教室でほったらかし」の対極にある、全員ゼミ制の少人数教育で知られる東京の中堅上位私大。GMARCHに次ぐレベルで、規模が小さい分だけ面倒見と就職支援の手厚さを重視したい人に向く。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "全員参加の少人数ゼミで培う思考力・発信力が就職活動で評価される",
+    "金融・保険業界への就職に伝統的に強い",
+    "小規模大学ならではの手厚い個別就職支援",
+    "旧制高校以来の伝統とOB・OGネットワーク"
+   ],
+   "representative_employers": [
+    "都市銀行・信託銀行",
+    "大手生命保険・損害保険",
+    "情報通信大手（要確認）",
+    "東京都特別区などの公務員",
+    "大手メーカー"
+   ],
+   "summary": "「ゼミの武蔵」の少人数教育を武器に、金融・情報通信など東京の大手企業へ堅実に就職。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（AO入試）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "小論文・レポート",
+      "面接・プレゼンテーション"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "実施学部・方式・出願要件は年度により異なるため要確認"
+    }
+   ],
+   "koubo": [],
+   "ippan": [
+    {
+     "method_name": "一般選抜（個別学部併願型）",
+     "subjects": "3教科（英語・国語・選択科目）",
+     "bairitsu": "3〜5倍（要確認）",
+     "notes": "同じ試験で複数学科に併願できる方式（要確認）。評定不問"
+    },
+    {
+     "method_name": "一般選抜（全学部統一型）",
+     "subjects": "3教科（英語・国語・選択科目）",
+     "bairitsu": "3〜6倍（要確認）",
+     "notes": "1回の試験で全学部・学科に出願可能な方式（要確認）"
+    },
+    {
+     "method_name": "大学入学共通テスト方式（前期・後期）",
+     "subjects": "共通テスト3〜6科目（方式による）",
+     "bairitsu": "3〜7倍（要確認）",
+     "notes": "個別試験なしで出願できる（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "musashi-keizai",
+   "uni_id": "musashi",
+   "name": "経済学部",
+   "campus": "江古田キャンパス（東京都練馬区）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（AO入試）実施（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "推薦は指定校中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別学部併願型・全学部統一型など",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト方式（前期・後期）あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（社会）・高等学校教諭一種（地理歴史・公民・商業）（教職課程履修・要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "it",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "musashi-jinbun",
+   "uni_id": "musashi",
+   "name": "人文学部",
+   "campus": "江古田キャンパス（東京都練馬区）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（AO入試）実施（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "推薦は指定校中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別学部併願型・全学部統一型など",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト方式（前期・後期）あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（国語・英語・社会）・高等学校教諭一種（国語・英語・地理歴史）（教職課程履修・要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "media",
+    "service",
+    "kyoiku",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "musashi-shakai",
+   "uni_id": "musashi",
+   "name": "社会学部",
+   "campus": "江古田キャンパス（東京都練馬区）",
+   "hensachi": {
+    "min": 55,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（AO入試）実施（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "推薦は指定校中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別学部併願型・全学部統一型など",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト方式（前期・後期）あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "社会調査士",
+    "中学校教諭一種（社会）・高等学校教諭一種（公民）（教職課程履修・要確認）"
+   ],
+   "interest_tags": [
+    "shakai"
+   ],
+   "employment_fields": [
+    "media",
+    "it",
+    "service",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "musashi-kokusai",
+   "uni_id": "musashi",
+   "name": "国際教養学部",
+   "campus": "江古田キャンパス（東京都練馬区）",
+   "hensachi": {
+    "min": 55,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（AO入試）実施（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "推薦は指定校中心。公募制の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別学部併願型・全学部統一型など",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト方式（前期・後期）あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "特定の国家資格はなし。経済経営学専攻ではロンドン大学の学位も目指す並行学位（パラレル・ディグリー）プログラムあり（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "it",
+    "service",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,405 @@
+{
+ "uni_id": "nihon-univ",
+ "departments": [
+  {
+   "dept_id": "nihon-univ-kokusaikankei",
+   "uni_id": "nihon-univ",
+   "name": "国際関係学部",
+   "campus": "三島キャンパス（静岡県三島市）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用（C方式）あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語）（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "shakai"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nihon-univ-kikikanri",
+   "uni_id": "nihon-univ",
+   "name": "危機管理学部",
+   "campus": "三軒茶屋キャンパス（東京都世田谷区下馬）",
+   "hensachi": {
+    "min": 45,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用（C方式）あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "防災士（要確認）"
+   ],
+   "interest_tags": [
+    "hokei",
+    "shakai"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "service",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nihon-univ-seisankogaku",
+   "uni_id": "nihon-univ",
+   "name": "生産工学部",
+   "campus": "津田沼キャンパス（千葉県習志野市泉町）",
+   "hensachi": {
+    "min": 40,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用（C方式）あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "建築士受験資格（建築工学科）",
+    "高等学校教諭一種免許状（工業ほか）（要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "kenchiku"
+   ],
+   "employment_fields": [
+    "maker",
+    "kensetsu",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nihon-univ-kogaku",
+   "uni_id": "nihon-univ",
+   "name": "工学部",
+   "campus": "郡山キャンパス（福島県郡山市田村町）",
+   "hensachi": {
+    "min": 35,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用（C方式）あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "建築士受験資格（建築学科）",
+    "高等学校教諭一種免許状（工業ほか）（要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "kenchiku"
+   ],
+   "employment_fields": [
+    "maker",
+    "kensetsu",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nihon-univ-shigaku",
+   "uni_id": "nihon-univ",
+   "name": "歯学部（6年制）",
+   "campus": "駿河台キャンパス（東京都千代田区神田駿河台）",
+   "hensachi": {
+    "min": 50,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": null,
+     "note": "共通テスト利用の実施有無は要確認",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "歯科医師"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nihon-univ-matsudo-shigaku",
+   "uni_id": "nihon-univ",
+   "name": "松戸歯学部（6年制）",
+   "campus": "松戸キャンパス（千葉県松戸市栄町西）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": null,
+     "note": "共通テスト利用の実施有無は要確認",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "歯科医師"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nihon-univ-yakugaku",
+   "uni_id": "nihon-univ",
+   "name": "薬学部（6年制）",
+   "campus": "船橋キャンパス（千葉県船橋市習志野台）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（N全学統一方式・A個別方式）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用（C方式）あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

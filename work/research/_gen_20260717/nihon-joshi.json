@@ -1,0 +1,535 @@
+{
+ "uni": {
+  "id": "nihon-joshi",
+  "name": "日本女子大学",
+  "name_short": "日本女子大",
+  "prefecture": "東京都",
+  "type": "私立",
+  "campus_main": "目白キャンパス",
+  "tuition_yen_per_year": 1300000,
+  "tuition_note": "学部により異なる。理学部・建築デザイン学部・食科学部はやや高め（要確認）",
+  "access_from_shiga_min": 190,
+  "commute_possible": false,
+  "commute_note": "草津・大津から新幹線利用でも片道3時間超。下宿前提",
+  "feature": "1901年創立、日本初の組織的な女子高等教育機関として知られる伝統女子大。家政学部を源流に、文学・人間社会・理学に加え、近年は国際文化学部（2023）・建築デザイン学部（2024）・食科学部（2025）を新設し改革が進む。2021年に全学部が目白キャンパスに集約され、都心で4年間学べる。女子大のため入学できるのは女子のみ。",
+  "living_cost": {
+   "rent_min": 65000,
+   "rent_max": 100000,
+   "food_monthly": 30000,
+   "monthly_total": 130000,
+   "four_year_total": 6240000,
+   "note": "目白・護国寺周辺は文教エリアで家賃は高め。学生寮・提携マンションあり（要確認）。下宿前提の概算"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "三菱UFJ銀行など大手金融",
+    "日本生命・第一生命など保険",
+    "NTTデータ・富士通など情報通信",
+    "アクセンチュアなどコンサル",
+    "大手食品メーカー（管理栄養士含む）",
+    "公立・私立学校教員",
+    "国家・地方公務員"
+   ],
+   "note": "女子大の中でも就職実績はトップクラスとされる。大手企業総合職への就職に強い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "東京メトロ副都心線 雑司が谷駅 徒歩約8分／JR山手線 目白駅 徒歩約15分（バス便あり）",
+   "walking_min_from_station": 8,
+   "nearby_amenities": "目白・池袋が生活圏。池袋駅まで自転車・バスですぐで買い物には困らない",
+   "area_description": "文京区目白台の閑静な文教地区。皇族ゆかりの庭園や大学が点在する落ち着いた住宅街"
+  },
+  "shogakukin": {
+   "general_shogakukin": "予約型給付奨学金など大学独自の給付奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "卒業生組織「桜楓会」による強いOGネットワーク",
+    "女性のキャリア形成に特化した低学年からのキャリア教育",
+    "個別相談・OG訪問マッチングなど手厚い就職支援"
+   ],
+   "quality": 5,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.jwu.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "首都圏の伝統女子大の中でもトップクラスの就職実績とOGネットワークが強み。「東京で女性がリーダーシップを取れる環境でじっくり学びたい」滋賀の受験生にとって、京都女子大・同志社女子大と比較検討する価値のある選択肢。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 4,
+    "shogakkō": 3,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 5,
+    "kigyō_supotsu": 1,
+    "iryō": 3
+   },
+   "strengths": [
+    "大手企業（金融・情報通信・食品）への就職に強く女子大では最高水準",
+    "家庭科・国語などの中高教員、児童学科・教育学科からの小学校教員の実績",
+    "管理栄養士など食・栄養系専門職への道（食科学部）",
+    "桜楓会のOGネットワークが就職活動を後押し"
+   ],
+   "representative_employers": [
+    "大手金融（メガバンク・保険）",
+    "NTTデータなど情報通信",
+    "大手食品メーカー",
+    "学校教員（家庭科・小学校など）",
+    "国家・地方公務員"
+   ],
+   "summary": "就職に強い伝統女子大。大手企業・教員・管理栄養士まで幅広い。",
+   "notes": "女子大のため男子学生は入学できない。"
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（学部・学科により実施）",
+     "hyoutei_min": null,
+     "hyoutei_note": "学科により出願基準あり（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文・レポート",
+      "面接・プレゼンテーション"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "実施学科・選考内容は年度により異なる（要確認）"
+    }
+   ],
+   "koubo": [],
+   "ippan": [
+    {
+     "method_name": "一般選抜（個別選抜型）",
+     "subjects": "3教科型（英語＋国語＋選択科目など、学部により異なる）",
+     "notes": "英語外部試験利用型あり（要確認）。共通テスト利用型も別途実施",
+     "bairitsu": "2〜4倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "nihon-joshi-kasei",
+   "uni_id": "nihon-joshi",
+   "name": "家政学部",
+   "campus": "目白キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施学科・内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "公募制推薦の有無は要確認（指定校推薦が中心）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別選抜型（3教科）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用型あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教諭免許（家庭など）",
+    "保育士（児童学科）",
+    "幼稚園教諭免許（児童学科）",
+    "小学校教諭免許（児童学科）"
+   ],
+   "interest_tags": [
+    "kyoiku",
+    "shakai"
+   ],
+   "employment_fields": [
+    "maker",
+    "kyoiku",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nihon-joshi-bungaku",
+   "uni_id": "nihon-joshi",
+   "name": "文学部",
+   "campus": "目白キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施学科・内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "公募制推薦の有無は要確認（指定校推薦が中心）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別選抜型（3教科）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用型あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教諭免許（国語・英語・社会など）",
+    "学芸員",
+    "司書"
+   ],
+   "interest_tags": [
+    "bungaku"
+   ],
+   "employment_fields": [
+    "media",
+    "kyoiku",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nihon-joshi-ningen",
+   "uni_id": "nihon-joshi",
+   "name": "人間社会学部",
+   "campus": "目白キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施学科・内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "公募制推薦の有無は要確認（指定校推薦が中心）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別選抜型（3教科）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用型あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "社会福祉士国家試験受験資格（社会福祉学科）",
+    "認定心理士（心理学科）",
+    "公認心理師カリキュラム対応（心理学科・大学院連携）（要確認）",
+    "小学校・幼稚園教諭免許（教育学科）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nihon-joshi-rigaku",
+   "uni_id": "nihon-joshi",
+   "name": "理学部",
+   "campus": "目白キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施学科・内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "公募制推薦の有無は要確認（指定校推薦が中心）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別選抜型（理系3教科）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用型あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学・高校教諭免許（数学・理科・情報）",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "it",
+    "maker",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nihon-joshi-kokusai",
+   "uni_id": "nihon-joshi",
+   "name": "国際文化学部",
+   "campus": "目白キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "公募制推薦の有無は要確認（指定校推薦が中心）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別選抜型（3教科）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用型あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）",
+    "各種語学検定・留学プログラムでの実践力"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "shakai"
+   ],
+   "employment_fields": [
+    "media",
+    "ryutsu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nihon-joshi-kenchiku",
+   "uni_id": "nihon-joshi",
+   "name": "建築デザイン学部",
+   "campus": "目白キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "公募制推薦の有無は要確認（指定校推薦が中心）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別選抜型（3教科）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用型あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士国家試験受験資格",
+    "二級建築士国家試験受験資格",
+    "インテリアプランナー登録資格（要確認）"
+   ],
+   "interest_tags": [
+    "kenchiku"
+   ],
+   "employment_fields": [
+    "kensetsu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nihon-joshi-shoku",
+   "uni_id": "nihon-joshi",
+   "name": "食科学部",
+   "campus": "目白キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "公募制推薦の有無は要確認（指定校推薦が中心）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別選抜型（3教科）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用型あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "管理栄養士国家試験受験資格（栄養学科）（要確認）",
+    "栄養士",
+    "中学・高校教諭免許（家庭）（要確認）",
+    "食品衛生管理者・食品衛生監視員（任用）（要確認）"
+   ],
+   "interest_tags": [
+    "eiyo"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

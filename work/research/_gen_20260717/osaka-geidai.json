@@ -1,0 +1,882 @@
+{
+ "uni": {
+  "id": "osaka-geidai",
+  "name": "大阪芸術大学",
+  "name_short": "大阪芸大",
+  "prefecture": "大阪府",
+  "type": "私立",
+  "campus_main": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+  "tuition_yen_per_year": 1600000,
+  "tuition_note": "芸術系のため学費は高め。学科により異なり、音楽・演奏系はさらに高額（要確認）",
+  "access_from_shiga_min": 160,
+  "commute_possible": false,
+  "commute_note": "草津・大津から片道約2時間半以上。近鉄喜志駅からさらにスクールバスが必要で、通学は非現実的。下宿前提",
+  "feature": "関西最大級の総合芸術大学で、芸術学部1学部の中に美術・デザイン・映像・キャラクター造形・放送・音楽など15学科を擁する。アニメ・ゲーム・放送などエンタメ業界に多くの人材を輩出し、庵野秀明監督ら著名クリエイターの出身校として知られる。大阪府南部の丘陵地にある広大なキャンパスに、各分野の本格的なスタジオ・工房・ホールが揃う。第一線で活躍するクリエイターが教員として指導するのも特色。",
+  "living_cost": {
+   "rent_min": 35000,
+   "rent_max": 55000,
+   "food_monthly": 25000,
+   "monthly_total": 95000,
+   "four_year_total": 4560000,
+   "note": "喜志・富田林など大学周辺は家賃が安い。天王寺方面など大阪市内から近鉄で通う学生も多い（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約80%（要確認）",
+   "top_employers": [
+    "ゲーム会社（カプコン等）（要確認）",
+    "テレビ・映像制作会社",
+    "アニメ制作会社",
+    "デザイン事務所・広告制作会社",
+    "出版・編集プロダクション",
+    "教員（美術・音楽）",
+    "一般企業"
+   ],
+   "note": "クリエイティブ業界への就職のほか、フリーランス・作家活動に進む卒業生も多く、就職率の数字だけでは実態を測りにくい（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "近鉄長野線 喜志駅からスクールバス約10分",
+   "walking_min_from_station": 35,
+   "nearby_amenities": "キャンパス周辺は田園・丘陵地で店は少なめ。喜志駅前や富田林市街が生活圏",
+   "area_description": "大阪府南部・南河内郡河南町の丘陵地に広がる芸術大学らしい開放的なキャンパス。大阪阿部野橋（天王寺）から近鉄で約30分＋バス"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入試成績優秀者への特待生制度・独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "エンタメ・クリエイティブ業界に特化した求人・OBOGネットワーク",
+    "ポートフォリオ・作品制作の指導と連動した就職支援",
+    "学内での企業説明会・業界セミナー"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.osaka-geidai.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "notable_alumni": [
+   "庵野秀明（映画監督・アニメーター）",
+   "島本和彦（漫画家）",
+   "古田新太（俳優）（要確認）",
+   "筧利夫（俳優）（要確認）"
+  ],
+  "unique_point": "滋賀からは遠く下宿前提だが、関西でアニメ・ゲーム・映像・放送・デザインを本格的に学びたいなら筆頭級の選択肢。実技・面接中心の入試で「作りたいもの」への熱意で勝負できる。",
+  "employment": {
+   "ratings": {
+    "kyoin": 3,
+    "shogakkō": 2,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 1,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "アニメ・ゲーム・放送・デザインなどエンタメ業界への輩出実績",
+    "関西最大級の総合芸術大学で分野横断の人脈・コラボができる",
+    "美術・音楽の中高教員、小学校教員（初等芸術教育学科）への道もある"
+   ],
+   "representative_employers": [
+    "ゲーム会社（カプコン等）（要確認）",
+    "テレビ・映像制作会社",
+    "アニメ・CG制作会社",
+    "デザイン事務所・広告制作会社",
+    "教員（美術・音楽・小学校）"
+   ],
+   "summary": "クリエイティブ・エンタメ業界志望に特化。一般企業・公務員志向には不向き。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "体験授業・実技",
+      "面接"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": "学科により実技・作品提出・課題の内容が大きく異なる。芸大の主要な入学ルートの一つ（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は比較的緩やか（要確認）",
+     "selection_content": [
+      "書類",
+      "実技または小論文",
+      "面接"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": null
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "学科試験＋実技・小論文等（学科により大きく異なる）",
+     "bairitsu": "1〜3倍（要確認）",
+     "notes": "共通テスト利用選抜あり。キャラクター造形・映像・放送など人気学科は倍率が高くなりやすい（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "osaka-geidai-bijutsu",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 美術学科・工芸学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（体験授業・実技型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "実技試験を含む方式が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許（美術）（要確認）",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "maker",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-geidai-design",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 デザイン学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（体験授業・実技型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "実技（デッサン等）を含む方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許（美術）（要確認）",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-geidai-shashin",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 写真学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（体験授業型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-geidai-kenchiku",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 建築学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（体験授業型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士受験資格（要確認）",
+    "二級建築士受験資格（要確認）"
+   ],
+   "interest_tags": [
+    "kenchiku",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "kensetsu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-geidai-eizo",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 映像学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（体験授業型）。人気が高い（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "小論文・作文等を含む方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "it",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-geidai-chara",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 キャラクター造形学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（体験授業・作品型）。人気が高い（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "実技・作品提出を含む方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "it",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-geidai-bungei",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 文芸学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（体験授業型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "小論文・作文を含む方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許（国語）（要確認）",
+    "学芸員",
+    "図書館司書（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-geidai-hoso",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 放送学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（体験授業型）。アナウンス・制作系で人気（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu",
+    "shakai"
+   ],
+   "employment_fields": [
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-geidai-keikaku",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 芸術計画学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（体験授業型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員"
+   ],
+   "interest_tags": [
+    "geijutsu",
+    "shakai"
+   ],
+   "employment_fields": [
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-geidai-butai",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 舞台芸術学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（実技・体験授業型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "実技を含む方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-geidai-ongaku",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 音楽学科・演奏学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（実技・体験授業型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "演奏系は実技試験が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許（音楽）（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "kyoiku",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-geidai-artsci",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 アートサイエンス学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（体験授業型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu",
+    "joho"
+   ],
+   "employment_fields": [
+    "it",
+    "media",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-geidai-shoto",
+   "uni_id": "osaka-geidai",
+   "name": "芸術学部 初等芸術教育学科",
+   "campus": "大阪芸術大学キャンパス（大阪府南河内郡河南町）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜（体験授業型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許（要確認）",
+    "幼稚園教諭一種免許（要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

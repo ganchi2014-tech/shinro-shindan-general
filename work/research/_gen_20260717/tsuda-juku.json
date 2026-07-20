@@ -1,0 +1,491 @@
+{
+ "uni": {
+  "id": "tsuda-juku",
+  "name": "津田塾大学",
+  "name_short": "津田塾大",
+  "prefecture": "東京都",
+  "type": "私立",
+  "campus_main": "小平キャンパス",
+  "tuition_yen_per_year": 1000000,
+  "tuition_note": "学科により異なる（要確認）",
+  "access_from_shiga_min": 220,
+  "commute_possible": false,
+  "commute_note": "東京都小平市のため下宿前提。新幹線＋中央線・西武線で片道約3時間半",
+  "feature": "津田梅子が1900年に創立した「女子英学塾」を前身とする名門女子大学。「英語の津田塾」として知られ、少人数教育と厳しく鍛える学風で自立した女性を育ててきた。学芸学部には英語・国際関係系に加えて数学科・情報科学科があり、文系イメージが強いが理系も学べるのが特徴。総合政策学部は都心の千駄ヶ谷キャンパスで学ぶ。女子大学のため男子学生は入学できない。",
+  "living_cost": {
+   "rent_min": 50000,
+   "rent_max": 75000,
+   "food_monthly": 30000,
+   "monthly_total": 115000,
+   "four_year_total": 5500000,
+   "note": "小平市は東京都下の落ち着いた住宅地で、都心よりも家賃相場が低め。総合政策学部（千駄ヶ谷）は都心のためやや高くなる"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "航空・エアライン各社",
+    "大手金融機関",
+    "総合商社・専門商社",
+    "ITサービス企業",
+    "外資系企業",
+    "国家公務員・地方公務員",
+    "中学・高校教員（英語）"
+   ],
+   "note": "卒業生ネットワーク（同窓会組織）が強く、少人数教育の割に大手企業への就職実績が厚い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "西武国分寺線「鷹の台」駅 徒歩約8分",
+   "walking_min_from_station": 8,
+   "nearby_amenities": "玉川上水沿いの緑豊かなエリア。日常の買い物は国分寺駅周辺が生活圏",
+   "area_description": "東京都小平市の閑静な住宅・文教エリア。都心（新宿）へは中央線・西武線で40分前後"
+  },
+  "shogakukin": {
+   "general_shogakukin": "首都圏外出身者向けの予約型給付奨学金など独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "少人数ならではの個別キャリア支援",
+    "卒業生ネットワークを活かしたOG訪問・業界セミナー",
+    "教職・公務員志望者への支援"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.tsuda.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「英語や国際系を本気で鍛えたい」「女子大で数学・情報を学びたい」なら全国区の選択肢。知名度・就職の強さの割に規模が小さく、少人数でしっかり面倒を見てもらえる。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 3,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "英語力を武器にした航空・商社・外資系への就職",
+    "数学科・情報科学科からのIT・金融系就職",
+    "英語教員（中高）の輩出実績",
+    "強い卒業生ネットワークによる就職支援"
+   ],
+   "representative_employers": [
+    "航空会社（客室乗務員・総合職）",
+    "大手銀行・保険会社",
+    "ITサービス企業",
+    "外務省など官公庁",
+    "中学・高校（英語教員）"
+   ],
+   "summary": "英語×少人数教育で大手・外資・公務員に強い名門女子大。",
+   "notes": "女子大学のため男子学生は入学できない"
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "小論文・課題",
+      "面接"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "実施学科は年度により異なる（多文化・国際協力学科、総合政策学部など）。詳細は要確認"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": 3.8,
+     "hyoutei_note": "3.8以上（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "1.5〜3倍（要確認）",
+     "notes": "英語資格の基準が課される場合あり（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（A方式・個別試験）",
+     "subjects": "英語＋国語または数学など2〜3教科型（学科により異なる）",
+     "notes": "英語の配点が高い学科が多い。数学科・情報科学科は数学重視",
+     "bairitsu": "2〜4倍（要確認）"
+    },
+    {
+     "method_name": "共通テスト利用（B方式等）",
+     "subjects": "共通テスト3教科前後（学科により異なる）",
+     "notes": "個別試験なしで出願できる方式あり（要確認）",
+     "bairitsu": "2〜5倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "tsuda-juku-eibun",
+   "uni_id": "tsuda-juku",
+   "name": "学芸学部 英語英文学科",
+   "campus": "小平キャンパス（東京都小平市）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "英語重視の個別試験",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "bungaku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "service",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tsuda-juku-kokusai",
+   "uni_id": "tsuda-juku",
+   "name": "学芸学部 国際関係学科",
+   "campus": "小平キャンパス（東京都小平市）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "英語＋社会・国語型の個別試験",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（社会・英語）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tsuda-juku-tabunka",
+   "uni_id": "tsuda-juku",
+   "name": "学芸学部 多文化・国際協力学科",
+   "campus": "小平キャンパス（東京都小平市）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "英語重視の個別試験",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "service",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tsuda-juku-sugaku",
+   "uni_id": "tsuda-juku",
+   "name": "学芸学部 数学科",
+   "campus": "小平キャンパス（東京都小平市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "数学＋英語型の個別試験",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（数学）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "it",
+    "kyoiku",
+    "kinyu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tsuda-juku-joho",
+   "uni_id": "tsuda-juku",
+   "name": "学芸学部 情報科学科",
+   "campus": "小平キャンパス（東京都小平市）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "数学＋英語型の個別試験",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（数学・情報）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "joho",
+    "riko"
+   ],
+   "employment_fields": [
+    "it",
+    "maker",
+    "kinyu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tsuda-juku-sogo",
+   "uni_id": "tsuda-juku",
+   "name": "総合政策学部 総合政策学科",
+   "campus": "千駄ヶ谷キャンパス（東京都渋谷区）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "英語＋小論文・データ読解型など特色ある試験（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "特になし（学位・語学力・データ分析スキルが中心）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "it",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

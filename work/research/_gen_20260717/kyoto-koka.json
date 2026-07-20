@@ -1,0 +1,484 @@
+{
+ "uni": {
+  "id": "kyoto-koka",
+  "name": "京都光華女子大学",
+  "name_short": "京都光華女子大",
+  "prefecture": "京都府",
+  "type": "私立",
+  "campus_main": "本部キャンパス（京都市右京区西京極）",
+  "tuition_yen_per_year": 1300000,
+  "tuition_note": "学部により差が大きい。看護学科は年間約180万円前後、キャリア形成・こども教育系は約120〜130万円前後（要確認）",
+  "access_from_shiga_min": 65,
+  "commute_possible": true,
+  "commute_note": "草津からJRで京都駅へ出て、地下鉄・阪急に乗り継ぎ阪急西京極駅下車。乗換はあるが片道約60〜70分で滋賀南部から自宅通学圏",
+  "feature": "真宗大谷派（東本願寺）の仏教精神に基づく人間教育を行う京都の女子大学。健康科学部（看護・心理・健康栄養・医療福祉）、こども教育学部、キャリア形成学部を持ち、看護師・管理栄養士・保育士・言語聴覚士など資格直結の学びが中心。小規模で面倒見がよく、女性のキャリア支援に力を入れている。なお2026年4月に男女共学化し「京都光華大学」へ名称変更したとされる（要確認）。",
+  "living_cost": {
+   "rent_min": 45000,
+   "rent_max": 65000,
+   "food_monthly": 25000,
+   "monthly_total": 100000,
+   "four_year_total": 4800000,
+   "note": "京都市内で下宿する場合の相場。滋賀南部からは自宅通学が現実的で、下宿不要のケースも多い"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約98%（要確認）",
+   "top_employers": [
+    "京都府内・滋賀県内の病院（看護）",
+    "保育所・幼稚園・認定こども園",
+    "福祉施設",
+    "給食・食品関連企業（管理栄養士）",
+    "一般企業（事務・販売・サービス）",
+    "公務員（保育職等）"
+   ],
+   "note": "看護師・管理栄養士など国家資格系の就職が中心。就職率は大学公表値ベース（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "阪急京都線 西京極駅 徒歩約7分",
+   "walking_min_from_station": 7,
+   "nearby_amenities": "西京極総合運動公園が近く、四条大宮・桂方面へのアクセスも良い住宅エリア。京都市街中心部へ阪急で約10分",
+   "area_description": "京都市右京区西京極の落ち着いた住宅地。キャンパスは幼稚園から大学まで揃う光華女子学園の一体型キャンパス"
+  },
+  "shogakukin": {
+   "general_shogakukin": "光華女子学園独自の特待生制度・入学時奨学金など各種あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "小規模を活かした個別のキャリア支援",
+    "看護・栄養・保育など資格職の国家試験・採用試験対策",
+    "女性のキャリア形成支援プログラム"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.koka.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "阪急西京極駅から徒歩圏で、滋賀南部から通える京都の資格系大学。看護・管理栄養士・保育士・言語聴覚士など「手に職」の学びを、少人数の面倒見の良さで支えてくれる。偏差値のハードルは比較的低め。",
+  "region": "kyoto",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 3,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 4
+   },
+   "strengths": [
+    "看護師・管理栄養士・言語聴覚士など医療系国家資格の取得と就職に直結",
+    "保育士・幼稚園教諭・小学校教諭の養成実績",
+    "少人数で個別の就職支援が手厚い",
+    "京都市内で立地がよく実習先・就職先が豊富"
+   ],
+   "representative_employers": [
+    "京都府内・滋賀県内の病院・医療機関",
+    "保育所・幼稚園・認定こども園",
+    "福祉施設",
+    "給食受託・食品関連企業",
+    "一般企業（事務・サービス）"
+   ],
+   "summary": "医療・栄養・保育の資格職に強い京都の小規模女子大。",
+   "notes": "従来は女子大学のため男子は入学不可。2026年4月に共学化し「京都光華大学」となったとされるため、男子の出願可否は最新の募集要項で必ず確認すること（要確認）。"
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は原則なし（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "課題・プレゼンテーション等"
+     ],
+     "bairitsu": "1.0〜1.5倍（要確認）",
+     "notes": "学科により内容が異なる。看護など医療系はやや倍率が高い（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "基準は緩やか（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力試験",
+      "面接"
+     ],
+     "bairitsu": "1.0〜2倍（要確認）",
+     "notes": null
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "2教科型が中心（英語＋国語など選択制）",
+     "notes": "共通テスト利用選抜あり。看護学科は倍率・得点率がやや高め（要確認）",
+     "bairitsu": "1.0〜2倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "kyoto-koka-kango",
+   "uni_id": "kyoto-koka",
+   "name": "健康科学部（看護学科）",
+   "campus": "本部キャンパス（京都府京都市右京区西京極）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師（国家試験受験資格）",
+    "保健師（選抜制・要確認）",
+    "養護教諭一種免許（要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-koka-shinri",
+   "uni_id": "kyoto-koka",
+   "name": "健康科学部（心理学科）",
+   "campus": "本部キャンパス（京都府京都市右京区西京極）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "認定心理士",
+    "公認心理師（大学院進学等が必要・要確認）"
+   ],
+   "interest_tags": [
+    "shakai"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-koka-eiyo",
+   "uni_id": "kyoto-koka",
+   "name": "健康科学部（健康栄養学科）",
+   "campus": "本部キャンパス（京都府京都市右京区西京極）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "管理栄養士（国家試験受験資格・管理栄養士専攻）",
+    "栄養士",
+    "栄養教諭（要確認）",
+    "フードスペシャリスト（要確認）"
+   ],
+   "interest_tags": [
+    "eiyo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "shokuhin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-koka-fukushi",
+   "uni_id": "kyoto-koka",
+   "name": "健康科学部（医療福祉学科：社会福祉・言語聴覚・作業療法）",
+   "campus": "本部キャンパス（京都府京都市右京区西京極）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "社会福祉士（国家試験受験資格）",
+    "言語聴覚士（国家試験受験資格）",
+    "作業療法士（国家試験受験資格）",
+    "精神保健福祉士（要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-koka-kodomo",
+   "uni_id": "kyoto-koka",
+   "name": "こども教育学部",
+   "campus": "本部キャンパス（京都府京都市右京区西京極）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許",
+    "幼稚園教諭一種免許",
+    "保育士"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-koka-career",
+   "uni_id": "kyoto-koka",
+   "name": "キャリア形成学部",
+   "campus": "本部キャンパス（京都府京都市右京区西京極）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "上級秘書士（要確認）",
+    "ファイナンシャル・プランニング技能士（資格取得支援・要確認）",
+    "医療事務関連資格（資格取得支援・要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "hokei"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "kinyu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

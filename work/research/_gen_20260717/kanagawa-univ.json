@@ -1,0 +1,765 @@
+{
+ "uni": {
+  "id": "kanagawa-univ",
+  "name": "神奈川大学",
+  "name_short": "神大（神奈川大）",
+  "prefecture": "神奈川県",
+  "type": "私立",
+  "campus_main": "横浜キャンパス",
+  "tuition_yen_per_year": 1300000,
+  "tuition_note": "文系 約120万円・理工系 約160万円（授業料+施設費の概算・要確認）",
+  "access_from_shiga_min": 175,
+  "commute_possible": false,
+  "commute_note": "草津・大津から京都経由で新幹線利用でも片道約3時間。完全に下宿前提",
+  "feature": "横浜を代表する私立総合大学で、文系から理工系まで11学部を擁する。伝統の横浜キャンパス（六角橋）に加え、2021年に横浜の新都心・みなとみらい地区に高層のみなとみらいキャンパスを開設した。入試成績上位者の学費を大幅に減免する「給費生試験」が全国的に有名で、経済的支援を求める受験生が全国から集まる。箱根駅伝の常連校としても知られるスポーツの伝統校でもある。",
+  "living_cost": {
+   "rent_min": 50000,
+   "rent_max": 80000,
+   "food_monthly": 30000,
+   "monthly_total": 110000,
+   "four_year_total": 5400000,
+   "note": "横浜市内の下宿前提。六角橋周辺は学生街で比較的家賃を抑えやすいが、首都圏相場のため関西より高め（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "横浜銀行（要確認）",
+    "神奈川県庁・横浜市役所",
+    "神奈川県警察・警視庁",
+    "日産自動車グループ（要確認）",
+    "JR東日本（要確認）",
+    "首都圏の中堅〜大手企業"
+   ],
+   "note": "就職先は神奈川県内と東京の企業が中心。公務員・警察・消防への実績も多い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "東急東横線 白楽駅 徒歩約13分（横浜キャンパス）／みなとみらい線 みなとみらい駅 徒歩約5分（みなとみらいキャンパス）",
+   "walking_min_from_station": 13,
+   "nearby_amenities": "横浜キャンパスは昔ながらの六角橋商店街が隣接する学生街。横浜駅まで電車で約10分で買い物・遊びには困らない",
+   "area_description": "横浜キャンパスは横浜市神奈川区の住宅地の高台。みなとみらいキャンパスは観光地・オフィス街の中心にあり、都会的な環境で学べる"
+  },
+  "shogakukin": {
+   "general_shogakukin": "給費生制度（給費生試験合格者は4年間の学費を大幅減免＋給付型奨学金。文系年額約110万円給付など・要確認）のほか、大学独自の給付奨学金あり",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "約1万7千人規模の学生を支える就職課の個別支援（要確認）",
+    "公務員試験対策講座・資格取得支援が学内で充実",
+    "首都圏企業の学内説明会が多数"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.kanagawa-u.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "全国どこからでも挑戦できる「給費生試験」が最大の特徴。合格すれば4年間の学費がほぼ免除級に減免されるので、「首都圏の私大に行きたいがお金が心配」という滋賀の受験生にとって大きなチャンス。給費生に届かなくても一般入試扱いの合格が狙える一石二鳥の入試。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 3,
+    "shōbō": 3,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 2,
+    "iryō": 1
+   },
+   "strengths": [
+    "神奈川県・横浜市など地元自治体や警察・消防への公務員就職に強い",
+    "首都圏の企業への就職で選択肢が非常に広い",
+    "給費生制度など学費・奨学金支援が手厚く経済面の不安を減らせる"
+   ],
+   "representative_employers": [
+    "横浜銀行（要確認）",
+    "神奈川県庁・横浜市役所",
+    "神奈川県警察・警視庁",
+    "日産自動車グループ（要確認）",
+    "JR東日本（要確認）"
+   ],
+   "summary": "首都圏就職に強い横浜の中堅総合私大。公務員・警察消防にも実績。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（公募制自己推薦入試）",
+     "hyoutei_min": null,
+     "hyoutei_note": "学部・学科により出願条件が異なる（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "1.5〜4倍（要確認）",
+     "notes": "評定基準を設けない学科もあり挑戦しやすい（要確認）"
+    }
+   ],
+   "koubo": [],
+   "ippan": [
+    {
+     "method_name": "給費生試験",
+     "subjects": "3教科（学部により科目構成が異なる）",
+     "bairitsu": "給費生としての合格は5〜15倍程度の狭き門（要確認）",
+     "notes": "例年、年内に全国の主要都市の会場で受験可能（京都・名古屋などにも会場あり・要確認）。給費生に届かなくても「一般入試免除」の合格が得られるため腕試しとしても人気"
+    },
+    {
+     "method_name": "一般入試（前期・後期等）",
+     "subjects": "3教科型が中心。学部により2教科型・得意科目重視型あり（要確認）",
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "複数日程で受験機会が多い（要確認）"
+    },
+    {
+     "method_name": "共通テスト利用入試",
+     "subjects": "共通テスト3教科型など（要確認）",
+     "bairitsu": "2〜6倍（要確認）",
+     "notes": "個別試験なしで出願可能（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "kanagawa-univ-hou",
+   "uni_id": "kanagawa-univ",
+   "name": "法学部",
+   "campus": "横浜キャンパス（神奈川県横浜市神奈川区）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦入試（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "学校推薦型は指定校制が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "給費生試験・一般入試",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（社会）（要確認）",
+    "高等学校教諭一種（公民）（要確認）"
+   ],
+   "interest_tags": [
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kanagawa-univ-keizai",
+   "uni_id": "kanagawa-univ",
+   "name": "経済学部",
+   "campus": "横浜キャンパス（神奈川県横浜市神奈川区）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦入試（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "学校推薦型は指定校制が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "給費生試験・一般入試",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（社会）（要確認）",
+    "高等学校教諭一種（公民・商業）（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kanagawa-univ-keiei",
+   "uni_id": "kanagawa-univ",
+   "name": "経営学部",
+   "campus": "みなとみらいキャンパス（神奈川県横浜市西区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦入試（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "学校推薦型は指定校制が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "給費生試験・一般入試",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "日商簿記・税理士等は試験対策支援（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "maker",
+    "ryutsu",
+    "kinyu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kanagawa-univ-gaikokugo",
+   "uni_id": "kanagawa-univ",
+   "name": "外国語学部",
+   "campus": "みなとみらいキャンパス（神奈川県横浜市西区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦入試（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "学校推薦型は指定校制が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "給費生試験・一般入試",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種（英語）（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kanagawa-univ-kokusai",
+   "uni_id": "kanagawa-univ",
+   "name": "国際日本学部",
+   "campus": "みなとみらいキャンパス（神奈川県横浜市西区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦入試（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "学校推薦型は指定校制が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "給費生試験・一般入試",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種（英語・国語・社会等、学科による）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "bungaku"
+   ],
+   "employment_fields": [
+    "media",
+    "service",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kanagawa-univ-ningen",
+   "uni_id": "kanagawa-univ",
+   "name": "人間科学部",
+   "campus": "横浜キャンパス（神奈川県横浜市神奈川区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦入試（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "学校推薦型は指定校制が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "給費生試験・一般入試",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種（保健体育）（要確認）",
+    "認定心理士（要確認）",
+    "社会福祉主事（任用）（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "sports"
+   ],
+   "employment_fields": [
+    "service",
+    "sports_kenko",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kanagawa-univ-ri",
+   "uni_id": "kanagawa-univ",
+   "name": "理学部",
+   "campus": "横浜キャンパス（神奈川県横浜市神奈川区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦入試（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "学校推薦型は指定校制が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "給費生試験・一般入試",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種（数学・理科）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kanagawa-univ-kou",
+   "uni_id": "kanagawa-univ",
+   "name": "工学部",
+   "campus": "横浜キャンパス（神奈川県横浜市神奈川区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦入試（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "学校推薦型は指定校制が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "給費生試験・一般入試",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種（数学・工業等、学科による）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "kensetsu",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kanagawa-univ-kenchiku",
+   "uni_id": "kanagawa-univ",
+   "name": "建築学部",
+   "campus": "横浜キャンパス（神奈川県横浜市神奈川区）",
+   "hensachi": {
+    "min": 45,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦入試（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "学校推薦型は指定校制が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "給費生試験・一般入試",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士（受験資格）（要確認）",
+    "二級建築士（受験資格）（要確認）"
+   ],
+   "interest_tags": [
+    "kenchiku"
+   ],
+   "employment_fields": [
+    "kensetsu",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kanagawa-univ-kagakuseimei",
+   "uni_id": "kanagawa-univ",
+   "name": "化学生命学部",
+   "campus": "横浜キャンパス（神奈川県横浜市神奈川区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦入試（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "学校推薦型は指定校制が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "給費生試験・一般入試",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種（理科）（要確認）",
+    "危険物取扱者等は試験対策支援（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "shokuhin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kanagawa-univ-joho",
+   "uni_id": "kanagawa-univ",
+   "name": "情報学部",
+   "campus": "横浜キャンパス（神奈川県横浜市神奈川区）",
+   "hensachi": {
+    "min": 45,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦入試（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "学校推薦型は指定校制が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "給費生試験・一般入試",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種（数学・情報）（要確認）",
+    "基本情報技術者等は試験対策支援（要確認）"
+   ],
+   "interest_tags": [
+    "joho"
+   ],
+   "employment_fields": [
+    "it",
+    "maker",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

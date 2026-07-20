@@ -1,0 +1,714 @@
+{
+ "uni": {
+  "id": "teikyo",
+  "name": "帝京大学",
+  "name_short": "帝京大",
+  "prefecture": "東京都",
+  "type": "私立",
+  "campus_main": "八王子キャンパス（文系）・板橋キャンパス（医療系）",
+  "tuition_yen_per_year": 1300000,
+  "tuition_note": "文系学部の概算（授業料＋施設費）。理工系は約150万円、医療技術系は約180〜200万円、薬学部は約240万円、医学部は年間約900万円（要確認）",
+  "access_from_shiga_min": 240,
+  "commute_possible": false,
+  "commute_note": "東京圏のため下宿前提。文系の八王子キャンパスは新幹線＋中央線で片道約4時間",
+  "feature": "医学部から文系・理工系まで10学部を擁する東京の大規模総合大学。医学部・薬学部・医療技術学部と複数の附属病院を持ち、医療系人材の育成に強い。ラグビー部は大学選手権で多数の優勝を誇り、箱根駅伝常連校でもあるなどスポーツの名門。文系学部は警察官・消防官など公務員への就職実績が目立つ。",
+  "living_cost": {
+   "rent_min": 45000,
+   "rent_max": 75000,
+   "food_monthly": 30000,
+   "monthly_total": 120000,
+   "four_year_total": 6000000,
+   "note": "八王子エリアは東京都内では家賃が安め。板橋キャンパス周辺（都心寄り）はやや高い（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約96%（要確認）",
+   "top_employers": [
+    "警視庁",
+    "東京消防庁",
+    "帝京大学医学部附属病院など附属・関連病院",
+    "国家・地方公務員",
+    "大手小売・サービス企業",
+    "運輸・物流企業"
+   ],
+   "note": "警察官・消防官の採用数は私大の中でも多い水準。医療系は国家資格を生かした専門職就職が中心（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "八王子: 京王線聖蹟桜ヶ丘駅・高幡不動駅・多摩センター駅などからバス約15分／板橋: 都営三田線板橋本町駅 徒歩約10分",
+   "walking_min_from_station": 10,
+   "nearby_amenities": "八王子駅周辺に商業施設が集積。キャンパス内の施設も充実",
+   "area_description": "八王子は東京西部の学園都市で緑が多く家賃も安め。板橋キャンパスは都心に近い住宅・病院エリア"
+  },
+  "shogakukin": {
+   "general_shogakukin": "特待生制度・帝京大学独自の奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "各キャンパスにキャリアサポートセンターを設置",
+    "警察官・消防官など公務員試験対策の支援に実績",
+    "医療系学部は国家試験対策と病院就職のサポートが手厚い"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.teikyo-u.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "文系は偏差値45前後から狙える東京の総合大学で、警察官・消防官・医療職に強いのが特徴。ラグビー・駅伝など全国レベルの部活動があり、スポーツの盛んな環境で学びたい人にも合う。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 3,
+    "shogakkō": 3,
+    "keisatsu": 4,
+    "shōbō": 4,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 4,
+    "iryō": 5
+   },
+   "strengths": [
+    "医学部・薬学部・医療技術学部と附属病院群による医療系就職の強さ",
+    "警察官・消防官の採用実績が私大の中でも多い",
+    "ラグビー・駅伝などスポーツ名門で体育会経由の就職ルートもある",
+    "教育学部から小学校教員への道もある"
+   ],
+   "representative_employers": [
+    "警視庁",
+    "東京消防庁",
+    "帝京大学附属・関連病院",
+    "地方公務員",
+    "大手小売・サービス企業"
+   ],
+   "summary": "医療・公安系公務員・スポーツに強い東京の大規模総合大学。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類審査",
+      "面接",
+      "小論文・課題等（学部により異なる）"
+     ],
+     "bairitsu": "1〜3倍（要確認）",
+     "notes": "医学部を除く多くの学部で実施（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "学部により3.0〜3.5以上（要確認）",
+     "selection_content": [
+      "書類審査",
+      "面接",
+      "小論文または基礎学力検査（学部により異なる）"
+     ],
+     "bairitsu": "1〜3倍（要確認）",
+     "notes": null
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "文系は2〜3教科型（英語＋国語・選択科目等）。医療系は理科重視、医学部は英数理＋面接",
+     "notes": "共通テスト利用選抜あり。医学部の一般選抜は10倍を大きく超える高倍率（要確認）",
+     "bairitsu": "文系2〜4倍・医学部10倍以上（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "teikyo-igaku",
+   "uni_id": "teikyo",
+   "name": "医学部",
+   "campus": "板橋キャンパス（東京都板橋区）",
+   "hensachi": {
+    "min": 65,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "医学部では総合型選抜は実施していない（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "英数理＋面接。私立医学部の中では学費が高額な点に注意",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "teikyo-yaku",
+   "uni_id": "teikyo",
+   "name": "薬学部",
+   "campus": "板橋キャンパス（東京都板橋区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "6年制。学費が高額な点に注意",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "teikyo-keizai",
+   "uni_id": "teikyo",
+   "name": "経済学部",
+   "campus": "八王子キャンパス（東京都八王子市）※地域経済学科は宇都宮キャンパス（栃木県宇都宮市）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "2〜3教科型",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（社会・地歴・公民等）（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "ryutsu",
+    "service",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "teikyo-hou",
+   "uni_id": "teikyo",
+   "name": "法学部",
+   "campus": "八王子キャンパス（東京都八王子市）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "2〜3教科型",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（社会・公民等）（要確認）"
+   ],
+   "interest_tags": [
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "teikyo-bun",
+   "uni_id": "teikyo",
+   "name": "文学部",
+   "campus": "八王子キャンパス（東京都八王子市）",
+   "hensachi": {
+    "min": 45,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "心理学科は文系の中で人気が高くやや難化傾向（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（国語・社会等）（要確認）",
+    "学芸員（要確認）",
+    "認定心理士（心理学科）",
+    "公認心理師受験資格（大学院修了等が必要）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "shakai"
+   ],
+   "employment_fields": [
+    "service",
+    "kyoiku",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "teikyo-gaikokugo",
+   "uni_id": "teikyo",
+   "name": "外国語学部",
+   "campus": "八王子キャンパス（東京都八王子市）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語）（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "teikyo-kyoiku",
+   "uni_id": "teikyo",
+   "name": "教育学部",
+   "campus": "八王子キャンパス（東京都八王子市）",
+   "hensachi": {
+    "min": 45,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状（初等教育学科）",
+    "幼稚園教諭一種免許状（要確認）",
+    "中学校・高等学校教諭一種免許状（要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "teikyo-riko",
+   "uni_id": "teikyo",
+   "name": "理工学部",
+   "campus": "宇都宮キャンパス（栃木県宇都宮市）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "機械・航空宇宙・情報電子・バイオ系の学科構成。キャンパスは栃木県宇都宮市なので注意",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（数学・理科）（要確認）",
+    "各種技術系資格の受験サポート（要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "teikyo-iryogijutsu",
+   "uni_id": "teikyo",
+   "name": "医療技術学部",
+   "campus": "板橋キャンパス（東京都板橋区）※スポーツ医療学科等は八王子キャンパス",
+   "hensachi": {
+    "min": 42.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "看護・診療放射線・臨床検査・スポーツ医療（救急救命士コースあり）・柔道整復など学科により難易度が異なる",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師国家試験受験資格",
+    "診療放射線技師国家試験受験資格",
+    "臨床検査技師国家試験受験資格",
+    "救急救命士国家試験受験資格（スポーツ医療学科救急救命士コース）",
+    "柔道整復師国家試験受験資格（宇都宮）（要確認）"
+   ],
+   "interest_tags": [
+    "iryo",
+    "sports"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "sports_kenko",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "teikyo-fukuoka-iryo",
+   "uni_id": "teikyo",
+   "name": "福岡医療技術学部",
+   "campus": "福岡キャンパス（福岡県大牟田市）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "キャンパスは福岡県大牟田市（東京ではない）ので注意",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "理学療法士国家試験受験資格",
+    "作業療法士国家試験受験資格",
+    "看護師国家試験受験資格",
+    "診療放射線技師国家試験受験資格",
+    "救急救命士国家試験受験資格（要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "sports_kenko"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

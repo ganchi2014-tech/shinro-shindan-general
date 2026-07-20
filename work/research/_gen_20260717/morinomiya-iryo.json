@@ -1,0 +1,582 @@
+{
+ "uni": {
+  "id": "morinomiya-iryo",
+  "name": "森ノ宮医療大学",
+  "name_short": "森ノ宮医療大",
+  "prefecture": "大阪府",
+  "type": "私立",
+  "campus_main": "コスモスクエアキャンパス",
+  "tuition_yen_per_year": 1700000,
+  "tuition_note": "学科により異なる（年間約160万〜180万円。鍼灸学科はやや低め）（要確認）",
+  "access_from_shiga_min": 100,
+  "commute_possible": true,
+  "commute_note": "草津からJR新快速＋大阪メトロ中央線（弁天町乗換など）で片道約100分・乗換2回。通学は可能だが遠めで、下宿との比較検討も現実的",
+  "feature": "大阪・南港コスモスクエアにキャンパスを構える医療系総合大学。看護・理学療法・作業療法・言語聴覚・臨床検査・臨床工学・診療放射線・鍼灸と、医療専門職の学科が一つのキャンパスに揃う。複数の医療職を目指す学生が合同で学ぶ多職種連携教育（チーム医療教育）が大きな特色。国家資格取得を前提としたカリキュラムで、卒業生の大半が病院など医療機関へ就職する。",
+  "living_cost": {
+   "rent_min": 45000,
+   "rent_max": 70000,
+   "food_monthly": 25000,
+   "monthly_total": 105000,
+   "four_year_total": 5000000,
+   "note": "コスモスクエア駅周辺は住宅が少なく、大阪メトロ中央線沿線（弁天町・朝潮橋など）や住之江エリアでの下宿が現実的。大阪市内としては家賃は抑えめ"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約99%（要確認）",
+   "top_employers": [
+    "大阪府内の大学病院・国公立病院（要確認）",
+    "民間総合病院",
+    "リハビリテーション病院・回復期病院",
+    "臨床検査センター・医療機器関連企業",
+    "鍼灸院・スポーツ関連施設"
+   ],
+   "note": "看護師・理学療法士・診療放射線技師など各国家試験の合格率は全国平均以上の学科が多い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "大阪メトロ中央線・ニュートラム「コスモスクエア駅」徒歩約1分",
+   "walking_min_from_station": 1,
+   "nearby_amenities": "駅前にコンビニ、近隣にATC（商業施設）。ベイエリアのため飲食店・スーパーはやや少なめ",
+   "area_description": "大阪南港・コスモスクエアの臨海エリア。海に面した開放的な立地で、キャンパスは駅からすぐ"
+  },
+  "shogakukin": {
+   "general_shogakukin": "特待生制度・大学独自の奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "国家試験対策と就職支援が一体化した医療系特化サポート",
+    "大阪府内を中心とした病院・医療機関との実習ネットワーク",
+    "学科別の個別就職支援"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.morinomiya-u.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "看護からリハビリ・検査・放射線・鍼灸まで、医療系国家資格の学科がワンキャンパスに揃う「医療系総合大学」。滋賀からは通学圏ギリギリだが、チーム医療を学びながら医療専門職を目指すなら関西で有力な選択肢。",
+  "employment": {
+   "ratings": {
+    "kyoin": 1,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 2,
+    "iryō": 5
+   },
+   "strengths": [
+    "医療系国家資格に直結するカリキュラムで就職先はほぼ医療機関",
+    "多職種連携教育（チーム医療）の経験が臨床現場で評価されやすい",
+    "大阪府内を中心に病院実習・就職のネットワークが厚い",
+    "国家試験のサポート体制が手厚い"
+   ],
+   "representative_employers": [
+    "大阪府内の大学病院・国公立病院（要確認）",
+    "民間総合病院・リハビリテーション病院",
+    "臨床検査センター",
+    "医療機器メーカー",
+    "鍼灸院・スポーツトレーナー関連"
+   ],
+   "summary": "医療専門職特化。就職はほぼ医療機関で安定。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "基礎学力テストまたは小論文（要確認）"
+     ],
+     "bairitsu": "1〜3倍（要確認）",
+     "notes": "実施有無・選考内容は学科により異なる（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は緩やかまたはなし（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力検査（英語・数学・理科などから2科目程度）"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "看護・診療放射線など人気学科は倍率が高くなりやすい（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期・後期）",
+     "subjects": "英語・数学・理科・国語から2〜3科目（学科により指定科目あり）（要確認）",
+     "notes": "共通テスト利用選抜も実施（要確認）",
+     "bairitsu": "2〜6倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "morinomiya-iryo-kango",
+   "uni_id": "morinomiya-iryo",
+   "name": "看護学部 看護学科",
+   "campus": "コスモスクエアキャンパス（大阪府大阪市住之江区）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦（基礎学力検査型）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師（国家試験受験資格）",
+    "保健師（国家試験受験資格・選抜制）（要確認）",
+    "助産師（卒業後、助産学専攻科進学で目指せる）（要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "morinomiya-iryo-rigaku",
+   "uni_id": "morinomiya-iryo",
+   "name": "総合リハビリテーション学部 理学療法学科",
+   "campus": "コスモスクエアキャンパス（大阪府大阪市住之江区）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦（基礎学力検査型）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "理学療法士（国家試験受験資格）"
+   ],
+   "interest_tags": [
+    "iryo",
+    "sports"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "sports_kenko"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "morinomiya-iryo-sagyo",
+   "uni_id": "morinomiya-iryo",
+   "name": "総合リハビリテーション学部 作業療法学科",
+   "campus": "コスモスクエアキャンパス（大阪府大阪市住之江区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦（基礎学力検査型）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "作業療法士（国家試験受験資格）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "morinomiya-iryo-gengo",
+   "uni_id": "morinomiya-iryo",
+   "name": "総合リハビリテーション学部 言語聴覚学科",
+   "campus": "コスモスクエアキャンパス（大阪府大阪市住之江区）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦（基礎学力検査型）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "言語聴覚士（国家試験受験資格）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "morinomiya-iryo-kensa",
+   "uni_id": "morinomiya-iryo",
+   "name": "医療技術学部 臨床検査学科",
+   "campus": "コスモスクエアキャンパス（大阪府大阪市住之江区）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦（基礎学力検査型）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "臨床検査技師（国家試験受験資格）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "morinomiya-iryo-kogaku",
+   "uni_id": "morinomiya-iryo",
+   "name": "医療技術学部 臨床工学科",
+   "campus": "コスモスクエアキャンパス（大阪府大阪市住之江区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦（基礎学力検査型）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "臨床工学技士（国家試験受験資格）"
+   ],
+   "interest_tags": [
+    "iryo",
+    "riko"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "morinomiya-iryo-hoshasen",
+   "uni_id": "morinomiya-iryo",
+   "name": "医療技術学部 診療放射線学科",
+   "campus": "コスモスクエアキャンパス（大阪府大阪市住之江区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦（基礎学力検査型）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "診療放射線技師（国家試験受験資格）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "morinomiya-iryo-shinkyu",
+   "uni_id": "morinomiya-iryo",
+   "name": "医療技術学部 鍼灸学科",
+   "campus": "コスモスクエアキャンパス（大阪府大阪市住之江区）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦（基礎学力検査型）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "はり師（国家試験受験資格）",
+    "きゅう師（国家試験受験資格）"
+   ],
+   "interest_tags": [
+    "iryo",
+    "sports"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "sports_kenko"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,431 @@
+{
+ "uni": {
+  "id": "yokohama-kokudai",
+  "name": "横浜国立大学",
+  "name_short": "横浜国大",
+  "prefecture": "神奈川県",
+  "type": "国立",
+  "campus_main": "常盤台キャンパス",
+  "tuition_yen_per_year": 535800,
+  "access_from_shiga_min": 180,
+  "commute_possible": false,
+  "commute_note": "草津・大津から新幹線利用でも片道約3時間。下宿前提",
+  "feature": "教育・経済・経営・理工・都市科学の5学部を横浜市内の1キャンパスに集めた難関国立大学。実学志向が強く、経済・経営は首都圏国立の看板として企業就職に強い。理工系は大学院進学率が高く、メーカー・IT大手への就職実績が豊富。都市科学部は建築・都市づくり・環境を横断的に学べる全国でも珍しい学部。",
+  "living_cost": {
+   "rent_min": 50000,
+   "rent_max": 75000,
+   "food_monthly": 25000,
+   "monthly_total": 105000,
+   "four_year_total": 5000000,
+   "note": "横浜市内での下宿前提。和田町・三ツ沢など大学周辺は横浜駅周辺より家賃が抑えめ（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "日立製作所",
+    "富士通",
+    "NEC",
+    "野村総合研究所",
+    "横浜銀行",
+    "アクセンチュア",
+    "神奈川県庁・横浜市役所",
+    "大手ゼネコン・建設コンサルタント"
+   ],
+   "note": "理工系は6〜7割が大学院進学（要確認）。首都圏大手企業への就職に強い"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "横浜市営地下鉄三ツ沢上町駅 徒歩約16分／相鉄線和田町駅 徒歩約20分",
+   "walking_min_from_station": 16,
+   "nearby_amenities": "横浜駅までバス・電車で約15〜20分。日常の買い物は和田町・三ツ沢の駅周辺",
+   "area_description": "横浜市保土ケ谷区の丘の上にある緑豊かなワンキャンパス。都心近くながら落ち着いた環境"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、大学独自の奨学金・授業料減免制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "首都圏大手企業とのつながりが強いキャリア・サポートルーム",
+    "低学年からのキャリア教育・インターンシップ支援",
+    "公務員・教員志望者向けの支援講座"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.ynu.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "学費は国立水準のまま、横浜という都市環境で経済・経営・理工・都市科学の実学を学べる。滋賀からは下宿前提だが、首都圏就職を狙うならコスパの高い選択肢。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 4,
+    "shogakkō": 4,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 5,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "首都圏大手メーカー・IT・金融への就職に強い",
+    "教育学部は神奈川県内の小学校教員養成の中心",
+    "理工系は大学院経由で技術職に直結",
+    "都市科学部は建築・土木・都市計画分野で存在感"
+   ],
+   "representative_employers": [
+    "日立製作所",
+    "富士通",
+    "NEC",
+    "野村総合研究所",
+    "横浜銀行",
+    "神奈川県・横浜市（公務員・教員）"
+   ],
+   "summary": "首都圏就職に強い実学系の難関国立。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（学部・学科により実施）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "小論文・課題",
+      "面接",
+      "共通テスト（学部による）"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "経済・経営・理工・都市科学の一部で実施（要確認）。実施学科・内容は年度により変わるため要項確認"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "高い評定が求められる傾向（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文等（学部による）",
+      "共通テスト（課す方式あり・要確認）"
+     ],
+     "bairitsu": "1.5〜3倍（要確認）",
+     "notes": "教育学部などで実施（要確認）。実施学部・共通テストの要否は要項確認"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別学力検査（学部により英・数中心など配点が大きく異なる）",
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "経済・経営は共通テストの配点比重が大きい年度がある（要確認）"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト重視（学部により小論文・面接等を課す場合あり）",
+     "bairitsu": "3〜10倍（要確認）",
+     "notes": "国立の中では後期の募集枠が比較的大きいことで知られる（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "yokohama-kokudai-kyoiku",
+   "uni_id": "yokohama-kokudai",
+   "name": "教育学部",
+   "campus": "常盤台キャンパス（神奈川県横浜市保土ケ谷区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別試験（面接・小論文等を含む方式あり・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": null,
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "中学校教諭一種免許状",
+    "特別支援学校教諭一種免許状（コースによる・要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "yokohama-kokudai-keizai",
+   "uni_id": "yokohama-kokudai",
+   "name": "経済学部",
+   "campus": "常盤台キャンパス（神奈川県横浜市保土ケ谷区）",
+   "hensachi": {
+    "min": 62.5,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（実施方式は要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別試験（英・数）。共通テストの配点比重が大きい（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": null,
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（公民等・要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "yokohama-kokudai-keiei",
+   "uni_id": "yokohama-kokudai",
+   "name": "経営学部",
+   "campus": "常盤台キャンパス（神奈川県横浜市保土ケ谷区）",
+   "hensachi": {
+    "min": 62.5,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（実施方式は要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別試験。共通テストの配点比重が大きい（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": null,
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（商業等・要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "yokohama-kokudai-riko",
+   "uni_id": "yokohama-kokudai",
+   "name": "理工学部",
+   "campus": "常盤台キャンパス（神奈川県横浜市保土ケ谷区）",
+   "hensachi": {
+    "min": 55,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "一部学科で総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "学校推薦型の実施有無・学科は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別試験（数学・理科・英語）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": null,
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（数学・理科等・要確認）",
+    "各種技術系国家資格の受験資格（学科による・要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "yokohama-kokudai-toshi",
+   "uni_id": "yokohama-kokudai",
+   "name": "都市科学部",
+   "campus": "常盤台キャンパス（神奈川県横浜市保土ケ谷区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "一部学科で総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "学校推薦型の実施有無・学科は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別試験（学科により小論文・実技的課題等・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": null,
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士受験資格（建築学科・要確認）",
+    "測量士補（都市基盤学科・要確認）"
+   ],
+   "interest_tags": [
+    "kenchiku",
+    "shakai"
+   ],
+   "employment_fields": [
+    "kensetsu",
+    "koumuin",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+  "uni_id": "chuo",
+  "departments": [
+    {
+      "dept_id": "chuo-riko",
+      "uni_id": "chuo",
+      "name": "理工学部",
+      "campus": "後楽園キャンパス（東京都文京区）",
+      "hensachi": {
+        "min": 52.5,
+        "max": 57.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "高大接続型自己推薦入学試験（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": "公募制推薦は実施なし（指定校・附属推薦が中心、要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "学部別選抜（一般方式）・英語外部試験利用方式・共テ併用方式（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用選抜（単独方式）（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中学校・高等学校教諭一種免許状（数学・理科）（要確認）",
+        "測量士補（都市環境学科・要確認）"
+      ],
+      "interest_tags": ["riko", "joho"],
+      "employment_fields": ["maker", "it", "kensetsu"],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "chuo-kokusaikeiei",
+      "uni_id": "chuo",
+      "name": "国際経営学部",
+      "campus": "多摩キャンパス（東京都八王子市）",
+      "hensachi": {
+        "min": 55,
+        "max": 57.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "自己推薦入学試験・英語運用能力特別入学試験（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": "公募制推薦は実施なし（指定校・附属推薦が中心、要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "学部別選抜（一般方式）・英語外部試験利用方式・共テ併用方式・6学部共通選抜（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用選抜（単独方式）（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [],
+      "interest_tags": ["keizai", "gaikokugo"],
+      "employment_fields": ["maker", "kinyu", "ryutsu", "service"],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "chuo-kokusaijoho",
+      "uni_id": "chuo",
+      "name": "国際情報学部",
+      "campus": "市ヶ谷田町キャンパス（東京都新宿区）",
+      "hensachi": {
+        "min": 55,
+        "max": 57.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "自己推薦入学試験（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": "公募制推薦は実施なし（指定校・附属推薦が中心、要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "学部別選抜（一般方式）・英語外部試験利用方式・共テ併用方式・6学部共通選抜（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用選抜（単独方式）（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "ITパスポート・基本情報技術者（取得支援・要確認）"
+      ],
+      "interest_tags": ["joho", "hokei"],
+      "employment_fields": ["it", "media", "koumuin"],
+      "zemi": [],
+      "data_status": "estimated"
+    }
+  ]
+}

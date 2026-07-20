@@ -1,0 +1,177 @@
+{
+ "uni": {
+  "id": "hyogo-kyoiku",
+  "name": "兵庫教育大学",
+  "name_short": "兵教大",
+  "prefecture": "兵庫県",
+  "type": "国立",
+  "campus_main": "嬉野台キャンパス（兵庫県加東市下久米）",
+  "tuition_yen_per_year": 535800,
+  "tuition_note": "国立大学標準額（授業料535,800円/年）。入学金282,000円が別途必要",
+  "access_from_shiga_min": 190,
+  "commute_possible": false,
+  "commute_note": "下宿前提。草津からJRで三ノ宮・加古川方面を経由し、加古川線社町駅＋バスまたは高速バスで片道3時間超。通学は現実的でない",
+  "feature": "1978年設立の教員養成に特化した国立大学（上越・鳴門と並ぶ新構想教育大学の一つ）で、学部は学校教育学部の1学部のみ。小学校教員の就職率は国立大学の中でも全国トップクラスとして知られる。大学院（教職大学院）は現職教員の学び直しの場としても有名で、教育研究の層が厚い。キャンパスは加東市の緑豊かな丘陵地にあり、学生宿舎や大学周辺での下宿生活が基本となる。",
+  "living_cost": {
+   "rent_min": 15000,
+   "rent_max": 45000,
+   "food_monthly": 25000,
+   "monthly_total": 80000,
+   "four_year_total": 3800000,
+   "note": "加東市は家賃相場が安く、キャンパス内・周辺に安価な学生宿舎もある（要確認）。都市部より生活費を抑えやすい"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "兵庫県内の公立小学校",
+    "大阪府・京都府・滋賀県など近畿圏の公立学校",
+    "公立幼稚園・認定こども園",
+    "特別支援学校",
+    "教育委員会・地方公務員",
+    "大学院進学（教職大学院等）"
+   ],
+   "note": "卒業生の大半が教員として就職。小学校教員就職率は国立教員養成系大学で全国トップクラス（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR加古川線 社町駅からバス・タクシー約10分（徒歩は約1時間で困難）。三ノ宮・大阪方面から高速バスもあり",
+   "walking_min_from_station": 60,
+   "nearby_amenities": "大学周辺は田園地帯。社（やしろ）市街地まで出ればスーパー・飲食店あり。車や自転車があると便利",
+   "area_description": "加東市嬉野台の丘陵地にある郊外型キャンパス。静かで勉強に集中できる環境だが、都市部の利便性はない"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、国立大学共通の入学料・授業料免除制度、高等教育修学支援新制度の対象",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "教員採用試験対策が非常に手厚い（模擬授業・面接練習・筆記対策）",
+    "教育実習・学校ボランティアなど現場経験の機会が豊富",
+    "教員以外の進路（公務員・企業）の相談にも対応"
+   ],
+   "quality": 5,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.hyogo-u.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「小学校の先生になりたい」なら全国トップクラスの実績を持つ教員養成特化の国立大学。国立の学費＋安い下宿費用で負担を抑えつつ、滋賀県の教員採用試験を受けて地元に戻る道も現実的。",
+  "dormitory": "キャンパス内に学生宿舎があり、寄宿料が安く経済的（要確認）",
+  "employment": {
+   "ratings": {
+    "kyoin": 5,
+    "shogakkō": 5,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "小学校教員就職率が全国トップクラス",
+    "教員採用試験対策の支援体制が大学全体で充実",
+    "国立で学費が安く、地方キャンパスで生活費も抑えられる",
+    "近畿圏各府県の教育委員会への採用実績が豊富"
+   ],
+   "representative_employers": [
+    "兵庫県教育委員会（公立小学校）",
+    "大阪府・大阪市の公立学校",
+    "滋賀県・京都府など近畿圏の公立学校",
+    "公立幼稚園・認定こども園",
+    "特別支援学校"
+   ],
+   "summary": "小学校教員養成の全国的名門。教員志望なら最有力候補の一つ。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "4.0以上程度（要確認）",
+     "selection_content": [
+      "書類審査",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "1.5〜3倍（要確認）",
+     "notes": "共通テストを課さない方式（要確認）。募集枠が比較的大きく、教員志望の意欲が重視される"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋二次試験（小論文・面接・実技等、専修・コースにより異なる）（要確認）",
+     "bairitsu": "2〜3倍（要確認）",
+     "notes": "共通テストの配点比重が大きい。ボーダー得点率は55〜60%程度（要確認）。後期日程の実施有無は要確認"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "hyogo-kyoiku-kyoiku",
+   "uni_id": "hyogo-kyoiku",
+   "name": "学校教育学部（初等教育教員養成課程）",
+   "campus": "嬉野台キャンパス（兵庫県加東市下久米）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり。募集枠が比較的大きい（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋小論文・面接・実技等）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため一般選抜では共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "幼稚園教諭一種免許状（コースによる）",
+    "中学校教諭一種免許状（選択教科・要確認）",
+    "特別支援学校教諭一種免許状（要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

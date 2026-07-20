@@ -1,0 +1,304 @@
+{
+ "uni": {
+  "id": "nara-gakuen",
+  "name": "奈良学園大学",
+  "name_short": "奈良学園大",
+  "prefecture": "奈良県",
+  "type": "私立",
+  "campus_main": "登美ヶ丘キャンパス",
+  "tuition_yen_per_year": 1400000,
+  "tuition_note": "人間教育学部は年間約130万円、保健医療学部は年間約160〜170万円と学部差が大きい（授業料＋施設費の概算・要確認）",
+  "access_from_shiga_min": 115,
+  "commute_possible": false,
+  "commute_note": "草津・大津から片道約110〜120分（JR→近鉄→バスで乗換2〜3回）。毎日の通学は現実的でなく下宿が基本",
+  "feature": "学校法人奈良学園が運営する小規模私立大学で、2014年に奈良産業大学から改組・改称した。人間教育学部（教員・保育者養成）と保健医療学部（看護・リハビリテーション）の2学部構成で、進路が「先生」「看護師」「理学療法士・作業療法士」に絞られているのが特徴。同法人の幼稚園・小学校・中高（奈良学園、奈良学園登美ヶ丘）との連携があり、教育現場に触れる機会をつくりやすい。少人数で教員との距離が近く、資格・採用試験対策が手厚い。",
+  "living_cost": {
+   "rent_min": 35000,
+   "rent_max": 55000,
+   "food_monthly": 25000,
+   "monthly_total": 85000,
+   "four_year_total": 4080000,
+   "note": "奈良市郊外（登美ヶ丘・学園前周辺）は京都・大阪市内より家賃が手頃。下宿前提の概算（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約95%（要確認）",
+   "top_employers": [
+    "公立小学校・幼稚園（奈良県・大阪府など）",
+    "保育所・認定こども園",
+    "奈良県総合医療センターなど県内病院（要確認）",
+    "リハビリテーション関連の医療機関・施設",
+    "医療法人・福祉施設",
+    "一般企業・公務員"
+   ],
+   "note": "小学校教員採用と看護師国家試験合格が実績の中心。看護師国試合格率は高水準（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "近鉄けいはんな線 学研奈良登美ヶ丘駅 徒歩約10分（要確認）",
+   "walking_min_from_station": 10,
+   "nearby_amenities": "駅前にイオンモール奈良登美ヶ丘などの商業施設があり生活しやすい",
+   "area_description": "奈良市北西部の落ち着いた住宅・文教エリア。同法人の小中高が隣接する"
+  },
+  "shogakukin": {
+   "general_shogakukin": "特待生制度・入試成績による減免など独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "教員採用試験対策の個別指導・学内講座",
+    "看護師・理学療法士等の国家試験対策サポート",
+    "少人数ならではの個別面談中心の就職支援"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.naragakuen-u.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「小学校・幼稚園の先生になりたい」「看護師・リハビリ職になりたい」と進路が固まっている人向けの目的特化型の小規模大学。滋賀からは下宿圏だが、奈良市郊外は家賃が手頃で偏差値のハードルも比較的低い。",
+  "region": "kansai",
+  "employment": {
+   "ratings": {
+    "kyoin": 4,
+    "shogakkō": 4,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 4
+   },
+   "strengths": [
+    "小学校・幼稚園教員、保育士の養成に特化した課程と採用試験対策",
+    "看護師国家試験対策と奈良県内医療機関への就職支援",
+    "理学療法士・作業療法士などリハビリ専門職も目指せる",
+    "少人数教育で個別サポートが手厚い"
+   ],
+   "representative_employers": [
+    "奈良県・大阪府などの公立小学校",
+    "幼稚園・保育所・認定こども園",
+    "奈良県総合医療センターなど県内病院（要確認）",
+    "リハビリテーション関連の医療機関・施設",
+    "医療法人・福祉施設"
+   ],
+   "summary": "教員・保育者養成と看護・リハビリに特化し、教育・医療分野への就職に強い。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文または基礎学力確認（要確認）"
+     ],
+     "bairitsu": "1〜1.5倍（要確認）",
+     "notes": "教員・医療職志望の意欲を重視する選抜（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "厳しい評定基準はない見込み（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力検査（要確認）",
+      "面接"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": "保健医療学部（特に看護）はやや倍率が高め（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "2教科型（英語・国語・数学等から選択、保健医療学部は理科選択あり）（要確認）",
+     "notes": "共通テスト利用選抜もあり（要確認）",
+     "bairitsu": "1〜2倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "nara-gakuen-kyoiku",
+   "uni_id": "nara-gakuen",
+   "name": "人間教育学部",
+   "campus": "登美ヶ丘キャンパス（奈良県奈良市中登美ヶ丘）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "幼稚園教諭一種免許状",
+    "保育士",
+    "中学校・高等学校教諭一種免許状（国語・数学・音楽・保健体育のいずれか、コースによる）（要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nara-gakuen-kango",
+   "uni_id": "nara-gakuen",
+   "name": "保健医療学部 看護学科",
+   "campus": "登美ヶ丘キャンパス（奈良県奈良市中登美ヶ丘）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師（国家試験受験資格）",
+    "保健師（国家試験受験資格・選抜制）（要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nara-gakuen-riha",
+   "uni_id": "nara-gakuen",
+   "name": "保健医療学部 リハビリテーション学科（理学療法学・作業療法学）",
+   "campus": "登美ヶ丘キャンパス（奈良県奈良市中登美ヶ丘）（所在キャンパスは要確認）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "理学療法士（国家試験受験資格・理学療法学専攻）",
+    "作業療法士（国家試験受験資格・作業療法学専攻）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

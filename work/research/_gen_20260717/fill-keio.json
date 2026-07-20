@@ -1,0 +1,292 @@
+{
+ "uni_id": "keio",
+ "departments": [
+  {
+   "dept_id": "keio-igaku",
+   "uni_id": "keio",
+   "name": "医学部",
+   "campus": "信濃町キャンパス（東京都新宿区）※1年次は日吉キャンパス（神奈川県横浜市）",
+   "hensachi": {
+    "min": 72.5,
+    "max": 72.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は実施なし（帰国生・IB入試等は別枠）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募推薦なし（指定校推薦もなし）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（英・数・理2科目＋小論文・面接）。私立医学部最難関",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": false,
+     "note": "共通テスト利用入試なし",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "keio-riko",
+   "uni_id": "keio",
+   "name": "理工学部",
+   "campus": "矢上キャンパス（神奈川県横浜市港北区）※1・2年次は日吉キャンパス",
+   "hensachi": {
+    "min": 65,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は実施なし",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募推薦なし（指定校推薦のみ）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（英・数・理2科目）。学門A〜Eの学門別募集で2年進級時に学科を選択",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": false,
+     "note": "共通テスト利用入試なし",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（数学・理科 ※学科・課程による）"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kinyu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "keio-kankyojoho",
+   "uni_id": "keio",
+   "name": "環境情報学部",
+   "campus": "湘南藤沢キャンパス（神奈川県藤沢市）",
+   "hensachi": {
+    "min": 70,
+    "max": 70,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "AO入試（総合型選抜）を実施。総合政策学部と同じくSFCのAO入試",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募推薦なし",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "「情報」「数学または情報」等選択＋小論文の独自方式。総合政策学部と併願する受験生が多い",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": false,
+     "note": "共通テスト利用入試なし",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（情報 ※教職課程履修者・要確認）"
+   ],
+   "interest_tags": [
+    "joho",
+    "shakai"
+   ],
+   "employment_fields": [
+    "it",
+    "media",
+    "maker",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "keio-kango",
+   "uni_id": "keio",
+   "name": "看護医療学部",
+   "campus": "湘南藤沢キャンパス（神奈川県藤沢市）※3年次以降は信濃町キャンパス（東京都新宿区）中心",
+   "hensachi": {
+    "min": 57.5,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "AO入試（総合型選抜）を実施",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募推薦なし（指定校推薦のみ）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（英語・数学または化学・生物等から選択＋小論文）＋第2次試験（面接）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": false,
+     "note": "共通テスト利用入試なし",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格（選抜制）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "keio-yaku",
+   "uni_id": "keio",
+   "name": "薬学部",
+   "campus": "芝共立キャンパス（東京都港区）※1年次は日吉キャンパス（神奈川県横浜市）",
+   "hensachi": {
+    "min": 62.5,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は実施なし",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募推薦なし（指定校推薦のみ）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（英・数・化学）。薬学科（6年制）と薬科学科（4年制）で募集",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": false,
+     "note": "共通テスト利用入試なし",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師国家試験受験資格（薬学科6年制のみ）"
+   ],
+   "interest_tags": [
+    "iryo",
+    "riko"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,583 @@
+{
+  "uni_id": "tsukuba",
+  "departments": [
+    {
+      "dept_id": "tsukuba-jinbun",
+      "uni_id": "tsukuba",
+      "name": "人文・文化学群",
+      "campus": "筑波キャンパス（茨城県つくば市）",
+      "hensachi": {
+        "min": 60,
+        "max": 62.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "アドミッションセンター入試（AC入試）を一部学類で実施（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦型選抜あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "前期日程中心（後期実施の有無は学類による・要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中高教員免許（国語・社会・英語等）",
+        "学芸員"
+      ],
+      "interest_tags": [
+        "bungaku",
+        "gaikokugo"
+      ],
+      "employment_fields": [
+        "kyoiku",
+        "koumuin",
+        "media"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tsukuba-kokusai",
+      "uni_id": "tsukuba",
+      "name": "社会・国際学群 国際総合学類",
+      "campus": "筑波キャンパス（茨城県つくば市）",
+      "hensachi": {
+        "min": 62.5,
+        "max": 62.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "アドミッションセンター入試（AC入試）実施の有無は年度により要確認",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦型選抜あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "前期日程中心（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中高教員免許（社会・英語等）（要確認）"
+      ],
+      "interest_tags": [
+        "shakai",
+        "gaikokugo"
+      ],
+      "employment_fields": [
+        "koumuin",
+        "kinyu",
+        "media"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tsukuba-shinri",
+      "uni_id": "tsukuba",
+      "name": "人間学群 心理学類",
+      "campus": "筑波キャンパス（茨城県つくば市）",
+      "hensachi": {
+        "min": 62.5,
+        "max": 62.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "アドミッションセンター入試（AC入試）実施の有無は年度により要確認",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦型選抜あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "前期日程中心（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "公認心理師（要大学院）",
+        "認定心理士"
+      ],
+      "interest_tags": [
+        "shakai"
+      ],
+      "employment_fields": [
+        "iryo_fukushi",
+        "koumuin",
+        "service"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tsukuba-shogai",
+      "uni_id": "tsukuba",
+      "name": "人間学群 障害科学類",
+      "campus": "筑波キャンパス（茨城県つくば市）",
+      "hensachi": {
+        "min": 57.5,
+        "max": 60,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "アドミッションセンター入試（AC入試）実施の有無は年度により要確認",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦型選抜あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "前期日程中心（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "特別支援学校教員免許",
+        "社会福祉士受験資格（要確認）"
+      ],
+      "interest_tags": [
+        "kyoiku",
+        "iryo"
+      ],
+      "employment_fields": [
+        "kyoiku",
+        "iryo_fukushi",
+        "koumuin"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tsukuba-joho",
+      "uni_id": "tsukuba",
+      "name": "情報学群",
+      "campus": "筑波キャンパス（茨城県つくば市）",
+      "hensachi": {
+        "min": 57.5,
+        "max": 62.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "アドミッションセンター入試（AC入試）を実施する学類あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦型選抜あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "前期・後期日程あり（学類による・要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中高教員免許（数学・情報）（要確認）",
+        "司書・司書教諭（知識情報・図書館学類）"
+      ],
+      "interest_tags": [
+        "joho"
+      ],
+      "employment_fields": [
+        "it",
+        "maker",
+        "media"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tsukuba-shakaikogaku",
+      "uni_id": "tsukuba",
+      "name": "理工学群 社会工学類",
+      "campus": "筑波キャンパス（茨城県つくば市）",
+      "hensachi": {
+        "min": 57.5,
+        "max": 60,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "アドミッションセンター入試（AC入試）実施の有無は年度により要確認",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦型選抜あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "前期・後期日程あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中高教員免許（数学）（要確認）"
+      ],
+      "interest_tags": [
+        "riko",
+        "keizai"
+      ],
+      "employment_fields": [
+        "koumuin",
+        "kensetsu",
+        "it",
+        "kinyu"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tsukuba-igaku",
+      "uni_id": "tsukuba",
+      "name": "医学群 医学類",
+      "campus": "筑波キャンパス（茨城県つくば市）",
+      "hensachi": {
+        "min": 65,
+        "max": 65,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "総合型選抜「研究型人材入試」を若干名で実施（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦型選抜（一般枠・地域枠等）あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "前期日程（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "医師国家試験受験資格"
+      ],
+      "interest_tags": [
+        "iryo"
+      ],
+      "employment_fields": [
+        "iryo_fukushi",
+        "koumuin"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tsukuba-kango",
+      "uni_id": "tsukuba",
+      "name": "医学群 看護学類",
+      "campus": "筑波キャンパス（茨城県つくば市）",
+      "hensachi": {
+        "min": 52.5,
+        "max": 52.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": false,
+          "note": "総合型選抜の実施は確認できず（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦型選抜あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "前期日程（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "看護師国家試験受験資格",
+        "保健師国家試験受験資格（選抜制）"
+      ],
+      "interest_tags": [
+        "iryo"
+      ],
+      "employment_fields": [
+        "iryo_fukushi",
+        "koumuin"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tsukuba-iryokagaku",
+      "uni_id": "tsukuba",
+      "name": "医学群 医療科学類",
+      "campus": "筑波キャンパス（茨城県つくば市）",
+      "hensachi": {
+        "min": 55,
+        "max": 57.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": false,
+          "note": "総合型選抜の実施は確認できず（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦型選抜あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "前期日程（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "臨床検査技師国家試験受験資格"
+      ],
+      "interest_tags": [
+        "iryo"
+      ],
+      "employment_fields": [
+        "iryo_fukushi",
+        "maker"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tsukuba-geijutsu",
+      "uni_id": "tsukuba",
+      "name": "芸術専門学群",
+      "campus": "筑波キャンパス（茨城県つくば市）",
+      "hensachi": {
+        "min": 55,
+        "max": 57.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "アドミッションセンター入試（AC入試）実施（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "学校推薦型選抜あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "前期日程。実技試験あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中高教員免許（美術）",
+        "学芸員"
+      ],
+      "interest_tags": [
+        "geijutsu"
+      ],
+      "employment_fields": [
+        "media",
+        "maker",
+        "kyoiku"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    }
+  ]
+}

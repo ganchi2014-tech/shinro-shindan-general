@@ -1,0 +1,319 @@
+{
+ "uni": {
+  "id": "wakayama-idai",
+  "name": "和歌山県立医科大学",
+  "name_short": "和歌山県立医大",
+  "prefecture": "和歌山県",
+  "type": "公立",
+  "campus_main": "紀三井寺キャンパス",
+  "tuition_yen_per_year": 535800,
+  "tuition_note": "公立のため授業料は国立と同水準の年額535,800円。入学金は和歌山県内出身と県外出身で差がある（県外は高め・要確認）",
+  "access_from_shiga_min": 170,
+  "commute_possible": false,
+  "commute_note": "草津・大津から大阪経由で和歌山市まで片道約3時間。通学は非現実的で下宿前提",
+  "feature": "和歌山県が運営する医療系の公立大学。医学部・保健看護学部に加え、2021年に薬学部が新設され、医・看護・薬の3学部体制となった。附属病院を核とした臨床実習・チーム医療教育が特色で、医師・看護師・薬剤師を県内外に輩出している。公立のため学費が国立並みに抑えられるのが大きな魅力。",
+  "living_cost": {
+   "rent_min": 35000,
+   "rent_max": 55000,
+   "food_monthly": 25000,
+   "monthly_total": 80000,
+   "four_year_total": 3840000,
+   "note": "和歌山市内の家賃相場は関西の中でも安め。医学部・薬学部は6年制のため、生活費は実際には6年分（約570万円前後）を見込む必要がある"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約100%（要確認）",
+   "top_employers": [
+    "和歌山県立医科大学附属病院",
+    "近畿圏の総合病院・大学病院",
+    "和歌山県・市町村（保健師等）",
+    "調剤薬局・ドラッグストア",
+    "製薬企業"
+   ],
+   "note": "医師・看護師・薬剤師の国家資格職が中心。医師国家試験合格率は全国上位水準（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JRきのくに線 紀三井寺駅 徒歩約10分（紀三井寺キャンパス）",
+   "walking_min_from_station": 10,
+   "nearby_amenities": "附属病院が隣接。和歌山駅・和歌山市中心部へ電車で数分〜10分程度で生活には困らない",
+   "area_description": "医学部は和歌山市南部の紀三井寺エリア。保健看護学部は三葛キャンパス、薬学部は和歌山市中心部の伏虎キャンパスと学部ごとにキャンパスが分かれる"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、和歌山県の医師確保修学資金など卒業後の県内勤務を条件とした返還免除型の修学資金制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "国家試験（医師・看護師・保健師・薬剤師）対策のサポート",
+    "附属病院・県内医療機関と直結した進路支援"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.wakayama-med.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "滋賀県立医大と同じ「公立の医科大学」で、医・薬・看護を国公立水準の学費で学べる。医学科の推薦は和歌山県内出身者向けの地域枠が中心のため、滋賀からは一般選抜（共テ＋二次）での挑戦が基本（要確認）。",
+  "region": "kansai",
+  "employment": {
+   "ratings": {
+    "kyoin": 1,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 5
+   },
+   "strengths": [
+    "附属病院を核に医療職への就職はほぼ100%",
+    "公立のため学費を抑えて医師・薬剤師・看護師を目指せる",
+    "保健師など行政の医療系公務員への道もある"
+   ],
+   "representative_employers": [
+    "和歌山県立医科大学附属病院",
+    "近畿圏の総合病院",
+    "和歌山県（保健師・行政薬剤師等）",
+    "調剤薬局・製薬企業"
+   ],
+   "summary": "医療特化の公立大。進路は医師・看護師・保健師・薬剤師でほぼ完結。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [
+    {
+     "method_name": "医学部医学科 学校推薦型選抜（県民医療枠・地域医療枠等）",
+     "hyoutei_min": 4,
+     "hyoutei_note": "4.0以上（要確認）",
+     "selection_content": [
+      "共通テスト",
+      "書類",
+      "面接",
+      "小論文（要確認）"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "和歌山県内出身者などを対象とした枠が中心で、卒業後の県内勤務が条件となる枠が多い。県外生が出願できる枠は限定的（要確認）"
+    },
+    {
+     "method_name": "保健看護学部 学校推薦型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "3.5〜4.0前後（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "1.5〜3倍（要確認）",
+     "notes": "県内高校出身者対象の枠が中心（要確認）"
+    },
+    {
+     "method_name": "薬学部 学校推薦型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "4.0前後（要確認）",
+     "selection_content": [
+      "共通テスト（要確認）",
+      "書類",
+      "面接"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "県内出身者を対象とした枠あり（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "医学部医学科 一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別学力検査（英語・数学・理科2科目・面接）",
+     "bairitsu": "3〜6倍（要確認）",
+     "notes": "前期日程のみで後期日程はなし（要確認）。二次に面接があり医師としての適性も見られる"
+    },
+    {
+     "method_name": "保健看護学部 一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別試験（小論文・面接等、要確認）",
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": null
+    },
+    {
+     "method_name": "薬学部 一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別学力検査（英語・数学・理科、要確認）",
+     "bairitsu": "3〜6倍（要確認）",
+     "notes": "2021年新設の学部のため入試データの蓄積が少ない。年度により倍率変動が大きい（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "wakayama-idai-igaku",
+   "uni_id": "wakayama-idai",
+   "name": "医学部 医学科（6年制）",
+   "campus": "紀三井寺キャンパス（和歌山県和歌山市紀三井寺）",
+   "hensachi": {
+    "min": 65,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "県民医療枠・地域医療枠など県内出身者中心の学校推薦型。県外生は出願枠が限定的（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（英・数・理2・面接）。前期日程のみ（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国公立のため共通テストは必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "wakayama-idai-hoken",
+   "uni_id": "wakayama-idai",
+   "name": "保健看護学部 保健看護学科",
+   "campus": "三葛キャンパス（和歌山県和歌山市三葛）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり。県内高校出身者対象の枠が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（小論文・面接等、要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国公立のため共通テストは必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師",
+    "保健師（選択制・要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "wakayama-idai-yaku",
+   "uni_id": "wakayama-idai",
+   "name": "薬学部 薬学科（6年制）",
+   "campus": "伏虎キャンパス（和歌山県和歌山市中心部）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり。県内出身者対象の枠を含む（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（英・数・理、要確認）。前期日程",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国公立のため共通テストは必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,484 @@
+{
+ "uni": {
+  "id": "kokugakuin",
+  "name": "國學院大學",
+  "name_short": "國學院大",
+  "prefecture": "東京都",
+  "type": "私立",
+  "campus_main": "渋谷キャンパス",
+  "region": "kanto",
+  "tuition_yen_per_year": 1200000,
+  "tuition_note": "文系学部の年間授業料＋施設設備費の概算（要確認）",
+  "access_from_shiga_min": 210,
+  "commute_possible": false,
+  "commute_note": "東京・下宿前提。草津→京都→新幹線→渋谷で片道約3時間半",
+  "feature": "1882年創立の皇典講究所を母体とする伝統私大で、渋谷駅から歩けるキャンパスが本拠。日本文学・史学・神道文化の研究では全国屈指の存在で、国語・地歴の教員養成の名門として知られる。法・経済など社会科学系や、横浜たまプラーザの人間開発学部・観光まちづくり学部も擁する。箱根駅伝の強豪校としても近年注目度が高い。",
+  "living_cost": {
+   "rent_min": 55000,
+   "rent_max": 90000,
+   "food_monthly": 30000,
+   "monthly_total": 130000,
+   "four_year_total": 6500000,
+   "note": "東京下宿前提の相場。渋谷通学でも郊外沿線に住めば家賃は抑えられる（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約96%（要確認）",
+   "top_employers": [
+    "中学・高校教員（国語・地歴など）",
+    "都道府県・市区町村公務員",
+    "警視庁・各県警",
+    "りそなグループ",
+    "日本郵政グループ",
+    "JTBグループ",
+    "神社（神職）"
+   ],
+   "note": "国語科・社会科教員と神職の輩出で伝統的に強い。民間就職も金融・旅行・小売など幅広い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR・各線渋谷駅 徒歩約13分",
+   "walking_min_from_station": 13,
+   "nearby_amenities": "渋谷の繁華街が徒歩圏。キャンパス周辺は落ち着いた文教・住宅エリアで、國學院博物館も併設",
+   "area_description": "東京・渋谷の中心近くながら、キャンパス一帯は静かな高台の住宅街"
+  },
+  "shogakukin": {
+   "general_shogakukin": "成績優秀者特待生制度・独自給付奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "教職センターによる教員採用試験対策が手厚い",
+    "神道文化学部は神社界への独自の就職ルートを持つ",
+    "公務員試験対策講座・個別相談"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.kokugakuin.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「国語や日本史の先生になりたい」「日本文化・神道を本格的に学びたい」なら全国トップ級の環境。渋谷立地で首都圏就職にも強く、箱根駅伝で知る人も多い。",
+  "employment": {
+   "ratings": {
+    "kyoin": 5,
+    "shogakkō": 4,
+    "keisatsu": 3,
+    "shōbō": 2,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 3,
+    "iryō": 1
+   },
+   "strengths": [
+    "国語・地歴科の中高教員養成は全国的名門",
+    "神道文化学部は神職資格を取得できる全国でも希少な学部",
+    "人間開発学部で小学校教諭・保体教員にも対応",
+    "渋谷立地を生かした首都圏民間就職"
+   ],
+   "representative_employers": [
+    "公立・私立中学高校（教員）",
+    "全国の神社（神職）",
+    "都道府県・市区町村役所",
+    "りそなグループ",
+    "JTBグループ"
+   ],
+   "summary": "国語・地歴教員と神職養成の名門。渋谷立地で民間就職も堅実。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "公募制自己推薦（AO型）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類（自己推薦書等）",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "2〜6倍（要確認）",
+     "notes": "実施学部・学科や選考内容は年度により異なる（要確認）"
+    }
+   ],
+   "koubo": [],
+   "ippan": [
+    {
+     "method_name": "一般選抜（A日程）",
+     "subjects": "3教科（国語・英語・選択科目）",
+     "bairitsu": "3〜6倍（要確認）",
+     "notes": "得意科目重視型など複数方式あり。学部により科目構成が異なる（要確認）"
+    },
+    {
+     "method_name": "共通テスト利用選抜",
+     "subjects": "共通テスト3科目型など（要確認）",
+     "bairitsu": "3〜7倍（要確認）",
+     "notes": "個別試験なしで出願できる方式（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "kokugakuin-bun",
+   "uni_id": "kokugakuin",
+   "name": "文学部",
+   "campus": "渋谷キャンパス（東京都渋谷区）",
+   "hensachi": {
+    "min": 55,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦（AO型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "学校推薦型は指定校中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（A日程・B日程等）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（国語・社会・英語）",
+    "高校教諭一種（国語・地歴・英語）",
+    "学芸員",
+    "図書館司書"
+   ],
+   "interest_tags": [
+    "bungaku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kokugakuin-shinto",
+   "uni_id": "kokugakuin",
+   "name": "神道文化学部",
+   "campus": "渋谷キャンパス（東京都渋谷区）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦（AO型）等（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "神職養成に関わる特別選考あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "神職資格（階位）",
+    "中学校教諭一種（社会・宗教）",
+    "高校教諭一種（地歴・公民・宗教）",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "shakai"
+   ],
+   "employment_fields": [
+    "service",
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kokugakuin-ho",
+   "uni_id": "kokugakuin",
+   "name": "法学部",
+   "campus": "渋谷キャンパス（東京都渋谷区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦（AO型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "学校推薦型は指定校中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（社会）",
+    "高校教諭一種（地歴・公民）"
+   ],
+   "interest_tags": [
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kokugakuin-keizai",
+   "uni_id": "kokugakuin",
+   "name": "経済学部",
+   "campus": "渋谷キャンパス（東京都渋谷区）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦（AO型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "学校推薦型は指定校中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（社会）",
+    "高校教諭一種（地歴・公民）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "ryutsu",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kokugakuin-ningen",
+   "uni_id": "kokugakuin",
+   "name": "人間開発学部",
+   "campus": "たまプラーザキャンパス（神奈川県横浜市青葉区）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦（AO型）。スポーツ・文化活動実績を評価する方式もあり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "学校推薦型は指定校中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種",
+    "幼稚園教諭一種",
+    "保育士",
+    "中学・高校教諭一種（保健体育）"
+   ],
+   "interest_tags": [
+    "kyoiku",
+    "sports"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "sports_kenko",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kokugakuin-kanko",
+   "uni_id": "kokugakuin",
+   "name": "観光まちづくり学部",
+   "campus": "たまプラーザキャンパス（神奈川県横浜市青葉区）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "公募制自己推薦（AO型）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "学校推薦型は指定校中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "keizai"
+   ],
+   "employment_fields": [
+    "service",
+    "koumuin",
+    "kensetsu",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

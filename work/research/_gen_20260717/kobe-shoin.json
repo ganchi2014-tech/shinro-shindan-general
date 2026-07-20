@@ -1,0 +1,312 @@
+{
+ "uni": {
+  "id": "kobe-shoin",
+  "name": "神戸松蔭大学（旧・神戸松蔭女子学院大学）",
+  "name_short": "神戸松蔭",
+  "prefecture": "兵庫県",
+  "type": "私立",
+  "campus_main": "本部キャンパス（神戸市灘区）",
+  "tuition_yen_per_year": 1250000,
+  "tuition_note": "年間授業料＋施設費の概算（要確認）。学科により差あり",
+  "access_from_shiga_min": 110,
+  "commute_possible": true,
+  "commute_note": "草津・大津からJRで六甲道駅まで約90分＋バス。片道約110分で通学圏ぎりぎり。下宿との比較検討を推奨",
+  "feature": "1892年創立の松蔭女子学院を母体とする神戸・六甲の伝統校。2025年4月に神戸松蔭女子学院大学から「神戸松蔭大学」に名称変更し、男女共学化した。英語・日本語などの文学系、教員・保育者養成の教育系、心理・食物栄養などの人間科学系をそろえ、少人数で面倒見のよい教育が特色。六甲山麓の高台にある美しいキャンパスで知られる。",
+  "living_cost": {
+   "rent_min": 45000,
+   "rent_max": 65000,
+   "food_monthly": 25000,
+   "monthly_total": 115000,
+   "four_year_total": 5500000,
+   "note": "神戸市灘区・六甲エリアの下宿相場。坂の上のため自転車通学は不向き、バス代も考慮（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "小売・サービス業（神戸・阪神間の企業）",
+    "幼稚園・保育園・認定こども園",
+    "小学校・中学校（教員）",
+    "食品メーカー・給食会社",
+    "ホテル・ブライダル業界",
+    "金融機関（信用金庫・地方銀行など）"
+   ],
+   "note": "女子大時代から就職支援が手厚く、就職率は高水準（要確認）。管理栄養士・教員・保育士など資格系の就職に強み"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "阪急六甲駅からバス約7分または徒歩約15分（上り坂）／JR六甲道駅からバス利用",
+   "walking_min_from_station": 15,
+   "nearby_amenities": "六甲エリアの商店街・カフェが生活圏。三宮まで阪急で約10分と街遊びにも便利",
+   "area_description": "六甲山麓の高台にある閑静な文教・住宅エリア。キャンパスから神戸の街と海を見下ろせる"
+  },
+  "shogakukin": {
+   "general_shogakukin": "成績優秀者対象の特待生制度や独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "小規模大学ならではの個別面談中心のキャリア支援",
+    "資格系（教員・保育士・管理栄養士）の採用試験対策",
+    "神戸・阪神間の企業とのつながり"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.shoin.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "神戸・六甲の落ち着いた環境で英語・教育・心理・栄養を学べる伝統校。2025年から共学化したため男子も出願可能になった（要確認）。偏差値のハードルは比較的低く、面接・小論文型の入試も充実。",
+  "employment": {
+   "ratings": {
+    "kyoin": 3,
+    "shogakkō": 3,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 1,
+    "iryō": 2
+   },
+   "strengths": [
+    "幼稚園教諭・保育士・小学校教員など教育系の資格就職",
+    "管理栄養士・栄養士など食と健康分野の専門就職（要確認）",
+    "神戸・阪神間のサービス業・一般企業への就職",
+    "少人数の個別就職支援で就職率が高い"
+   ],
+   "representative_employers": [
+    "神戸市・阪神間の幼稚園・保育園",
+    "公立・私立小学校（教員）",
+    "食品メーカー・給食受託会社",
+    "ホテル・ブライダル企業",
+    "小売・サービス業"
+   ],
+   "summary": "教育・保育と栄養など資格系に強い神戸の伝統校。",
+   "notes": "長く女子大だったが、2025年4月から男女共学化し男子も入学可能（要確認）。在学生は当面女子が多数を占める見込み"
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文または課題（学科により異なる）"
+     ],
+     "bairitsu": "1.0〜1.5倍（要確認）",
+     "notes": "複数期実施の可能性あり（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は比較的緩やか（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力テストまたは小論文",
+      "面接"
+     ],
+     "bairitsu": "1.0〜1.8倍（要確認）",
+     "notes": null
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期・後期）",
+     "subjects": "2教科型中心（英語・国語などから選択）",
+     "notes": "共通テスト利用選抜あり。方式の詳細は要確認",
+     "bairitsu": "1.0〜2倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "kobe-shoin-bungaku",
+   "uni_id": "kobe-shoin",
+   "name": "文学部",
+   "campus": "本部キャンパス（兵庫県神戸市灘区篠原伯母野山町）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（英語・国語）（要確認）",
+    "高等学校教諭一種（英語・国語）（要確認）",
+    "日本語教員養成課程（要確認）",
+    "図書館司書（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kobe-shoin-kyoiku",
+   "uni_id": "kobe-shoin",
+   "name": "教育学部",
+   "campus": "本部キャンパス（兵庫県神戸市灘区篠原伯母野山町）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種",
+    "幼稚園教諭一種",
+    "保育士",
+    "認定こども園で働ける保育教諭（幼稚園教諭＋保育士）（要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kobe-shoin-ningen",
+   "uni_id": "kobe-shoin",
+   "name": "人間科学部",
+   "campus": "本部キャンパス（兵庫県神戸市灘区篠原伯母野山町）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "認定心理士（心理学科）",
+    "管理栄養士国家試験受験資格（食物栄養学科・要確認）",
+    "栄養士（食物栄養学科・要確認）",
+    "フードスペシャリスト（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "eiyo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "shokuhin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

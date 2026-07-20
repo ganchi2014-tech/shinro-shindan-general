@@ -1,0 +1,825 @@
+{
+ "uni": {
+  "id": "kyoto-geijutsu",
+  "name": "京都芸術大学",
+  "name_short": "京都芸術大",
+  "prefecture": "京都府",
+  "type": "私立",
+  "campus_main": "瓜生山キャンパス",
+  "tuition_yen_per_year": 1750000,
+  "tuition_note": "芸術系のため学費は高め。学科により異なり、実習費・教材費が別途かかる場合あり（要確認）",
+  "access_from_shiga_min": 75,
+  "commute_possible": true,
+  "commute_note": "JR草津・大津→京都駅から市バス、または京阪・叡山電鉄経由で片道約75分。乗換はあるが滋賀県南部から通学可能な範囲",
+  "feature": "2020年に京都造形芸術大学から名称変更した、国内最大級の総合芸術大学。美術・工芸からデザイン、マンガ・アニメ・ゲーム、映画、舞台、文芸まで芸術学部の中に幅広い学科を持つ。京都市左京区・瓜生山の麓に大階段が象徴的なキャンパスを構え、社会と連携した実践型のプロジェクト授業が多いのが特徴。学力試験だけでなく、体験授業型の総合型選抜で入学する学生が多い。",
+  "living_cost": {
+   "rent_min": 45000,
+   "rent_max": 65000,
+   "food_monthly": 25000,
+   "monthly_total": 100000,
+   "four_year_total": 4800000,
+   "note": "左京区・一乗寺周辺で下宿する場合の相場。滋賀県南部からは自宅通学も可能で、その場合は大幅に抑えられる"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約93%（要確認）",
+   "top_employers": [
+    "ゲーム・アニメ制作会社",
+    "デザイン事務所・広告制作会社",
+    "印刷・出版関連（大日本印刷など）（要確認）",
+    "住宅・建設・インテリア関連企業",
+    "保育園・幼稚園（こども芸術）",
+    "一般企業（企画・販売職など）"
+   ],
+   "note": "就職のほか、作家・イラストレーター・クリエイターとして独立する卒業生も一定数いる"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "叡山電鉄「茶山・京都芸術大学駅」徒歩約10分／市バス「上終町（京都芸術大学前）」下車すぐ",
+   "walking_min_from_station": 10,
+   "nearby_amenities": "白川通沿いにカフェ・飲食店・スーパー。ラーメン街で有名な一乗寺や銀閣寺エリアが生活圏",
+   "area_description": "京都市左京区の落ち着いた文教エリア。瓜生山の斜面に沿ったキャンパスで、京都の街を見下ろす大階段がシンボル"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入試成績による特待生制度・独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "クリエイティブ業界向けのポートフォリオ指導",
+    "企業や自治体と連携した実践プロジェクトが豊富",
+    "作家・フリーランス志望者向けの支援も実施（要確認）"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.kyoto-art.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "マンガ・アニメ・ゲーム・デザイン・映画など「好き」をそのまま学びにできる総合芸術大学で、滋賀県南部からギリギリ通学圏。体験授業型の総合型選抜なら、学力試験ではなく授業への取り組みで評価されるため、芸術系志望なら挑戦しやすい。",
+  "region": "kyoto",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "ゲーム・アニメ・デザインなどクリエイティブ業界への就職に強み",
+    "企業連携プロジェクトで在学中から実務経験を積める",
+    "美術教員免許や学芸員資格の取得ルートがある",
+    "こども芸術学科は保育士・幼稚園教諭の養成に対応"
+   ],
+   "representative_employers": [
+    "ゲーム・アニメ制作会社（要確認）",
+    "デザイン事務所・広告制作会社",
+    "印刷・出版関連企業",
+    "住宅・建設・インテリア関連企業",
+    "保育園・幼稚園"
+   ],
+   "summary": "クリエイティブ業界特化型。公務員・一般企業総合職狙いには不向き。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（体験授業型）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準なし（要確認）",
+     "selection_content": [
+      "体験授業への参加",
+      "授業内での課題制作・ワーク",
+      "レポート・振り返り"
+     ],
+     "bairitsu": "1〜3倍（要確認）",
+     "notes": "この大学の看板入試。2日間程度の体験授業を受け、その中での取り組みと成果で評価される。デッサン経験がなくても挑戦しやすい"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "要確認",
+     "selection_content": [
+      "書類",
+      "小論文または実技・課題",
+      "面接（学科による）"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": "学科により選考内容が異なる（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "国語・英語などの学科試験と、実技・小論文等の組み合わせ（学科により異なる・要確認）",
+     "notes": "共通テスト利用方式もあり。学科試験のみで受けられる方式もある（要確認）",
+     "bairitsu": "1.5〜4倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "kyoto-geijutsu-bijutsu",
+   "uni_id": "kyoto-geijutsu",
+   "name": "芸術学部 美術工芸学科",
+   "campus": "瓜生山キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "体験授業型が中心",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "学科試験・実技等の組み合わせ（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（美術）（要確認）",
+    "高等学校教諭一種（美術）（要確認）",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "maker",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-geijutsu-chara",
+   "uni_id": "kyoto-geijutsu",
+   "name": "芸術学部 キャラクターデザイン学科",
+   "campus": "瓜生山キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "体験授業型が中心。人気が高い学科",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu",
+    "joho"
+   ],
+   "employment_fields": [
+    "media",
+    "it",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-geijutsu-joho",
+   "uni_id": "kyoto-geijutsu",
+   "name": "芸術学部 情報デザイン学科",
+   "campus": "瓜生山キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "体験授業型が中心",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu",
+    "joho"
+   ],
+   "employment_fields": [
+    "media",
+    "it",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-geijutsu-product",
+   "uni_id": "kyoto-geijutsu",
+   "name": "芸術学部 プロダクトデザイン学科",
+   "campus": "瓜生山キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "体験授業型が中心",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "maker",
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-geijutsu-kukan",
+   "uni_id": "kyoto-geijutsu",
+   "name": "芸術学部 空間演出デザイン学科",
+   "campus": "瓜生山キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "体験授業型が中心",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "service",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-geijutsu-kankyo",
+   "uni_id": "kyoto-geijutsu",
+   "name": "芸術学部 環境デザイン学科",
+   "campus": "瓜生山キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "体験授業型が中心",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士受験資格（建築コース・卒業後実務経験要）（要確認）",
+    "二級建築士受験資格（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "kenchiku",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "kensetsu",
+    "maker",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-geijutsu-eiga",
+   "uni_id": "kyoto-geijutsu",
+   "name": "芸術学部 映画学科",
+   "campus": "瓜生山キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "体験授業型が中心",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-geijutsu-butai",
+   "uni_id": "kyoto-geijutsu",
+   "name": "芸術学部 舞台芸術学科",
+   "campus": "瓜生山キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "体験授業型が中心",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-geijutsu-bungei",
+   "uni_id": "kyoto-geijutsu",
+   "name": "芸術学部 文芸表現学科",
+   "campus": "瓜生山キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "体験授業型が中心",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-geijutsu-artpro",
+   "uni_id": "kyoto-geijutsu",
+   "name": "芸術学部 アートプロデュース学科",
+   "campus": "瓜生山キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "体験授業型が中心",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員"
+   ],
+   "interest_tags": [
+    "geijutsu",
+    "shakai"
+   ],
+   "employment_fields": [
+    "media",
+    "service",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-geijutsu-kodomo",
+   "uni_id": "kyoto-geijutsu",
+   "name": "芸術学部 こども芸術学科",
+   "campus": "瓜生山キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "体験授業型が中心",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "保育士（要確認）",
+    "幼稚園教諭一種（要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "iryo_fukushi",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-geijutsu-rekishi",
+   "uni_id": "kyoto-geijutsu",
+   "name": "芸術学部 歴史遺産学科",
+   "campus": "瓜生山キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "体験授業型が中心",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用方式あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員",
+    "文化財関連の専門職を目指せる（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kyoiku",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

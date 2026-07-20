@@ -1,0 +1,776 @@
+{
+ "uni": {
+  "id": "chiba-univ",
+  "name": "千葉大学",
+  "name_short": "千葉大",
+  "prefecture": "千葉県",
+  "type": "国立",
+  "campus_main": "西千葉キャンパス",
+  "tuition_yen_per_year": 535800,
+  "tuition_note": "国立大学の標準額（授業料）。入学金・諸経費別（要確認）",
+  "access_from_shiga_min": 230,
+  "commute_possible": false,
+  "commute_note": "滋賀からの通学は不可能。京都から新幹線＋総武線で片道約4時間、下宿前提",
+  "feature": "首都圏を代表する総合国立大学で、文系から理系、医歯薬看護、園芸まで11学部を擁する。日本で初めて「飛び入学」を導入した先進的な大学として知られ、全学生に留学を課すプログラム「ENGINE」など国際教育にも力を入れる（要確認）。医学部・薬学部・看護学部は亥鼻キャンパス、園芸学部は松戸キャンパスと分かれる。就職は首都圏の大手企業・公務員に強く、研究力も旧制医科大学の流れを汲む医学系を中心に高い。",
+  "living_cost": {
+   "rent_min": 35000,
+   "rent_max": 60000,
+   "food_monthly": 25000,
+   "monthly_total": 100000,
+   "four_year_total": 4800000,
+   "note": "西千葉・稲毛周辺は学生向け物件が多く、首都圏の中では家賃が抑えめ（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "千葉県庁・千葉市役所",
+    "国家公務員（各省庁）",
+    "千葉県内の教員",
+    "大手メーカー（日立製作所・富士通など）（要確認）",
+    "IT・通信大手",
+    "大学病院・県内基幹病院（医療系）"
+   ],
+   "note": "首都圏の大手企業・公務員への就職が中心。大学院進学率も理系を中心に高い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR総武線 西千葉駅 徒歩約2分（西千葉キャンパス）",
+   "walking_min_from_station": 2,
+   "nearby_amenities": "駅前に商店・飲食店があり、千葉駅（2駅）に出れば大型商業施設も揃う",
+   "area_description": "千葉市稲毛区の落ち着いた文教・住宅エリア。東京駅まで電車で約40分と都心アクセスも良い"
+  },
+  "shogakukin": {
+   "general_shogakukin": "JASSO各種奨学金のほか、授業料免除・大学独自の給付型奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "全学対象のキャリア支援（個別相談・ガイダンス）",
+    "首都圏企業への就職支援とOB・OGネットワーク",
+    "公務員・教員採用試験の対策支援（要確認）"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.chiba-u.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "滋賀からは完全に下宿圏だが、「関東で暮らしながら国立総合大学で学びたい」場合の有力候補。文系・理系・医療系・園芸まで学部の幅が広く、首都圏就職に直結する。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 5,
+    "shogakkō": 5,
+    "keisatsu": 3,
+    "shōbō": 2,
+    "kōmuin_ippan": 4,
+    "kigyō_ippan": 5,
+    "kigyō_supotsu": 2,
+    "iryō": 5
+   },
+   "strengths": [
+    "教育学部は千葉県を中心に小・中学校教員を多数輩出",
+    "首都圏の大手メーカー・IT・金融への就職に強い",
+    "医・薬・看護の医療系国家資格ルートが学内で完結",
+    "国家公務員・県庁など公務員就職も多い"
+   ],
+   "representative_employers": [
+    "千葉県庁・千葉市役所",
+    "国家公務員（各省庁）",
+    "千葉県内の小中高教員",
+    "大手メーカー・IT企業",
+    "千葉大学医学部附属病院など基幹病院"
+   ],
+   "summary": "首都圏就職に強い準難関の国立総合大学。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（一部学部）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接",
+      "共通テスト（学部により）"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "実施学部・選抜内容は学部により大きく異なる（要確認）。理学部・工学部等には高2から出願できる「先進科学プログラム（飛び入学）」もある（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（一部学部）",
+     "hyoutei_min": null,
+     "hyoutei_note": "4.0以上が目安（学部による・要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文",
+      "共通テスト（学部により）"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "教育学部・医学部（千葉県地域枠）など一部学部で実施（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト（5教科7科目型が基本）＋個別学力検査（学部により2〜4教科）",
+     "notes": "配点・科目は学部学科で大きく異なる（要確認）",
+     "bairitsu": "2〜4倍（要確認）"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト＋小論文・面接・学力検査等（学部により異なる）",
+     "notes": "後期日程を実施しない学部・学科もある（要確認）",
+     "bairitsu": "5〜10倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "chiba-univ-kokusai",
+   "uni_id": "chiba-univ",
+   "name": "国際教養学部",
+   "campus": "西千葉キャンパス（千葉県千葉市稲毛区）",
+   "hensachi": {
+    "min": 60,
+    "max": 62.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無・内容は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共テ＋二次）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは必須（国立）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（取得可能科目は要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "shakai"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "media",
+    "maker",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "chiba-univ-bun",
+   "uni_id": "chiba-univ",
+   "name": "文学部",
+   "campus": "西千葉キャンパス（千葉県千葉市稲毛区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無・コースは要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共テ＋二次）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは必須（国立）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（国語・社会・英語など、コースによる・要確認）",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "shakai"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "chiba-univ-hosei",
+   "uni_id": "chiba-univ",
+   "name": "法政経学部",
+   "campus": "西千葉キャンパス（千葉県千葉市稲毛区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共テ＋二次）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは必須（国立）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（社会・公民など・要確認）"
+   ],
+   "interest_tags": [
+    "hokei",
+    "keizai"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "chiba-univ-kyoiku",
+   "uni_id": "chiba-univ",
+   "name": "教育学部",
+   "campus": "西千葉キャンパス（千葉県千葉市稲毛区）",
+   "hensachi": {
+    "min": 50,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無・課程は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（課程・専修による・要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程中心（共テ＋二次）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは必須（国立）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "中学校・高等学校教諭一種免許状",
+    "幼稚園教諭一種免許状（コースによる・要確認）",
+    "特別支援学校教諭一種免許状（コースによる・要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "chiba-univ-ri",
+   "uni_id": "chiba-univ",
+   "name": "理学部",
+   "campus": "西千葉キャンパス（千葉県千葉市稲毛区）",
+   "hensachi": {
+    "min": 55,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "先進科学プログラム（飛び入学）等あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "実施の有無は学科による（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共テ＋二次）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは必須（国立）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（数学・理科）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "chiba-univ-ko",
+   "uni_id": "chiba-univ",
+   "name": "工学部",
+   "campus": "西千葉キャンパス（千葉県千葉市稲毛区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "先進科学プログラム（飛び入学）等あり（コースによる・要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "実施の有無はコースによる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共テ＋二次）。総合工学科として一括の枠組み（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは必須（国立）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士・二級建築士受験資格（建築学コース・要確認）",
+    "中学校・高等学校教諭一種免許状（数学・理科・工業など・要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "kenchiku"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "chiba-univ-joho",
+   "uni_id": "chiba-univ",
+   "name": "情報・データサイエンス学部",
+   "campus": "西千葉キャンパス（千葉県千葉市稲毛区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "2024年新設学部のため実施状況は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程中心（共テ＋二次）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは必須（国立）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（情報）（要確認）"
+   ],
+   "interest_tags": [
+    "joho"
+   ],
+   "employment_fields": [
+    "it",
+    "maker",
+    "kinyu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "chiba-univ-engei",
+   "uni_id": "chiba-univ",
+   "name": "園芸学部",
+   "campus": "松戸キャンパス（千葉県松戸市）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（学科による・要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "実施の有無は学科による（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共テ＋二次）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは必須（国立）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（理科・農業など・要確認）",
+    "樹木医補（要確認）",
+    "食品衛生管理者・食品衛生監視員（任用）（学科による・要確認）"
+   ],
+   "interest_tags": [
+    "nogaku"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "koumuin",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "chiba-univ-i",
+   "uni_id": "chiba-univ",
+   "name": "医学部",
+   "campus": "亥鼻キャンパス（千葉県千葉市中央区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（千葉県地域枠等）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共テ＋二次＋面接）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは必須（国立）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "chiba-univ-yaku",
+   "uni_id": "chiba-univ",
+   "name": "薬学部",
+   "campus": "亥鼻キャンパス（千葉県千葉市中央区）",
+   "hensachi": {
+    "min": 60,
+    "max": 62.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程中心（共テ＋二次）。入学後に薬学科（6年制）と薬科学科（4年制）に分属（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは必須（国立）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師国家試験受験資格（6年制薬学科）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "chiba-univ-kango",
+   "uni_id": "chiba-univ",
+   "name": "看護学部",
+   "campus": "亥鼻キャンパス（千葉県千葉市中央区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": null,
+     "note": "実施の有無は要確認",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共テ＋二次）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは必須（国立）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格（選抜制・要確認）",
+    "助産師国家試験受験資格（選抜制・要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

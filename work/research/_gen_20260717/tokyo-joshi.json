@@ -1,0 +1,477 @@
+{
+ "uni": {
+  "id": "tokyo-joshi",
+  "name": "東京女子大学",
+  "name_short": "東京女子大",
+  "prefecture": "東京都",
+  "type": "私立",
+  "campus_main": "善福寺キャンパス",
+  "tuition_yen_per_year": 1150000,
+  "tuition_note": "年間授業料＋施設設備費の概算（要確認）。初年度は入学金等が別途必要",
+  "access_from_shiga_min": 220,
+  "commute_possible": false,
+  "commute_note": "草津・大津から新幹線利用でも片道約3時間半〜4時間。通学は不可能で下宿前提",
+  "feature": "1918年創立、新渡戸稲造を初代学長とするキリスト教主義のリベラルアーツ女子大学。杉並区善福寺の緑豊かなワンキャンパスに全学生が集い、少人数教育と分野横断の教養教育に定評がある。2025年度から現代教養学部1学部6学科体制（人文・国際社会・経済経営・心理・社会コミュニケーション・情報数理科学）に再編された（要確認）。首都圏での知名度が高く、金融・メーカーなど民間企業への就職に強い伝統女子大。",
+  "living_cost": {
+   "rent_min": 60000,
+   "rent_max": 95000,
+   "food_monthly": 30000,
+   "monthly_total": 130000,
+   "four_year_total": 6200000,
+   "note": "杉並区・西荻窪〜吉祥寺周辺の下宿相場。都内でも家賃はやや高めのエリア"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "大手銀行・信託銀行",
+    "生命保険・損害保険会社",
+    "航空・旅行業界",
+    "IT・情報通信企業",
+    "大手メーカー（事務系総合職）",
+    "公務員（都庁・特別区等）"
+   ],
+   "note": "「就職に強い女子大」として長年の実績。首都圏大手企業の事務系・総合職に強い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR中央線・総武線 西荻窪駅 徒歩約12分",
+   "walking_min_from_station": 12,
+   "nearby_amenities": "西荻窪・吉祥寺が生活圏。商店街やカフェが充実し、一人暮らしにも便利",
+   "area_description": "杉並区善福寺の閑静な住宅街。歴史あるレンガ造りの校舎と緑豊かなワンキャンパス"
+  },
+  "shogakukin": {
+   "general_shogakukin": "予約型給付奨学金など大学独自の給付型奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "少人数を活かした個別のキャリア支援",
+    "同窓会ネットワークによるOG訪問のしやすさ",
+    "首都圏大手企業への長年の就職実績に基づく支援"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.twcu.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "首都圏の伝統女子大でじっくり教養を磨きたい人向け。関西の女子大と比べて東京での就職ブランドが強く、下宿費用はかかるが少人数リベラルアーツ教育と落ち着いたキャンパスが魅力。",
+  "notable_alumni": [
+   "瀬戸内寂聴（作家）"
+  ],
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "金融・保険・メーカー事務系など首都圏大手企業への就職に強い伝統",
+    "キャリア支援が手厚く就職率が高水準",
+    "OGネットワークが太く、女子のキャリア形成のロールモデルが豊富"
+   ],
+   "representative_employers": [
+    "大手銀行・信託銀行",
+    "生命保険・損害保険会社",
+    "航空・旅行業界",
+    "IT・情報通信企業",
+    "公務員（都庁・特別区等）"
+   ],
+   "summary": "首都圏の伝統女子大。民間大手企業への就職に強い。",
+   "notes": "女子大のため男子は入学できない"
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（知のかけはし入学試験）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "レポート・小論文",
+      "面接"
+     ],
+     "bairitsu": "1.5〜3倍（要確認）",
+     "notes": "学科ごとに課題内容が異なる（要確認）"
+    }
+   ],
+   "koubo": [],
+   "ippan": [
+    {
+     "method_name": "一般選抜（個別学力試験型）",
+     "subjects": "3教科（英語・国語・選択科目）",
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "英語外部検定試験利用型あり（要確認）"
+    },
+    {
+     "method_name": "大学入学共通テスト利用型",
+     "subjects": "共通テスト3教科型・5科目型",
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "個別試験なし"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "tokyo-joshi-jinbun",
+   "uni_id": "tokyo-joshi",
+   "name": "現代教養学部 人文学科",
+   "campus": "善福寺キャンパス（東京都杉並区）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "知のかけはし入学試験（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦はなし・指定校制のみ（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別学力試験型・英語外部検定試験利用型（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用（3教科型・5科目型）（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（国語・社会等）（要確認）",
+    "学芸員",
+    "司書"
+   ],
+   "interest_tags": [
+    "bungaku"
+   ],
+   "employment_fields": [
+    "media",
+    "service",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-joshi-kokusai",
+   "uni_id": "tokyo-joshi",
+   "name": "現代教養学部 国際社会学科",
+   "campus": "善福寺キャンパス（東京都杉並区）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "知のかけはし入学試験（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦はなし・指定校制のみ（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別学力試験型・英語外部検定試験利用型（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用（3教科型・5科目型）（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（社会・公民等）（要確認）",
+    "学芸員",
+    "司書"
+   ],
+   "interest_tags": [
+    "shakai",
+    "hokei"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-joshi-keizai",
+   "uni_id": "tokyo-joshi",
+   "name": "現代教養学部 経済経営学科",
+   "campus": "善福寺キャンパス（東京都杉並区）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "知のかけはし入学試験（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦はなし・指定校制のみ（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別学力試験型・英語外部検定試験利用型（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用（3教科型・5科目型）（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "司書",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-joshi-shinri",
+   "uni_id": "tokyo-joshi",
+   "name": "現代教養学部 心理学科",
+   "campus": "善福寺キャンパス（東京都杉並区）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "知のかけはし入学試験（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦はなし・指定校制のみ（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別学力試験型・英語外部検定試験利用型（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用（3教科型・5科目型）（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "公認心理師（対応カリキュラム・卒業後に大学院進学等が必要）（要確認）",
+    "認定心理士"
+   ],
+   "interest_tags": [
+    "shakai"
+   ],
+   "employment_fields": [
+    "service",
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-joshi-comm",
+   "uni_id": "tokyo-joshi",
+   "name": "現代教養学部 社会コミュニケーション学科",
+   "campus": "善福寺キャンパス（東京都杉並区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "知のかけはし入学試験（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦はなし・指定校制のみ（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別学力試験型・英語外部検定試験利用型（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用（3教科型・5科目型）（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "司書",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "joho"
+   ],
+   "employment_fields": [
+    "media",
+    "it",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-joshi-joho",
+   "uni_id": "tokyo-joshi",
+   "name": "現代教養学部 情報数理科学科",
+   "campus": "善福寺キャンパス（東京都杉並区）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "知のかけはし入学試験（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦はなし・指定校制のみ（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "個別学力試験型・英語外部検定試験利用型（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用（3教科型・5科目型）（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（数学・情報）（要確認）"
+   ],
+   "interest_tags": [
+    "joho",
+    "riko"
+   ],
+   "employment_fields": [
+    "it",
+    "maker",
+    "kinyu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

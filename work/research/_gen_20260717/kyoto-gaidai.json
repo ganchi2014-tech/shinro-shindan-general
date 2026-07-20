@@ -1,0 +1,251 @@
+{
+ "uni": {
+  "id": "kyoto-gaidai",
+  "name": "京都外国語大学",
+  "name_short": "京都外大",
+  "prefecture": "京都府",
+  "type": "私立",
+  "campus_main": "本部キャンパス（京都市右京区）",
+  "tuition_yen_per_year": 1160000,
+  "access_from_shiga_min": 75,
+  "commute_possible": true,
+  "commute_note": "草津・大津からJRで京都駅へ出て、地下鉄＋阪急（西京極駅）または市バスで約70〜85分。滋賀から自宅通学する学生も一定数いる",
+  "feature": "1947年創立の外国語専門大学で、関西外大と並ぶ関西の外国語系私大の代表格。外国語学部では英米語のほかスペイン語・フランス語・ドイツ語・中国語・ブラジルポルトガル語・イタリア語・ロシア語・日本語まで専攻として深く学べる。2018年設置の国際貢献学部では観光や国際協力を英語で学ぶ実践型プログラムを展開。留学制度と航空・ホテル・旅行業界への就職に強みを持つ。",
+  "living_cost": {
+   "rent_min": 40000,
+   "rent_max": 60000,
+   "food_monthly": 25000,
+   "monthly_total": 100000,
+   "four_year_total": 4800000,
+   "note": "京都市内下宿の相場。滋賀県南部からは自宅通学も現実的で、その場合は大幅に抑えられる"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "ANA・JAL系グループ会社（グランドスタッフ等）",
+    "ホテル・ブライダル業界",
+    "JTBなど旅行会社",
+    "商社・メーカーの海外営業職",
+    "京都銀行など地方銀行",
+    "物流・フォワーダー（国際物流）"
+   ],
+   "note": "エアライン・観光・ホテル業界への就職に伝統的な強み。語学を活かす職種が中心（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "阪急京都線 西京極駅 徒歩約13分",
+   "walking_min_from_station": 13,
+   "nearby_amenities": "西京極総合運動公園が近い。阪急で四条（京都市中心部）まで約5分と繁華街へのアクセスが良い",
+   "area_description": "京都市右京区の落ち着いた住宅エリア。ワンキャンパスで全学部がまとまっている"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入試成績優秀者への特待生制度や大学独自の奨学金あり（要確認）。日本学生支援機構も利用可",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "エアライン・ホテル・観光業界向けの対策講座や就職支援が充実",
+    "留学経験を就職活動に活かすための個別指導",
+    "語学を活かした求人の紹介に強い"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.kufs.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "滋賀から通える範囲で「英語以外の言語（スペイン語・中国語・フランス語など）を専攻として本格的に学べる」貴重な大学。エアライン・ホテル・旅行業界を目指すなら関西で有力な選択肢。",
+  "region": "kyoto",
+  "employment": {
+   "ratings": {
+    "kyoin": 3,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 3,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "エアライン（グランドスタッフ・CA）・ホテル・旅行業界への就職に伝統的な強み",
+    "英語＋第二外国語の運用力を武器に商社・メーカー海外営業へ",
+    "中学・高校の英語教員免許が取得でき、教員輩出の実績もある",
+    "留学経験者が多く、外資系・インバウンド関連企業に強い"
+   ],
+   "representative_employers": [
+    "ANA・JAL系グループ会社",
+    "帝国ホテル・リーガロイヤルなどホテル業界（要確認）",
+    "JTB・エイチ・アイ・エスなど旅行業界",
+    "京都銀行・滋賀銀行など地方銀行（要確認）",
+    "国際物流・フォワーダー各社"
+   ],
+   "summary": "語学力を武器に観光・エアライン・商社系へ。英語教員の道もある。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文または課題"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": "語学への意欲や留学・国際経験をアピールしやすい方式。英語資格を活用できる方式あり（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準なしの基礎学力型あり（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力試験（英語重視の2教科型が中心）"
+     ],
+     "bairitsu": "1.5〜3倍（要確認）",
+     "notes": "英語の配点が高い方式が中心。英検などの資格加点あり（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（A日程・B日程）",
+     "subjects": "英語＋国語などの2教科型が中心。英語の配点が高い",
+     "notes": "共通テスト利用選抜あり。英語資格による換算・加点制度あり（要確認）",
+     "bairitsu": "1.5〜3倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "kyoto-gaidai-gaikokugo",
+   "uni_id": "kyoto-gaidai",
+   "name": "外国語学部",
+   "campus": "本部キャンパス（京都府京都市右京区）",
+   "hensachi": {
+    "min": 42.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦（基礎学力型）あり",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜A・B日程。英語＋国語の2教科型が中心",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語など・専攻により異なる）",
+    "日本語教員（養成課程）",
+    "図書館司書",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "bungaku"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "maker",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-gaidai-kokusaikoken",
+   "uni_id": "kyoto-gaidai",
+   "name": "国際貢献学部",
+   "campus": "本部キャンパス（京都府京都市右京区）",
+   "hensachi": {
+    "min": 45,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦（基礎学力型）あり",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜A・B日程",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "図書館司書（要確認）",
+    "学芸員（要確認）",
+    "総合・国内旅行業務取扱管理者は資格試験対策として支援（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "shakai"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "media"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,422 @@
+{
+ "uni": {
+  "id": "sonoda-gakuen",
+  "name": "園田学園大学（旧：園田学園女子大学）",
+  "name_short": "園田学園大",
+  "prefecture": "兵庫県",
+  "type": "私立",
+  "campus_main": "本部キャンパス（尼崎市南塚口町）",
+  "tuition_yen_per_year": 1250000,
+  "tuition_note": "学部により異なる。看護系は年間約170万円（要確認）",
+  "access_from_shiga_min": 95,
+  "commute_possible": true,
+  "commute_note": "草津からJR新快速で大阪へ、梅田で阪急神戸線に乗換えて塚口駅下車。片道約1時間半〜1時間40分で通学は可能だが遠め",
+  "feature": "尼崎市塚口にキャンパスを置く小規模大学。長く女子大学として保育・教育・健康・看護分野の人材を育ててきたが、2025年4月に男女共学化し「園田学園大学」に名称変更した（要確認）。養護教諭・保育士・看護師・管理栄養士など資格直結の学びが中心で、少人数の面倒見のよさが特色。阪急塚口駅から徒歩圏で、梅田まで約10分という立地も便利。",
+  "living_cost": {
+   "rent_min": 40000,
+   "rent_max": 60000,
+   "food_monthly": 25000,
+   "monthly_total": 100000,
+   "four_year_total": 4800000,
+   "note": "尼崎・塚口周辺は大阪市内より家賃がやや安め。滋賀県南部からの自宅通学も選択肢になる"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約98%（要確認）",
+   "top_employers": [
+    "兵庫・大阪の病院（看護）",
+    "幼稚園・保育所・認定こども園",
+    "小学校・中学校（教員・養護教諭）",
+    "給食受託・食品関連企業",
+    "地方公務員（保育職等）",
+    "一般企業（事務・販売）"
+   ],
+   "note": "資格職（教員・保育士・看護師・管理栄養士）での就職が中心（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "阪急神戸線 塚口駅 徒歩約10分",
+   "walking_min_from_station": 10,
+   "nearby_amenities": "塚口駅前に商店街・スーパーがあり生活しやすい。梅田まで阪急で約10分",
+   "area_description": "尼崎市の落ち着いた住宅街。大阪にも神戸にも出やすい"
+  },
+  "shogakukin": {
+   "general_shogakukin": "特待生制度・独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "教員・保育士・公務員採用試験の対策講座",
+    "看護・栄養など資格職向けの就職支援",
+    "少人数ならではの個別サポート"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.sonoda-u.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "養護教諭・保育士・看護師・管理栄養士など「資格で就職」を狙うなら候補になる、共学化したばかりの小規模大学。偏差値のハードルが比較的低く、面接・基礎テスト型の入試で挑戦しやすい。",
+  "region": "hyogo",
+  "employment": {
+   "ratings": {
+    "kyoin": 4,
+    "shogakkō": 3,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 2,
+    "iryō": 4
+   },
+   "strengths": [
+    "養護教諭養成の伝統があり教育・保育分野に強い",
+    "看護師・管理栄養士など医療・健康系の資格就職に直結",
+    "少人数で採用試験対策など個別支援が手厚い"
+   ],
+   "representative_employers": [
+    "兵庫・大阪の病院",
+    "幼稚園・保育所・認定こども園",
+    "公立学校（教員・養護教諭）",
+    "給食受託・食品関連企業",
+    "地元一般企業"
+   ],
+   "summary": "教育・保育・看護・栄養の資格職に強い小規模大学。",
+   "notes": "2025年4月に男女共学化し「園田学園大学」に名称変更（要確認）。それ以前は女子大学だったため、在学生は女子中心"
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "基礎テストまたは課題（要確認）"
+     ],
+     "bairitsu": "1.0〜1.5倍（要確認）",
+     "notes": "複数期に分けて実施（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は方式・学科により異なる（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力検査",
+      "面接（方式による・要確認）"
+     ],
+     "bairitsu": "1.0〜2倍（要確認）",
+     "notes": null
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "2教科型中心（英語・国語等から選択、要確認）",
+     "notes": "共通テスト利用選抜もあり（要確認）",
+     "bairitsu": "1.0〜2倍（看護はやや高め・要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "sonoda-gakuen-keiei",
+   "uni_id": "sonoda-gakuen",
+   "name": "経営学部（ビジネス学科）",
+   "campus": "本部キャンパス（兵庫県尼崎市南塚口町）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "日商簿記・FP等の資格取得支援（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "ryutsu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "sonoda-gakuen-sogokenko",
+   "uni_id": "sonoda-gakuen",
+   "name": "人間健康学部 総合健康学科（養護・健康スポーツ等）",
+   "campus": "本部キャンパス（兵庫県尼崎市南塚口町）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "養護教諭一種免許",
+    "中学校・高等学校教諭一種免許（保健体育）（要確認）",
+    "健康運動実践指導者（要確認）"
+   ],
+   "interest_tags": [
+    "sports",
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "sports_kenko",
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "sonoda-gakuen-kango",
+   "uni_id": "sonoda-gakuen",
+   "name": "人間健康学部 人間看護学科",
+   "campus": "本部キャンパス（兵庫県尼崎市南塚口町）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "実施の有無は年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格（選抜制・要確認）",
+    "養護教諭二種免許（保健師課程経由・要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "sonoda-gakuen-eiyo",
+   "uni_id": "sonoda-gakuen",
+   "name": "人間健康学部 食物栄養学科",
+   "campus": "本部キャンパス（兵庫県尼崎市南塚口町）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "管理栄養士国家試験受験資格",
+    "栄養士",
+    "栄養教諭一種免許（要確認）"
+   ],
+   "interest_tags": [
+    "eiyo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "shokuhin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "sonoda-gakuen-kyoiku",
+   "uni_id": "sonoda-gakuen",
+   "name": "人間教育学部 児童教育学科",
+   "campus": "本部キャンパス（兵庫県尼崎市南塚口町）",
+   "hensachi": {
+    "min": 35,
+    "max": 35,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許",
+    "幼稚園教諭一種免許",
+    "保育士資格"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

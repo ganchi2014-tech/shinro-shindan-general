@@ -1,0 +1,363 @@
+{
+ "uni": {
+  "id": "osaka-otani",
+  "name": "大阪大谷大学",
+  "name_short": "大阪大谷大",
+  "prefecture": "大阪府",
+  "type": "私立",
+  "campus_main": "富田林キャンパス",
+  "tuition_yen_per_year": 1300000,
+  "tuition_note": "文系学部の概算。薬学部（6年制）は年間約210万円（要確認）",
+  "access_from_shiga_min": 130,
+  "commute_possible": false,
+  "commute_note": "草津からJRで天王寺経由、近鉄南大阪線・長野線で滝谷不動駅へ。片道約2時間10分と遠く、下宿が現実的",
+  "feature": "大阪府富田林市にある仏教（浄土真宗）の精神を建学の理念とする私立大学。前身は大谷女子大学で、2006年に共学化した。薬学部・文学部・教育学部・人間社会学部の4学部を持ち、特に小学校・幼稚園教員の採用実績と6年制薬学部が看板。少人数教育で学生と教員の距離が近い、面倒見のよい中規模大学。",
+  "living_cost": {
+   "rent_min": 35000,
+   "rent_max": 50000,
+   "food_monthly": 25000,
+   "monthly_total": 80000,
+   "four_year_total": 3840000,
+   "note": "富田林市周辺は大阪市内より家賃相場が低め。薬学部は6年間なので生活費総額は約5,800,000円（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "大阪府・近畿圏の小学校・幼稚園（教員・保育）",
+    "調剤薬局・ドラッグストア",
+    "病院薬剤部",
+    "公務員（市町村）",
+    "福祉施設",
+    "一般企業（流通・サービス）"
+   ],
+   "note": "教育学部は関西の私大でも小学校教員採用に強いことで知られる。薬剤師国家試験の合格率は年度により変動（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "近鉄長野線 滝谷不動駅 徒歩約8分（要確認）",
+   "walking_min_from_station": 8,
+   "nearby_amenities": "駅前にスーパー・飲食店が少しあり、日常の買い物は富田林駅・金剛駅周辺が便利",
+   "area_description": "大阪府南東部・富田林市の落ち着いた住宅地。天王寺（大阪阿部野橋）まで近鉄で約30分で出られる"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入試成績による特待生制度・独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "教員採用試験対策講座・面接指導が手厚い",
+    "薬学部専用の国家試験・就職サポート",
+    "少人数の個別キャリア相談"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.osaka-ohtani.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「小学校・幼稚園の先生になりたい」「私大薬学部で薬剤師を目指したいが偏差値のハードルは抑えたい」という人に現実的な選択肢。滋賀からは遠いので下宿前提。",
+  "region": "osaka",
+  "employment": {
+   "ratings": {
+    "kyoin": 4,
+    "shogakkō": 4,
+    "keisatsu": 2,
+    "shōbō": 2,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 2,
+    "iryō": 4
+   },
+   "strengths": [
+    "小学校・幼稚園教員の採用実績は関西私大で上位クラス",
+    "6年制薬学部から薬剤師として病院・薬局へ就職できる",
+    "少人数で教員採用試験・国家試験の対策が手厚い"
+   ],
+   "representative_employers": [
+    "大阪府・堺市など近畿圏の小学校・幼稚園",
+    "調剤薬局・ドラッグストアチェーン",
+    "病院薬剤部",
+    "福祉施設",
+    "一般企業"
+   ],
+   "summary": "小学校教員と薬剤師に強い、資格直結型の中規模私大。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文または基礎学力確認（学部による・要確認）"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": "専願中心。教育学部・薬学部は志望理由と適性が重視される（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は緩やか（要確認）",
+     "selection_content": [
+      "基礎学力テスト（2教科型中心）",
+      "調査書"
+     ],
+     "bairitsu": "1.5〜4倍（要確認）",
+     "notes": "教育学部は人気が高く倍率が上がりやすい（要確認）。薬学部は理科（化学）を課す方式あり（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "2〜3教科型（薬学部は化学必須・要確認）",
+     "notes": "複数日程あり。共通テスト利用選抜も実施（要確認）",
+     "bairitsu": "1.5〜4倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "osaka-otani-yaku",
+   "uni_id": "osaka-otani",
+   "name": "薬学部（6年制）",
+   "campus": "富田林キャンパス（大阪府富田林市錦織北）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦は化学を課す方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（化学必須・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師（国家試験受験資格）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-otani-kyoiku",
+   "uni_id": "osaka-otani",
+   "name": "教育学部",
+   "campus": "富田林キャンパス（大阪府富田林市錦織北）",
+   "hensachi": {
+    "min": 40,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦あり。人気が高く倍率が上がりやすい（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種",
+    "幼稚園教諭一種",
+    "保育士",
+    "特別支援学校教諭一種（要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-otani-bungaku",
+   "uni_id": "osaka-otani",
+   "name": "文学部",
+   "campus": "富田林キャンパス（大阪府富田林市錦織北）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種（国語・社会等、コースによる・要確認）",
+    "学芸員",
+    "図書館司書"
+   ],
+   "interest_tags": [
+    "bungaku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "ryutsu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "osaka-otani-ningen",
+   "uni_id": "osaka-otani",
+   "name": "人間社会学部",
+   "campus": "富田林キャンパス（大阪府富田林市錦織北）",
+   "hensachi": {
+    "min": 35,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募推薦あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "社会福祉士（国家試験受験資格・課程による・要確認）",
+    "中学校・高等学校教諭一種（保健体育、スポーツ健康学科・要確認）",
+    "スポーツ指導者関連資格（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "sports"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "sports_kenko",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

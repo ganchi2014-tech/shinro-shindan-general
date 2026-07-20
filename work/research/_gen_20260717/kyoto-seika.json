@@ -1,0 +1,424 @@
+{
+ "uni": {
+  "id": "kyoto-seika",
+  "name": "京都精華大学",
+  "name_short": "京都精華大",
+  "prefecture": "京都府",
+  "type": "私立",
+  "campus_main": "本キャンパス（京都市左京区岩倉）",
+  "tuition_yen_per_year": 1600000,
+  "tuition_note": "芸術系私大のため学費は高め。学部により年間約150〜170万円（要確認）",
+  "access_from_shiga_min": 85,
+  "commute_possible": true,
+  "commute_note": "草津からJR→京都駅→地下鉄烏丸線で国際会館駅→スクールバスまたは叡山電鉄「京都精華大前」駅。乗換2回で片道約85分。通学圏だがやや遠め",
+  "feature": "1968年開学の芸術系私立大学で、2006年に日本初のマンガ学部を設置したことで全国的に知られる。マンガ・アニメ・イラスト・デザイン・現代アートまで、表現を幅広く学べるのが最大の特色。京都市と共同で京都国際マンガミュージアムを運営し、現役のマンガ家・クリエイターが教員として指導する。留学生比率が高く、国際色豊かな自由な校風でも知られる。",
+  "living_cost": {
+   "rent_min": 40000,
+   "rent_max": 65000,
+   "food_monthly": 25000,
+   "monthly_total": 100000,
+   "four_year_total": 4800000,
+   "note": "左京区北部（岩倉・修学院周辺）は京都市内では家賃が比較的安いエリア。滋賀南部からは自宅通学も可能"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約85%（要確認）",
+   "top_employers": [
+    "ゲーム会社（企画・デザイン職）",
+    "アニメ制作会社",
+    "デザイン事務所・制作プロダクション",
+    "出版・印刷業界",
+    "Web・IT企業",
+    "一般企業（企画・広報職など）"
+   ],
+   "note": "マンガ家・イラストレーター・アニメーターなどフリーランス・作家デビューの進路も多く、就職率の数字だけでは進路実態を測りにくい（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "叡山電鉄「京都精華大前」駅 徒歩約3分",
+   "walking_min_from_station": 3,
+   "nearby_amenities": "キャンパス周辺は自然が多く静か。買い物は国際会館駅周辺や出町柳・北大路方面が生活圏",
+   "area_description": "京都市左京区岩倉の山あいに位置する緑豊かなキャンパス。地下鉄国際会館駅から無料スクールバスあり"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入学時成績優秀者奨学金・在学生対象の独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "マンガ・アニメ・ゲーム業界とのつながりを活かした求人紹介",
+    "ポートフォリオ（作品集）指導などクリエイティブ就職に特化した支援",
+    "作家デビュー・フリーランス志望者向けの相談対応"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.kyoto-seika.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「マンガやアニメ、イラストを本気で学びたい」なら関西で真っ先に名前が挙がる大学。滋賀南部からは乗換ありだが通学も可能で、実技が得意なら偏差値のハードルは高くない。",
+  "region": "kyoto",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 1,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "マンガ・アニメ・ゲームなどコンテンツ業界への就職・デビュー支援に強い",
+    "デザイン職・クリエイティブ職の求人ルートが太い",
+    "美術（中学・高校）の教員免許が取得可能",
+    "在学中から作品発表・受賞でプロへの道が開ける"
+   ],
+   "representative_employers": [
+    "ゲーム会社（デザイナー・プランナー）",
+    "アニメ制作会社",
+    "デザイン事務所・広告制作会社",
+    "出版社・印刷会社",
+    "Web制作・IT企業"
+   ],
+   "summary": "クリエイティブ業界特化型。公務員・一般企業総合職志向には不向き。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準なし（要確認）",
+     "selection_content": [
+      "書類（志望理由書）",
+      "面接",
+      "実技・作品提出またはプレゼンテーション（学部により異なる）"
+     ],
+     "bairitsu": "1〜2倍程度（要確認）",
+     "notes": "入学者の主要ルート。作品や表現への意欲を重視する選抜（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は低め〜なし（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "実技または小論文（学部により異なる）"
+     ],
+     "bairitsu": "1〜2倍程度（要確認）",
+     "notes": null
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期・後期）",
+     "subjects": "学科試験型（国語・英語など）と実技型（デッサン等）から選択できる方式あり（要確認）",
+     "notes": "共通テスト利用選抜もあり。実技が得意なら学科試験の負担を減らせる",
+     "bairitsu": "1.5〜3倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "kyoto-seika-manga",
+   "uni_id": "kyoto-seika",
+   "name": "マンガ学部",
+   "campus": "本キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 40,
+    "max": 42.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "作品・実技重視の総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "学科試験型と実技型の選択方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（美術）（要確認）",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "it",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-seika-design",
+   "uni_id": "kyoto-seika",
+   "name": "デザイン学部",
+   "campus": "本キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "学科試験型と実技型の選択方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（美術）（要確認）",
+    "学芸員",
+    "一級・二級建築士受験資格（建築学科）（要確認）"
+   ],
+   "interest_tags": [
+    "geijutsu",
+    "kenchiku"
+   ],
+   "employment_fields": [
+    "media",
+    "maker",
+    "kensetsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-seika-geijutsu",
+   "uni_id": "kyoto-seika",
+   "name": "芸術学部",
+   "campus": "本キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "学科試験型と実技型の選択方式あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（美術）（要確認）",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "media",
+    "kyoiku",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-seika-media",
+   "uni_id": "kyoto-seika",
+   "name": "メディア表現学部",
+   "campus": "本キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "joho",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "it",
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kyoto-seika-kokusai",
+   "uni_id": "kyoto-seika",
+   "name": "国際文化学部",
+   "campus": "本キャンパス（京都府京都市左京区）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（社会・地理歴史など）（要確認）",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "service",
+    "media",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

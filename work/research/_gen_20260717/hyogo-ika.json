@@ -1,0 +1,392 @@
+{
+ "uni": {
+  "id": "hyogo-ika",
+  "name": "兵庫医科大学",
+  "name_short": "兵庫医大",
+  "prefecture": "兵庫県",
+  "type": "私立",
+  "campus_main": "西宮キャンパス",
+  "tuition_yen_per_year": 1900000,
+  "tuition_note": "薬・看護・リハビリテーション学部は年間約170〜210万円（要確認）。医学部は6年間総額約3,700万円（年間約600万円）と大きく異なる（要確認）。特待生・地域枠奨学金で負担を抑えられる場合あり",
+  "access_from_shiga_min": 100,
+  "commute_possible": true,
+  "commute_note": "西宮キャンパス（医）は草津からJR＋阪神で片道約1時間40分、神戸キャンパス（薬・看護・リハ）は新快速＋ポートライナーで約1時間50分。通学可能圏だが実習が多く下宿する学生も多い",
+  "feature": "1972年開学の医科大学を母体に、2022年に兵庫医療大学と統合して医・薬・看護・リハビリテーションの4学部体制となった関西有数の医系総合大学。西宮キャンパスには大規模な大学病院が隣接し、医学部の臨床教育に直結している。薬・看護・リハの3学部は神戸ポートアイランドの神戸キャンパスで学び、4学部合同のチーム医療教育（多職種連携教育）が大きな特色。医療系国家資格の取得を本気で目指す学生が集まる環境。",
+  "living_cost": {
+   "rent_min": 45000,
+   "rent_max": 70000,
+   "food_monthly": 25000,
+   "monthly_total": 110000,
+   "four_year_total": 5300000,
+   "note": "西宮市・神戸ポートアイランド周辺の下宿相場。医学部・薬学部は6年制のため生活費総額はさらに大きくなる（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約99%（要確認）",
+   "top_employers": [
+    "兵庫医科大学病院",
+    "関西圏の大学病院・総合病院",
+    "調剤薬局・ドラッグストア",
+    "製薬企業",
+    "リハビリテーション病院・介護老人保健施設",
+    "保健所等の行政機関"
+   ],
+   "note": "医師・薬剤師・看護師・理学療法士等の国家試験合格が前提。医師国家試験合格率は全国平均を上回る水準（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "阪神本線 武庫川駅 徒歩約5分（西宮キャンパス）",
+   "walking_min_from_station": 5,
+   "nearby_amenities": "武庫川河畔の落ち着いた環境。阪神沿線で梅田・三宮どちらへも出やすい。神戸キャンパスはポートライナーみなとじま駅周辺で他大学も集まる学園エリア",
+   "area_description": "西宮キャンパスは武庫川沿いの病院一体型キャンパス。神戸キャンパスは神戸ポートアイランドの計画都市エリア"
+  },
+  "shogakukin": {
+   "general_shogakukin": "医学部には兵庫県推薦入学制度（地域枠・修学資金貸与）や特待生制度あり（要確認）。全学部で日本学生支援機構奨学金・大学独自奨学金を利用可能",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "医学部は附属病院での臨床実習・初期研修に直結",
+    "薬・看護・リハは国家試験対策と就職支援が一体化",
+    "医療系専門職に特化したキャリア支援で求人が集まりやすい"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.hyo-med.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "医・薬・看護・リハビリを1つの学園で学べる私立の医系総合大学で、附属の大学病院を持つのが最大の強み。滋賀からは下宿圏だが、「医療系専門職に確実になりたい」なら関西圏で有力な選択肢。",
+  "employment": {
+   "ratings": {
+    "kyoin": 1,
+    "shogakkō": 1,
+    "keisatsu": 1,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 5
+   },
+   "strengths": [
+    "附属の兵庫医科大学病院を核とした医療系就職に圧倒的に強い",
+    "4学部合同のチーム医療教育で多職種連携を実践的に学べる",
+    "国家試験対策のサポートが手厚く合格実績が安定している"
+   ],
+   "representative_employers": [
+    "兵庫医科大学病院",
+    "関西圏の大学病院・総合病院",
+    "調剤薬局・ドラッグストア",
+    "製薬企業",
+    "リハビリテーション専門病院"
+   ],
+   "summary": "医療系国家資格の専門職就職に特化した医系総合大学。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（医学部）",
+     "hyoutei_min": null,
+     "hyoutei_note": "出願要件あり（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力検査",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "10倍以上（要確認）",
+     "notes": "実施枠・要件は年度により変わるため要確認"
+    },
+    {
+     "method_name": "総合型選抜（薬・看護・リハビリテーション学部）",
+     "hyoutei_min": null,
+     "hyoutei_note": "学部により基準が異なる（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文・基礎能力検査等"
+     ],
+     "bairitsu": "1.5〜4倍（要確認）",
+     "notes": null
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（医学部・公募制）",
+     "hyoutei_min": 4,
+     "hyoutei_note": "4.0以上（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力検査",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "5〜10倍（要確認）",
+     "notes": "兵庫県推薦入学制度（地域枠・修学資金貸与）もあり（要確認）"
+    },
+    {
+     "method_name": "学校推薦型選抜（薬・看護・リハビリテーション学部・公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "3.0〜3.5前後（学部により異なる・要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力検査",
+      "面接"
+     ],
+     "bairitsu": "1.5〜4倍（要確認）",
+     "notes": null
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜A（医学部）",
+     "subjects": "英語・数学・理科2科目＋小論文・面接",
+     "notes": "私立医学部の中では関西で受験者が多い。2次試験で面接・小論文を課す",
+     "bairitsu": "10〜15倍（要確認）"
+    },
+    {
+     "method_name": "一般選抜（薬・看護・リハビリテーション学部）",
+     "subjects": "英語＋数学・理科・国語から選択の2〜3教科型（学部により異なる・要確認）",
+     "notes": "複数日程あり（要確認）",
+     "bairitsu": "2〜5倍（要確認）"
+    },
+    {
+     "method_name": "共通テスト利用選抜（薬・看護・リハビリテーション学部）",
+     "subjects": "共通テスト2〜3教科（学部により異なる・要確認）",
+     "notes": "医学部での共通テスト利用の有無は要確認",
+     "bairitsu": "2〜6倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "hyogo-ika-igaku",
+   "uni_id": "hyogo-ika",
+   "name": "医学部",
+   "campus": "西宮キャンパス（兵庫県西宮市）",
+   "hensachi": {
+    "min": 62.5,
+    "max": 65,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（枠・要件は要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦のほか兵庫県推薦入学制度（地域枠）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜A。学科試験＋小論文・面接",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": null,
+     "note": "共通テスト利用の有無は要確認",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hyogo-ika-yaku",
+   "uni_id": "hyogo-ika",
+   "name": "薬学部（医療薬学科・6年制）",
+   "campus": "神戸キャンパス（兵庫県神戸市中央区・ポートアイランド）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師国家試験受験資格"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hyogo-ika-kango",
+   "uni_id": "hyogo-ika",
+   "name": "看護学部（看護学科）",
+   "campus": "神戸キャンパス（兵庫県神戸市中央区・ポートアイランド）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格（選抜制・要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hyogo-ika-riha",
+   "uni_id": "hyogo-ika",
+   "name": "リハビリテーション学部（理学療法学科・作業療法学科）",
+   "campus": "神戸キャンパス（兵庫県神戸市中央区・ポートアイランド）",
+   "hensachi": {
+    "min": 45,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "理学療法士国家試験受験資格（理学療法学科）",
+    "作業療法士国家試験受験資格（作業療法学科）"
+   ],
+   "interest_tags": [
+    "iryo",
+    "sports"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "sports_kenko"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

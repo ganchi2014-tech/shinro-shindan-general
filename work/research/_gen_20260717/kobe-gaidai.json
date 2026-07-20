@@ -1,0 +1,462 @@
+{
+ "uni": {
+  "id": "kobe-gaidai",
+  "name": "神戸市外国語大学",
+  "name_short": "神戸市外大",
+  "prefecture": "兵庫県",
+  "type": "公立",
+  "campus_main": "学園都市キャンパス",
+  "tuition_yen_per_year": 535800,
+  "tuition_note": "公立標準額（授業料535,800円）。入学金は神戸市内・市外出身で金額が異なる（要確認）",
+  "access_from_shiga_min": 135,
+  "commute_possible": false,
+  "commute_note": "草津・大津からJRで三ノ宮、地下鉄西神・山手線に乗り換え学園都市駅まで片道約2時間15分。下宿が基本",
+  "feature": "1949年開学の伝統ある公立外国語大学。外国語学部のみの単科大学で、英米・ロシア・中国・イスパニア（スペイン語）・国際関係の5学科と夜間の第2部英米学科を持つ。少人数教育と通訳翻訳教育に定評があり、卒業生は商社・航空・メーカー海外部門など国際系の進路に強い。公立のため学費が安く、外国語を本格的に学びたい受験生の全国区の志望校。",
+  "living_cost": {
+   "rent_min": 35000,
+   "rent_max": 55000,
+   "food_monthly": 25000,
+   "monthly_total": 85000,
+   "four_year_total": 4100000,
+   "note": "学園都市周辺は学生街で家賃は神戸中心部より安め。下宿前提の概算（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約98%（要確認）",
+   "top_employers": [
+    "総合商社・専門商社",
+    "航空・旅行業界（ANA・JAL系など）",
+    "グローバルメーカーの海外営業部門",
+    "金融機関",
+    "神戸市役所など公務員",
+    "中学・高校の英語教員"
+   ],
+   "note": "小規模ながら語学力を武器に商社・航空・国際系企業への就職に強い伝統校（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "神戸市営地下鉄西神・山手線 学園都市駅 徒歩約5分",
+   "walking_min_from_station": 5,
+   "nearby_amenities": "駅前に商業施設・飲食店あり。周辺には他大学も集まる学園都市エリア",
+   "area_description": "神戸市西区の計画的につくられた学術・住宅エリア。三宮まで地下鉄で約30分"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、授業料減免制度・大学独自の奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "小規模大学ならではのきめ細かい個別就職支援",
+    "商社・航空・観光など語学を活かす業界への就職実績",
+    "教員・公務員志望者向けのサポート"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.kobe-cufs.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "公立で学費を抑えながら、外国語大学として全国トップクラスの環境で英語・スペイン語・ロシア語・中国語を極められる。通訳・商社・航空業界を目指すなら関西で有力な選択肢。",
+  "employment": {
+   "ratings": {
+    "kyoin": 3,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "語学力＋国際教養で商社・航空・観光業界に強い",
+    "通訳・翻訳の専門教育に定評",
+    "英語教員（中学・高校）への道が開ける",
+    "公立で学費が安く留学と両立しやすい"
+   ],
+   "representative_employers": [
+    "総合商社・専門商社",
+    "ANA・JALなど航空業界",
+    "グローバルメーカー",
+    "金融機関",
+    "神戸市役所など公務員"
+   ],
+   "summary": "語学を武器に国際系企業・商社・航空へ強い公立外大。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": 4,
+     "hyoutei_note": "4.0以上（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文（英語力を問う内容を含む）",
+      "面接"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "共通テストを課さない方式（要確認）。外国語の高い学力が前提"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋二次試験（英語・国語など。外国語の配点が高い）（要確認）",
+     "notes": "二次試験は外国語重視。第2部（夜間）は別区分で募集（要確認）",
+     "bairitsu": "2〜4倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "kobe-gaidai-eibei",
+   "uni_id": "kobe-gaidai",
+   "name": "外国語学部 英米学科",
+   "campus": "学園都市キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語）（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "maker",
+    "service",
+    "kyoiku",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kobe-gaidai-russia",
+   "uni_id": "kobe-gaidai",
+   "name": "外国語学部 ロシア学科",
+   "campus": "学園都市キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語）（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "maker",
+    "ryutsu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kobe-gaidai-china",
+   "uni_id": "kobe-gaidai",
+   "name": "外国語学部 中国学科",
+   "campus": "学園都市キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 52.5,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語）（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "maker",
+    "ryutsu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kobe-gaidai-hispania",
+   "uni_id": "kobe-gaidai",
+   "name": "外国語学部 イスパニア学科",
+   "campus": "学園都市キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語）（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "maker",
+    "ryutsu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kobe-gaidai-kokusai",
+   "uni_id": "kobe-gaidai",
+   "name": "外国語学部 国際関係学科",
+   "campus": "学園都市キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験（前期日程）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語）（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "shakai"
+   ],
+   "employment_fields": [
+    "maker",
+    "koumuin",
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "kobe-gaidai-eibei2",
+   "uni_id": "kobe-gaidai",
+   "name": "外国語学部 第2部英米学科（夜間）",
+   "campus": "学園都市キャンパス（兵庫県神戸市西区）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜・社会人特別選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋二次試験。夜間主で授業料がさらに安い（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許状（英語）（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "maker",
+    "service",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

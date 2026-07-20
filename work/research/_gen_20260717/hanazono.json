@@ -1,0 +1,252 @@
+{
+ "uni": {
+  "id": "hanazono",
+  "name": "花園大学",
+  "name_short": "花園大",
+  "prefecture": "京都府",
+  "type": "私立",
+  "campus_main": "本部キャンパス（京都市中京区）",
+  "tuition_yen_per_year": 1100000,
+  "access_from_shiga_min": 55,
+  "commute_possible": true,
+  "commute_note": "草津からJR琵琶湖線→京都駅→嵯峨野線円町駅で片道約55分。滋賀県南部から自宅通学が十分可能",
+  "feature": "臨済宗妙心寺派の禅の精神を建学の理念とする、文学部と社会福祉学部の2学部からなる小規模大学。1872年創立の教育機関を起源とする歴史ある大学で、仏教学・日本史・日本文学など人文系の学びに強みを持つ。社会福祉分野は関西でも伝統があり、社会福祉士・精神保健福祉士・保育士など福祉系資格の取得を目指せる。少人数教育で学生と教員の距離が近い。",
+  "living_cost": {
+   "rent_min": 40000,
+   "rent_max": 60000,
+   "food_monthly": 25000,
+   "monthly_total": 85000,
+   "four_year_total": 4080000,
+   "note": "京都市内の下宿相場。滋賀県南部からは自宅通学が現実的で、その場合は大幅に抑えられる"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約95%（要確認）",
+   "top_employers": [
+    "社会福祉法人（京都府内の福祉施設）",
+    "児童養護施設・保育所",
+    "京都府・京都市（福祉職等）",
+    "医療法人（医療ソーシャルワーカー）",
+    "一般企業（小売・サービス）",
+    "寺院・宗教法人"
+   ],
+   "note": "社会福祉士国家試験の合格実績に伝統がある（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR嵯峨野線 円町駅 徒歩約8分",
+   "walking_min_from_station": 8,
+   "nearby_amenities": "円町駅周辺にスーパー・飲食店・コンビニ。妙心寺・北野天満宮が徒歩圏",
+   "area_description": "京都市中京区の住宅・寺社エリア。落ち着いた環境で、京都駅から2駅とアクセスも良い"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入試成績による特待生制度・独自奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "少人数ならではの個別就職支援",
+    "福祉施設・社会福祉法人との実習を通じた太いパイプ",
+    "社会福祉士等の国家試験対策サポート"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.hanazono.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "滋賀県南部から片道1時間弱で自宅通学できる福祉・心理・仏教系の小規模大学。「社会福祉士や保育士の資格を確実に取りたい」「京都で歴史や仏教を学びたい」人にとって、面接・小論文中心の入試で挑戦しやすい選択肢。",
+  "region": "kyoto",
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 2,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 3
+   },
+   "strengths": [
+    "社会福祉士・精神保健福祉士など福祉系国家資格の取得ルートが確立",
+    "京都府内の福祉施設・児童福祉分野への就職に強い",
+    "中学・高校教員免許（国語・社会・宗教等）が取得可能",
+    "少人数で資格取得から就職まで手厚い支援"
+   ],
+   "representative_employers": [
+    "京都府内の社会福祉法人",
+    "児童養護施設・保育所",
+    "京都府・京都市（福祉職）",
+    "医療法人（相談員）",
+    "一般企業"
+   ],
+   "summary": "福祉・保育・心理分野に強みを持つ京都の小規模伝統校。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は原則なし（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文または課題（要確認）"
+     ],
+     "bairitsu": "1.1〜1.5倍（要確認）",
+     "notes": null
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は緩やか（要確認）",
+     "selection_content": [
+      "書類",
+      "基礎学力試験または小論文（要確認）",
+      "面接（要確認）"
+     ],
+     "bairitsu": "1.1〜2倍（要確認）",
+     "notes": null
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "2教科型（英語・国語等から選択）（要確認）",
+     "notes": "共通テスト利用選抜あり。評定不問",
+     "bairitsu": "1.1〜2倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "hanazono-bungaku",
+   "uni_id": "hanazono",
+   "name": "文学部",
+   "campus": "本部キャンパス（京都府京都市中京区）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期等）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校教諭一種（国語・社会・宗教）（要確認）",
+    "高等学校教諭一種（国語・地理歴史・宗教）（要確認）",
+    "学芸員",
+    "図書館司書"
+   ],
+   "interest_tags": [
+    "bungaku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "service",
+    "ryutsu"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "hanazono-fukushi",
+   "uni_id": "hanazono",
+   "name": "社会福祉学部",
+   "campus": "本部キャンパス（京都府京都市中京区）",
+   "hensachi": {
+    "min": 35,
+    "max": 37.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（公募制）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（前期・後期等）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "社会福祉士（受験資格）",
+    "精神保健福祉士（受験資格）（要確認）",
+    "保育士（児童福祉学科）（要確認）",
+    "幼稚園教諭一種（児童福祉学科）（要確認）",
+    "認定心理士（臨床心理学科）（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,547 @@
+{
+ "uni": {
+  "id": "shizuoka-univ",
+  "name": "静岡大学",
+  "name_short": "静岡大",
+  "prefecture": "静岡県",
+  "type": "国立",
+  "campus_main": "静岡キャンパス",
+  "tuition_yen_per_year": 535800,
+  "tuition_note": "国立大学標準額（授業料535,800円/年）。入学金282,000円が別途必要",
+  "access_from_shiga_min": 180,
+  "commute_possible": false,
+  "commute_note": "草津・大津から京都経由で新幹線を使っても静岡キャンパスまで片道3時間前後、浜松キャンパスでも2時間半程度。通学は不可能で下宿前提",
+  "feature": "静岡市と浜松市に2つのキャンパスを持つ東海地方の国立総合大学。人文社会科学・教育・理・農・グローバル共創科学の各学部が静岡、情報・工学部が浜松に置かれる。ものづくり県・静岡を背景に、スズキ・ヤマハ発動機・浜松ホトニクスなど地元製造業との結びつきが強い。教員養成の伝統も長く、静岡県内の小中学校に多くの教員を輩出している。",
+  "living_cost": {
+   "rent_min": 30000,
+   "rent_max": 50000,
+   "food_monthly": 25000,
+   "monthly_total": 80000,
+   "four_year_total": 3800000,
+   "note": "静岡市・浜松市とも家賃相場は関西都市部よりやや安め。両キャンパス周辺に学生向け物件が多い（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約96%（要確認）",
+   "top_employers": [
+    "スズキ",
+    "ヤマハ発動機",
+    "浜松ホトニクス",
+    "静岡県庁・県内市役所",
+    "静岡県教員（小・中・高）",
+    "静岡銀行",
+    "トヨタ自動車",
+    "本田技研工業"
+   ],
+   "note": "東海地方の製造業・IT・インフラに強く、教員・公務員の輩出も多い。理工系は大学院進学率が高い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR静岡駅からバス約25分（静岡キャンパス）／JR浜松駅からバス約20分（浜松キャンパス）",
+   "walking_min_from_station": null,
+   "nearby_amenities": "静岡キャンパス周辺は学生向けの飲食店・スーパーがあり、静岡駅前には大型商業施設。浜松キャンパスは市街地に近く生活利便性が高い",
+   "area_description": "静岡キャンパスは日本平の麓の高台にあり自然豊かで眺めが良い。浜松キャンパスは住宅街の中の落ち着いた立地"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか、高等教育修学支援新制度（授業料減免＋給付奨学金）の対象。大学独自の基金による支援制度もあり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "静岡・浜松の両キャンパスにキャリアサポート窓口",
+    "東海地方の製造業・地元企業とのパイプが太い",
+    "教員採用試験・公務員試験の対策支援"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.shizuoka.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "国立の学費で理工系・情報系から教員養成・文系まで学べる東海の拠点大学。スズキ・ヤマハなど地元大手メーカーへの就職に強く、地元静岡での評価は絶大。滋賀からは下宿前提だが、家賃相場が安く生活費は抑えやすい。",
+  "employment": {
+   "ratings": {
+    "kyoin": 4,
+    "shogakkō": 4,
+    "keisatsu": 3,
+    "shōbō": 2,
+    "kōmuin_ippan": 4,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 2,
+    "iryō": 1
+   },
+   "strengths": [
+    "スズキ・ヤマハ発動機・浜松ホトニクスなど東海の製造業への就職に強い",
+    "教育学部を中心に静岡県内の教員採用実績が豊富",
+    "県庁・市役所など地元公務員への就職ルートが確立",
+    "情報学部・工学部はIT・メーカー技術職に直結"
+   ],
+   "representative_employers": [
+    "スズキ",
+    "ヤマハ発動機",
+    "浜松ホトニクス",
+    "静岡県庁・県内市役所",
+    "静岡県教員",
+    "静岡銀行"
+   ],
+   "summary": "東海地方の中核国立。製造業・教員・公務員に強い。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類審査",
+      "面接",
+      "小論文・プレゼンテーション等（学部により異なる）"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "実施している学部・学科は一部に限られる（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": 4,
+     "hyoutei_note": "4.0以上を課す学科が多い（要確認）",
+     "selection_content": [
+      "書類審査",
+      "面接",
+      "小論文等",
+      "共通テスト（課す学科と課さない学科がある）"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "多くの学部で実施されるが募集人数は少なめ。学科ごとに要件が異なるため要項確認が必須"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト5教科7科目程度＋個別試験2〜3科目（学部・学科による）",
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "募集の中心。個別試験の科目・配点は学部で大きく異なる"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト＋小論文・面接・総合問題等（学部による）",
+     "bairitsu": "4〜10倍（要確認）",
+     "notes": "募集枠が小さく倍率は高め"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "shizuoka-univ-jinbun",
+   "uni_id": "shizuoka-univ",
+   "name": "人文社会科学部",
+   "campus": "静岡キャンパス（静岡県静岡市駿河区）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は学科・年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（学科により実施状況が異なる・要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋個別試験）。経済・法学科には夜間主コースもあり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許（国語・社会・英語など。専攻・課程による）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "shizuoka-univ-kyoiku",
+   "uni_id": "shizuoka-univ",
+   "name": "教育学部",
+   "campus": "静岡キャンパス（静岡県静岡市駿河区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は専攻・年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋個別試験。面接を課す専攻あり・要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許",
+    "中学校教諭一種免許",
+    "高等学校教諭一種免許",
+    "幼稚園教諭一種免許（専攻による）（要確認）",
+    "特別支援学校教諭一種免許（専攻による）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "shizuoka-univ-joho",
+   "uni_id": "shizuoka-univ",
+   "name": "情報学部",
+   "campus": "浜松キャンパス（静岡県浜松市中央区）",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は学科・年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋個別試験）。文系寄りの情報社会学科と理系の情報科学科で科目が異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許（情報・数学など。学科による）（要確認）"
+   ],
+   "interest_tags": [
+    "joho"
+   ],
+   "employment_fields": [
+    "it",
+    "maker",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "shizuoka-univ-rigaku",
+   "uni_id": "shizuoka-univ",
+   "name": "理学部",
+   "campus": "静岡キャンパス（静岡県静岡市駿河区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は学科・年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋個別試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭一種免許（数学・理科）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "shizuoka-univ-kogaku",
+   "uni_id": "shizuoka-univ",
+   "name": "工学部",
+   "campus": "浜松キャンパス（静岡県浜松市中央区）",
+   "hensachi": {
+    "min": 45,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は学科・年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋個別試験は数学・理科中心）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許（工業など。学科による）（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "shizuoka-univ-nogaku",
+   "uni_id": "shizuoka-univ",
+   "name": "農学部",
+   "campus": "静岡キャンパス（静岡県静岡市駿河区）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は学科・年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋個別試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許（理科・農業）（要確認）",
+    "食品衛生管理者・食品衛生監視員（任用資格）（要確認）",
+    "樹木医補（要確認）"
+   ],
+   "interest_tags": [
+    "nogaku"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "maker",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "shizuoka-univ-global",
+   "uni_id": "shizuoka-univ",
+   "name": "グローバル共創科学部",
+   "campus": "静岡キャンパス（静岡県静岡市駿河区）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜を実施（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期・後期日程（共通テスト＋個別試験）。2023年新設の文理融合学部",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "shakai",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "service",
+    "koumuin",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

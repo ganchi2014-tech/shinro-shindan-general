@@ -1,0 +1,425 @@
+{
+ "uni": {
+  "id": "seikei",
+  "name": "成蹊大学",
+  "name_short": "成蹊大",
+  "prefecture": "東京都",
+  "type": "私立",
+  "campus_main": "吉祥寺キャンパス",
+  "tuition_yen_per_year": 1200000,
+  "tuition_note": "文系学部の概算（授業料＋施設費）。理工学部は約165万円（要確認）",
+  "access_from_shiga_min": 210,
+  "commute_possible": false,
+  "commute_note": "東京・武蔵野市のため通学不可。下宿前提（草津から新幹線経由で片道約3時間半）",
+  "feature": "三菱グループゆかりの実業家・中村春二が創設した伝統校で、「成成明学」と呼ばれる首都圏中堅上位私大グループの代表格。経済・経営・法・文・理工の5学部すべてが吉祥寺のワンキャンパスに集まり、4年間同じ場所で学べる。少人数教育を重視し、学生数約8,000人と総合大学としてはコンパクト。三菱系企業をはじめ大手企業への就職に伝統的に強い。",
+  "living_cost": {
+   "rent_min": 60000,
+   "rent_max": 90000,
+   "food_monthly": 30000,
+   "monthly_total": 130000,
+   "four_year_total": 6200000,
+   "note": "吉祥寺周辺は家賃が高め。三鷹・西東京市方面や中央線・西武線沿線に住む学生が多い"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "三菱UFJ銀行",
+    "東京海上日動火災保険",
+    "三菱電機",
+    "りそなグループ",
+    "全日本空輸（ANA）",
+    "富士通",
+    "特別区（東京23区）職員"
+   ],
+   "note": "三菱グループとの歴史的つながりがあり、金融・メーカー・商社系への就職が伝統的に強い（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "JR中央線・京王井の頭線 吉祥寺駅 徒歩約15分（駅からバスも利用可）",
+   "walking_min_from_station": 15,
+   "nearby_amenities": "吉祥寺駅周辺の商店街・商業施設、井の頭公園が生活圏",
+   "area_description": "「住みたい街ランキング」常連の吉祥寺。ケヤキ並木のある落ち着いた文教エリアにワンキャンパスが立地"
+  },
+  "shogakukin": {
+   "general_shogakukin": "入試成績優秀者向け奨学金や地方出身学生向けの独自奨学金制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "小規模総合大学を活かした個別就職支援",
+    "低学年からのキャリア教育プログラム",
+    "OB・OGネットワークと大手企業とのつながり"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.seikei.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "MARCHに次ぐ「成成明学」の筆頭格。吉祥寺のワンキャンパスで全学部が4年間学べ、規模の割に大手就職に強い。首都圏の私大文系・理系を狙う滋賀の受験生の有力な併願候補。",
+  "notable_alumni": [
+   "安倍晋三（元内閣総理大臣）",
+   "高島彩（アナウンサー）"
+  ],
+  "employment": {
+   "ratings": {
+    "kyoin": 2,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "三菱グループゆかりの伝統で金融・大手メーカー就職に強い",
+    "少人数教育で就職支援が手厚い",
+    "吉祥寺ワンキャンパスで学部を超えた人脈が作りやすい"
+   ],
+   "representative_employers": [
+    "三菱UFJ銀行",
+    "東京海上日動火災保険",
+    "三菱電機",
+    "ANA",
+    "りそなグループ",
+    "富士通"
+   ],
+   "summary": "首都圏中堅上位私大。大手企業（特に金融・メーカー）就職に伝統的に強い。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（AOマルデス入試等）（要確認）",
+     "hyoutei_min": null,
+     "hyoutei_note": "学部により出願要件が異なる（要確認）",
+     "selection_content": [
+      "書類",
+      "小論文等",
+      "面接"
+     ],
+     "bairitsu": "2〜5倍（要確認）",
+     "notes": "実施学部・名称・方式は年度により異なるため要項で要確認"
+    }
+   ],
+   "koubo": [],
+   "ippan": [
+    {
+     "method_name": "一般選抜A方式（学部個別・3教科型）",
+     "subjects": "英語＋国語＋選択科目（理工は英・数・理）",
+     "notes": "学部ごとの個別試験。成蹊のメイン方式",
+     "bairitsu": "3〜5倍（要確認）"
+    },
+    {
+     "method_name": "一般選抜E方式（2教科型全学部統一）",
+     "subjects": "2教科型（英語外部検定利用等あり）（要確認）",
+     "notes": "全学部統一日程で複数学部の併願がしやすい（要確認）",
+     "bairitsu": "4〜8倍（要確認）"
+    },
+    {
+     "method_name": "共通テスト利用選抜（G方式等）",
+     "subjects": "共通テストの得点のみで判定（3教科型等）",
+     "notes": "個別試験なしで出願可能。方式の種類は要項で要確認",
+     "bairitsu": "3〜6倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "seikei-keizai",
+   "uni_id": "seikei",
+   "name": "経済学部（経済数理学科・現代経済学科）",
+   "campus": "吉祥寺キャンパス（東京都武蔵野市）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜の実施有無・方式は年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦はなし。指定校推薦が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "A方式（3教科）・E方式（2教科型全学部統一）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜（G方式等）あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭免許（社会・公民など）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "seikei-keiei",
+   "uni_id": "seikei",
+   "name": "経営学部（総合経営学科）",
+   "campus": "吉祥寺キャンパス（東京都武蔵野市）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜の実施有無・方式は年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦はなし。指定校推薦が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "A方式（3教科）・E方式（2教科型全学部統一）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜（G方式等）あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "特になし（資格取得より企業就職が中心）（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "ryutsu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "seikei-ho",
+   "uni_id": "seikei",
+   "name": "法学部（法律学科・政治学科）",
+   "campus": "吉祥寺キャンパス（東京都武蔵野市）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜の実施有無・方式は年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦はなし。指定校推薦が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "A方式（3教科）・E方式（2教科型全学部統一）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜（G方式等）あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭免許（社会・公民など）（要確認）",
+    "法学検定・行政書士等の受験基礎（資格は卒業要件外）"
+   ],
+   "interest_tags": [
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "seikei-bun",
+   "uni_id": "seikei",
+   "name": "文学部（英語英米文学科・日本文学科・国際文化学科・現代社会学科）",
+   "campus": "吉祥寺キャンパス（東京都武蔵野市）",
+   "hensachi": {
+    "min": 55,
+    "max": 57.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜の実施有無・方式は年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦はなし。指定校推薦が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "A方式（3教科）・E方式（2教科型全学部統一）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜（G方式等）あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭免許（国語・英語・社会など）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "gaikokugo"
+   ],
+   "employment_fields": [
+    "media",
+    "service",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "seikei-riko",
+   "uni_id": "seikei",
+   "name": "理工学部（理工学科：データ数理・コンピュータ科学・機械システム・電気電子・応用化学）",
+   "campus": "吉祥寺キャンパス（東京都武蔵野市）",
+   "hensachi": {
+    "min": 50,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜の実施有無・方式は年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": false,
+     "note": "公募制推薦はなし。指定校推薦が中心（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "A方式（英・数・理）・E方式（2教科型全学部統一）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用選抜（G方式等）あり",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭免許（数学・理科・情報）（要確認）",
+    "各種技術系資格の受験基礎（基本情報技術者など）"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "maker",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

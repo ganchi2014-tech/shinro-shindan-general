@@ -1,0 +1,466 @@
+{
+ "uni": {
+  "id": "aichi-kyoiku",
+  "name": "愛知教育大学",
+  "name_short": "愛教大",
+  "prefecture": "愛知県",
+  "type": "国立",
+  "campus_main": "井ヶ谷キャンパス",
+  "tuition_yen_per_year": 535800,
+  "access_from_shiga_min": 170,
+  "commute_possible": false,
+  "commute_note": "草津からJRで名古屋・刈谷方面へ乗り継ぎ、駅からバス利用で片道約2時間半〜3時間。下宿前提",
+  "feature": "教育学部のみの単科国立大学で、東海地方の教員養成の中核を担う。小学校教員の採用者数は全国トップクラスで、愛知県・名古屋市をはじめ東海3県の学校現場に卒業生を多数輩出している。幼児教育から高校教育・特別支援・養護教諭まで教員免許の種類が幅広く、教員採用試験対策のサポートも手厚い。近年は心理・福祉など学校を支える専門職を育てる課程も設置されている。",
+  "living_cost": {
+   "rent_min": 30000,
+   "rent_max": 55000,
+   "food_monthly": 25000,
+   "monthly_total": 80000,
+   "four_year_total": 3900000,
+   "note": "刈谷市郊外で家賃は名古屋市内より安め。大学周辺に学生向けアパートが多い（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "愛知県教育委員会（公立小・中・高校教員）",
+    "名古屋市教育委員会",
+    "岐阜県・三重県など東海各県の教育委員会",
+    "私立学校",
+    "公務員（県庁・市役所等）",
+    "教育関連企業"
+   ],
+   "note": "卒業生の過半数が教員として就職。小学校教員採用数は全国有数（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "名鉄知立駅からバス約20〜30分（JR刈谷駅からもバスあり）",
+   "walking_min_from_station": null,
+   "nearby_amenities": "キャンパス周辺は郊外で店は少なめ。刈谷・知立市街まで出れば生活には困らない",
+   "area_description": "刈谷市郊外の緑豊かな丘陵地にある広いキャンパス。自転車・バス通学が中心"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構のほか大学独自の授業料免除・支援制度あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "教員採用試験対策（筆記・面接・模擬授業）の指導が手厚い",
+    "教育委員会とのつながりが強く現場情報が豊富",
+    "教員以外の公務員・企業就職の支援窓口もあり"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.aichi-edu.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「小学校や中学校の先生になりたい」なら東海エリアで最有力の教員養成単科大学。滋賀からは下宿前提だが、教員就職実績は全国トップクラスで、愛知県・名古屋市の教員を目指すなら特に強い。",
+  "region": "tokai",
+  "employment": {
+   "ratings": {
+    "kyoin": 5,
+    "shogakkō": 5,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 2
+   },
+   "strengths": [
+    "小学校教員採用数が全国トップクラス",
+    "愛知県・名古屋市など東海の教育委員会に強力なパイプ",
+    "幼稚園から高校・特別支援・養護教諭まで免許の選択肢が広い",
+    "教員採用試験対策の学内サポートが充実"
+   ],
+   "representative_employers": [
+    "愛知県教育委員会",
+    "名古屋市教育委員会",
+    "岐阜県・三重県教育委員会",
+    "私立学校",
+    "県庁・市役所等の公務員"
+   ],
+   "summary": "教員志望なら東海随一の実績を持つ教員養成単科大学。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "4.0以上程度（専攻により異なる・要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接",
+      "専攻により実技等"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "共通テストを課さない方式が中心（専攻により異なる・要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト（5教科型が基本）＋個別試験（専攻により教科試験・実技・面接・小論文等）",
+     "notes": "多くの専攻が前期日程中心。後期日程の有無は専攻による（要確認）",
+     "bairitsu": "2〜4倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "aichi-kyoiku-gimu",
+   "uni_id": "aichi-kyoiku",
+   "name": "教育学部 学校教員養成課程 義務教育専攻",
+   "campus": "井ヶ谷キャンパス（愛知県刈谷市）",
+   "hensachi": {
+    "min": 45,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は専修・年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（専修により実施状況が異なる・要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（5教科型が基本）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "中学校教諭一種免許状（専修の教科）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "aichi-kyoiku-koto",
+   "uni_id": "aichi-kyoiku",
+   "name": "教育学部 学校教員養成課程 高等学校教育専攻",
+   "campus": "井ヶ谷キャンパス（愛知県刈谷市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は専攻・年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（専攻により実施状況が異なる・要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（5教科型が基本）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭一種免許状（専攻の教科）",
+    "中学校教諭一種免許状（専攻の教科）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "aichi-kyoiku-yoji",
+   "uni_id": "aichi-kyoiku",
+   "name": "教育学部 学校教員養成課程 幼児教育専攻",
+   "campus": "井ヶ谷キャンパス（愛知県刈谷市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（5教科型が基本）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "幼稚園教諭一種免許状",
+    "小学校教諭免許状（取得可・要確認）",
+    "保育士（取得可否は要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "aichi-kyoiku-tokushi",
+   "uni_id": "aichi-kyoiku",
+   "name": "教育学部 学校教員養成課程 特別支援教育専攻",
+   "campus": "井ヶ谷キャンパス（愛知県刈谷市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（5教科型が基本）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "特別支援学校教諭一種免許状",
+    "小学校教諭一種免許状"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "aichi-kyoiku-yogo",
+   "uni_id": "aichi-kyoiku",
+   "name": "教育学部 学校教員養成課程 養護教育専攻",
+   "campus": "井ヶ谷キャンパス（愛知県刈谷市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況は年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（5教科型が基本）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "養護教諭一種免許状"
+   ],
+   "interest_tags": [
+    "kyoiku",
+    "iryo"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "iryo_fukushi"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "aichi-kyoiku-shien",
+   "uni_id": "aichi-kyoiku",
+   "name": "教育学部 教育支援専門職養成課程（心理・福祉・教育ガバナンス）",
+   "campus": "井ヶ谷キャンパス（愛知県刈谷市）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施状況はコース・年度により異なる（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（コースにより実施状況が異なる・要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共通テスト＋二次試験）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト必須（5教科型が基本）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "公認心理師（受験資格・大学院進学等の要件あり／心理コース・要確認）",
+    "認定心理士（心理コース・要確認）",
+    "社会福祉士（受験資格／福祉コース・要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku",
+    "shakai"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "iryo_fukushi",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

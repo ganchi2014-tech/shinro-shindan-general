@@ -1,0 +1,700 @@
+{
+ "uni": {
+  "id": "todai",
+  "name": "東京大学",
+  "name_short": "東大",
+  "prefecture": "東京都",
+  "type": "国立",
+  "campus_main": "本郷キャンパス",
+  "tuition_yen_per_year": 642960,
+  "tuition_note": "2025年度入学者から年間授業料642,960円に改定。入学金282,000円が別途必要（要確認）。授業料免除・減額制度が手厚い",
+  "access_from_shiga_min": 210,
+  "commute_possible": false,
+  "commute_note": "草津・大津から京都経由で新幹線利用でも片道約3.5時間。下宿前提",
+  "feature": "日本を代表する国立総合大学で、10学部を擁する国内最難関校。入試は文科一〜三類・理科一〜三類の「科類」単位で行われ、全員が駒場キャンパスで2年間の前期教養課程を学んだ後に「進学選択」で学部・学科を決める仕組みが最大の特徴。研究力は世界トップクラスで、国家公務員・法曹・研究者・大手企業・起業まで進路の幅が非常に広い。授業料免除や給付奨学金など経済支援も充実している。",
+  "living_cost": {
+   "rent_min": 55000,
+   "rent_max": 90000,
+   "food_monthly": 30000,
+   "monthly_total": 130000,
+   "four_year_total": 6200000,
+   "note": "東京都心は家賃が高め。本郷・駒場周辺は特に高く、郊外に住んで電車通学する学生も多い（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約95%（要確認）",
+   "top_employers": [
+    "中央省庁（国家公務員総合職）",
+    "外資系コンサルティング（マッキンゼー・アクセンチュア等）",
+    "三菱商事・三井物産などの総合商社",
+    "日本銀行・メガバンク",
+    "ソニーグループ・日立製作所など大手メーカー",
+    "楽天グループなどIT大手",
+    "大学・研究機関"
+   ],
+   "note": "理系を中心に学部卒業者の半数前後が大学院へ進学。就職率は就職希望者ベースの推定（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "東京メトロ南北線「東大前」駅 徒歩約1分／丸ノ内線・都営大江戸線「本郷三丁目」駅 徒歩約8分（本郷キャンパス）",
+   "walking_min_from_station": 1,
+   "nearby_amenities": "本郷通り沿いに飲食店・書店・カフェ。上野・御茶ノ水・秋葉原が徒歩・自転車圏",
+   "area_description": "文京区の落ち着いた文教地区。赤門・安田講堂・三四郎池など歴史ある広大なキャンパス。1・2年次は渋谷に近い駒場キャンパス（目黒区）に通う"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構に加え、東京大学独自の授業料免除・減額制度、学部学生向け給付型奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "キャリアサポート室による個別相談・ガイダンス",
+    "官公庁・大手企業の学内説明会が多数開催",
+    "各界に広がる強力なOB・OGネットワーク"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.u-tokyo.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "言わずと知れた日本最難関の総合大学。「科類」で入学して2年間幅広く学んでから専門を決める進学選択制度があり、入学後に進路を考え直せる。滋賀からは下宿前提だが、授業料免除・給付奨学金など経済支援は国内屈指の手厚さ。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 3,
+    "shogakkō": 2,
+    "keisatsu": 3,
+    "shōbō": 2,
+    "kōmuin_ippan": 5,
+    "kigyō_ippan": 5,
+    "kigyō_supotsu": 2,
+    "iryō": 5
+   },
+   "strengths": [
+    "国家公務員総合職（キャリア官僚）の合格・採用数が全国トップ",
+    "外資系コンサル・金融、総合商社など難関企業就職に圧倒的に強い",
+    "法曹・公認会計士など難関資格試験に強い",
+    "大学院進学を経た研究職・専門職への道が広い"
+   ],
+   "representative_employers": [
+    "中央省庁（国家公務員総合職）",
+    "外資系コンサルティングファーム",
+    "三菱商事などの総合商社",
+    "日本銀行・メガバンク",
+    "ソニーグループ・トヨタ自動車など大手メーカー",
+    "大学・研究機関"
+   ],
+   "summary": "官公庁から大企業・研究職まで国内最高水準の実績。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定平均の基準値ではなく、卓越した学業成績や研究・活動実績が求められる（要確認）",
+     "selection_content": [
+      "書類審査（推薦書・活動実績等）",
+      "面接・グループディスカッション等（学部により異なる）",
+      "共通テスト（概ね8割以上が目安）"
+     ],
+     "bairitsu": "2〜3倍（要確認）",
+     "notes": "全10学部で実施。募集人員は各学部若干名、1校あたりの推薦人数に上限あり（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト（5教科型・広範囲）＋二次試験（文系: 国語・数学・英語・地歴2科目／理系: 国語・数学・英語・理科2科目）",
+     "notes": "文科一〜三類・理科一〜三類の科類単位で出願。共通テストの得点による第1段階選抜（足切り）あり。配点は二次試験の比重が大きい",
+     "bairitsu": "約3倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "todai-ho",
+   "uni_id": "todai",
+   "name": "法学部",
+   "campus": "本郷キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（若干名・共通テスト8割程度が目安）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程。主に文科一類として入学し進学選択を経て進学",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは第1段階選抜と合否判定に利用（共テ単独方式はなし）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "教員免許（中学社会・高校地歴公民）（要確認）"
+   ],
+   "interest_tags": [
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "todai-keizai",
+   "uni_id": "todai",
+   "name": "経済学部",
+   "campus": "本郷キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（若干名・共通テスト8割程度が目安）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程。主に文科二類として入学し進学選択を経て進学",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは第1段階選抜と合否判定に利用（共テ単独方式はなし）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "教員免許（高校公民・地歴）（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "koumuin",
+    "service",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "todai-bun",
+   "uni_id": "todai",
+   "name": "文学部",
+   "campus": "本郷キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（若干名・共通テスト8割程度が目安）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程。主に文科三類として入学し進学選択を経て進学",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは第1段階選抜と合否判定に利用（共テ単独方式はなし）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "教員免許（国語・社会・英語等）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "shakai"
+   ],
+   "employment_fields": [
+    "media",
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "todai-kyoiku",
+   "uni_id": "todai",
+   "name": "教育学部",
+   "campus": "本郷キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（若干名・共通テスト8割程度が目安）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程。主に文科三類として入学し進学選択を経て進学",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは第1段階選抜と合否判定に利用（共テ単独方式はなし）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "教員免許（中学・高校）（要確認）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "todai-kyoyo",
+   "uni_id": "todai",
+   "name": "教養学部（後期課程）",
+   "campus": "駒場キャンパス（東京都目黒区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（若干名・共通テスト8割程度が目安）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程。文科・理科いずれの科類からも進学選択で進学可能",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは第1段階選抜と合否判定に利用（共テ単独方式はなし）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "教員免許（英語・社会等）（要確認）"
+   ],
+   "interest_tags": [
+    "gaikokugo",
+    "shakai"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "media",
+    "service",
+    "it"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "todai-ri",
+   "uni_id": "todai",
+   "name": "理学部",
+   "campus": "本郷キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（若干名・共通テスト8割程度が目安）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程。主に理科一類・二類として入学し進学選択を経て進学",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは第1段階選抜と合否判定に利用（共テ単独方式はなし）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "教員免許（数学・理科）（要確認）",
+    "学芸員（要確認）"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "todai-ko",
+   "uni_id": "todai",
+   "name": "工学部",
+   "campus": "本郷キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（若干名・共通テスト8割程度が目安）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程。主に理科一類として入学し進学選択を経て進学",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは第1段階選抜と合否判定に利用（共テ単独方式はなし）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士受験資格（建築学科）（要確認）",
+    "教員免許（数学・理科・工業）（要確認）"
+   ],
+   "interest_tags": [
+    "riko",
+    "joho"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kensetsu",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "todai-no",
+   "uni_id": "todai",
+   "name": "農学部",
+   "campus": "弥生キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（若干名・共通テスト8割程度が目安）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程。主に理科二類として入学し進学選択を経て進学",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは第1段階選抜と合否判定に利用（共テ単独方式はなし）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "食品衛生管理者（任用資格）（要確認）",
+    "教員免許（理科・農業）（要確認）"
+   ],
+   "interest_tags": [
+    "nogaku"
+   ],
+   "employment_fields": [
+    "shokuhin",
+    "maker",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "todai-yaku",
+   "uni_id": "todai",
+   "name": "薬学部",
+   "campus": "本郷キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 67.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（若干名・共通テスト8割程度が目安）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程。主に理科二類として入学し進学選択を経て進学",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは第1段階選抜と合否判定に利用（共テ単独方式はなし）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "薬剤師国家試験受験資格（6年制薬学科のみ）（要確認）"
+   ],
+   "interest_tags": [
+    "iryo",
+    "riko"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "todai-i",
+   "uni_id": "todai",
+   "name": "医学部",
+   "campus": "本郷キャンパス（東京都文京区）",
+   "hensachi": {
+    "min": 67.5,
+    "max": 72.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（若干名・共通テスト8割程度が目安）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "医学科は主に理科三類（偏差値72.5）、健康総合科学科は主に理科二類から進学",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テストは第1段階選抜と合否判定に利用（共テ単独方式はなし）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "医師国家試験受験資格（医学科）",
+    "看護師・保健師国家試験受験資格（健康総合科学科看護学専修）（要確認）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

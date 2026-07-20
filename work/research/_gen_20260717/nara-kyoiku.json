@@ -1,0 +1,298 @@
+{
+ "uni": {
+  "id": "nara-kyoiku",
+  "name": "奈良教育大学",
+  "name_short": "奈良教育大",
+  "prefecture": "奈良県",
+  "type": "国立",
+  "campus_main": "本部キャンパス（奈良市高畑町）",
+  "tuition_yen_per_year": 535800,
+  "access_from_shiga_min": 105,
+  "commute_possible": true,
+  "commute_note": "草津から約1時間45分。京都駅で近鉄に乗換え近鉄奈良へ、駅からバス約10分。通学圏ぎりぎりで、下宿する学生も多い",
+  "feature": "教員養成を目的とする国立の単科大学で、学部は教育学部のみ。学生の多くが小・中学校の教員を目指し、附属幼稚園・小学校・中学校での実習など実践的な教育が充実している。2022年に奈良女子大学と法人統合し「奈良国立大学機構」の一員となった。奈良公園のすぐ南、世界遺産に囲まれた落ち着いた環境で、書道教育や文化遺産教育など奈良ならではの学びも特色。",
+  "living_cost": {
+   "rent_min": 35000,
+   "rent_max": 55000,
+   "food_monthly": 25000,
+   "monthly_total": 85000,
+   "four_year_total": 4100000,
+   "note": "奈良市内は京阪神より家賃が安め。大学周辺・近鉄奈良駅周辺での下宿が中心（要確認）"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "奈良県内の公立小・中学校",
+    "大阪府・大阪市の公立学校",
+    "京都府・滋賀県など近畿各府県の公立学校",
+    "奈良県庁・市町村役場",
+    "教育関連企業",
+    "一般企業"
+   ],
+   "note": "卒業生の6〜7割前後が保育士・教員含む教育職に進む教員養成大学（要確認）。近畿一円の教員採用試験に強い"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "近鉄奈良駅からバス約10分（高畑町下車すぐ）／徒歩約25分",
+   "walking_min_from_station": 25,
+   "nearby_amenities": "奈良公園・ならまち・東大寺が徒歩圏。飲食店や商店街は近鉄奈良駅周辺に多い",
+   "area_description": "奈良公園南側の高畑町。寺社と住宅が混じる静かな文教エリアで、落ち着いて勉強できる環境"
+  },
+  "shogakukin": {
+   "general_shogakukin": "日本学生支援機構（JASSO）のほか、大学独自の基金による修学支援あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "教員採用試験対策（対策講座・模擬授業・模擬面接）が手厚い",
+    "近畿各府県・政令市の教育委員会とのつながりが強い",
+    "教職支援の専門部署による個別サポート"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.nara-edu.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「先生になりたい」なら関西の国立教員養成大学として有力な選択肢。国立の学費で小学校教員免許が取れ、滋賀からもぎりぎり通学圏。",
+  "employment": {
+   "ratings": {
+    "kyoin": 5,
+    "shogakkō": 5,
+    "keisatsu": 2,
+    "shōbō": 1,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "小学校教員の養成・採用実績で近畿トップクラス",
+    "教員採用試験のサポート体制が手厚い",
+    "附属学校園での実習など実践経験を積みやすい",
+    "国立で学費が安く、生活費も京阪神より抑えやすい"
+   ],
+   "representative_employers": [
+    "奈良県・大阪府・京都府など近畿の公立学校教員",
+    "奈良県庁・市町村役場",
+    "教育関連企業",
+    "一般企業"
+   ],
+   "summary": "教員養成特化の国立単科大学。小学校教員に特に強い。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": "4.0以上程度（専攻・専修により異なる）（要確認）",
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文",
+      "専攻により実技・口述試験"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "専攻・専修により実施の有無や共通テストの要否が異なる（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別試験（専攻・専修により教科試験・小論文・面接・実技など）",
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "教員養成系のため個別試験に面接や実技を課す専修がある（要確認）"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト＋面接・小論文等（実施は一部専攻・専修のみ）",
+     "bairitsu": "3〜6倍（要確認）",
+     "notes": "後期は募集人員が少なく倍率が上がりやすい（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "nara-kyoiku-hattatsu",
+   "uni_id": "nara-kyoiku",
+   "name": "教育学部 学校教育教員養成課程（教育発達専攻）",
+   "campus": "本部キャンパス（奈良県奈良市高畑町）",
+   "hensachi": {
+    "min": 47.5,
+    "max": 50,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は原則実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（専修により実施。要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共テ＋二次）。後期は一部専修のみ（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "幼稚園教諭一種免許状（幼年教育専修）",
+    "特別支援学校教諭一種免許状（特別支援教育専修）",
+    "中学校教諭一種免許状（専修により）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nara-kyoiku-kyoka",
+   "uni_id": "nara-kyoiku",
+   "name": "教育学部 学校教育教員養成課程（教科教育専攻）",
+   "campus": "本部キャンパス（奈良県奈良市高畑町）",
+   "hensachi": {
+    "min": 45,
+    "max": 52.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は原則実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（専修により実施。要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共テ＋二次）。音楽・美術・保健体育などは実技あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "中学校教諭一種免許状（国語・社会・数学・理科・音楽・美術・保健体育・家庭・技術・英語）",
+    "高等学校教諭一種免許状（専修により）"
+   ],
+   "interest_tags": [
+    "kyoiku"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nara-kyoiku-dento",
+   "uni_id": "nara-kyoiku",
+   "name": "教育学部 学校教育教員養成課程（伝統文化教育専攻）",
+   "campus": "本部キャンパス（奈良県奈良市高畑町）",
+   "hensachi": {
+    "min": 45,
+    "max": 47.5,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": "総合型選抜は原則実施なし（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜（専修により実施。書道は実技あり。要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "前期日程（共テ＋二次）。書道教育専修は実技あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "国立のため共通テスト必須",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "小学校教諭一種免許状",
+    "中学校教諭一種免許状（国語・社会）",
+    "高等学校教諭一種免許状（書道・国語・地理歴史など専修により）"
+   ],
+   "interest_tags": [
+    "kyoiku",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "kyoiku",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

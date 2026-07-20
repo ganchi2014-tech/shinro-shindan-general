@@ -1,0 +1,250 @@
+{
+ "uni": {
+  "id": "nara-univ",
+  "name": "奈良大学",
+  "name_short": "奈良大",
+  "prefecture": "奈良県",
+  "type": "私立",
+  "campus_main": "本部キャンパス（奈良市山陵町）",
+  "tuition_yen_per_year": 1050000,
+  "tuition_note": "文系学部の年間授業料＋施設費等の概算（要確認）",
+  "access_from_shiga_min": 90,
+  "commute_possible": true,
+  "commute_note": "草津・大津からJRで京都駅へ出て近鉄京都線急行に乗換、高の原駅下車、駅から徒歩約18分またはバス。片道約90分（要確認）。乗換1回で自宅通学も現実的",
+  "feature": "文学部と社会学部の2学部からなる奈良市の私立大学。特に文学部の史学科・文化財学科は全国的に知られ、考古学・古文書・文化財保存を本格的に学べる私大として関西随一の存在。平城宮跡や社寺など古都奈良そのものをフィールドにした発掘・実習が豊富。学芸員資格の取得に強く、歴史好き・考古学好きの学生が全国から集まる。",
+  "living_cost": {
+   "rent_min": 30000,
+   "rent_max": 55000,
+   "food_monthly": 25000,
+   "monthly_total": 85000,
+   "four_year_total": 4100000,
+   "note": "高の原・奈良市北部の下宿相場の概算（要確認）。家賃は京都市内より安め。滋賀県南部からは京都経由で自宅通学も現実的"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約95%（要確認）",
+   "top_employers": [
+    "地方公務員（文化財担当・学芸員含む）",
+    "中学・高校教員（国語・社会）",
+    "博物館・資料館・埋蔵文化財調査機関",
+    "小売・サービス業",
+    "金融機関（地銀・信金）",
+    "大学院進学（史学・文化財系）"
+   ],
+   "note": "学芸員資格取得者が多く、博物館・文化財関係への進路に特色（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "近鉄京都線 高の原駅 徒歩約18分（バス約5分）",
+   "walking_min_from_station": 18,
+   "nearby_amenities": "高の原駅前にイオンモール高の原などの商業施設がまとまり生活に便利",
+   "area_description": "平城ニュータウンの丘陵地にある落ち着いた住宅・文教エリア。平城宮跡や世界遺産の社寺が身近で、歴史を学ぶ環境としては全国有数。京都府境に近く京都方面へのアクセスも良い"
+  },
+  "shogakukin": {
+   "general_shogakukin": "成績優秀者対象の特待生制度・大学独自の奨学金あり（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "学芸員・文化財専門職を目指す学生への支援に伝統",
+    "教職支援（中高の国語・社会系）の対策講座",
+    "小規模大学ならではの個別就職支援"
+   ],
+   "quality": 3,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.nara-u.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "歴史・考古学・文化財を本気で学びたいなら私大で屈指の環境。「歴史が好き」「学芸員になりたい」滋賀の高校生にとって、京都駅乗換1回で通える距離に専門性の高い学びがある。",
+  "employment": {
+   "ratings": {
+    "kyoin": 3,
+    "shogakkō": 1,
+    "keisatsu": 2,
+    "shōbō": 2,
+    "kōmuin_ippan": 3,
+    "kigyō_ippan": 2,
+    "kigyō_supotsu": 1,
+    "iryō": 1
+   },
+   "strengths": [
+    "文化財・考古学分野の専門職（学芸員・自治体文化財担当）の輩出で全国的に有名",
+    "国語・社会（地理歴史）の中学・高校教員免許が取得可能で教員採用の実績あり",
+    "フィールドワーク中心の少人数教育で専門性が身につく"
+   ],
+   "representative_employers": [
+    "自治体の文化財担当・埋蔵文化財調査機関（要確認）",
+    "博物館・資料館",
+    "中学・高校教員",
+    "地元金融機関・小売業",
+    "奈良県内の一般企業"
+   ],
+   "summary": "文化財・歴史系の専門職と教員・公務員に特色のある専門特化型の中堅私大。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "面接",
+      "小論文・課題等"
+     ],
+     "bairitsu": "1〜2倍（要確認）",
+     "notes": "歴史・文化財への強い関心や活動実績をアピールできる方式（要確認）"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（公募制）",
+     "hyoutei_min": null,
+     "hyoutei_note": "評定基準は要確認",
+     "selection_content": [
+      "書類",
+      "基礎学力試験（2教科型）（要確認）"
+     ],
+     "bairitsu": "1.5〜3倍（要確認）",
+     "notes": "併願可の学力試験型が中心（要確認）"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜",
+     "subjects": "2〜3教科（国語・英語＋選択科目）（要確認）",
+     "bairitsu": "1.5〜3倍（要確認）",
+     "notes": "共通テスト利用入試あり。史学科・文化財学科は人気が高く倍率がやや上がりやすい（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "nara-univ-bungaku",
+   "uni_id": "nara-univ",
+   "name": "文学部（国文・史学・地理・文化財）",
+   "campus": "本部キャンパス（奈良県奈良市山陵町）",
+   "hensachi": {
+    "min": 40,
+    "max": 45,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦（基礎学力型）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "学芸員",
+    "中学校教諭一種（国語・社会）",
+    "高等学校教諭一種（国語・地理歴史）",
+    "図書館司書",
+    "測量士補（地理学科）（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "geijutsu"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kyoiku",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "nara-univ-shakai",
+   "uni_id": "nara-univ",
+   "name": "社会学部（心理・総合社会）",
+   "campus": "本部キャンパス（奈良県奈良市山陵町）",
+   "hensachi": {
+    "min": 37.5,
+    "max": 40,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "公募制推薦（基礎学力型）あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "一般選抜（複数日程）（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": "共通テスト利用入試あり（要確認）",
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "認定心理士（心理学科）",
+    "社会調査士（要確認）",
+    "中学校教諭一種（社会）（要確認）",
+    "高等学校教諭一種（公民）（要確認）"
+   ],
+   "interest_tags": [
+    "shakai"
+   ],
+   "employment_fields": [
+    "service",
+    "ryutsu",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

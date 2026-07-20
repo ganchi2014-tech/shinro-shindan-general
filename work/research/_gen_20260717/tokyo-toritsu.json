@@ -1,0 +1,552 @@
+{
+ "uni": {
+  "id": "tokyo-toritsu",
+  "name": "東京都立大学",
+  "name_short": "都立大",
+  "prefecture": "東京都",
+  "type": "公立",
+  "campus_main": "南大沢キャンパス",
+  "tuition_yen_per_year": 521000,
+  "access_from_shiga_min": 230,
+  "commute_possible": false,
+  "commute_note": "草津・大津から京都駅経由で新幹線＋京王線利用でも片道約4時間。完全に下宿前提",
+  "feature": "東京都が設置する首都圏最大級の公立総合大学（旧・首都大学東京）。人文社会・法・経済経営・理・都市環境・システムデザイン・健康福祉の7学部を持ち、難関国立大に匹敵する研究・教育水準を公立の学費で受けられる。メインの南大沢キャンパスは緑豊かな多摩ニュータウンにあり、駅前にアウトレットモールがある恵まれた立地。東京都庁・特別区など公務員就職に伝統的に強い。",
+  "living_cost": {
+   "rent_min": 45000,
+   "rent_max": 70000,
+   "food_monthly": 25000,
+   "monthly_total": 110000,
+   "four_year_total": 5300000,
+   "note": "南大沢・八王子など多摩エリアは東京都心より家賃が安め。都心暮らしより費用を抑えやすい"
+  },
+  "shingaku_jisseki": {
+   "shushoku_rate": "約97%（要確認）",
+   "top_employers": [
+    "東京都庁",
+    "特別区（東京23区）職員",
+    "国家公務員",
+    "大手メーカー（日立・富士通など）",
+    "IT・通信企業",
+    "金融機関",
+    "都内病院・医療機関"
+   ],
+   "note": "理系学部は大学院進学者も多い。都庁・特別区への就職者数は全国トップクラス（要確認）"
+  },
+  "campus_neighborhood": {
+   "nearest_station": "京王相模原線 南大沢駅 徒歩約5分",
+   "walking_min_from_station": 5,
+   "nearby_amenities": "駅前に三井アウトレットパーク・映画館・スーパーがあり生活利便性が高い",
+   "area_description": "多摩ニュータウンの緑豊かな文教エリア。新宿へ京王線1本約40分"
+  },
+  "shogakukin": {
+   "general_shogakukin": "国の修学支援新制度に加え、大学独自の授業料減免制度が比較的手厚い（要確認）",
+   "shogakukin_official_url": null
+  },
+  "career_center": {
+   "features": [
+    "都庁・特別区など公務員試験対策の支援が充実",
+    "個別キャリアカウンセリングと学内企業説明会",
+    "首都圏企業とのつながりが強い"
+   ],
+   "quality": 4,
+   "note": null
+  },
+  "official_links": {
+   "official_url": "https://www.tmu.ac.jp/",
+   "nyushi_url": null,
+   "shingaku_url": null,
+   "youkou_url": null,
+   "verified": false
+  },
+  "unique_point": "「東京で学びたいが学費は抑えたい」を両立できる公立総合大学。国立並みの学費（年間約52万円）で首都圏の難関大レベルの教育と就職実績が得られ、多摩エリア下宿なら生活費も都心より安い。",
+  "region": "kanto",
+  "employment": {
+   "ratings": {
+    "kyoin": 3,
+    "shogakkō": 2,
+    "keisatsu": 3,
+    "shōbō": 2,
+    "kōmuin_ippan": 5,
+    "kigyō_ippan": 4,
+    "kigyō_supotsu": 1,
+    "iryō": 4
+   },
+   "strengths": [
+    "東京都庁・特別区職員への就職者数は全国トップクラス",
+    "首都圏の大手企業・IT企業への就職に強い",
+    "健康福祉学部は看護師・理学療法士等の医療専門職に直結",
+    "理系は大学院進学を経て研究開発職に進む道が太い"
+   ],
+   "representative_employers": [
+    "東京都庁",
+    "特別区（東京23区）職員",
+    "日立製作所・富士通などの大手メーカー",
+    "NTTグループなど通信・IT",
+    "都内病院・東京都立病院機構",
+    "金融機関"
+   ],
+   "summary": "都庁・特別区に圧倒的に強い首都圏公立の雄。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [
+    {
+     "method_name": "総合型選抜（ゼミナール入試等・一部学科）",
+     "hyoutei_min": null,
+     "hyoutei_note": null,
+     "selection_content": [
+      "書類",
+      "レポート・課題",
+      "面接・プレゼンテーション"
+     ],
+     "bairitsu": "3〜6倍（要確認）",
+     "notes": "実施学科は限られる。学科ごとに内容が大きく異なるため要確認"
+    }
+   ],
+   "koubo": [
+    {
+     "method_name": "学校推薦型選抜（一般推薦）",
+     "hyoutei_min": 4,
+     "hyoutei_note": "4.0以上程度（学科により異なる・要確認）",
+     "selection_content": [
+      "書類",
+      "小論文",
+      "面接"
+     ],
+     "bairitsu": "2〜4倍（要確認）",
+     "notes": "多くの学部で実施。評定基準・募集人数は学科ごとに要確認"
+    }
+   ],
+   "ippan": [
+    {
+     "method_name": "一般選抜（前期日程）",
+     "subjects": "共通テスト＋個別学力検査（学部により2〜3教科）",
+     "notes": "国公立前期。学部により共テと二次の配点比が異なる",
+     "bairitsu": "2〜4倍（要確認）"
+    },
+    {
+     "method_name": "一般選抜（後期日程）",
+     "subjects": "共通テスト＋小論文・面接等（実施学科のみ）",
+     "notes": "後期は実施学科が限られ倍率が高くなりやすい",
+     "bairitsu": "5〜10倍（要確認）"
+    }
+   ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "tokyo-toritsu-jinbun",
+   "uni_id": "tokyo-toritsu",
+   "name": "人文社会学部",
+   "campus": "南大沢キャンパス（東京都八王子市）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は年度・学科により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": null,
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭免許（国語・英語・社会など）（要確認）",
+    "学芸員",
+    "社会調査士（要確認）"
+   ],
+   "interest_tags": [
+    "bungaku",
+    "shakai"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kyoiku",
+    "media",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-toritsu-ho",
+   "uni_id": "tokyo-toritsu",
+   "name": "法学部",
+   "campus": "南大沢キャンパス（東京都八王子市）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": false,
+     "note": null,
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": null,
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "法科大学院進学・司法試験を目指す基礎課程",
+    "公務員試験に直結する法律・政治の体系的学習"
+   ],
+   "interest_tags": [
+    "hokei"
+   ],
+   "employment_fields": [
+    "koumuin",
+    "kinyu",
+    "service"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-toritsu-keizai",
+   "uni_id": "tokyo-toritsu",
+   "name": "経済経営学部",
+   "campus": "南大沢キャンパス（東京都八王子市）",
+   "hensachi": {
+    "min": 57.5,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査。数理重視の区分あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": null,
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "日商簿記・公認会計士・税理士等を目指す学習基盤",
+    "高等学校教諭免許（公民・商業）（要確認）"
+   ],
+   "interest_tags": [
+    "keizai"
+   ],
+   "employment_fields": [
+    "kinyu",
+    "maker",
+    "it",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-toritsu-ri",
+   "uni_id": "tokyo-toritsu",
+   "name": "理学部",
+   "campus": "南大沢キャンパス（東京都八王子市）",
+   "hensachi": {
+    "min": 55,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "一部学科でグローバル人材育成入試等あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査（理数中心）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": null,
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "中学校・高等学校教諭免許（数学・理科）（要確認）",
+    "学芸員"
+   ],
+   "interest_tags": [
+    "riko"
+   ],
+   "employment_fields": [
+    "maker",
+    "it",
+    "kyoiku"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-toritsu-toshikankyo",
+   "uni_id": "tokyo-toritsu",
+   "name": "都市環境学部",
+   "campus": "南大沢キャンパス（東京都八王子市）",
+   "hensachi": {
+    "min": 55,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "一部学科でゼミナール入試等の総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": null,
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "一級建築士受験資格（建築学科）（要確認）",
+    "測量士補（要確認）",
+    "中学校・高等学校教諭免許（理科・社会など学科による）（要確認）"
+   ],
+   "interest_tags": [
+    "kenchiku",
+    "riko"
+   ],
+   "employment_fields": [
+    "kensetsu",
+    "koumuin",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-toritsu-sysdes",
+   "uni_id": "tokyo-toritsu",
+   "name": "システムデザイン学部",
+   "campus": "日野キャンパス（東京都日野市）※1年次は南大沢",
+   "hensachi": {
+    "min": 55,
+    "max": 60,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": true,
+     "note": "インダストリアルアート学科等で実技・作品を課す総合型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査（理数中心）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": null,
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "高等学校教諭免許（情報・工業）（要確認）",
+    "各種技術系資格（基本情報技術者等）を目指す学習基盤"
+   ],
+   "interest_tags": [
+    "joho",
+    "riko"
+   ],
+   "employment_fields": [
+    "it",
+    "maker"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  },
+  {
+   "dept_id": "tokyo-toritsu-kenkofukushi",
+   "uni_id": "tokyo-toritsu",
+   "name": "健康福祉学部",
+   "campus": "荒川キャンパス（東京都荒川区）※1年次は南大沢",
+   "hensachi": {
+    "min": 50,
+    "max": 55,
+    "basis": "kawai",
+    "source_url": null,
+    "verified_date": null
+   },
+   "bairitsu": {
+    "ippan": {},
+    "source_url": null,
+    "verified_date": null
+   },
+   "entry_methods": [
+    {
+     "type": "sogo",
+     "available": null,
+     "note": "実施の有無は学科・年度により要確認",
+     "verified": false
+    },
+    {
+     "type": "koubo",
+     "available": true,
+     "note": "学校推薦型選抜あり（要確認）",
+     "verified": false
+    },
+    {
+     "type": "ippan",
+     "available": true,
+     "note": "共通テスト＋個別学力検査・面接等（学科による）",
+     "verified": false
+    },
+    {
+     "type": "kyotsu",
+     "available": true,
+     "note": null,
+     "verified": false
+    }
+   ],
+   "qualifications": [
+    "看護師（看護学科）",
+    "保健師（選抜制・要確認）",
+    "理学療法士（理学療法学科）",
+    "作業療法士（作業療法学科）",
+    "診療放射線技師（放射線学科）"
+   ],
+   "interest_tags": [
+    "iryo"
+   ],
+   "employment_fields": [
+    "iryo_fukushi",
+    "koumuin"
+   ],
+   "zemi": [],
+   "data_status": "estimated"
+  }
+ ]
+}

@@ -1,0 +1,323 @@
+{
+  "uni_id": "tokai-univ",
+  "departments": [
+    {
+      "dept_id": "tokai-univ-ho",
+      "uni_id": "tokai-univ",
+      "name": "法学部",
+      "campus": "湘南キャンパス（神奈川県平塚市）",
+      "hensachi": {
+        "min": 37.5,
+        "max": 40,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜あり（要確認）", "verified": false },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）あり（要確認）", "verified": false },
+        { "type": "ippan", "available": true, "note": "一般選抜（文系型3教科など）", "verified": false },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり", "verified": false }
+      ],
+      "qualifications": [
+        "教員免許（中学社会・高校地歴公民）（要確認）"
+      ],
+      "interest_tags": ["hokei"],
+      "employment_fields": ["koumuin", "kinyu", "service"],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tokai-univ-seikei",
+      "uni_id": "tokai-univ",
+      "name": "政治経済学部",
+      "campus": "湘南キャンパス（神奈川県平塚市）",
+      "hensachi": {
+        "min": 40,
+        "max": 42.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜あり（要確認）", "verified": false },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）あり（要確認）", "verified": false },
+        { "type": "ippan", "available": true, "note": "一般選抜（文系型3教科など）", "verified": false },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり", "verified": false }
+      ],
+      "qualifications": [
+        "教員免許（中学社会・高校公民）（要確認）"
+      ],
+      "interest_tags": ["hokei", "keizai"],
+      "employment_fields": ["koumuin", "kinyu", "maker", "ryutsu"],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tokai-univ-bunkashakai",
+      "uni_id": "tokai-univ",
+      "name": "文化社会学部",
+      "campus": "湘南キャンパス（神奈川県平塚市）",
+      "hensachi": {
+        "min": 40,
+        "max": 47.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜あり（要確認）", "verified": false },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）あり（要確認）", "verified": false },
+        { "type": "ippan", "available": true, "note": "一般選抜（文系型3教科など）。心理・社会学科は人気が高め", "verified": false },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり", "verified": false }
+      ],
+      "qualifications": [
+        "教員免許（中学社会・高校地歴公民など）（要確認）",
+        "学芸員（要確認）",
+        "認定心理士（心理・社会学科）（要確認）"
+      ],
+      "interest_tags": ["shakai", "bungaku"],
+      "employment_fields": ["media", "service", "ryutsu"],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tokai-univ-jidokyoiku",
+      "uni_id": "tokai-univ",
+      "name": "児童教育学部",
+      "campus": "湘南キャンパス（神奈川県平塚市）",
+      "hensachi": {
+        "min": 37.5,
+        "max": 40,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜あり（要確認）", "verified": false },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）あり（要確認）", "verified": false },
+        { "type": "ippan", "available": true, "note": "一般選抜（文系型3教科など）", "verified": false },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり", "verified": false }
+      ],
+      "qualifications": [
+        "小学校教諭一種免許状（要確認）",
+        "幼稚園教諭一種免許状（要確認）",
+        "保育士（要確認）"
+      ],
+      "interest_tags": ["kyoiku"],
+      "employment_fields": ["kyoiku", "koumuin", "iryo_fukushi"],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tokai-univ-kokusai",
+      "uni_id": "tokai-univ",
+      "name": "国際学部",
+      "campus": "湘南キャンパス（神奈川県平塚市）",
+      "hensachi": {
+        "min": 42.5,
+        "max": 45,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜あり（要確認）", "verified": false },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）あり（要確認）", "verified": false },
+        { "type": "ippan", "available": true, "note": "一般選抜（文系型3教科など）", "verified": false },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり", "verified": false }
+      ],
+      "qualifications": [
+        "教員免許（中高英語）（要確認）"
+      ],
+      "interest_tags": ["gaikokugo", "shakai"],
+      "employment_fields": ["service", "ryutsu", "media"],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tokai-univ-johoriko",
+      "uni_id": "tokai-univ",
+      "name": "情報理工学部",
+      "campus": "湘南キャンパス（神奈川県平塚市）",
+      "hensachi": {
+        "min": 40,
+        "max": 45,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜あり（要確認）", "verified": false },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）あり（要確認）", "verified": false },
+        { "type": "ippan", "available": true, "note": "一般選抜（理系型3教科など）", "verified": false },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり", "verified": false }
+      ],
+      "qualifications": [
+        "教員免許（中高数学・高校情報）（要確認）"
+      ],
+      "interest_tags": ["joho", "riko"],
+      "employment_fields": ["it", "maker"],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tokai-univ-rigaku",
+      "uni_id": "tokai-univ",
+      "name": "理学部",
+      "campus": "湘南キャンパス（神奈川県平塚市）",
+      "hensachi": {
+        "min": 37.5,
+        "max": 42.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜あり（要確認）", "verified": false },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）あり（要確認）", "verified": false },
+        { "type": "ippan", "available": true, "note": "一般選抜（理系型3教科など）", "verified": false },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり", "verified": false }
+      ],
+      "qualifications": [
+        "教員免許（中高数学・理科）（要確認）"
+      ],
+      "interest_tags": ["riko"],
+      "employment_fields": ["maker", "it", "kyoiku"],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tokai-univ-kenchikutoshi",
+      "uni_id": "tokai-univ",
+      "name": "建築都市学部",
+      "campus": "湘南キャンパス（神奈川県平塚市）",
+      "hensachi": {
+        "min": 40,
+        "max": 45,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜あり（要確認）", "verified": false },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）あり（要確認）", "verified": false },
+        { "type": "ippan", "available": true, "note": "一般選抜（理系型3教科など）", "verified": false },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり", "verified": false }
+      ],
+      "qualifications": [
+        "一級建築士受験資格（要確認）",
+        "二級建築士受験資格（要確認）"
+      ],
+      "interest_tags": ["kenchiku", "riko"],
+      "employment_fields": ["kensetsu", "koumuin"],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tokai-univ-igaku",
+      "uni_id": "tokai-univ",
+      "name": "医学部",
+      "campus": "伊勢原キャンパス（神奈川県伊勢原市）",
+      "hensachi": {
+        "min": 47.5,
+        "max": 65,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "医学科は総合型選抜「希望の星育成」あり（要確認）", "verified": false },
+        { "type": "koubo", "available": null, "note": "学科・年度により異なる（要確認）", "verified": false },
+        { "type": "ippan", "available": true, "note": "一般選抜。医学科は難関、看護学科は中堅レベル", "verified": false },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり（要確認）", "verified": false }
+      ],
+      "qualifications": [
+        "医師国家試験受験資格（医学科）",
+        "看護師国家試験受験資格（看護学科）"
+      ],
+      "interest_tags": ["iryo"],
+      "employment_fields": ["iryo_fukushi"],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "tokai-univ-kaiyo",
+      "uni_id": "tokai-univ",
+      "name": "海洋学部",
+      "campus": "静岡キャンパス（静岡県静岡市清水区）",
+      "hensachi": {
+        "min": 37.5,
+        "max": 42.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        { "type": "sogo", "available": true, "note": "総合型選抜あり（要確認）", "verified": false },
+        { "type": "koubo", "available": true, "note": "学校推薦型選抜（公募制）あり（要確認）", "verified": false },
+        { "type": "ippan", "available": true, "note": "一般選抜（理系型3教科など）", "verified": false },
+        { "type": "kyotsu", "available": true, "note": "共通テスト利用選抜あり", "verified": false }
+      ],
+      "qualifications": [
+        "教員免許（中高理科など）（要確認）",
+        "学芸員（要確認）",
+        "三級海技士（航海）受験資格（航海学専攻）（要確認）"
+      ],
+      "interest_tags": ["nogaku", "riko"],
+      "employment_fields": ["shokuhin", "koumuin", "maker"],
+      "zemi": [],
+      "data_status": "estimated"
+    }
+  ]
+}

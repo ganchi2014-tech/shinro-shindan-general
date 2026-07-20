@@ -1,0 +1,471 @@
+{
+  "uni_id": "waseda",
+  "departments": [
+    {
+      "dept_id": "waseda-seikei",
+      "uni_id": "waseda",
+      "name": "政治経済学部",
+      "campus": "早稲田キャンパス（東京都新宿区）",
+      "hensachi": {
+        "min": 67.5,
+        "max": 70,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "グローバル入試（総合型・書類＋論文審査）（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "共通テスト＋学部独自の総合問題（日英両言語の長文）で選抜（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試（共テのみ）あり（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中学・高校教員免許（社会・公民、教職課程履修で）（要確認）"
+      ],
+      "interest_tags": [
+        "hokei",
+        "keizai"
+      ],
+      "employment_fields": [
+        "kinyu",
+        "koumuin",
+        "media",
+        "maker"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "waseda-hou",
+      "uni_id": "waseda",
+      "name": "法学部",
+      "campus": "早稲田キャンパス（東京都新宿区）",
+      "hensachi": {
+        "min": 67.5,
+        "max": 67.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": true,
+          "note": "地域探究・貢献入試（全国自己推薦型）の対象学部（要確認）",
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "学部独自試験（英・国・地歴公民等）。共テ併用方式もあり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試（共テのみ）あり（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "法曹（司法試験は法科大学院修了または予備試験合格後に受験）",
+        "中学・高校教員免許（社会・公民、教職課程履修で）（要確認）"
+      ],
+      "interest_tags": [
+        "hokei"
+      ],
+      "employment_fields": [
+        "koumuin",
+        "kinyu",
+        "service"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "waseda-bun",
+      "uni_id": "waseda",
+      "name": "文学部",
+      "campus": "戸山キャンパス（東京都新宿区）",
+      "hensachi": {
+        "min": 67.5,
+        "max": 70,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "3教科型のほか英語4技能テスト利用型・共テ併用型あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試（共テのみ）あり（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "学芸員（要確認）",
+        "中学・高校教員免許（国語・英語・地歴等、教職課程履修で）（要確認）"
+      ],
+      "interest_tags": [
+        "bungaku",
+        "shakai"
+      ],
+      "employment_fields": [
+        "media",
+        "kyoiku",
+        "service"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "waseda-bunkakoso",
+      "uni_id": "waseda",
+      "name": "文化構想学部",
+      "campus": "戸山キャンパス（東京都新宿区）",
+      "hensachi": {
+        "min": 67.5,
+        "max": 70,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "国際日本文化論プログラム（JCulP）のAO型選抜あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "3教科型のほか英語4技能テスト利用型・共テ併用型あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": true,
+          "note": "共通テスト利用入試（共テのみ）あり（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "学芸員（要確認）",
+        "中学・高校教員免許（国語・英語等、教職課程履修で）（要確認）"
+      ],
+      "interest_tags": [
+        "bungaku",
+        "shakai"
+      ],
+      "employment_fields": [
+        "media",
+        "it",
+        "service"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "waseda-kikanriko",
+      "uni_id": "waseda",
+      "name": "基幹理工学部",
+      "campus": "西早稲田キャンパス（東京都新宿区）",
+      "hensachi": {
+        "min": 65,
+        "max": 65,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "理工3学部共通の一般選抜（英・数・理2科目）。学系別に募集（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": false,
+          "note": "共通テスト利用入試はなし（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中学・高校教員免許（数学・情報等、教職課程履修で）（要確認）"
+      ],
+      "interest_tags": [
+        "riko",
+        "joho"
+      ],
+      "employment_fields": [
+        "it",
+        "maker"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "waseda-sozoriko",
+      "uni_id": "waseda",
+      "name": "創造理工学部",
+      "campus": "西早稲田キャンパス（東京都新宿区）",
+      "hensachi": {
+        "min": 62.5,
+        "max": 65,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "建築学科の早稲田建築AO入試（創成入試）あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "理工3学部共通の一般選抜（英・数・理2科目）。建築学科は空間表現あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": false,
+          "note": "共通テスト利用入試はなし（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "一級建築士受験資格（建築学科）（要確認）",
+        "中学・高校教員免許（数学・理科等、教職課程履修で）（要確認）"
+      ],
+      "interest_tags": [
+        "riko",
+        "kenchiku"
+      ],
+      "employment_fields": [
+        "kensetsu",
+        "maker",
+        "it"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "waseda-senshinriko",
+      "uni_id": "waseda",
+      "name": "先進理工学部",
+      "campus": "西早稲田キャンパス（東京都新宿区）",
+      "hensachi": {
+        "min": 65,
+        "max": 67.5,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "理工3学部共通の一般選抜（英・数・理2科目）。学科別に募集（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": false,
+          "note": "共通テスト利用入試はなし（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "中学・高校教員免許（理科・数学、教職課程履修で）（要確認）"
+      ],
+      "interest_tags": [
+        "riko"
+      ],
+      "employment_fields": [
+        "maker",
+        "it",
+        "iryo_fukushi"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    },
+    {
+      "dept_id": "waseda-kokusaikyoyo",
+      "uni_id": "waseda",
+      "name": "国際教養学部",
+      "campus": "早稲田キャンパス（東京都新宿区）",
+      "hensachi": {
+        "min": 67.5,
+        "max": 70,
+        "basis": "kawai",
+        "source_url": null,
+        "verified_date": null
+      },
+      "bairitsu": {
+        "ippan": {},
+        "source_url": null,
+        "verified_date": null
+      },
+      "entry_methods": [
+        {
+          "type": "sogo",
+          "available": true,
+          "note": "AO入試（4月入学・9月入学）あり。書類＋筆記等（要確認）",
+          "verified": false
+        },
+        {
+          "type": "koubo",
+          "available": false,
+          "note": null,
+          "verified": false
+        },
+        {
+          "type": "ippan",
+          "available": true,
+          "note": "共通テスト＋学部独自英語試験の併用型。英語4技能スコアで加点あり（要確認）",
+          "verified": false
+        },
+        {
+          "type": "kyotsu",
+          "available": false,
+          "note": "共テのみで合否が決まる方式はなし（一般選抜は共テ併用）（要確認）",
+          "verified": false
+        }
+      ],
+      "qualifications": [
+        "実務的な資格は特になし（授業はほぼ英語・1年間の海外留学が原則必修）"
+      ],
+      "interest_tags": [
+        "gaikokugo",
+        "shakai"
+      ],
+      "employment_fields": [
+        "kinyu",
+        "media",
+        "service"
+      ],
+      "zemi": [],
+      "data_status": "estimated"
+    }
+  ]
+}
