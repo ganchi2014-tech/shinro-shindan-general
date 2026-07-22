@@ -3827,7 +3827,9 @@ function deptOnlyBody(dept, uni) {
   const empf = (dept.employment_fields || []).map(id => emap.get(id)).filter(Boolean);
   const zemiList = (dept.zemi && dept.zemi.length) ? dept.zemi : [];
   const warn = dept.data_status === 'unconfirmed'
-    ? `<div class="estimated-banner">⚠️ この学部のデータは<strong>未確認</strong>です。必ず公式で確認してください。</div>` : '';
+    ? `<div class="estimated-banner">⚠️ この学部のデータは<strong>未確認</strong>です。必ず公式で確認してください。</div>`
+    : (dept.data_status === 'estimated'
+      ? `<div class="estimated-banner">📊 この学部の偏差値・倍率は<strong>推定値</strong>です（出典未確認）。出願前に必ず<strong>公式サイト・最新の模試判定</strong>で確認してください。</div>` : '');
   const ems = dept.entry_methods || [];
   const avail = ems.filter(m => m && m.available);
   // 使えない方式も明示する（総合型不可195/650・公募不可54/650。無表示だと「書いてない=使える?」と誤読される）
