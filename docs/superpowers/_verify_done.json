@@ -1,0 +1,1778 @@
+[
+ {
+  "uni_id": "hanazono",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK - 花園大学は実在。1949年大学設置の臨済宗立私立大学（Wikipedia・河合塾Kei-Net・大学ポートレートで確認）",
+   "name": "OK - 正式名称「花園大学」で一致",
+   "type": "OK - 私立で正しい",
+   "prefecture": "OK - 京都府京都市中京区西ノ京壺ノ内町8-1に本部。データの「本部キャンパス（京都市中京区）」と一致",
+   "url": "OK - https://www.hanazono.ac.jp/ を実際にフェッチし、花園大学公式サイト（所在地・学部構成が一致）であることを確認",
+   "tuition": "OK - 110万円/年は私立文系・福祉系の相場（100-140万）内で妥当"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "hanazono-bungaku",
+    "issue": "偏差値35-37.5だが河合塾基準では文学部はBF（ボーダーフリー）。やや高めの表示",
+    "severity": "MINOR",
+    "suggestion": "河合塾基準ではBF〜35.0程度。min:BF(または35)、max:35程度が妥当"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "hanazono-bungaku",
+    "dataRange": "35-37.5",
+    "webEstimate": "河合塾: BF（ボーダーフリー）",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "hanazono-fukushi",
+    "dataRange": "35-37.5",
+    "webEstimate": "河合塾: 35.0",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "学部は2件のみのため全件チェック。文学部（仏教学科・日本史学科・日本文学科）、社会福祉学部（社会福祉学科・臨床心理学科・児童福祉学科）とも実在し名称も正確。補足: 2026年4月に教育学部初等教育学科（定員80名、小学校教育/幼児教育コース）が文科省認可を受け開設済みだが、データには未収載（欠落。誤りではないが追加を推奨）。偏差値は文学部が河合塾BFに対し35-37.5とやや高めだが±5未満のズレでMINOR。公式URL・所在地・区分・学費はすべて問題なし。"
+ },
+ {
+  "uni_id": "hitotsubashi",
+  "webAvailable": true,
+  "overall": "OK",
+  "checks": {
+   "exists": "OK: 一橋大学は実在（東京都国立市の国立大学、指定国立大学法人）。河合塾Kei-Net・公式サイトで確認",
+   "name": "OK: 正式名称「一橋大学」で一致",
+   "type": "OK: 国立で正しい",
+   "prefecture": "OK: 東京都・国立キャンパス（国立市）で正しい。5学部とも国立キャンパス所在で一致",
+   "url": "OK: https://www.hit-u.ac.jp/ は一橋大学の公式ドメイン（同ドメイン配下に授業料案内等の公式ページを確認）",
+   "tuition": "OK: 642,960円。国立標準53.58万円と異なるが、一橋大は2020年度入学者から標準額の120%=642,960円に値上げ済み（日経・リセマム・公式で確認）。この値が正確"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "hitotsubashi-keizai",
+    "issue": "データのmax67.5は前期基準では妥当だが、河合塾の後期日程ボーダーは72.5で、後期を含めるとmaxが5低い。範囲の定義（前期のみか全日程か）が不明確",
+    "severity": "MINOR",
+    "suggestion": "前期のみ基準なら現状維持（65.0-67.5）。全日程基準ならmaxを72.5に。SDS学部も同様（後期72.5）"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "hitotsubashi-ho",
+    "dataRange": "67.5-67.5",
+    "webEstimate": "河合塾Kei-Net前期ボーダー65.0（年度により67.5）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "hitotsubashi-sho",
+    "dataRange": "65-67.5",
+    "webEstimate": "河合塾Kei-Net前期ボーダー65.0（後期なし）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "hitotsubashi-shakai",
+    "dataRange": "67.5-67.5",
+    "webEstimate": "河合塾Kei-Net前期ボーダー67.5",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "Web検索・Kei-Net実ページ取得の両方成功。5学部（商・経済・法・社会・ソーシャル・データサイエンス〔2023年設置〕）はすべて実在し名称も正式。偏差値はいずれも前期基準で±2.5以内に収まりOK。唯一の留意点は経済・SDSの後期ボーダー72.5がmaxに反映されていない点（前期基準なら問題なし、MINOR扱い）。学費642,960円は「国立=53.58万」の例外で正しい値のため修正不要。Sources: search.keinet.ne.jp/1165/general/border_rate, www.hit-u.ac.jp/kyomu/fee/, resemom.jp/article/2019/09/12/52446.html, nikkei.com（一橋大授業料値上げ記事）"
+ },
+ {
+  "uni_id": "baika",
+  "webAvailable": true,
+  "overall": "OK",
+  "checks": {
+   "exists": "OK: 梅花女子大学は実在（大阪府茨木市宿久庄2-19-5、公式サイト・河合塾Kei-Net・パスナビで確認）",
+   "name": "OK: 正式名称「梅花女子大学」で一致",
+   "type": "OK: 私立（学校法人梅花学園の私立女子大学）で一致",
+   "prefecture": "OK: 大阪府茨木市が本部所在地。データの「本部キャンパス（茨木市宿久庄）」と公式住所（茨木市宿久庄2-19-5）が一致",
+   "url": "OK: https://www.baika.ac.jp/ を実際にフェッチし、梅花女子大学の公式サイト（大阪府茨木市宿久庄2-19-5、看護学科・食文化学科等を掲載）であることを確認",
+   "tuition": "OK: 年間130万円は妥当。初年度納入金は文化表現系149〜182万円（入学金含む）で、2年次以降の年間学費は約130万円前後と整合。ただし看護学科は初年度195万円超と高めで、単一代表値としてはやや低め（許容範囲）"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "baika-shinri-kodomo",
+    "issue": "現時点（2026年度入学）では心理こども学部（心理学科・こども教育学科）は実在し正しいが、2027年4月に改組され「総合心理学部」へ再編・こども教育学科は2027年4月入学生より募集停止と公式発表済み。将来の入学者向けには表記更新が必要になる",
+    "severity": "MINOR",
+    "suggestion": "2027年度入試向けには「総合心理学部（こども学科・心理学科）」への更新を予定。現行データとしては問題なし"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "baika-kango",
+    "dataRange": "37.5-40",
+    "webEstimate": "河合塾基準で看護保健学部37.5前後（看護学科37.5、口腔保健学科は35〜BF程度）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "baika-shoku",
+    "dataRange": "35-37.5",
+    "webEstimate": "河合塾基準で食文化学部35.0前後（管理栄養学科でも35〜37.5）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "baika-bunka",
+    "dataRange": "35-35",
+    "webEstimate": "河合塾基準で35前後（多くの方式でBF〜35）",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "Web検索・公式サイトフェッチとも成功。大学の実在・公式URL・区分・所在地・4学部（文化表現/心理こども/食文化/看護保健）の実在をすべて確認。偏差値は河合塾相場（BF〜37.5帯の女子大）とよく整合。留意点は2つ: (1) 2027年4月に情報メディア学部・総合心理学部の設置届出が認められており、心理こども学部は総合心理学部へ発展的再編予定（現行データとしては正しい）。(2) 学費130万円は文系学科の年間学費としては妥当だが、看護学科は初年度約195万円と高く、代表値としてはやや控えめ。主要出典: baika.ac.jp（公式）、search.keinet.ne.jp/2542（河合塾Kei-Net）、passnavi.obunsha.co.jp/univ/4330、manabi.benesse.ne.jp/daigaku/school/3652"
+ },
+ {
+  "uni_id": "hokkaido-univ",
+  "webAvailable": true,
+  "overall": "OK",
+  "checks": {
+   "exists": "OK — 北海道大学は実在（旧帝大の一つ、札幌市）。Web検索・公式サイトで確認",
+   "name": "OK — 正式名称「北海道大学」と一致",
+   "type": "OK — 国立で正しい（国立大学法人北海道大学）",
+   "prefecture": "OK — 北海道・札幌キャンパス（札幌市北区）で正しい",
+   "url": "OK — https://www.hokudai.ac.jp/ は北海道大学の公式ドメイン（検索結果で公式サイトとして確認）",
+   "tuition": "OK — 535,800円は国立標準額どおり。北大は東大等と異なり値上げ未実施のため妥当"
+  },
+  "deptIssues": [],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "hokkaido-univ-igaku",
+    "dataRange": "65-65",
+    "webEstimate": "河合塾ボーダー65.0（2026年度、共テ得点率85%）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "hokkaido-univ-hoken",
+    "dataRange": "52.5-57.5",
+    "webEstimate": "河合塾で概ね50.0-57.5（専攻により看護50.0-52.5〜理学療法57.5）。下限が2.5差以内",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "hokkaido-univ-bun",
+    "dataRange": "60-62.5",
+    "webEstimate": "河合塾62.5（総合文系入試含め60.0-62.5帯）。差は2.5以内",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "学部リスト13件は全て実在（12学部構成＋医学部を医学科/保健学科に分割掲載）。文・教育・法・経済・理・工・農・水産・医・歯・薬・獣医の12学部が公式情報と一致し、存在しない学部の混入なし。水産学部のみ函館キャンパス（1・2年次札幌）という注記も実態どおり。参考: 北大は入学者の多くを総合入試（総合文系/総合理系）で募集するため学部別偏差値は入試方式で若干変動するが、データの帯はいずれも河合塾相場±2.5以内。みんなの大学情報の医学部50.0-67.5表記は保健学科下限〜医学科上限の合算であり、医学科単独の河合塾ボーダーは65.0でデータと一致。アクセス360分（滋賀から）は空路利用で妥当な水準。"
+ },
+ {
+  "uni_id": "fukuchiyama-koritsu",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK - 福知山公立大学は実在。2016年に私立成美大学から公立化。Web検索・公式サイトで確認",
+   "name": "OK - 正式名称「福知山公立大学」で一致",
+   "type": "OK - 公立（福知山市が設置する公立大学法人）で正しい",
+   "prefecture": "OK - 京都府福知山市。メインキャンパス表記「本部キャンパス（京都府福知山市）」も正しい",
+   "url": "OK - https://www.fukuchiyama.ac.jp/ は本学の公式サイトドメインであることをWeb検索で確認",
+   "tuition": "OK - 年額535,800円は国公立標準額と一致し妥当"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "fukuchiyama-koritsu-joho",
+    "issue": "偏差値45-47.5（basis:kawai）は河合塾最新値40.0（パスナビ・みんなの大学情報とも河合塾提供で40.0、共テ得点率51-57%）に対し+5〜+7.5の過大。高校生の難易度判断を誤らせるレベル",
+    "severity": "MAJOR",
+    "suggestion": "偏差値を40.0（または40-42.5の帯）に修正。共テ得点率51-57%も併記推奨"
+   },
+   {
+    "dept_id": "fukuchiyama-koritsu-keiei",
+    "issue": "学部・学科名（地域経営学科・医療福祉経営学科）は実在し正しいが、河合塾は地域経営学部の個別試験偏差値を公表していない（共通テスト利用中心のためボーダー得点率58-72%のみ）。basis:kawai表記の45-47.5は出典と整合しない",
+    "severity": "MINOR",
+    "suggestion": "偏差値欄は「共テ得点率58-69%（河合塾ボーダー）」等に置き換えるか、basisを見直す。数値帯自体は得点率換算で概ね妥当な水準"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "fukuchiyama-koritsu-joho",
+    "dataRange": "45-47.5 (basis:kawai)",
+    "webEstimate": "河合塾40.0（2027年度入学向け最新。共テ得点率51-57%）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "fukuchiyama-koritsu-keiei",
+    "dataRange": "45-47.5 (basis:kawai)",
+    "webEstimate": "河合塾の個別偏差値は非公表（共テボーダー得点率58-72%のみ）。得点率から見て45-47.5相当は不合理ではないが河合塾値としては検証不能",
+    "verdict": "UNKNOWN"
+   }
+  ],
+  "notes": "大学の基本情報（実在・名称・区分・所在地・公式URL・学費535,800円）はすべて正確。学部構成（地域経営学部＝地域経営学科+医療福祉経営学科、情報学部＝情報学科）も実在と一致。問題は偏差値のみ: 情報学部は河合塾最新40.0に対し45-47.5で+5以上の過大（OFF_MAJOR 1件）、地域経営学部は河合塾非公表のためbasis:kawai表記が不正確。overall判定は「OFF_MAJOR複数→MAJOR」の基準にOFF_MAJORが1件のみ該当のためMINORとしたが、情報学部の偏差値修正は優先度高。学部数が2のため最高/最低/中間の3件抽出は不可能で全2件をチェックした。"
+ },
+ {
+  "uni_id": "chiba-univ",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK: 千葉大学は実在する国立大学。河合塾Kei-Net・パスナビ・スタディサプリ等で確認",
+   "name": "OK: 正式名称「千葉大学」で一致",
+   "type": "OK: 国立で正しい（国立大学法人千葉大学）",
+   "prefecture": "OK: 千葉県・メインは西千葉キャンパス（千葉市稲毛区）で正しい。園芸=松戸、医/薬/看護=亥鼻の配置も正確",
+   "url": "OK: https://www.chiba-u.ac.jp/ は千葉大学の正規公式ドメイン。学部公式サブドメイン informatics.chiba-u.jp も同系列でWeb検索で確認",
+   "tuition": "OK: 535,800円は国立標準額と完全一致"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "chiba-univ-kokusai",
+    "issue": "偏差値60-62.5はやや高め。2026年度の河合塾基準は57.5（みんかん）〜60.0（パスナビ）とソースが割れており、57.5が正なら最大側で5のズレ",
+    "severity": "MINOR",
+    "suggestion": "57.5〜60.0 に更新を検討（要 Kei-Net 直接確認）"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "chiba-univ-i",
+    "dataRange": "67.5-67.5",
+    "webEstimate": "河合塾 67.5（前期一般枠）〜72.5（後期含む）。前期基準なら67.5で一致",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "chiba-univ-yaku",
+    "dataRange": "60-62.5",
+    "webEstimate": "河合塾 62.5〜65.0（2026年度予測）。データは2.5低め（±3未満）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "chiba-univ-kango",
+    "dataRange": "52.5-55",
+    "webEstimate": "河合塾 52.5（共テ得点率67%）。整合",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "chiba-univ-kokusai",
+    "dataRange": "60-62.5",
+    "webEstimate": "河合塾基準 57.5〜60.0（ソース間で相違: みんかん2026=57.5、パスナビ=60.0）。最大側で2.5〜5のズレ",
+    "verdict": "OFF_MINOR"
+   }
+  ],
+  "notes": "Web検索使用可。学部リスト11件は千葉大学の実在学部構成（国際教養/文/法政経/教育/理/工/情報・データサイエンス/園芸/医/薬/看護）と完全一致し、架空学部なし。URL・学費・区分・所在地はすべて正確。唯一の指摘は国際教養学部の偏差値がやや高め（OFF_MINOR、ソース間相違あり）と薬学部が僅かに低め（±3未満でOK判定）。医学部は前期67.5基準なら正確だが、後期72.5を含めるならmax側の更新余地あり。総合はMINOR（軽微な偏差値ドリフトのみ、配布上の重大リスクなし）。"
+ },
+ {
+  "uni_id": "himeji-dokkyo",
+  "webAvailable": true,
+  "overall": "MAJOR",
+  "checks": {
+   "exists": "OK — 姫路獨協大学は実在（1987年開学、兵庫県姫路市の公私協力方式の私立大学）。公式サイト・河合塾Kei-Net・Wikipedia等で確認",
+   "name": "OK — 正式名称「姫路獨協大学」で一致（「獨」の字も正しい）",
+   "type": "OK — 私立で正しい（姫路市との公私協力方式だが設置形態は私立）",
+   "prefecture": "OK — 兵庫県姫路市上大野のキャンパスで正しい（campus_main「本部キャンパス（姫路市上大野）」も公式所在地と一致）",
+   "url": "OK — https://www.himeji-du.ac.jp/ は本学公式ドメイン。公式の学部案内・ニュースページ（薬学部募集停止告知等）が同ドメイン配下にあることを確認",
+   "tuition": "MINOR — 115万円/年は人間社会学群（文系、初年度納入金約130万円=授業料相当110万前後）にはほぼ妥当だが、本データの学部構成の大半は医療系で、看護学部は初年度約195万円、医療保健学部も同水準。大学単一値115万円は医療系学部の実費を大幅に過小表示"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "himeji-dokkyo-yaku",
+    "issue": "薬学部医療薬学科は2025年度入学者から学生募集停止（全国の薬学部で初）。組織としては在学生卒業まで存続するが、2026年時点の高校生は出願不可能であり、進路診断アプリの選択肢として提示するのは実質的に存在しない学部を載せているのと同等",
+    "severity": "MAJOR",
+    "suggestion": "薬学部をデータから削除するか、「募集停止（出願不可）」フラグを付けて診断結果に出さないようにする"
+   },
+   {
+    "dept_id": "himeji-dokkyo-iryohoken",
+    "issue": "名称の括弧書きが「理学療法・作業療法・言語聴覚療法」の3学科のみだが、実際の医療保健学部は臨床工学科を含む4学科構成",
+    "severity": "MINOR",
+    "suggestion": "「医療保健学部（理学療法・作業療法・言語聴覚療法・臨床工学）」に修正"
+   },
+   {
+    "dept_id": "himeji-dokkyo-kango",
+    "issue": "偏差値37.5は河合塾ボーダー（BF～35.0）の上限を2.5超過。実勢より高く見せている",
+    "severity": "MINOR",
+    "suggestion": "35.0（または min:BF相当, max:35.0）に修正"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "himeji-dokkyo-kango",
+    "dataRange": "37.5-37.5",
+    "webEstimate": "河合塾: BF～35.0",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "himeji-dokkyo-iryohoken",
+    "dataRange": "35-37.5",
+    "webEstimate": "河合塾: BF～40.0（進研では38～39）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "himeji-dokkyo-ningen",
+    "dataRange": "35-35",
+    "webEstimate": "河合塾: 概ねBF（大学全体で35.0～40.0、BF除く表記。人間社会学群はBF帯が中心）。BFを35と表記するのは慣例の範囲",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "himeji-dokkyo-yaku",
+    "dataRange": "35-35",
+    "webEstimate": "河合塾: 35.0～37.5（ただし2025年度から募集停止のため今後のボーダーは消滅）",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "Web検索使用可。大学の実在・名称・区分・所在地・公式URLはすべて正確。overall=MAJORの主因は薬学部の募集停止（2024年4月発表、2025年度入学者から停止。大学ジャーナル・薬事日報・大学公式 https://www.himeji-du.ac.jp/news/2024/04/33048/ で確認）で、高校生向けアプリとして出願不可の学部を提示している点。偏差値は全体に河合塾相場と大きな乖離なし（看護のみ軽微に高め）。学費115万円は文系学群基準で、医療系3学部（看護・医療保健）は実際には年間160～195万円水準のため、単一値運用なら学部別学費への分割を推奨。医療保健学部の名称は臨床工学科の欠落あり。人間社会学群の学類構成（産業経営・国際言語文化・現代法律）は実在と一致。"
+ },
+ {
+  "uni_id": "bunkyo-univ",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK — 文教大学は実在（私立、1966年設立系譜の文教大学学園）。公式サイト・Wikipedia・パスナビ等で確認",
+   "name": "OK — 正式名称「文教大学」で一致",
+   "prefecture": "OK — メインキャンパスは越谷キャンパス（埼玉県越谷市）で一致。学部所在も越谷（教育・人間科学・文学）/湘南=茅ヶ崎（情報・健康栄養）/東京あだち（国際・経営）と実態通り。なお法人登記上の本部は東京都品川区だが、受験生向けアプリとしては埼玉県表記で妥当",
+   "type": "OK — 私立で正しい",
+   "url": "OK — https://www.bunkyo.ac.jp/ は文教大学の公式サイト本体（検索結果・キャンパス案内ページで確認）。北海道文教大学(do-bunkyodai.ac.jp)等の別大学ではない",
+   "tuition": "OK — 年間125万円。実際は教育学部初年度納入金141.2万円(2026年度)、文系学部は概ね130万円前後で、私立文系相場(100-140万)の範囲内。学部により若干の差はあるが代表値として妥当"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "bunkyo-univ-joho",
+    "issue": "偏差値がやや高め。データ42.5-47.5に対し河合塾ベース(パスナビ)は37.5-45.0で、下限が約+5、上限が+2.5高い",
+    "severity": "MINOR",
+    "suggestion": "37.5-45.0程度に修正"
+   },
+   {
+    "dept_id": "bunkyo-univ-kenko-eiyo",
+    "issue": "偏差値がやや高め。データ42.5-45に対しパスナビ(河合塾提供)は40.0、河合塾Kei-Netでは35.0の方式もあり、+3〜5高い",
+    "severity": "MINOR",
+    "suggestion": "37.5-42.5程度に修正"
+   },
+   {
+    "dept_id": "bunkyo-univ-keiei",
+    "issue": "偏差値がやや低め。データ45-47.5に対しパスナビ(河合塾提供)は50.0",
+    "severity": "MINOR",
+    "suggestion": "47.5-50.0程度に修正"
+   },
+   {
+    "dept_id": "bunkyo-univ-bungaku",
+    "issue": "下限がやや高め。データ45-50に対し河合塾ベースは35.0-50.0（下限35は中国語中国文学科）。上限は一致",
+    "severity": "MINOR",
+    "suggestion": "min を 40 前後まで下げる（外れ値の中国語中国文学科35を含めるなら35-50）"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "bunkyo-univ-kyoiku",
+    "dataRange": "47.5-55",
+    "webEstimate": "河合塾Kei-Net 47.5-55.0 / パスナビ45.0-57.5",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "bunkyo-univ-kenko-eiyo",
+    "dataRange": "42.5-45",
+    "webEstimate": "パスナビ(河合塾提供)40.0、Kei-Netでは35.0の方式もあり",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "bunkyo-univ-ningen",
+    "dataRange": "45-50",
+    "webEstimate": "パスナビ(河合塾提供)45.0-47.5",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "bunkyo-univ-joho",
+    "dataRange": "42.5-47.5",
+    "webEstimate": "パスナビ(河合塾提供)37.5-45.0",
+    "verdict": "OFF_MINOR"
+   }
+  ],
+  "notes": "Web検索・WebFetch使用可。大学の実在・区分・所在地・公式URL・学部7件（教育/人間科学/文学/情報/国際/経営/健康栄養）の実在性とキャンパス配置（越谷/湘南/東京あだち）はすべて正確で、2021年の国際・経営学部の東京あだち移転も反映済み。問題は偏差値の較正のみ: 湘南キャンパス系の低位学部（情報・健康栄養）が実勢より2.5-5ポイント高く、経営学部が2.5ポイント低い。±5超の明確なOFF_MAJORはなく、偽URL・架空学部もないため overall MINOR。出典: bunkyo.ac.jp公式、search.keinet.ne.jp(河合塾)、passnavi.obunsha.co.jp(河合塾提供偏差値)、manabi.benesse.ne.jp(学費)。"
+ },
+ {
+  "uni_id": "hyogo-ika",
+  "webAvailable": true,
+  "overall": "MAJOR",
+  "checks": {
+   "exists": "OK。兵庫医科大学は実在（1972年設立、2022年に兵庫医療大学と統合し4学部体制）。Wikipedia・公式サイト・河合塾Kei-Netで確認",
+   "name": "OK。正式名称「兵庫医科大学」で一致",
+   "prefecture": "OK。兵庫県、メインキャンパスは西宮キャンパス（西宮市武庫川町）。薬・看護・リハは神戸キャンパス（ポートアイランド）でデータのcampus記載とも一致",
+   "type": "OK。私立で正しい",
+   "url": "OK。https://www.hyo-med.ac.jp/ は本学の公式ドメイン（受験生サイト・学部ページ等を検索結果で確認）",
+   "tuition": "要注意（NG寄り）。データの190万円/年は薬学部の学費(190万)と一致し看護(165万)にも近いが、看板学部の医学部は年間授業料650万円（初年度は入学金200万別途）で約3.4倍の乖離。単一値として医学部志望者に誤解を与える。学部別学費表示か「医学部は約650万/年」の注記を推奨"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "hyogo-ika-yaku",
+    "issue": "偏差値45-47.5は過大。河合塾基準の実勢はパスナビ(旺文社/河合塾提供)で37.5、みんなの大学情報で40.0。最小で5、最大で7.5-10のズレ",
+    "severity": "MAJOR",
+    "suggestion": "偏差値を37.5-40.0に修正（学部名・学科名・キャンパスは正確）"
+   },
+   {
+    "dept_id": "hyogo-ika-riha",
+    "issue": "偏差値min45がやや過大。実勢は作業療法40.0・理学療法50.0（パスナビ）、みんなの大学情報では42.5-50.0。minが2.5-5高い",
+    "severity": "MINOR",
+    "suggestion": "偏差値を40.0-50.0（または42.5-50.0）に修正。maxの50は正確"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "hyogo-ika-igaku",
+    "dataRange": "62.5-65",
+    "webEstimate": "62.5（河合塾/パスナビ、A4科目・B英語資格方式とも）。医学部系サイトでは65.0表記の年もあり",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "hyogo-ika-yaku",
+    "dataRange": "45-47.5",
+    "webEstimate": "37.5（パスナビ/河合塾提供）〜40.0（みんなの大学情報）。ズレ+5〜+10",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "hyogo-ika-kango",
+    "dataRange": "47.5-50",
+    "webEstimate": "50.0（パスナビ、前期A・B日程とも）。ズレ最大2.5",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "hyogo-ika-riha",
+    "dataRange": "45-50",
+    "webEstimate": "40.0(作業療法)-50.0(理学療法)（パスナビ）。みんなの大学情報は42.5-50.0。minが2.5-5過大",
+    "verdict": "OFF_MINOR"
+   }
+  ],
+  "notes": "大学の実在・名称・区分・所在地・公式URL・学部4つ（医/薬/看護/リハ）の実在性とキャンパス配置はすべて正確。2022年の兵庫医療大学統合後の4学部体制を正しく反映している。MAJOR判定の根拠は2点: (1)薬学部の偏差値が河合塾実勢(37.5-40)より5-10高く、難易度を大きく誤認させる。(2)学費190万/年は薬学部準拠で、医学部（授業料650万/年・6年総額約3760万規模）とは大幅乖離があり、医学部志望の高校生に誤解を与えるリスクが高い。推奨修正: 薬学部偏差値→37.5-40、リハmin→40-42.5、学費に医学部別途注記。出典: パスナビ(passnavi.obunsha.co.jp/univ/4550)、みんなの大学情報、公式サイト(hyo-med.ac.jp)、マナビジョン学費ページ。"
+ },
+ {
+  "uni_id": "aichi-kyoiku",
+  "webAvailable": true,
+  "overall": "OK",
+  "checks": {
+   "exists": "OK。愛知教育大学は実在する国立大学（愛知県刈谷市井ヶ谷町広沢1）。Wikipedia・公式サイト・河合塾Kei-Net等で確認。",
+   "name": "OK。正式名称「愛知教育大学」と一致。",
+   "prefecture": "OK。愛知県・刈谷市井ヶ谷が所在地。メインキャンパスは井ヶ谷（刈谷市）の単一キャンパスで、campus_main「井ヶ谷キャンパス」表記は妥当。",
+   "type": "OK。国立で正しい。",
+   "url": "OK。https://www.aichi-edu.ac.jp/ は愛知教育大学の公式ドメイン（大学紹介・学部・交通案内ページを同ドメインで確認）。",
+   "tuition": "OK。535,800円は国立標準額と一致。"
+  },
+  "deptIssues": [],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "aichi-kyoiku-gimu",
+    "dataRange": "45-52.5",
+    "webEstimate": "河合塾45.0-52.5（パスナビ・みんなの大学情報が一致）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "aichi-kyoiku-koto",
+    "dataRange": "47.5-52.5",
+    "webEstimate": "河合塾47.5-55.0（みんなの大学情報。パスナビは52.5-55.0表示）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "aichi-kyoiku-shien",
+    "dataRange": "47.5-52.5",
+    "webEstimate": "河合塾はボーダー偏差値非公表（共通テスト得点率59-70%のみ掲載）。得点率からの推定としては違和感のない帯だが直接照合不可",
+    "verdict": "UNKNOWN"
+   }
+  ],
+  "notes": "学部リストは2021年度改組後の実構成（学校教員養成課程：幼児教育/義務教育/高等学校教育/特別支援教育/養護教育の5専攻＋教育支援専門職養成課程：心理・福祉・教育ガバナンス）と完全一致し、実在しない専攻はなし。偏差値は義務教育専攻が河合塾値と一致。高等学校教育専攻は上限が52.5と河合塾の55.0（国語・数学等の上位専修）よりわずかに低め（差2.5、許容範囲内）。幼児教育・特別支援・養護・教育支援専門職は河合塾がボーダー偏差値を公表しておらず（共テ得点率のみ）、データの数値は推定値として直接検証不能だが不自然ではない。検証ソース: aichi-edu.ac.jp（公式）、passnavi.obunsha.co.jp、minkou.jp、search.keinet.ne.jp。Benesse系（マナビジョン）の55-57台の数値は進研模試基準のため比較から除外した。"
+ },
+ {
+  "uni_id": "hyogo-kyoiku",
+  "webAvailable": true,
+  "overall": "OK",
+  "checks": {
+   "exists": "OK - 兵庫教育大学は実在。国立の教員養成大学（Web検索で公式サイト・Wikipedia・河合塾Kei-Net掲載を確認）",
+   "name": "OK - 正式名称「兵庫教育大学」(Hyogo University of Teacher Education) と一致",
+   "type": "OK - 国立で正しい",
+   "prefecture": "OK - 兵庫県加東市下久米942-1、嬉野台キャンパスでデータと一致",
+   "url": "OK - https://www.hyogo-u.ac.jp/ は本学公式ドメイン（大学概要 /about/outline/、アクセス /access/ 等が同ドメイン配下にあることを確認）",
+   "tuition": "OK - 535,800円は国立大学標準額と一致"
+  },
+  "deptIssues": [],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "hyogo-kyoiku-kyoiku",
+    "dataRange": "45-47.5",
+    "webEstimate": "河合塾ボーダー偏差値45.0（共通テスト得点率56%）。方式により45.0前後",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "学部は1件のみ登録だが、兵庫教育大学の学部は実際に学校教育学部（初等教育教員養成課程）のみであり網羅性も正確。偏差値・所在地・URL・学費すべてWeb検証済みで問題なし。"
+ },
+ {
+  "uni_id": "hyogo-kenritsu",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK - 兵庫県立大学は実在（2004年に神戸商科大学・姫路工業大学・兵庫県立看護大学が統合した公立大学）。Wikipedia・公式サイト・河合塾Kei-Netで確認",
+   "name": "OK - 正式名称「兵庫県立大学」で一致",
+   "prefecture": "OK - 兵庫県。本部・メインの神戸商科キャンパスは神戸市西区で、データの campus_main 記述と一致。学部別5キャンパス（神戸商科/姫路工学/播磨理学/姫路環境人間/明石看護）も実際の配置と一致",
+   "type": "OK - 公立（兵庫県公立大学法人）で正しい",
+   "url": "OK - https://www.u-hyogo.ac.jp/ は兵庫県立大学の公式ドメイン。学部サイト（eng.u-hyogo.ac.jp, sci.u-hyogo.ac.jp）も同一ドメイン配下で整合",
+   "tuition": "OK - 年額535,800円は公立大の標準額（国立準拠）で妥当。※県外出身者は入学金が割高だが授業料は同額"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "hyogo-kenritsu-ri",
+    "issue": "偏差値レンジ47.5-50が低め。理学部は中期日程のみの募集で、河合塾ボーダーは物質科学・生命科学とも52.5（データ最小値との差5、最大値との差2.5）",
+    "severity": "MINOR",
+    "suggestion": "hensachi を min 52.5 / max 52.5 に修正（中期日程のみである旨の注記があるとなお良い）"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "hyogo-kenritsu-shokei",
+    "dataRange": "52.5-55",
+    "webEstimate": "河合塾: 前期50.0-52.5、後期57.5（パスナビ掲載）。前期基準で50-52.5",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "hyogo-kenritsu-kankyo",
+    "dataRange": "50-52.5",
+    "webEstimate": "河合塾: 前期50.0-52.5（環境人間50.0、建築地域デザイン/グリーンサイエンス/食環境栄養52.5）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "hyogo-kenritsu-ri",
+    "dataRange": "47.5-50",
+    "webEstimate": "河合塾: 中期のみで52.5（物質科学・生命科学とも）。データは2.5-5低い",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "hyogo-kenritsu-kango",
+    "dataRange": "50-50",
+    "webEstimate": "河合塾ボーダー偏差値は非公表（パスナビ・スタディサプリとも「-」表記。個別試験が小論文等のため）。50は推定としては不自然でないが検証不能",
+    "verdict": "UNKNOWN"
+   }
+  ],
+  "notes": "学部6件（国際商経・社会情報科学・工・理・環境人間・看護）は実際の学部構成と完全一致し、実在しない学部なし。工学部もデータ47.5-50に対し河合塾前期47.5-52.5でほぼ整合。唯一の指摘は理学部の偏差値が低め（中期日程のみで52.5が実勢）である点と、看護学部が偏差値非公表方式のため検証不能な点。URL・区分・学費・所在地はすべて正確。総合判定は理学部OFF_MINORによりMINOR。出典: passnavi.obunsha.co.jp/univ/1235/difficulty/, search.keinet.ne.jp/1627, u-hyogo.ac.jp, ja.wikipedia.org/wiki/兵庫県立大学"
+ },
+ {
+  "uni_id": "kobe-gaidai",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK — 実在。日本唯一の公立外国語専門大学（神戸市公立大学法人）。公式サイト・河合塾Kei-Net双方で確認",
+   "name": "OK — 正式名称「神戸市外国語大学」で一致",
+   "type": "OK — 公立（神戸市公立大学法人）で正しい",
+   "prefecture": "OK — 兵庫県神戸市西区・学園都市キャンパス（学園都市駅近く）で正しい",
+   "url": "OK — https://www.kobe-cufs.ac.jp/ は本学の公式ドメインと一致（Web検索で公式サイトとして確認済み）",
+   "tuition": "OK — 535,800円は公立大学の標準額（国立標準と同額）で、本学の実際の年間授業料と一致"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "kobe-gaidai-russia",
+    "issue": "学科は実在するが偏差値がやや低め。データ52.5-55に対し河合塾Kei-Net現行ボーダーは57.5（範囲上端から2.5、下端から5の下振れ）",
+    "severity": "MINOR",
+    "suggestion": "偏差値を55-57.5に更新"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "kobe-gaidai-kokusai",
+    "dataRange": "57.5-60",
+    "webEstimate": "河合塾Kei-Net: 60.0",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kobe-gaidai-eibei",
+    "dataRange": "57.5-57.5",
+    "webEstimate": "河合塾Kei-Net: 60.0（差2.5、±3未満）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kobe-gaidai-eibei2",
+    "dataRange": "50-52.5",
+    "webEstimate": "河合塾Kei-Net: 55.0（範囲上端から差2.5、±3未満）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kobe-gaidai-russia",
+    "dataRange": "52.5-55",
+    "webEstimate": "河合塾Kei-Net: 57.5（範囲上端から2.5、下端から5の下振れ）",
+    "verdict": "OFF_MINOR"
+   }
+  ],
+  "notes": "Web検索・Kei-Net直接取得とも成功。学科6件は全て公式サイトの学科紹介ページで実在確認（英米/ロシア/中国/イスパニア/国際関係/第2部英米）。組織上、第2部英米学科はKei-Netでは「外国語（第2部）学部」扱いだが、データの「外国語学部 第2部英米学科（夜間）」表記は高校生向けには許容範囲。全体傾向としてデータの偏差値は現行河合塾ボーダーより一段（2.5程度）低めで、ロシア学科のみOFF_MINOR判定。偽URL・実在しない学部は無し。"
+ },
+ {
+  "uni_id": "kokugakuin",
+  "webAvailable": true,
+  "overall": "OK",
+  "checks": {
+   "exists": "OK: 國學院大學は実在。1882年創立の皇典講究所を母体とする私立大学。Web検索で公式サイト・受験情報サイト多数確認",
+   "name": "OK: 正式名称「國學院大學」（旧字体表記）で一致",
+   "type": "OK: 私立で正しい",
+   "prefecture": "OK: 東京都・渋谷キャンパス（渋谷区）がメイン。人間開発・観光まちづくりのみ、たまプラーザキャンパス（横浜市青葉区）でデータの campus 表記とも一致",
+   "url": "OK: https://www.kokugakuin.ac.jp/ は本物の公式ドメイン。学部紹介・学費ページ等が同ドメイン配下に実在することをWeb検索で確認",
+   "tuition": "OK: 120万円/年は妥当。2025年度実績は年間納付金約131.5〜137.5万円（入学金24万円含む初年度）、入学金除き約107.5〜113.5万円。私立文系相場100-140万の範囲内"
+  },
+  "deptIssues": [],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "kokugakuin-bun",
+    "dataRange": "55-60",
+    "webEstimate": "河合塾（パスナビ2027年度）52.5-57.5",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kokugakuin-shinto",
+    "dataRange": "50-52.5",
+    "webEstimate": "河合塾基準 50.0-52.5（2027年度データでは52.5-55.0）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kokugakuin-ho",
+    "dataRange": "52.5-57.5",
+    "webEstimate": "河合塾（パスナビ2027年度）55.0-60.0",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "学部リスト6件（文・神道文化・法・経済・人間開発・観光まちづくり）は國學院大學の全学部構成と完全一致（観光まちづくり学部は2022年設置、実在確認済み）。キャンパス配置も公式情報と一致。偏差値は3件とも河合塾相場との差2.5以内でOK判定だが、文学部はやや高め（+2.5）、法学部はやや低め（-2.5）の推定で、2027年度最新データへの更新余地あり。hensachi の source_url / verified_date が全件 null のため、出典記録の追加を推奨。"
+ },
+ {
+  "uni_id": "kio",
+  "webAvailable": true,
+  "overall": "MAJOR",
+  "checks": {
+   "exists": "OK: 畿央大学は実在（河合塾Kei-Net掲載番号2587、公式サイト・Wikipedia英語版でも確認）",
+   "name": "OK: 正式名称「畿央大学」で一致",
+   "type": "OK: 私立で正しい",
+   "prefecture": "OK: 奈良県北葛城郡広陵町馬見中4-2-2。データの「本部キャンパス（奈良県北葛城郡広陵町）」と一致",
+   "url": "OK: https://www.kio.ac.jp/ は畿央大学の公式サイト本物（検索結果・公式学部ページで確認）",
+   "tuition": "概ねOK: 年間150万円。実勢は現代教育で初年度約147万（入学金26万含む、2年目以降約120万台）、健康科学系（理学療法・看護）は約160-190万。全学平均としては妥当な範囲だが、学部間差が大きい点は留意"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "kio-rigaku",
+    "issue": "学科は実在するが偏差値が大きく過大。データ50-52.5に対し河合塾Kei-Net(2027年度入試)は40.0-42.5、みんなの大学情報(2026年度)も42.5-45.0。7.5-10ポイントのズレ",
+    "severity": "MAJOR",
+    "suggestion": "偏差値を40.0-42.5（河合塾2027年度ボーダー基準。余裕を見ても42.5-45.0）に修正"
+   },
+   {
+    "dept_id": "kio-kyoiku",
+    "issue": "学科は実在するが偏差値が過大。データ47.5-50に対し河合塾Kei-Netは42.5-45.0。5ポイントのズレ",
+    "severity": "MAJOR",
+    "suggestion": "偏差値を42.5-45.0に修正"
+   },
+   {
+    "dept_id": "kio-eiyo",
+    "issue": "学科は実在するが偏差値上限がやや過大。データ45-50に対し河合塾は42.5-45.0（上限で5、中央値で約4のズレ）",
+    "severity": "MINOR",
+    "suggestion": "偏差値を42.5-45.0に修正"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "kio-rigaku",
+    "dataRange": "50-52.5",
+    "webEstimate": "河合塾Kei-Net(2027年度入試方式別)40.0-42.5、みんなの大学情報(2026年度)42.5-45.0",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "kio-kyoiku",
+    "dataRange": "47.5-50",
+    "webEstimate": "河合塾Kei-Net 42.5-45.0（Benesse系サイトの53-59は進研模試基準で別尺度）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "kio-design",
+    "dataRange": "42.5-47.5",
+    "webEstimate": "河合塾Kei-Net 42.5-45.0",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "大学の実在・名称・区分・所在地・公式URL・学部学科構成（健康科学部4学科+教育学部1学科）は全て正確。問題は偏差値の鮮度で、特に理学療法学科は近年下落しており（かつては50前後だったが現行河合塾ボーダーは40.0-42.5）、データは数年前の水準のまま。看護医療(47.5-50 vs 実勢45.0-47.5)はズレ2.5でOK範囲。OFF_MAJORが2件（理学療法・現代教育）あるため overall=MAJOR。修正時はKei-Net https://search.keinet.ne.jp/2587/general/border_rate を出典に推奨。"
+ },
+ {
+  "uni_id": "kitasato",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK - 北里大学は実在（学校法人北里研究所、1962年設立の私立大学）。公式サイト・パスナビ・大学ポートレートで確認",
+   "name": "OK - 正式名称「北里大学」で一致",
+   "type": "OK - 私立で正しい（学校法人北里研究所）",
+   "prefecture": "OK - 神奈川県・相模原キャンパス（相模原市南区）がメインで正しい。薬学部は白金（東京）、獣医は十和田（青森）、健康科学は新潟と多キャンパスだが本部・主要学部は相模原",
+   "url": "OK - https://www.kitasato-u.ac.jp/ は北里大学の正式公式ドメイン（ac.jp、検索結果でも公式サイトとして確認）",
+   "tuition": "OK（注記あり）- 170万/年は理学部・未来工学部・海洋生命科学部水準として妥当（私立理系相場140-180万内）。ただし薬学部(約230-250万)・獣医学科(約230万)・医学部(初年度約900万)は大幅に高く、代表値としては下限寄り。学部別注記があると望ましい"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "kitasato-igaku",
+    "issue": "偏差値65-67.5は河合塾実勢(62.5、共テ得点率84%)より上振れ。特に上限67.5は+5のズレ",
+    "severity": "MINOR",
+    "suggestion": "62.5-65.0に修正（河合塾ボーダー62.5、年度により65.0）"
+   },
+   {
+    "dept_id": "kitasato-jui",
+    "issue": "偏差値42.5-62.5は河合塾実勢37.5-60.0よりやや上振れ（下限+5、上限+2.5）。動物資源科学科等の下位学科は37.5-40",
+    "severity": "MINOR",
+    "suggestion": "37.5-60.0に修正（獣医学科57.5-60、動物資源科学科37.5-40）"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "kitasato-igaku",
+    "dataRange": "65-67.5",
+    "webEstimate": "河合塾62.5（共テボーダー84%、年度により65.0）",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "kitasato-yaku",
+    "dataRange": "50-55",
+    "webEstimate": "河合塾52.5-55.0（薬学科55、生命創薬科学科52.5）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kitasato-kenko",
+    "dataRange": "40-45",
+    "webEstimate": "河合塾40.0-45（看護学科40-42.5、医療検査学科42.5-45）",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "学部リスト9件（医・薬・獣医・看護・理・医療衛生・海洋生命科学・未来工・健康科学）は公式の学部構成と完全一致し、実在しない学部なし。未来工学部（2023新設・データサイエンス学科）・健康科学部（2024新設・新潟県南魚沼市）の新設2学部も正しく収録。キャンパス注記（薬=白金/1年次相模原、獣医=十和田/1年次相模原、健康科学=新潟）も事実と整合。問題は医学部の偏差値上振れ（データ65-67.5 vs 河合塾62.5）と獣医学部の下限上振れのみで、いずれも±5以内中心のMINOR。URL・区分・所在地・学部実在性に問題なし。Web検索は正常に利用できた（パスナビ/河合塾Kei-Net系ソース基準）。"
+ },
+ {
+  "uni_id": "kobe-geijutsu-koka",
+  "webAvailable": true,
+  "overall": "MAJOR",
+  "checks": {
+   "exists": "OK - 神戸芸術工科大学は実在（1989年大学設置、Wikipedia・公式サイトで確認）",
+   "name": "OK - 正式名称「神戸芸術工科大学」で一致",
+   "type": "OK - 私立で正しい",
+   "prefecture": "OK - 兵庫県神戸市西区学園西町に本部キャンパス。データ表記と一致",
+   "url": "OK - kobe-du.ac.jp は本学の公式ドメイン（公式サイトで確認済み）",
+   "tuition": "OK - 年間170万円は芸術系私立の相場内（本学の年間納入金は授業料+施設費で約165〜170万円、妥当）"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "kobe-geijutsu-koka-kankyo",
+    "issue": "「環境デザイン学科」は2024年4月改組で募集停止。2026年受験生には存在しない旧学科",
+    "severity": "MAJOR",
+    "suggestion": "「芸術工学部 建築・環境デザイン学科」（偏差値目安42.5）に更新"
+   },
+   {
+    "dept_id": "kobe-geijutsu-koka-product",
+    "issue": "「プロダクト・インテリアデザイン学科」は2024年改組で募集停止",
+    "severity": "MAJOR",
+    "suggestion": "「芸術工学部 生産・工芸デザイン学科」（偏差値目安40.0）に更新"
+   },
+   {
+    "dept_id": "kobe-geijutsu-koka-manga",
+    "issue": "「まんが表現学科」は2024年改組で募集停止（メディア芸術学科に統合）",
+    "severity": "MAJOR",
+    "suggestion": "「芸術工学部 メディア芸術学科」（偏差値目安45.0）に統合・更新"
+   },
+   {
+    "dept_id": "kobe-geijutsu-koka-eizo",
+    "issue": "「映像表現学科」は2024年改組で募集停止（メディア芸術学科に統合）",
+    "severity": "MAJOR",
+    "suggestion": "まんが表現学科と併せ「メディア芸術学科」1件に統合"
+   },
+   {
+    "dept_id": "kobe-geijutsu-koka-art-craft",
+    "issue": "「アート・クラフト学科」は2024年改組で募集停止",
+    "severity": "MAJOR",
+    "suggestion": "「生産・工芸デザイン学科」に統合するか削除"
+   },
+   {
+    "dept_id": "kobe-geijutsu-koka-visual",
+    "issue": "学科名「ビジュアルデザイン学科」は改組後も存続しており名称はOK。ただし偏差値35-37.5が現行相場42.5より大きく低い",
+    "severity": "MINOR",
+    "suggestion": "偏差値を42.5前後に更新"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "kobe-geijutsu-koka-visual",
+    "dataRange": "35-37.5",
+    "webEstimate": "42.5（河合塾基準・パスナビ/みんなの大学情報 2026年度）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "kobe-geijutsu-koka-kankyo",
+    "dataRange": "35-35",
+    "webEstimate": "後継の建築・環境デザイン学科で42.5（旧学科のため直接比較不可だが後継比-7.5）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "kobe-geijutsu-koka-manga",
+    "dataRange": "35-37.5",
+    "webEstimate": "後継のメディア芸術学科で45.0（後継比-7.5〜-10）",
+    "verdict": "OFF_MAJOR"
+   }
+  ],
+  "notes": "大学の基本情報（実在・名称・区分・所在地・公式URL・学費）はすべて正確。しかし学科構成が2023年度以前の旧体制のまま。2024年4月の改組で芸術工学部は「建築・環境デザイン／生産・工芸デザイン／ビジュアルデザイン／メディア芸術」の4学科体制になり、データ掲載6学科のうち5学科は募集停止済み。高校生向けアプリとして2026年入試には使えない構成のためMAJOR。偏差値も現行の河合塾基準40.0-45.0（学部全体、パスナビでは40.0-42.5）に対し全学科35-37.5と約5以上低い旧水準。修正案: 4現行学科に差し替え、偏差値は建築・環境42.5／生産・工芸40.0／ビジュアル42.5／メディア芸術45.0を目安に（美術系は実技配点で変動するため40.0-45.0のレンジ表記推奨）。"
+ },
+ {
+  "uni_id": "kanagawa-univ",
+  "webAvailable": true,
+  "overall": "MAJOR",
+  "checks": {
+   "exists": "OK — 神奈川大学は実在。1928年創立の私立総合大学（11学部22学科）。Wikipedia・大学ポートレート・公式サイトで確認",
+   "name": "OK — 正式名称「神奈川大学」で一致",
+   "type": "OK — 私立で正しい",
+   "prefecture": "OK — 神奈川県横浜市。メインの横浜キャンパス（神奈川区六角橋）も正しい。みなとみらいキャンパス（西区）の配置（経営・外国語・国際日本）も実際と一致",
+   "url": "OK — https://www.kanagawa-u.ac.jp/ は本学の公式サイトドメインで正しい（検索結果・公式ページで確認）",
+   "tuition": "OK — データ130万円/年。実際は文系初年度納入金 約117.6万円（2025年度、公式PDF）、理系は約160万円前後。文理混合校の代表値として妥当な範囲内"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "kanagawa-univ-kou",
+    "issue": "偏差値が大きくズレ。データ42.5-47.5に対し、2026年度河合塾実勢は37.5-42.5（みんなの大学情報）〜35.0-42.5。min/maxとも約5高い",
+    "severity": "MAJOR",
+    "suggestion": "hensachi を min 37.5 / max 42.5 に修正"
+   },
+   {
+    "dept_id": "kanagawa-univ-joho",
+    "issue": "偏差値が大きくズレ。データ45-50に対し、2026年度河合塾実勢は42.5-45.0（計算機科学45.0、システム数理42.5）。maxが5高い",
+    "severity": "MAJOR",
+    "suggestion": "hensachi を min 42.5 / max 45 に修正"
+   },
+   {
+    "dept_id": "kanagawa-univ-keizai",
+    "issue": "偏差値minがやや高め。データ45-47.5に対し実勢は40.0-47.5（河合塾基準の集計サイト）。minが2.5-5高い",
+    "severity": "MINOR",
+    "suggestion": "hensachi min を 40〜42.5 程度に引き下げ"
+   },
+   {
+    "dept_id": "kanagawa-univ-kagakuseimei",
+    "issue": "偏差値がやや低め。データ42.5-45に対し2026年度実勢は45.0-47.5。約2.5低い（許容内だが方向が逆）",
+    "severity": "MINOR",
+    "suggestion": "hensachi を min 45 / max 47.5 に更新"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "kanagawa-univ-kokusai",
+    "dataRange": "47.5-52.5",
+    "webEstimate": "45.0-52.5（河合塾2026、パスナビ/みんなの大学情報）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kanagawa-univ-kagakuseimei",
+    "dataRange": "42.5-45",
+    "webEstimate": "45.0-47.5（河合塾2026、パスナビ）",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "kanagawa-univ-keiei",
+    "dataRange": "47.5-50",
+    "webEstimate": "45.0-47.5（河合塾2026）",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "kanagawa-univ-kou",
+    "dataRange": "42.5-47.5",
+    "webEstimate": "37.5-42.5（河合塾2026、みんなの大学情報）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "kanagawa-univ-joho",
+    "dataRange": "45-50",
+    "webEstimate": "42.5-45.0（河合塾2026、スタディサプリ進路）",
+    "verdict": "OFF_MAJOR"
+   }
+  ],
+  "notes": "大学の実在・名称・区分・所在地・公式URL・学費・学部リスト（全11学部: 法/経済/経営/外国語/国際日本/人間科学/理/工/建築/化学生命/情報）はすべて現行の学部構成と完全一致で問題なし。2022-2023年の工学部再編後の構成（建築・化学生命・情報の分離、みなとみらいキャンパス学部群）が正しく反映されている点は良好。問題は偏差値の水準で、理工系（工学部・情報学部）が実勢より約5高く登録されておりOFF_MAJORが2件 → overall MAJOR。理系全般をやや高めに見積もる傾向があるため、理系学部の一括見直しを推奨。主な参照元: https://www.kanagawa-u.ac.jp/ / https://www.minkou.jp/university/school/deviation/20318/ / https://passnavi.obunsha.co.jp/univ/3210/difficulty/ / https://jyukuyobi-navi.jp/column/1041/ / https://shingakunet.com/gakko/SC000329/nanido/"
+ },
+ {
+  "uni_id": "kyoto-gaidai",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK — 京都外国語大学は実在（京都市右京区西院笠目町6、大学ポートレート私学版・Wikipedia・公式サイトで確認）",
+   "name": "OK — 正式名称「京都外国語大学」で一致",
+   "type": "OK — 私立で正しい（学校法人京都外国語大学）",
+   "prefecture": "OK — 京都府京都市右京区、本部キャンパス表記も正しい（阪急西院駅徒歩約15分）",
+   "url": "OK — https://www.kufs.ac.jp/ は本学の公式ドメイン（KUFS=Kyoto University of Foreign Studies）。偽サイト・別組織ではない",
+   "tuition": "概ねOK（軽微）— データ116万円/年。2026年度実績は初年度納入金：外国語149万（入学金23万込）→年間学費約126万、国際貢献152.25万→約129万。実際より約10万円低めだが私立文系相場（100-140万）内"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "kyoto-gaidai-gaikokugo",
+    "issue": "学部は実在（9学科：英米語・スペイン語・フランス語・ドイツ語・ブラジルポルトガル語・中国語・日本語・イタリア語・ロシア語）だが、偏差値min 42.5が河合塾基準の実勢35.0より+7.5高い（下限が大きくズレ）。maxも50 vs 47.5でやや高め",
+    "severity": "MAJOR",
+    "suggestion": "偏差値を 35.0〜47.5 に修正（河合塾基準、パスナビ2026年度。英米語37.5-47.5、ロシア語35.0-37.5等）"
+   },
+   {
+    "dept_id": "kyoto-gaidai-kokusaikoken",
+    "issue": "学部は実在（2018年設置、グローバルスタディーズ学科・グローバル観光学科）だが、偏差値45-50が実勢42.5-47.5より全体に+2.5高め（別ソースでは40.0-47.5）",
+    "severity": "MINOR",
+    "suggestion": "偏差値を 42.5〜47.5 に修正（グローバルスタディーズ47.5、グローバル観光42.5-45.0）"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "kyoto-gaidai-gaikokugo",
+    "dataRange": "42.5-50",
+    "webEstimate": "35.0-47.5（河合塾基準・パスナビ2026。学科別: 英米語37.5-47.5、ロシア語35.0-37.5）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "kyoto-gaidai-kokusaikoken",
+    "dataRange": "45-50",
+    "webEstimate": "42.5-47.5（パスナビ2026。グローバルスタディーズ47.5、グローバル観光42.5-45.0。別ソースでは40.0-47.5）",
+    "verdict": "OFF_MINOR"
+   }
+  ],
+  "notes": "学部は全2件で全数チェック済（スポットチェック=全件）。大学実在・区分・所在地・公式URLはすべて正確。問題は偏差値の上振れで、特に外国語学部は下限が+7.5高くOFF_MAJOR（1件のみ。「OFF_MAJOR複数」には該当せずoverallはMINOR）。高校生向けアプリとしては「実際より難しく見える」方向のズレなので、過度に諦めさせるリスクあり。修正推奨: 外国語35.0-47.5、国際貢献42.5-47.5。学費は約10万円低め（実勢：年間約126-129万円）なので1,260,000円程度への更新を推奨。出典: passnavi.obunsha.co.jp/univ/3900/difficulty/、kufs.ac.jp/admissions/expenses/school_fee_unv_col.html、search.keinet.ne.jp/2488"
+ },
+ {
+  "uni_id": "kobe-shoin",
+  "webAvailable": true,
+  "overall": "MAJOR",
+  "checks": {
+   "exists": "OK — 実在。2025年4月に神戸松蔭女子学院大学が共学化し「神戸松蔭大学」に名称変更（公式サイト・Wikipediaで確認）",
+   "name": "OK — 「神戸松蔭大学（旧・神戸松蔭女子学院大学）」の表記は正確。旧称併記も適切",
+   "type": "OK — 私立で正しい（学校法人松蔭女子学院）",
+   "prefecture": "OK — 兵庫県・本部キャンパス（神戸市灘区篠原伯母野山町）で正しい",
+   "url": "OK — https://www.shoin.ac.jp/ は神戸松蔭大学の公式ドメインと確認。神奈川の別法人「松蔭大学」(shoin-u.ac.jp)との取り違えもなし",
+   "tuition": "OK — 年125万円は私立文系相場（100-140万）内で妥当"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "kobe-shoin-kyoiku",
+    "issue": "教育学部（教育発達学科）は2027年度から学生募集停止（大学公式発表・大学ジャーナル報道で確認）。2027年4月入学からは文学部・人間科学部の2学部5学科体制になるため、現高3（2027年4月入学）はこの学部に出願できない。高校生向け進路アプリとしては実質「存在しない選択肢」を提示することになる",
+    "severity": "MAJOR",
+    "suggestion": "教育学部を削除するか「2027年度から募集停止」の注記を付与。教員志望向けには他大学の教育系学部を案内する"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "kobe-shoin-bungaku",
+    "dataRange": "35-37.5 (kawai)",
+    "webEstimate": "35.0-37.5（河合塾基準・みんなの大学情報2027年度版。旧データでは40.0の表示もあり）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kobe-shoin-kyoiku",
+    "dataRange": "35-37.5 (kawai)",
+    "webEstimate": "35.0-37.5（募集していた2026年度入試時点の河合塾基準）。ただし2027年度から募集停止のため今後は偏差値自体が消滅",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kobe-shoin-ningen",
+    "dataRange": "35-37.5 (kawai)",
+    "webEstimate": "37.5前後（最新は心理学科37.5、旧データで37.5-40.0）。下限が2.5低めだがズレは±3未満",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "大学の実在・名称・区分・所在地・公式URL・学費・偏差値はすべて妥当。MAJOR判定の唯一の理由は教育学部の2027年度募集停止（2026年3月公表、univ-journal.jp/996490 および公式サイトで確認）。アプリ利用者の中心である現高3は2027年4月入学のため、教育学部は出願不可の選択肢となる。データ修正時の参考: 2027年度以降は文学部（グローバルコミュニケーション学科・人文社会学科）＋人間科学部（心理学科・人間科学科・ファッション・ウェルネスデザイン学科）の2学部5学科。Web検索・公式サイト取得ともに正常に実行できた。"
+ },
+ {
+  "uni_id": "konan-joshi",
+  "webAvailable": true,
+  "overall": "MAJOR",
+  "checks": {
+   "exists": "OK - 甲南女子大学は実在（私立女子大学、神戸市東灘区森北町）。公式サイト・パスナビ・Wikipediaで確認",
+   "name": "OK - 正式名称「甲南女子大学」で一致",
+   "prefecture": "OK - 兵庫県、メインキャンパスは神戸市東灘区で正しい（公式サイトの所在地: 神戸市東灘区森北町6-2-23）",
+   "type": "OK - 私立で正しい",
+   "url": "OK - https://www.konan-wu.ac.jp/ は本学の公式ドメイン（Web検索で公式サイトとして確認済み）",
+   "tuition": "OK（概ね妥当）- 130万円/年は代表値として許容範囲。実際の初年度納入金は文学部136万・医療栄養学部168万・看護学科185万と学部差が大きく、文系はやや過大・看護系は過小に見える点は注意"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "konan-joshi-ningen",
+    "issue": "人間科学部は改組済みで新入生募集を停止している。心理学科は2025年4月に心理学部へ、総合子ども学科は2026年4月に教育学部へ、文化社会学科・生活環境学科は2026年4月に社会学部へ改組された。2027年度入学者は人間科学部に入学できないため、進路診断アプリの掲載学部としては実質的に存在しない",
+    "severity": "MAJOR",
+    "suggestion": "人間科学部を削除し、心理学部（偏差値42.5前後）・教育学部（42.5前後）・社会学部（40〜42.5）の3学部に置き換える"
+   },
+   {
+    "dept_id": "konan-joshi-kango-riha",
+    "issue": "偏差値レンジが実勢より高めにシフト。データ42.5〜47.5に対し河合塾基準の実勢は37.5〜45.0（看護45.0、理学療法37.5〜40.0）。下限が5ポイント乖離",
+    "severity": "MINOR",
+    "suggestion": "偏差値を37.5〜45.0に修正（看護45.0／理学療法37.5〜40.0）"
+   },
+   {
+    "dept_id": "konan-joshi-kokusai",
+    "issue": "軽微な留意点: 国際学部は2027年4月に国際学科へ改組予定（学部名は存続のため掲載自体は問題なし）。実勢偏差値はパスナビでは全専攻40.0でデータの上限42.5はやや高めだが±3未満",
+    "severity": "MINOR",
+    "suggestion": "偏差値40.0程度に寄せる。2027年度の学科再編情報を備考に追加できるとよい"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "konan-joshi-kango-riha",
+    "dataRange": "42.5-47.5",
+    "webEstimate": "37.5-45.0（河合塾基準/パスナビ2026: 看護45.0、理学療法37.5-40.0）",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "konan-joshi-bun",
+    "dataRange": "40-42.5",
+    "webEstimate": "37.5-42.5（パスナビ2026: 日本文化42.5、メディア表現37.5）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "konan-joshi-iryo-eiyo",
+    "dataRange": "40-42.5",
+    "webEstimate": "40.0-42.5（パスナビ2026）",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "大学の基本情報（実在・名称・区分・所在地・公式URL）は全て正確。overall=MAJORの主因は学部リストの陳腐化: 人間科学部は2025〜2026年の改組で募集停止となり、代わりに新設された心理学部（2025年4月）・教育学部（2026年4月）・社会学部（2026年4月）がデータに存在しない。2027年度受験生向けアプリとしては人間科学部の削除と3新学部の追加が必須。偏差値は文・医療栄養・国際はほぼ実勢通り、看護リハビリテーション学部のみ高めシフト（下限で5ポイント乖離）。学費130万円は代表値として許容だが学部間の幅（136万〜185万/初年度）が大きい。参照: konan-wu.ac.jp（公式）、passnavi.obunsha.co.jp/univ/4420/difficulty/、konan-wu.ac.jp/news/detail.php?id=4028（社会学部・教育学部新設告知）、manabi.benesse.ne.jp（学費）。Web検索は正常に利用できた。"
+ },
+ {
+  "uni_id": "kyoto-seika",
+  "webAvailable": true,
+  "overall": "MAJOR",
+  "checks": {
+   "exists": "OK — 京都精華大学は実在（京都市左京区岩倉。パスナビ・大学ポートレート・公式サイトで確認）",
+   "name": "OK — 正式名称「京都精華大学」で一致",
+   "type": "OK — 私立で正しい（学校法人京都精華大学）",
+   "prefecture": "OK — 京都府京都市左京区岩倉のワンキャンパス。campus_main表記も正しい",
+   "url": "OK — https://www.kyoto-seika.ac.jp/ は本学の公式ドメイン（検索結果の公式ページ群 /about/ /edu/ 等で確認）",
+   "tuition": "OK — 年間160万円は芸術系私大の相場（芸術・デザイン・マンガ系は年間約160〜175万円）として妥当。ただし人文系学部は約120万円台なので学部により幅がある点は留意"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "kyoto-seika-kokusai",
+    "issue": "国際文化学部は2026年度から募集停止となり、人文学部（2026年開設、旧・国際文化学部）に改組済み。高校生向けアプリとしては出願不可能な旧名称を掲載している",
+    "severity": "MINOR",
+    "suggestion": "名称を「人文学部」に変更し、偏差値を35.0〜37.5（河合塾基準・パスナビ2027年度）に更新"
+   },
+   {
+    "dept_id": "kyoto-seika-manga",
+    "issue": "偏差値40〜42.5は実勢より約5〜7.5低い（河合塾基準では45.0〜50.0、大学内で最難関の学部）",
+    "severity": "MAJOR",
+    "suggestion": "45.0〜50.0に修正"
+   },
+   {
+    "dept_id": "kyoto-seika-design",
+    "issue": "偏差値37.5〜40は実勢より約5低い（河合塾基準では42.5〜45.0）",
+    "severity": "MAJOR",
+    "suggestion": "42.5〜45.0に修正"
+   },
+   {
+    "dept_id": "kyoto-seika-geijutsu",
+    "issue": "偏差値35〜37.5は実勢より約7.5〜10低い（河合塾基準では42.5〜45.0程度、パスナビ2027年度では45.0）",
+    "severity": "MAJOR",
+    "suggestion": "42.5〜45.0に修正"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "kyoto-seika-manga",
+    "dataRange": "40.0-42.5",
+    "webEstimate": "45.0-50.0（河合塾基準・パスナビ2027年度入試。みんなの大学情報等でも47.5前後）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "kyoto-seika-geijutsu",
+    "dataRange": "35.0-37.5",
+    "webEstimate": "42.5-45.0（パスナビ2027年度は45.0、他ソースは42.5）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "kyoto-seika-design",
+    "dataRange": "37.5-40.0",
+    "webEstimate": "42.5-45.0（河合塾基準・パスナビ2027年度）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "kyoto-seika-media",
+    "dataRange": "37.5-40.0",
+    "webEstimate": "40.0前後（河合塾基準・パスナビ2027年度）",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "大学の実在・区分・所在地・公式URL・学費はすべて正しい。問題は2点。(1) 偏差値が全体的に約5低く登録されており、5学部中3学部（マンガ・デザイン・芸術）が±5以上のOFF_MAJOR。メディア表現のみ一致。データ作成時に一律低めの推定値を入れた可能性が高い。(2) 国際文化学部は2026年度募集停止で人文学部（偏差値35.0-37.5）に改組済みのため名称更新が必要。偏差値OFF_MAJORが複数あるため総合判定はMAJOR。出典: パスナビ（旺文社・河合塾基準 https://passnavi.obunsha.co.jp/univ/3940/difficulty/）、京都精華大学公式（https://www.kyoto-seika.ac.jp/about/）。"
+ },
+ {
+  "uni_id": "morinomiya-iryo",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK: 森ノ宮医療大学は実在。大阪市住之江区南港北1-26-16、Osaka Metro中央線コスモスクエア駅徒歩1分。公式サイト・河合塾Kei-Net・みんなの大学情報で確認",
+   "name": "OK: 正式名称「森ノ宮医療大学」で一致",
+   "type": "OK: 私立で正しい（学校法人による私立大学、大学ポートレート私学版に掲載）",
+   "prefecture": "OK: 大阪府で正しい。メインキャンパス表記「コスモスクエアキャンパス」も所在地（住之江区・コスモスクエア駅前）と整合",
+   "url": "OK: https://www.morinomiya-u.ac.jp/ は検索結果でも大学公式サイトとして確認済み。偽・別組織ではない",
+   "tuition": "OK: 年間170万円は妥当。公式学費資料で看護学科は授業料120万+教育充実費（年間計約170万）、私立医療技術系の相場(140-180万+医療系上乗せ)内"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "morinomiya-iryo-kango",
+    "issue": "学部・学科は実在するが偏差値がやや低め（データ45-47.5、河合塾基準の実勢50.0で2.5-5のズレ）",
+    "severity": "MINOR",
+    "suggestion": "偏差値を47.5-50.0程度に更新"
+   },
+   {
+    "dept_id": "morinomiya-iryo-sagyo",
+    "issue": "学科は実在するが偏差値がやや低め（データ42.5-45、みんなの大学情報の河合塾基準47.5で2.5-5のズレ）",
+    "severity": "MINOR",
+    "suggestion": "偏差値を45-47.5程度に更新"
+   },
+   {
+    "dept_id": "morinomiya-iryo-gengo",
+    "issue": "学科は実在するが偏差値がやや低め（データ40-42.5、河合塾基準の実勢45.0で2.5-5のズレ）",
+    "severity": "MINOR",
+    "suggestion": "偏差値を42.5-45程度に更新"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "morinomiya-iryo-hoshasen",
+    "dataRange": "47.5-50",
+    "webEstimate": "河合塾基準47.5-50.0（Kei-Net/みんなの大学情報）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "morinomiya-iryo-shinkyu",
+    "dataRange": "37.5-40",
+    "webEstimate": "河合塾基準37.5-40.0",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "morinomiya-iryo-kango",
+    "dataRange": "45-47.5",
+    "webEstimate": "河合塾基準50.0（2026-2027年度模試ベース）",
+    "verdict": "OFF_MINOR"
+   }
+  ],
+  "notes": "大学の実在・区分・所在地・公式URL・学費・学部学科リスト全8件（看護学部看護学科／総合リハビリテーション学部 理学療法・作業療法・言語聴覚／医療技術学部 臨床検査・臨床工学・診療放射線・鍼灸）はすべて公式の現行構成と一致し問題なし。唯一の指摘は偏差値が一部学科（看護・作業療法・言語聴覚）で実勢より2.5-5低めに登録されている点で、いずれもOFF_MINOR級。理学療法・臨床検査・臨床工学・診療放射線・鍼灸は相場と一致。高校生向け配布に致命的な誤情報はない。"
+ },
+ {
+  "uni_id": "musashi",
+  "webAvailable": true,
+  "overall": "OK",
+  "checks": {
+   "exists": "OK — 武蔵大学は実在（東京都練馬区・江古田キャンパスの私立大学）。パスナビ・河合塾Kei-Net・公式サイト等で確認",
+   "name": "OK — 正式名称「武蔵大学」で一致。武蔵野大学（別大学）との混同なし",
+   "type": "OK — 私立で正しい",
+   "prefecture": "OK — 東京都・江古田キャンパス（練馬区）で正しい。メインキャンパスは江古田のみ",
+   "url": "OK — musashi.ac.jp は武蔵大学の公式ドメイン。検索で公式の学費開示ページ等（www.musashi.ac.jp/about/disclosure/fees/）が同ドメインで確認できた",
+   "tuition": "OK — 年間115万円は私立文系相場（100-140万）内で、武蔵大の実際の年間納付額（初年度約128万、2年次以降約110-115万）と整合"
+  },
+  "deptIssues": [],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "musashi-keizai",
+    "dataRange": "55-57.5",
+    "webEstimate": "河合塾基準（パスナビ）57.5-60.0（経済/経営57.5-60、金融57.5）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "musashi-shakai",
+    "dataRange": "55-60",
+    "webEstimate": "河合塾基準 55.0-60.0",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "musashi-kokusai",
+    "dataRange": "55-60",
+    "webEstimate": "河合塾基準 52.5-57.5",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "学部4件（経済・人文・社会・国際教養）は武蔵大学の全学部構成と完全一致（国際教養学部は2022年新設、掲載は正当）。偏差値は経済学部がデータ55-57.5に対しWeb相場57.5-60.0で約2.5低め、国際教養が55-60に対し相場52.5-57.5で約2.5高めだが、いずれもズレ±3未満のため判定基準上はOK。人文・社会は完全一致。将来のデータ更新時に経済学部を57.5-60へ引き上げると精度が上がる。webAvailable=true（WebSearchで検証済み）。"
+ },
+ {
+  "uni_id": "meiji-gakuin",
+  "webAvailable": true,
+  "overall": "OK",
+  "checks": {
+   "exists": "OK — 明治学院大学は実在（東京都港区白金の私立大学、河合塾Kei-Net・パスナビ・公式サイトで確認）",
+   "name": "OK — 正式名称「明治学院大学」と一致",
+   "type": "OK — 私立で正しい",
+   "prefecture": "OK — 東京都・白金キャンパス（港区）がメインで正しい。1・2年は横浜キャンパス（戸塚区）という記載も実態と一致",
+   "url": "OK — https://www.meijigakuin.ac.jp/ は明治学院大学の公式ドメイン（キャンパス案内・学納金ページ等を実際に確認）",
+   "tuition": "OK — 年120万円は私立文系相場（100-140万）に合致。実際の授業料+施設費は年間約110-125万円程度で妥当（情報数理学部のみやや高いが大学代表値として問題なし）"
+  },
+  "deptIssues": [],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "meiji-gakuin-kokusai",
+    "dataRange": "55-57.5",
+    "webEstimate": "河合塾基準 57.5-60.0（パスナビ/みんなの大学情報）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "meiji-gakuin-shakai",
+    "dataRange": "52.5-57.5",
+    "webEstimate": "河合塾基準 52.5-57.5（完全一致）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "meiji-gakuin-joho",
+    "dataRange": "47.5-52.5",
+    "webEstimate": "河合塾基準 50.0-52.5（パスナビで直接確認、2024年新設の理系学部）",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "学部7件（文・経済・社会・法・国際・心理・情報数理）は全て実在し、明治学院大学の実際の学部構成と完全一致。情報数理学部は2024年4月新設の同大初の理系学部でデータに正しく反映されている。キャンパス記載（3・4年白金/1・2年横浜、国際・情報数理は横浜4年間）も実態と整合。偏差値は全体に実勢よりmin側が2.5低め（国際55vs57.5、情報数理47.5vs50.0、文52.5vs実勢50.0-55.0）だがいずれも±3未満で許容範囲。心理学部はみんなの大学情報で最大62.5の表示があるが特定方式込みの集計値とみられ、河合塾標準ではデータの55-57.5で妥当。参照: パスナビ https://passnavi.obunsha.co.jp/univ/3130/difficulty/ 、河合塾Kei-Net https://search.keinet.ne.jp/2287 、公式 https://www.meijigakuin.ac.jp/"
+ },
+ {
+  "uni_id": "kyushu-univ",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK - 九州大学は実在。公式サイト・河合塾・パスナビ等の複数ソースで確認",
+   "name": "OK - 正式名称「九州大学」で一致",
+   "type": "OK - 国立大学で正しい",
+   "prefecture": "OK - 福岡県、メインキャンパスは伊都キャンパス（福岡市西区）で正しい。医歯薬=病院キャンパス（東区馬出）、芸術工=大橋キャンパス（南区）の配置も正確",
+   "url": "OK - https://www.kyushu-u.ac.jp/ は九州大学の正式公式ドメイン（Web検索で公式ページ群を確認）",
+   "tuition": "OK - 535,800円は国立大学標準額と完全一致"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "kyushu-univ-ri",
+    "issue": "偏差値レンジ52.5-57.5の下限が古い。パスナビ（河合塾ボーダー）では現在、前期は全学科（物理・化学・地惑・数学・生物）57.5で、下限52.5は実勢より5低い",
+    "severity": "MINOR",
+    "suggestion": "57.5（min=max=57.5）に更新"
+   },
+   {
+    "dept_id": "kyushu-univ-no",
+    "issue": "偏差値レンジ52.5-55が実勢より低い。パスナビ（河合塾ボーダー）では前期57.5（生物資源環境学科）で、レンジ全体が2.5-5低い",
+    "severity": "MINOR",
+    "suggestion": "55-57.5または57.5に更新"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "kyushu-univ-i",
+    "dataRange": "50-67.5",
+    "webEstimate": "医学科67.5、保健学科52.5-55.0、生命科学科55.0（河合塾基準、実勢レンジ52.5-67.5）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kyushu-univ-ho",
+    "dataRange": "57.5-60",
+    "webEstimate": "60.0（河合塾基準）。従来57.5-60.0で推移",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kyushu-univ-no",
+    "dataRange": "52.5-55",
+    "webEstimate": "57.5（パスナビ=河合塾ボーダー、前期・生物資源環境学科）",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "kyushu-univ-ri",
+    "dataRange": "52.5-57.5",
+    "webEstimate": "57.5（パスナビ=河合塾ボーダー、前期全学科57.5）",
+    "verdict": "OFF_MINOR"
+   }
+  ],
+  "notes": "Web検索・WebFetch使用可。大学基本情報・URL・学費・キャンパス配置は全て正確。学部リスト12件は公式の12学部（共創・文・教育・法・経済・理・医・歯・薬・工・芸術工・農）と完全一致し、実在しない学部なし。医学部の名称表記「医学部（医学科・生命科学科・保健学科）」も実在学科名で正確。唯一の問題は理学部・農学部の偏差値レンジが近年の難化（全学科57.5化）を反映しておらず2.5-5低めな点で、いずれもMINOR。参照: passnavi.obunsha.co.jp（河合塾ボーダー掲載）、minkou.jp、kyushu-u.ac.jp/ja/faculty"
+ },
+ {
+  "uni_id": "nara-gakuen",
+  "webAvailable": true,
+  "overall": "OK",
+  "checks": {
+   "exists": "OK: 奈良学園大学は実在（奈良県奈良市、公式サイト・河合塾Kei-Net・パスナビ等で確認）",
+   "name": "OK: 正式名称「奈良学園大学」と一致",
+   "prefecture": "OK: 奈良県。メインキャンパスは登美ヶ丘キャンパス（奈良市中登美ヶ丘3-15-1）。2022年に三郷キャンパスから登美ヶ丘へ統合済みで、全学部が登美ヶ丘所在",
+   "type": "OK: 私立で正しい（学校法人奈良学園）",
+   "tuition": "OK（妥当）: 年間140万の登録値は妥当な概算。実際は人間教育学部が初年度147万（入学金30万込、年間授業料等約117万）、保健医療学部看護学科が初年度180万。学部間で差はあるが大学全体の代表値としては相場内",
+   "url": "OK: https://www.naragakuen-u.jp/ は奈良学園大学の公式サイト本物（検索結果で学部ページ含め公式ドメインとして確認）"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "nara-gakuen-riha",
+    "issue": "学部・学科名は実在し正しいが、campus欄に「（所在キャンパスは要確認）」の注記が残存。実際は2022年に三郷キャンパスから登美ヶ丘キャンパスへ統合済みで、登美ヶ丘で確定",
+    "severity": "MINOR",
+    "suggestion": "注記を削除し「登美ヶ丘キャンパス（奈良県奈良市中登美ヶ丘）」に確定させる。学科正式表記は「保健医療学部 リハビリテーション学科（理学療法学専攻・作業療法学専攻）」"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "nara-gakuen-kango",
+    "dataRange": "37.5-40",
+    "webEstimate": "河合塾: 看護学科 40.0（保健医療学部全体35.0-40.0）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "nara-gakuen-kyoiku",
+    "dataRange": "35-37.5",
+    "webEstimate": "河合塾: 人間教育学部 35.0-37.5",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "nara-gakuen-riha",
+    "dataRange": "35-37.5",
+    "webEstimate": "河合塾: 理学療法学 35.0 / 作業療法学 37.5",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "学部リストは全3件とも実在（人間教育学部、保健医療学部看護学科、同リハビリテーション学科）。偏差値3件はいずれも河合塾相場と一致（誤差±2.5以内）。唯一の指摘はリハ学科campus欄の「要確認」注記で、2022年の登美ヶ丘統合により確定可能（登録キャンパス自体は正しいためMINOR扱い、overallはOK）。参考: みんなの大学情報・マナビジョン・スタディサプリ進路・河合塾Kei-Net(search.keinet.ne.jp/2591)・公式 naragakuen-u.jp で照合。"
+ },
+ {
+  "uni_id": "kyoto-koka",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK - 実在する（学校法人光華学園設置）。ただし2026年4月に男女共学化し「京都光華大学」へ改称済み（公式サイト www.koka.ac.jp およびニュースリリースで確認）",
+   "name": "MINOR - データは旧名「京都光華女子大学」。2026年4月から正式名称は「京都光華大学」（男女共学化）。女子大表記のままだと男子生徒が対象外と誤解するためアプリ的に要修正",
+   "type": "OK - 私立で正しい",
+   "prefecture": "OK - 京都府京都市右京区西京極（本部キャンパス）で正しい。滋賀からのアクセス設定も妥当な立地",
+   "url": "OK - https://www.koka.ac.jp/ は本学の公式ドメイン（フェッチして京都光華大学の公式サイトであることを確認）",
+   "tuition": "OK - 年130万円は私立文系〜生活科学系の相場として妥当。ただし看護学科は実際には初年度約170-190万円台で、大学一律130万だと看護系志望者には過小表示（備考推奨）"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "kyoto-koka-kango",
+    "issue": "看護学科は実在するが、2026年度から所属学部が「健康科学部」ではなく「看護福祉リハビリテーション学部」に改組済み",
+    "severity": "MINOR",
+    "suggestion": "看護福祉リハビリテーション学部（看護学科）に名称変更"
+   },
+   {
+    "dept_id": "kyoto-koka-fukushi",
+    "issue": "「健康科学部 医療福祉学科」は2026年度から募集停止。作業療法・言語聴覚は「看護福祉リハビリテーション学部 福祉リハビリテーション学科（作業療法専攻・言語聴覚専攻）」に改組され、社会福祉系は新設の社会学部側に再編",
+    "severity": "MINOR",
+    "suggestion": "看護福祉リハビリテーション学部（福祉リハビリテーション学科：作業療法・言語聴覚）に置換"
+   },
+   {
+    "dept_id": "kyoto-koka-career",
+    "issue": "キャリア形成学部は2026年度から募集停止（在学生のみ）。新入生は出願不可のため、受験生向けアプリに現役学部として掲載するのは不適切",
+    "severity": "MINOR",
+    "suggestion": "後継の「社会学部（社会共創学科）」（2026年4月新設、入学定員87名）に置換"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "kyoto-koka-kango",
+    "dataRange": "37.5-40.0",
+    "webEstimate": "河合塾基準35.0-37.5（パスナビ2026年度、看護福祉リハビリテーション学部看護学科）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kyoto-koka-shinri",
+    "dataRange": "35.0-37.5",
+    "webEstimate": "河合塾基準35.0前後（健康科学部心理学科、大学全体BF-40.0）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "kyoto-koka-career",
+    "dataRange": "35.0-35.0",
+    "webEstimate": "2026年度は募集停止のため現行の河合塾偏差値なし。旧基準ではBF-35程度で当時としては概ね妥当",
+    "verdict": "UNKNOWN"
+   }
+  ],
+  "notes": "最重要ポイント: 2026年4月に「京都光華女子大学」→「京都光華大学」へ改称し男女共学化（公式 https://www.koka.ac.jp/news/16211/ で確認）。アプリのデータは改組前（〜2022年頃）の学部構成のまま。2026年度の実構成は (1)社会学部 社会共創学科[新設・定員87] (2)こども教育学部 こども教育学科 (3)看護福祉リハビリテーション学部 看護学科/福祉リハビリテーション学科（作業療法・言語聴覚） (4)健康科学部 健康栄養学科/心理学科。心理・健康栄養・こども教育はデータのままでOK。偏差値は河合塾基準で全体BF-40.0のためデータ値と大きな乖離なし（OFF_MAJORなし）。URL・区分・所在地・学費は妥当。修正推奨: 大学名の更新（共学化の明記）、看護/医療福祉/キャリア形成の3件の学部再編反映。"
+ },
+ {
+  "uni_id": "nagoya-kogyo",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK — 実在。国立大学法人名古屋工業大学（愛知県名古屋市昭和区御器所町）。公式サイト・河合塾Kei-Net(大学コード1255)双方で確認",
+   "name": "OK — 正式名称「名古屋工業大学」と一致",
+   "type": "OK — 国立で正しい",
+   "prefecture": "OK — 愛知県・御器所キャンパス（名古屋市昭和区）で正しい。メインキャンパス表記も公式と一致",
+   "url": "OK — https://www.nitech.ac.jp/ は名古屋工業大学の正式な公式ドメイン（Web検索で「国立大学法人名古屋工業大学」トップページとして確認）",
+   "tuition": "OK — 535,800円は国立標準額どおり。名工大の値上げ情報は確認されず妥当"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "nagoya-kogyo-butsuri",
+    "issue": "学科は実在するが偏差値がズレ。データ52.5-55に対し河合塾現行ボーダーは前期57.5/後期60.0で、下限比較で5.0の乖離",
+    "severity": "MINOR",
+    "suggestion": "hensachi を min 57.5 / max 60.0 に更新（前期57.5・後期60.0）"
+   },
+   {
+    "dept_id": "nagoya-kogyo-seimei",
+    "issue": "学科は実在するが偏差値が低め。データ52.5固定に対し河合塾現行は前期55.0/後期60.0（前期比-2.5、後期比-7.5）",
+    "severity": "MINOR",
+    "suggestion": "hensachi を min 55.0 / max 60.0 に更新"
+   },
+   {
+    "dept_id": "nagoya-kogyo-shakai",
+    "issue": "学科は実在するが偏差値が低め。データ52.5-55に対し河合塾現行は分野別で前期55.0-57.5/後期55.0-60.0",
+    "severity": "MINOR",
+    "suggestion": "hensachi を min 55.0 / max 60.0 程度に更新（建築・デザイン分野が上限）"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "nagoya-kogyo-joho",
+    "dataRange": "55-57.5",
+    "webEstimate": "河合塾ボーダー: 前期57.5 / 後期60.0",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "nagoya-kogyo-butsuri",
+    "dataRange": "52.5-55",
+    "webEstimate": "河合塾ボーダー: 前期57.5 / 後期60.0（下限比較で-5.0）",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "nagoya-kogyo-kikan",
+    "dataRange": "42.5-45",
+    "webEstimate": "河合塾Kei-Netではボーダー「－」表示でデータなし。過去相場では40台前半-45程度で不自然ではないが検証不能",
+    "verdict": "UNKNOWN"
+   }
+  ],
+  "notes": "大学の実在・区分・所在地・公式URL・学費はすべて正確。学部リスト7件（生命・応用化学/物理工学/電気・機械/情報/社会工学/創造工学教育課程6年一貫/基幹工学教育課程夜間主）は公式サイトの現行構成と完全一致し、実在しない学科なし。唯一の問題は偏差値が全体的に約2.5（1バンド）低めなこと。河合塾Kei-Net現行ボーダーは前期55.0-57.5/後期57.5-60.0で、名工大は近年上昇傾向のためデータが数年前の水準の可能性が高い。前期比較では概ね2.5差でOK圏だが、物理工学科は下限比較で5.0差。偽URL・架空学部・OFF_MAJOR複数の条件には該当しないため overall は MINOR。全学科一律に約+2.5（後期含めるなら上限+2.5〜5.0）の更新を推奨。出典: search.keinet.ne.jp/1255/general/border_rate, www.nitech.ac.jp/edu/faculty/"
+ },
+ {
+  "uni_id": "kyoto-geijutsu",
+  "webAvailable": true,
+  "overall": "MAJOR",
+  "checks": {
+   "exists": "OK - 実在。旧・京都造形芸術大学が2020年4月に改称した私立大学（学校法人瓜生山学園）。Wikipedia・公式サイト・河合塾Kei-Net(校番2493)で確認",
+   "name": "OK - 正式名称「京都芸術大学」で正しい。公立の「京都市立芸術大学」とは別大学であり混同なし",
+   "type": "OK - 私立で正しい（学校法人瓜生山学園）",
+   "prefecture": "OK - 京都府京都市左京区北白川瓜生山。メインキャンパス「瓜生山キャンパス」も公式アクセスページで確認",
+   "url": "OK - https://www.kyoto-art.ac.jp/ は京都芸術大学の公式サイト本体で確認（アクセスページ・学園祭ページ等も同ドメイン）。偽/別組織ではない",
+   "tuition": "OK - 175万円/年は妥当。パスナビによると授業料105〜132万+施設費10〜35万（年間約116〜167万）、初年度納入金は約142〜194万。芸術系私立の相場内。ただし文芸表現・アートプロデュース系（初年度約142万）に対してはやや高めの代表値"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "kyoto-geijutsu-artpro",
+    "issue": "「アートプロデュース学科」は現在独立学科として存在しない。学科再編により美術工芸学科内のコースになっている（スタディサプリ進路の現行募集学科一覧では芸術学部は10学科で、アートプロデュースは美術工芸学科のコース）",
+    "severity": "MINOR",
+    "suggestion": "「芸術学部 美術工芸学科 アートプロデュースコース」に改称するか、美術工芸学科に統合"
+   },
+   {
+    "dept_id": "kyoto-geijutsu-rekishi",
+    "issue": "「歴史遺産学科」は現在独立学科として存在しない。美術工芸学科内の「文化財保存修復・歴史遺産コース」に再編されている",
+    "severity": "MINOR",
+    "suggestion": "「芸術学部 美術工芸学科 文化財保存修復・歴史遺産コース」に改称するか、美術工芸学科に統合"
+   },
+   {
+    "dept_id": "kyoto-geijutsu-kankyo",
+    "issue": "偏差値40-42.5は低すぎる。河合塾基準（みんなの大学情報2026）で環境デザイン学科は47.5であり、5以上のズレ",
+    "severity": "MAJOR",
+    "suggestion": "偏差値45-47.5程度に修正"
+   },
+   {
+    "dept_id": "kyoto-geijutsu-kukan",
+    "issue": "偏差値40-42.5は低すぎる。河合塾基準で空間演出デザイン学科は47.5-50.0（ファッションデザイン47.5等）であり、5以上のズレ",
+    "severity": "MAJOR",
+    "suggestion": "偏差値45-50程度に修正"
+   },
+   {
+    "dept_id": "kyoto-geijutsu-product",
+    "issue": "偏差値40-42.5は低すぎる。河合塾基準でプロダクトデザイン学科は45.0-47.5であり、約5のズレ",
+    "severity": "MAJOR",
+    "suggestion": "偏差値45-47.5程度に修正"
+   },
+   {
+    "dept_id": "kyoto-geijutsu-joho",
+    "issue": "偏差値42.5-45はやや低い。河合塾基準で情報デザイン学科は45.0-50.0（ビジュアルデザイン50.0、イラストレーション47.5等）",
+    "severity": "MINOR",
+    "suggestion": "偏差値45-50に修正"
+   },
+   {
+    "dept_id": "kyoto-geijutsu-kodomo",
+    "issue": "偏差値37.5-40はやや低い。河合塾基準でこども芸術学科は42.5",
+    "severity": "MINOR",
+    "suggestion": "偏差値40-42.5に修正"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "kyoto-geijutsu-joho",
+    "dataRange": "42.5-45",
+    "webEstimate": "45.0-50.0（河合塾基準・みんなの大学情報2026。ビジュアルデザイン50.0、イラストレーション47.5、ゲーム/映像45.0）",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "kyoto-geijutsu-kankyo",
+    "dataRange": "40-42.5",
+    "webEstimate": "47.5（河合塾基準・みんなの大学情報2026）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "kyoto-geijutsu-kukan",
+    "dataRange": "40-42.5",
+    "webEstimate": "47.5-50.0（河合塾基準・みんなの大学情報2026）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "kyoto-geijutsu-product",
+    "dataRange": "40-42.5",
+    "webEstimate": "45.0-47.5（河合塾基準・みんなの大学情報2026）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "kyoto-geijutsu-kodomo",
+    "dataRange": "37.5-40",
+    "webEstimate": "42.5（河合塾基準・みんなの大学情報2026）",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "kyoto-geijutsu-chara",
+    "dataRange": "42.5-45",
+    "webEstimate": "42.5（学科）〜45.0（マンガコース）河合塾基準",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "大学の実在・名称・区分・所在地・公式URL・学費はすべて問題なし。MAJOR判定の理由は(1)デザイン系3学科（環境・空間演出・プロダクト）の偏差値が河合塾基準の現行相場より約5以上低くOFF_MAJORが複数、(2)学科再編（アートプロデュース学科・歴史遺産学科→美術工芸学科内コース、マンガ学科→キャラクターデザイン学科マンガコース）が未反映で旧学科名2件が残存（MINOR扱い）。データ全体が全学科で低め（37.5-45）に寄っており、実際は37.5-50.0の分布。なおマンガ学科相当のコースはデータ未収載だが欠落は減点対象外とした。偏差値の出典はみんなの大学情報（河合塾提供データ、2026年度）で、方式によって幅がある点は留意。旧名称「京都造形芸術大学」時代の偏差値感（40前後）がデータに残っている可能性が高い。"
+ },
+ {
+  "uni_id": "nara-idai",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK: 奈良県立医科大学は実在（奈良県橿原市四条町840、公式サイト・河合塾Kei-Net・旺文社パスナビ等で確認）",
+   "name": "OK: 正式名称「奈良県立医科大学」で一致",
+   "type": "OK: 公立（奈良県立）で正しい",
+   "prefecture": "OK: 奈良県・橿原キャンパス（橿原市四条町）で正しい。※2026年頃に畝傍山キャンパス（新キャンパス）整備の情報もあるがメインキャンパス表記として問題なし",
+   "url": "OK: https://www.naramed-u.ac.jp/ は本学の公式サイトドメイン（naramed-u.ac.jp）で正しい",
+   "tuition": "MINOR: データの535,800円は令和7年度以前入学者の額。公式サイトで令和8年度(2026年度)以降入学者は642,960円/年と明記されており、これから受験する高校生には642,960円が適用される。642,960円への更新を推奨"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "nara-idai-igaku",
+    "issue": "問題なし（医学部医学科は実在、名称・キャンパス表記も正確）",
+    "severity": "MINOR",
+    "suggestion": "修正不要"
+   },
+   {
+    "dept_id": "nara-idai-kango",
+    "issue": "問題なし（医学部看護学科は実在、名称・キャンパス表記も正確）",
+    "severity": "MINOR",
+    "suggestion": "修正不要"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "nara-idai-igaku",
+    "dataRange": "67.5-70",
+    "webEstimate": "河合塾基準で前期67.5・後期70.0（みんなの大学情報で後期70.0を確認、前期67.5は相場通り）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "nara-idai-kango",
+    "dataRange": "50-52.5",
+    "webEstimate": "河合塾は看護学科の2次偏差値を公表せず共通テスト得点率61-64%のみ。他社推計で50-56程度と幅があり、50-52.5は不自然ではないが河合塾基準としては厳密検証不可",
+    "verdict": "UNKNOWN"
+   }
+  ],
+  "notes": "学部2件のみのため最高(医学科)・最低(看護学科)の2件をスポットチェック（中間は存在せず）。唯一の実質的問題は授業料: 公式ページ（naramed-u.ac.jp/university/nyushijoho/gakuseiseikatu/jugyou-nyuugakuryou.html）で令和8年度以降入学者は642,960円/年に値上げ済みのため、アプリ対象の高校生には642,960円が正。また入学料は県外生だと医学科802,000円/看護423,000円と高額な点も参考情報として有用。deptIssuesは2件とも「問題なし」の記録でありseverityフィールドはスキーマ必須のため便宜上MINORを設定（実際の欠陥ではない）。"
+ },
+ {
+  "uni_id": "nara-univ",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK - 奈良大学は実在（1969年大学設置、奈良県奈良市山陵町1500に本部を置く私立大学。Wikipedia・公式サイトで確認）",
+   "name": "OK - 正式名称「奈良大学」で一致",
+   "type": "OK - 私立で正しい",
+   "prefecture": "OK - 奈良県奈良市山陵町。campus_main「本部キャンパス（奈良市山陵町）」も公式キャンパスガイドと一致",
+   "url": "OK - https://www.nara-u.ac.jp/ は奈良大学の公式サイト本物（検索結果で公式ページ群 nara-u.ac.jp/faculty/ 等を確認。奈良女子大 nara-wu.ac.jp や奈良教育大 nara-edu.ac.jp との混同なし）",
+   "tuition": "OK - 105万円/年。初年度納入金は国文・史学115万（入学金10万込）、地理・文化財118万のため年間学費は約105〜108万。私立文系相場100-140万の範囲内で妥当"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "nara-univ-bungaku",
+    "issue": "学部・学科構成は実在で正確（国文・史学・地理・文化財の4学科）だが、偏差値40-45が高すぎる。河合塾基準（パスナビ2026）は35.0-40.0（国文37.5/史40/地理35-37.5/文化財40）、みんかう2025でも37.5-42.5。max45はどの情報源にも存在せず+2.5〜+5の上振れ",
+    "severity": "MAJOR",
+    "suggestion": "偏差値を35.0-40.0（年度により37.5-42.5）に修正。史学・文化財が最上位で40前後"
+   },
+   {
+    "dept_id": "nara-univ-shakai",
+    "issue": "学部・学科構成は実在で正確（心理・総合社会の2学科）だが、偏差値37.5-40が高め。河合塾基準（パスナビ2026）は BF-35.0（心理35/総合社会BF-35）、みんかう2025で35-37.5。+2.5〜+5の上振れ",
+    "severity": "MINOR",
+    "suggestion": "偏差値を35.0-37.5（現行河合ではBF-35.0）に修正"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "nara-univ-bungaku",
+    "dataRange": "40-45",
+    "webEstimate": "河合塾基準35.0-40.0（パスナビ2026: 国文37.5/史40/地理35-37.5/文化財40）。みんかう2025年度は37.5-42.5",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "nara-univ-shakai",
+    "dataRange": "37.5-40",
+    "webEstimate": "河合塾基準BF-35.0（パスナビ2026: 心理35/総合社会BF-35）。みんかう2025年度は35.0-37.5",
+    "verdict": "OFF_MINOR"
+   }
+  ],
+  "notes": "学部は2学部のみのため全件（最高=文学部・最低=社会学部）をスポットチェック。大学の実在・名称・区分・所在地・公式URL・学科構成・学費はすべて正確で、問題は偏差値の一律上振れ（+2.5〜+5）のみ。文学部はOFF_MAJOR判定1件だが「OFF_MAJOR複数」には該当せず、2025年度データ（37.5-42.5）基準なら+2.5のズレに収まるため、overallはMINOR。両学部とも偏差値帯を2.5〜5ポイント下方修正推奨。出典: passnavi.obunsha.co.jp/univ/4610/difficulty/（河合塾基準）、minkou.jp、manabi.benesse.ne.jp（学費）、nara-u.ac.jp（公式）"
+ },
+ {
+  "uni_id": "nara-kenritsu",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK — 奈良県立大学は実在（奈良市船橋町10）。公式サイト・パスナビ・みんなの大学情報で確認",
+   "name": "OK — 正式名称「奈良県立大学」で一致",
+   "type": "OK — 公立で正しい（奈良県設置の公立大学）",
+   "prefecture": "OK — 奈良県・本部キャンパスは奈良市船橋町で、データのキャンパス表記（奈良県奈良市船橋町）と一致",
+   "url": "OK — https://www.narapu.ac.jp/ は本学の公式ドメイン。検索結果で narapu.ac.jp 配下の学部公式ページを複数確認",
+   "tuition": "OK — 535,800円/年は公立大学の標準授業料（国立標準と同額）で妥当"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "nara-kenritsu-chiiki",
+    "issue": "学部自体は実在（同大学唯一の学部で名称も正確）だが、偏差値の basis が 'kawai' となっている点が不正確。河合塾は本学部の偏差値を非公表（パスナビ・みんなの大学情報とも「—」表示）で、公表されているのは共通テスト得点率のみ（前期67%・中期70%）",
+    "severity": "MINOR",
+    "suggestion": "basis を推定/共テ換算である旨に修正するか、共テ得点率（前期67%・中期70%）を併記。数値を維持する場合は換算相場に合わせ 50-52.5 程度への引き上げを検討"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "nara-kenritsu-chiiki",
+    "dataRange": "47.5-50",
+    "webEstimate": "河合塾偏差値は非公表（共テ得点率のみ: 前期67%・中期70%）。共テ得点率からの換算相場は約50-52.5相当",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "学部は1件のみのため最高/最低/中間のスポットチェックは同一学部1件で実施。実在性・名称・区分・所在地・公式URL・学費はすべて問題なし。唯一の指摘は偏差値の出典表記: 河合塾は本学の偏差値を公表しておらず（共通テスト＋面接等の選抜方式のため）、登録値47.5-50は推定値。共テ得点率67-70%からの換算では50-52.5相当で、登録値は約2.5低いが±3未満のためOFF判定はせず。basis表記の修正が望ましいため overall は MINOR。検証ソース: passnavi.obunsha.co.jp/univ/1255/difficulty/、minkou.jp/university/school/deviation/20614/、narapu.ac.jp"
+ },
+ {
+  "uni_id": "okayama-univ",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK — 国立大学法人岡山大学として実在。公式サイト・Wikipedia・河合塾Kei-Netで確認",
+   "name": "OK — 正式名称「岡山大学」で一致",
+   "prefecture": "OK — 岡山県岡山市北区、メインキャンパスは津島キャンパス（医・歯は鹿田キャンパス）で正確",
+   "type": "OK — 国立で正しい",
+   "url": "OK — https://www.okayama-u.ac.jp/ は岡山大学の正規公式ドメイン（Web検索で公式サイトとして確認）",
+   "tuition": "OK — 535,800円は国立標準額と完全一致"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "okayama-univ-bun",
+    "issue": "偏差値レンジ52.5-55が河合塾基準の相場57.5より2.5-5低い",
+    "severity": "MINOR",
+    "suggestion": "55-57.5程度に上方修正（みんなの大学情報の河合塾基準では57.5）"
+   },
+   {
+    "dept_id": "okayama-univ-no",
+    "issue": "偏差値レンジ47.5-50が河合塾基準の相場52.5より2.5-5低い",
+    "severity": "MINOR",
+    "suggestion": "50-52.5程度に上方修正"
+   },
+   {
+    "dept_id": "okayama-univ-i",
+    "issue": "下限47.5がやや低め（保健学科の相場は50-52.5、みんなの大学情報では52.5）。上限65は医学科と一致",
+    "severity": "MINOR",
+    "suggestion": "min を 50 程度に修正（47.5-65 → 50-65）"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "okayama-univ-i",
+    "dataRange": "47.5-65",
+    "webEstimate": "医学科65.0 / 保健学科52.5前後（河合塾基準）",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "okayama-univ-bun",
+    "dataRange": "52.5-55",
+    "webEstimate": "57.5（河合塾基準）",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "okayama-univ-no",
+    "dataRange": "47.5-50",
+    "webEstimate": "52.5（河合塾基準）",
+    "verdict": "OFF_MINOR"
+   }
+  ],
+  "notes": "大学基本情報（実在・名称・区分・所在地・公式URL・学費）はすべて正確。学部10件はすべて実在し、存在しない学部の記載なし（グローバル・ディスカバリー・プログラムのみ未収録だが減点対象外）。偏差値は全体的にレンジ下限が2.5程度低く出る傾向があり、文学部・農学部・医学部保健学科系で2.5-5の下方ズレ（いずれもOFF_MINOR、±5以上の乖離はなし）。法・経済・歯・薬は相場とほぼ一致。参考: 環境理工学部は2021年に工学部へ統合済みでデータに含まれていない点は正しい。滋賀からのアクセス150分は京都経由新幹線利用で妥当な水準。"
+ },
+ {
+  "uni_id": "nara-kyoiku",
+  "webAvailable": true,
+  "overall": "MINOR",
+  "checks": {
+   "exists": "OK — 国立大学として実在。奈良市高畑町に本部。2022年に奈良女子大学と法人統合し「国立大学法人奈良国立大学機構」傘下だが、大学としては独立して存続（Kei-Net・公式サイトで確認）",
+   "name": "OK — 正式名称「奈良教育大学」で一致",
+   "type": "OK — 国立で正しい",
+   "prefecture": "OK — 奈良県・本部キャンパス（奈良市高畑町）で正しい",
+   "url": "OK — https://www.nara-edu.ac.jp/ は奈良教育大学の公式サイトドメイン（検索結果・公式ページ配下の学部案内で確認）",
+   "tuition": "OK — 535,800円は国立標準額と一致"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "nara-kyoiku-dento",
+    "issue": "偏差値レンジ上限が過小。データは45-47.5だが、河合塾ボーダーでは書道教育45.0・文化遺産教育52.5であり、上限が5.0ポイント低い",
+    "severity": "MAJOR",
+    "suggestion": "hensachi を min 45, max 52.5 に修正（書道45.0／文化遺産52.5、河合塾Kei-Netボーダー基準）"
+   },
+   {
+    "dept_id": "nara-kyoiku-hattatsu",
+    "issue": "偏差値レンジがやや低め。データは47.5-50だが、河合塾ボーダーでは幼年教育・特別支援50.0／教育学・心理学52.5で、min・maxとも2.5低い（±3未満のため許容範囲内だが下振れ傾向）",
+    "severity": "MINOR",
+    "suggestion": "hensachi を min 50, max 52.5 への更新を推奨"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "nara-kyoiku-kyoka",
+    "dataRange": "45-52.5",
+    "webEstimate": "河合塾（パスナビ）: 数学初等45.0〜国語中等・英語52.5 → 45.0-52.5",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "nara-kyoiku-hattatsu",
+    "dataRange": "47.5-50",
+    "webEstimate": "河合塾（Kei-Net）: 幼年教育・特別支援50.0／教育学・心理学52.5 → 50.0-52.5",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "nara-kyoiku-dento",
+    "dataRange": "45-47.5",
+    "webEstimate": "河合塾（Kei-Net）: 書道45.0／文化遺産52.5 → 45.0-52.5",
+    "verdict": "OFF_MAJOR"
+   }
+  ],
+  "notes": "大学基本情報（実在・名称・国立区分・奈良県・公式URL・国立標準学費535,800円）は全て正確。3専攻（教育発達・教科教育・伝統文化教育）はいずれも教育学部 学校教育教員養成課程に実在し名称も正確（Kei-Netで確認）。問題は偏差値のみ: 教科教育は河合塾データと完全一致、教育発達は2.5低め（許容内）、伝統文化教育は文化遺産教育専修52.5を反映しておらず上限が5.0低い（OFF_MAJOR 1件）。OFF_MAJORは1件のみ（複数ではない）ため overall は MINOR。参照: passnavi.obunsha.co.jp/univ/0650/difficulty/（河合塾提供・2026年7月更新）、search.keinet.ne.jp/1325/general/border_rate。Benesse系の55-59は進研模試基準のため比較から除外した。"
+ },
+ {
+  "uni_id": "nagoya-shiritsu",
+  "webAvailable": true,
+  "overall": "MAJOR",
+  "checks": {
+   "exists": "OK — 名古屋市立大学は実在（河合塾Kei-Net #1585、パスナビ、公式サイトで確認）",
+   "name": "OK — 正式名称「名古屋市立大学」で一致",
+   "type": "OK — 公立（名古屋市公立大学法人）で正しい",
+   "prefecture": "OK — 愛知県で正しい。本部・事務局は桜山キャンパス（名古屋市瑞穂区）にあり campus_main=桜山キャンパスも妥当",
+   "url": "OK — https://www.nagoya-cu.ac.jp/ は名古屋市立大学の正規公式ドメイン（公式ページ・報道発表ページで確認）",
+   "tuition": "OK — 535,800円は国公立標準額と一致し、名市大の年間授業料として正しい（入学金は市外出身者で高額だが授業料は標準額）"
+  },
+  "deptIssues": [
+   {
+    "dept_id": "nagoya-shiritsu-kango",
+    "issue": "看護学部は2025年4月の改組で募集停止済み。現在の募集単位は「医学部保健医療学科看護学専攻」（リハビリテーション学専攻も同時新設）。受験生向けアプリで出願不可能な学部名を掲載しているためMAJOR",
+    "severity": "MAJOR",
+    "suggestion": "「医学部（保健医療学科看護学専攻）」に改称し偏差値47.5〜50.0（河合塾: 看護学名古屋50.0/蒲郡47.5）へ更新。医学部エントリと統合するか別建てにするかは設計判断"
+   },
+   {
+    "dept_id": "nagoya-shiritsu-keizai",
+    "issue": "偏差値が大幅に過小。データ52.5〜55に対し河合塾ボーダーは前期60.0（後期65.0）。5〜7.5ポイントのズレ",
+    "severity": "MAJOR",
+    "suggestion": "前期基準で57.5〜60.0程度（後期含めるなら〜65.0）へ修正"
+   },
+   {
+    "dept_id": "nagoya-shiritsu-jinbun",
+    "issue": "偏差値やや過小。データ52.5〜55に対し河合塾は前期・後期とも57.5",
+    "severity": "MINOR",
+    "suggestion": "55〜57.5へ修正"
+   },
+   {
+    "dept_id": "nagoya-shiritsu-seimei",
+    "issue": "2027年4月に「理学部」へ名称変更予定（公式報道発表あり・2年次以降は田辺通キャンパスへ移転）。2026年度時点では総合生命理学部のままなので現時点の名称自体は正しい。偏差値もやや低め（データ52.5〜55、河合塾は前期55.0/後期57.5）",
+    "severity": "MINOR",
+    "suggestion": "2027年度入試からは「理学部」となる旨を注記、偏差値は55〜57.5へ"
+   },
+   {
+    "dept_id": "nagoya-shiritsu-yaku",
+    "issue": "偏差値がわずかに過小。データ57.5〜60に対し河合塾は生命薬科学60.0・薬62.5（中期）",
+    "severity": "MINOR",
+    "suggestion": "60〜62.5へ修正"
+   }
+  ],
+  "hensachiSpotChecks": [
+   {
+    "dept_id": "nagoya-shiritsu-igaku",
+    "dataRange": "65〜67.5",
+    "webEstimate": "河合塾ボーダー65.0（前期・医学科）",
+    "verdict": "OK"
+   },
+   {
+    "dept_id": "nagoya-shiritsu-keizai",
+    "dataRange": "52.5〜55",
+    "webEstimate": "河合塾ボーダー前期60.0・後期65.0（Kei-Netとパスナビの2ソースで一致）",
+    "verdict": "OFF_MAJOR"
+   },
+   {
+    "dept_id": "nagoya-shiritsu-kango",
+    "dataRange": "50〜52.5",
+    "webEstimate": "改組後の医学部保健医療学科看護学専攻で47.5〜50.0。数値ズレは2.5だが募集単位自体が2025年4月に消滅",
+    "verdict": "OFF_MINOR"
+   },
+   {
+    "dept_id": "nagoya-shiritsu-data",
+    "dataRange": "52.5〜55",
+    "webEstimate": "河合塾ボーダー前期55.0",
+    "verdict": "OK"
+   }
+  ],
+  "notes": "Web検証可（河合塾Kei-Net・パスナビ=河合塾提供データ・大学公式サイト・大学ジャーナルを使用。東進は独自スケールのため不採用）。大学の実在・名称・公立区分・所在地・公式URL・学費はすべて正確。MAJOR判定の根拠は2点: (1) 看護学部が2025年4月改組で募集停止済みなのに現行学部として掲載（受験生に実害）、(2) 経済学部の偏差値が河合塾ボーダー比5ポイント以上過小（2ソースで確認）。その他、人文社会・薬・総合生命理学も一律にやや低め（全体的に古い年度のデータで、近年の名市大の難化を反映していない可能性が高い）。総合生命理学部は2027年4月に理学部へ改称予定のため次年度更新時に要対応。"
+ }
+]

@@ -1,0 +1,158 @@
+{
+ "newIds": [
+  "aichi-kyoiku",
+  "baika",
+  "bunkyo-univ",
+  "chiba-univ",
+  "fukuchiyama-koritsu",
+  "hanazono",
+  "himeji-dokkyo",
+  "hitotsubashi",
+  "hokkaido-univ",
+  "hyogo-ika",
+  "hyogo-kenritsu",
+  "hyogo-kyoiku",
+  "kanagawa-univ",
+  "kio",
+  "kitasato",
+  "kobe-gaidai",
+  "kobe-geijutsu-koka",
+  "kobe-shoin",
+  "kokugakuin",
+  "konan-joshi",
+  "kyoto-gaidai",
+  "kyoto-geijutsu",
+  "kyoto-koka",
+  "kyoto-seika",
+  "kyushu-univ",
+  "meiji-gakuin",
+  "morinomiya-iryo",
+  "musashi",
+  "nagoya-kogyo",
+  "nagoya-shiritsu",
+  "nara-gakuen",
+  "nara-idai",
+  "nara-kenritsu",
+  "nara-kyoiku",
+  "nara-univ",
+  "nihon-joshi",
+  "okayama-univ",
+  "osaka-geidai",
+  "osaka-kyoiku",
+  "osaka-otani",
+  "osaka-shoin",
+  "seijo",
+  "seikei",
+  "shibaura-kogyo",
+  "shitennoji",
+  "shizuoka-univ",
+  "sonoda-gakuen",
+  "tamagawa",
+  "teikyo",
+  "todai",
+  "tohoku-univ",
+  "tokyo-denki",
+  "tokyo-joshi",
+  "tokyo-kagaku",
+  "tokyo-nodai",
+  "tokyo-toritsu",
+  "tsuda-juku",
+  "wakayama-idai",
+  "yokohama-kokudai",
+  "yokohama-shiritsu"
+ ],
+ "estExisting": {
+  "aoyama-gakuin": [
+   "aoyama-gakuin-shakaijoho",
+   "aoyama-gakuin-chikyu"
+  ],
+  "chuo": [
+   "chuo-riko",
+   "chuo-kokusaikeiei",
+   "chuo-kokusaijoho"
+  ],
+  "gakushuin": [
+   "gakushuin-kokusaibunka"
+  ],
+  "hosei": [
+   "hosei-kokusaibunka",
+   "hosei-ningenkankyo",
+   "hosei-fukushi",
+   "hosei-career",
+   "hosei-gis",
+   "hosei-joho",
+   "hosei-designko",
+   "hosei-riko",
+   "hosei-seimei"
+  ],
+  "keio": [
+   "keio-igaku",
+   "keio-riko",
+   "keio-kankyojoho",
+   "keio-kango",
+   "keio-yaku"
+  ],
+  "kindai": [
+   "kindai-kogaku",
+   "kindai-sanriko"
+  ],
+  "meiji": [
+   "meiji-riko",
+   "meiji-nogaku",
+   "meiji-kokusainihon",
+   "meiji-sogosuri"
+  ],
+  "nihon-univ": [
+   "nihon-univ-kokusaikankei",
+   "nihon-univ-kikikanri",
+   "nihon-univ-seisankogaku",
+   "nihon-univ-kogaku",
+   "nihon-univ-shigaku",
+   "nihon-univ-matsudo-shigaku",
+   "nihon-univ-yakugaku"
+  ],
+  "rikkyo": [
+   "rikkyo-fukushi",
+   "rikkyo-kankyo"
+  ],
+  "tokai-univ": [
+   "tokai-univ-ho",
+   "tokai-univ-seikei",
+   "tokai-univ-bunkashakai",
+   "tokai-univ-jidokyoiku",
+   "tokai-univ-kokusai",
+   "tokai-univ-johoriko",
+   "tokai-univ-rigaku",
+   "tokai-univ-kenchikutoshi",
+   "tokai-univ-igaku",
+   "tokai-univ-kaiyo"
+  ],
+  "toyo-univ": [
+   "toyo-univ-kankokanko",
+   "toyo-univ-sogojoho",
+   "toyo-univ-seimei"
+  ],
+  "tsukuba": [
+   "tsukuba-jinbun",
+   "tsukuba-kokusai",
+   "tsukuba-shinri",
+   "tsukuba-shogai",
+   "tsukuba-joho",
+   "tsukuba-shakaikogaku",
+   "tsukuba-igaku",
+   "tsukuba-kango",
+   "tsukuba-iryokagaku",
+   "tsukuba-geijutsu"
+  ],
+  "waseda": [
+   "waseda-seikei",
+   "waseda-hou",
+   "waseda-bun",
+   "waseda-bunkakoso",
+   "waseda-kikanriko",
+   "waseda-sozoriko",
+   "waseda-senshinriko",
+   "waseda-kokusaikyoyo"
+  ]
+ }
+}
