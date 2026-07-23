@@ -1,0 +1,997 @@
+{
+ "researched": [
+  {
+   "uni_id": "tokai-univ",
+   "added": 9,
+   "rejected": []
+  },
+  {
+   "uni_id": "nihon-joshi",
+   "added": 1,
+   "rejected": [
+    "ファッションデザイン学部（仮称）: 2028年度開設構想中（家政学部改組）。2026/2027年度に学生募集が無いため対象外",
+    "人間科学部（仮称）: 2028年度開設構想中（家政学部改組）。2026/2027年度に学生募集が無いため対象外"
+   ]
+  },
+  {
+   "uni_id": "shizuoka-univ",
+   "added": 0,
+   "rejected": [
+    "地域創造学環: 実在はしたが募集停止済み。大学公式発表（https://www.shizuoka.ac.jp/news/detail.html?CN=8312）により、グローバ"
+   ]
+  },
+  {
+   "uni_id": "osaka-shoin",
+   "added": 1,
+   "rejected": []
+  },
+  {
+   "uni_id": "seikei",
+   "added": 1,
+   "rejected": []
+  },
+  {
+   "uni_id": "hanazono",
+   "added": 1,
+   "rejected": []
+  },
+  {
+   "uni_id": "tsukuba",
+   "added": 4,
+   "rejected": [
+    "総合選抜（文系・理系Ⅰ・理系Ⅱ・理系Ⅲ）: 学群・学類ではなく入試方式（前期日程内の選抜区分）。令和8年度入試実施結果PDFでも「個別学力検査等（前期日程）」表の区分として記載され、募集は文系125・理系",
+    "総合学域群: 総合選抜合格者の1年次限定の所属組織であり、学位を授与する学群ではない。2年次移行で全員が既存学類（本データに収載済み）へ振り分けられるため、進路診断上の到達先"
+   ]
+  }
+ ],
+ "confirmedRecords": [
+  {
+   "uni_id": "tokai-univ",
+   "rec": {
+    "dept_id": "tokai-univ-kyoyo",
+    "name": "教養学部",
+    "campus": "湘南キャンパス（神奈川県平塚市）",
+    "hensachi": {
+     "min": 37.5,
+     "max": 45,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "note": "総合型選抜（学科課題型・適性面接型など）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "公募制学校推薦型選抜",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "一般選抜・全学部統一選抜（前期/後期）",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "共通テスト利用選抜（前期/中期/後期）。2026年度から中期新設",
+      "verified": true
+     }
+    ],
+    "qualifications": [
+     "司書",
+     "学芸員",
+     "社会教育主事任用資格（人間環境学科）（要確認）"
+    ],
+    "interest_tags": [
+     "geijutsu",
+     "shakai"
+    ],
+    "employment_fields": [
+     "media",
+     "service",
+     "koumuin"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "全項目をWebで独立確認し一致。(1)実在: 教養学部は2022年改組後、芸術学科・人間環境学科の2学科体制で湘南キャンパス（平塚市）に実在し、2026/2027年度入試とも募集継続（公式学部ページ・学部案内2026・マナビジョン2027年度入試情報。募集停止/改組予定なし）。(2)偏差値: パスナビ（河合塾基準）で37.5〜45.0を実測確認（人間環境45.0、芸術37.5〜40.0）、source_urlも有効。(3)入試方式: 総合型選抜「学科課題型」（芸術）「適性面接型」（人間環境）の2026年度要項PDF、公募制学校推薦型選抜2026年度要項PDF（人間環境6名・芸術9名）、全学部統一選抜（前期/後期）・一般選抜・共通テスト利用選抜（前期/中期/後期）の2026年度要項PDFを大学公式サイトで確認。共テ中期の2026年度新設も確認済みで注記は正確。(4)資格: 資格教育センターで司書・学芸員・社会教育主事課程を開講、卒業時取得可を公式ページで確認。「（要確認）」付き記載は妥当。修正の必要なし。"
+  },
+  {
+   "uni_id": "tokai-univ",
+   "rec": {
+    "dept_id": "tokai-univ-kenko",
+    "name": "健康学部 健康マネジメント学科",
+    "campus": "湘南キャンパス（神奈川県平塚市）",
+    "hensachi": {
+     "min": 35,
+     "max": 40,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "note": "総合型選抜（学科課題型・適性面接型など）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "公募制学校推薦型選抜（小論文・面接、評定平均3.5以上）",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "一般選抜・全学部統一選抜（前期/後期）。一般選抜は公民（公共、政治・経済）選択可（後期は不可）",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "大学入学共通テスト利用選抜（前期/中期/後期）",
+      "verified": true
+     }
+    ],
+    "qualifications": [
+     "社会福祉士（受験資格）",
+     "精神保健福祉士（受験資格）",
+     "健康運動実践指導者（受験資格）",
+     "トレーニング指導者（受験資格）",
+     "NR・サプリメントアドバイザー（受験資格）",
+     "社会調査士"
+    ],
+    "interest_tags": [
+     "sports",
+     "iryo"
+    ],
+    "employment_fields": [
+     "iryo_fukushi",
+     "sports_kenko",
+     "koumuin"
+    ]
+   },
+   "verdict": "FIX",
+   "reason": "学部・学科・キャンパス・偏差値(河合35.0-40.0)・4入試方式(総合型:学科課題型/適性面接型、公募推薦、一般+全学部統一、共テ利用 前期/中期/後期)はすべて公式サイト・パスナビ・2026年度入学試験要項で確認。ただし資格の「司書」は公式学科ページ・マナビジョンの資格一覧に記載がなく誤りのため削除し、公式記載のトレーニング指導者・NR・サプリメントアドバイザー(各受験資格)を追加。一般選抜noteの「2026年度から公民選択可」は初年度性が未確認かつ後期は公民不可のため、確認済みの事実(一般選抜で公共・政治経済選択可)に修正。"
+  },
+  {
+   "uni_id": "tokai-univ",
+   "rec": {
+    "dept_id": "tokai-univ-kanko",
+    "name": "観光学部 観光学科",
+    "campus": "湘南キャンパス（3年次から品川キャンパス）",
+    "hensachi": {
+     "min": 42.5,
+     "max": 42.5,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "note": "総合型選抜（学科課題型・適性面接型など）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "公募制学校推薦型選抜",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "一般選抜・全学部統一選抜（前期/後期）",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "共通テスト利用選抜（前期/中期/後期）",
+      "verified": true
+     }
+    ],
+    "qualifications": [
+     "司書",
+     "総合・国内旅行業務取扱管理者（目標資格・受験支援）（要確認）"
+    ],
+    "interest_tags": [
+     "shakai",
+     "keizai",
+     "gaikokugo"
+    ],
+    "employment_fields": [
+     "service",
+     "ryutsu"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "全項目をWebで独立検証し正確と確認。(1)実在: 公式サイト学部一覧に観光学部観光学科が掲載、2026年度募集中で2027年度の募集停止・改組発表なし（募集停止は経営学部・基盤工学部のみ）。(2)キャンパス: 公式ページで1,2年次湘南・3,4年次品川と明記されレコードの「湘南キャンパス（3年次から品川キャンパス）」と一致。(3)偏差値: passnavi（河合塾、2026/7/1更新）で42.5、レコードと完全一致。(4)入試方式: 2026年度要項PDF表題「全学部統一選抜（前期/後期）・一般選抜・共通テスト利用選抜（前期/中期/後期）」がippan/kyotsu注記と一致。総合型選抜（学科課題型: 観光学科募集20名・2026年度志願87名の実績あり、適性面接型も実施）、公募制学校推薦型選抜（観光学科で小論文＋面接、評定3.5以上）を確認。(5)資格: 司書は取得可能、総合・国内旅行業務取扱管理者は就職支援実学講座での受験支援と確認済み。主要出典: u-tokai.ac.jp（学部一覧/観光学部/入試要項PDF）、passnavi.obunsha.co.jp/univ/2710/difficulty/"
+  },
+  {
+   "uni_id": "tokai-univ",
+   "rec": {
+    "dept_id": "tokai-univ-johotsushin",
+    "name": "情報通信学部 情報通信学科",
+    "campus": "湘南キャンパス（3年次から品川キャンパス）",
+    "hensachi": {
+     "min": 37.5,
+     "max": 40,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "note": "総合型選抜（学科課題型・適性面接型など）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "公募制学校推薦型選抜",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "一般選抜・全学部統一選抜（前期/後期）",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "共通テスト利用選抜（前期/中期/後期）",
+      "verified": true
+     }
+    ],
+    "qualifications": [
+     "司書",
+     "基本情報技術者（目標資格）（要確認）",
+     "応用情報技術者（目標資格）（要確認）"
+    ],
+    "interest_tags": [
+     "joho"
+    ],
+    "employment_fields": [
+     "it",
+     "maker"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "全項目をWebで独立確認。(1)学部学科は実在（2022年改組後の情報通信学部情報通信学科、2026年度募集あり）。(2)キャンパスは1・2年次湘南→3・4年次品川で記載と一致。(3)偏差値はパスナビ（河合塾基準）で一般3教科型37.5・理系学部統一40.0を実測確認し min37.5/max40 と一致、source_urlも有効。(4)入試方式は公式2026年度要項で総合型選抜（学科課題型・適性面接型を含む4型）、公募制学校推薦型選抜（情報通信学科は小論文+面接）、全学部統一選抜（前期/後期）+一般選抜、共通テスト利用選抜（前期/中期/後期）を全て確認。レコードの4方式のnote表記も公式名称と整合しており修正不要。"
+  },
+  {
+   "uni_id": "tokai-univ",
+   "rec": {
+    "dept_id": "tokai-univ-jinbun",
+    "name": "人文学部 人文学科",
+    "campus": "静岡キャンパス（静岡県静岡市清水区）",
+    "hensachi": {
+     "min": 37.5,
+     "max": 37.5,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "note": "総合型選抜（学科課題型・適性面接型など）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "公募制学校推薦型選抜",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "一般選抜・全学部統一選抜（前期/後期）",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "共通テスト利用選抜（前期/中期/後期）",
+      "verified": true
+     }
+    ],
+    "qualifications": [
+     "学芸員"
+    ],
+    "interest_tags": [
+     "bungaku",
+     "shakai"
+    ],
+    "employment_fields": [
+     "koumuin",
+     "service",
+     "media"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "全項目をWebで独立確認。(1)人文学部人文学科は静岡キャンパス（静岡市清水区折戸3-20-1）に実在し2026年度入試の志願者速報・合格発表も公式サイトに掲載、募集停止情報なし。(2)偏差値はパスナビ（河合塾基準）で37.5（一般3教科型・文系学部統一とも一致）。(3)入試方式は大学公式2026年度入学試験要項PDFで「全学部統一選抜（前期/後期）・一般選抜・大学入学共通テスト利用選抜（前期/中期/後期）」を確認（共テ中期は2026新設でnoteと一致）。総合型選抜は学科課題型・適性面接型が実在し人文学部は適性面接型の対象学部、学校推薦型選抜（公募・専願・評定3.5以上）も公式ページで確認。(4)学芸員資格取得可も進学情報サイトで確認。修正の必要なし。"
+  },
+  {
+   "uni_id": "tokai-univ",
+   "rec": {
+    "dept_id": "tokai-univ-bunriyugo",
+    "name": "文理融合学部",
+    "campus": "熊本キャンパス（熊本県熊本市東区）",
+    "hensachi": {
+     "min": 37.5,
+     "max": 40,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "note": "総合型選抜（学科課題型・適性面接型など）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "公募制学校推薦型選抜",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "一般選抜・全学部統一選抜（前期/後期）",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "共通テスト利用選抜（前期/中期/後期）",
+      "verified": true
+     }
+    ],
+    "qualifications": [
+     "高等学校教諭一種（工業）（人間情報工学科）",
+     "臨床工学技士（受験資格）（人間情報工学科）",
+     "社会調査士（地域社会学科）"
+    ],
+    "interest_tags": [
+     "keizai",
+     "shakai",
+     "joho"
+    ],
+    "employment_fields": [
+     "koumuin",
+     "service",
+     "it"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "東海大学文理融合学部（2022年開設、熊本キャンパス＝熊本県熊本市東区、経営/地域社会/人間情報工の3学科）の実在と2026年度募集を公式サイト・志願者速報で確認。偏差値はパスナビ（河合塾基準）で37.5〜40.0（一般3教科型37.5、文理併学部統一37.5〜40.0）とレコードと完全一致。入試方式は大学公式2026年度入学試験要項で全学部統一選抜（前期/後期）・一般選抜・共通テスト利用選抜（前期/中期/後期）を、公式ページで総合型選抜（学科課題型・適性面接型含む）・公募制学校推薦型選抜を確認し4方式とも整合。資格（高等学校教諭一種〔工業〕・臨床工学技士受験資格＝人間情報工学科、社会調査士＝地域社会学科）も大学公式・進学サイトで確認。募集停止・改組予定の情報なし。修正不要。"
+  },
+  {
+   "uni_id": "tokai-univ",
+   "rec": {
+    "dept_id": "tokai-univ-nogaku",
+    "name": "農学部",
+    "campus": "熊本キャンパス（2年次以降は阿蘇くまもと臨空キャンパス）",
+    "hensachi": {
+     "min": 35,
+     "max": 37.5,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "note": "総合型選抜（学科課題型・適性面接型など）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "公募制学校推薦型選抜",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "一般選抜・全学部統一選抜（前期/後期）",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "共通テスト利用選抜（前期/中期/後期）",
+      "verified": true
+     }
+    ],
+    "qualifications": [
+     "高等学校教諭一種（農業）",
+     "中学・高等学校教諭一種（理科）（食生命科学科）",
+     "食品衛生監視員（任用資格）",
+     "家畜人工授精師（牛）（動物科学科）"
+    ],
+    "interest_tags": [
+     "nogaku"
+    ],
+    "employment_fields": [
+     "shokuhin",
+     "koumuin",
+     "maker"
+    ]
+   },
+   "verdict": "FIX",
+   "reason": "学部の実在・キャンパス（1年次熊本、2年次以降阿蘇くまもと臨空）・偏差値35〜37.5（河合塾基準/パスナビ実測）・入試4方式（総合型=学科課題型/適性面接型、公募制学校推薦型、一般選抜+全学部統一選抜前期/後期、共通テスト利用前期/中期/後期）は全て公式サイト・2026年度入学試験要項PDF・Kei-Netで確認。唯一の修正点: 家畜人工授精師は動物科学科で「家畜人工授精師（牛）」として取得可能と確認できたため「（要確認）」注記を削除し正式名称に修正。"
+  },
+  {
+   "uni_id": "tokai-univ",
+   "rec": {
+    "dept_id": "tokai-univ-kokusaibunka",
+    "name": "国際文化学部",
+    "campus": "札幌キャンパス（北海道札幌市南区）",
+    "hensachi": {
+     "min": 37.5,
+     "max": 40,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "note": "総合型選抜（学科課題型・適性面接型など）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "公募制学校推薦型選抜",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "一般選抜・全学部統一選抜（前期/後期）",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "共通テスト利用選抜（前期/中期/後期）",
+      "verified": true
+     }
+    ],
+    "qualifications": [
+     "中学・高等学校教諭一種（英語）（国際コミュニケーション学科）",
+     "中学・高等学校教諭一種（保健体育）（地域創造学科）",
+     "高等学校教諭一種（公民）（地域創造学科）",
+     "学芸員"
+    ],
+    "interest_tags": [
+     "gaikokugo",
+     "shakai",
+     "sports"
+    ],
+    "employment_fields": [
+     "service",
+     "kyoiku",
+     "koumuin"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "Web独立検証で全項目一致を確認。(1)実在: 東海大学公式・札幌キャンパスページ(u-tokai.ac.jp/about/campus/campus-sapporo/)に国際文化学部（地域創造学科・国際コミュニケーション学科）を確認、所在地は北海道札幌市南区南沢5条1-1-1でcampus記載と一致（なおデザイン文化学科のみ2022年度から募集停止だが本レコードは同学科に言及しておらず問題なし）。(2)2026年度募集: 大学公式の公募制学校推薦型選抜2026要項で地域創造6名・国際コミュニケーション5名の募集を確認。公式の2026入学試験要項の表題が「全学部統一選抜（前期／後期）・一般選抜・大学入学共通テスト利用選抜（前期／中期／後期）」でippan/kyotsuのnoteと完全一致。(3)偏差値: passnavi（河合塾基準、source_urlと同一ページ）で国際コミュニケーション37.5、地域創造40.0、文系学部統一40.0 → min37.5/max40.0が実測と一致。(4)総合型選抜: 公式ページで学科課題型・適性面接型を含む4方式を確認、noteと一致。(5)資格: 地域創造学科=中高保健体育一種・高校公民一種・学芸員、国際コミュニケーション学科=中高英語一種・学芸員をKei-Net等で確認し、qualificationsの学科注記まで正確。2027年度に向けた募集停止・改組の告知は検索で見当たらず。interest_tags/employment_fieldsも学部内容（英語・地域社会・スポーツ系課程）と整合。"
+  },
+  {
+   "uni_id": "tokai-univ",
+   "rec": {
+    "dept_id": "tokai-univ-seibutsu",
+    "name": "生物学部",
+    "campus": "札幌キャンパス（北海道札幌市南区）",
+    "hensachi": {
+     "min": 35,
+     "max": 40,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/2710/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "note": "総合型選抜（学科課題型・適性面接型など）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "公募制学校推薦型選抜",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "一般選抜・全学部統一選抜（前期/後期）",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "共通テスト利用選抜（前期/中期/後期）",
+      "verified": true
+     }
+    ],
+    "qualifications": [
+     "中学校教諭一種（理科）",
+     "高等学校教諭一種（理科）",
+     "学芸員"
+    ],
+    "interest_tags": [
+     "nogaku",
+     "riko"
+    ],
+    "employment_fields": [
+     "shokuhin",
+     "maker",
+     "kyoiku"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "東海大学生物学部（生物学科・海洋生物科学科）は札幌キャンパス（北海道札幌市南区南沢5条1-1-1）に実在し、2026/2027年度入試で募集を確認。偏差値はパスナビ（河合塾基準）で生物学科35.0〜37.5・海洋生物科学科40.0、学部全体min35/max40でレコードと一致（source_urlも同一）。入試方式は総合型選抜（学科課題型・適性面接型・スポーツ音楽自己推薦型）、公募制学校推薦型選抜（2026年度要項PDFで確認）、一般選抜+全学部統一（前期/後期）、共通テスト利用（前期/中期/後期）がすべて実施されておりnoteの記載と整合。資格（中学理科一種・高校理科一種・学芸員）も学部公式情報で全学科取得可能と確認。修正の必要なし。"
+  },
+  {
+   "uni_id": "nihon-joshi",
+   "rec": {
+    "dept_id": "nihon-joshi-keizai",
+    "name": "経済学部（2027年開設）",
+    "campus": "目白キャンパス（東京都文京区）",
+    "hensachi": {
+     "min": 52.5,
+     "max": 55,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/2980/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "note": "総合型選抜を実施（経済学科対象・2027年度入試）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "学校推薦型選抜（公募制）を2027年度から実施。小論文・面接、評定平均3.8以上",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "個別選抜型（2科目入試・3科目入試）・英語外部試験利用型",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "共通テスト利用型（前期3・4科目型／前期5科目型／後期）",
+      "verified": true
+     }
+    ],
+    "qualifications": [
+     "日商簿記（目標資格）",
+     "ファイナンシャルプランナー（FP）（目標資格）",
+     "証券アナリスト（試験）",
+     "公認会計士・税理士（試験）"
+    ],
+    "interest_tags": [
+     "keizai"
+    ],
+    "employment_fields": [
+     "kinyu",
+     "maker",
+     "it"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "全項目をWebで独立確認し正確。日本女子大学経済学部（経済学科・定員99名）は2027年4月開設で公式サイト・特設サイト(jwu-economics.jp)に掲載、目白キャンパス（東京都文京区目白台2-8-1）で一致。偏差値はパスナビ掲載の河合塾基準52.5〜55.0と完全一致（source_urlも有効）。入試方式も2027年度入試情報と一致: 総合型選抜は経済学科で実施、学校推薦型（公募制）は2027年度から経済学部で新規募集（小論文・面接、評定平均3.8以上）、一般選抜は個別選抜型［2科目入試］［3科目入試］と英語外部試験利用型、共通テスト利用型は前期3・4科目型／前期5科目型／後期。資格・興味タグ・就職分野も学部内容（経済学・経営学・データ分析）と整合し妥当。"
+  },
+  {
+   "uni_id": "osaka-shoin",
+   "rec": {
+    "dept_id": "osaka-shoin-liberal",
+    "name": "学芸学部 リベラルアーツ学科（2025年開設）",
+    "campus": "小阪キャンパス（大阪府東大阪市）",
+    "hensachi": {
+     "min": 35,
+     "max": 35,
+     "basis": "kawai",
+     "source_url": "https://www.minkou.jp/university/school/deviation/20537/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "note": "総合型選抜入試（専願・複数期実施、授業体験型など複数タイプ）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "学校推薦型選抜I・II期（専願）。学校推薦書不要の自己推薦入試〈基礎学力型〉（専願/併願選択可）もあり",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "一般選抜A・B（2科目型中心、高得点科目を判定に利用）",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": false,
+      "note": "共通テスト利用入試は実施なし（公式入試一覧に記載なく、パスナビ・マナビジョンも共テ得点率非掲載）",
+      "verified": true
+     }
+    ],
+    "qualifications": [
+     "学芸員",
+     "司書",
+     "社会教育主事（任用資格）",
+     "社会調査士"
+    ],
+    "interest_tags": [
+     "shakai",
+     "bungaku"
+    ],
+    "employment_fields": [
+     "service",
+     "ryutsu",
+     "it"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "全項目をWebで独立検証し正確と確認。(1)学芸学部リベラルアーツ学科は2025年4月開設で実在（大学公式サイト・大学プレスセンター）。(2)偏差値35.0はパスナビ（河合塾提供データ、2026/7/1更新）およびみんなの大学情報で一致、min=max=35のkawai基準は正確。(3)キャンパスは東大阪市の小阪キャンパス単一で正確。(4)入試方式は公式入試一覧と一致：総合型選抜【専願】I〜IV期＝sogo:true、学校推薦型選抜I・II期【専願】＋自己推薦入試〈基礎力判定テスト〉A〜C期【専願/併願】＝koubo:true、一般選抜A・B期＝ippan:true、共通テスト利用入試は公式入試一覧に記載なくパスナビ共テ得点率も「-」（未実施時は非表示との注記）＝kyotsu:false。(5)資格は公式学科ページの「学芸員、社会教育主事、社会調査士、司書」とレコードの4件が完全一致。noteの「基礎学力型」は公式表記「基礎力判定テスト」と微差だが実質同一で修正不要。"
+  },
+  {
+   "uni_id": "seikei",
+   "rec": {
+    "dept_id": "seikei-kokusai",
+    "name": "国際共創学部 国際共創学科（2026年開設）",
+    "campus": "吉祥寺キャンパス",
+    "hensachi": {
+     "min": 52.5,
+     "max": 55,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/2540/difficulty/?facultyID=030"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "verified": true,
+      "note": "総合型選抜（2026年度はAOマルデス入試、2027年度より「自己推薦型」に名称変更）。2専攻合計12名。当初予定の基礎学力型は実施取りやめを公式発表済み"
+     },
+     {
+      "type": "koubo",
+      "available": false,
+      "verified": true,
+      "note": "学校推薦型選抜は全学部とも指定校制のみで公募制なし（公式S-NET明記）"
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "verified": true,
+      "note": "A方式（3教科型学部個別：両専攻とも国語+地歴公民数学から1科目+外国語）・E方式（2教科型全学部統一：国際日本学専攻は国語+外国語、環境サステナビリティ学専攻は数学+外国語）"
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "verified": true,
+      "note": "共通テスト利用C方式あり（3教科型・5科目国公立併願型）。ボーダー得点率71〜81%（2026年7月時点・河合塾）"
+     }
+    ],
+    "qualifications": [
+     "登録日本語教員（国家資格・国際日本学専攻の日本語教育プログラムで養成）",
+     "社会福祉主事任用資格",
+     "教員免許はこの学部では取得不可の見込み（大学公式の資格情報に記載なし・2026年7月時点）"
+    ],
+    "interest_tags": [
+     "gaikokugo",
+     "shakai"
+    ],
+    "employment_fields": [
+     "koumuin",
+     "service",
+     "ryutsu"
+    ]
+   },
+   "verdict": "FIX",
+   "reason": "学部実在（2026年4月開設・国際共創学科2専攻）、偏差値52.5〜55（河合塾）、吉祥寺キャンパス、指定校制のみの推薦は正確。ただし3点の誤りを修正: (1)総合型の「2027年度から自己推薦型・基礎学力型の2方式に再編予定」は誤り。公式S-NETに「基礎学力型は実施を取りやめ」と明記されており、2027年度はAOマルデスから「自己推薦型」への名称変更のみ。(2)専攻別の科目要件（国際日本学=国語+外国語、環境サステナ=数学+外国語）はE方式のみに適用され、A方式は両専攻とも国語+選択+外国語の3教科であるため注記を修正。(3)共テボーダー74〜78%は旧値。パスナビ2026年7月1日更新では71〜81%（3教科型81%/75%、5科目国公併願77%/71%）。資格は登録日本語教員・社会福祉主事任用資格とも公式資料で確認済み。"
+  },
+  {
+   "uni_id": "hanazono",
+   "rec": {
+    "dept_id": "hanazono-kyoiku",
+    "name": "教育学部 初等教育学科（2026年開設）",
+    "campus": "本部キャンパス（京都市中京区）",
+    "hensachi": {
+     "min": 35,
+     "max": 35,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/4020/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "verified": true,
+      "note": "総合型選抜（AO入試、前期・後期）。エントリーシート＋小論文＋課題＋面接"
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "verified": true,
+      "note": "学校推薦型選抜A・B日程（各30名、面接）。自己推薦入試（基礎学力型）も実施"
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "verified": true,
+      "note": "一般選抜A〜D日程。A・B日程は2教科200点（国語必須＋英語・数学・日本史から1科目）、C・D日程は国語1教科"
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "verified": true,
+      "note": "共通テスト利用入試（前期・後期、4教科・配点400点）。共テ得点率42%"
+     }
+    ],
+    "qualifications": [
+     "小学校教諭一種免許状",
+     "幼稚園教諭一種免許状",
+     "保育士資格",
+     "特別支援学校教諭一種免許状"
+    ],
+    "interest_tags": [
+     "kyoiku"
+    ],
+    "employment_fields": [
+     "kyoiku",
+     "koumuin",
+     "iryo_fukushi"
+    ]
+   },
+   "verdict": "FIX",
+   "reason": "教育学部初等教育学科は2026年4月開設で文科省認可済み（大学公式発表・2026年度募集要項PDFで確認）。偏差値35.0（河合塾/パスナビ）・共テ得点率42%、学校推薦型A・B日程各30名（面接）、自己推薦入試（基礎学力型）、共テ利用4教科400点、取得資格（小学校・幼稚園・保育士・特別支援）はいずれもWebで裏付けが取れた。唯一の誤りは一般選抜のnote:「A・B日程。国語＋英語＋数学or日本史」は実際と異なり、日程はA・B・C・Dの4日程で、A・B日程は2教科200点（国語必須＋英語・数学・日本史から1科目選択）、C・D日程は国語1教科100点（マナビジョン確認）。この点のみ修正してFIX。"
+  },
+  {
+   "uni_id": "tsukuba",
+   "rec": {
+    "dept_id": "tsukuba-sugaku",
+    "name": "理工学群 数学類",
+    "campus": "筑波キャンパス",
+    "hensachi": {
+     "min": 57.5,
+     "max": 57.5,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/0160/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": false,
+      "note": "アドミッションセンター入試（総合型）の実施なし（令和8年度入試実施結果PDFで理工学群は全学類「―」）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "学校推薦型選抜（一般公募制）実施。令和8年度は募集8/志願30/合格8（倍率3.8）",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "一般選抜は前期日程のみ（後期日程なし）。令和8年度前期は募集21/志願42/倍率2.0",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）。共テボーダー76%（河合塾）",
+      "verified": false
+     }
+    ],
+    "qualifications": [
+     "中高教員(数学)",
+     "学芸員"
+    ],
+    "interest_tags": [
+     "riko"
+    ],
+    "employment_fields": [
+     "it",
+     "kinyu",
+     "kyoiku"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "大学公式の令和8年度入学試験実施結果PDF(ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/04/R8_nyusikekka.pdf)とパスナビ(河合塾基準)で全項目を独立検証し、誤りなし。(1)理工学群数学類は実在(公式PDFに記載)。(2)偏差値57.5・共テボーダー76%はパスナビ掲載値と完全一致。(3)AC入試(総合型)は公式PDFで理工学群全学類「―」、国際科学オリンピック特別入試も数学類は対象外(対象は物理・化学・情報科学・情報メディア創成)のためsogo=falseは正確。(4)推薦は公式PDFで募集8/志願30/倍率3.8/受験29/合格8とノートの数値が完全一致。(5)前期は募集21/志願42/倍率2.0で一致、後期は数学類「―」(後期実施は物理・応用理工・工学システム・社会工のみ)、かつ令和9年度から全学後期廃止のため2027年度も前期のみで整合。(6)キャンパス(筑波)・資格(中高数学教員免許・学芸員)・タグも妥当。kyotsuのverified:falseだった共テボーダー76%も今回パスナビで実測確認済み。"
+  },
+  {
+   "uni_id": "tsukuba",
+   "rec": {
+    "dept_id": "tsukuba-butsuri",
+    "name": "理工学群 物理学類",
+    "campus": "筑波キャンパス",
+    "hensachi": {
+     "min": 60,
+     "max": 60,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/0160/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": false,
+      "note": "アドミッションセンター入試（総合型）の実施なし（令和8年度入試実施結果PDF）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "学校推薦型選抜（一般公募制）実施。令和8年度は募集14/志願53/合格14（倍率3.8）",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "前期・後期日程あり。令和8年度は前期倍率4.0、後期は募集8に志願106（倍率13.3）と高倍率",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）。共テボーダー前期78%・後期86%（河合塾）",
+      "verified": false
+     }
+    ],
+    "qualifications": [
+     "中高教員(理科)",
+     "学芸員"
+    ],
+    "interest_tags": [
+     "riko"
+    ],
+    "employment_fields": [
+     "maker",
+     "it",
+     "kyoiku"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "全項目をWebで独立検証し一致を確認。(1)河合塾偏差値: パスナビで前期60.0（後期は偏差値非公表）→min60/max60/kawaiは正確。共テボーダー前期78%・後期86%もパスナビで確認。(2)入試方式: 筑波大公式の令和8年度入学試験実施結果PDFで、AC入試（総合型）は理工学群全学類で実施なし（sogo=false正確）、推薦入試は物理学類 募集14・志願53・倍率3.8・合格14で完全一致、一般前期は募集20・志願80・倍率4.0、後期は募集8・志願106・倍率13.3で完全一致。(3)令和9年度(2027)変更点PDFに物理学類関連の変更なし（後期廃止は化学類・知識情報のみ）で2027年度も募集継続。(4)dept_id tsukuba-butsuriは既存15件のtsukuba学部と衝突なし。kyotsuの記載（国立=共テ必須、verified:false）はデータセット内の既存国立レコード（tsukuba-d04等）の慣例と一致。名称・キャンパス（筑波キャンパス）・資格（中高教員理科/学芸員）・タグも妥当。"
+  },
+  {
+   "uni_id": "tsukuba",
+   "rec": {
+    "dept_id": "tsukuba-kagakurui",
+    "name": "理工学群 化学類",
+    "campus": "筑波キャンパス",
+    "hensachi": {
+     "min": 57.5,
+     "max": 57.5,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/0160/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": true,
+      "note": "AC入試は実施なしだが、総合型に分類される国際科学オリンピック特別入試を実施（令和8年度は志願2/合格1）。対象者が極めて限定される点に注意",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "学校推薦型選抜（一般公募制）実施。令和8年度は募集12/志願43/合格12（倍率3.6）",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "前期・後期日程あり。令和8年度は前期倍率2.0、後期は募集5に志願46（倍率9.2）",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）。共テボーダー78%（河合塾）",
+      "verified": false
+     }
+    ],
+    "qualifications": [
+     "中高教員(理科)",
+     "危険物取扱者(甲種受験資格)",
+     "毒物劇物取扱責任者"
+    ],
+    "interest_tags": [
+     "riko"
+    ],
+    "employment_fields": [
+     "maker",
+     "shokuhin",
+     "it"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "筑波大学公式「令和8年度入学試験実施結果」(https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/04/R8_nyusikekka.pdf) とパスナビ (https://passnavi.obunsha.co.jp/univ/0160/difficulty/?facultyID=025) で全項目を独立確認した。(1)理工学群化学類は筑波キャンパスに実在し2026年度入試を実施。(2)偏差値: パスナビ掲載の河合塾偏差値で化学類前期57.5、共テボーダー78%と完全一致。(3)一般選抜: 公式PDFで前期=募集18/志願36/倍率2.0、後期=募集5/志願46/倍率9.2/合格5と記載どおり一致。(4)推薦入試: 化学類=募集12/志願43/倍率3.6/合格12で完全一致。(5)AC入試: 理工学群は全学類「―」(実施なし)で注記どおり。(6)国際科学オリンピック特別入試: 理工学群化学類=志願2/合格1(入学辞退1)で注記どおり一致。(7)資格(中高理科教員免許・危険物甲種受験資格・毒物劇物取扱責任者)は化学系学類として妥当。唯一の軽微な点として、kyotsuのverified:falseは今回パスナビで共テボーダー78%を確認できたためtrueに昇格可能だが、記載内容自体に誤りはないためCONFIRMとする。"
+  },
+  {
+   "uni_id": "tsukuba",
+   "rec": {
+    "dept_id": "tsukuba-oyoriko",
+    "name": "理工学群 応用理工学類",
+    "campus": "筑波キャンパス",
+    "hensachi": {
+     "min": 57.5,
+     "max": 57.5,
+     "basis": "kawai",
+     "source_url": "https://passnavi.obunsha.co.jp/univ/0160/difficulty/"
+    },
+    "entry_methods": [
+     {
+      "type": "sogo",
+      "available": false,
+      "note": "アドミッションセンター入試（総合型）の実施なし（令和8年度入試実施結果PDF）",
+      "verified": true
+     },
+     {
+      "type": "koubo",
+      "available": true,
+      "note": "学校推薦型選抜（一般公募制）実施。令和8年度は募集16/志願42/合格16（倍率2.6）",
+      "verified": true
+     },
+     {
+      "type": "ippan",
+      "available": true,
+      "note": "前期・後期日程あり。令和8年度は前期募集49/志願137/倍率2.8、後期は募集19に志願107（倍率5.6）",
+      "verified": true
+     },
+     {
+      "type": "kyotsu",
+      "available": true,
+      "note": "国立のため一般選抜で共通テスト必須（私大型の共テ利用方式ではない）。共テボーダー前期76%・後期82%（河合塾）",
+      "verified": false
+     }
+    ],
+    "qualifications": [
+     "中高教員(理科)",
+     "技術士(要実務経験)",
+     "危険物取扱者(甲種受験資格)"
+    ],
+    "interest_tags": [
+     "riko"
+    ],
+    "employment_fields": [
+     "maker",
+     "it"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "全項目をWebで独立検証し一致を確認。(1)名称: 理工学群 応用理工学類は筑波大学公式の令和8年度一般選抜志願状況PDF(ac.tsukuba.ac.jp)に記載があり2026年度入試で実在。(2)偏差値: source_urlのパスナビ(河合塾基準)で前期57.5・共テボーダー前期76%/後期82%を実測確認、min/max 57.5一致。(3)キャンパス: 筑波キャンパスで正しい。(4)総合型: Kei-Net一覧で応用理工学類はAC入試非実施(理工学群では化学類の国際科学オリンピック特別入試のみ)、available:false一致。(5)公募推薦: Kei-Net入試結果で2026年度 募集16/志願42/合格16/倍率2.6を確認、note完全一致。(6)一般: 公式PDFで前期 募集49/志願137/倍率2.8、後期 募集19/志願107/倍率5.6を確認、note完全一致。(7)kyotsu: 国立で共テ必須の記述・ボーダー値も正確(record上verified:falseだが内容に誤りなし)。修正の必要なし。"
+  }
+ ],
+ "rejectedInVerify": []
+}
