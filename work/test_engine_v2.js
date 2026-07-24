@@ -55,10 +55,10 @@ const E = require('./engine_v2.js');
     { dept_id: 'ushiga-b', uni_id: 'ushiga', data_status: 'unconfirmed' },
     { dept_id: 'ukanto-a', uni_id: 'ukanto', data_status: 'verified' },
   ];
+  // 就職希望地域は除外に使わない（加点のみ）: regions指定でも他地域が残る
   const r1 = E.hardFilter(departments, universities, { regions: ['shiga'] });
-  assert.strictEqual(r1.passed.length, 1);
-  assert.strictEqual(r1.passed[0].dept.dept_id, 'ushiga-a');
-  assert.strictEqual(r1.excluded.byRegion, 1);
+  assert.strictEqual(r1.passed.length, 2, '地域指定でも除外しない');
+  assert.strictEqual(r1.excluded.byRegion, 0);
   assert.strictEqual(r1.excluded.unconfirmed, 1);
   const r2 = E.hardFilter(departments, universities, { regions: [] });
   assert.strictEqual(r2.passed.length, 2);
@@ -150,11 +150,14 @@ const E = require('./engine_v2.js');
     interests: ['keizai'], careers: ['kinyu'], examMethods: ['ippan'], budgetMax: null,
   };
   const res = E.diagnose(profile, dataV2, null, riasecMap);
-  assert.strictEqual(res.zones.match.length, 1);
-  assert.strictEqual(res.zones.match[0].dept_id, 'u1-keizai');
+  // 地域は除外しない: 関東のu2-keizaiもmatchに入る（ただし地域加点でu1-keizaiが上位）
+  assert.strictEqual(res.zones.match.length, 2, '関東の大学も除外されない');
+  assert.strictEqual(res.zones.match[0].dept_id, 'u1-keizai', '希望地域(滋賀)の学部が加点で上位');
+  assert.strictEqual(res.zones.match[1].dept_id, 'u2-keizai');
+  assert.ok(res.zones.match[0].fitScore > res.zones.match[1].fitScore, '地域一致が高fit');
   assert.strictEqual(res.zones.challenge[0].dept_id, 'u1-joho');
   assert.strictEqual(res.zones.safe[0].dept_id, 'u1-kyoiku');
-  assert.strictEqual(res.excluded.byRegion, 1);
+  assert.strictEqual(res.excluded.byRegion, 0, '地域除外は廃止');
   assert.strictEqual(res.excluded.unconfirmed, 1);
   assert.strictEqual(res.meta.adjustedHensachi, 50);
   assert.ok(res.meta.hollandCode.length === 3);

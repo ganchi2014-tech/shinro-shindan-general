@@ -1829,12 +1829,12 @@ main {
     <section class="screen" data-screen="diag-area" hidden>
       <div class="step-indicator">Step 4 / 7</div>
       <h2 class="step-title">将来の就職希望地域は？</h2>
-      <p class="step-sub">選ぶと「その地域での就職に強い大学」だけに絞って表示します。<strong>県外の大学に進学して地元に戻って就職するのも普通のルート</strong>なので、進学先を狭めたくない人は「未定」のままでOKです。</p>
+      <p class="step-sub">選んだ地域の大学が<strong>上位に来やすくなります（加点）</strong>。他の地域の大学も<strong>除外せずすべて表示</strong>するので、県外に進学して地元に戻るルートもそのまま探せます。</p>
       <div class="radio-list" id="workAreaList">
-        <label class="radio-row"><input type="radio" name="workArea" value="shiga" /><span><strong>🏞️ 滋賀県内で就職</strong><br />滋賀の大学<strong>だけに絞り込み</strong>ます（<span data-area-n="shiga">8</span>大学）</span></label>
-        <label class="radio-row"><input type="radio" name="workArea" value="kansai" /><span><strong>🏯 関西圏で就職</strong><br />大阪・京都・兵庫・奈良・滋賀の大学<strong>に絞り込み</strong>ます（<span data-area-n="kansai">68</span>大学）</span></label>
-        <label class="radio-row"><input type="radio" name="workArea" value="any" /><span><strong>🗾 どこでもOK</strong><br />地域で絞らず全国の大学から（<span data-area-n="all">123</span>大学）</span></label>
-        <label class="radio-row"><input type="radio" name="workArea" value="unknown" checked /><span><strong>🤷 未定（デフォルト）</strong><br />絞り込みなし・スコアにも影響させない</span></label>
+        <label class="radio-row"><input type="radio" name="workArea" value="shiga" /><span><strong>🏞️ 滋賀県内で就職</strong><br />滋賀の大学（<span data-area-n="shiga">8</span>大学）を優遇して上位表示</span></label>
+        <label class="radio-row"><input type="radio" name="workArea" value="kansai" /><span><strong>🏯 関西圏で就職</strong><br />大阪・京都・兵庫・奈良・滋賀の大学（<span data-area-n="kansai">68</span>大学）を優遇して上位表示</span></label>
+        <label class="radio-row"><input type="radio" name="workArea" value="any" /><span><strong>🗾 どこでもOK</strong><br />地域の優遇なし・全国の大学から（<span data-area-n="all">123</span>大学）</span></label>
+        <label class="radio-row"><input type="radio" name="workArea" value="unknown" checked /><span><strong>🤷 未定（デフォルト）</strong><br />スコアに影響させない</span></label>
       </div>
       <div class="nav-row">
         <button class="secondary-btn" data-back="diag-2">← 戻る</button>

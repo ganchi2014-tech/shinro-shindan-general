@@ -47,15 +47,14 @@ function classifyZone(mid, adjHen) {
 
 function hardFilter(departments, universities, userProfile) {
   const uniById = Object.fromEntries(universities.map((u) => [u.id, u]));
-  const regions = new Set(userProfile.regions || []);
   const excluded = { byRegion: 0, unconfirmed: 0 };
   const passed = [];
   for (const d of departments) {
     const uni = uniById[d.uni_id];
     if (!uni) continue;
     if (d.data_status === 'unconfirmed') { excluded.unconfirmed++; continue; }
-    if (regions.size && !regions.has(uni.region)) { excluded.byRegion++; continue; }
-    // 通学: 距離しきい値(分)があれば滋賀からの所要時間で絞る（厳しめ90/緩め120）。無ければ従来のcommute_possible。
+    // 就職希望地域(regions)は除外に使わない（computeFitの加点で優遇）。
+    // 通学は明示的なフィルタ設問なのでハードのまま: 距離しきい値(厳しめ90/緩め120)、無ければcommute_possible。
     const maxMin = userProfile.commuteMaxMin;
     if (maxMin != null) {
       if (uni.access_from_shiga_min == null || uni.access_from_shiga_min > maxMin) { excluded.byRegion++; continue; }
@@ -115,6 +114,9 @@ function computeFit(dept, uni, ctx) {
   const pref = uni.prefecture || '';
   if (pref.includes('滋賀')) soft += 8;
   else if (uni.commute_possible === true) soft += 5;
+  // 就職希望地域: 除外はせず、一致する大学に加点して上位に寄せる
+  const regionMatch = !!(ctx.preferredRegions && ctx.preferredRegions.size && ctx.preferredRegions.has(uni.region));
+  if (regionMatch) soft += 8;
   // reasons
   if (apptRiasec >= 20) reasons.push(`🧭 適性◎ ${ctx.hollandCode || ''} と好相性`);
   else if (apptRiasec >= 10) reasons.push('🧭 適性○');
@@ -123,6 +125,7 @@ function computeFit(dept, uni, ctx) {
   if ((dept.zemi || []).length > 0) reasons.push('🎓 看板ゼミあり');
   if (pref.includes('滋賀')) reasons.push('🏞️ 滋賀県内・地元');
   else if (uni.commute_possible === true) reasons.push('🚃 通学圏');
+  if (regionMatch && !pref.includes('滋賀')) reasons.push('🗺️ 希望の就職地域内');
   if (ctx.examMethods.size && !usable && availTypes.length) reasons.push('⚠️ 使える入試方式と噛み合わない');
   const fitScore = Math.max(0, Math.min(100, appt + emp + soft));
   return { fitScore: round1(fitScore), reasons: reasons.slice(0, 5), breakdown: { appt: round1(appt), emp, soft, riasecFit: round2(rf) } };
@@ -142,7 +145,7 @@ function diagnose(userProfile, dataV2, tagsDef, riasecMap, opts = {}) {
   const { passed, excluded } = hardFilter(dataV2.departments, dataV2.universities, userProfile);
   excluded.outOfRange = 0;
 
-  const ctx = { riasecProfile: profile, hollandCode, interests, careers, examMethods, budgetMax: userProfile.budgetMax ?? null, riasecMap };
+  const ctx = { riasecProfile: profile, hollandCode, interests, careers, examMethods, budgetMax: userProfile.budgetMax ?? null, riasecMap, preferredRegions: new Set(userProfile.regions || []) };
   const zones = { challenge: [], match: [], safe: [] };
   const ungrouped = [];
 
