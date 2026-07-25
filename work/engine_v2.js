@@ -114,9 +114,11 @@ function computeFit(dept, uni, ctx) {
   const pref = uni.prefecture || '';
   if (pref.includes('滋賀')) soft += 8;
   else if (uni.commute_possible === true) soft += 5;
-  // 就職希望地域: 除外はせず、一致する大学に加点して上位に寄せる
+  // 就職希望地域: 除外はせず、一致する大学に加点して上位に寄せる（第1優先+8/第2優先+4）
   const regionMatch = !!(ctx.preferredRegions && ctx.preferredRegions.size && ctx.preferredRegions.has(uni.region));
+  const regionNear = !regionMatch && !!(ctx.secondaryRegions && ctx.secondaryRegions.size && ctx.secondaryRegions.has(uni.region));
   if (regionMatch) soft += 8;
+  else if (regionNear) soft += 4;
   // reasons
   if (apptRiasec >= 20) reasons.push(`🧭 適性◎ ${ctx.hollandCode || ''} と好相性`);
   else if (apptRiasec >= 10) reasons.push('🧭 適性○');
@@ -126,6 +128,7 @@ function computeFit(dept, uni, ctx) {
   if (pref.includes('滋賀')) reasons.push('🏞️ 滋賀県内・地元');
   else if (uni.commute_possible === true) reasons.push('🚃 通学圏');
   if (regionMatch && !pref.includes('滋賀')) reasons.push('🗺️ 希望の就職地域内');
+  else if (regionNear) reasons.push('🗺️ 関西圏（希望地域に近い）');
   if (ctx.examMethods.size && !usable && availTypes.length) reasons.push('⚠️ 使える入試方式と噛み合わない');
   const fitScore = Math.max(0, Math.min(100, appt + emp + soft));
   return { fitScore: round1(fitScore), reasons: reasons.slice(0, 5), breakdown: { appt: round1(appt), emp, soft, riasecFit: round2(rf) } };
@@ -145,7 +148,7 @@ function diagnose(userProfile, dataV2, tagsDef, riasecMap, opts = {}) {
   const { passed, excluded } = hardFilter(dataV2.departments, dataV2.universities, userProfile);
   excluded.outOfRange = 0;
 
-  const ctx = { riasecProfile: profile, hollandCode, interests, careers, examMethods, budgetMax: userProfile.budgetMax ?? null, riasecMap, preferredRegions: new Set(userProfile.regions || []) };
+  const ctx = { riasecProfile: profile, hollandCode, interests, careers, examMethods, budgetMax: userProfile.budgetMax ?? null, riasecMap, preferredRegions: new Set(userProfile.regions || []), secondaryRegions: new Set(userProfile.regionsSecondary || []) };
   const zones = { challenge: [], match: [], safe: [] };
   const ungrouped = [];
 

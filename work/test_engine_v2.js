@@ -170,6 +170,28 @@ const E = require('./engine_v2.js');
   assert.strictEqual(res3.meta.lowSignal, true);
 }
 
+// ---- 地域の2段階加点（第1優先+8 / 第2優先+4） ----
+{
+  const riasecMap = require('./interest_riasec_map.json').map;
+  const mkU = (id, region) => ({ id, name: id, region, prefecture: '', type: '私立' });
+  const mkD = (id, uni) => ({ dept_id: id, uni_id: uni, name: id, campus: 'C', data_status: 'verified',
+    hensachi: { min: 50, max: 50 }, bairitsu: { ippan: {} }, entry_methods: [{ type: 'ippan', available: true }],
+    interest_tags: [], employment_fields: [], zemi: [] });
+  const dataV2 = {
+    universities: [mkU('us', 'shiga'), mkU('uk', 'kyoto'), mkU('ut', 'tokai')],
+    departments: [mkD('us-a', 'us'), mkD('uk-a', 'uk'), mkD('ut-a', 'ut')],
+  };
+  const profile = { hensachi: 50, examSource: 'kawai', regions: ['shiga'], regionsSecondary: ['kyoto', 'osaka', 'hyogo', 'nara-wakayama'],
+    riasecAnswers: [], interests: [], careers: [], examMethods: [], budgetMax: null };
+  const r = E.diagnose(profile, dataV2, null, riasecMap, { topN: 99 });
+  const fit = (id) => r.zones.match.find((x) => x.dept_id === id).fitScore;
+  assert.strictEqual(r.zones.match.length, 3, '3件とも除外されない');
+  assert.strictEqual(fit('us-a') - fit('ut-a'), 8, '第1優先(滋賀)は+8');
+  assert.strictEqual(fit('uk-a') - fit('ut-a'), 4, '第2優先(京都)は+4');
+  const kyoto = r.zones.match.find((x) => x.dept_id === 'uk-a');
+  assert.ok(kyoto.reasons.some((s) => s.includes('関西圏')), '第2優先の理由チップ');
+}
+
 // ---- 国公立+5補正（同じ偏差値50でも国公立はゾーンが1段上がる）----
 {
   assert.strictEqual(E.isKokkoritsu({ type: '国立' }), true);

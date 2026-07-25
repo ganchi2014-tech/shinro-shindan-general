@@ -32,10 +32,17 @@ const CAREER_MAP = {
   'kankō': ['service'], shinri: ['iryo_fukushi'],
 };
 
-// エリア: v1 workArea → v2 region id 配列（空配列=フィルタなし）
+// エリア: v1 workArea → v2 region id 配列（第1優先=+8加点）
 const REGION_MAP = {
   shiga: ['shiga'],
   kansai: ['shiga', 'kyoto', 'osaka', 'hyogo', 'nara-wakayama'],
+  any: [],
+  unknown: [],
+};
+// 第2優先（+4加点）: 滋賀就職なら関西の他府県の大学も通勤・Uターンしやすく有利
+const REGION_MAP_SECONDARY = {
+  shiga: ['kyoto', 'osaka', 'hyogo', 'nara-wakayama'],
+  kansai: [],
   any: [],
   unknown: [],
 };
@@ -60,6 +67,7 @@ const COMMUTE_MAX_MIN = { jitaku: 90, 'jitaku-flex': 120 };
 
 function toUserProfile(diag, riasecAnswers) {
   const regions = REGION_MAP[diag.workArea] || [];
+  const regionsSecondary = REGION_MAP_SECONDARY[diag.workArea] || [];
   const commuteOnly = diag.commute === 'jitaku' || diag.commute === 'jitaku-flex';
   const commuteMaxMin = COMMUTE_MAX_MIN[diag.commute] ?? null;
   const hensachi = diag.hensachiUnknown ? null : Number(diag.hensachi);
@@ -68,7 +76,7 @@ function toUserProfile(diag, riasecAnswers) {
   const methodSet = new Set([...diag.methods].filter((m) => m !== 'any'));
   const examMethods = mapSet(methodSet, METHOD_MAP);
   return {
-    regions, commuteOnly, commuteMaxMin, hensachi,
+    regions, regionsSecondary, commuteOnly, commuteMaxMin, hensachi,
     examSource: diag.examSource || 'unknown',
     riasecAnswers: riasecAnswers || [],
     interests, careers, examMethods,
@@ -76,4 +84,4 @@ function toUserProfile(diag, riasecAnswers) {
   };
 }
 
-module.exports = { INTEREST_MAP, CAREER_MAP, REGION_MAP, METHOD_MAP, mapSet, toUserProfile };
+module.exports = { INTEREST_MAP, CAREER_MAP, REGION_MAP, REGION_MAP_SECONDARY, METHOD_MAP, mapSet, toUserProfile };

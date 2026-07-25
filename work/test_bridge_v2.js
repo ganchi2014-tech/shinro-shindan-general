@@ -28,6 +28,13 @@ assert.strictEqual(p2.commuteMaxMin, 90, '通い厳しめ→90分以内');
 assert.deepStrictEqual(p2.examMethods.sort(), ['kyotsu', 'sogo']);
 assert.strictEqual(p2.riasecAnswers.length, 12);
 
+// 第2優先地域: 滋賀就職→関西4府県が+4対象、関西/any/未定は無し
+const ps = toUserProfile({ workArea: 'shiga', commute: 'any', hensachi: 50, hensachiUnknown: false, examSource: 'kawai', interests: new Set(), careers: new Set(), methods: new Set(['any']) }, []);
+assert.deepStrictEqual(ps.regions, ['shiga']);
+assert.deepStrictEqual(ps.regionsSecondary, ['kyoto', 'osaka', 'hyogo', 'nara-wakayama']);
+const pk = toUserProfile({ workArea: 'kansai', commute: 'any', hensachi: 50, hensachiUnknown: false, examSource: 'kawai', interests: new Set(), careers: new Set(), methods: new Set(['any']) }, []);
+assert.deepStrictEqual(pk.regionsSecondary, []);
+
 // 通学しきい値: 厳しめ90 / 緩め120 / 下宿OK・未定はnull
 const mk = (commute) => toUserProfile({ workArea: 'unknown', commute, hensachi: 50, hensachiUnknown: false, examSource: 'kawai', interests: new Set(), careers: new Set(), methods: new Set(['any']) }, []);
 assert.strictEqual(mk('jitaku').commuteMaxMin, 90);
