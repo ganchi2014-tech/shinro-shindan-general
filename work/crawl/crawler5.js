@@ -16,15 +16,24 @@
     return null;
   };
   const DATE = /\d{1,2}\s?[月\/]\s?\d{1,2}/g;
+  // 日付が2つ以上ある行を、直前の見出しつきで拾い、総合型(S)/推薦(K)/一般(I)/その他(?)に分けて各4行まで返す
   const rows = (d) => {
-    const out = [], seen = new Set();
-    d.querySelectorAll('tr, li, dl, p').forEach((el) => {
-      if (el.querySelector('tr, li, dl, p, table')) return;                    // 入れ子の外側は飛ばす
+    const cat = { S: [], K: [], I: [], '?': [] }, seen = new Set();
+    let cur = '';
+    d.querySelectorAll('h1, h2, h3, h4, h5, caption, tr, li, dl, p').forEach((el) => {
+      if (/^H\d$|CAPTION/.test(el.tagName)) { cur = el.textContent.replace(/\s+/g, ' ').trim().slice(0, 40); return; }
+      if (el.querySelector('tr, li, dl, p, table')) return;
       const s = (el.tagName === 'TR' ? [...el.children].map((c) => c.textContent.replace(/\s+/g, ' ').trim()).join('｜') : el.textContent.replace(/\s+/g, ' ').trim());
-      if ((s.match(DATE) || []).length >= 2 && s.length < 300 && !seen.has(s)) { seen.add(s); out.push(s); }
+      if ((s.match(DATE) || []).length < 2 || s.length > 220 || seen.has(s)) return;
+      seen.add(s);
+      const all = cur + ' ' + s;
+      if (/大学院|編入|留学生|帰国|社会人|過年度|入試結果|オープンキャンパス|説明会|相談会/.test(all)) return;
+      const k = /総合型|ＡＯ|AO/.test(all) ? 'S' : /推薦|公募/.test(all) ? 'K' : /一般|前期|後期|中期|共通テスト|全学部|個別/.test(all) ? 'I' : '?';
+      if (cat[k].length < 4) cat[k].push(k + ':' + (cur ? '[' + cur + '] ' : '') + s);
     });
-    return out.join('\n');
+    return [...cat.S, ...cat.K, ...cat.I, ...cat['?'].slice(0, 2)].join('\n');
   };
+  const yearOf = (d) => { const m = (d.body ? d.body.textContent : '').match(/20\d\d(?=\s*年度)/g) || []; const c = {}; m.forEach((y) => (c[y] = (c[y] || 0) + 1)); return Object.entries(c).sort((a, b) => b[1] - a[1]).slice(0, 2).map((x) => x[0]).join('/'); };
   const getDoc = async (u) => new DOMParser().parseFromString(await (await fetch(u)).text(), 'text/html');
   const sameOrigin = (u) => { try { return new URL(u).origin === location.origin && !/\.(pdf|xlsx?|docx?)(\?|$)/i.test(u); } catch (e) { return false; } };
   const pickAll = (doc, base, re, nre, n) => {
@@ -68,7 +77,7 @@
         }
       }
       let t = '', sd = null;
-      if (r.sch && sameOrigin(r.sch)) { sd = await getDoc(r.sch); t = rows(sd); if (!r.yk) r.yk = pick(sd, r.sch, YK, /大学院|編入|留学生/); }
+      if (r.sch && sameOrigin(r.sch)) { sd = await getDoc(r.sch); t = rows(sd); r.y = yearOf(sd); if (!r.yk) r.yk = pick(sd, r.sch, YK, /大学院|編入|留学生/); }
       if (!t) t = rows(doc);
       if (t.length < 80) {
         for (const [lab, re] of [['総合型', /総合型選抜|AO入試/], ['推薦', /学校推薦型|公募/], ['一般', /一般選抜|一般入試/]]) {
@@ -76,7 +85,7 @@
           if (u) { try { const x = rows(await getDoc(u)); if (x) t += '\n[' + lab + '] ' + x.slice(0, 600); } catch (e) {} }
         }
       }
-      r.t = t.slice(0, 1800);
+      r.t = t.slice(0, 2400);
     } catch (e) { r.t = r.t || ''; }
     save(s);
     return 'ok ' + id + ' ' + (r.sch ? 'S' : '-') + (r.yk ? 'Y' : '-') + (r.oc ? 'O' : '-') + ' ' + (r.t || '').length;
@@ -84,7 +93,7 @@
   // 結果の読み出し: R('links') = 全校のリンクを1行ずつ / R('t',[id,…]) = 日程表の行
   window.R = function (kind, ids) {
     const s = st();
-    if (kind === 'links') return Object.entries(s.res).map(([id, r]) => [id, r.err || (r.x ? 'X ' + r.x : ''), r.n || r.top || '', r.sch || '', r.yk || '', r.oc || '', (r.t || '').length].join('\t')).join('\n');
+    if (kind === 'links') return Object.entries(s.res).map(([id, r]) => [id, r.err || (r.x ? 'X ' + r.x : ''), r.n || r.top || '', r.sch || '', r.yk || '', r.oc || '', (r.y || '') + ':' + (r.t || '').length].join('\t')).join('\n');
     return (ids || []).map((id) => '## ' + id + ' ' + ((s.res[id] || {}).sch || '') + '\n' + ((s.res[id] || {}).t || '')).join('\n');
   };
 })();
