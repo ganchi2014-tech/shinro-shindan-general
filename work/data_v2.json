@@ -351,9 +351,9 @@
     "official_url": "https://www.ouhs.jp/nyushi/",
     "nyushi_url": "https://www.ouhs.jp/nyushi/",
     "shingaku_url": "https://www.ouhs.jp/career/",
-    "youkou_url": null,
+    "youkou_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/b2c181aafd910d24123c09eb4297b0b0.pdf",
     "verified": true,
-    "schedule_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/2027_nyushinittei.pdf",
+    "schedule_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/3c8f113920a331cce98697d6b8f29cf1.pdf",
     "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "保健体育教員採用試験合格率高水準。JSPO公認資格・健康運動指導士・アスレティックトレーナー資格取得支援充実",
@@ -534,6 +534,22 @@
       "notes": "評定不問。学科試験のみで合否判定。",
       "bairitsu": "4.0〜6.0倍"
      }
+    ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/3c8f113920a331cce98697d6b8f29cf1.pdf",
+    "sogo": [
+     "総合型選抜 自己表現型｜出願 9/1〜9/11｜試験 10/1｜発表 11/1"
+    ],
+    "koubo": [
+     "学校推薦型選抜 自己表現型｜出願 10/13〜10/22｜試験 11/4｜発表 12/1",
+     "学校推薦型選抜 体力評価型｜出願 10/13〜10/22｜試験 11/4〜11/5｜発表 12/1"
+    ],
+    "ippan": [
+     "一般選抜 2教科型｜出願 12/21〜1/13｜試験 1/30｜発表 2/12"
     ]
    }
   },
@@ -2976,6 +2992,23 @@
       "bairitsu": "3.0〜5.5倍"
      }
     ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.andrew.ac.jp/nyushi/info/calendar.html",
+    "sogo": [
+     "学科別選考入試［10月］｜出願 9/16〜9/30｜試験 10/17｜発表 11/1"
+    ],
+    "koubo": [
+     "公募制推薦入試［前期］｜出願 11/1〜11/5｜試験 11/14〜11/15｜発表 12/1",
+     "公募制推薦入試［後期］｜出願 12/1〜12/11｜試験 12/18｜発表 12/24"
+    ],
+    "ippan": [
+     "一般入試［前期］｜出願 12/14〜1/8｜試験 1/19・1/20・2/9・2/10｜発表 2/18",
+     "一般入試［後期］｜出願 2/18〜3/3｜試験 3/11｜発表 3/18"
+    ]
    }
   },
   {
@@ -3271,6 +3304,23 @@
       "notes": "評定不問。倍率は低めで合格しやすい。",
       "bairitsu": "2.0〜3.0倍"
      }
+    ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.fuksi-kagk-u.ac.jp/nyushi/nyugaku/date/index.html",
+    "sogo": [
+     "総合型選抜 I期｜出願 9/1〜9/8｜試験 9/20｜発表 10/6"
+    ],
+    "koubo": [
+     "学校推薦型選抜（公募）A｜出願 11/1〜11/13｜試験 11/21｜発表 12/1",
+     "学校推薦型選抜（公募）B｜出願 11/20〜12/4｜試験 12/12｜発表 12/22"
+    ],
+    "ippan": [
+     "一般選抜 A｜出願 1/5〜1/20｜試験 2/1〜2/2｜発表 2/10",
+     "一般選抜 B｜出願 2/9〜2/22｜試験 3/4｜発表 3/12"
     ]
    }
   },
@@ -8359,6 +8409,20 @@
       "notes": null
      }
     ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://ch.konan-u.ac.jp/admission/exam/",
+    "sogo": [
+     "公募制推薦入学試験｜出願 10/1〜10/13｜試験 11/7｜発表 11/20"
+    ],
+    "koubo": [],
+    "ippan": [
+     "一般選抜 前期日程｜出願 1/3〜1/15｜試験 1/30・1/31・2/1・2/4・2/5｜発表 2/15",
+     "一般選抜 中期日程｜出願 1/3〜2/5｜試験 2/17・2/18｜発表 2/28"
+    ]
    }
   },
   {
@@ -8446,7 +8510,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.bukkyo-u.ac.jp/admission/event/"
+    "open_campus_url": "https://www.bukkyo-u.ac.jp/admission/event/opencampus"
    },
    "ryugaku": {
     "available": true,
@@ -8458,9 +8522,9 @@
     "official_url": "https://www.bukkyo-u.ac.jp/admission/",
     "nyushi_url": "https://www.bukkyo-u.ac.jp/admission/",
     "shingaku_url": "https://www.bukkyo-u.ac.jp/career/",
-    "youkou_url": "https://www.bukkyo-u.ac.jp/admission/exam/download/",
+    "youkou_url": "https://www.bukkyo-u.ac.jp/admission/design/file/exam/2027_youkou-commendatory_a_b_c_common.pdf",
     "verified": true,
-    "schedule_url": "https://www.bukkyo-u.ac.jp/admission/exam/admission/",
+    "schedule_url": "https://www.bukkyo-u.ac.jp/admission/design/file/exam/2027_guide.pdf",
     "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "教員採用試験合格率は全国トップクラス。社会福祉士・精神保健福祉士・看護師等",
@@ -8578,6 +8642,22 @@
     "cohort": "2023年3月卒業",
     "shusshin_pct": 15.9,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.bukkyo-u.ac.jp/admission/design/file/exam/2027_guide.pdf",
+    "sogo": [
+     "総合型選抜（自己推薦制）｜出願 9/1〜9/7｜試験 10/24｜発表 11/4"
+    ],
+    "koubo": [
+     "学校推薦型選抜（公募制）｜出願 11/2〜11/9｜試験 11/24・11/25・11/26｜発表 12/7"
+    ],
+    "ippan": [
+     "一般選抜（A日程）｜出願 1/6〜1/20｜試験 2/2・2/3｜発表 2/12",
+     "一般選抜（B日程）｜出願 1/6〜1/20｜試験 1/31・2/1｜発表 2/12"
+    ]
    }
   },
   {
@@ -9183,7 +9263,7 @@
     "shingaku_url": "https://www.setsunan.ac.jp/career/",
     "youkou_url": "https://www.setsunan.ac.jp/admission/faculty/requirements/",
     "verified": true,
-    "schedule_url": "https://www.setsunan.ac.jp/admission/faculty/information/detail/23",
+    "schedule_url": "https://www.setsunan.ac.jp/admission/faculty/overview/files/2027_admission_schedule.pdf",
     "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "薬剤師国家試験、看護師国家試験、教員採用試験、公務員試験",
@@ -9299,6 +9379,23 @@
       "application_period": null,
       "notes": null
      }
+    ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.setsunan.ac.jp/admission/faculty/overview/files/2027_admission_schedule.pdf",
+    "sogo": [
+     "AO入試｜出願 9/1〜9/5｜試験 10/10｜発表 11/2"
+    ],
+    "koubo": [
+     "公募制推薦入試 前期日程｜出願 11/1〜11/9｜試験 11/19・11/20｜発表 12/3",
+     "公募制推薦入試 後期日程｜出願 11/20〜12/7｜試験 12/15｜発表 12/26"
+    ],
+    "ippan": [
+     "一般選抜 前期日程｜出願 12/15〜1/15｜試験 1/24・1/25・1/26｜発表 2/8",
+     "一般選抜 中期A日程｜出願 12/15〜1/29｜試験 2/9｜発表 2/25"
     ]
    }
   },
@@ -9525,6 +9622,23 @@
     "cohort": "2023年3月卒業",
     "shusshin_pct": 5.3,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://nyushi.otemon.ac.jp/admission/calendar.html",
+    "sogo": [
+     "アサーティブ入試｜出願 9/10〜9/18｜試験 10/3・10/17｜発表 11/2"
+    ],
+    "koubo": [
+     "公募制推薦入試［前期日程］｜出願 10/26〜11/5｜試験 11/18・11/19｜発表 11/30",
+     "公募制推薦入試［後期日程］｜出願 11/20〜12/2｜試験 12/12｜発表 12/21"
+    ],
+    "ippan": [
+     "一般入試［前期日程］1月実施｜出願 12/18〜1/12｜試験 1/26・1/27・1/28｜発表 2/18",
+     "一般入試［後期日程］｜出願 2/3〜2/19｜試験 3/2｜発表 3/11"
+    ]
    }
   },
   {
@@ -9739,6 +9853,23 @@
       "notes": null
      }
     ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.tezukayama-u.ac.jp/admission/",
+    "sogo": [
+     "総合型選抜 自由応募型（前期）｜出願 9/24〜10/7｜試験 10/17｜発表 11/2"
+    ],
+    "koubo": [
+     "公募制推薦 前期｜出願 10/19〜11/7｜試験 11/14・11/15｜発表 11/20",
+     "公募制推薦 後期｜出願 11/20〜12/14｜試験 12/19・12/20｜発表 12/25"
+    ],
+    "ippan": [
+     "一般選抜A日程｜出願 12/14〜1/15｜試験 1/21・1/22｜発表 1/29",
+     "一般選抜B日程｜出願 12/14〜2/6｜試験 2/13｜発表 2/19"
+    ]
    }
   },
   {
@@ -9838,7 +9969,9 @@
     "nyushi_url": null,
     "shingaku_url": "https://www.osaka-gu.ac.jp/career/",
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "schedule_url": "https://www.ogu.ac.jp/admissions/assets/files/admission/download/2027/kobo_01.pdf",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "簿記・FP・公務員試験対策、教員採用対策",
    "nyushi_details": {
@@ -9952,6 +10085,23 @@
       "notes": null
      }
     ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.ogu.ac.jp/admissions/assets/files/admission/download/2027/kobo_01.pdf",
+    "sogo": [
+     "総合型選抜 奨学金チャレンジ型・活動評価型｜出願 10/15〜10/26｜試験 11/5｜発表 11/12"
+    ],
+    "koubo": [
+     "学校推薦型選抜 公募推薦（前期日程）｜出願 10/15〜10/26｜試験 11/5・11/6｜発表 11/12",
+     "学校推薦型選抜 公募推薦（後期日程）｜出願 11/24〜12/5｜試験 12/15｜発表 12/19"
+    ],
+    "ippan": [
+     "一般選抜 前期日程（2教科選択型）｜出願 12/21〜1/19｜試験 1/28・1/29・1/30｜発表 2/4",
+     "一般選抜 中期日程（2教科選択型）｜出願 1/29〜2/9｜試験 2/20｜発表 2/26"
+    ]
    }
   },
   {
@@ -10045,7 +10195,7 @@
    "zemi_features": "現代社会・建築デザイン・国際看護・健康栄養・経営",
    "official_links": {
     "official_url": "https://www.otemae.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.otemae.ac.jp/jukensei-navi/admission/",
     "shingaku_url": "https://www.otemae.ac.jp/career/",
     "youkou_url": "https://www.otemae.ac.jp/jukensei-navi/admission/information-requirements2027/",
     "verified": true,
@@ -10161,6 +10311,23 @@
       "application_period": null,
       "notes": null
      }
+    ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.otemae.ac.jp/jukensei-navi/admission/",
+    "sogo": [
+     "総合型選抜 第1回（出願はエントリー期間）｜出願 8/4〜8/19｜試験 9/5｜発表 10/1"
+    ],
+    "koubo": [
+     "学校推薦型選抜 公募方式（A日程）｜出願 10/8〜10/21｜試験 11/4・11/5｜発表 11/19",
+     "学校推薦型選抜 公募方式（B日程）｜出願 11/12〜11/26｜試験 12/6｜発表 12/18"
+    ],
+    "ippan": [
+     "一般選抜（A日程）｜出願 12/7〜1/18｜試験 1/26・1/27｜発表 2/10",
+     "一般選抜（B日程）｜出願 12/7〜2/12｜試験 2/26・2/27｜発表 3/4"
     ]
    }
   },
@@ -11016,6 +11183,23 @@
       "notes": null
      }
     ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.keiho-u.ac.jp/admission/guidance/schedule.html",
+    "sogo": [
+     "学部AO入試（Ⅰ期）｜出願 9/24〜10/6｜試験 10/11｜発表 11/2"
+    ],
+    "koubo": [
+     "公募制推薦試験（前期）｜出願 11/1〜11/11｜試験 11/16・11/17｜発表 12/1",
+     "公募制推薦試験（後期）｜出願 12/1〜12/17｜試験 12/22｜発表 12/25"
+    ],
+    "ippan": [
+     "一般試験・前期 A日程｜出願 12/25〜1/15｜試験 1/21・1/22｜発表 2/12",
+     "一般試験・前期 B日程｜出願 12/25〜1/26｜試験 2/1・2/2｜発表 2/12"
+    ]
    }
   },
   {
@@ -11232,6 +11416,23 @@
       "notes": null
      }
     ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.oit.ac.jp/admission/outline/schedule.html",
+    "sogo": [
+     "AO入試（学部学科特色型）｜出願 9/1〜9/7｜試験 9/19｜発表 11/2"
+    ],
+    "koubo": [
+     "公募制推薦入試｜出願 11/1〜11/11｜試験 11/23",
+     "普通科高校特別推薦入試｜出願 11/1〜11/5｜試験 11/15"
+    ],
+    "ippan": [
+     "一般入試 前期・均等配点型（A日程）｜出願 1/4〜1/18｜試験 1/28・1/29",
+     "一般入試 前期・均等配点型（B日程）｜出願 1/4〜1/22｜試験 2/4"
+    ]
    }
   },
   {
@@ -11331,9 +11532,10 @@
     "official_url": "https://www.osakac.ac.jp/",
     "nyushi_url": "https://www.osakac.ac.jp/examinee/",
     "shingaku_url": "https://www.osakac.ac.jp/career/",
-    "youkou_url": "https://www.osakac.ac.jp/examinee/admission/shutsugan/",
+    "youkou_url": "https://www.osakac.ac.jp/examinee/admission/shutsugan/files/other_general_2027.pdf",
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://www.osakac.ac.jp/examinee/admission/report/"
    },
    "shikaku_gokakuritsu": "電気工事士・情報処理技術者・技術士補等の理工系資格",
    "nyushi_details": {
@@ -11447,6 +11649,23 @@
       "application_period": null,
       "notes": null
      }
+    ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.osakac.ac.jp/examinee/admission/report/",
+    "sogo": [
+     "AO入学試験〔Ⅰ期〕｜出願 9/1〜9/30｜試験 10/10｜発表 11/1"
+    ],
+    "koubo": [
+     "公募制推薦入学試験〔前期〕｜出願 10/1〜11/2｜試験 11/7・11/8｜発表 11/26",
+     "公募制推薦入学試験〔後期〕｜出願 11/3〜12/7｜試験 12/13｜発表 12/22"
+    ],
+    "ippan": [
+     "一般入学試験〔前期〕｜出願 12/8〜1/13｜試験 1/31・2/1｜発表 2/8",
+     "一般入学試験〔中期〕｜出願 1/14〜2/15｜試験 2/20｜発表 3/1"
     ]
    }
   },
@@ -11667,6 +11886,21 @@
       "application_period": null,
       "notes": null
      }
+    ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kansaigaidai.ac.jp/admission/",
+    "sogo": [],
+    "koubo": [
+     "公募制推薦入試 前期日程｜出願 10/22〜11/2｜試験 11/14・11/15｜発表 12/1",
+     "公募制推薦入試 後期日程｜出願 11/26〜12/8｜試験 12/19｜発表 12/24"
+    ],
+    "ippan": [
+     "一般入試 前期日程｜試験 1/26〜1/28",
+     "一般入試 後期日程｜試験 3/7"
     ]
    }
   },
@@ -12228,7 +12462,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.osaka-sandai.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://www.osaka-sandai.ac.jp/builders/opencampus.html"
    },
    "ryugaku": {
     "available": true,
@@ -12238,10 +12472,12 @@
    "zemi_features": "デザイン工・工・経営・経済・国際・スポーツ健康の6学部。交通機械工学に強み",
    "official_links": {
     "official_url": "https://www.osaka-sandai.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.osaka-sandai.ac.jp/admission/",
     "shingaku_url": "https://www.osaka-sandai.ac.jp/career/",
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "schedule_url": "https://www.osaka-sandai.ac.jp/admission/wp-content/uploads/sites/6/2026/06/exam_schedule_0614.pdf",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "技術士補・建築士・自動車整備士等の理工系資格",
    "nyushi_details": {
@@ -12356,6 +12592,23 @@
       "application_period": null,
       "notes": null
      }
+    ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.osaka-sandai.ac.jp/admission/wp-content/uploads/sites/6/2026/06/exam_schedule_0614.pdf",
+    "sogo": [
+     "AO入試 前期｜出願 9/1〜10/6｜試験 10/17｜発表 11/1"
+    ],
+    "koubo": [
+     "公募推薦入試 前期｜出願 10/8〜11/4｜試験 11/14・11/15｜発表 12/1",
+     "公募推薦入試 後期｜出願 11/9〜12/9｜試験 12/19・12/20｜発表 1/13"
+    ],
+    "ippan": [
+     "一般入試 前期｜出願 12/18〜1/20｜試験 1/31・2/1・2/2｜発表 2/15",
+     "一般入試 中期｜出願 2/1〜2/16｜試験 2/27｜発表 3/10"
     ]
    }
   },
@@ -12656,7 +12909,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "http://ouc.daishodai.ac.jp/oc_list/"
+    "open_campus_url": "https://ouc.daishodai.ac.jp/oc_list/"
    },
    "ryugaku": {
     "available": true,
@@ -12666,11 +12919,12 @@
    "zemi_features": "経済・総合経営・公共の3学部。実学重視のビジネス教育",
    "official_links": {
     "official_url": "https://www.daishodai.ac.jp/",
-    "nyushi_url": "http://ouc.daishodai.ac.jp/future/",
+    "nyushi_url": "https://ouc.daishodai.ac.jp/exam/",
     "shingaku_url": "https://www.daishodai.ac.jp/career/",
     "youkou_url": "http://ouc.daishodai.ac.jp/exam/support/application.html",
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://ouc.daishodai.ac.jp/exam/files/rgc_2027_Crkx8BbxWn8P.pdf"
    },
    "shikaku_gokakuritsu": "簿記・FP・宅建・公務員試験",
    "nyushi_details": {
@@ -12785,6 +13039,20 @@
       "notes": null
      }
     ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://ouc.daishodai.ac.jp/exam/files/rgc_2027_Crkx8BbxWn8P.pdf",
+    "sogo": [
+     "公募制入学試験（総合型選抜）前期｜出願 10/19〜10/29｜試験 11/7・11/8｜発表 11/13"
+    ],
+    "koubo": [],
+    "ippan": [
+     "一般入学試験 前期〈ベスト2科目方式〉｜出願 1/4〜1/21｜試験 2/1・2/2｜発表 2/13",
+     "一般入学試験 後期｜出願 2/13〜2/24｜試験 3/4・3/5｜発表 3/12"
+    ]
    }
   },
   {
@@ -12869,7 +13137,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.kbu.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://www.kbu.ac.jp/kbu/exam/event/opencampus.html"
    },
    "ryugaku": {
     "available": true,
@@ -12879,10 +13147,12 @@
    "zemi_features": "総合社会・臨床心理・こども教育の3学部。臨床心理は近畿屈指",
    "official_links": {
     "official_url": "https://www.kbu.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.kbu.ac.jp/kbu/exam/",
     "shingaku_url": "https://www.kbu.ac.jp/career/",
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "schedule_url": "https://www.kbu.ac.jp/kbu/exam/admission_guide/index/asset/KBU_NyushiGuide2027_P04_P05.pdf",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "臨床心理士、公認心理師、保育士、教員採用",
    "nyushi_details": {
@@ -13001,6 +13271,23 @@
     "cohort": "2023年3月卒業",
     "shusshin_pct": 21.9,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kbu.ac.jp/kbu/exam/admission_guide/index/asset/KBU_NyushiGuide2027_P04_P05.pdf",
+    "sogo": [
+     "総合型選抜 プレゼンテーション方式Ⅰ期（総合社会学科）｜出願 9/1〜9/26｜試験 10/4｜発表 10/10"
+    ],
+    "koubo": [
+     "公募制推薦入試 Ⅰ期｜出願 10/1〜10/24｜試験 11/1｜発表 11/7",
+     "公募制推薦入試 Ⅱ期｜出願 11/2〜11/14｜試験 11/22｜発表 11/28"
+    ],
+    "ippan": [
+     "一般入試 A日程｜出願 12/14〜1/16｜試験 1/23〜1/25｜発表 2/6",
+     "一般入試 B日程｜出願 1/12〜2/13｜試験 2/19｜発表 2/26"
+    ]
    }
   },
   {
@@ -13215,6 +13502,23 @@
       "notes": null
      }
     ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.ohs.ac.jp/assets/pdf/admissions/schedule_2027_01.pdf",
+    "sogo": [
+     "総合型選抜 コミュニケーション方式 Ⅰ期｜出願 9/1〜9/10｜試験 9/19｜発表 11/1"
+    ],
+    "koubo": [
+     "学校推薦型選抜（公募）Ⅰ期｜出願 10/23〜11/1｜試験 11/7｜発表 11/12",
+     "学校推薦型選抜（公募）Ⅱ期｜出願 11/13〜11/26｜試験 12/5｜発表 12/10"
+    ],
+    "ippan": [
+     "一般選抜 前期｜出願 1/5〜1/14｜試験 1/23｜発表 2/4",
+     "一般選抜 中期｜出願 1/15〜1/28｜試験 2/6｜発表 2/10"
+    ]
    }
   },
   {
@@ -13301,7 +13605,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.oiu.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://oiuvoice.com/event/oc_info/"
    },
    "ryugaku": {
     "available": true,
@@ -13311,10 +13615,12 @@
    "zemi_features": "経営経済・国際教養・人間科学の各学部。国際性重視",
    "official_links": {
     "official_url": "https://www.oiu.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://oiuvoice.com/examination/",
     "shingaku_url": "https://www.oiu.ac.jp/career/",
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://oiuvoice.com/assets/pdf/examination/general/details.pdf",
+    "verified": true,
+    "schedule_url": "https://oiuvoice.com/assets/pdf/examination/2027-nyushiguide.pdf",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "栄養士、観光業界資格、簿記、TOEIC",
    "nyushi_details": {
@@ -13428,6 +13734,23 @@
       "notes": null
      }
     ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://oiuvoice.com/assets/pdf/examination/2027-nyushiguide.pdf",
+    "sogo": [
+     "総合型選抜（AO）Ⅰ期｜出願 7/6〜7/14｜試験 7/25｜発表 11/6"
+    ],
+    "koubo": [
+     "学校推薦型選抜（公募）A方式 Ⅰ期｜出願 11/1〜11/6｜試験 11/15｜発表 12/2",
+     "学校推薦型選抜（公募）A方式 Ⅱ期｜出願 11/16〜11/26｜試験 12/6｜発表 12/14"
+    ],
+    "ippan": [
+     "一般選抜 前期日程｜出願 1/6〜1/28｜試験 2/5・2/6｜発表 2/17",
+     "一般選抜 後期日程｜出願 2/15〜2/22｜試験 3/2｜発表 3/9"
+    ]
    }
   },
   {
@@ -13526,7 +13849,9 @@
     "nyushi_url": null,
     "shingaku_url": "https://www.osaka-seikei.jp/career/",
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "schedule_url": "https://osaka-seikei-nyushi.jp/nyushi-university/exam/pdf/2027bosyu_univ.pdf",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "保育士、幼稚園教諭、教員採用、栄養士",
    "nyushi_details": {
@@ -13638,6 +13963,23 @@
       "application_period": null,
       "notes": null
      }
+    ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://osaka-seikei-nyushi.jp/nyushi-university/exam/pdf/2027bosyu_univ.pdf",
+    "sogo": [
+     "総合型選抜入試 A日程｜出願 9/1〜9/11｜試験 9/19・9/20｜発表 11/1"
+    ],
+    "koubo": [
+     "公募推薦入試 前期｜出願 11/1〜11/8｜試験 11/14・11/15｜発表 12/1",
+     "公募推薦入試 後期｜出願 11/1〜12/4｜試験 12/12｜発表 12/23"
+    ],
+    "ippan": [
+     "一般選抜入試 前期A-Ⅰ｜出願 12/14〜1/19｜試験 1/25｜発表 2/12",
+     "一般選抜入試 前期B｜出願 12/14〜2/2｜試験 2/9｜発表 2/19"
     ]
    }
   },
@@ -14777,7 +15119,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.kyotokango.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://www.kyotokango.ac.jp/examinees/opencampus/"
    },
    "ryugaku": {
     "available": false,
@@ -14787,9 +15129,9 @@
    "zemi_features": "看護学部単科。看護学・保健師・養護教諭養成。実習病院多数",
    "official_links": {
     "official_url": "https://www.kyotokango.ac.jp/",
-    "nyushi_url": "https://www.kyotokango.ac.jp/examinees",
+    "nyushi_url": "https://www.kyotokango.ac.jp/admission/",
     "shingaku_url": "https://www.kyotokango.ac.jp/career/",
-    "youkou_url": null,
+    "youkou_url": "https://www.kyotokango.ac.jp/pdf/admission/2027/appr3nenji2027.pdf",
     "verified": true,
     "verified_date": "2026-11-20"
    },
@@ -14906,6 +15248,23 @@
       "notes": null
      }
     ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kyotokango.ac.jp/pdf/admission/2027/appr3nenji2027.pdf",
+    "sogo": [
+     "総合型選抜AO入試（本出願）｜出願 10/1〜10/19｜試験 10/25｜発表 11/2"
+    ],
+    "koubo": [
+     "学校推薦型選抜 公募推薦A日程｜出願 11/2〜11/9｜試験 11/14｜発表 12/1",
+     "学校推薦型選抜 公募推薦B日程｜出願 11/2〜11/9｜試験 11/15｜発表 12/1"
+    ],
+    "ippan": [
+     "一般選抜A日程｜試験 1/31",
+     "一般選抜B日程｜試験 2/14"
+    ]
    }
   },
   {
@@ -14990,7 +15349,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.osaka-shinai.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://www.osgu.ac.jp/admissions/opencampus/"
    },
    "ryugaku": {
     "available": false,
@@ -15000,10 +15359,12 @@
    "zemi_features": "看護・教育の2学部。カトリック系の女子教育の伝統",
    "official_links": {
     "official_url": "https://www.osaka-shinai.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.osgu.ac.jp/admissions/outline/",
     "shingaku_url": "https://www.osaka-shinai.ac.jp/career/",
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "schedule_url": "https://www.osgu.ac.jp/admissions/outline/",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "看護師・保育士・幼稚園教諭・小学校教諭",
    "nyushi_details": {
@@ -15115,6 +15476,22 @@
       "application_period": null,
       "notes": null
      }
+    ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.osgu.ac.jp/admissions/outline/",
+    "sogo": [
+     "総合型選抜Ⅰ期（看護学部）｜出願 9/1〜9/18｜試験 9/27｜発表 11/2"
+    ],
+    "koubo": [
+     "公募制推薦選抜｜出願 10/13〜10/30｜試験 11/7｜発表 11/17"
+    ],
+    "ippan": [
+     "一般選抜（前期）｜出願 1/6〜1/20｜試験 1/27｜発表 2/5",
+     "一般選抜（中期）｜出願 1/21〜2/8｜試験 2/13｜発表 2/22"
     ]
    }
   },
@@ -20462,7 +20839,8 @@
     "shingaku_url": null,
     "youkou_url": "https://www.kyoto-u.ac.jp/ja/admissions/undergrad/requirements",
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://www.kyoto-u.ac.jp/sites/default/files/inline-files/senbatsuyokoR9_all-22d87b752c22c5b9d7bcb8ef94505625.pdf"
    },
    "unique_point": "滋賀から自宅通学できる日本トップ大学。挑戦圏の学力があるなら、費用面でも将来の選択肢の広さでも最高の投資対効果。",
    "region": "kyoto",
@@ -20522,6 +20900,21 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.kyoto-u.ac.jp/ja/admissions/about/open"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kyoto-u.ac.jp/sites/default/files/inline-files/senbatsuyokoR9_all-22d87b752c22c5b9d7bcb8ef94505625.pdf",
+    "sogo": [
+     "特色入試（総合人間学部）｜出願 11/5〜11/11｜試験 12/12｜発表 2/10"
+    ],
+    "koubo": [
+     "特色入試（法学部）｜出願 11/5〜11/11｜試験 12/12｜発表 2/10"
+    ],
+    "ippan": [
+     "一般選抜｜出願 1/25〜2/3｜試験 2/25〜2/26｜発表 3/10"
+    ]
    }
   },
   {
@@ -20580,9 +20973,9 @@
    },
    "official_links": {
     "official_url": "https://www.osaka-u.ac.jp/",
-    "nyushi_url": "https://www.osaka-u.ac.jp/ja/admissions",
+    "nyushi_url": "https://www.nyusi.icho.osaka-u.ac.jp/",
     "shingaku_url": null,
-    "youkou_url": null,
+    "youkou_url": "https://www.nyusi.icho.osaka-u.ac.jp/up/pdf/R9sougougakusui_bosyuyoukou.pdf",
     "verified": true,
     "verified_date": "2026-11-20"
    },
@@ -20644,6 +21037,21 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.osaka-u.ac.jp/ja/admissions/yourOU/open_campus"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.nyusi.icho.osaka-u.ac.jp/up/pdf/R9sougougakusui_bosyuyoukou.pdf",
+    "sogo": [
+     "総合型選抜（文学部）｜出願 11/2〜11/7｜試験 12/20｜発表 2/9"
+    ],
+    "koubo": [
+     "学校推薦型選抜（工学部）｜出願 11/2〜11/7｜試験 12/20｜発表 2/4"
+    ],
+    "ippan": [
+     "一般選抜（前期日程）｜出願 1/25〜2/3｜試験 2/25〜2/26｜発表 3/9"
+    ]
    }
   },
   {
@@ -20818,10 +21226,11 @@
    },
    "official_links": {
     "official_url": "https://www.omu.ac.jp/",
-    "nyushi_url": "https://www.omu.ac.jp/admissions/",
+    "nyushi_url": "https://www.omu.ac.jp/admissions/ug/",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "unique_point": "国立3強（京阪神）の次に位置する関西国公立の有力候補。学部の選択肢が広く、共テ得点率も京阪神よりやや低めで狙いやすい。",
    "region": "osaka",
@@ -20882,6 +21291,22 @@
       "notes": null,
       "bairitsu": "5〜10倍（要確認）"
      }
+    ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.omu.ac.jp/admissions/ug/",
+    "sogo": [
+     "総合型選抜（現代システム科学域 教育福祉学類）｜出願 10/5〜10/8｜試験 11/21｜発表 12/4"
+    ],
+    "koubo": [
+     "学校推薦型選抜（現代システム科学域）｜出願 11/2〜11/5｜試験 11/21｜発表 12/4"
+    ],
+    "ippan": [
+     "一般選抜（前期日程）｜出願 1/25〜2/3｜試験 2/25〜2/26｜発表 3/9",
+     "一般選抜（中期日程・工学部）｜出願 1/25〜2/3｜試験 3/8｜発表 3/23"
     ]
    }
   },
@@ -20944,7 +21369,8 @@
     "shingaku_url": null,
     "youkou_url": "https://www.kpu.ac.jp/admissions/exam/guide/",
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://www.kpu.ac.jp/media/R9_senbatsu.pdf"
    },
    "unique_point": "「京都で文学・食・環境を少人数で学ぶ」個性派の国公立。通学圏で学費が安く、共テ得点率も京阪神より控えめ。",
    "region": "kyoto",
@@ -21001,6 +21427,20 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.kpu.ac.jp/open-campus/"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kpu.ac.jp/media/R9_senbatsu.pdf",
+    "sogo": [],
+    "koubo": [
+     "学校推薦型選抜｜出願 11/1〜11/9｜試験 11/28｜発表 12/10"
+    ],
+    "ippan": [
+     "一般選抜（前期日程）｜出願 1/25〜2/3｜試験 2/25｜発表 3/8",
+     "一般選抜（後期日程）｜出願 1/25〜2/3｜試験 3/12｜発表 3/23"
+    ]
    }
   },
   {
@@ -21063,7 +21503,8 @@
     "shingaku_url": null,
     "youkou_url": "https://www.kit.ac.jp/test_index/school_news/undergraduate/",
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://ac.web.kit.ac.jp/02/nyushi/yoko/gakubu/R09_senbatuyoko.pdf"
    },
    "unique_point": "理系・建築・デザイン志望で通学圏の国立を狙うなら最有力。企業からの評価が偏差値以上に高い「お得な」大学として有名。",
    "region": "kyoto",
@@ -21129,6 +21570,21 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.kit.ac.jp/ouw-index/"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://ac.web.kit.ac.jp/02/nyushi/yoko/gakubu/R09_senbatuyoko.pdf",
+    "sogo": [
+     "ダビンチ入試（総合型選抜）｜出願 9/1〜9/8｜試験 10/3｜発表 11/18"
+    ],
+    "koubo": [
+     "学校推薦型選抜（共通テストを課す）｜出願 1/20〜1/27｜試験 1/16〜1/17｜発表 2/10"
+    ],
+    "ippan": [
+     "一般選抜（前期日程）｜出願 1/25〜2/3｜試験 2/25〜2/26｜発表 3/10"
+    ]
    }
   },
   {
@@ -21249,6 +21705,21 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.kyokyo-u.ac.jp/weboc/"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kyokyo-u.ac.jp/admission/nittei/",
+    "sogo": [],
+    "koubo": [
+     "学校推薦型選抜（地域指定）｜出願 11/1〜11/5｜試験 11/28｜発表 12/3",
+     "学校推薦型選抜｜出願 11/1〜11/5｜試験 12/5｜発表 12/18"
+    ],
+    "ippan": [
+     "一般選抜（前期日程）｜出願 1/25〜2/3｜試験 2/25〜2/26｜発表 3/6",
+     "一般選抜（後期日程）｜出願 1/25〜2/3｜試験 3/12｜発表 3/20"
+    ]
    }
   },
   {
@@ -21421,10 +21892,12 @@
    },
    "official_links": {
     "official_url": "https://www.nara-wu.ac.jp/",
-    "nyushi_url": "https://www.nara-wu.ac.jp/nyusi/",
+    "nyushi_url": "http://www.nara-wu.ac.jp/entrance.html",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "schedule_url": "http://www.nara-wu.ac.jp/nyusi/R9ippanbosyuuyoukou.pdf",
+    "verified_date": "2026-11-20"
    },
    "unique_point": "国立女子大ならではの少人数教育と就職・院進学実績。理系女子（特に工学部）には全国的にも希少な環境。",
    "region": "nara-wakayama",
@@ -21478,6 +21951,26 @@
       "notes": "共テ得点率 62〜72%が目安。評定不問。女子のみ出願可",
       "bairitsu": "2〜3倍（要確認）"
      }
+    ]
+   },
+   "open_campus": {
+    "open_campus_url": "http://www.nara-wu.ac.jp/nyusi/open.html"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "http://www.nara-wu.ac.jp/nyusi/R9ippanbosyuuyoukou.pdf",
+    "sogo": [
+     "探究力入試「Q」（文学部）｜出願 9/1〜9/7｜試験 10/24｜発表 11/2"
+    ],
+    "koubo": [
+     "学校推薦型選抜（共通テストを課さない・文学部）｜出願 11/1〜11/9｜試験 11/21｜発表 2/5",
+     "学校推薦型選抜（共通テストを課す）｜出願 12/16〜12/23｜試験 1/31｜発表 2/5"
+    ],
+    "ippan": [
+     "一般選抜 前期日程｜出願 1/25〜2/3｜試験 2/25｜発表 3/6",
+     "一般選抜 後期日程｜出願 1/25〜2/3｜試験 3/12｜発表 3/20"
     ]
    }
   },
@@ -21621,6 +22114,22 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.kyoto-wu.ac.jp/nyushi/events/index.html"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kyoto-wu.ac.jp/nyushi/daigaku/schedule.html",
+    "sogo": [
+     "総合型選抜｜出願 9/11〜9/30｜試験 10/10｜発表 11/4"
+    ],
+    "koubo": [
+     "公募型学校推薦選抜（総合評価型）｜出願 11/1〜11/8｜試験 11/15｜発表 12/1"
+    ],
+    "ippan": [
+     "一般選抜前期 3科目型｜出願 12/21〜1/17｜試験 1/29｜発表 2/15",
+     "一般選抜後期｜出願 2/10〜2/23｜試験 3/3｜発表 3/12"
+    ]
    }
   },
   {
@@ -21680,9 +22189,10 @@
     "official_url": "https://www.dwc.doshisha.ac.jp/",
     "nyushi_url": "https://www.dwc.doshisha.ac.jp/admissions",
     "shingaku_url": null,
-    "youkou_url": "https://www.dwc.doshisha.ac.jp/admissions/exam_information",
+    "youkou_url": "https://www.dwc.doshisha.ac.jp/admissions/exam_information/guidelines",
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://www.dwc.doshisha.ac.jp/admissions/exam_information/schedule/index.html"
    },
    "unique_point": "薬剤師・看護師を目指す女子生徒に、同志社系列の環境で学べる選択肢。文系学部も就職の面倒見が良い。",
    "region": "kyoto",
@@ -21736,6 +22246,25 @@
       "notes": "評定不問。共通テスト利用あり",
       "bairitsu": "2〜3倍（要確認）"
      }
+    ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.dwc.doshisha.ac.jp/admissions/event/open_campus"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.dwc.doshisha.ac.jp/admissions/exam_information/schedule/index.html",
+    "sogo": [
+     "AO方式入学者選抜｜出願 8/19〜9/8｜試験 10/10｜発表 11/2"
+    ],
+    "koubo": [
+     "推薦入学試験S［公募制］｜出願 10/19〜10/27｜試験 11/8｜発表 11/13"
+    ],
+    "ippan": [
+     "一般入学試験（前期日程）3教科入試｜出願 1/4〜1/13｜試験 1/26｜発表 2/10",
+     "一般入学試験（後期日程）｜出願 2/15〜2/26｜試験 3/9｜発表 3/16"
     ]
    }
   },
@@ -21872,6 +22401,23 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.mukogawa-u.ac.jp/~nyushi/event/opencampus"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.mukogawa-u.ac.jp/~nyushi/exam",
+    "sogo": [
+     "未来教育総合型選抜｜出願 9/1〜9/8｜試験 10/11｜発表 11/1"
+    ],
+    "koubo": [
+     "公募制推薦入試（前期）｜出願 10/1〜10/21｜試験 11/3｜発表 11/16",
+     "公募制推薦入試（後期）｜出願 10/22〜11/11｜試験 11/23｜発表 12/5"
+    ],
+    "ippan": [
+     "一般選抜（前期）｜出願 12/21〜1/11｜試験 1/24｜発表 2/6",
+     "一般選抜（後期）｜出願 2/6〜2/19｜試験 3/2｜発表 3/11"
+    ]
    }
   },
   {
@@ -21933,7 +22479,8 @@
     "shingaku_url": null,
     "youkou_url": null,
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://www.kobe-c.ac.jp/admissions/upload/kobe-c_nyushi_guide.pdf"
    },
    "unique_point": "英語・国際系・音楽で「質の高い少人数教育」を求める女子生徒向け。ブランドと教育の質は偏差値以上。",
    "region": "hyogo",
@@ -21991,6 +22538,23 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.kobe-c.ac.jp/admissions/events/open/"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kobe-c.ac.jp/admissions/upload/kobe-c_nyushi_guide.pdf",
+    "sogo": [
+     "総合型選抜 前期日程｜出願 9/11〜9/24｜試験 10/10｜発表 10/20"
+    ],
+    "koubo": [
+     "公募制推薦入学試験 A・B日程｜出願 10/1〜10/19｜試験 11/6・11/7｜発表 11/20",
+     "公募制推薦入学試験 S日程｜出願 11/1〜11/24｜試験 12/5｜発表 12/15"
+    ],
+    "ippan": [
+     "一般選抜 前期A日程｜出願 12/21〜1/18｜試験 1/28｜発表 2/10",
+     "一般選抜 後期日程｜出願 2/10〜3/1｜試験 3/9｜発表 3/19"
+    ]
    }
   },
   {
@@ -22054,7 +22618,8 @@
     "shingaku_url": null,
     "youkou_url": "https://www.yamato-u.ac.jp/entrance/exam/about/",
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://www.yamato-u.ac.jp/wp/wp-content/uploads/2026/06/2027guide_schedule.pdf"
    },
    "unique_point": "勢いのある新興校で、教員・看護・公務員など「資格・採用試験に直結する学び」に特化。特待生制度で学費を抑えられる可能性も。",
    "region": "osaka",
@@ -22110,6 +22675,22 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.yamato-u.ac.jp/entrance/event/oc/"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.yamato-u.ac.jp/wp/wp-content/uploads/2026/06/2027guide_schedule.pdf",
+    "sogo": [
+     "総合型選抜（二次選考）｜出願 10/1〜10/16｜試験 10/24｜発表 11/3"
+    ],
+    "koubo": [
+     "学校推薦型選抜（公募制）｜出願 11/2〜11/9｜試験 11/14｜発表 12/1"
+    ],
+    "ippan": [
+     "一般選抜 前期A日程｜出願 1/4〜1/18｜試験 1/25〜1/27｜発表 2/5",
+     "一般選抜 前期B日程｜出願 1/4〜2/9｜試験 2/15・2/16｜発表 2/24"
+    ]
    }
   },
   {
@@ -22171,7 +22752,8 @@
     "shingaku_url": null,
     "youkou_url": null,
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://www.kyoto-phu.ac.jp/albums/abm.php?d=615&f=abm00003285.pdf"
    },
    "unique_point": "薬剤師志望で滋賀から通える最高峰の私立薬科大。学費は高いが就職はほぼ確実で、製薬研究職への道もある。",
    "region": "kyoto",
@@ -22229,6 +22811,21 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.kyoto-phu.ac.jp/admission/event/index.html"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kyoto-phu.ac.jp/albums/abm.php?d=615&f=abm00003285.pdf",
+    "sogo": [],
+    "koubo": [
+     "学校推薦型選抜 一般公募制｜出願 11/1〜11/6｜試験 11/14｜発表 12/1",
+     "学校推薦型選抜 指定校制｜出願 11/1〜11/6｜試験 11/10｜発表 12/1"
+    ],
+    "ippan": [
+     "一般選抜 前期（3教科型）｜出願 1/5〜1/25｜試験 2/3｜発表 2/15",
+     "一般選抜 後期（2教科型）｜出願 1/5〜2/16｜試験 2/19｜発表 3/3"
+    ]
    }
   },
   {
@@ -22285,10 +22882,12 @@
    },
    "official_links": {
     "official_url": "https://www.ompu.ac.jp/",
-    "nyushi_url": "https://www.ompu.ac.jp/admission/",
+    "nyushi_url": "https://www.ompu.ac.jp/admission/undergraduate/pharm.html",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "schedule_url": "https://www.ompu.ac.jp/admission/undergraduate/qt931k000000801q-att/afif3u000000fsvj.pdf",
+    "verified_date": "2026-11-20"
    },
    "unique_point": "医・薬・看護がそろう医療系大学に滋賀から通える。医療系志望で通学時間を抑えたい生徒の有力候補。",
    "region": "osaka",
@@ -22341,6 +22940,23 @@
       "notes": "評定不問。共通テスト利用あり",
       "bairitsu": "医 10倍超 / 薬・看護 2〜4倍（要確認）"
      }
+    ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.ompu.ac.jp/admission/undergraduate/qt931k000000801q-att/afif3u000000fsvj.pdf",
+    "sogo": [
+     "総合型選抜「至誠仁術」入試（医学部）｜出願 12/9〜1/15｜試験 3/14｜発表 3/16"
+    ],
+    "koubo": [
+     "公募制推薦入試（医学部）｜出願 11/1〜11/7｜試験 11/21｜発表 12/1",
+     "公募制推薦入学試験（薬学部・併願制）｜出願 11/1〜11/9｜試験 11/15｜発表 12/3"
+    ],
+    "ippan": [
+     "一般選抜（前期）（医学部）｜出願 12/9〜1/20｜試験 2/10｜発表 2/20",
+     "一般入学試験A（薬学部）｜出願 1/6〜1/22｜試験 2/1｜発表 2/6"
     ]
    }
   },
@@ -23968,10 +24584,12 @@
    },
    "official_links": {
     "official_url": "https://www.newton.ac.jp/",
-    "nyushi_url": "https://www.newton.ac.jp/admission/",
+    "nyushi_url": "https://www.biwakogakuin.ac.jp/juken/nyuusi",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "schedule_url": "https://www.biwakogakuin.ac.jp/juken/nyuusi",
+    "verified_date": "2026-11-20"
    },
    "unique_point": "「滋賀で先生・保育士になりたい、家から通いたい」に特化した県内の受け皿。評定・偏差値のハードルは低めで、意欲重視の入試。",
    "region": "shiga",
@@ -24029,6 +24647,26 @@
     "cohort": "2022年度卒業",
     "shusshin_pct": null,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.biwakogakuin.ac.jp/opencampus"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.biwakogakuin.ac.jp/juken/nyuusi",
+    "sogo": [
+     "総合型選抜（AO）A日程（子ども学科）｜出願 9/1〜9/16｜試験 9/27｜発表 11/2"
+    ],
+    "koubo": [
+     "学校推薦型選抜（公募推薦）前期｜出願 11/2〜11/10｜試験 11/14・11/15｜発表 12/1",
+     "学校推薦型選抜（公募推薦）後期｜出願 11/26〜12/8｜試験 12/12｜発表 12/17"
+    ],
+    "ippan": [
+     "一般選抜 前期｜出願 12/23〜1/21｜試験 2/2・2/3｜発表 2/5",
+     "一般選抜 後期｜出願 2/15〜3/4｜試験 3/10｜発表 3/11"
+    ]
    }
   },
   {
@@ -24543,7 +25181,8 @@
     "shingaku_url": null,
     "youkou_url": "https://www.kpu-m.ac.jp/doc/examination/exam_gakubu/info.html",
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://www.kpu-m.ac.jp/doc/examination/exam_gakubu/files/42362.pdf"
    },
    "unique_point": "滋賀から通学圏の公立医大。医学科は関西の公立医大の名門で、滋賀医大と並ぶ「自宅から通える医学部」の選択肢。",
    "region": "kyoto",
@@ -24598,6 +25237,20 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.kpu-m.ac.jp/doc/opencampus/index.html"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kpu-m.ac.jp/doc/examination/exam_gakubu/files/42362.pdf",
+    "sogo": [],
+    "koubo": [
+     "学校推薦型選抜（看護学科）｜出願 11/2〜11/9｜試験 11/28｜発表 12/4"
+    ],
+    "ippan": [
+     "一般選抜（前期日程）（医学科）｜出願 1/25〜2/3｜試験 2/25・2/26｜発表 3/5",
+     "一般選抜（前期日程）（看護学科）｜出願 1/25〜2/3｜試験 2/25｜発表 3/5"
+    ]
    }
   },
   {
@@ -24768,11 +25421,12 @@
    },
    "official_links": {
     "official_url": "https://www.baika.ac.jp/",
-    "nyushi_url": "https://www.baika.ac.jp/prospective/",
+    "nyushi_url": "https://garden.baika.ac.jp/exam/",
     "shingaku_url": null,
     "youkou_url": null,
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://garden.baika.ac.jp/pdf/exam/application_details/index.html"
    },
    "unique_point": "「女子大で看護・栄養・保育などの資格をしっかり取りたい」人向けの選択肢。偏差値のハードルは低めで、面接・書類中心の入試方式も多い。滋賀からはJR茨木経由で通える距離だが片道100分前後かかる点は要検討。",
    "region": "osaka",
@@ -24841,6 +25495,20 @@
    },
    "open_campus": {
     "open_campus_url": "https://garden.baika.ac.jp/event/"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://garden.baika.ac.jp/pdf/exam/application_details/index.html",
+    "sogo": [
+     "総合型AO入試 Ⅰ期｜出願 9/1〜9/18｜試験 9/26｜発表 10/2"
+    ],
+    "koubo": [],
+    "ippan": [
+     "一般入試 Ⅰ期（A・B日程）｜出願 12/25〜1/16｜試験 1/23〜1/24｜発表 1/29",
+     "一般入試 Ⅱ期｜出願 1/29〜2/13｜試験 2/18｜発表 2/26"
+    ]
    }
   },
   {
@@ -25370,6 +26038,22 @@
     "cohort": "2023年3月卒業",
     "shusshin_pct": 18.3,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.hanazono.ac.jp/admissions/admissions_schedule.html",
+    "sogo": [
+     "総合型選抜（AO入試）前期｜出願 9/1〜9/24｜試験 10/3｜発表 11/4"
+    ],
+    "koubo": [
+     "自己推薦入試 A日程｜出願 10/1〜10/20｜試験 10/31｜発表 11/10"
+    ],
+    "ippan": [
+     "一般選抜 A日程｜出願 12/15〜1/20｜試験 1/30｜発表 2/5",
+     "一般選抜 B日程｜出願 12/15〜1/20｜試験 1/31｜発表 2/5"
+    ]
    }
   },
   {
@@ -32487,6 +33171,25 @@
     "cohort": "2022年度卒業",
     "shusshin_pct": null,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "open_campus": {
+    "open_campus_url": "https://event.seian.ac.jp/"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.seian.ac.jp/admission/navi/",
+    "sogo": [
+     "総合選抜入試 1期〈体験授業方式〉｜出願 9/1〜9/2｜試験 9/5｜発表 11/2"
+    ],
+    "koubo": [
+     "学校推薦選抜入学試験｜出願 11/1〜11/4｜試験 11/8｜発表 12/1"
+    ],
+    "ippan": [
+     "一般選抜入試 1期〈面接方式〉｜出願 1/8〜1/24｜試験 2/7｜発表 2/15",
+     "一般選抜入試 2期〈面接方式・実技方式〉｜出願 2/8〜2/15｜試験 2/19｜発表 2/26"
+    ]
    }
   }
  ],

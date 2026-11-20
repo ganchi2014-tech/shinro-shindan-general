@@ -1,0 +1,208 @@
+# Muse 第2回（41校）。公式サイト・公式PDFから取った 2027年度入試の日程。 ^ は https:// の略。
+# 照合: 桃山学院・関西福祉科学・大阪経済法科・大阪工大は、巡回スクリプトが公式ページから拾った日付と食い違いなし。
+# Museの注記: 甲南の公募制推薦は大学の分類で総合型のためS。大阪工大のK・Iの発表、京都看護の一般の出願・発表は公式で確かめられず空欄。大手前のSの「出願」はエントリー期間。京都看護のAOは本出願（第二次）の日程。
+osaka-taiiku|S|総合型選抜 自己表現型|出願 9/1〜9/11|試験 10/1|発表 11/1
+osaka-taiiku|K|学校推薦型選抜 自己表現型|出願 10/13〜10/22|試験 11/4|発表 12/1
+osaka-taiiku|K|学校推薦型選抜 体力評価型|出願 10/13〜10/22|試験 11/4〜11/5|発表 12/1
+osaka-taiiku|I|一般選抜 2教科型|出願 12/21〜1/13|試験 1/30|発表 2/12
+osaka-taiiku|L|^www.ouhs.jp/nyushi/|^www.ouhs.jp/nyushi/wp/wp-content/uploads/3c8f113920a331cce98697d6b8f29cf1.pdf|^www.ouhs.jp/nyushi/wp/wp-content/uploads/b2c181aafd910d24123c09eb4297b0b0.pdf|
+momoyama|S|学科別選考入試［10月］|出願 9/16〜9/30|試験 10/17|発表 11/1
+momoyama|K|公募制推薦入試［前期］|出願 11/1〜11/5|試験 11/14〜11/15|発表 12/1
+momoyama|K|公募制推薦入試［後期］|出願 12/1〜12/11|試験 12/18|発表 12/24
+momoyama|I|一般入試［前期］|出願 12/14〜1/8|試験 1/19・1/20・2/9・2/10|発表 2/18
+momoyama|I|一般入試［後期］|出願 2/18〜3/3|試験 3/11|発表 3/18
+kansai-fukushi|S|総合型選抜 I期|出願 9/1〜9/8|試験 9/20|発表 10/6
+kansai-fukushi|K|学校推薦型選抜（公募）A|出願 11/1〜11/13|試験 11/21|発表 12/1
+kansai-fukushi|K|学校推薦型選抜（公募）B|出願 11/20〜12/4|試験 12/12|発表 12/22
+kansai-fukushi|I|一般選抜 A|出願 1/5〜1/20|試験 2/1〜2/2|発表 2/10
+kansai-fukushi|I|一般選抜 B|出願 2/9〜2/22|試験 3/4|発表 3/12
+konan|S|公募制推薦入学試験|出願 10/1〜10/13|試験 11/7|発表 11/20
+konan|I|一般選抜 前期日程|出願 1/3〜1/15|試験 1/30・1/31・2/1・2/4・2/5|発表 2/15
+konan|I|一般選抜 中期日程|出願 1/3〜2/5|試験 2/17・2/18|発表 2/28
+bukkyo|S|総合型選抜（自己推薦制）|出願 9/1〜9/7|試験 10/24|発表 11/4
+bukkyo|K|学校推薦型選抜（公募制）|出願 11/2〜11/9|試験 11/24・11/25・11/26|発表 12/7
+bukkyo|I|一般選抜（A日程）|出願 1/6〜1/20|試験 2/2・2/3|発表 2/12
+bukkyo|I|一般選抜（B日程）|出願 1/6〜1/20|試験 1/31・2/1|発表 2/12
+bukkyo|L||^www.bukkyo-u.ac.jp/admission/design/file/exam/2027_guide.pdf|^www.bukkyo-u.ac.jp/admission/design/file/exam/2027_youkou-commendatory_a_b_c_common.pdf|^www.bukkyo-u.ac.jp/admission/event/opencampus
+setsunan|S|AO入試|出願 9/1〜9/5|試験 10/10|発表 11/2
+setsunan|K|公募制推薦入試 前期日程|出願 11/1〜11/9|試験 11/19・11/20|発表 12/3
+setsunan|K|公募制推薦入試 後期日程|出願 11/20〜12/7|試験 12/15|発表 12/26
+setsunan|I|一般選抜 前期日程|出願 12/15〜1/15|試験 1/24・1/25・1/26|発表 2/8
+setsunan|I|一般選抜 中期A日程|出願 12/15〜1/29|試験 2/9|発表 2/25
+setsunan|L||^www.setsunan.ac.jp/admission/faculty/overview/files/2027_admission_schedule.pdf||
+otemon|S|アサーティブ入試|出願 9/10〜9/18|試験 10/3・10/17|発表 11/2
+otemon|K|公募制推薦入試［前期日程］|出願 10/26〜11/5|試験 11/18・11/19|発表 11/30
+otemon|K|公募制推薦入試［後期日程］|出願 11/20〜12/2|試験 12/12|発表 12/21
+otemon|I|一般入試［前期日程］1月実施|出願 12/18〜1/12|試験 1/26・1/27・1/28|発表 2/18
+otemon|I|一般入試［後期日程］|出願 2/3〜2/19|試験 3/2|発表 3/11
+tezukayama|S|総合型選抜 自由応募型（前期）|出願 9/24〜10/7|試験 10/17|発表 11/2
+tezukayama|K|公募制推薦 前期|出願 10/19〜11/7|試験 11/14・11/15|発表 11/20
+tezukayama|K|公募制推薦 後期|出願 11/20〜12/14|試験 12/19・12/20|発表 12/25
+tezukayama|I|一般選抜A日程|出願 12/14〜1/15|試験 1/21・1/22|発表 1/29
+tezukayama|I|一般選抜B日程|出願 12/14〜2/6|試験 2/13|発表 2/19
+osaka-gakuin|S|総合型選抜 奨学金チャレンジ型・活動評価型|出願 10/15〜10/26|試験 11/5|発表 11/12
+osaka-gakuin|K|学校推薦型選抜 公募推薦（前期日程）|出願 10/15〜10/26|試験 11/5・11/6|発表 11/12
+osaka-gakuin|K|学校推薦型選抜 公募推薦（後期日程）|出願 11/24〜12/5|試験 12/15|発表 12/19
+osaka-gakuin|I|一般選抜 前期日程（2教科選択型）|出願 12/21〜1/19|試験 1/28・1/29・1/30|発表 2/4
+osaka-gakuin|I|一般選抜 中期日程（2教科選択型）|出願 1/29〜2/9|試験 2/20|発表 2/26
+osaka-gakuin|L||^www.ogu.ac.jp/admissions/assets/files/admission/download/2027/kobo_01.pdf||
+otemae|S|総合型選抜 第1回（出願はエントリー期間）|出願 8/4〜8/19|試験 9/5|発表 10/1
+otemae|K|学校推薦型選抜 公募方式（A日程）|出願 10/8〜10/21|試験 11/4・11/5|発表 11/19
+otemae|K|学校推薦型選抜 公募方式（B日程）|出願 11/12〜11/26|試験 12/6|発表 12/18
+otemae|I|一般選抜（A日程）|出願 12/7〜1/18|試験 1/26・1/27|発表 2/10
+otemae|I|一般選抜（B日程）|出願 12/7〜2/12|試験 2/26・2/27|発表 3/4
+otemae|L|^www.otemae.ac.jp/jukensei-navi/admission/|||
+osaka-keiho|S|学部AO入試（Ⅰ期）|出願 9/24〜10/6|試験 10/11|発表 11/2
+osaka-keiho|K|公募制推薦試験（前期）|出願 11/1〜11/11|試験 11/16・11/17|発表 12/1
+osaka-keiho|K|公募制推薦試験（後期）|出願 12/1〜12/17|試験 12/22|発表 12/25
+osaka-keiho|I|一般試験・前期 A日程|出願 12/25〜1/15|試験 1/21・1/22|発表 2/12
+osaka-keiho|I|一般試験・前期 B日程|出願 12/25〜1/26|試験 2/1・2/2|発表 2/12
+oit|S|AO入試（学部学科特色型）|出願 9/1〜9/7|試験 9/19|発表 11/2
+oit|K|公募制推薦入試|出願 11/1〜11/11|試験 11/23
+oit|K|普通科高校特別推薦入試|出願 11/1〜11/5|試験 11/15
+oit|I|一般入試 前期・均等配点型（A日程）|出願 1/4〜1/18|試験 1/28・1/29
+oit|I|一般入試 前期・均等配点型（B日程）|出願 1/4〜1/22|試験 2/4
+osaka-dentsu|S|AO入学試験〔Ⅰ期〕|出願 9/1〜9/30|試験 10/10|発表 11/1
+osaka-dentsu|K|公募制推薦入学試験〔前期〕|出願 10/1〜11/2|試験 11/7・11/8|発表 11/26
+osaka-dentsu|K|公募制推薦入学試験〔後期〕|出願 11/3〜12/7|試験 12/13|発表 12/22
+osaka-dentsu|I|一般入学試験〔前期〕|出願 12/8〜1/13|試験 1/31・2/1|発表 2/8
+osaka-dentsu|I|一般入学試験〔中期〕|出願 1/14〜2/15|試験 2/20|発表 3/1
+osaka-dentsu|L||^www.osakac.ac.jp/examinee/admission/report/|^www.osakac.ac.jp/examinee/admission/shutsugan/files/other_general_2027.pdf|
+kansai-gaidai|K|公募制推薦入試 前期日程|出願 10/22〜11/2|試験 11/14・11/15|発表 12/1
+kansai-gaidai|K|公募制推薦入試 後期日程|出願 11/26〜12/8|試験 12/19|発表 12/24
+kansai-gaidai|I|一般入試 前期日程|試験 1/26〜1/28
+kansai-gaidai|I|一般入試 後期日程|試験 3/7
+osaka-sangyo|S|AO入試 前期|出願 9/1〜10/6|試験 10/17|発表 11/1
+osaka-sangyo|K|公募推薦入試 前期|出願 10/8〜11/4|試験 11/14・11/15|発表 12/1
+osaka-sangyo|K|公募推薦入試 後期|出願 11/9〜12/9|試験 12/19・12/20|発表 1/13
+osaka-sangyo|I|一般入試 前期|出願 12/18〜1/20|試験 1/31・2/1・2/2|発表 2/15
+osaka-sangyo|I|一般入試 中期|出願 2/1〜2/16|試験 2/27|発表 3/10
+osaka-sangyo|L|^www.osaka-sandai.ac.jp/admission/|^www.osaka-sandai.ac.jp/admission/wp-content/uploads/sites/6/2026/06/exam_schedule_0614.pdf||^www.osaka-sandai.ac.jp/builders/opencampus.html
+osaka-shodai|S|公募制入学試験（総合型選抜）前期|出願 10/19〜10/29|試験 11/7・11/8|発表 11/13
+osaka-shodai|I|一般入学試験 前期〈ベスト2科目方式〉|出願 1/4〜1/21|試験 2/1・2/2|発表 2/13
+osaka-shodai|I|一般入学試験 後期|出願 2/13〜2/24|試験 3/4・3/5|発表 3/12
+osaka-shodai|L|^ouc.daishodai.ac.jp/exam/|^ouc.daishodai.ac.jp/exam/files/rgc_2027_Crkx8BbxWn8P.pdf||^ouc.daishodai.ac.jp/oc_list/
+kyoto-bunkyo|S|総合型選抜 プレゼンテーション方式Ⅰ期（総合社会学科）|出願 9/1〜9/26|試験 10/4|発表 10/10
+kyoto-bunkyo|K|公募制推薦入試 Ⅰ期|出願 10/1〜10/24|試験 11/1|発表 11/7
+kyoto-bunkyo|K|公募制推薦入試 Ⅱ期|出願 11/2〜11/14|試験 11/22|発表 11/28
+kyoto-bunkyo|I|一般入試 A日程|出願 12/14〜1/16|試験 1/23〜1/25|発表 2/6
+kyoto-bunkyo|I|一般入試 B日程|出願 1/12〜2/13|試験 2/19|発表 2/26
+kyoto-bunkyo|L|^www.kbu.ac.jp/kbu/exam/|^www.kbu.ac.jp/kbu/exam/admission_guide/index/asset/KBU_NyushiGuide2027_P04_P05.pdf||^www.kbu.ac.jp/kbu/exam/event/opencampus.html
+osaka-jinkagaku|S|総合型選抜 コミュニケーション方式 Ⅰ期|出願 9/1〜9/10|試験 9/19|発表 11/1
+osaka-jinkagaku|K|学校推薦型選抜（公募）Ⅰ期|出願 10/23〜11/1|試験 11/7|発表 11/12
+osaka-jinkagaku|K|学校推薦型選抜（公募）Ⅱ期|出願 11/13〜11/26|試験 12/5|発表 12/10
+osaka-jinkagaku|I|一般選抜 前期|出願 1/5〜1/14|試験 1/23|発表 2/4
+osaka-jinkagaku|I|一般選抜 中期|出願 1/15〜1/28|試験 2/6|発表 2/10
+osaka-kokusai|S|総合型選抜（AO）Ⅰ期|出願 7/6〜7/14|試験 7/25|発表 11/6
+osaka-kokusai|K|学校推薦型選抜（公募）A方式 Ⅰ期|出願 11/1〜11/6|試験 11/15|発表 12/2
+osaka-kokusai|K|学校推薦型選抜（公募）A方式 Ⅱ期|出願 11/16〜11/26|試験 12/6|発表 12/14
+osaka-kokusai|I|一般選抜 前期日程|出願 1/6〜1/28|試験 2/5・2/6|発表 2/17
+osaka-kokusai|I|一般選抜 後期日程|出願 2/15〜2/22|試験 3/2|発表 3/9
+osaka-kokusai|L|^oiuvoice.com/examination/|^oiuvoice.com/assets/pdf/examination/2027-nyushiguide.pdf|^oiuvoice.com/assets/pdf/examination/general/details.pdf|^oiuvoice.com/event/oc_info/
+osaka-seikei|S|総合型選抜入試 A日程|出願 9/1〜9/11|試験 9/19・9/20|発表 11/1
+osaka-seikei|K|公募推薦入試 前期|出願 11/1〜11/8|試験 11/14・11/15|発表 12/1
+osaka-seikei|K|公募推薦入試 後期|出願 11/1〜12/4|試験 12/12|発表 12/23
+osaka-seikei|I|一般選抜入試 前期A-Ⅰ|出願 12/14〜1/19|試験 1/25|発表 2/12
+osaka-seikei|I|一般選抜入試 前期B|出願 12/14〜2/2|試験 2/9|発表 2/19
+osaka-seikei|L||^osaka-seikei-nyushi.jp/nyushi-university/exam/pdf/2027bosyu_univ.pdf||
+kyoto-kango|S|総合型選抜AO入試（本出願）|出願 10/1〜10/19|試験 10/25|発表 11/2
+kyoto-kango|K|学校推薦型選抜 公募推薦A日程|出願 11/2〜11/9|試験 11/14|発表 12/1
+kyoto-kango|K|学校推薦型選抜 公募推薦B日程|出願 11/2〜11/9|試験 11/15|発表 12/1
+kyoto-kango|I|一般選抜A日程|試験 1/31
+kyoto-kango|I|一般選抜B日程|試験 2/14
+kyoto-kango|L|^www.kyotokango.ac.jp/admission/||^www.kyotokango.ac.jp/pdf/admission/2027/appr3nenji2027.pdf|^www.kyotokango.ac.jp/examinees/opencampus/
+osaka-shinai|S|総合型選抜Ⅰ期（看護学部）|出願 9/1〜9/18|試験 9/27|発表 11/2
+osaka-shinai|K|公募制推薦選抜|出願 10/13〜10/30|試験 11/7|発表 11/17
+osaka-shinai|I|一般選抜（前期）|出願 1/6〜1/20|試験 1/27|発表 2/5
+osaka-shinai|I|一般選抜（中期）|出願 1/21〜2/8|試験 2/13|発表 2/22
+osaka-shinai|L|^www.osgu.ac.jp/admissions/outline/|^www.osgu.ac.jp/admissions/outline/||^www.osgu.ac.jp/admissions/opencampus/
+kyoto-univ|S|特色入試（総合人間学部）|出願 11/5〜11/11|試験 12/12|発表 2/10
+kyoto-univ|K|特色入試（法学部）|出願 11/5〜11/11|試験 12/12|発表 2/10
+kyoto-univ|I|一般選抜|出願 1/25〜2/3|試験 2/25〜2/26|発表 3/10
+kyoto-univ|L||^www.kyoto-u.ac.jp/sites/default/files/inline-files/senbatsuyokoR9_all-22d87b752c22c5b9d7bcb8ef94505625.pdf||
+osaka-univ|S|総合型選抜（文学部）|出願 11/2〜11/7|試験 12/20|発表 2/9
+osaka-univ|K|学校推薦型選抜（工学部）|出願 11/2〜11/7|試験 12/20|発表 2/4
+osaka-univ|I|一般選抜（前期日程）|出願 1/25〜2/3|試験 2/25〜2/26|発表 3/9
+osaka-univ|L|^www.nyusi.icho.osaka-u.ac.jp/||^www.nyusi.icho.osaka-u.ac.jp/up/pdf/R9sougougakusui_bosyuyoukou.pdf|
+osaka-koritsu|S|総合型選抜（現代システム科学域 教育福祉学類）|出願 10/5〜10/8|試験 11/21|発表 12/4
+osaka-koritsu|K|学校推薦型選抜（現代システム科学域）|出願 11/2〜11/5|試験 11/21|発表 12/4
+osaka-koritsu|I|一般選抜（前期日程）|出願 1/25〜2/3|試験 2/25〜2/26|発表 3/9
+osaka-koritsu|I|一般選抜（中期日程・工学部）|出願 1/25〜2/3|試験 3/8|発表 3/23
+osaka-koritsu|L|^www.omu.ac.jp/admissions/ug/|||
+kyoto-furitsu|K|学校推薦型選抜|出願 11/1〜11/9|試験 11/28|発表 12/10
+kyoto-furitsu|I|一般選抜（前期日程）|出願 1/25〜2/3|試験 2/25|発表 3/8
+kyoto-furitsu|I|一般選抜（後期日程）|出願 1/25〜2/3|試験 3/12|発表 3/23
+kyoto-furitsu|L||^www.kpu.ac.jp/media/R9_senbatsu.pdf||
+kyoto-kosen|S|ダビンチ入試（総合型選抜）|出願 9/1〜9/8|試験 10/3|発表 11/18
+kyoto-kosen|K|学校推薦型選抜（共通テストを課す）|出願 1/20〜1/27|試験 1/16〜1/17|発表 2/10
+kyoto-kosen|I|一般選抜（前期日程）|出願 1/25〜2/3|試験 2/25〜2/26|発表 3/10
+kyoto-kosen|L||^ac.web.kit.ac.jp/02/nyushi/yoko/gakubu/R09_senbatuyoko.pdf||
+kyoto-kyoiku|K|学校推薦型選抜（地域指定）|出願 11/1〜11/5|試験 11/28|発表 12/3
+kyoto-kyoiku|K|学校推薦型選抜|出願 11/1〜11/5|試験 12/5|発表 12/18
+kyoto-kyoiku|I|一般選抜（前期日程）|出願 1/25〜2/3|試験 2/25〜2/26|発表 3/6
+kyoto-kyoiku|I|一般選抜（後期日程）|出願 1/25〜2/3|試験 3/12|発表 3/20
+nara-joshi|S|探究力入試「Q」（文学部）|出願 9/1〜9/7|試験 10/24|発表 11/2
+nara-joshi|K|学校推薦型選抜（共通テストを課さない・文学部）|出願 11/1〜11/9|試験 11/21|発表 2/5
+nara-joshi|K|学校推薦型選抜（共通テストを課す）|出願 12/16〜12/23|試験 1/31|発表 2/5
+nara-joshi|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25|発表 3/6
+nara-joshi|I|一般選抜 後期日程|出願 1/25〜2/3|試験 3/12|発表 3/20
+nara-joshi|L|http://www.nara-wu.ac.jp/entrance.html|http://www.nara-wu.ac.jp/nyusi/R9ippanbosyuuyoukou.pdf||http://www.nara-wu.ac.jp/nyusi/open.html
+kyoto-joshi|S|総合型選抜|出願 9/11〜9/30|試験 10/10|発表 11/4
+kyoto-joshi|K|公募型学校推薦選抜（総合評価型）|出願 11/1〜11/8|試験 11/15|発表 12/1
+kyoto-joshi|I|一般選抜前期 3科目型|出願 12/21〜1/17|試験 1/29|発表 2/15
+kyoto-joshi|I|一般選抜後期|出願 2/10〜2/23|試験 3/3|発表 3/12
+doshisha-joshi|S|AO方式入学者選抜|出願 8/19〜9/8|試験 10/10|発表 11/2
+doshisha-joshi|K|推薦入学試験S［公募制］|出願 10/19〜10/27|試験 11/8|発表 11/13
+doshisha-joshi|I|一般入学試験（前期日程）3教科入試|出願 1/4〜1/13|試験 1/26|発表 2/10
+doshisha-joshi|I|一般入学試験（後期日程）|出願 2/15〜2/26|試験 3/9|発表 3/16
+doshisha-joshi|L||^www.dwc.doshisha.ac.jp/admissions/exam_information/schedule/index.html|^www.dwc.doshisha.ac.jp/admissions/exam_information/guidelines|^www.dwc.doshisha.ac.jp/admissions/event/open_campus
+mukogawa-joshi|S|未来教育総合型選抜|出願 9/1〜9/8|試験 10/11|発表 11/1
+mukogawa-joshi|K|公募制推薦入試（前期）|出願 10/1〜10/21|試験 11/3|発表 11/16
+mukogawa-joshi|K|公募制推薦入試（後期）|出願 10/22〜11/11|試験 11/23|発表 12/5
+mukogawa-joshi|I|一般選抜（前期）|出願 12/21〜1/11|試験 1/24|発表 2/6
+mukogawa-joshi|I|一般選抜（後期）|出願 2/6〜2/19|試験 3/2|発表 3/11
+kobe-jogakuin|S|総合型選抜 前期日程|出願 9/11〜9/24|試験 10/10|発表 10/20
+kobe-jogakuin|K|公募制推薦入学試験 A・B日程|出願 10/1〜10/19|試験 11/6・11/7|発表 11/20
+kobe-jogakuin|K|公募制推薦入学試験 S日程|出願 11/1〜11/24|試験 12/5|発表 12/15
+kobe-jogakuin|I|一般選抜 前期A日程|出願 12/21〜1/18|試験 1/28|発表 2/10
+kobe-jogakuin|I|一般選抜 後期日程|出願 2/10〜3/1|試験 3/9|発表 3/19
+kobe-jogakuin|L||^www.kobe-c.ac.jp/admissions/upload/kobe-c_nyushi_guide.pdf||
+yamato-univ|S|総合型選抜（二次選考）|出願 10/1〜10/16|試験 10/24|発表 11/3
+yamato-univ|K|学校推薦型選抜（公募制）|出願 11/2〜11/9|試験 11/14|発表 12/1
+yamato-univ|I|一般選抜 前期A日程|出願 1/4〜1/18|試験 1/25〜1/27|発表 2/5
+yamato-univ|I|一般選抜 前期B日程|出願 1/4〜2/9|試験 2/15・2/16|発表 2/24
+yamato-univ|L||^www.yamato-u.ac.jp/wp/wp-content/uploads/2026/06/2027guide_schedule.pdf||
+kyoto-yakka|K|学校推薦型選抜 一般公募制|出願 11/1〜11/6|試験 11/14|発表 12/1
+kyoto-yakka|K|学校推薦型選抜 指定校制|出願 11/1〜11/6|試験 11/10|発表 12/1
+kyoto-yakka|I|一般選抜 前期（3教科型）|出願 1/5〜1/25|試験 2/3|発表 2/15
+kyoto-yakka|I|一般選抜 後期（2教科型）|出願 1/5〜2/16|試験 2/19|発表 3/3
+kyoto-yakka|L||^www.kyoto-phu.ac.jp/albums/abm.php?d=615&f=abm00003285.pdf||
+osaka-ika-yakka|S|総合型選抜「至誠仁術」入試（医学部）|出願 12/9〜1/15|試験 3/14|発表 3/16
+osaka-ika-yakka|K|公募制推薦入試（医学部）|出願 11/1〜11/7|試験 11/21|発表 12/1
+osaka-ika-yakka|K|公募制推薦入学試験（薬学部・併願制）|出願 11/1〜11/9|試験 11/15|発表 12/3
+osaka-ika-yakka|I|一般選抜（前期）（医学部）|出願 12/9〜1/20|試験 2/10|発表 2/20
+osaka-ika-yakka|I|一般入学試験A（薬学部）|出願 1/6〜1/22|試験 2/1|発表 2/6
+osaka-ika-yakka|L|^www.ompu.ac.jp/admission/undergraduate/pharm.html|^www.ompu.ac.jp/admission/undergraduate/qt931k000000801q-att/afif3u000000fsvj.pdf||
+biwako-gakuin|S|総合型選抜（AO）A日程（子ども学科）|出願 9/1〜9/16|試験 9/27|発表 11/2
+biwako-gakuin|K|学校推薦型選抜（公募推薦）前期|出願 11/2〜11/10|試験 11/14・11/15|発表 12/1
+biwako-gakuin|K|学校推薦型選抜（公募推薦）後期|出願 11/26〜12/8|試験 12/12|発表 12/17
+biwako-gakuin|I|一般選抜 前期|出願 12/23〜1/21|試験 2/2・2/3|発表 2/5
+biwako-gakuin|I|一般選抜 後期|出願 2/15〜3/4|試験 3/10|発表 3/11
+biwako-gakuin|L|^www.biwakogakuin.ac.jp/juken/nyuusi|^www.biwakogakuin.ac.jp/juken/nyuusi||^www.biwakogakuin.ac.jp/opencampus
+kyoto-furitsu-ika|K|学校推薦型選抜（看護学科）|出願 11/2〜11/9|試験 11/28|発表 12/4
+kyoto-furitsu-ika|I|一般選抜（前期日程）（医学科）|出願 1/25〜2/3|試験 2/25・2/26|発表 3/5
+kyoto-furitsu-ika|I|一般選抜（前期日程）（看護学科）|出願 1/25〜2/3|試験 2/25|発表 3/5
+kyoto-furitsu-ika|L||^www.kpu-m.ac.jp/doc/examination/exam_gakubu/files/42362.pdf||
+baika|S|総合型AO入試 Ⅰ期|出願 9/1〜9/18|試験 9/26|発表 10/2
+baika|I|一般入試 Ⅰ期（A・B日程）|出願 12/25〜1/16|試験 1/23〜1/24|発表 1/29
+baika|I|一般入試 Ⅱ期|出願 1/29〜2/13|試験 2/18|発表 2/26
+baika|L|^garden.baika.ac.jp/exam/|^garden.baika.ac.jp/pdf/exam/application_details/index.html||
+hanazono|S|総合型選抜（AO入試）前期|出願 9/1〜9/24|試験 10/3|発表 11/4
+hanazono|K|自己推薦入試 A日程|出願 10/1〜10/20|試験 10/31|発表 11/10
+hanazono|I|一般選抜 A日程|出願 12/15〜1/20|試験 1/30|発表 2/5
+hanazono|I|一般選抜 B日程|出願 12/15〜1/20|試験 1/31|発表 2/5
+seian-zokei|S|総合選抜入試 1期〈体験授業方式〉|出願 9/1〜9/2|試験 9/5|発表 11/2
+seian-zokei|K|学校推薦選抜入学試験|出願 11/1〜11/4|試験 11/8|発表 12/1
+seian-zokei|I|一般選抜入試 1期〈面接方式〉|出願 1/8〜1/24|試験 2/7|発表 2/15
+seian-zokei|I|一般選抜入試 2期〈面接方式・実技方式〉|出願 2/8〜2/15|試験 2/19|発表 2/26
+seian-zokei|L||||^event.seian.ac.jp/

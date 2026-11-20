@@ -25,7 +25,7 @@ for (const f of files) {
     continue;
   }
   for (const l of lines) {
-    const c = l.split('|').map((x) => x.trim());
+    const c = l.split('|').map((x) => x.trim().replace(/^\^/, 'https://'));   // ^ は https:// の略
     const id = c[0], k = c[1];
     if (!U[id]) { if (!/見つからず/.test(l)) warn.push('不明なid: ' + l.slice(0, 40)); continue; }
     if (k === 'L') {
