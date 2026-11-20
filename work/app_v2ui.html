@@ -1537,6 +1537,8 @@ main {
   color: var(--text-dim); background: var(--card); border-radius: 8px;
 }
 .zone-block { margin-top: 22px; }
+.off-lines { margin: 6px 0 0; padding-left: 18px; font-size: 13px; line-height: 1.7; color: var(--text-dim); }
+.off-lines li { margin: 3px 0; }
 .origin-row { display: flex; align-items: center; gap: 10px; margin: 10px 0 0; font-size: 14px; font-weight: 600; }
 .origin-row select { flex: 1; min-width: 0; padding: 10px; font-size: 15px; border-radius: 10px; border: 1px solid var(--border-hi); background: var(--card); color: var(--text); }
 .guide-card { margin: 12px 0 0; padding: 12px 14px; border-radius: 12px; background: var(--card); border: 1px solid var(--border-hi); font-size: 13px; line-height: 1.7; color: var(--text-dim); }
@@ -3741,19 +3743,32 @@ function uniTabOverview(uni) {
     (ol.official_url ? `<div class="detail-links">${_link(ol.official_url, '公式サイト')}</div>` : '');
 }
 
+// 「2026年1月22日」のような過去の年度の日付を「1月下旬」に直す（年は出さない＝古い年の日付を今年のものと読み違えないように）
+function _toSeason(str) {
+  return String(str)
+    .replace(/20\d\d年\s*/g, '')
+    .replace(/(\d{1,2})月\s*(\d{1,2})日(?:[（(][^）)]*[）)])?/g, (m, mo, d) => `${mo}月${Number(d) <= 10 ? '上旬' : Number(d) <= 20 ? '中旬' : '下旬'}`)
+    .replace(/(\d{1,2}月[上中下]旬)\s*[〜～~-]\s*\1/g, '$1');
+}
+
 function uniTabEntrance(uni) {
   const emd = uni.entry_method_details || {};
   const nd = uni.nyushi_details || {};
 
   // 検証済み/推定バナー（nyushi_details のトップ直属メタ）
+  // 公式サイトで確認した日程（年度つき）があればそれを先頭に。無い大学は過去の実績を「例年の時期」として月単位で見せる
+  const no = uni.nyushi_official || null;
+  const hasOff = (tp) => !!(no && (no[tp] || []).length);
   let banner;
-  if (nd.verified === true) {
-    const latest = String(nd.verified_year || '').includes('2027');
-    banner = `<div class="verified-banner${latest ? '' : ' warning'}">✅ ${_esc(nd.verified_year || '')} 検証済み` +
-      (nd.verified_source ? `（出典: ${_esc(nd.verified_source)}）` : '') +
-      (latest ? ' — 現高3生が来春受ける入試' : ' ／ 現高3生は2027年度入試。日程は公式で要確認') + `</div>`;
+  if (no) {
+    const lab = { sogo: '総合型選抜', koubo: '学校推薦型・公募', ippan: '一般選抜' };
+    const blocks = ['sogo', 'koubo', 'ippan'].filter(hasOff).map(tp =>
+      `<div class="method-item"><div class="method-name">${lab[tp]}</div><ul class="off-lines">${no[tp].map(x => `<li>${_esc(x)}</li>`).join('')}</ul></div>`).join('');
+    banner = `<div class="verified-banner">✅ <strong>${_esc(no.year)}の日程</strong>（今の高3が受けた入試。${_esc(no.fetched)} に大学の公式サイトで確認）` +
+      (no.source_url ? ` <a href="${_esc(no.source_url)}" target="_blank" rel="noopener">公式の日程ページ ↗</a>` : '') + `</div>` + blocks +
+      `<p class="detail-note">高2のみなさんが受ける<strong>2028年度入試の日程は、高3の夏ごろに発表</strong>されます。例年ほぼ同じ時期なので、「いつ頃に何があるか」の目安にしてください。おもな方式だけを載せています。</p>`;
   } else {
-    banner = `<div class="estimated-banner">⚠️ 日程・条件は<strong>推定の参考値</strong>で、学部により評定条件等が異なる場合があります。現高3生は2027年度入試。<strong>必ず公式の最新募集要項で確認</strong>してください。</div>`;
+    banner = `<div class="estimated-banner">⚠️ この大学の日程は<strong>過去の年度の実績からの目安</strong>です（月単位で表示）。高2のみなさんが受ける2028年度入試の日程は高3の夏ごろに発表されます。<strong>最新は公式サイトで確認</strong>してください。</div>`;
   }
 
   // 評定条件のチップ一覧（タブ冒頭サマリー。詳細は各方式カードに既出）
@@ -3799,14 +3814,14 @@ function uniTabEntrance(uni) {
         ]) +
         (r.notes ? `<div class="method-note">${_esc(r.notes)}</div>` : '') + `</div>`;
     });
-    sched.forEach(s => {
+    (hasOff(tp) ? [] : sched).forEach(s => {   // 公式の日程がある方式は、古い年度の日付を重ねて出さない
       const dl = _link(s.details_url || nd.details_url, '募集要項');
-      html += `<div class="method-item"><div class="method-name">${_esc(s.method_name || '日程')} ${dl}</div>` +
+      html += `<div class="method-item"><div class="method-name">${_esc(s.method_name || '日程')}（例年の時期） ${dl}</div>` +
         _dl([
-          _row('出願期間', s.application_period ? _esc(s.application_period) : null),
-          _row('試験日', s.exam_date ? _esc(s.exam_date) : null),
-          _row('合格発表', s.result_date ? _esc(s.result_date) : null),
-          _row('入学手続〆切', s.enrollment_deadline ? _esc(s.enrollment_deadline) : null),
+          _row('出願', s.application_period ? _esc(_toSeason(s.application_period)) : null),
+          _row('試験', s.exam_date ? _esc(_toSeason(s.exam_date)) : null),
+          _row('合格発表', s.result_date ? _esc(_toSeason(s.result_date)) : null),
+          _row('入学手続', s.enrollment_deadline ? _esc(_toSeason(s.enrollment_deadline)) : null),
           _row('試験科目', _joinArr(s.exam_subjects)),
           _row('必要書類', _joinArr(s.required_documents)),
         ]) +
@@ -3817,6 +3832,8 @@ function uniTabEntrance(uni) {
   // 公式リンク（入試サイト/募集要項の別ボタン。無ければGoogle検索）
   const ol = uni.official_links || {};
   let links = _link(ol.nyushi_url, '📋 公式入試サイト');
+  if (ol.schedule_url && ol.schedule_url !== ol.nyushi_url) links += _link(ol.schedule_url, '📅 入試日程（公式）');
+  { const ocu = (uni.open_campus || {}).open_campus_url; if (ocu) links += _link(ocu, '🏫 オープンキャンパス'); }
   if (ol.youkou_url && ol.youkou_url !== ol.nyushi_url) links += _link(ol.youkou_url, '📄 募集要項');
   if (!links) links = `<a class="detail-link" href="https://www.google.com/search?q=${encodeURIComponent(uni.name + ' 入試 2027')}" target="_blank" rel="noopener">🔍 Googleで「${_esc(uni.name)} 入試」を検索 ↗</a>`;
 
@@ -4227,7 +4244,7 @@ function detailEntranceV2(dept, uni) {
     });
   });
   const nyLink = uni.official_links && (uni.official_links.nyushi_url || uni.official_links.youkou_url);
-  html += `<div class="estimated-banner" style="margin-top:12px">⚠️ 日程・条件は<strong>参考値</strong>です。現高3生は2027年度入試。<strong>必ず公式の最新募集要項で確認</strong>してください。</div>`;
+  html += `<div class="estimated-banner" style="margin-top:12px">⚠️ 日程・条件は<strong>参考値</strong>です。<strong>必ず公式の最新募集要項で確認</strong>してください。</div>`;
   if (nyLink) html += `<div class="detail-links">${_link(nyLink, '入試情報・募集要項')}</div>`;
   return html || '<p class="detail-lead">入試情報は公式サイトで確認してください。</p>';
 }

@@ -1,0 +1,41 @@
+{
+ "fetched": "2026-11-20",
+ "note": "各大学の公式サイトをブラウザで開いて確認したリンクと、2027年度入試（2026年度の高3が受ける入試）の日程。日程は公式ページの表から機械的に拾った行を整えたもの。",
+ "links": {
+  "ritsumeikan": {"nyushi": "https://admission.ritsumei.ac.jp/", "schedule": "https://admission.ritsumei.ac.jp/admission/general/point02.html", "youkou": "https://admission.ritsumei.ac.jp/application/", "oc": "https://admission.ritsumei.ac.jp/event/"},
+  "biwako-seikei": {"nyushi": "https://bss-nyushi.jp/exam/", "schedule": "https://bss-nyushi.jp/exam/sports/outline.php", "oc": "https://bss-nyushi.jp/event/"},
+  "shiga-univ": {"nyushi": "https://www.shiga-u.ac.jp/admission/", "schedule": "https://www.shiga-u.ac.jp/admission/examination_info/exam_calendar/", "youkou": "https://www.shiga-u.ac.jp/admission/examination_info/guideline/", "oc": "https://www.shiga-u.ac.jp/admission/open_campus/"},
+  "shiga-kenritsu": {"nyushi": "https://www.usp.ac.jp/categrry1/", "oc": "https://www.usp.ac.jp/nyushi/open/"},
+  "shiga-ika": {"nyushi": "https://www.shiga-med.ac.jp/admission/", "schedule": "https://www.shiga-med.ac.jp/admission/undergraduate/schedule-of-examinations", "youkou": "https://www.shiga-med.ac.jp/admission/undergraduate/requirements", "oc": "https://www.shiga-med.ac.jp/admission/events/open-campus"},
+  "nagahama-bio": {"nyushi": "https://www.nagahama-i-bio.ac.jp/examinee/", "schedule": "https://www.nagahama-i-bio.ac.jp/exam/schedule2027", "youkou": "https://www.nagahama-i-bio.ac.jp/upload/2027_nyushi_youkou.pdf", "oc": "https://www.nagahama-i-bio.ac.jp/opencampus/"},
+  "seisen": {"nyushi": "https://www.seisen.ac.jp/admissions/entrance/schedule", "schedule": "https://www.seisen.ac.jp/admissions/entrance/schedule", "oc": "https://www.seisen.ac.jp/admissions/opencampus2026"},
+  "biwako-reha": {"nyushi": "https://bpur.aino.ac.jp/candidate/", "schedule": "https://bpur.aino.ac.jp/exam/", "oc": "https://bpur.aino.ac.jp/opencampus/"},
+  "seian-zokei": {"nyushi": "https://www.seian.ac.jp/admission/", "schedule": "https://www.seian.ac.jp/admission/navi/", "youkou": "https://www.seian.ac.jp/assets/pdf/admission/2027_seian_exam_guide.pdf"},
+  "osaka-taiiku": {"nyushi": "https://www.ouhs.jp/nyushi/", "schedule": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/2027_nyushinittei.pdf", "oc": "https://www.ouhs.jp/nyushi/opencampus/"},
+  "kindai": {"nyushi": "https://kindai.jp/exam/", "schedule": "https://kindai.jp/exam/", "youkou": "https://kindai.jp/assets/pdf/exam/2027_nyushiyoko_a4.pdf", "oc": "https://kindai.jp/opencampus2026"},
+  "doshisha": {"nyushi": "https://gakubunyushi.doshisha.ac.jp/"},
+  "kangaku": {"nyushi": "https://www.kwansei.ac.jp/admissions/", "youkou": "https://www.kwansei.ac.jp/admissions/guideline/", "oc": "https://www.kwansei.ac.jp/admissions/events/"},
+  "tenri": {"nyushi": "https://www.tenri-u.ac.jp/ent/", "schedule": "https://www.tenri-u.ac.jp/ent/calendar/", "oc": "https://www.tenri-u.ac.jp/ent/oc/"},
+  "osaka-keizai": {"nyushi": "https://www.osaka-ue.ac.jp/entrance/", "oc": "https://www.osaka-ue.ac.jp/opencampus/"},
+  "kyoto-sangyo": {"nyushi": "https://www.kyoto-su.ac.jp/admissions/", "schedule": "https://www.kyoto-su.ac.jp/admissions/exam/", "youkou": "https://www.kyoto-su.ac.jp/admissions/exam/nagare/download/", "oc": "https://www.kyoto-su.ac.jp/admissions/event/oc/"},
+  "kansai-univ": {"nyushi": "https://www.nyusi.kansai-u.ac.jp/", "oc": "https://www.nyusi.kansai-u.ac.jp/events/"},
+  "ryukoku": {"nyushi": "https://www.ryukoku.ac.jp/admission/", "youkou": "https://www.ryukoku.ac.jp/admission/shiryo/"},
+  "bukkyo": {"nyushi": "https://www.bukkyo-u.ac.jp/admission/", "schedule": "https://www.bukkyo-u.ac.jp/admission/exam/admission/", "youkou": "https://www.bukkyo-u.ac.jp/admission/exam/download/", "oc": "https://www.bukkyo-u.ac.jp/admission/event/"},
+  "kyoto-tachibana": {"nyushi": "https://www.tachibana-u.ac.jp/admission/information/information/", "schedule": "https://www.tachibana-u.ac.jp/admission/cms/wp-content/themes/tachibana-u/assets/pdf/step1_ExaminationSchedule.pdf", "youkou": "https://www.tachibana-u.ac.jp/admission/pdf/nyushiyoukou_koubo_ippan.pdf", "oc": "https://www.tachibana-u.ac.jp/admission/oc/"},
+  "otani": {"nyushi": "https://www.otani.ac.jp/admission/index.html", "schedule": "https://www.otani.ac.jp/admission/exam/schedule.html", "youkou": "https://www.otani.ac.jp/admission/exam/yoko.html", "oc": "https://www.otani.ac.jp/admission/opencampus/index.html"},
+  "kuas": {"nyushi": "https://www.kuas.ac.jp/admissions/", "schedule": "https://www.kuas.ac.jp/admissions/schedule/", "youkou": "https://www.kuas.ac.jp/admissions/downloads"},
+  "kyoto-kango": {"nyushi": "https://www.kyotokango.ac.jp/examinees"},
+  "doshisha-joshi": {"nyushi": "https://www.dwc.doshisha.ac.jp/admissions", "youkou": "https://www.dwc.doshisha.ac.jp/admissions/exam_information"}
+ },
+ "schedule": {
+  "shiga-univ": {"sogo": ["総合型選抜Ⅰ｜出願 9/1〜9/7｜1次 9/26・2次 10/10｜発表 11/2", "総合型選抜Ⅱ（共通テストあり）｜出願 9/1〜9/7｜2次 10/10｜最終発表 2/10", "総合型選抜【資格・検定型】｜出願 9/24〜9/29｜試験 10/10｜発表 11/2"], "koubo": ["学校推薦型［一般枠］（共通テストあり）｜出願 11/2〜11/6｜1次 11/21｜最終発表 2/10", "学校推薦型［地域枠・特技枠］｜出願 11/2〜11/6｜試験 11/21｜発表 12/11", "学校推薦型［A推薦・B推薦］｜出願 11/2〜11/6｜1次 11/14・2次 11/28｜発表 12/4"], "ippan": ["一般選抜［前期日程］｜出願 1/25〜2/3｜試験 2/25・2/26｜発表 3/6｜手続 3/15", "一般選抜［後期日程］｜出願 1/25〜2/3｜試験 3/12｜発表 3/20｜手続 3/27"]},
+  "shiga-ika": {"koubo": ["学校推薦型選抜｜出願 11/2〜11/10｜試験 12/12｜発表 2/9｜手続 2/17"], "ippan": ["一般選抜・前期日程｜出願 1/25〜2/3｜試験 2/25・2/26（学科により2/25のみ）｜発表 3/9｜手続 3/15"]},
+  "seisen": {"koubo": ["看護学部 指定校推薦｜出願 11/1〜11/6｜試験 11/14｜発表 12/1", "看護学部 公募制B日程｜出願 11/23〜12/4｜試験 12/12｜発表 12/18"], "ippan": ["看護学部 一般選抜A日程｜出願 12/21〜1/28｜試験 2/6｜発表 2/12", "看護学部 一般選抜B日程｜出願 2/1〜2/18｜試験 2/25｜発表 3/5", "看護学部 共通テスト利用（前期）｜出願 12/21〜1/28｜発表 2/12"]},
+  "biwako-seikei": {"sogo": ["総合型 A日程｜出願 9/1〜9/10｜試験 9/17", "総合型 B日程｜出願 9/1〜10/2｜試験 10/10"], "koubo": ["学校推薦型 前期日程Ⅰ｜出願 11/1〜11/8｜試験 11/14｜発表 12/1", "学校推薦型 後期日程｜出願 11/1〜12/4｜試験 12/12｜発表 12/23"], "ippan": ["一般 前期日程A-Ⅰ｜出願 12/14〜1/19｜試験 1/25", "一般 前期日程A-Ⅱ｜出願 12/14〜1/21｜試験 1/28", "一般 前期日程A-Ⅲ｜出願 12/14〜1/24｜試験 1/31", "一般 前期日程B｜出願 12/14〜2/2｜試験 2/9"]},
+  "biwako-reha": {"sogo": ["総合型【講座参加型】A日程｜講座 8/9｜出願 9/1〜9/14｜試験 9/19｜発表 11/2", "総合型【講座参加型】B日程｜講座 8/23｜出願 9/1〜9/14｜試験 9/19｜発表 11/2", "総合型【講座参加型】C日程｜講座 9/27｜出願 10/1〜10/12｜試験 10/17｜発表 11/2", "総合型【面接重視型】｜出願 12/21〜1/22｜試験 1/31｜発表 2/12"], "koubo": ["学校推薦型A日程（指定校・公募制）｜出願 11/2〜11/10｜試験 11/14｜発表 12/1", "学校推薦型B日程（公募制）｜出願 11/23〜12/7｜試験 12/12｜発表 12/18"], "ippan": ["一般選抜A日程｜出願 12/21〜1/22｜試験 1/31｜発表 2/12", "一般選抜B日程｜出願 1/25〜2/15｜試験 2/20｜発表 2/26", "一般選抜C日程｜出願 2/18〜3/1｜試験 3/6｜発表 3/12"]},
+  "otani": {"sogo": ["総合型選抜｜出願 9/1〜9/11｜2次選考 10/17｜発表 1次 9/30・2次 11/2"], "koubo": ["指定校制推薦｜出願 10/5〜10/23｜試験 11/8｜発表 12/1", "公募制推薦【前期】｜出願 10/14〜11/6｜試験 11/20〜11/22（専願・併願で日が違う）｜発表 12/1", "公募制推薦【後期】｜出願 11/23〜12/11｜試験 12/20｜発表 12/25"], "ippan": ["一般入試［第1期］｜出願 12/16〜1/15｜試験 2/4〜2/6｜発表 2/13", "一般入試［第2期］｜出願 2/4〜2/17｜試験 2/26・2/27｜発表 3/4", "共通テスト利用入試｜出願 12/16〜1/20｜発表 2/13"]},
+  "kuas": {"sogo": ["総合型選抜 A日程｜出願（一次）9/1〜9/15｜二次試験 10/11", "総合型選抜（スポーツリーダー型）A日程｜出願 9/17〜10/3｜試験 10/11"], "koubo": ["公募推薦入試 A日程｜出願 10/15〜11/1｜試験 11/8", "指定校推薦入試｜出願 11/1〜11/13｜試験 11/21"], "ippan": ["一般入試 A日程｜出願 1/4〜1/15｜試験 2/1〜2/3", "共通テスト利用入試 A日程｜出願 1/4〜1/22"]},
+  "kyoto-tachibana": {"koubo": ["公募推薦 併願制A日程｜出願 10/22〜11/2｜試験 11/17｜発表 12/4"], "ippan": ["一般 前期A日程（3科目）｜出願 12/24〜1/12｜試験 1/21｜発表 2/5", "一般 前期B日程（3科目）｜試験 1/22｜発表 2/5", "一般 前期C日程（2科目）｜出願 12/24〜1/27｜試験 2/11｜発表 2/22"]},
+  "tenri": {"sogo": ["総合型選抜｜試験 10/14｜発表 11/1（ほかに11月・12月・2月の日程あり）"], "koubo": ["学校推薦型選抜｜試験 11/19・11/20｜発表 12/1"], "ippan": ["一般選抜｜試験 2/2・2/3｜発表 2/10（共通テスト利用は別日程）"]}
+ }
+}
