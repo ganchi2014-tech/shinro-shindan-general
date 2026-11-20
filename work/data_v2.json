@@ -633,7 +633,7 @@
     "shingaku_url": "https://www.ritsumei.ac.jp/career/",
     "youkou_url": "https://admission.ritsumei.ac.jp/application/",
     "verified": true,
-    "schedule_url": "https://admission.ritsumei.ac.jp/admission/general/point02.html",
+    "schedule_url": "https://admission.ritsumei.ac.jp/assets/file/2027/admission/general/guidelines/02-47.pdf",
     "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "司法試験・公認会計士・公務員試験合格者多数。教員採用試験対策プログラム充実",
@@ -803,6 +803,22 @@
     "cohort": "2022年度卒業",
     "shusshin_pct": null,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://admission.ritsumei.ac.jp/assets/file/2027/admission/general/guidelines/02-47.pdf",
+    "sogo": [
+     "AO選抜入学試験（文系学部）｜出願 9/1〜9/7｜試験 10/18｜発表 11/4",
+     "AO選抜入学試験（10月出願・理系学部等）｜出願 10/16〜10/23｜試験 11/29｜発表 12/10"
+    ],
+    "koubo": [],
+    "ippan": [
+     "全学統一方式（文系）｜出願 1/6〜1/22｜試験 2/1｜発表 2/17",
+     "学部個別配点方式｜出願 1/6〜1/26｜試験 2/7｜発表 2/20",
+     "共通テスト方式（2月選考）｜出願 1/6〜1/15｜試験 1/16｜発表 2/17"
+    ]
    }
   },
   {
@@ -902,7 +918,7 @@
     "shingaku_url": "https://www.kindai.ac.jp/career/",
     "youkou_url": "https://kindai.jp/assets/pdf/exam/2027_nyushiyoko_a4.pdf",
     "verified": true,
-    "schedule_url": "https://kindai.jp/exam/",
+    "schedule_url": "https://kindai.jp/members/common/pdf/element/exam-guide-2027.pdf",
     "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "医学部・薬学部・水産研究所など全国屈指。教員採用・公務員試験合格者多数",
@@ -1063,6 +1079,25 @@
     "cohort": "2023年3月卒業",
     "shusshin_pct": 1.1,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://kindai.jp/members/common/pdf/element/exam-guide-2027.pdf",
+    "sogo": [
+     "総合型選抜（看護学部）｜出願 9/1〜9/8｜試験 10/10｜発表 11/7",
+     "総合型選抜（法学部）｜出願 9/1〜9/15｜試験 10/24｜発表 11/7"
+    ],
+    "koubo": [
+     "推薦入試（一般公募）｜出願 11/1〜11/14｜試験 11/21・11/22｜発表 12/2",
+     "推薦入試（一般公募）12月日程（国際学部・看護学部）｜出願 11/1〜11/28｜試験 12/5・12/6｜発表 12/16"
+    ],
+    "ippan": [
+     "一般入試・前期（A日程）｜出願 1/3〜1/23｜試験 1/30・1/31｜発表 2/10",
+     "一般入試・前期（B日程）｜出願 1/3〜2/3｜試験 2/11・2/12（学部により2/13・2/14）｜発表 2/24",
+     "一般入試・後期｜出願 2/3〜3/1｜試験 3/8・3/9｜発表 3/19"
+    ]
    }
   },
   {
@@ -1162,7 +1197,8 @@
     "shingaku_url": "https://www.doshisha.ac.jp/career/",
     "youkou_url": null,
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://www.doshisha.ac.jp/files/nyugk/page/faculties_and_selection_schedule.pdf"
    },
    "shikaku_gokakuritsu": "司法試験・公認会計士・国家公務員総合職合格者多数。教員採用も実績豊富",
    "nyushi_details": {
@@ -1316,6 +1352,25 @@
     "cohort": "2023年3月卒業",
     "shusshin_pct": 4.6,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.doshisha.ac.jp/files/nyugk/page/faculties_and_selection_schedule.pdf",
+    "sogo": [
+     "AO入学試験（商学部）｜出願 8/25〜9/7｜試験 10/24｜発表 11/5",
+     "自己推薦入学試験（グローバル・コミュニケーション学部）｜出願 10/23〜11/5｜試験 12/5｜発表 12/11"
+    ],
+    "koubo": [
+     "推薦選抜入学試験（文化情報学部）｜出願 10/23〜11/5｜試験 11/14｜発表 12/4",
+     "推薦選抜入学試験（文学部）｜出願 11/1〜11/5｜試験 12/5｜発表 12/11"
+    ],
+    "ippan": [
+     "一般選抜 全学部日程（理工学部）｜出願 12/21〜1/7｜試験 2/4｜発表 2/15",
+     "一般選抜 学部個別日程（経済学部）｜出願 12/21〜1/7｜試験 2/6｜発表 2/15",
+     "一般選抜 学部個別日程（文化情報学部）｜出願 12/21〜1/7｜試験 2/7｜発表 2/16"
+    ]
    }
   },
   {
@@ -1414,7 +1469,8 @@
     "shingaku_url": "https://www.kwansei.ac.jp/career/",
     "youkou_url": "https://www.kwansei.ac.jp/admissions/guideline/",
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://examsite.kwansei.ac.jp/"
    },
    "shikaku_gokakuritsu": "公認会計士・税理士・公務員試験合格者多数。CPA・MBA向けプログラム",
    "nyushi_details": {
@@ -1585,6 +1641,22 @@
     "cohort": "2023年3月卒業",
     "shusshin_pct": 1,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://examsite.kwansei.ac.jp/",
+    "sogo": [
+     "探究評価型入学試験｜出願 9/1〜9/8｜試験 10/24｜発表 11/13",
+     "グローバル入学試験｜出願 9/1〜9/8｜試験 9/26｜発表 11/13"
+    ],
+    "koubo": [],
+    "ippan": [
+     "一般入学試験 全学部日程｜出願 1/4〜1/22｜試験 2/1｜発表 2/15",
+     "一般入学試験 学部個別日程（傾斜配点型）｜出願 1/4〜1/22｜試験 2/3",
+     "共通テストを利用する入学試験（1月出願）｜出願 1/4〜1/15｜試験 1/16"
+    ]
    }
   },
   {
@@ -2249,7 +2321,8 @@
     "shingaku_url": "https://www.osaka-ue.ac.jp/career/",
     "youkou_url": null,
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4307"
    },
    "shikaku_gokakuritsu": "公認会計士・税理士・FP・簿記・公務員試験対策充実",
    "nyushi_details": {
@@ -2393,6 +2466,23 @@
       "bairitsu": "4.0〜8.0倍"
      }
     ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.osaka-ue.ac.jp/entrance/file/general/4307",
+    "sogo": [
+     "学部AO入試｜出願 9/1〜9/16｜試験 10/24｜発表 11/2"
+    ],
+    "koubo": [
+     "公募推薦（総合評価型・基礎学力型）｜出願 11/1〜11/13｜試験 11/25〜11/26｜発表 12/7"
+    ],
+    "ippan": [
+     "一般選抜・前期 A方式｜出願 1/3〜1/18｜試験 1/27〜1/29｜発表 2/15",
+     "一般選抜・前期 B方式｜出願 1/3〜1/25｜試験 2/3〜2/4｜発表 2/15",
+     "一般選抜・後期 D方式｜出願 2/8〜2/25｜試験 3/5｜発表 3/13"
+    ]
    }
   },
   {
@@ -2489,7 +2579,7 @@
     "shingaku_url": "https://www.kyoto-su.ac.jp/career/",
     "youkou_url": "https://www.kyoto-su.ac.jp/admissions/exam/nagare/download/",
     "verified": true,
-    "schedule_url": "https://www.kyoto-su.ac.jp/admissions/exam/",
+    "schedule_url": "https://www.kyoto-su.ac.jp/admissions/exam/calendar/",
     "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "公務員試験・教員採用試験対策充実。理学部・情報理工学部のIT系資格も",
@@ -2640,6 +2730,24 @@
     "cohort": "2023年3月卒業",
     "shusshin_pct": 8.1,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kyoto-su.ac.jp/admissions/exam/calendar/",
+    "sogo": [
+     "総合型選抜｜出願 9/1〜9/8｜試験 10/18｜発表 11/1"
+    ],
+    "koubo": [
+     "公募推薦入試｜出願 11/1〜11/10｜試験 11/21｜発表 12/4",
+     "専門学科等対象公募推薦入試｜出願 11/1〜11/10｜試験 11/28｜発表 12/4"
+    ],
+    "ippan": [
+     "一般選抜入試［前期日程］｜出願 1/4〜1/15｜試験 1/26｜発表 2/11",
+     "一般選抜入試［中期日程］｜出願 1/4〜2/5｜試験 2/16｜発表 2/25",
+     "共通テスト利用入試［前期］｜出願 1/4〜1/22｜試験 1/16｜発表 2/11"
+    ]
    }
   },
   {
@@ -2721,7 +2829,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.andrew.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://www.andrew.ac.jp/event/open_campus/"
    },
    "ryugaku": {
     "available": true,
@@ -2733,8 +2841,10 @@
     "official_url": "https://www.andrew.ac.jp/nyushi/",
     "nyushi_url": "https://www.andrew.ac.jp/nyushi/",
     "shingaku_url": "https://www.andrew.ac.jp/career/",
-    "youkou_url": null,
-    "verified": true
+    "youkou_url": "https://www.andrew.ac.jp/nyushi/info/application_request.html",
+    "verified": true,
+    "schedule_url": "https://www.andrew.ac.jp/nyushi/info/calendar.html",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "公務員試験・教員採用試験対策、語学資格（TOEIC・TOEFL）支援充実",
    "nyushi_details": {
@@ -2944,7 +3054,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.fuksi-kagk-u.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://www.fuksi-kagk-u.ac.jp/nyushi/opencampus/"
    },
    "ryugaku": {
     "available": false,
@@ -2954,10 +3064,12 @@
    "zemi_features": "社会福祉・心理・健康福祉・教育・栄養の専門ゼミ。実習中心の臨床的学び",
    "official_links": {
     "official_url": "https://www.fuksi-kagk-u.ac.jp/nyushi/",
-    "nyushi_url": "https://www.fuksi-kagk-u.ac.jp/nyushi/",
+    "nyushi_url": "https://www.fuksi-kagk-u.ac.jp/nyushi/nyugaku/",
     "shingaku_url": "https://www.fuksi-kagk-u.ac.jp/career/",
-    "youkou_url": "https://www.fuksi-kagk-u.ac.jp/nyushi/nyugaku/date/",
-    "verified": true
+    "youkou_url": "https://www.fuksi-kagk-u.ac.jp/nyushi/nyugaku/niv9hl0000000teh-att/exam_guide_2027.pdf",
+    "verified": true,
+    "schedule_url": "https://www.fuksi-kagk-u.ac.jp/nyushi/nyugaku/date/index.html",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "社会福祉士・精神保健福祉士・介護福祉士・養護教諭・栄養士等の国家資格に強い",
    "nyushi_details": {
@@ -4447,7 +4559,8 @@
    },
    "open_campus": {
     "jiki": "6月・7月・8月・10月",
-    "url": "https://www.asahi-u.ac.jp/admissions/opencampus/"
+    "url": "https://www.asahi-u.ac.jp/admissions/opencampus/",
+    "open_campus_url": "https://nyuusi.asahi-u.ac.jp/opencampus/"
    },
    "ryugaku": {
     "umu": true,
@@ -4459,8 +4572,9 @@
     "official_url": "https://nyuusi.asahi-u.ac.jp/",
     "nyushi_url": "https://nyuusi.asahi-u.ac.jp/",
     "shingaku_url": "https://www.asahi-u.ac.jp/career/",
-    "youkou_url": null,
-    "verified": true
+    "youkou_url": "https://nyuusi.asahi-u.ac.jp/admission/download.html",
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": {
     "kyoin_saiyo": "教員養成は限定的",
@@ -7598,7 +7712,7 @@
     "official_url": "https://www.nyusi.kansai-u.ac.jp/",
     "nyushi_url": "https://www.nyusi.kansai-u.ac.jp/",
     "shingaku_url": "https://www.kansai-u.ac.jp/career/",
-    "youkou_url": null,
+    "youkou_url": "https://www.nyusi.kansai-u.ac.jp/pdf/admission/general-common/yoko_set_2027.pdf",
     "verified": true,
     "verified_date": "2026-11-20"
    },
@@ -7726,6 +7840,25 @@
       "notes": "全学部統一日程と学部別日程がある。"
      }
     ]
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.nyusi.kansai-u.ac.jp/pdf/admission/general-common/yoko_set_2027.pdf",
+    "sogo": [
+     "AO入試｜出願 9/1〜9/7｜試験 10/18｜発表 11/2",
+     "SF入試（9月募集）｜出願 9/3〜9/7｜試験 10/18｜発表 11/2"
+    ],
+    "koubo": [
+     "公募制推薦入試（商学部）｜出願 11/2〜11/6｜試験 11/29｜発表 12/4",
+     "公募制推薦入試（システム理工・環境都市工・化学生命工）｜出願 11/2〜11/6｜試験 11/29｜発表 12/4"
+    ],
+    "ippan": [
+     "一般選抜 全学日程1｜出願 1/7〜1/19｜試験 2/1〜2/3｜発表 2/16",
+     "一般選抜 全学日程2｜出願 1/7〜1/19｜試験 2/5〜2/7｜発表 2/16",
+     "共通テスト利用入試（前期）｜出願 1/7〜1/15｜試験 1/16〜1/17｜発表 2/16"
+    ]
    }
   },
   {
@@ -7830,7 +7963,8 @@
     "shingaku_url": "https://www.ryukoku.ac.jp/career/",
     "youkou_url": "https://www.ryukoku.ac.jp/admission/shiryo/",
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://www.ryukoku.ac.jp/admission/nyushi/pdf/guide/2027_guide_p06.pdf"
    },
    "shikaku_gokakuritsu": "公務員試験・教員採用試験対策。仏教系・社会福祉系資格も",
    "nyushi_details": {
@@ -7975,6 +8109,24 @@
     "cohort": "2022年度卒業",
     "shusshin_pct": null,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.ryukoku.ac.jp/admission/nyushi/pdf/guide/2027_guide_p06.pdf",
+    "sogo": [
+     "総合型選抜入試（学部独自方式・検定試験利用型・英語型）｜出願 9/1〜9/9｜試験 10/17｜発表 11/1"
+    ],
+    "koubo": [
+     "公募推薦入試〔総合評価型〕｜出願 11/1〜11/11｜試験 11/23・11/28・11/29｜発表 12/11",
+     "公募推薦入試〔専門高校、専門学科・総合学科対象〕｜出願 11/1〜11/11｜試験 11/29｜発表 12/11"
+    ],
+    "ippan": [
+     "一般選抜入試〔前期日程〕｜出願 1/4〜1/18｜試験 1/29〜1/31｜発表 2/12",
+     "一般選抜入試〔中期日程〕｜出願 1/4〜2/2｜試験 2/14〜2/15｜発表 2/26",
+     "共通テスト利用入試〔前期〕｜出願 1/4〜1/17｜試験 1/16〜1/17｜発表 2/12"
+    ]
    }
   },
   {
@@ -8075,8 +8227,10 @@
     "official_url": "https://ch.konan-u.ac.jp/admission/",
     "nyushi_url": "https://ch.konan-u.ac.jp/admission/",
     "shingaku_url": "https://www.konan-u.ac.jp/career/",
-    "youkou_url": "https://ch.konan-u.ac.jp/admission/course/",
-    "verified": true
+    "youkou_url": "https://ch.konan-u.ac.jp/admission/application/",
+    "verified": true,
+    "schedule_url": "https://ch.konan-u.ac.jp/admission/exam/",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "公認会計士・税理士・公務員試験。理工系では各種国家資格対策",
    "nyushi_details": {
@@ -9015,7 +9169,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.setsunan.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://www.setsunan.ac.jp/admission/oc/"
    },
    "ryugaku": {
     "available": true,
@@ -9025,10 +9179,12 @@
    "zemi_features": "法・国際・経済・経営・現代社会・理工・薬・看護・農の9学部",
    "official_links": {
     "official_url": "https://www.setsunan.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.setsunan.ac.jp/admission/",
     "shingaku_url": "https://www.setsunan.ac.jp/career/",
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.setsunan.ac.jp/admission/faculty/requirements/",
+    "verified": true,
+    "schedule_url": "https://www.setsunan.ac.jp/admission/faculty/information/detail/23",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "薬剤師国家試験、看護師国家試験、教員採用試験、公務員試験",
    "nyushi_details": {
@@ -9231,7 +9387,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.otemon.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://nyushi.otemon.ac.jp/open_campus_2026/"
    },
    "ryugaku": {
     "available": true,
@@ -9241,10 +9397,12 @@
    "zemi_features": "経済・経営・法・社会・心理・国際・地域創造・文の8学部",
    "official_links": {
     "official_url": "https://www.otemon.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://nyushi.otemon.ac.jp/",
     "shingaku_url": "https://www.otemon.ac.jp/career/",
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://nyushi.otemon.ac.jp/guide/pr_guide.html",
+    "verified": true,
+    "schedule_url": "https://nyushi.otemon.ac.jp/admission/calendar.html",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "心理士、教員採用試験、公務員試験",
    "nyushi_details": {
@@ -9453,7 +9611,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.tezukayama-u.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://www.tezukayama-u.ac.jp/admission/event/"
    },
    "ryugaku": {
     "available": true,
@@ -9463,10 +9621,11 @@
    "zemi_features": "文・経済経営・法・心理・現代生活・教育・看護・健康科学",
    "official_links": {
     "official_url": "https://www.tezukayama-u.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.tezukayama-u.ac.jp/admission/",
     "shingaku_url": "https://www.tezukayama-u.ac.jp/career/",
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.tezukayama-u.ac.jp/application/themes/admissions/admissions/pdf/2027ar.pdf",
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "看護師・養護教諭・心理士・教員採用試験等",
    "nyushi_details": {
@@ -9888,8 +10047,9 @@
     "official_url": "https://www.otemae.ac.jp/",
     "nyushi_url": null,
     "shingaku_url": "https://www.otemae.ac.jp/career/",
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.otemae.ac.jp/jukensei-navi/admission/information-requirements2027/",
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "看護師国家試験、栄養士、建築士、教員採用",
    "nyushi_details": {
@@ -10726,7 +10886,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.keiho-u.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://keiho-oc.jp/"
    },
    "ryugaku": {
     "available": true,
@@ -10736,10 +10896,12 @@
    "zemi_features": "法・経済・経営・国際の4学部。公務員養成・法律家養成に注力",
    "official_links": {
     "official_url": "https://www.keiho-u.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.keiho-u.ac.jp/admission/index.html",
     "shingaku_url": "https://www.keiho-u.ac.jp/career/",
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.keiho-u.ac.jp/admission/guidance/guidelines.html",
+    "verified": true,
+    "schedule_url": "https://www.keiho-u.ac.jp/admission/guidance/schedule.html",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "司法書士・行政書士・宅建・税理士・公務員試験等の法律・公務員系資格に注力",
    "nyushi_details": {
@@ -10956,8 +11118,10 @@
     "official_url": "https://www.oit.ac.jp/admission/",
     "nyushi_url": "https://www.oit.ac.jp/admission/",
     "shingaku_url": "https://www.oit.ac.jp/career/",
-    "youkou_url": null,
-    "verified": true
+    "youkou_url": "https://www.oit.ac.jp/admission/important-news/pdf/gakuseibosyu2027_20260820.pdf",
+    "verified": true,
+    "schedule_url": "https://www.oit.ac.jp/admission/outline/schedule.html",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "技術士補・電気工事士・建築士・情報処理技術者等の理工系資格に強い",
    "nyushi_details": {
@@ -11165,10 +11329,11 @@
    "zemi_features": "工・情報通信工・医療健康科学・総合情報の4学部。ゲーム・eスポーツ研究も",
    "official_links": {
     "official_url": "https://www.osakac.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.osakac.ac.jp/examinee/",
     "shingaku_url": "https://www.osakac.ac.jp/career/",
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.osakac.ac.jp/examinee/admission/shutsugan/",
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "電気工事士・情報処理技術者・技術士補等の理工系資格",
    "nyushi_details": {
@@ -11372,7 +11537,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.kansaigaidai.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://envision.kansaigaidai.ac.jp/opencampus/"
    },
    "ryugaku": {
     "available": true,
@@ -11385,7 +11550,8 @@
     "nyushi_url": "https://www.kansaigaidai.ac.jp/admission/",
     "shingaku_url": "https://www.kansaigaidai.ac.jp/career/",
     "youkou_url": null,
-    "verified": true
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "英語教員採用試験、TOEIC・TOEFL高得点者多数、通訳案内士",
    "nyushi_details": {
@@ -12490,7 +12656,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.daishodai.ac.jp/admissions/opencampus/"
+    "open_campus_url": "http://ouc.daishodai.ac.jp/oc_list/"
    },
    "ryugaku": {
     "available": true,
@@ -12500,10 +12666,11 @@
    "zemi_features": "経済・総合経営・公共の3学部。実学重視のビジネス教育",
    "official_links": {
     "official_url": "https://www.daishodai.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "http://ouc.daishodai.ac.jp/future/",
     "shingaku_url": "https://www.daishodai.ac.jp/career/",
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "http://ouc.daishodai.ac.jp/exam/support/application.html",
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "簿記・FP・宅建・公務員試験",
    "nyushi_details": {
@@ -12919,7 +13086,7 @@
    },
    "open_campus": {
     "open_campus_seasons": "6月・7月・8月・3月",
-    "open_campus_url": "https://www.ohs.ac.jp/admissions/opencampus/"
+    "open_campus_url": "https://www.ohs.ac.jp/opencampus/"
    },
    "ryugaku": {
     "available": false,
@@ -12929,10 +13096,12 @@
    "zemi_features": "保健医療・人間科学の2学部。理学療法・作業療法・言語聴覚・社会福祉",
    "official_links": {
     "official_url": "https://www.ohs.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.ohs.ac.jp/admissions/",
     "shingaku_url": "https://www.ohs.ac.jp/career/",
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.ohs.ac.jp/assets/pdf/admissions/ohs_youkou2027.pdf",
+    "verified": true,
+    "schedule_url": "https://www.ohs.ac.jp/assets/pdf/admissions/schedule_2027_01.pdf",
+    "verified_date": "2026-11-20"
    },
    "shikaku_gokakuritsu": "看護師・理学療法士・作業療法士・言語聴覚士・社会福祉士等の国家資格に強い",
    "nyushi_details": {
@@ -20008,9 +20177,10 @@
     "official_url": "https://www.usp.ac.jp/",
     "nyushi_url": "https://www.usp.ac.jp/categrry1/",
     "shingaku_url": null,
-    "youkou_url": null,
+    "youkou_url": "https://www.usp.ac.jp/nyushi/senbatsuyoukou/tokubetu",
     "verified": true,
-    "verified_date": "2026-11-20"
+    "verified_date": "2026-11-20",
+    "schedule_url": "https://www.usp.ac.jp/nyushi/senbatsuyoukou/ippansenbatu/"
    },
    "unique_point": "県内生への経済優遇＋自宅通学で、4年間の総費用を最も抑えられる進学先の一つ。看護師志望・環境/工学系志望で県内に残りたい生徒に最適。",
    "region": "shiga",
@@ -20081,6 +20251,21 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.usp.ac.jp/nyushi/open/"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.usp.ac.jp/nyushi/senbatsuyoukou/ippansenbatu/",
+    "sogo": [],
+    "koubo": [
+     "学校推薦型選抜（共通テストを課さない）｜出願 11/2〜11/9｜試験 11/21｜発表 12/9",
+     "学校推薦型選抜（共通テストを課す・12月出願）｜出願 12/14〜12/21｜試験 1/30｜発表 2/10"
+    ],
+    "ippan": [
+     "一般選抜・前期日程｜出願 1/25〜2/3｜試験 2/25・2/26｜発表 3/8",
+     "一般選抜・後期日程｜出願 1/25〜2/3｜試験 3/12・3/13｜発表 3/20"
+    ]
    }
   },
   {
@@ -20275,8 +20460,9 @@
     "official_url": "https://www.kyoto-u.ac.jp/",
     "nyushi_url": "https://www.kyoto-u.ac.jp/ja/admissions",
     "shingaku_url": null,
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.kyoto-u.ac.jp/ja/admissions/undergrad/requirements",
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "unique_point": "滋賀から自宅通学できる日本トップ大学。挑戦圏の学力があるなら、費用面でも将来の選択肢の広さでも最高の投資対効果。",
    "region": "kyoto",
@@ -20333,6 +20519,9 @@
       "bairitsu": "2.5〜3.5倍"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.kyoto-u.ac.jp/ja/admissions/about/open"
    }
   },
   {
@@ -20394,7 +20583,8 @@
     "nyushi_url": "https://www.osaka-u.ac.jp/ja/admissions",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "unique_point": "京大に次ぐ関西国立の頂点。理系・外国語志望で全国レベルを目指すなら第一候補。下宿前提だが国立なので総費用は大手私大下宿と大差ない。",
    "region": "osaka",
@@ -20451,6 +20641,9 @@
       "bairitsu": "2〜3倍"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.osaka-u.ac.jp/ja/admissions/yourOU/open_campus"
    }
   },
   {
@@ -20747,10 +20940,11 @@
    },
    "official_links": {
     "official_url": "https://www.kpu.ac.jp/",
-    "nyushi_url": "https://www.kpu.ac.jp/admission/",
+    "nyushi_url": "https://www.kpu.ac.jp/for-applicants/",
     "shingaku_url": null,
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.kpu.ac.jp/admissions/exam/guide/",
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "unique_point": "「京都で文学・食・環境を少人数で学ぶ」個性派の国公立。通学圏で学費が安く、共テ得点率も京阪神より控えめ。",
    "region": "kyoto",
@@ -20804,6 +20998,9 @@
       "bairitsu": "3〜5倍（要確認）"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.kpu.ac.jp/open-campus/"
    }
   },
   {
@@ -20862,10 +21059,11 @@
    },
    "official_links": {
     "official_url": "https://www.kit.ac.jp/",
-    "nyushi_url": "https://www.kit.ac.jp/admissions/",
+    "nyushi_url": "https://www.kit.ac.jp/test-taker_index/",
     "shingaku_url": null,
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.kit.ac.jp/test_index/school_news/undergraduate/",
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "unique_point": "理系・建築・デザイン志望で通学圏の国立を狙うなら最有力。企業からの評価が偏差値以上に高い「お得な」大学として有名。",
    "region": "kyoto",
@@ -20928,6 +21126,9 @@
       "bairitsu": "5〜8倍（要確認）"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.kit.ac.jp/ouw-index/"
    }
   },
   {
@@ -20989,7 +21190,9 @@
     "nyushi_url": "https://www.kyokyo-u.ac.jp/admission/",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "schedule_url": "https://www.kyokyo-u.ac.jp/admission/nittei/",
+    "verified_date": "2026-11-20"
    },
    "unique_point": "「先生になる」と決めている生徒には通学圏で最短ルートの国立。滋賀県の教員採用にも実績豊富。",
    "region": "kyoto",
@@ -21043,6 +21246,9 @@
       "bairitsu": "2〜3倍（要確認）"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.kyokyo-u.ac.jp/weboc/"
    }
   },
   {
@@ -21332,10 +21538,12 @@
    },
    "official_links": {
     "official_url": "https://www.kyoto-wu.ac.jp/",
-    "nyushi_url": "https://www.kyoto-wu.ac.jp/admission/",
+    "nyushi_url": "https://www.kyoto-wu.ac.jp/nyushi/index.html",
     "shingaku_url": null,
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.kyoto-wu.ac.jp/nyushi/daigaku/grd7hl0000004upq-att/eotv8r000000097w.pdf",
+    "verified": true,
+    "schedule_url": "https://www.kyoto-wu.ac.jp/nyushi/daigaku/schedule.html",
+    "verified_date": "2026-11-20"
    },
    "unique_point": "「手堅い就職＋通学圏＋伝統ブランド」の三拍子。教員・栄養士・金融志望の女子生徒の有力候補。",
    "region": "kyoto",
@@ -21410,6 +21618,9 @@
     "cohort": "2023年3月卒業",
     "shusshin_pct": 8.7,
     "source_url": "https://www.pref.shiga.lg.jp/file/attachment/5446699.pdf"
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.kyoto-wu.ac.jp/nyushi/events/index.html"
    }
   },
   {
@@ -21585,10 +21796,12 @@
    },
    "official_links": {
     "official_url": "https://www.mukogawa-u.ac.jp/",
-    "nyushi_url": "https://www.mukogawa-u.ac.jp/admission/",
+    "nyushi_url": "https://www.mukogawa-u.ac.jp/~nyushi/",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "schedule_url": "https://www.mukogawa-u.ac.jp/~nyushi/exam",
+    "verified_date": "2026-11-20"
    },
    "unique_point": "「資格を取って確実に就職する」なら女子大最強クラス。薬学・栄養・保育・看護・建築と選択肢の幅が広い。",
    "region": "hyogo",
@@ -21656,6 +21869,9 @@
       "bairitsu": "2〜4倍（要確認）"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.mukogawa-u.ac.jp/~nyushi/event/opencampus"
    }
   },
   {
@@ -21713,10 +21929,11 @@
    },
    "official_links": {
     "official_url": "https://www.kobe-c.ac.jp/",
-    "nyushi_url": "https://www.kobe-c.ac.jp/admission/",
+    "nyushi_url": "https://www.kobe-c.ac.jp/admissions/",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "unique_point": "英語・国際系・音楽で「質の高い少人数教育」を求める女子生徒向け。ブランドと教育の質は偏差値以上。",
    "region": "hyogo",
@@ -21771,6 +21988,9 @@
       "bairitsu": "1.5〜3倍（要確認）"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.kobe-c.ac.jp/admissions/events/open/"
    }
   },
   {
@@ -21830,10 +22050,11 @@
    },
    "official_links": {
     "official_url": "https://www.yamato-u.ac.jp/",
-    "nyushi_url": "https://www.yamato-u.ac.jp/admissions/",
+    "nyushi_url": "https://www.yamato-u.ac.jp/entrance/",
     "shingaku_url": null,
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.yamato-u.ac.jp/entrance/exam/about/",
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "unique_point": "勢いのある新興校で、教員・看護・公務員など「資格・採用試験に直結する学び」に特化。特待生制度で学費を抑えられる可能性も。",
    "region": "osaka",
@@ -21886,6 +22107,9 @@
       "bairitsu": "3〜6倍（要確認）"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.yamato-u.ac.jp/entrance/event/oc/"
    }
   },
   {
@@ -21946,7 +22170,8 @@
     "nyushi_url": "https://www.kyoto-phu.ac.jp/admission/",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "unique_point": "薬剤師志望で滋賀から通える最高峰の私立薬科大。学費は高いが就職はほぼ確実で、製薬研究職への道もある。",
    "region": "kyoto",
@@ -22001,6 +22226,9 @@
       "bairitsu": "2〜3倍（要確認）"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.kyoto-phu.ac.jp/admission/event/index.html"
    }
   },
   {
@@ -23526,6 +23754,23 @@
    },
    "open_campus": {
     "open_campus_url": "https://www.nagahama-i-bio.ac.jp/opencampus/"
+   },
+   "nyushi_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.nagahama-i-bio.ac.jp/exam/schedule2027",
+    "sogo": [
+     "総合型選抜 実験実習型（前期）｜出願 9/4〜9/17｜試験 9/26｜発表 11/1",
+     "総合型選抜 探究活動型（前期）｜出願 9/4〜9/17｜試験 9/27｜発表 11/1"
+    ],
+    "koubo": [
+     "公募推薦（トータル型／ポイント型）｜出願 10/23〜11/10｜試験 11/14・11/15｜発表 12/1"
+    ],
+    "ippan": [
+     "一般選抜 前期（理科重視型・高得点2教科型）｜出願 12/24〜1/25｜試験 2/2・2/3｜発表 2/13",
+     "一般選抜 後期（総合評価型）｜出願 2/15〜3/1｜試験 3/11｜発表 3/18"
+    ]
    }
   },
   {
@@ -24294,10 +24539,11 @@
    },
    "official_links": {
     "official_url": "https://www.kpu-m.ac.jp/",
-    "nyushi_url": "https://www.kpu-m.ac.jp/doc/exam/",
+    "nyushi_url": "https://www.kpu-m.ac.jp/doc/examination/index.html",
     "shingaku_url": null,
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.kpu-m.ac.jp/doc/examination/exam_gakubu/info.html",
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "unique_point": "滋賀から通学圏の公立医大。医学科は関西の公立医大の名門で、滋賀医大と並ぶ「自宅から通える医学部」の選択肢。",
    "region": "kyoto",
@@ -24349,6 +24595,9 @@
       "bairitsu": "2.5〜4倍（要確認）"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.kpu-m.ac.jp/doc/opencampus/index.html"
    }
   },
   {
@@ -24519,10 +24768,11 @@
    },
    "official_links": {
     "official_url": "https://www.baika.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.baika.ac.jp/prospective/",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "unique_point": "「女子大で看護・栄養・保育などの資格をしっかり取りたい」人向けの選択肢。偏差値のハードルは低めで、面接・書類中心の入試方式も多い。滋賀からはJR茨木経由で通える距離だが片道100分前後かかる点は要検討。",
    "region": "osaka",
@@ -24588,6 +24838,9 @@
       "bairitsu": "1〜2倍（要確認）"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://garden.baika.ac.jp/event/"
    }
   },
   {
@@ -25037,10 +25290,12 @@
    },
    "official_links": {
     "official_url": "https://www.hanazono.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.hanazono.ac.jp/admissions.html",
     "shingaku_url": null,
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.hanazono.ac.jp/admissions/overview.html",
+    "verified": true,
+    "schedule_url": "https://www.hanazono.ac.jp/admissions/admissions_schedule.html",
+    "verified_date": "2026-11-20"
    },
    "unique_point": "滋賀県南部から片道1時間弱で自宅通学できる福祉・心理・仏教系の小規模大学。「社会福祉士や保育士の資格を確実に取りたい」「京都で歴史や仏教を学びたい」人にとって、面接・小論文中心の入試で挑戦しやすい選択肢。",
    "region": "kyoto",
@@ -26938,10 +27193,12 @@
    },
    "official_links": {
     "official_url": "https://www.kufs.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.kufs.ac.jp/admissions/",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "schedule_url": "https://www.kufs.ac.jp/admissions/exam/schedule/",
+    "verified_date": "2026-11-20"
    },
    "unique_point": "滋賀から通える範囲で「英語以外の言語（スペイン語・中国語・フランス語など）を専攻として本格的に学べる」貴重な大学。エアライン・ホテル・旅行業界を目指すなら関西で有力な選択肢。",
    "region": "kyoto",
@@ -27008,6 +27265,9 @@
       "bairitsu": "1.5〜3倍（要確認）"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.kufs.ac.jp/admissions/event/opencampus/"
    }
   },
   {
@@ -27064,10 +27324,12 @@
    },
    "official_links": {
     "official_url": "https://www.kyoto-art.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.kyoto-art.ac.jp/art/",
     "shingaku_url": null,
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.kyoto-art.ac.jp/admission/pdf/guidebook_2027j.pdf",
+    "verified": true,
+    "schedule_url": "https://www.kyoto-art.ac.jp/admission/schedule/",
+    "verified_date": "2026-11-20"
    },
    "unique_point": "マンガ・アニメ・ゲーム・デザイン・映画など「好き」をそのまま学びにできる総合芸術大学で、滋賀県南部からギリギリ通学圏。体験授業型の総合型選抜なら、学力試験ではなく授業への取り組みで評価されるため、芸術系志望なら挑戦しやすい。",
    "region": "kyoto",
@@ -27135,6 +27397,9 @@
       "bairitsu": "1.5〜4倍（要確認）"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.kyoto-art.ac.jp/opencampus/"
    }
   },
   {
@@ -27191,10 +27456,12 @@
    },
    "official_links": {
     "official_url": "https://www.koka.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.koka.ac.jp/admission/",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "schedule_url": "https://www.koka.ac.jp/admission/exam/about.html",
+    "verified_date": "2026-11-20"
    },
    "unique_point": "阪急西京極駅から徒歩圏で、滋賀南部から通える京都の資格系大学。看護・管理栄養士・保育士・言語聴覚士など「手に職」の学びを、少人数の面倒見の良さで支えてくれる。偏差値のハードルは比較的低め。",
    "region": "kyoto",
@@ -27325,10 +27592,11 @@
    },
    "official_links": {
     "official_url": "https://www.kyoto-seika.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.kyoto-seika.ac.jp/admissions/index.html",
     "shingaku_url": null,
     "youkou_url": null,
-    "verified": false
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "unique_point": "「マンガやアニメ、イラストを本気で学びたい」なら関西で真っ先に名前が挙がる大学。滋賀南部からは乗換ありだが通学も可能で、実技が得意なら偏差値のハードルは高くない。",
    "region": "kyoto",
@@ -27396,6 +27664,9 @@
       "bairitsu": "1.5〜3倍（要確認）"
      }
     ]
+   },
+   "open_campus": {
+    "open_campus_url": "https://www.kyoto-seika.ac.jp/admissions/oc/"
    }
   },
   {
@@ -27711,10 +27982,11 @@
    },
    "official_links": {
     "official_url": "https://www.morinomiya-u.ac.jp/",
-    "nyushi_url": null,
+    "nyushi_url": "https://www.morinomiya-u.ac.jp/entrance/",
     "shingaku_url": null,
-    "youkou_url": null,
-    "verified": false
+    "youkou_url": "https://www.morinomiya-u.ac.jp/entrance/youkou.html",
+    "verified": true,
+    "verified_date": "2026-11-20"
    },
    "unique_point": "看護からリハビリ・検査・放射線・鍼灸まで、医療系国家資格の学科がワンキャンパスに揃う「医療系総合大学」。滋賀からは通学圏ギリギリだが、チーム医療を学びながら医療専門職を目指すなら関西で有力な選択肢。",
    "employment": {
@@ -27781,7 +28053,10 @@
      }
     ]
    },
-   "region": "osaka"
+   "region": "osaka",
+   "open_campus": {
+    "open_campus_url": "https://www.morinomiya-u.ac.jp/port/eventinfo/opc/"
+   }
   },
   {
    "id": "musashi",

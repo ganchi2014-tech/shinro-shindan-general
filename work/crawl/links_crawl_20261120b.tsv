@@ -1,0 +1,34 @@
+# 巡回スクリプト（crawler7）が公式サイトから拾ったリンク。人の目で明らかな外れ（お知らせ記事・大学院・Web出願など）を消したもの。
+# id	入試ページ	入試日程	募集要項	オープンキャンパス   （~ は入試ページと同じサイト）
+momoyama	https://www.andrew.ac.jp/nyushi/	~/nyushi/info/calendar.html	~/nyushi/info/application_request.html	~/event/open_campus/
+kansai-fukushi	https://www.fuksi-kagk-u.ac.jp/nyushi/nyugaku/	~/nyushi/nyugaku/date/index.html	~/nyushi/nyugaku/niv9hl0000000teh-att/exam_guide_2027.pdf	~/nyushi/opencampus/
+konan	https://ch.konan-u.ac.jp/admission/	~/admission/exam/	~/admission/application/	
+setsunan	https://www.setsunan.ac.jp/admission/	~/admission/faculty/information/detail/23	~/admission/faculty/requirements/	~/admission/oc/
+otemon	https://nyushi.otemon.ac.jp/	~/admission/calendar.html	~/guide/pr_guide.html	~/open_campus_2026/
+tezukayama	https://www.tezukayama-u.ac.jp/admission/		~/application/themes/admissions/admissions/pdf/2027ar.pdf	~/admission/event/
+otemae			https://www.otemae.ac.jp/jukensei-navi/admission/information-requirements2027/	
+osaka-keiho	https://www.keiho-u.ac.jp/admission/index.html	~/admission/guidance/schedule.html	~/admission/guidance/guidelines.html	https://keiho-oc.jp/
+oit	https://www.oit.ac.jp/admission/	~/admission/outline/schedule.html	~/admission/important-news/pdf/gakuseibosyu2027_20260820.pdf	
+osaka-dentsu	https://www.osakac.ac.jp/examinee/		~/examinee/admission/shutsugan/	
+kansai-gaidai				https://envision.kansaigaidai.ac.jp/opencampus/
+osaka-shodai	http://ouc.daishodai.ac.jp/future/		~/exam/support/application.html	~/oc_list/
+osaka-jinkagaku	https://www.ohs.ac.jp/admissions/	~/assets/pdf/admissions/schedule_2027_01.pdf	~/assets/pdf/admissions/ohs_youkou2027.pdf	~/opencampus/
+kyoto-univ	https://www.kyoto-u.ac.jp/ja/admissions		~/ja/admissions/undergrad/requirements	~/ja/admissions/about/open
+osaka-univ	https://www.osaka-u.ac.jp/ja/admissions			~/ja/admissions/yourOU/open_campus
+kyoto-furitsu	https://www.kpu.ac.jp/for-applicants/		~/admissions/exam/guide/	~/open-campus/
+kyoto-kosen	https://www.kit.ac.jp/test-taker_index/		~/test_index/school_news/undergraduate/	~/ouw-index/
+kyoto-kyoiku	https://www.kyokyo-u.ac.jp/admission/	~/admission/nittei/		~/weboc/
+kyoto-joshi	https://www.kyoto-wu.ac.jp/nyushi/index.html	~/nyushi/daigaku/schedule.html	~/nyushi/daigaku/grd7hl0000004upq-att/eotv8r000000097w.pdf	~/nyushi/events/index.html
+mukogawa-joshi	https://www.mukogawa-u.ac.jp/~nyushi/	~/~nyushi/exam		~/~nyushi/event/opencampus
+kobe-jogakuin	https://www.kobe-c.ac.jp/admissions/			~/admissions/events/open/
+yamato-univ	https://www.yamato-u.ac.jp/entrance/		~/entrance/exam/about/	~/entrance/event/oc/
+kyoto-yakka	https://www.kyoto-phu.ac.jp/admission/			~/admission/event/index.html
+kyoto-furitsu-ika	https://www.kpu-m.ac.jp/doc/examination/index.html		~/doc/examination/exam_gakubu/info.html	~/doc/opencampus/index.html
+hanazono	https://www.hanazono.ac.jp/admissions.html	~/admissions/admissions_schedule.html	~/admissions/overview.html	
+kyoto-gaidai	https://www.kufs.ac.jp/admissions/	~/admissions/exam/schedule/		~/admissions/event/opencampus/
+kyoto-geijutsu	https://www.kyoto-art.ac.jp/art/	~/admission/schedule/	~/admission/pdf/guidebook_2027j.pdf	~/opencampus/
+kyoto-koka	https://www.koka.ac.jp/admission/	~/admission/exam/about.html		
+kyoto-seika	https://www.kyoto-seika.ac.jp/admissions/index.html			~/admissions/oc/
+morinomiya-iryo	https://www.morinomiya-u.ac.jp/entrance/		~/entrance/youkou.html	~/port/eventinfo/opc/
+baika	https://www.baika.ac.jp/prospective/			https://garden.baika.ac.jp/event/
+asahi	https://nyuusi.asahi-u.ac.jp/		~/admission/download.html	~/opencampus/
