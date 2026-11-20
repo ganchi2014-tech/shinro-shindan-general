@@ -51,7 +51,12 @@
     if (!s.sub && here.replace(/\/$/, '') !== url.replace(/\/$/, '') && new URL(here).hostname.split('.').slice(-3).join('.') !== new URL(url).hostname.split('.').slice(-3).join('.')) {
       s.w = (s.w || 0) + 1;
       if (s.w >= 3) { r.err = 'load'; return next(); }
-      save(s); if (s.w === 1) location.href = url; return 'wait ' + id;
+      save(s); if (s.w === 2) location.href = url; return 'wait ' + id;
+    }
+    // 登録されていたURLが無くなっている（404）→ 大学のトップから探し直す
+    if (/404|not found|見つかりません|お探しのページ|存在しません/i.test(document.title + ' ' + ((document.querySelector('h1') || {}).textContent || '')) && !s.q[s.i][3]) {
+      const top = new URL(here).origin + '/';
+      s.q[s.i] = [id, top, 1, 1]; s.sub = 0; s.w = 0; r.gone = url; save(s); location.href = top; return 'gone ' + id;
     }
     if (step === 1 && !s.sub) {
       const adm = pick(document, here, ADM, /大学院|在学生|保護者|卒業生/);
@@ -88,7 +93,7 @@
   // 結果の読み出し: R('links') = 全校のリンクを1行ずつ / R('t',[id,…]) = 日程表の行
   window.R = function (kind, ids) {
     const s = st();
-    if (kind === 'links') return Object.entries(s.res).map(([id, r]) => [id, r.err || '', r.n || '', r.sch || '', r.yk || '', r.oc || '', (r.t || '').length].join('\t')).join('\n');
+    if (kind === 'links') return Object.entries(s.res).map(([id, r]) => [id, r.err || (r.gone ? 'gone' : ''), r.n || '', r.sch || '', r.yk || '', r.oc || '', (r.t || '').length].join('\t')).join('\n');
     return (ids || []).map((id) => '## ' + id + ' ' + ((s.res[id] || {}).sch || '') + '\n' + ((s.res[id] || {}).t || '')).join('\n');
   };
 })();
