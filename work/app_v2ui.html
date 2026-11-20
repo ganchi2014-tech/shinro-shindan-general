@@ -3050,6 +3050,10 @@ function buildView(r) {
     const strong = (it) => GUIDE.strongOpenJobs(uniByIdFast(it.uni_id), oc).length ? 1 : 0;
     ['match', 'challenge', 'safe'].forEach(k => { v.zones[k] = v.zones[k].map((it, i) => [it, i]).sort((a, b) => (strong(b[0]) - strong(a[0])) || (a[1] - b[1])).map(x => x[0]); });
   }
+  if (fc.length === 1 && fc[0] === 'IT' && !qc.length) {
+    const core = (it) => GUIDE.itCore(deptById(it.dept_id)) ? 1 : 0;
+    ['match', 'challenge', 'safe'].forEach(k => { v.zones[k] = v.zones[k].map((it, i) => [it, i]).sort((a, b) => (core(b[0]) - core(a[0])) || (a[1] - b[1])).map(x => x[0]); });
+  }
   v.other.sort(byFit);
   v.over.sort((a, b) => (hasQ(b) - hasQ(a)) || byFit(a, b));
   v.shown = v.zones.match.length + v.zones.challenge.length + v.zones.safe.length + v.ungrouped.length;
@@ -3181,14 +3185,36 @@ function fieldsCardHtml(r) {
     <p style="margin:8px 0 0;font-size:12px">どれもピンとこないときは、「条件を編集」から自分で分野を選び直せます。</p></div>`;
 }
 function pathwaysHtml(careerIds) {
-  const items = [...(careerIds || [])].map(id => ({ id, p: GUIDE.pathwayOf(id), open: GUIDE.OPEN_JOBS[id], o: getCareerOption(id) })).filter(x => (x.p || x.open) && x.o);
+  const items = [...(careerIds || [])].map(id => ({ id, p: GUIDE.pathwayOf(id), open: GUIDE.OPEN_JOBS[id], note: (GUIDE.FIELD_RULES[id] || {}).note, o: getCareerOption(id) })).filter(x => (x.p || x.open || x.note) && x.o);
   if (!items.length) return '';
   const tag = { senmon: '専門学校・短大の道あり', daigaku: '大学が基本', kosotsu: '高卒で受けられる採用あり' };
   return items.map(x => `<div class="path-item"><b>${x.o.icon} ${escapeHtml(x.o.label)}</b>` +
     (x.open ? `<span class="path-tag">${x.id === 'kyoin' ? '教科で学部を選ぶ' : '学部は問わない'}</span>` : '') +
+    (x.note && !x.open ? `<span class="path-tag">試験で決まる</span>` : '') +
     (x.p && !(x.open && x.p.route === 'daigaku') ? `<span class="path-tag">${tag[x.p.route]}</span>` : '') + `<br>` +
     (x.open ? escapeHtml(x.open.text) + (x.p && x.p.route !== 'daigaku' ? '<br>' : '') : '') +
-    (x.p && !(x.open && x.p.route === 'daigaku') ? escapeHtml(x.p.text) : '') + `</div>`).join('');
+    (x.p && !(x.open && x.p.route === 'daigaku') ? escapeHtml(x.p.text) : '') +
+    (x.note ? ((x.p || x.open) ? '<br>' : '') + escapeHtml(x.note) : '') + `</div>`).join('');
+}
+// 資格で決まる仕事を選んだ人に、同じ分野の「となりの仕事」を件数つきで見せる（押すとその仕事で出し直す）
+function neighborCardHtml() {
+  const groups = GUIDE.qualNeighbors(state.diag.careers);
+  if (!groups.length) return '';
+  const limit = COMMUTE_LIMIT[state.diag.commute] != null ? COMMUTE_LIMIT[state.diag.commute] : null;
+  const inReach = (d) => { const u = uniByIdFast(d.uni_id); return u && !u.boshu_teishi && GUIDE.commuteBucket(commuteMinOf(u, d), limit) === 'in'; };
+  const reach = (DATA_V2.departments || []).filter(inReach);
+  const body = groups.map(g => {
+    const btns = g.ids.map(id => {
+      const n = reach.filter(d => GUIDE.deptHasQual(d, id)).length;
+      const o = getCareerOption(id);
+      return (n && o) ? `<button class="btn btn-secondary" style="margin:4px 6px 0 0;padding:8px 12px;font-size:13px" data-pick-career="${id}">${o.icon} ${escapeHtml(o.label)}<small style="opacity:.75">（${n}学部）</small></button>` : '';
+    }).join('');
+    return btns ? `<p style="margin:10px 0 2px;font-size:13px"><strong>${escapeHtml(g.label)}</strong></p>${btns}` : '';
+  }).join('');
+  if (!body) return '';
+  return `<div class="guide-card"><h3>↔️ 近い仕事も見てみる</h3>
+    <p style="margin:0;font-size:13px">まだ決めきっていない人へ。押すと、その仕事の資格が取れる学部で出し直します（かっこの数は、${limit != null ? 'いまの通学の条件で通える' : '収録している'}学部の数。難しさの条件は入れていないので、出し直した結果はこれより少なくなることがあります）。</p>${body}
+    <p style="margin:8px 0 0;font-size:12px">元に戻すときは「条件を編集」から仕事を選び直せます。</p></div>`;
 }
 function pathwayCardHtml() {
   const h = pathwaysHtml(state.diag.careers);
@@ -3210,7 +3236,7 @@ function nextStepCardHtml() {
 }
 function guideCardsHtml(r) {
   if (!GUIDE) return '';
-  return fieldsCardHtml(r) + pathwayCardHtml() + nextStepCardHtml();
+  return fieldsCardHtml(r) + pathwayCardHtml() + neighborCardHtml() + nextStepCardHtml();
 }
 // Step3: 選んだ仕事の「道」をその場で出す
 function renderCareerPathNote() {
@@ -3226,6 +3252,14 @@ document.addEventListener('click', (e) => {
     state.diag.interests = new Set([pick.dataset.pickField]);
     renderInterestChips();
     runDiagnose(state.lastRiasec || []);
+    return;
+  }
+  const pc = e.target.closest('[data-pick-career]');
+  if (pc && pc.dataset.pickCareer) {
+    state.diag.careers = new Set([pc.dataset.pickCareer]);
+    if (typeof renderCareerChips === 'function') renderCareerChips();
+    runDiagnose(state.lastRiasec || []);
+    window.scrollTo(0, 0);
     return;
   }
   if (e.target.closest('[data-goto-riasec]')) go('diag-riasec');

@@ -19,3 +19,14 @@ nucb|K|一般推薦前期|出願 10/16〜11/2|試験 11/7・11/8|発表 12/1
 nucb|K|一般推薦後期|出願 12/1〜12/8|試験 12/13|発表 12/22
 nucb|I|一般入試前期A（3教科）|出願 1/4〜1/25|試験 2/2・2/3・2/4|発表 2/16
 nucb|L|https://www.nucba.ac.jp/admission/|https://www.nucba.ac.jp/admission/exam.html||
+# 愛知工業大: https://www.ait.ac.jp/examinee/nittei/ （2027年度 入試日程一覧）
+# 名古屋経済大: https://www.nagoya-ku.ac.jp/exam/schedule/ （2027年度 入試日程）
+ait|K|一般推薦|出願 11/1〜11/5|試験 11/14|発表 12/1
+ait|I|前期日程 A方式|出願 1/6〜1/19|試験 1/27・1/28|発表 2/10
+ait|I|後期日程 M方式|出願 2/16〜2/25|試験 3/4|発表 3/13
+ait|L|https://www.ait.ac.jp/examinee/|https://www.ait.ac.jp/examinee/nittei/||
+nagoya-keizai|S|総合型選抜（アピール入試）Ⅰ期|出願 9/18〜10/9|試験 10/17|発表 11/2
+nagoya-keizai|K|学校推薦型選抜（一般推薦入試）前期|出願 11/2〜11/9|試験 11/14|発表 12/1
+nagoya-keizai|I|一般選抜（一般入試）前期|出願 1/5〜1/22|試験 2/1・2/2|発表 2/12
+nagoya-keizai|I|一般選抜（一般入試）中期|出願 2/1〜2/15|試験 2/19|発表 2/26
+nagoya-keizai|L||https://www.nagoya-ku.ac.jp/exam/schedule/||

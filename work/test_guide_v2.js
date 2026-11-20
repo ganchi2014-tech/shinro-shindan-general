@@ -78,4 +78,25 @@ const tf2 = G.topFields({ R: 1, I: 1, A: 0, S: 0, E: 0, C: 0.3 }, rm, d.tags.int
 assert(['riko', 'nogaku'].includes(tf2.fields[0].id), '作る＋調べるが高い人は理工か農: ' + tf2.fields.map((x) => x.id));
 assert.deepStrictEqual(G.topFields({ R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 }, rm, d.tags.interest, 3).mine, [], '全部あてはまらないなら根拠なし');
 
+// --- となりの仕事（資格で決まる仕事の横移動） ---
+const nb = G.qualNeighbors(new Set(['kango']));
+assert.strictEqual(nb.length, 1, '看護師 → 医療の組だけ');
+assert(nb[0].ids.includes('pt_ot') && nb[0].ids.includes('yakuzai') && !nb[0].ids.includes('kango'), '自分が選んだ仕事は出さない');
+const nb2 = G.qualNeighbors(new Set(['hoiku']));
+assert.deepStrictEqual(nb2.map((g) => g.ids.join(',')), ['shogakkō,yōgo', 'shafuku'], '保育 → 子ども・教育と福祉。同じ仕事は二度出さない');
+assert.deepStrictEqual(G.qualNeighbors(new Set(['IT'])), [], '資格で決まらない仕事には出さない');
+assert.deepStrictEqual(G.qualNeighbors(new Set(['ishi'])), [], '医師には出さない（組に入れていない）');
+QUAL_IDS: for (const g of G.QUAL_GROUPS) for (const id of g.ids) assert(G.QUAL_RULES[id], 'となりの仕事は資格の決まりにあるid: ' + id);
+
+// --- IT は情報工学・理工系を先に、文系寄りの情報学部は後ろに（上段には残す） ---
+assert.strictEqual(G.itCore({ name: '情報理工学部' }), true);
+assert.strictEqual(G.itCore({ name: '工学部 情報工学科' }), true);
+assert.strictEqual(G.itCore({ name: '経営情報学部' }), false);
+assert.strictEqual(G.itCore({ name: '情報社会学部' }), false);
+assert(G.deptMatchesField({ name: '経営情報学部' }, 'IT'), '文系寄りの情報学部も上段には残る');
+
+// --- 試験で決まる仕事（会計・法律）と公務員の技術職の一言 ---
+assert(/国家試験/.test(G.FIELD_RULES.kaikei.note) && /司法試験/.test(G.FIELD_RULES['hōsō'].note));
+assert(/技術職/.test(G.OPEN_JOBS['kōmuin_ippan'].text) && /技術職/.test(G.OPEN_JOBS['kokka_kōmuin'].text));
+
 console.log('guide_v2: ALL OK');

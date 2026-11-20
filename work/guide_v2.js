@@ -28,6 +28,23 @@ const QUAL_RULES = {
   kenchiku:       { label: '建築士',                       re: /建築士/ },
 };
 
+// 資格で決まる仕事の「となりの仕事」。看護師と決めた生徒の邪魔はせず、決めきっていない生徒が同じ分野の中で横に動けるように、結果の下に札で出す
+const QUAL_GROUPS = [
+  { label: '同じ医療の中のほかの仕事',       ids: ['kango', 'hokenshi', 'pt_ot', 'gishi', 'yakuzai', 'eiyō', 'jūdōseifuku', 'yōgo'] },
+  { label: '子ども・教育に関わるほかの仕事', ids: ['shogakkō', 'hoiku', 'yōgo'] },
+  { label: '福祉に関わるほかの仕事',         ids: ['shafuku', 'hoiku'] },
+];
+// 選んだ資格の仕事 → [{label, ids:[となりの仕事...]}]（自分が選んだ仕事は除く。同じ仕事は最初に出た組だけに入れる）
+function qualNeighbors(careerIds) {
+  const mine = new Set(qualCareers(careerIds)), seen = new Set(), out = [];
+  for (const g of QUAL_GROUPS) {
+    if (!g.ids.some((id) => mine.has(id))) continue;
+    const ids = g.ids.filter((id) => !mine.has(id) && !seen.has(id));
+    ids.forEach((id) => seen.add(id));
+    if (ids.length) out.push({ label: g.label, ids });
+  }
+  return out;
+}
 function qualCareers(careerIds) {
   return [...(careerIds || [])].filter((id) => QUAL_RULES[id]);
 }
@@ -60,8 +77,10 @@ const FIELD_RULES = {
   doboku:          { label: '土木・まちづくり',   name: /土木|社会基盤|都市工|都市環境|都市科学|建築都市|建設|環境都市|社会環境工/, qual: /測量士|土木施工|技術士/ },
   'nōshoku':       { label: '食・農・バイオ',     name: /農|食|バイオ|生命|生物|水産|園芸/, ex: /食物栄養|管理栄養|人間生命|生命医科/, qual: /食品衛生|HACCP|フードスペシャリスト/, tags: ['nogaku'] },
   masucomi:        { label: 'マスコミ・広告',     name: /メディア|マスコミ|広告|コミュニケーション|社会学|文芸|放送|ジャーナリ/, qual: /社会調査士/ },
-  kaikei:          { label: '会計・税務',         name: /会計|商学|経営|商経|経済経営/, qual: /公認会計士|税理士|簿記/ },
-  'hōsō':          { label: '法律',               name: /(^|[^療])法学|法律|法政/, qual: /司法|法曹|弁護士|法科大学院/ },
+  kaikei:          { label: '会計・税務',         name: /会計|商学|経営|商経|経済経営/, qual: /公認会計士|税理士|簿記/,
+                     note: '公認会計士・税理士は国家試験に受かることが条件で、学部の指定はありません（税理士の税法の科目だけは、大学で社会科学の科目を1つ以上取るなどの条件があります）。商・経営・会計の学部は、授業が試験の科目と重なります。' },
+  'hōsō':          { label: '法律',               name: /(^|[^療])法学|法律|法政/, qual: /司法|法曹|弁護士|法科大学院/,
+                     note: '弁護士・検察官・裁判官は司法試験に受かることが条件です。大学のあと法科大学院（法学部以外からも進めます）を出るか、予備試験に受かると受験できます。法学部は、授業が試験の科目と重なります。' },
   kokusai:         { label: '語学・国際',         name: /外国語|国際|英語|英米|グローバル|中国語|言語/, qual: /通訳|国連英検/, tags: ['gaikokugo'] },
   'kankō':         { label: '観光・ホテル・航空', name: /観光|ホスピタリティ|国際|外国語|英語|グローバル/, qual: /旅行業務|観光|ホテル/ },
   shinri:          { label: '心理',               name: /心理/, qual: /公認心理師|認定心理士|臨床心理/ },
@@ -74,13 +93,19 @@ const OPEN_JOBS = {
   keisatsu:       { rating: 'keisatsu',     text: '警察官は採用試験で決まり、学部は問われません。法律・体育系の出身者が多めですが、どの学部からでも受けられます。' },
   'shōbō':        { rating: 'shōbō',        text: '消防士は採用試験で決まり、学部は問われません。救急救命士の資格も取りたい場合だけ、救急救命の学科が近道です。' },
   jieikan:        { rating: 'keisatsu',     text: '自衛官は採用試験で決まり、学部は問われません。' },
-  'kōmuin_ippan': { rating: 'kōmuin_ippan', text: '市役所・県庁などは採用試験で決まり、学部は問われません。法律・経済・政策系の学部は試験科目と授業が重なります。' },
-  'kokka_kōmuin': { rating: 'kōmuin_ippan', text: '国家公務員も採用試験で決まり、学部は問われません。法律・経済・政策系の学部は試験科目と授業が重なります。' },
+  'kōmuin_ippan': { rating: 'kōmuin_ippan', text: '市役所・県庁などの事務の仕事は採用試験で決まり、学部は問われません。法律・経済・政策系の学部は試験科目と授業が重なります。技術職（土木・建築・電気・化学・農学など）は試験の区分が別で、その分野の内容が出題されるので、その分野の学部が近道です。' },
+  'kokka_kōmuin': { rating: 'kōmuin_ippan', text: '国家公務員も採用試験で決まり、事務の仕事は学部を問われません。法律・経済・政策系の学部は試験科目と授業が重なります。技術職（土木・建築・電気・化学・農学など）は試験の区分が別で、その分野の内容が出題されるので、その分野の学部が近道です。' },
   'kigyō_ippan':  { rating: 'kigyō_ippan',  text: '一般企業の多くは学部を問いません。技術職だけは理工・情報系が条件になります。学部より、大学ごとの就職の実績を見る方が役に立ちます。' },
   'kinyū':        { rating: 'kigyō_ippan',  text: '銀行・保険なども学部を問いません。経済・経営・商・法の出身者が多めです。' },
   kyoin:          { rating: 'kyoin',        text: '中学・高校の先生の免許は多くの学部で取れますが、取れる教科は学部で決まります。教えたい教科から学部を選んでください（国語→文学、数学→理学・教育、保健体育→体育・スポーツ など）。' },
 };
 
+// IT・情報の仕事で先に並べる学部（情報工学・理工系）。文系寄りの情報学部（経営情報・社会情報など）も上段には残す＝SEの採用は文系からも多いため
+function itCore(dept) {
+  const n = (dept && dept.name) || '';
+  if (/経営情報|社会情報|情報社会|情報文化|現代社会|経営学部|文化情報/.test(n)) return false;
+  return /情報工|情報理工|情報科学|情報学部|コンピュータ|データサイエンス|知能|電子情報|システム工|工学部|理工/.test(n);
+}
 function fieldCareers(careerIds) { return [...(careerIds || [])].filter((id) => FIELD_RULES[id]); }
 function openCareers(careerIds) { return [...(careerIds || [])].filter((id) => OPEN_JOBS[id]); }
 function _quals(dept) { const q = dept && dept.qualifications; return Array.isArray(q) ? q : (typeof q === 'string' && q ? [q] : []); }
@@ -286,8 +311,8 @@ function topFields(profile, riasecMap, tags, n) {
 }
 
 module.exports = {
-  QUAL_RULES, qualCareers, deptHasQual, matchedQualLabels,
-  FIELD_RULES, OPEN_JOBS, fieldCareers, openCareers, deptMatchesField, matchedFieldLabels, strongOpenJobs,
+  QUAL_RULES, qualCareers, QUAL_GROUPS, qualNeighbors, deptHasQual, matchedQualLabels,
+  FIELD_RULES, OPEN_JOBS, fieldCareers, itCore, openCareers, deptMatchesField, matchedFieldLabels, strongOpenJobs,
   PATHWAYS, SENMON_MAIN_JOBS, pathwayOf,
   ORIGINS, originById, campusBase, commuteMin, commuteBucket, NEAR_MARGIN,
   TYPE_PHRASE, topFields,
