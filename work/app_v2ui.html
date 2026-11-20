@@ -4150,6 +4150,15 @@ function renderSameLevelPeers(dept, uni) {
     `<p class="detail-note">📌 ${myQuals.length ? `この学部と同じ資格（${_esc(myQuals.map(id => GUIDE.QUAL_RULES[id].label).slice(0, 2).join('・'))}）が取れて` : '学べる分野が近く'}、難易度がこの学部とほぼ同じ（偏差値の低いほうの数字で±2以内。国公立は実質難度+${kb}で比較）学部を、近い順に並べています。タップでその学部のページへ。<br>💡 併願 = 本命と同じ時期に、他の大学にも出願しておくこと。</p>`;
 }
 
+// 学部名には出ないが専攻として学べる分野（data の fields_extra。公式サイトで確かめた分だけ）
+function _fieldsExtraHtml(dept) {
+  const fx = dept && dept.fields_extra;
+  if (!fx || !GUIDE) return null;
+  const parts = Object.keys(fx).filter(k => GUIDE.FIELD_RULES[k]).map(k =>
+    `${_esc(GUIDE.FIELD_RULES[k].label)}（${_esc(fx[k].name)}）` + (fx[k].source_url ? ` <a href="${_esc(fx[k].source_url)}" target="_blank" rel="noopener">公式 ↗</a>` : ''));
+  return parts.length ? parts.join('、') : null;
+}
+
 // 学部固有情報のみ（倍率・キャンパス・資格・ゼミ・入試方式の可否・就職分野）
 function deptOnlyBody(dept, uni) {
   const h = dept.hensachi || {};
@@ -4218,6 +4227,7 @@ function deptOnlyBody(dept, uni) {
       _row('キャンパス', dept.campus ? _esc(dept.campus) : null),
       _row('学べる分野', _joinArr(itags)),
       _row('取得できる資格', _joinArr(dept.qualifications)),
+      _row('専攻として学べる', _fieldsExtraHtml(dept)),
       _row('この学部の就職分野', _joinArr(empf)),
     ]) +
     hensachiNote +
@@ -4247,6 +4257,7 @@ function detailBasicV2(dept, uni) {
       _row('キャンパス', _esc(dept.campus || uni.campus_main || '')),
       _row('学べる分野', _joinArr(itags)),
       _row('取得できる資格', _joinArr(dept.qualifications)),
+      _row('専攻として学べる', _fieldsExtraHtml(dept)),
       _row('ゼミ・研究', zemi ? _esc(zemi) : null),
     ]) +
     (uni.official_links && uni.official_links.official_url ? `<div class="detail-links">${_link(uni.official_links.official_url, '公式サイト')}</div>` : '');

@@ -1,0 +1,26 @@
+# Museが大学の公式サイトで確かめた「心理学を専攻・学科・コースとして学べる学部」（学部名に心理の字が無いもの）。 ^ は https:// の略。
+#  形: 大学id|P|学部名|専攻・学科・コースの名前|根拠のURL     候補57件のうち確かめられた23件（2026-11-20）
+#  注記: 京産大の心理学科は2027年4月に新設予定（公式資料に「仮称・設置構想中」）。大阪公立大・文は公式サイトの障害で未確認のため入れていない。神戸女学院・人間科学部は心理学部への改組で対象外。
+kindai|P|総合社会学部|心理系専攻|^www.kindai.ac.jp/sociology/about/undergraduate/efforts/
+kangaku|P|社会学部|社会心理学専攻|^www.kwansei.ac.jp/s_sociology/
+kangaku|P|文学部|総合心理科学科|^www.kwansei.ac.jp/s_humanities/d_ips/
+tenri|P|人文学部|心理学科|^www.tenri-u.ac.jp/en/academics/humanities/psychology/
+kyoto-sangyo|P|現代社会学部|心理学科|^www.kyoto-su.ac.jp/new_psy/
+kansai-univ|P|社会学部|社会学科 心理学専攻|^www.nyusi.kansai-u.ac.jp/pdf/admission/data/pamph/2027/fc_soc.pdf
+kansai-univ|P|文学部|総合人文学科 心理学専修|^www.nyusi.kansai-u.ac.jp/pdf/admission/data/pamph/2027/fc_let.pdf
+konan|P|文学部|人間科学科 心理学分野|^www.konan-u.ac.jp/faculty/letters/human/
+bukkyo|P|教育学部|臨床心理学科|^www.bukkyo-u.ac.jp/faculty/education/psychology/
+otemae|P|現代社会学部|心理学専攻|^www.otemae.ac.jp/jukensei-navi/faculty-social/
+ryutsu-kagaku|P|人間社会学部|心理社会学科 心理コース|^www.umds.ac.jp/academics/university-policy/u-diploma-policy2025/
+otani|P|文学部|哲学科 心理学・人間関係学コース|^www.otani.ac.jp/faculty/letters/philosophy/index.html
+osaka-kokusai|P|人間科学部|心理コミュニケーション学科|^www.oiu.ac.jp/gaiyo/policy.html
+shiga-univ|P|教育学部|教育心理実践専攻|^www.edu.shiga-u.ac.jp/faculty/composition/shinri/
+kyoto-univ|P|文学部|心理学専修|^www.bun.kyoto-u.ac.jp/department/division-behavioral/
+kobe-univ|P|文学部|心理学専修|^www.lit.kobe-u.ac.jp/undergrad/psychology.html
+kobe-univ|P|国際人間科学部|発達コミュニティ学科 心の探究プログラム|http://www.h.kobe-u.ac.jp/ja/organization_redirect/12
+kyoto-kyoiku|P|教育学部|教育学専攻 心理学コース|^www.kyokyo-u.ac.jp/weboc/gakubu/kyoiku.html
+nara-joshi|P|文学部|人間科学科 心理学コース|http://www.nara-wu.ac.jp/nwu/juken/ouen/let/index.html
+doshisha-joshi|P|現代社会学部|社会システム学科 心理・福祉コース|^www.dwc.doshisha.ac.jp/curriculum/social_system/
+yamato-univ|P|社会学部|社会学科 社会心理学コース|^www.yamato-u.ac.jp/entrance/faculty/sociology/
+osaka-otani|P|人間社会学部|心理・福祉学科 心理コース|^www.osaka-ohtani.ac.jp/department/human_societies/psychology/
+shitennoji|P|社会学部|社会学科 心理コース|^www.shitennoji.ac.jp/faculty/social/sociology/

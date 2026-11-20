@@ -99,4 +99,11 @@ assert(G.deptMatchesField({ name: '経営情報学部' }, 'IT'), '文系寄り�
 assert(/国家試験/.test(G.FIELD_RULES.kaikei.note) && /司法試験/.test(G.FIELD_RULES['hōsō'].note));
 assert(/技術職/.test(G.OPEN_JOBS['kōmuin_ippan'].text) && /技術職/.test(G.OPEN_JOBS['kokka_kōmuin'].text));
 
+// --- 学部名に言葉が無くても、専攻として学べると確かめた学部は拾う（心理） ---
+const kgBun = d.departments.find((x) => x.uni_id === 'kangaku' && x.name === '文学部');
+assert(kgBun && G.deptMatchesField(kgBun, 'shinri'), '関学 文学部（総合心理科学科）は心理で拾う');
+assert.deepStrictEqual(G.matchedFieldLabels(kgBun, new Set(['shinri'])), ['心理（総合心理科学科）'], 'どこで学べるかを添える');
+assert(!G.deptMatchesField(kgBun, 'IT'), '印は心理だけに効く');
+assert(d.departments.filter((x) => G.deptMatchesField(x, 'shinri')).length >= 70, '心理の当たりが増えている');
+
 console.log('guide_v2: ALL OK');

@@ -36191,7 +36191,14 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "心理系専攻",
+     "source_url": "https://www.kindai.ac.jp/sociology/about/undergraduate/efforts/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "kindai-riko",
@@ -37696,7 +37703,14 @@
     "kinyu"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "社会心理学専攻",
+     "source_url": "https://www.kwansei.ac.jp/s_sociology/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "kangaku-ho",
@@ -37882,7 +37896,14 @@
     "it"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "総合心理科学科",
+     "source_url": "https://www.kwansei.ac.jp/s_humanities/d_ips/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "kangaku-d01",
@@ -38611,7 +38632,14 @@
     "ryutsu"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "心理学科",
+     "source_url": "https://www.tenri-u.ac.jp/en/academics/humanities/psychology/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "tenri-kokusai",
@@ -39568,7 +39596,14 @@
     "service"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "心理学科・2027年4月に新設予定",
+     "source_url": "https://www.kyoto-su.ac.jp/new_psy/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "kyoto-sangyo-kokusaikankei",
@@ -46422,7 +46457,14 @@
     "ryutsu"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "社会学科 心理学専攻",
+     "source_url": "https://www.nyusi.kansai-u.ac.jp/pdf/admission/data/pamph/2027/fc_soc.pdf",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "kansai-univ-d01",
@@ -46545,7 +46587,14 @@
     "ryutsu"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "総合人文学科 心理学専修",
+     "source_url": "https://www.nyusi.kansai-u.ac.jp/pdf/admission/data/pamph/2027/fc_let.pdf",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "kansai-univ-d02",
@@ -47992,7 +48041,14 @@
     "service"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "人間科学科 心理学分野",
+     "source_url": "https://www.konan-u.ac.jp/faculty/letters/human/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "konan-d01",
@@ -48233,7 +48289,14 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "臨床心理学科",
+     "source_url": "https://www.bukkyo-u.ac.jp/faculty/education/psychology/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "bukkyo-shakai",
@@ -50685,7 +50748,14 @@
     "it"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "心理学専攻",
+     "source_url": "https://www.otemae.ac.jp/jukensei-navi/faculty-social/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "otemae-d01",
@@ -50989,7 +51059,14 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "心理社会学科 心理コース",
+     "source_url": "https://www.umds.ac.jp/academics/university-policy/u-diploma-policy2025/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "kobe-shinwa-kyoiku",
@@ -52477,7 +52554,14 @@
      "verified_date": "2026-07-13"
     }
    ],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "哲学科 心理学・人間関係学コース",
+     "source_url": "https://www.otani.ac.jp/faculty/letters/philosophy/index.html",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "otani-shakai",
@@ -54226,7 +54310,14 @@
     "sports_kenko"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "心理コミュニケーション学科",
+     "source_url": "https://www.oiu.ac.jp/gaiyo/policy.html",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "osaka-seikei-kyoiku",
@@ -61366,7 +61457,14 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "教育心理実践専攻",
+     "source_url": "https://www.edu.shiga-u.ac.jp/faculty/composition/shinri/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "shiga-univ-datascience",
@@ -61906,7 +62004,14 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "心理学専修",
+     "source_url": "https://www.bun.kyoto-u.ac.jp/department/division-behavioral/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "kyoto-univ-ho",
@@ -63303,7 +63408,14 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "心理学専修",
+     "source_url": "https://www.lit.kobe-u.ac.jp/undergrad/psychology.html",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "kobe-univ-d01",
@@ -63364,7 +63476,14 @@
     "media"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "発達コミュニティ学科 心の探究プログラム",
+     "source_url": "http://www.h.kobe-u.ac.jp/ja/organization_redirect/12",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "kobe-univ-ri",
@@ -64866,7 +64985,14 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "教育学専攻 心理学コース",
+     "source_url": "https://www.kyokyo-u.ac.jp/weboc/gakubu/kyoiku.html",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "wakayama-univ-kyoiku",
@@ -65234,7 +65360,14 @@
     "service"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "人間科学科 心理学コース",
+     "source_url": "http://www.nara-wu.ac.jp/nwu/juken/ouen/let/index.html",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "nara-joshi-ri",
@@ -66010,7 +66143,14 @@
     "kinyu"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "社会システム学科 心理・福祉コース",
+     "source_url": "https://www.dwc.doshisha.ac.jp/curriculum/social_system/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "doshisha-joshi-d02",
@@ -67493,7 +67633,14 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "verified"
+   "data_status": "verified",
+   "fields_extra": {
+    "shinri": {
+     "name": "社会学科 社会心理学コース",
+     "source_url": "https://www.yamato-u.ac.jp/entrance/faculty/sociology/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "yamato-univ-joho",
@@ -88184,7 +88331,14 @@
     "service"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "fields_extra": {
+    "shinri": {
+     "name": "心理・福祉学科 心理コース",
+     "source_url": "https://www.osaka-ohtani.ac.jp/department/human_societies/psychology/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "osaka-shoin-kokubun",
@@ -89537,7 +89691,14 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "fields_extra": {
+    "shinri": {
+     "name": "社会学科 心理コース",
+     "source_url": "https://www.shitennoji.ac.jp/faculty/social/sociology/",
+     "checked": "2026-11-20"
+    }
+   }
   },
   {
    "dept_id": "shitennoji-keiei",

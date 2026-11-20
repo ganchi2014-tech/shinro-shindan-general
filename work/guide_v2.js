@@ -117,10 +117,16 @@ function deptMatchesField(dept, careerId) {
   if (r.name && r.name.test(name) && !(r.ex && r.ex.test(name))) return true;
   if (r.qual && _quals(dept).some((s) => typeof s === 'string' && r.qual.test(s))) return true;
   if (r.tags && (dept.interest_tags || []).some((t) => r.tags.includes(t))) return true;
+  if (fieldExtra(dept, careerId)) return true;   // 学部名に言葉は無いが、専攻として学べると公式で確かめた学部（data の fields_extra）
   return false;
 }
+function fieldExtra(dept, careerId) { return (dept && dept.fields_extra && dept.fields_extra[careerId]) || null; }
+// ラベル。専攻として学べる印で当たった学部は「心理（総合心理科学科）」のように、どこで学べるかを添える
 function matchedFieldLabels(dept, careerIds) {
-  return fieldCareers(careerIds).filter((id) => deptMatchesField(dept, id)).map((id) => FIELD_RULES[id].label);
+  return fieldCareers(careerIds).filter((id) => deptMatchesField(dept, id)).map((id) => {
+    const ex = fieldExtra(dept, id);
+    return FIELD_RULES[id].label + (ex ? '（' + ex.name + '）' : '');
+  });
 }
 // 学部を問わない仕事について、その大学の就職の強み（4以上）に当たるラベル
 function strongOpenJobs(uni, careerIds) {
