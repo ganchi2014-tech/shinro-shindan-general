@@ -1537,6 +1537,18 @@ main {
   color: var(--text-dim); background: var(--card); border-radius: 8px;
 }
 .zone-block { margin-top: 22px; }
+.origin-row { display: flex; align-items: center; gap: 10px; margin: 10px 0 0; font-size: 14px; font-weight: 600; }
+.origin-row select { flex: 1; min-width: 0; padding: 10px; font-size: 15px; border-radius: 10px; border: 1px solid var(--border-hi); background: var(--card); color: var(--text); }
+.guide-card { margin: 12px 0 0; padding: 12px 14px; border-radius: 12px; background: var(--card); border: 1px solid var(--border-hi); font-size: 13px; line-height: 1.7; color: var(--text-dim); }
+.guide-card h3 { margin: 0 0 6px; font-size: 15px; color: var(--text); }
+.guide-card ol, .guide-card ul { margin: 6px 0 0; padding-left: 20px; }
+.guide-card li { margin: 4px 0; }
+.field-pick { display: block; width: 100%; text-align: left; margin: 8px 0 0; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--primary); background: var(--primary-soft); color: var(--text); font-size: 14px; cursor: pointer; }
+.field-pick small { display: block; margin-top: 2px; font-size: 12px; color: var(--text-dim); font-weight: 400; }
+.path-item { margin: 8px 0 0; padding: 8px 10px; border-left: 3px solid var(--accent); background: rgba(245,158,11,0.08); border-radius: 4px; }
+.path-item b { color: var(--text); }
+.path-tag { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px; font-size: 11px; background: var(--accent); color: #1a1a1a; font-weight: 700; }
+.qual-head { margin: 18px 0 0; padding: 10px 12px; border-radius: 10px; background: var(--primary-soft); border-left: 3px solid var(--primary); font-size: 13px; line-height: 1.7; color: var(--text); }
 .zone-title {
   font-size: 17px; margin: 0 0 2px; display: flex; align-items: center; gap: 8px;
 }
@@ -2040,6 +2052,244 @@ function aggregateByUni(result) {
 module.exports = { aggregateZone, aggregateByUni };
 
 ;window.AGG_V2=module.exports;})();</script>
+<script>(function(){var module={exports:{}};var exports=module.exports;
+// guide_v2: 生徒に「届く」ための補助ロジック（純モジュール、依存なし）
+//  1) 仕事 → その仕事に必要な資格が取れる学部かどうかの判定
+//  2) 仕事 → 大学以外の道（専門学校・短大・高卒採用）の案内。学校別には分けない（種類別のみ）
+//  3) 出発駅 → 大学（学部のキャンパス）までの通学時間の目安
+//  4) 適性チェックの回答 → 向いていそうな分野（根拠つき）
+// 採点エンジン(engine_v2)には手を入れない。結果の「見せ方」だけをここで決める。
+
+// ------------------------------------------------------------
+// 1) 資格で分ける
+// ------------------------------------------------------------
+// 資格が決め手になる仕事だけを対象にする（一般企業・公務員・マスコミ等は対象外）。
+// 中高教員は取れる学部が多すぎて絞りにならないので対象外。
+const QUAL_RULES = {
+  kango:          { label: '看護師',                       re: /看護師/ },
+  hokenshi:       { label: '保健師・助産師',               re: /保健師|助産師/ },
+  pt_ot:          { label: '理学療法士・作業療法士・言語聴覚士', re: /理学療法士|作業療法士|言語聴覚士/ },
+  gishi:          { label: '診療放射線技師・臨床検査技師', re: /放射線技師|臨床検査技師/ },
+  'jūdōseifuku':  { label: '柔道整復師',                   re: /柔道整復師/ },
+  'eiyō':         { label: '管理栄養士',                   re: /管理栄養士/ },
+  yakuzai:        { label: '薬剤師',                       re: /薬剤師/ },
+  shafuku:        { label: '社会福祉士',                   re: /社会福祉士/ },
+  ishi:           { label: '医師',                         re: /(^|[^科獣])医師/ },
+  shika_ishi:     { label: '歯科医師',                     re: /歯科医師/ },
+  'jūi':          { label: '獣医師',                       re: /獣医師/ },
+  'shogakkō':     { label: '小学校の先生の免許',           re: /小学校/ },
+  hoiku:          { label: '保育士・幼稚園の先生の資格',   re: /保育士|幼稚園/ },
+  'yōgo':         { label: '養護教諭（保健室の先生）の免許', re: /養護教諭/ },
+  kenchiku:       { label: '建築士',                       re: /建築士/ },
+};
+
+function qualCareers(careerIds) {
+  return [...(careerIds || [])].filter((id) => QUAL_RULES[id]);
+}
+
+// dept がその仕事の資格を取れるか（資格欄の表記ゆれは正規表現で吸収）
+function deptHasQual(dept, careerId) {
+  const rule = QUAL_RULES[careerId];
+  if (!rule || !dept) return false;
+  const q = dept.qualifications;
+  const list = Array.isArray(q) ? q : (typeof q === 'string' && q ? [q] : []);
+  return list.some((s) => typeof s === 'string' && rule.re.test(s));
+}
+
+// 選んだ仕事のうち、この学部で資格が取れるもののラベル配列（空なら「取れると確認できない」）
+function matchedQualLabels(dept, careerIds) {
+  return qualCareers(careerIds).filter((id) => deptHasQual(dept, id)).map((id) => QUAL_RULES[id].label);
+}
+
+// ------------------------------------------------------------
+// 2) 大学以外の道（種類別の案内。個別の学校名は持たない）
+// ------------------------------------------------------------
+// route: 'senmon'   = 専門学校・短大が主な道のひとつ
+//        'daigaku'  = 大学でしか取れない
+//        'kosotsu'  = 高卒で受けられる採用試験がある
+// 年数・受験資格は国家資格の養成課程の一般的な枠組み。細部は学校・年度で違うので必ず進路指導室で確認。
+const PATHWAYS = {
+  kango:         { route: 'senmon',  text: '看護の専門学校（3年）でも看護師の国家試験を受けられます。大学（4年）は保健師などもあわせて目指せる学校があります。' },
+  hokenshi:      { route: 'daigaku', text: '保健師・助産師は、看護師の資格に加えて専用の課程が必要です。大学（4年）で選抜される形か、看護師になってから1年以上の課程に進む形が一般的です。' },
+  pt_ot:         { route: 'senmon',  text: 'リハビリの専門学校（3年または4年）でも国家試験を受けられます。大学は4年です。' },
+  gishi:         { route: 'senmon',  text: '放射線技師・臨床検査技師は、専門学校（3年以上）でも国家試験を受けられます。' },
+  'jūdōseifuku': { route: 'senmon',  text: '柔道整復師は専門学校（3年）が主な道です。大学で取れる所は少数です。' },
+  'eiyō':        { route: 'senmon',  text: '管理栄養士は4年制の養成課程（大学・一部の専門学校）が近道です。短大・専門学校（2年）で栄養士になり、働いてから管理栄養士の試験を受ける道もあります。' },
+  yakuzai:       { route: 'daigaku', text: '薬剤師は大学の薬学部（6年制）でしか目指せません。' },
+  ishi:          { route: 'daigaku', text: '医師は大学の医学部（6年）でしか目指せません。' },
+  shika_ishi:    { route: 'daigaku', text: '歯科医師は大学の歯学部（6年）でしか目指せません。' },
+  'jūi':         { route: 'daigaku', text: '獣医師は大学の獣医学系の学部（6年）でしか目指せません。' },
+  shafuku:       { route: 'daigaku', text: '社会福祉士は福祉系の大学（4年）が最短です。短大・専門学校からは、卒業後に働く期間が必要になります。' },
+  'shogakkō':    { route: 'daigaku', text: '小学校の先生の免許は大学（一種）が基本です。短大で取れる免許（二種）もあります。' },
+  kyoin:         { route: 'daigaku', text: '中学・高校の先生の免許は大学で取ります（高校は大学のみ）。取れる教科は学部で決まるので、教えたい教科から学部を選びます。' },
+  hoiku:         { route: 'senmon',  text: '短大・専門学校（2年）でも保育士の資格と幼稚園の免許（二種）が取れます。大学（4年）は幼稚園の免許が一種になります。' },
+  'yōgo':        { route: 'daigaku', text: '養護教諭の免許は大学（一種）が基本です。短大で取れる免許（二種）や、看護師・保健師から目指す道もあります。' },
+  'shōbō':       { route: 'kosotsu', text: '消防士は市町などの採用試験で、高卒で受けられる枠があります。救急救命士は専門学校（2〜3年）や大学で国家試験の受験資格を取る道と、消防に入ってから取る道があります。' },
+  keisatsu:      { route: 'kosotsu', text: '警察官は採用試験で、高卒で受けられる枠があります。大卒の枠もあります。' },
+  jieikan:       { route: 'kosotsu', text: '自衛官は高卒で受けられる採用があります。大卒向けの幹部候補生の道もあります。' },
+  'kōmuin_ippan':{ route: 'kosotsu', text: '市役所・県庁などは高卒で受けられる枠（初級）があります。公務員試験の対策をする専門学校（1〜2年）から受ける人もいます。' },
+  kenchiku:      { route: 'senmon',  text: '建築の専門学校（2年〜）でも二級建築士の試験を受けられます。一級建築士は、大学や専門学校で指定の科目を修めてから目指します。' },
+  IT:            { route: 'senmon',  text: 'IT系は資格が必須ではありません。専門学校（2〜4年）から就職する道もあります。' },
+  design:        { route: 'senmon',  text: 'デザイン系は資格が必須ではありません。専門学校（2〜3年）で作品づくりを中心に学ぶ道もあります。' },
+  'kankō':       { route: 'senmon',  text: '観光・ホテル・エアライン系は、専門学校（2年）から就職する道もあります。' },
+  AT:            { route: 'senmon',  text: 'トレーナー系は、専門学校（2〜3年）で学ぶ道もあります。体を治療する資格（柔道整復師・理学療法士など）と組み合わせる人も多い分野です。' },
+};
+
+// 仕事の一覧に無いが、専門学校が主な道になる仕事（ホームの案内用）
+const SENMON_MAIN_JOBS = ['美容師・理容師', '調理師・パティシエ', '自動車整備士', '歯科衛生士', '介護福祉士', '動物看護・トリマー', 'ゲーム・アニメ・声優', '医療事務'];
+
+function pathwayOf(careerId) { return PATHWAYS[careerId] || null; }
+
+// ------------------------------------------------------------
+// 3) 通学時間（出発駅から）
+// ------------------------------------------------------------
+// 駅から駅の所要時間は JR 新快速の時刻表（京都→長浜、2026年秋ダイヤ）から。
+// pos = 京都駅からの分数（琵琶湖線）。乗り換えの待ち時間は入っていない＝あくまで目安。
+// 堅田・貴生川は琵琶湖線の外なので概算（approx: true）。
+const ORIGINS = [
+  { id: 'otsu',        label: '大津・膳所・石山',         toKyoto: 9,  toMaibara: 44, pos: 9 },
+  { id: 'kusatsu',     label: '草津・南草津・守山・栗東', toKyoto: 20, toMaibara: 33, pos: 20 },
+  { id: 'omihachiman', label: '近江八幡・野洲・能登川',   toKyoto: 34, toMaibara: 19, pos: 34 },
+  { id: 'hikone',      label: '彦根・米原',               toKyoto: 48, toMaibara: 5,  pos: 48 },
+  { id: 'nagahama',    label: '長浜',                     toKyoto: 65, toMaibara: 12, pos: 65 },
+  { id: 'katata',      label: '堅田・湖西線ぞい',         toKyoto: 22, toMaibara: 70, pos: null, kosei: true, approx: true },
+  { id: 'kibukawa',    label: '貴生川・甲賀・水口',       toKyoto: 50, toMaibara: 62, pos: 20, extra: 30, approx: true },
+];
+function originById(id) { return ORIGINS.find((o) => o.id === id) || null; }
+
+// 県内キャンパス: 琵琶湖線上の位置(pos)＋駅からの時間(last)。kosei は湖西線側（fromKyoto=京都駅から）。
+// キャンパス名（学部の campus 欄）か大学名で引く。数字は駅からのバス・徒歩を含む概算。
+const SHIGA_CAMPUS = [
+  { key: /びわこ・くさつ|BKC/,        pos: 17, last: 20 },                 // 立命館BKC: 南草津＋バス
+  { key: /瀬田キャンパス|瀬田大江/,   pos: 16, last: 15 },                 // 龍谷 瀬田: 瀬田＋バス
+  { key: /彦根キャンパス（滋賀県彦根市馬場）|滋賀大学.*彦根/, pos: 48, last: 15 }, // 滋賀大 彦根
+  { key: /大津キャンパス（滋賀県大津市平津）/, pos: 13, last: 20 },       // 滋賀大 教育: 石山＋バス
+];
+const SHIGA_UNI = {
+  '滋賀大学':                         { pos: 48, last: 15 },
+  '滋賀県立大学':                     { pos: 45, last: 15 },               // 南彦根＋バス
+  '滋賀医科大学':                     { pos: 16, last: 15 },               // 瀬田＋バス
+  '長浜バイオ大学':                   { pos: 61, last: 3 },                // 田村
+  '聖泉大学':                         { pos: 43, last: 15 },               // 稲枝方面
+  'びわこ学院大学':                   { pos: 34, last: 30 },               // 近江八幡→近江鉄道
+  'びわこリハビリテーション専門職大学': { pos: 34, last: 35 },             // 近江八幡→近江鉄道 八日市
+  'びわこ成蹊スポーツ大学':           { kosei: true, fromKyoto: 38, fromKatata: 12, last: 5 }, // 比良
+  '成安造形大学':                     { kosei: true, fromKyoto: 18, fromKatata: 5,  last: 10 }, // おごと温泉＋バス
+};
+// 県外だが学部でキャンパスが分かれる大学（京都駅からの分数）
+const KYOTO_CAMPUS = [
+  { key: /いばらき|OIC/,   min: 30 },   // 立命館OIC
+  { key: /衣笠/,           min: 45 },   // 立命館 衣笠
+  { key: /深草/,           min: 15 },   // 龍谷 深草
+  { key: /今出川/,         min: 15 },   // 同志社・同志社女子 今出川
+  { key: /京田辺/,         min: 50 },   // 同志社・同志社女子 京田辺
+];
+
+function _noteOrigin(note) {
+  const n = note || '';
+  if (/米原/.test(n)) return 'maibara';
+  if (/大津/.test(n)) return 'otsu';
+  if (/草津/.test(n)) return 'kusatsu';
+  return 'unknown';
+}
+
+// 大学（＋学部キャンパス）の「拠点からの分数」を求める
+//  戻り値: { hub:'shiga', ... } | { hub:'kyoto', min } | { hub:'maibara', min } | null（通学の対象外）
+function campusBase(uni, dept) {
+  if (!uni) return null;
+  const campus = (dept && dept.campus) || '';
+  for (const c of SHIGA_CAMPUS) if (c.key.test(campus)) return { hub: 'shiga', pos: c.pos, last: c.last };
+  for (const c of KYOTO_CAMPUS) if (c.key.test(campus)) return { hub: 'kyoto', min: c.min };
+  if (SHIGA_UNI[uni.name] && uni.name !== '滋賀大学') return Object.assign({ hub: 'shiga' }, SHIGA_UNI[uni.name]);
+  if (uni.name === '滋賀大学') return Object.assign({ hub: 'shiga' }, SHIGA_UNI['滋賀大学']);
+  const acc = uni.access_from_shiga_min;
+  if (acc == null) return null;
+  const org = _noteOrigin(uni.commute_note);
+  const WEST = ['kyoto', 'osaka', 'hyogo', 'nara-wakayama', 'shiga'];
+  if (WEST.includes(uni.region)) {
+    // 既存の「滋賀から○分」は起点が大学ごとに違う（大津/草津/不明）。起点ぶんを引いて京都駅からに直す
+    const off = org === 'otsu' ? 9 : org === 'kusatsu' ? 20 : 15;
+    return { hub: 'kyoto', min: Math.max(5, acc - off) };
+  }
+  if (uni.region === 'tokai') {
+    const off = org === 'otsu' ? 44 : org === 'kusatsu' ? 33 : 0; // 米原起点・不明はそのまま米原からとみなす
+    return { hub: 'maibara', min: Math.max(5, acc - off) };
+  }
+  return null; // 関東・その他は通学の対象外
+}
+
+// 出発駅からの片道の目安（分）。originId が無いときは既存の「滋賀から○分」をそのまま返す
+function commuteMin(uni, dept, originId) {
+  if (!uni) return null;
+  const o = originById(originId);
+  if (!o) return uni.access_from_shiga_min != null ? uni.access_from_shiga_min : null;
+  const b = campusBase(uni, dept);
+  if (!b) return null;
+  if (b.hub === 'kyoto') return o.toKyoto + b.min;
+  if (b.hub === 'maibara') return o.toMaibara + b.min;
+  // 県内
+  if (b.kosei) {
+    if (o.kosei) return b.fromKatata + b.last;
+    return o.toKyoto + b.fromKyoto - 5 + b.last;              // 山科で乗り換え（京都まで行かない分 -5、待ち +5 で相殺）
+  }
+  if (o.kosei) return 17 + 5 + Math.max(0, b.pos - 5) + b.last; // 堅田→山科17分＋乗り換え＋山科から
+  return Math.abs(o.pos - b.pos) + (o.extra || 0) + b.last;
+}
+
+// 通学の上限に対する区分: 'in'（上限内） / 'near'（少し超える） / 'far'（大きく超える・対象外）
+const NEAR_MARGIN = 20;
+function commuteBucket(min, limit) {
+  if (limit == null) return 'in';
+  if (min == null) return 'far';
+  if (min <= limit) return 'in';
+  if (min <= limit + NEAR_MARGIN) return 'near';
+  return 'far';
+}
+
+// ------------------------------------------------------------
+// 4) 向いていそうな分野（適性チェックの回答から）
+// ------------------------------------------------------------
+const TYPE_PHRASE = {
+  R: '手や体を動かして作る・現場で動く',
+  I: '仕組みを調べる・理由を考える',
+  A: '表現する・自由な発想で作る',
+  S: '人に教える・人を助ける',
+  E: '人をまとめる・目標に挑む',
+  C: '正確に整理する・こつこつ進める',
+};
+const TYPES = ['R', 'I', 'A', 'S', 'E', 'C'];
+
+// profile: {R..C: 0〜1}, riasecMap: {tag:{R..C}}, tags: [{id,label}]
+// 戻り値: { mine:[あなたが高く答えたこと…], fields:[{ id, label, score(0-1), overlap:[重なる点…], core:[この分野の中心…] }] }
+//  根拠を見せるため、「あなたの答え（上位）」と「分野の中心」と「その重なり」を分けて返す
+function topFields(profile, riasecMap, tags, n) {
+  const mineTypes = TYPES.filter((k) => (profile[k] || 0) > 0).sort((a, b) => (profile[b] || 0) - (profile[a] || 0)).slice(0, 3);
+  const fields = [];
+  for (const t of tags || []) {
+    const w = riasecMap && riasecMap[t.id];
+    if (!w) continue;
+    const sum = TYPES.reduce((s, k) => s + (w[k] || 0), 0);
+    if (!sum) continue;
+    const score = TYPES.reduce((s, k) => s + (profile[k] || 0) * (w[k] || 0), 0) / sum;
+    const coreTypes = TYPES.slice().sort((a, b) => (w[b] || 0) - (w[a] || 0)).slice(0, 2);
+    fields.push({
+      id: t.id, label: t.label, score,
+      core: coreTypes.map((k) => TYPE_PHRASE[k]),
+      overlap: coreTypes.filter((k) => mineTypes.includes(k)).map((k) => TYPE_PHRASE[k]),
+    });
+  }
+  fields.sort((a, b) => b.score - a.score);
+  return { mine: mineTypes.map((k) => TYPE_PHRASE[k]), fields: fields.slice(0, n || 3) };
+}
+
+module.exports = {
+  QUAL_RULES, qualCareers, deptHasQual, matchedQualLabels,
+  PATHWAYS, SENMON_MAIN_JOBS, pathwayOf,
+  ORIGINS, originById, campusBase, commuteMin, commuteBucket, NEAR_MARGIN,
+  TYPE_PHRASE, topFields,
+};
+
+;window.GUIDE_V2=module.exports;})();</script>
 
 </head>
 <body>
@@ -2082,19 +2332,25 @@ module.exports = { aggregateZone, aggregateByUni };
           <strong style="color:var(--danger)">⚠️ データは「目安」です</strong><br />
           <span style="font-size:12px;line-height:1.6">
             • 偏差値・倍率・評定基準・共テ得点率は<strong>推定値・過去の参考パターン</strong>を含みます<br />
-            • <strong>現高3生</strong> は来春の <strong>2027年度入試</strong> を受験。日程・条件は <strong>毎年9月頃に公式発表</strong><br />
+            • <strong>今の高2生</strong> が受けるのは <strong>2028年度入試</strong>（2028年4月入学）。このアプリの偏差値・倍率・日程は<strong>それより前の年度の実績</strong>です。正式な日程・条件は<strong>高3の夏〜秋に公式発表</strong><br />
             • 出願前は必ず <strong>各大学の最新募集要項</strong> と <strong>担任・進路指導室</strong> で確認してください
           </span>
         </div>
         <div class="warning-banner" style="margin-top:8px">
-          📅 <strong>このアプリは「2026年7月版」です（2027年3月末まで有効の目安）</strong><br />
-          <span style="font-size:12px;line-height:1.6">それ以降は入試情報が古くなるため、<strong>新しい版を先生からもらってください</strong>。友だちから転送されたファイルは古い版の可能性があります。</span>
+          📅 <strong>大学のデータは2026年7月時点です（画面は2026年12月に更新）</strong><br />
+          <span style="font-size:12px;line-height:1.6">2027年の夏以降は入試情報が古くなるため、<strong>新しい版を先生からもらってください</strong>。友だちから転送されたファイルは古い版の可能性があります。</span>
         </div>
       </div>
-      <div class="info-card" style="margin-bottom:12px;text-align:left;padding:14px 16px">
-        <strong style="font-size:14px">🛤️ 専門学校・短大・就職・公務員（高卒）を考えている人へ</strong>
-        <p style="margin:6px 0 0;font-size:12px;color:var(--text-dim);line-height:1.6">このアプリは<strong>大学進学向け</strong>です。専門学校（資格・分野で選ぶのが基本）・短大・就職・公務員高卒枠も立派な進路です。迷っている人は<strong>担任・進路指導室</strong>に相談してください。</p>
-      </div>
+      <details class="info-card" style="margin-bottom:12px;text-align:left;padding:14px 16px">
+        <summary style="font-size:14px;font-weight:600;cursor:pointer">🛤️ 専門学校・短大・就職も考えている人へ</summary>
+        <div style="margin-top:8px;font-size:12px;color:var(--text-dim);line-height:1.7">
+          • このアプリが探せるのは<strong>大学</strong>です。ただし診断の<strong>「将来つきたい仕事」で仕事を選ぶと、その仕事に専門学校・短大・高卒採用の道があるかをその場で表示</strong>します（個別の学校名は載せていません）<br />
+          • <strong>専門学校が主な道になる仕事の例</strong>: <span id="senmonJobs"></span><br />
+          • <strong>専門学校の学費の目安</strong>: 初年度 約130万円（東京都の私立・昼間部の平均、令和7年度。分野や地域で差があります）。2年制が多く、医療系は3〜4年<br />
+          • 国の<strong>修学支援新制度</strong>（授業料減免＋返さなくてよい奨学金）は、対象になっている専門学校・短大でも使えます<br />
+          • <strong>就職・公務員（高卒）</strong>は、学校に届く求人票と採用試験の日程が出発点です。<strong>担任・進路指導室</strong>で確認してください
+        </div>
+      </details>
       <details class="info-card" style="margin-bottom:12px;text-align:left;padding:14px 16px">
         <summary style="font-size:14px;font-weight:600;cursor:pointer">💰 お金の基礎知識（学費が心配な人は開く）</summary>
         <div style="margin-top:8px;font-size:12px;color:var(--text-dim);line-height:1.7">
@@ -2187,8 +2443,9 @@ module.exports = { aggregateZone, aggregateByUni };
     <section class="screen" data-screen="diag-2" hidden>
       <div class="step-indicator">Step 3 / 7</div>
       <h2 class="step-title">将来つきたい仕事は？</h2>
-      <p class="step-sub">複数選択可。その仕事につながる学部を優先します。<strong>まだ決まっていない人は選ばずに「次へ」でOK</strong>（次の「興味のある分野」だけでも診断できます）。</p>
+      <p class="step-sub">複数選択可。資格が必要な仕事は<strong>「その資格が取れる学部」を先に</strong>表示します。<strong>まだ決まっていない人は選ばずに「次へ」でOK</strong>（最後の12問のチェックから、向いていそうな分野を出します）。</p>
       <div id="careerChips" class="career-chip-categories"></div>
+      <div id="careerPathNote"></div>
       <div class="nav-row">
         <button class="secondary-btn" data-back="diag-hensachi">← 戻る</button>
         <button class="primary-btn" data-go="diag-area">次へ →</button>
@@ -2198,11 +2455,11 @@ module.exports = { aggregateZone, aggregateByUni };
     <!-- ============================ DIAGNOSTIC: STEP 4 就職希望地域（NEW） ============================ -->
     <section class="screen" data-screen="diag-area" hidden>
       <div class="step-indicator">Step 4 / 7</div>
-      <h2 class="step-title">将来の就職希望地域は？</h2>
-      <p class="step-sub">選んだ地域の大学が<strong>上位に来やすくなります（加点）</strong>。他の地域の大学も<strong>除外せずすべて表示</strong>するので、県外に進学して地元に戻るルートもそのまま探せます。</p>
+      <h2 class="step-title">卒業したあと、どこで働きたい？</h2>
+      <p class="step-sub"><strong>大学の場所を選ぶ質問ではありません</strong>（通学は次の次の画面で聞きます）。選んだ地域の大学が<strong>上位に来やすくなります</strong>。他の地域の大学も<strong>除外せずすべて表示</strong>するので、県外に進学して地元に戻るルートもそのまま探せます。</p>
       <div class="radio-list" id="workAreaList">
-        <label class="radio-row"><input type="radio" name="workArea" value="shiga" /><span><strong>🏞️ 滋賀県内で就職</strong><br />滋賀の大学（<span data-area-n="shiga">8</span>大学）を優遇＋関西の大学も少し優遇</span></label>
-        <label class="radio-row"><input type="radio" name="workArea" value="kansai" /><span><strong>🏯 関西圏で就職</strong><br />大阪・京都・兵庫・奈良・滋賀の大学（<span data-area-n="kansai">68</span>大学）を優遇して上位表示</span></label>
+        <label class="radio-row"><input type="radio" name="workArea" value="shiga" /><span><strong>🏞️ 滋賀県内で働きたい</strong><br />滋賀の大学（<span data-area-n="shiga">8</span>校）を上位に、関西の大学も少し上位に</span></label>
+        <label class="radio-row"><input type="radio" name="workArea" value="kansai" /><span><strong>🏯 関西で働きたい</strong><br />大阪・京都・兵庫・奈良・滋賀の大学（<span data-area-n="kansai">68</span>校）を上位に</span></label>
         <label class="radio-row"><input type="radio" name="workArea" value="any" /><span><strong>🗾 どこでもOK</strong><br />地域の優遇なし・全国の大学から（<span data-area-n="all">123</span>大学）</span></label>
         <label class="radio-row"><input type="radio" name="workArea" value="unknown" checked /><span><strong>🤷 未定（デフォルト）</strong><br />スコアに影響させない</span></label>
       </div>
@@ -2228,16 +2485,20 @@ module.exports = { aggregateZone, aggregateByUni };
     <section class="screen" data-screen="diag-4" hidden>
       <div class="step-indicator">Step 6 / 7</div>
       <h2 class="step-title">通い？ 下宿？</h2>
-      <p class="step-sub">滋賀県からの距離でフィルタします。</p>
+      <p class="step-sub">まず<strong>家からいちばん近い駅</strong>を選んでください。その駅から大学までの時間で計算します（選ばないと、県の南部からの大まかな時間になります）。</p>
+      <label class="origin-row">🚉 出発する駅
+        <select id="originSelect"><option value="">えらばない</option></select>
+      </label>
+      <p class="step-sub" style="margin-top:6px;font-size:12px">※ 駅から駅の時間に、駅から大学までの時間を足した<strong>目安</strong>です。乗り換えの待ち時間や自宅から駅までは入っていません。</p>
       <div class="radio-list" id="commuteList">
-        <label class="radio-row"><input type="radio" name="commute" value="jitaku" /><span><strong>🏠 通い 厳しめ（片道1時間半まで）</strong><br />滋賀から片道90分以内の大学<strong>に絞り込み</strong>ます（<span data-commute-n="90">46</span>大学）</span></label>
-        <label class="radio-row"><input type="radio" name="commute" value="jitaku-flex" /><span><strong>🏠 通い 緩め（〜2時間OK）</strong><br />片道120分以内の大学<strong>に絞り込み</strong>ます（<span data-commute-n="120">82</span>大学）</span></label>
+        <label class="radio-row"><input type="radio" name="commute" value="jitaku" /><span><strong>🏠 通い（片道1時間半まで）</strong><br />片道90分以内の大学を表示（<span data-commute-n="90">46</span>大学）。少し超える学部は消さずに、件数を出してたたみます</span></label>
+        <label class="radio-row"><input type="radio" name="commute" value="jitaku-flex" /><span><strong>🏠 通い（2時間までOK）</strong><br />片道120分以内の大学を表示（<span data-commute-n="120">82</span>大学）。少し超える学部は消さずに、件数を出してたたみます</span></label>
         <label class="radio-row"><input type="radio" name="commute" value="any" /><span><strong>🏘️ 下宿OK（全国の大学）</strong><br />距離で絞らずすべての大学を対象（<span data-area-n="all">123</span>大学）</span></label>
         <label class="radio-row"><input type="radio" name="commute" value="unknown" checked /><span><strong>🤷 未定（デフォルト）</strong><br />絞り込みなし・スコアにも影響させない</span></label>
       </div>
       <label class="unknown-toggle" style="margin-top:16px">
         <input type="checkbox" id="costPriorityChk" />
-        💴 学費・生活費をできるだけ抑えたい（国公立・自宅通学圏を優先）
+        💴 学費・生活費が心配（結果に費用の見方を表示します。並び順は変わりません）
       </label>
       <div class="nav-row">
         <button class="secondary-btn" data-back="diag-interest">← 戻る</button>
@@ -2275,6 +2536,7 @@ module.exports = { aggregateZone, aggregateByUni };
       <div class="step-indicator">適性チェック（任意）</div>
       <h2 class="step-title">最後に、向いている学び方をチェック（<span id="riasecProgress">0</span>/12）</h2>
       <p class="step-sub">直感でOK。時間がなければ<strong>スキップ</strong>できます。回答すると「あなたの性格に向いた学部」が上位に来やすくなり、診断の精度が上がります。</p>
+      <div id="riasecUndecidedNote" class="nudge" hidden>🧭 <strong>仕事も分野もまだ決まっていない人へ</strong>：この12問の答えから「向いていそうな分野」を3つ出します。<strong>ここが診断の材料になる</strong>ので、1〜2分だけ答えてみてください。</div>
       <div id="riasecItems" class="riasec-list"></div>
       <p class="step-sub" id="riasecPartialWarn" hidden></p>
       <div class="nav-row" style="flex-wrap:wrap;gap:8px">
@@ -2304,7 +2566,7 @@ module.exports = { aggregateZone, aggregateByUni };
         <select id="regionFilter">
           <option value="all">すべての地域</option>
         </select>
-        <input type="text" id="searchInput" placeholder="大学名で検索" />
+        <input type="text" id="searchInput" placeholder="大学名・学部名・資格名で検索" />
       </div>
       <div class="uni-list" id="listAll"></div>
     </section>
@@ -2367,6 +2629,7 @@ const state = {
     interests: new Set(),        // 興味分野（空 = 未定）
     workArea: 'unknown',         // デフォルト未定
     commute: 'unknown',          // デフォルト未定
+    origin: null,                // 出発駅（GUIDE.ORIGINS の id。null=えらばない）
     costPriority: false,         // 学費・費用を抑えたい
     methods: new Set(['any']),
   },
@@ -2536,7 +2799,7 @@ function getRegion(regionId) { return state.data.base?.regions?.[regionId]; }
 // ============================================================
 // v2 データ / エンジン / ブリッジ（ビルドが <!-- INLINE_V2 --> に注入）
 // ============================================================
-let DATA_V2 = null, RIASEC_DEF = null, RIASEC_MAP = null, ENGINE = null, BRIDGE = null, AGG = null;
+let DATA_V2 = null, RIASEC_DEF = null, RIASEC_MAP = null, ENGINE = null, BRIDGE = null, AGG = null, GUIDE = null;
 function loadV2() {
   const dEl = document.getElementById('inlineDataV2');
   const rdEl = document.getElementById('inlineRiasecDef');
@@ -2547,7 +2810,8 @@ function loadV2() {
   ENGINE = window.ENGINE_V2 || null;
   BRIDGE = window.BRIDGE_V2 || null;
   AGG = window.AGG_V2 || null;
-  return !!(DATA_V2 && ENGINE && BRIDGE && AGG && RIASEC_DEF && RIASEC_MAP);
+  GUIDE = window.GUIDE_V2 || null;
+  return !!(DATA_V2 && ENGINE && BRIDGE && AGG && GUIDE && RIASEC_DEF && RIASEC_MAP);
 }
 function uniById(id) { return (DATA_V2.universities || []).find(u => u.id === id) || null; }
 function deptsOfUni(id) { return (DATA_V2.departments || []).filter(d => d.uni_id === id); }
@@ -2601,16 +2865,31 @@ function _specificReasons(item) {
 }
 
 // 結果カード用の大学メタタグ（国公私＋滋賀からの通学目安）
-function _uniMetaTags(uniId) {
+function _uniMetaTags(uniId, deptId) {
   const u = uniByIdFast(uniId);
   if (!u) return '';
   let s = u.type ? `<span class="meta-tag">${escapeHtml(u.type)}</span>` : '';
-  if (u.access_from_shiga_min != null) {
-    s += u.commute_possible
-      ? `<span class="meta-tag">🚃 滋賀から約${u.access_from_shiga_min}分</span>`
-      : `<span class="meta-tag">🏘️ 下宿向き</span>`;   // 🏠は診断Step6で「通い」の意味に使用済み＝逆の意味で使わない
-  }
+  s += commuteTag(u, deptId ? deptById(deptId) : null);
   return s;
+}
+// 通学の目安: 出発駅を選んでいればその駅から、選んでいなければ既存の「滋賀から」の値
+function commuteMinOf(u, d) { return GUIDE ? GUIDE.commuteMin(u, d || null, state.diag.origin) : (u ? u.access_from_shiga_min : null); }
+function originShort() {
+  const o = GUIDE && GUIDE.originById(state.diag.origin);
+  return o ? o.label.split('・')[0] : '滋賀';
+}
+function commuteText(u, d) {
+  const m = commuteMinOf(u, d);
+  if (m == null) return null;
+  return `${originShort()}から片道 約${m}分`;
+}
+function commuteTag(u, d) {
+  const m = commuteMinOf(u, d);
+  const far = state.diag.origin ? (m == null || m > 120) : !u.commute_possible;
+  if (m == null && !state.diag.origin && u.access_from_shiga_min == null) return '';
+  return far
+    ? `<span class="meta-tag">🏘️ 下宿向き</span>`   // 🏠は診断Step6で「通い」の意味に使用済み＝逆の意味で使わない
+    : `<span class="meta-tag">🚃 ${escapeHtml(originShort())}から約${m}分</span>`;
 }
 function regionLabelV2(id) { return (DATA_V2.regions && DATA_V2.regions[id] && DATA_V2.regions[id].label) || id; }
 
@@ -2654,6 +2933,9 @@ function updateRiasecUi() {
   if (prog) prog.textContent = answered;
   const btn = document.getElementById('runDiagBtn');
   if (btn) btn.textContent = (answered > 0 && answered < total) ? `🔍 この回答で診断（${answered}/${total}問）` : '🔍 この回答で診断';
+  const undecided = state.diag.careers.size === 0 && state.diag.interests.size === 0;
+  const un = document.getElementById('riasecUndecidedNote'); if (un) un.hidden = !undecided;
+  const sk = document.getElementById('skipRiasecBtn'); if (sk) sk.textContent = undecided ? '今は答えずに一覧を見る' : 'スキップして診断';
   const warn = document.getElementById('riasecPartialWarn');
   if (warn) {
     const partial = answered > 0 && answered < total;
@@ -2666,6 +2948,9 @@ function updateRiasecUi() {
 function runDiagnose(riasecArr) {
   go('loading');   // loadingは go() 側で履歴に残さない。結果→戻るは直前の入力画面(diag-riasec)へ
   const profile = BRIDGE.toUserProfile(state.diag, riasecArr || []);
+  // 通学は「消す」のではなく表示側で「たたむ」（出発駅と学部キャンパスで計算するため）。エンジンの足切りは使わない
+  profile.commuteMaxMin = null; profile.commuteOnly = false;
+  state.lastRiasec = (riasecArr || []).slice();
   // topN大きめ: 大学ビュー集約が全学部を見られるように（結果表示側でゾーン毎に上限）
   state.lastResult = ENGINE.diagnose(profile, DATA_V2, DATA_V2.tags, RIASEC_MAP, { topN: 9999 });
   renderResults();
@@ -2685,6 +2970,8 @@ function go(screenId, opts = {}) {
     s.hidden = s.dataset.screen !== screenId;
   });
   state.currentScreen = screenId;
+  if (screenId === 'diag-riasec') updateRiasecUi();
+  if (screenId === 'diag-2') renderCareerPathNote();
   updateHeader();
   window.scrollTo({ top: 0, behavior: 'instant' });
 }
@@ -2867,6 +3154,7 @@ function setupChips() {
     if (on) state.diag.careers.add(key); else state.diag.careers.delete(key);
     chip.classList.toggle('selected', on);
     chip.setAttribute('aria-pressed', on ? 'true' : 'false');
+    if (chip.dataset.career) renderCareerPathNote();
   });
 
   // 興味分野（動的チップ）
@@ -2878,6 +3166,7 @@ function setupChips() {
     if (on) state.diag.interests.add(key); else state.diag.interests.delete(key);
     chip.classList.toggle('selected', on);
     chip.setAttribute('aria-pressed', on ? 'true' : 'false');
+    if (chip.dataset.career) renderCareerPathNote();
   });
 
   // 入試方式
@@ -2989,6 +3278,12 @@ function setupRadios() {
   document.querySelectorAll('input[name="commute"]').forEach(r => {
     r.addEventListener('change', e => state.diag.commute = e.target.value);
   });
+  const originSel = document.getElementById('originSelect');
+  if (originSel && GUIDE) {
+    GUIDE.ORIGINS.forEach(o => { const op = document.createElement('option'); op.value = o.id; op.textContent = o.label + (o.approx ? '（おおよそ）' : ''); originSel.appendChild(op); });
+    originSel.addEventListener('change', e => { state.diag.origin = e.target.value || null; populateFilterCounts(); });
+  }
+  const sj = document.getElementById('senmonJobs'); if (sj && GUIDE) sj.textContent = GUIDE.SENMON_MAIN_JOBS.join('、') + ' など';
   // 学費・費用を抑えたい
   const costChk = document.getElementById('costPriorityChk');
   if (costChk) {
@@ -3302,12 +3597,12 @@ function renderResults() {
     <div class="conditions">
       ${conds.map(c => `<span class="cond-tag">${escapeHtml(c)}</span>`).join('')}
     </div>
-    ${m.hollandCode && !m.lowSignal ? `<p class="summary-legend">🧭 はあなたの<strong>適性タイプ</strong>（R現実・I研究・A芸術・S社会・E企業・C慣習の上位3つ）。各カードの<strong>「適性 ○○」は100点満点で高いほどあなた向き</strong>の目安です。</p>` : ''}
-    ${m.adjustedHensachi != null ? `<p class="summary-legend">🏛️ <strong>国公立は偏差値「＋${kkBonus()}」表記</strong>。共通テスト（5〜7科目）＋2次で実質難度が高いため、+${kkBonus()}した偏差値でゾーン判定しています。</p>` : ''}
-    ${m.lowSignal ? `<div class="nudge">適性チェックや興味分野を選ぶと、あなたの性格に合った学部が上位に来て精度が上がります。</div>` : ''}
-    ${state.diag.costPriority ? `<div class="nudge">💴 学費が心配な人へ：各大学の「生活」タブで学費・奨学金・下宿費を確認できます。国公立や自宅から通える大学は費用を抑えやすいです。</div>` : ''}
+    ${m.hollandCode && !m.lowSignal ? `<p class="summary-legend">🧭 は12問の答えから出した<strong>あなたのタイプ</strong>（上位3つ）。合う学部ほど上に並びます。</p>` : ''}
+    ${m.adjustedHensachi != null ? `<p class="summary-legend">🏛️ <strong>国公立は難しめに判定</strong>しています。共通テスト（5〜7科目）＋2次試験があるため、偏差値に+${kkBonus()}して「実力相応／チャレンジ／安全圏」を決めています。</p>` : ''}
+    ${state.diag.costPriority ? `<div class="nudge">💴 学費が心配な人へ：各大学の「生活」タブで学費・奨学金・下宿費を確認できます。国公立（学費 年約54万円）や自宅から通える大学は費用を抑えやすいです。</div>` : ''}
+    ${guideCardsHtml(r)}
     ${renderBunriHint()}
-    <p style="margin:10px 0 0;padding:8px 10px;background:rgba(245,158,11,0.12);border-left:3px solid var(--accent);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.6">⚠️ この結果は<strong>2026年7月時点の推定データによる目安</strong>です。志望校を決める前に、必ず<strong>担任・進路指導室</strong>と<strong>各大学の公式サイト</strong>で確認してください。</p>
+    <p style="margin:10px 0 0;padding:8px 10px;background:rgba(245,158,11,0.12);border-left:3px solid var(--accent);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.6">⚠️ この結果は<strong>2026年7月時点のデータ（推定を含む）による目安</strong>です。志望校を決める前に、必ず<strong>担任・進路指導室</strong>と<strong>各大学の公式サイト</strong>で確認してください。</p>
   `;
 
   // ビュータブの見た目とaria状態を同期
@@ -3320,52 +3615,212 @@ function renderResults() {
   renderResultBody();
 }
 
+// ============================================================
+// 結果の見せ方（guide_v2）: 通学はたたむ／資格で2段に分ける／未定の生徒には分野と次の一歩
+// ============================================================
+const COMMUTE_LIMIT = { 'jitaku': 90, 'jitaku-flex': 120 };
+
+// エンジンの結果を「表示する／資格は要確認／通学を少し超える／遠い」に振り分ける
+function buildView(r) {
+  const z = r.zones || { challenge: [], match: [], safe: [] };
+  const limit = COMMUTE_LIMIT[state.diag.commute] != null ? COMMUTE_LIMIT[state.diag.commute] : null;
+  const qc = GUIDE.qualCareers(state.diag.careers);
+  const v = { zones: { match: [], challenge: [], safe: [] }, ungrouped: [], other: [], over: [], far: 0, qc, limit };
+  // 上段に出す条件: 資格が決め手の仕事を選んでいればその資格、そうでなければ選んだ分野・仕事の系統に合うこと
+  const myTags = BRIDGE.mapSet(state.diag.interests, BRIDGE.INTEREST_MAP);
+  const myEmp = BRIDGE.mapSet(state.diag.careers, BRIDGE.CAREER_MAP);
+  v.narrowed = qc.length ? 'qual' : ((myTags.length || myEmp.length) ? 'field' : null);
+  const hasQ = (it) => {
+    const d = deptById(it.dept_id);
+    if (qc.length) return GUIDE.matchedQualLabels(d, qc).length > 0;
+    if (!myTags.length && !myEmp.length) return true;
+    return (d.interest_tags || []).some(t => myTags.includes(t)) || (d.employment_fields || []).some(t => myEmp.includes(t));
+  };
+  const place = (it, key) => {
+    const b = GUIDE.commuteBucket(commuteMinOf(uniByIdFast(it.uni_id), deptById(it.dept_id)), limit);
+    if (b === 'far') { v.far++; return; }
+    if (b === 'near') { v.over.push(it); return; }
+    if (!hasQ(it)) { v.other.push(it); return; }
+    (key ? v.zones[key] : v.ungrouped).push(it);
+  };
+  ['match', 'challenge', 'safe'].forEach(k => (z[k] || []).forEach(it => place(it, k)));
+  (r.ungrouped || []).forEach(it => place(it, null));
+  const byFit = (a, b) => (b.fitScore || 0) - (a.fitScore || 0);
+  v.other.sort(byFit);
+  v.over.sort((a, b) => (hasQ(b) - hasQ(a)) || byFit(a, b));
+  v.shown = v.zones.match.length + v.zones.challenge.length + v.zones.safe.length + v.ungrouped.length;
+  return v;
+}
+
+function _qualLabelsSelected() { return GUIDE.qualCareers(state.diag.careers).map(id => GUIDE.QUAL_RULES[id].label); }
+
+// たたんだ一覧（開いた時だけカードを作る）
+function foldSection(title, note, arr) {
+  if (!arr || !arr.length) return null;
+  const more = document.createElement('details');
+  more.className = 'zone-more'; more.style.marginTop = '18px';
+  more.innerHTML = `<summary>${title}（${arr.length}件）</summary>` + (note ? `<p class="zone-sub">${note}</p>` : '');
+  more.addEventListener('toggle', () => {
+    if (more.open && !more.dataset.filled) {
+      more.dataset.filled = '1';
+      arr.slice(0, 60).forEach(it => more.appendChild(deptCard(it)));
+      if (arr.length > 60) { const p = document.createElement('p'); p.className = 'zone-sub'; p.textContent = `ほか ${arr.length - 60} 件は「全大学を見る」から探せます。`; more.appendChild(p); }
+    }
+  });
+  return more;
+}
+
 // 結果本体（学部/大学ビューで分岐）
 function renderResultBody() {
   const r = state.lastResult || { zones: { challenge: [], match: [], safe: [] }, ungrouped: [], meta: {} };
   const m = r.meta || {};
-  const z = r.zones || { challenge: [], match: [], safe: [] };
   const listEl = document.getElementById('resultList');
   listEl.innerHTML = '';
-  const total = z.challenge.length + z.match.length + z.safe.length;
-  const noHen = m.adjustedHensachi == null || total === 0;
+  const v = buildView(r);
   const kind = state.resultView === 'uni' ? '大学' : '学部';
-
   const CAP = 24; // ゾーンごとの表示上限
+  const zonesTotal = v.zones.match.length + v.zones.challenge.length + v.zones.safe.length;
+  const noHen = m.adjustedHensachi == null || zonesTotal === 0;
 
-  if (state.resultView === 'uni') {
-    const agg = AGG.aggregateByUni(r);
-    const aggTotal = agg.challenge.length + agg.match.length + agg.safe.length;
-    if (noHen || aggTotal === 0) {
-      const list = (agg.ungrouped && agg.ungrouped.length) ? agg.ungrouped : [...agg.match, ...agg.challenge, ...agg.safe];
-      if (!list.length) { listEl.innerHTML = emptyResultHtml(kind); return; }
-      const s = zoneSectionUni('おすすめ（適性順）', list, m.adjustedHensachi == null ? '偏差値の入力がないため、適性・興味の一致度順です' : '', CAP);
+  // 資格で分けているときの見出し
+  if (v.qc.length) {
+    const labels = _qualLabelsSelected().join('／');
+    const head = document.createElement('div'); head.className = 'qual-head';
+    head.innerHTML = v.shown > 0
+      ? `🎓 <strong>「${escapeHtml(labels)}」の資格が取れる学部を先に表示</strong>しています（${v.shown}件）。資格が取れるか確認できていない近い分野の学部は、下にたたんであります。`
+      : `🎓 <strong>「${escapeHtml(labels)}」の資格が取れる大学の学部は、この条件（偏差値・通学）では見つかりませんでした。</strong>大学以外の道（上の案内）もあわせて見てください。通学の条件をゆるめると出てくることがあります。`;
+    listEl.appendChild(head);
+  }
+
+  if (v.shown > 0) {
+    if (state.resultView === 'uni') {
+      const agg = AGG.aggregateByUni({ zones: v.zones, ungrouped: v.ungrouped, meta: m });
+      if (noHen) {
+        const list = (agg.ungrouped && agg.ungrouped.length) ? agg.ungrouped : [...agg.match, ...agg.challenge, ...agg.safe];
+        const s = zoneSectionUni('おすすめ', list, m.adjustedHensachi == null ? '偏差値の入力がないため、合う順に並べています' : '', CAP);
+        if (s) listEl.appendChild(s);
+      } else {
+        [['🎯 実力相応', 'match', 'あなたの偏差値に近い、出願の中心になる大学'],
+         ['🚀 チャレンジ', 'challenge', '少し背伸びして狙える大学'],
+         ['🛡️ 安全圏', 'safe', '余裕をもって出願できる大学']].forEach(([t, k, sub]) => {
+          const s = zoneSectionUni(t, agg[k], sub, CAP); if (s) listEl.appendChild(s);
+        });
+      }
+    } else if (noHen) {
+      const list = v.ungrouped.length ? v.ungrouped : [...v.zones.match, ...v.zones.challenge, ...v.zones.safe];
+      const s = zoneSection('おすすめ', list, m.adjustedHensachi == null ? '偏差値の入力がないため、合う順に並べています' : '', CAP);
       if (s) listEl.appendChild(s);
-      return;
+    } else {
+      [['🎯 実力相応', 'match', 'あなたの偏差値に近い、出願の中心になる学部'],
+       ['🚀 チャレンジ', 'challenge', '少し背伸びして狙える学部'],
+       ['🛡️ 安全圏', 'safe', '余裕をもって出願できる学部']].forEach(([t, k, sub]) => {
+        const s = zoneSection(t, v.zones[k], sub, CAP); if (s) listEl.appendChild(s);
+      });
     }
-    [['🎯 実力相応', 'match', 'あなたの偏差値に近い、出願の中心になる大学'],
-     ['🚀 チャレンジ', 'challenge', '少し背伸びして狙える大学'],
-     ['🛡️ 安全圏', 'safe', '余裕をもって出願できる大学']].forEach(([t, k, sub]) => {
-      const s = zoneSectionUni(t, agg[k], sub, CAP); if (s) listEl.appendChild(s);
-    });
-    // 「📊 偏差値データなし」節は削除: 全650学部がhensachi.min保有＋偏差値入力時はungroupedが常に空で到達不能
-    return;
+  } else if (!v.qc.length) {
+    const p0 = document.createElement('div'); p0.innerHTML = emptyResultHtml(kind); listEl.appendChild(p0);
   }
 
-  // 学部ビュー
-  if (noHen) {
-    const list = (r.ungrouped && r.ungrouped.length) ? r.ungrouped : [...z.match, ...z.challenge, ...z.safe];
-    if (!list.length) { listEl.innerHTML = emptyResultHtml(kind); return; }
-    const s = zoneSection('おすすめ（適性順）', list, m.adjustedHensachi == null ? '偏差値の入力がないため、適性・興味の一致度順です' : '', CAP);
-    if (s) listEl.appendChild(s);
+  // 上段に入らなかった学部（資格は要確認／ほかの分野）
+  const s1 = v.narrowed === 'qual'
+    ? foldSection('📂 近い分野の学部（資格は要確認）',
+        '選んだ仕事の資格が取れるとデータで確認できていない学部です。分野は近いので、気になる学部は公式サイトで資格を確認してください。', v.other)
+    : foldSection('📂 ほかの分野の学部',
+        '選んだ分野・仕事とは別の分野の学部です。偏差値と通学の条件は合っています。', v.other);
+  if (s1) listEl.appendChild(s1);
+  // 通学の上限を少し超える学部
+  if (v.limit != null) {
+    const s2 = foldSection(`🚃 片道${v.limit}分を少し超える学部`,
+      `${originShort()}から片道${v.limit}〜${v.limit + GUIDE.NEAR_MARGIN}分の目安の学部です。時間は目安なので、実際は通える場合があります。`, v.over);
+    if (s2) listEl.appendChild(s2);
+    if (v.far > 0) {
+      const p = document.createElement('p'); p.className = 'zone-sub'; p.style.marginTop = '14px';
+      p.textContent = `片道${v.limit + GUIDE.NEAR_MARGIN}分を超える学部（${v.far}件）は表示していません。「条件を編集」で通学を「下宿OK」にすると表示されます。`;
+      listEl.appendChild(p);
+    }
+  }
+}
+
+// ---- 結果の上に出す案内カード ----
+function _v1InterestId(tagId) {
+  const map = (BRIDGE && BRIDGE.INTEREST_MAP) || {};
+  return Object.keys(map).find(k => map[k] === tagId) || null;
+}
+function fieldsCardHtml(r) {
+  const undecided = state.diag.careers.size === 0 && state.diag.interests.size === 0;
+  if (!undecided) return '';
+  const answered = (state.lastRiasec || []).filter(x => x != null).length;
+  if (!answered) {
+    return `<div class="guide-card"><h3>🧭 まだ「合う・合わない」を出す材料がありません</h3>
+      仕事も分野も選んでいないので、下の一覧は<strong>偏差値と通学だけ</strong>で並んでいます。12問のチェック（1〜2分）に答えると、<strong>向いていそうな分野を3つ</strong>出します。
+      <button class="field-pick" data-goto-riasec="1">🧭 12問に答えて、向いていそうな分野を見る →</button></div>`;
+  }
+  const tags = (DATA_V2.tags && DATA_V2.tags.interest) || [];
+  const top = GUIDE.topFields((r.meta && r.meta.riasecProfile) || {}, RIASEC_MAP, tags, 3);
+  if (!top.mine.length) {
+    return `<div class="guide-card"><h3>🧭 向いていそうな分野はまだ出せません</h3>
+      12問すべて「あてはまらない」だったので、材料がありません。少しでも「ややあてはまる」ものを選び直すか、「条件を編集」から気になる分野を自分で選んでください。
+      <button class="field-pick" data-goto-riasec="1">🧭 12問を選び直す →</button></div>`;
+  }
+  const cnt = (id) => (DATA_V2.departments || []).filter(d => (d.interest_tags || []).includes(id)).length;
+  const btns = top.fields.map((f, i) => {
+    const v1 = _v1InterestId(f.id);
+    const why = f.overlap.length
+      ? `この分野の中心は「${f.core.join('」「')}」。あなたの答えと重なるのは「${f.overlap.join('」「')}」`
+      : `この分野の中心は「${f.core.join('」「')}」`;
+    return `<button class="field-pick" data-pick-field="${v1 || ''}">${i + 1}. <strong>${escapeHtml(f.label)}</strong>（${cnt(f.id)}学部）<small>${escapeHtml(why)}</small></button>`;
+  }).join('');
+  return `<div class="guide-card"><h3>🧭 あなたの答えから見えた、向いていそうな分野</h3>
+    あなたが高く答えたのは <strong>「${top.mine.map(escapeHtml).join('」「')}」</strong>。それと学部の特徴が重なる分野を上から3つ出しました。<strong>目安</strong>なので、気になる分野を押すと、その分野の学部だけを先に表示します。
+    ${btns}
+    <p style="margin:8px 0 0;font-size:12px">どれもピンとこないときは、「条件を編集」から自分で分野を選び直せます。</p></div>`;
+}
+function pathwaysHtml(careerIds) {
+  const items = [...(careerIds || [])].map(id => ({ id, p: GUIDE.pathwayOf(id), o: getCareerOption(id) })).filter(x => x.p && x.o);
+  if (!items.length) return '';
+  const tag = { senmon: '専門学校・短大の道あり', daigaku: '大学が基本', kosotsu: '高卒で受けられる採用あり' };
+  return items.map(x => `<div class="path-item"><b>${x.o.icon} ${escapeHtml(x.o.label)}</b><span class="path-tag">${tag[x.p.route]}</span><br>${escapeHtml(x.p.text)}</div>`).join('');
+}
+function pathwayCardHtml() {
+  const h = pathwaysHtml(state.diag.careers);
+  if (!h) return '';
+  return `<div class="guide-card"><h3>🛤️ この仕事への道（大学以外もふくめて）</h3>${h}
+    <p style="margin:8px 0 0;font-size:12px">年数や条件は学校によって違います。専門学校・短大・就職の具体的な学校や求人は<strong>進路指導室</strong>で確認してください（このアプリは個別の専門学校は載せていません）。</p></div>`;
+}
+function nextStepCardHtml() {
+  const undecided = state.diag.careers.size === 0 && state.diag.interests.size === 0;
+  const first = undecided
+    ? '<li><strong>分野を2つにしぼる。</strong>上の「向いていそうな分野」や、好きな教科から選んでみる。決めきらなくてよい</li>'
+    : '<li><strong>気になった学部を3つ、❤️でお気に入りに入れる。</strong>あとで並べて比べられます</li>';
+  return `<details class="guide-card"><summary style="font-size:15px;font-weight:700;color:var(--text);cursor:pointer">👣 高2の今、次にやること</summary><ol>
+    ${first}
+    <li><strong>その学部で必要な科目を確かめる。</strong>3年の科目選択に関わります。医療・理工系は理科や数学が受験に必要なことが多いので、進路指導室で確認する</li>
+    <li><strong>オープンキャンパスに1校行く。</strong>春（3月）と夏（6〜8月）に多く開かれます。各大学ページの「生活」タブに公式リンクがあります</li>
+    <li><strong>評定を落とさない。</strong>推薦・総合型で使う評定は、高1から高3の1学期までの平均です。今の定期試験もふくまれます</li>
+  </ol></details>`;
+}
+function guideCardsHtml(r) {
+  if (!GUIDE) return '';
+  return fieldsCardHtml(r) + pathwayCardHtml() + nextStepCardHtml();
+}
+// Step3: 選んだ仕事の「道」をその場で出す
+function renderCareerPathNote() {
+  const el = document.getElementById('careerPathNote');
+  if (!el || !GUIDE) return;
+  const h = pathwaysHtml(state.diag.careers);
+  el.innerHTML = h ? `<div class="guide-card"><h3>🛤️ 選んだ仕事への道</h3>${h}</div>` : '';
+}
+// 案内カードのボタン（結果画面は描き直されるのでイベント委譲）
+document.addEventListener('click', (e) => {
+  const pick = e.target.closest('[data-pick-field]');
+  if (pick && pick.dataset.pickField) {
+    state.diag.interests = new Set([pick.dataset.pickField]);
+    renderInterestChips();
+    runDiagnose(state.lastRiasec || []);
     return;
   }
-  [['🎯 実力相応', 'match', 'あなたの偏差値に近い、出願の中心になる学部'],
-   ['🚀 チャレンジ', 'challenge', '少し背伸びして狙える学部'],
-   ['🛡️ 安全圏', 'safe', '余裕をもって出願できる学部']].forEach(([t, k, sub]) => {
-    const s = zoneSection(t, z[k], sub, CAP); if (s) listEl.appendChild(s);
-  });
-}
+  if (e.target.closest('[data-goto-riasec]')) go('diag-riasec');
+});
 
 function emptyResultHtml(kind) {
   return `<p class="empty" style="padding:24px 8px;color:var(--text-dim);text-align:center;line-height:1.8">条件に合う${kind}が見つかりませんでした。<br>エリア・偏差値・入試方式の条件をゆるめてみてください。</p>`;
@@ -3404,6 +3859,7 @@ function _zoneSectionWith(cardFn, title, arr, sub, cap) {
 
 // 適性バッジ: lowSignal(RIASEC/興味/就職すべて未入力)時はfitが地理+ゼミの残差=誤解を招くので出さない
 function _fitBadge(item) {
+  return '';   // 「適性 38」は満点が場合で変わり「合っていない」と読めるため表示しない。理由の札で伝える
   if (item.fitScore == null) return '';
   if (state.lastResult && state.lastResult.meta && state.lastResult.meta.lowSignal) return '';
   return `<span class="fit-badge">適性 ${item.fitScore}</span>`;
@@ -3415,14 +3871,14 @@ function uniCard(item) {
   const h = item.hensachi || {};
   const band = fmtBand(h, item.kokkoritsu);
   const badge = _fitBadge(item);
-  const rlist = _specificReasons(item);
+  const rlist = _specificReasons(item).filter(x => !/^🧭 適性/.test(x) && !/^🚃 通学圏/.test(x));
   const reasons = rlist.length
     ? `<div class="uc-reasons">${rlist.map(x => `<span class="reason-chip">${escapeHtml(x)}</span>`).join('')}</div>` : '';
   const moreDept = item.deptCount > 1 ? `<span class="dept-more">ほか${item.deptCount - 1}学部</span>` : '';
   el.innerHTML =
     `<div class="uc-head"><div class="uc-name">${escapeHtml(item.uni_name)}</div></div>` +
     `<div class="uc-dept">最も合う: ${escapeHtml(item.repDept.dept_name)} ${moreDept}</div>` +
-    `<div class="uc-meta"><span class="uc-band">${band}</span>${badge}${_uniMetaTags(item.uni_id)}</div>` +
+    `<div class="uc-meta"><span class="uc-band">${band}</span>${badge}${_uniMetaTags(item.uni_id, item.repDept && item.repDept.dept_id)}</div>` +
     reasons +
     `<button class="uc-detail-btn" data-uni="${item.uni_id}">🏫 大学ページを見る →</button>`;
   return el;
@@ -3442,20 +3898,37 @@ function deptToItem(d, u) {
   };
 }
 
+// カードの札: 資格が取れる → 既存の理由 → 何も無ければ難易度の札（札なしで理由なく悪く見えるのを防ぐ）
+function _cardChips(item) {
+  const out = [];
+  const d = item.dept_id ? deptById(item.dept_id) : null;
+  if (GUIDE && d && state.diag.careers.size) {
+    const q = GUIDE.matchedQualLabels(d, state.diag.careers);
+    if (q.length) out.push(`🎓 ${q.join('・')}の資格が取れる`);
+    else if (GUIDE.qualCareers(state.diag.careers).length) out.push('❔ 資格は要確認');
+  }
+  _specificReasons(item).forEach(x => { if (!/^🧭 適性/.test(x) && !/^🚃 通学圏/.test(x)) out.push(x); });
+  if (!out.length) {
+    const z = { match: '🎯 難易度が合う', challenge: '🚀 少し上の難易度', safe: '🛡️ 余裕のある難易度' }[item.zone];
+    if (z) out.push(z);
+  }
+  return out.slice(0, 5);
+}
+
 function deptCard(item) {
   const el = document.createElement('div'); el.className = 'uni-card dept-card';
   const h = item.hensachi || {};
   const band = fmtBand(h, item.kokkoritsu);
   const fav = isFav(item.dept_id);
   const badge = _fitBadge(item);
-  const rlist = _specificReasons(item);
+  const rlist = _cardChips(item);
   const reasons = rlist.length
     ? `<div class="uc-reasons">${rlist.map(x => `<span class="reason-chip">${escapeHtml(x)}</span>`).join('')}</div>` : '';
   el.innerHTML =
     `<div class="uc-head"><div class="uc-name">${escapeHtml(item.uni_name)}</div>` +
     `<button class="fav-btn" data-fav="${item.dept_id}" aria-label="お気に入り">${fav ? '❤️' : '🤍'}</button></div>` +
     `<div class="uc-dept">${escapeHtml(item.dept_name)}</div>` +
-    `<div class="uc-meta"><span class="uc-band">${band}</span>${badge}${_uniMetaTags(item.uni_id)}</div>` +
+    `<div class="uc-meta"><span class="uc-band">${band}</span>${badge}${_uniMetaTags(item.uni_id, item.dept_id)}</div>` +
     reasons +
     `<button class="uc-detail-btn" data-detail="${item.dept_id}">詳しく見る →</button>`;
   return el;
@@ -3636,7 +4109,8 @@ function renderList() {
   const unis = DATA_V2.universities.filter(u => {
     if (sel !== 'all' && u.region !== sel) return false;
     if (q) {
-      const deptHit = deptsOfUni(u.id).some(d => d.name.includes(q));
+      const deptHit = deptsOfUni(u.id).some(d => d.name.includes(q) ||
+        (Array.isArray(d.qualifications) ? d.qualifications : [d.qualifications]).some(x => typeof x === 'string' && x.includes(q)));
       if (!(u.name.includes(q) || (u.name_short || '').includes(q) || deptHit)) return false;
     }
     return true;
@@ -3716,7 +4190,7 @@ function kkBonus() { return (ENGINE && ENGINE.KOKKORITSU_BONUS) || 8; }  // エ�
 function fmtBand(h, kk) {
   if (!h || h.min == null || h.max == null) return '偏差値データなし';
   const base = (h.min === h.max) ? `${h.min}` : `${h.min}〜${h.max}`;
-  return `偏差値 ${base}${kk ? '+' + kkBonus() : ''}`;
+  return `偏差値 ${base}${kk ? '（国公立：+' + kkBonus() + 'して判定）' : ''}`;
 }
 function _row(k, v) { return (v == null || v === '') ? '' : `<dt>${k}</dt><dd>${v}</dd>`; }
 function _dl(rows) { const h = rows.filter(Boolean).join(''); return h ? `<dl class="meta-grid">${h}</dl>` : ''; }
@@ -4038,6 +4512,15 @@ function uniTabEmployment(uni) {
   return html || '<p class="detail-lead">就職情報は公式サイトで確認してください。</p>';
 }
 
+// 家賃込みの生活費（月）の中央値: 自宅生向けの値（月5万円未満）を除いた大学から
+let _medGeshuku;
+function _medianGeshukuMonthly() {
+  if (_medGeshuku !== undefined) return _medGeshuku;
+  const a = (DATA_V2.universities || []).map(u => u.living_cost && u.living_cost.monthly_total).filter(x => x != null && x >= 50000).sort((x, y) => x - y);
+  _medGeshuku = a.length ? a[Math.floor(a.length / 2)] : null;
+  return _medGeshuku;
+}
+
 function uniTabLife(uni) {
   const lc = uni.living_cost || {};
   const ac = uni.additional_costs || {};
@@ -4045,17 +4528,31 @@ function uniTabLife(uni) {
   const cn = uni.campus_neighborhood || {};
   const oc = uni.open_campus || {};
   const sd = uni.student_demographics || {};
-  const access = uni.access_from_shiga_min != null
-    ? `滋賀から片道 約${uni.access_from_shiga_min}分（${uni.commute_possible ? '通学可' : '下宿推奨'}）` : null;
+  const _cm = commuteMinOf(uni, null);
+  const access = _cm != null
+    ? `${originShort()}から片道 約${_cm}分（${(state.diag.origin ? _cm <= 120 : uni.commute_possible) ? '通学できる目安' : '下宿が現実的'}）` : null;
 
-  // 4年間トータル費用（自宅 vs 下宿の2シナリオ。monthly/four_year_totalは家賃込み=下宿前提の生活費）
+  // 4年間トータル費用（自宅 vs 下宿の2シナリオ）
+  // 自宅通学向きの大学は monthly_total が「自宅生の生活費（月2〜3万円）」で入っており、それを下宿費用に使うと
+  // 家賃ぶんが抜けて大幅に安く出る。その場合は、家賃込みで入っている他大学の中央値を当てて目安を出す。
   let sim = '';
   if (uni.tuition_yen_per_year != null && lc.four_year_total != null) {
     const man = n => Math.round(n / 10000).toLocaleString();
     const g4 = uni.tuition_yen_per_year * 4;
-    sim = `<p class="detail-note" style="margin-top:4px">💰 <strong>4年間のトータル目安</strong><br>` +
-      `🏠 自宅から通う場合: 学費 約<strong>${man(g4)}万円</strong><br>` +
-      `🏘️ 下宿する場合: 約<strong>${man(g4 + lc.four_year_total)}万円</strong>（学費 ${man(g4)}万円 ＋ 家賃込みの生活費 ${man(lc.four_year_total)}万円）<br>` +
+    const homeBased = lc.monthly_total != null && lc.monthly_total < 50000;
+    let geshuku;
+    if (homeBased) {
+      const med = _medianGeshukuMonthly();
+      geshuku = med
+        ? `🏘️ 下宿する場合: 約<strong>${man(g4 + med * 48)}万円</strong>（学費 ${man(g4)}万円 ＋ 家賃込みの生活費 約${man(med * 48)}万円）<br>` +
+          `<span style="font-size:11px;color:var(--text-muted)">※この大学は自宅から通う人が多く、下宿の生活費データがありません。家賃込みの生活費は、データのある他大学の中央値（月 約${man(med)}万円）を当てた目安です</span><br>`
+        : '';
+    } else {
+      geshuku = `🏘️ 下宿する場合: 約<strong>${man(g4 + lc.four_year_total)}万円</strong>（学費 ${man(g4)}万円 ＋ 家賃込みの生活費 ${man(lc.four_year_total)}万円）<br>`;
+    }
+    const years = /6年/.test(deptsOfUni(uni.id).map(d => d.name).join('')) ? '（6年制の学部は年数ぶん増えます）' : '';
+    sim = `<p class="detail-note" style="margin-top:4px">💰 <strong>4年間のトータル目安</strong>${years}<br>` +
+      `🏠 自宅から通う場合: 学費 約<strong>${man(g4)}万円</strong><br>` + geshuku +
       `<span style="font-size:11px;color:var(--text-muted)">※入学金・交通費・教材費は含みません。特に自宅通学は定期代が年10万円前後かかることがあります</span></p>`;
   }
 
@@ -4834,7 +5331,10 @@ function populateFilterCounts() {
   });
   document.querySelectorAll('[data-commute-n]').forEach(el => {
     const max = Number(el.getAttribute('data-commute-n'));
-    el.textContent = us.filter(u => u.access_from_shiga_min != null && u.access_from_shiga_min <= max).length;
+    el.textContent = us.filter(u => {
+      if (!state.diag.origin || !GUIDE) return u.access_from_shiga_min != null && u.access_from_shiga_min <= max;
+      return deptsOfUni(u.id).some(d => { const m = GUIDE.commuteMin(u, d, state.diag.origin); return m != null && m <= max; });
+    }).length;
   });
 }
 
@@ -4873,8 +5373,9 @@ async function init() {
   document.getElementById('fwdBtn')?.addEventListener('click', forward);
   document.getElementById('fabFwdBtn')?.addEventListener('click', forward);
   document.getElementById('resetBtn').addEventListener('click', () => {
-    state.diag = { hyoutei: 3.5, hyouteiUnknown: false, hensachi: 50, hensachiUnknown: false, examSource: 'unknown', careers: new Set(), interests: new Set(), workArea: 'unknown', commute: 'unknown', costPriority: false, methods: new Set(['any']) };
+    state.diag = { hyoutei: 3.5, hyouteiUnknown: false, hensachi: 50, hensachiUnknown: false, examSource: 'unknown', careers: new Set(), interests: new Set(), workArea: 'unknown', commute: 'unknown', origin: null, costPriority: false, methods: new Set(['any']) };
     state.riasecAnswers = [];
+    { const os = document.getElementById('originSelect'); if (os) os.value = ''; populateFilterCounts(); renderCareerPathNote(); }
     state.resultView = 'dept';
     document.querySelectorAll('.riasec-opt.on').forEach(b => b.classList.remove('on'));
     updateRiasecUi();   // 進捗0/ボタンラベル/部分回答警告をまとめて初期化
