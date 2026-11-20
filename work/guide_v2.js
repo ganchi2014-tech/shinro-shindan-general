@@ -47,6 +47,64 @@ function matchedQualLabels(dept, careerIds) {
 }
 
 // ------------------------------------------------------------
+// 1b) 資格では決まらない仕事: 「学ぶ内容で寄せる仕事」と「学部を問わない仕事」
+// ------------------------------------------------------------
+// 以前は仕事を「医療・福祉」「サービス」など10個の就職系統に寄せていたため、
+// 弁護士で体育学部、心理カウンセラーで薬学部、デザイナーで文学部が並んでいた（1職種あたり100〜360学部が無関係）。
+// 学ぶ内容で寄せる仕事は、学部名の言葉 / 資格欄の言葉 / 分野タグ のどれかに当たる学部だけを上段に出す。
+//   name: 学部名に含まれる言葉  ex: 除外する言葉  qual: 資格欄の言葉  tags: 分野タグ（広すぎる職種では使わない）
+const FIELD_RULES = {
+  IT:              { label: 'IT・情報',           name: /情報|データサイエンス|システム|コンピュータ|メディア情報|デジタル/, qual: /基本情報|応用情報|ITパスポート|情報処理/, tags: ['joho'] },
+  design:          { label: 'デザイン・制作',     name: /デザイン|芸術|美術|造形|マンガ|映像|メディア表現|アート/, qual: /デザイン|色彩|CG|インテリア/, tags: ['geijutsu', 'kenchiku'] },
+  kikai_denki:     { label: '機械・電気',         name: /機械|電気|電子|工学部|理工|基礎工|ロボ|メカ/, ex: /情報工学科|建築|医療|人間/, qual: /電気主任|電気工事|機械設計/ },
+  doboku:          { label: '土木・まちづくり',   name: /土木|社会基盤|都市工|都市環境|都市科学|建築都市|建設|環境都市|社会環境工/, qual: /測量士|土木施工|技術士/ },
+  'nōshoku':       { label: '食・農・バイオ',     name: /農|食|バイオ|生命|生物|水産|園芸/, ex: /食物栄養|管理栄養|人間生命|生命医科/, qual: /食品衛生|HACCP|フードスペシャリスト/, tags: ['nogaku'] },
+  masucomi:        { label: 'マスコミ・広告',     name: /メディア|マスコミ|広告|コミュニケーション|社会学|文芸|放送|ジャーナリ/, qual: /社会調査士/ },
+  kaikei:          { label: '会計・税務',         name: /会計|商学|経営|商経|経済経営/, qual: /公認会計士|税理士|簿記/ },
+  'hōsō':          { label: '法律',               name: /(^|[^療])法学|法律|法政/, qual: /司法|法曹|弁護士|法科大学院/ },
+  kokusai:         { label: '語学・国際',         name: /外国語|国際|英語|英米|グローバル|中国語|言語/, qual: /通訳|国連英検/, tags: ['gaikokugo'] },
+  'kankō':         { label: '観光・ホテル・航空', name: /観光|ホスピタリティ|国際|外国語|英語|グローバル/, qual: /旅行業務|観光|ホテル/ },
+  shinri:          { label: '心理',               name: /心理/, qual: /公認心理師|認定心理士|臨床心理/ },
+  AT:              { label: 'トレーナー・健康運動', name: /スポーツ|体育|健康科学|健康スポーツ|トレーナー/, qual: /アスレティックトレーナー|健康運動|トレーニング指導|NSCA/, tags: ['sports'] },
+  coach:           { label: 'スポーツ指導',       name: /スポーツ|体育|コーチ/, qual: /コーチ|スポーツ指導|保健体育/, tags: ['sports'] },
+  'kigyō_supotsu': { label: 'スポーツビジネス',   name: /スポーツ|体育/, tags: ['sports'] },
+};
+// 学部を問わない仕事: 学部では絞らず、その旨を言い切る。rating は大学ごとの就職の強み（本アプリの5段階の目安）の軸
+const OPEN_JOBS = {
+  keisatsu:       { rating: 'keisatsu',     text: '警察官は採用試験で決まり、学部は問われません。法律・体育系の出身者が多めですが、どの学部からでも受けられます。' },
+  'shōbō':        { rating: 'shōbō',        text: '消防士は採用試験で決まり、学部は問われません。救急救命士の資格も取りたい場合だけ、救急救命の学科が近道です。' },
+  jieikan:        { rating: 'keisatsu',     text: '自衛官は採用試験で決まり、学部は問われません。' },
+  'kōmuin_ippan': { rating: 'kōmuin_ippan', text: '市役所・県庁などは採用試験で決まり、学部は問われません。法律・経済・政策系の学部は試験科目と授業が重なります。' },
+  'kokka_kōmuin': { rating: 'kōmuin_ippan', text: '国家公務員も採用試験で決まり、学部は問われません。法律・経済・政策系の学部は試験科目と授業が重なります。' },
+  'kigyō_ippan':  { rating: 'kigyō_ippan',  text: '一般企業の多くは学部を問いません。技術職だけは理工・情報系が条件になります。学部より、大学ごとの就職の実績を見る方が役に立ちます。' },
+  'kinyū':        { rating: 'kigyō_ippan',  text: '銀行・保険なども学部を問いません。経済・経営・商・法の出身者が多めです。' },
+  kyoin:          { rating: 'kyoin',        text: '中学・高校の先生の免許は多くの学部で取れますが、取れる教科は学部で決まります。教えたい教科から学部を選んでください（国語→文学、数学→理学・教育、保健体育→体育・スポーツ など）。' },
+};
+
+function fieldCareers(careerIds) { return [...(careerIds || [])].filter((id) => FIELD_RULES[id]); }
+function openCareers(careerIds) { return [...(careerIds || [])].filter((id) => OPEN_JOBS[id]); }
+function _quals(dept) { const q = dept && dept.qualifications; return Array.isArray(q) ? q : (typeof q === 'string' && q ? [q] : []); }
+// dept がその仕事につながる内容か（学部名 / 資格欄 / 分野タグ のどれか）
+function deptMatchesField(dept, careerId) {
+  const r = FIELD_RULES[careerId];
+  if (!r || !dept) return false;
+  const name = dept.name || '';
+  if (r.name && r.name.test(name) && !(r.ex && r.ex.test(name))) return true;
+  if (r.qual && _quals(dept).some((s) => typeof s === 'string' && r.qual.test(s))) return true;
+  if (r.tags && (dept.interest_tags || []).some((t) => r.tags.includes(t))) return true;
+  return false;
+}
+function matchedFieldLabels(dept, careerIds) {
+  return fieldCareers(careerIds).filter((id) => deptMatchesField(dept, id)).map((id) => FIELD_RULES[id].label);
+}
+// 学部を問わない仕事について、その大学の就職の強み（4以上）に当たるラベル
+function strongOpenJobs(uni, careerIds) {
+  const r = (uni && uni.employment && uni.employment.ratings) || null;
+  if (!r) return [];
+  return openCareers(careerIds).filter((id) => (r[OPEN_JOBS[id].rating] || 0) >= 4);
+}
+
+// ------------------------------------------------------------
 // 2) 大学以外の道（種類別の案内。個別の学校名は持たない）
 // ------------------------------------------------------------
 // route: 'senmon'   = 専門学校・短大が主な道のひとつ
@@ -229,6 +287,7 @@ function topFields(profile, riasecMap, tags, n) {
 
 module.exports = {
   QUAL_RULES, qualCareers, deptHasQual, matchedQualLabels,
+  FIELD_RULES, OPEN_JOBS, fieldCareers, openCareers, deptMatchesField, matchedFieldLabels, strongOpenJobs,
   PATHWAYS, SENMON_MAIN_JOBS, pathwayOf,
   ORIGINS, originById, campusBase, commuteMin, commuteBucket, NEAR_MARGIN,
   TYPE_PHRASE, topFields,

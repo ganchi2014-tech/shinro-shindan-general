@@ -18,6 +18,19 @@ assert.strictEqual(G.deptHasQual({ qualifications: '看護師、保健師' }, 'k
 assert.strictEqual(G.deptHasQual({ qualifications: null }, 'kango'), false);
 assert.deepStrictEqual(G.matchedQualLabels({ qualifications: ['看護師国家試験受験資格', '保健師'] }, ['kango', 'hokenshi', 'yakuzai']), ['看護師', '保健師・助産師']);
 
+// --- 学ぶ内容で寄せる仕事・学部を問わない仕事 ---
+const fm = (id) => d.departments.filter((x) => G.deptMatchesField(x, id));
+const names = (id) => fm(id).map((x) => x.name).join('｜');
+assert(!/体育学部/.test(names('hōsō')) && /法学部/.test(names('hōsō')), '弁護士に体育学部が出ない');
+assert(!/療法/.test(names('hōsō')), '弁護士に理学療法が混ざらない（「法」の誤一致）');
+assert(!/薬学部|医学部（/.test(names('shinri')) && /心理/.test(names('shinri')), '心理に薬学部・医学部が出ない');
+assert(/デザイン/.test(names('design')) && !/^文学部$/m.test(fm('design').map((x) => x.name).join('\n')), 'デザイナーに文学部が出ない');
+for (const id of Object.keys(G.FIELD_RULES)) { const n = fm(id).length; assert(n >= 15 && n <= 260, `${id} の該当学部数が極端: ${n}`); }
+assert.deepStrictEqual(G.fieldCareers(['design', 'kango', 'keisatsu']), ['design']);
+assert.deepStrictEqual(G.openCareers(['design', 'kango', 'keisatsu', 'kyoin']), ['keisatsu', 'kyoin']);
+assert.deepStrictEqual(G.strongOpenJobs({ employment: { ratings: { keisatsu: 4, kōmuin_ippan: 2 } } }, ['keisatsu', 'kōmuin_ippan']), ['keisatsu']);
+assert.deepStrictEqual(G.strongOpenJobs({}, ['keisatsu']), []);
+
 // --- 大学以外の道 ---
 assert.strictEqual(G.pathwayOf('jūdōseifuku').route, 'senmon');
 assert.strictEqual(G.pathwayOf('yakuzai').route, 'daigaku');

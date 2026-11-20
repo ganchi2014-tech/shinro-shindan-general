@@ -3020,14 +3020,17 @@ function buildView(r) {
   const qc = GUIDE.qualCareers(state.diag.careers);
   const v = { zones: { match: [], challenge: [], safe: [] }, ungrouped: [], other: [], over: [], far: 0, qc, limit };
   // 上段に出す条件: 資格が決め手の仕事を選んでいればその資格、そうでなければ選んだ分野・仕事の系統に合うこと
+  // 仕事は3種類: 資格で決まる(qc) / 学ぶ内容で寄せる(fc) / 学部を問わない(oc)。問わない仕事では絞らない
   const myTags = BRIDGE.mapSet(state.diag.interests, BRIDGE.INTEREST_MAP);
-  const myEmp = BRIDGE.mapSet(state.diag.careers, BRIDGE.CAREER_MAP);
-  v.narrowed = qc.length ? 'qual' : ((myTags.length || myEmp.length) ? 'field' : null);
+  const fc = GUIDE.fieldCareers(state.diag.careers);
+  const oc = GUIDE.openCareers(state.diag.careers);
+  v.fc = fc; v.oc = oc;
+  v.narrowed = (qc.length && !fc.length) ? 'qual' : ((qc.length || fc.length) ? 'job' : (myTags.length ? 'field' : null));
   const hasQ = (it) => {
     const d = deptById(it.dept_id);
-    if (qc.length) return GUIDE.matchedQualLabels(d, qc).length > 0;
-    if (!myTags.length && !myEmp.length) return true;
-    return (d.interest_tags || []).some(t => myTags.includes(t)) || (d.employment_fields || []).some(t => myEmp.includes(t));
+    if (qc.length || fc.length) return GUIDE.matchedQualLabels(d, qc).length > 0 || GUIDE.matchedFieldLabels(d, fc).length > 0;
+    if (!myTags.length) return true;
+    return (d.interest_tags || []).some(t => myTags.includes(t));
   };
   const place = (it, key) => {
     const b = GUIDE.commuteBucket(commuteMinOf(uniByIdFast(it.uni_id), deptById(it.dept_id)), limit);
@@ -3039,6 +3042,11 @@ function buildView(r) {
   ['match', 'challenge', 'safe'].forEach(k => (z[k] || []).forEach(it => place(it, k)));
   (r.ungrouped || []).forEach(it => place(it, null));
   const byFit = (a, b) => (b.fitScore || 0) - (a.fitScore || 0);
+  // 学部を問わない仕事だけを選んでいるときは、その仕事の就職に強い大学を各ゾーンの上に寄せる（並び替えは安定）
+  if (oc.length && !qc.length && !fc.length) {
+    const strong = (it) => GUIDE.strongOpenJobs(uniByIdFast(it.uni_id), oc).length ? 1 : 0;
+    ['match', 'challenge', 'safe'].forEach(k => { v.zones[k] = v.zones[k].map((it, i) => [it, i]).sort((a, b) => (strong(b[0]) - strong(a[0])) || (a[1] - b[1])).map(x => x[0]); });
+  }
   v.other.sort(byFit);
   v.over.sort((a, b) => (hasQ(b) - hasQ(a)) || byFit(a, b));
   v.shown = v.zones.match.length + v.zones.challenge.length + v.zones.safe.length + v.ungrouped.length;
@@ -3076,12 +3084,13 @@ function renderResultBody() {
   const noHen = m.adjustedHensachi == null || zonesTotal === 0;
 
   // 資格で分けているときの見出し
-  if (v.qc.length) {
-    const labels = _qualLabelsSelected().join('／');
+  if (v.qc.length || v.fc.length) {
+    const ql = _qualLabelsSelected(), fl = v.fc.map(id => GUIDE.FIELD_RULES[id].label);
+    const what = [ql.length ? `「${escapeHtml(ql.join('／'))}」の資格が取れる学部` : '', fl.length ? `「${escapeHtml(fl.join('／'))}」を学べる学部` : ''].filter(Boolean).join('と、');
     const head = document.createElement('div'); head.className = 'qual-head';
     head.innerHTML = v.shown > 0
-      ? `🎓 <strong>「${escapeHtml(labels)}」の資格が取れる学部を先に表示</strong>しています（${v.shown}件）。資格が取れるか確認できていない近い分野の学部は、下にたたんであります。`
-      : `🎓 <strong>「${escapeHtml(labels)}」の資格が取れる大学の学部は、この条件（偏差値・通学）では見つかりませんでした。</strong>大学以外の道（上の案内）もあわせて見てください。通学の条件をゆるめると出てくることがあります。`;
+      ? `🎓 <strong>${what}を先に表示</strong>しています（${v.shown}件）。それ以外の学部は、下にたたんであります。`
+      : `🎓 <strong>${what}は、この条件（偏差値・通学）では見つかりませんでした。</strong>${ql.length ? '大学以外の道（上の案内）もあわせて見てください。' : ''}通学の条件をゆるめると出てくることがあります。`;
     listEl.appendChild(head);
   }
 
@@ -3110,7 +3119,7 @@ function renderResultBody() {
         const s = zoneSection(t, v.zones[k], sub, CAP); if (s) listEl.appendChild(s);
       });
     }
-  } else if (!v.qc.length) {
+  } else if (!v.qc.length && !v.fc.length) {
     const p0 = document.createElement('div'); p0.innerHTML = emptyResultHtml(kind); listEl.appendChild(p0);
   }
 
@@ -3119,7 +3128,7 @@ function renderResultBody() {
     ? foldSection('📂 近い分野の学部（資格は要確認）',
         '選んだ仕事の資格が取れるとデータで確認できていない学部です。分野は近いので、気になる学部は公式サイトで資格を確認してください。', v.other)
     : foldSection('📂 ほかの分野の学部',
-        '選んだ分野・仕事とは別の分野の学部です。偏差値と通学の条件は合っています。', v.other);
+        '選んだ仕事・分野には直接つながらない学部です。偏差値と通学の条件は合っています。', v.other);
   if (s1) listEl.appendChild(s1);
   // 通学の上限を少し超える学部
   if (v.limit != null) {
@@ -3169,10 +3178,14 @@ function fieldsCardHtml(r) {
     <p style="margin:8px 0 0;font-size:12px">どれもピンとこないときは、「条件を編集」から自分で分野を選び直せます。</p></div>`;
 }
 function pathwaysHtml(careerIds) {
-  const items = [...(careerIds || [])].map(id => ({ id, p: GUIDE.pathwayOf(id), o: getCareerOption(id) })).filter(x => x.p && x.o);
+  const items = [...(careerIds || [])].map(id => ({ id, p: GUIDE.pathwayOf(id), open: GUIDE.OPEN_JOBS[id], o: getCareerOption(id) })).filter(x => (x.p || x.open) && x.o);
   if (!items.length) return '';
   const tag = { senmon: '専門学校・短大の道あり', daigaku: '大学が基本', kosotsu: '高卒で受けられる採用あり' };
-  return items.map(x => `<div class="path-item"><b>${x.o.icon} ${escapeHtml(x.o.label)}</b><span class="path-tag">${tag[x.p.route]}</span><br>${escapeHtml(x.p.text)}</div>`).join('');
+  return items.map(x => `<div class="path-item"><b>${x.o.icon} ${escapeHtml(x.o.label)}</b>` +
+    (x.open ? `<span class="path-tag">${x.id === 'kyoin' ? '教科で学部を選ぶ' : '学部は問わない'}</span>` : '') +
+    (x.p && !(x.open && x.p.route === 'daigaku') ? `<span class="path-tag">${tag[x.p.route]}</span>` : '') + `<br>` +
+    (x.open ? escapeHtml(x.open.text) + (x.p && x.p.route !== 'daigaku' ? '<br>' : '') : '') +
+    (x.p && !(x.open && x.p.route === 'daigaku') ? escapeHtml(x.p.text) : '') + `</div>`).join('');
 }
 function pathwayCardHtml() {
   const h = pathwaysHtml(state.diag.careers);
@@ -3297,10 +3310,16 @@ function _cardChips(item) {
   const d = item.dept_id ? deptById(item.dept_id) : null;
   if (GUIDE && d && state.diag.careers.size) {
     const q = GUIDE.matchedQualLabels(d, state.diag.careers);
+    const f = GUIDE.matchedFieldLabels(d, state.diag.careers);
     if (q.length) out.push(`🎓 ${q.join('・')}の資格が取れる`);
-    else if (GUIDE.qualCareers(state.diag.careers).length) out.push('❔ 資格は要確認');
+    else if (GUIDE.qualCareers(state.diag.careers).length && !f.length) out.push('❔ 資格は要確認');
+    if (f.length) out.push(`🎯 ${f.join('・')}を学べる`);
+    const so = GUIDE.strongOpenJobs(uniByIdFast(item.uni_id), state.diag.careers).map(id => (getCareerOption(id) || {}).label).filter(Boolean);
+    if (so.length) out.push(`🏛️ ${so.join('・')}の就職に強い大学（目安）`);
   }
-  _specificReasons(item).forEach(x => { if (!/^🧭 適性/.test(x) && !/^🚃 通学圏/.test(x)) out.push(x); });
+  // 「💼 ○○に強い」は大きな就職系統に寄せた札で、仕事を選んだときは上の札と食い違うので出さない
+  const jobPicked = state.diag.careers.size > 0;
+  _specificReasons(item).forEach(x => { if (!/^🧭 適性/.test(x) && !/^🚃 通学圏/.test(x) && !(jobPicked && /^💼/.test(x))) out.push(x); });
   if (!out.length) {
     const z = { match: '🎯 難易度が合う', challenge: '🚀 少し上の難易度', safe: '🛡️ 余裕のある難易度' }[item.zone];
     if (z) out.push(z);
