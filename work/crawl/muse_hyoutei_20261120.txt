@@ -1,0 +1,101 @@
+# Museが2027年度の要項・公式サイトで確かめた「総合型・公募制の推薦に出願するための評定の条件」。本校の生徒が実際に受ける帯の41大学のうち36大学（指定校は除く。代表的な方式を3つまで）。 ^ は https:// の略。
+#  形: 大学id|H|方式名|評定の条件|根拠のURL   （2026-11-20）
+#  Museの注記: 公募制は大半が「条件なし」（評定は出願の条件ではなく、選考で点数にされるだけの大学が多い）。数字の条件があるのは総合型の一部。
+#   確かめられず行が無い大学: 大阪産業大・京都光華大・森ノ宮医療大・大阪樟蔭女子大・びわこリハビリテーション専門職大（要項の本文を開けなかった）。
+#   京都看護の公募A日程の3.5以上は2027年度から新設（2026年度は基準なし）。
+#  こちらで外した行: 甲南の公募 教科科目型「条件なし」（Museが公式の要項を直接開けず、複数の二次情報の一致で判定したもの）。
+osaka-taiiku|H|総合型選抜 自己表現型・体力評価型（スポーツ科学部・教育学部）|3.0以上|^www.ouhs.jp/nyushi/wp/wp-content/uploads/2027_sougougata.pdf
+osaka-taiiku|H|総合型選抜 アスリート型（スポーツ科学部）|3.0以上|^www.ouhs.jp/nyushi/wp/wp-content/uploads/2027_sougougata.pdf
+osaka-taiiku|H|学校推薦型選抜 自己表現型・体力評価型・教科型（スポーツ科学部・教育学部）|条件なし|^www.ouhs.jp/nyushi/wp/wp-content/uploads/b2c181aafd910d24123c09eb4297b0b0.pdf
+ritsumeikan|H|AO選抜 産業社会学部 産業社会小論文方式|3.5以上|^admission.ritsumei.ac.jp/assets/file/2027/admission/ao/guidelines/ao-youkou27.pdf
+ritsumeikan|H|AO選抜 理工学部 理工セミナー方式|全体・数学・理科・英語それぞれ3.0以上|^admission.ritsumei.ac.jp/assets/file/2027/admission/ao/guidelines/ao-youkou27.pdf
+ritsumeikan|H|AO選抜 国際関係学部 国際関係学専攻講義選抜方式|条件なし|^admission.ritsumei.ac.jp/assets/file/2027/admission/ao/guidelines/ao-youkou27.pdf
+kindai|H|推薦入試（一般公募）|条件なし|^kindai.jp/assets/pdf/exam/admissions/2027_nyushiyoko_78.pdf?20260825
+kindai|H|総合型選抜 法学部 A（グローバル型）・B（リーガル・パブリック志向型）|3.5以上|^kindai.jp/exam/system/ao/#requirements
+kindai|H|総合型選抜 経営学部 B（プロフェッショナル型）|4.0以上|^kindai.jp/exam/system/ao/#requirements
+biwako-seikei|H|総合型選抜入試（スポーツ学部）|条件なし|^bss-nyushi.jp/img/top/exam2027.pdf?0
+biwako-seikei|H|学校推薦型選抜（公募）スタンダード方式・小論型・スポーツ活動型（スポーツ学部）|条件なし|^bss-nyushi.jp/img/top/exam2027.pdf?0
+biwako-seikei|H|総合型選抜 スポーツ推薦型（スポーツ学部）|条件なし（原則3.0以上が望ましいと記載）|^bss-nyushi.jp/img/top/exam2027.pdf?0
+osaka-keizai|H|学部AO入試|学部により異なる（経済学部：全体3.5以上／経営学部ビジネス法学科：国語4.0以上／国際共創学部：英語3.5以上／情報社会学部・人間科学部：条件なし）|^www.osaka-ue.ac.jp/entrance/file/general/4307
+osaka-keizai|H|公募推薦（総合評価型）|条件なし|^www.osaka-ue.ac.jp/entrance/file/general/4307
+osaka-keizai|H|公募推薦（基礎学力型）|条件なし|^www.osaka-ue.ac.jp/entrance/file/general/4307
+kyoto-sangyo|H|総合型選抜入試|条件なし|^www.kyoto-su.ac.jp/admissions/exam/pdf/sougougata_nyushiyoukou2027.pdf
+kyoto-sangyo|H|次世代型リーダー選抜入試（現代社会学部）|Bタイプのみ3.5以上（Aタイプは条件なし）|^www.kyoto-su.ac.jp/admissions/exam/entrance_method/leader/
+kyoto-sangyo|H|公募推薦入試|条件なし|^www.kyoto-su.ac.jp/admissions/exam/pdf/adm-yoko.pdf
+momoyama|H|学科別選考入試［10月］|条件なし|^www.andrew.ac.jp/nyushi/pdf/admission/yoko_sogoSen.pdf
+momoyama|H|公募制推薦入試［前期］|条件なし|^www.andrew.ac.jp/nyushi/pdf/admission/guide_suisen.pdf
+momoyama|H|公募制推薦入試［後期］|条件なし|^www.andrew.ac.jp/nyushi/pdf/admission/guide_suisen.pdf
+kansai-fukushi|H|総合型選抜|条件なし|^www.fuksi-kagk-u.ac.jp/nyushi/nyugaku/ao.html
+kansai-fukushi|H|学校推薦型選抜（公募A）|条件なし|^www.fuksi-kagk-u.ac.jp/nyushi/nyugaku/recommend.html
+kansai-fukushi|H|学校推薦型選抜（公募B）|条件なし|^www.fuksi-kagk-u.ac.jp/nyushi/nyugaku/recommend.html
+chubu|H|夢探究入試（総合型選抜）|条件なし（資格検定型の経営情報学部 経営総合学科のみ全体3.5以上）|^cuweb.chubu.ac.jp/admissions/wp-content/uploads/sites/15/2026/05/admissions-entrance-exams-guide-dream2027-yoko.pdf
+chubu|H|公募制推薦入試 専願（面接重視型）|全体3.0以上|^adm.chubu.ac.jp/admissions/entrance-exams/recommend-general/
+chubu|H|公募制推薦入試 併願（適性検査型）|条件なし|^adm.chubu.ac.jp/admissions/entrance-exams/recommend-general/
+daido|H|体験授業総合型選抜|条件なし|^www.daido-news.jp/admission/entrance_exam/type/
+daido|H|専門高校総合型選抜|条件なし|^www.daido-news.jp/admission/entrance_exam/type/suisen/special.html
+daido|H|一般推薦（公募系学校推薦型選抜）|条件なし|^www.daido-news.jp/admission/entrance_exam/type/suisen/recom.html
+kansai-univ|H|AO入試（総合型選抜）|学部により異なる（条件なし〜全体4.0以上。多くは全体3.5以上、社会学部社会学専攻は4.0以上、外国語学部は全体3.8以上＋英語等の教科条件）|^files.microcms-assets.io/assets/76cac1d7ce9f4ad08d453f8f074f8419/fcd3babc75834fe6b81391e7523f62e5/2027_ao_yoko.pdf
+kansai-univ|H|公募制推薦入学試験（商学部）|全体4.0以上|^files.microcms-assets.io/assets/76cac1d7ce9f4ad08d453f8f074f8419/d1cf67ac13f049ad8f8073288c218410/2027_recommendation_commerce_yoko.pdf
+kansai-univ|H|公募制推薦入学試験（システム理工・環境都市工・化学生命工学部）|学科により教科の評定平均3.5〜4.0以上（数学科は数学4.5以上かつ国語4.0以上）|^files.microcms-assets.io/assets/76cac1d7ce9f4ad08d453f8f074f8419/962faec16dbe448fa1510843f73da5ff/2027_recommendation_science_yoko.pdf
+ryukoku|H|総合型選抜（学部独自方式）|学部により異なる（全体3.3以上〜4科目平均4.0以上、評定条件のない学部・課程もあり）|^www.ryukoku.ac.jp/admission/nyushi/pdf/sogo/2027_sogo_00.pdf
+ryukoku|H|公募推薦入試〔総合評価型〕|条件なし|^www.ryukoku.ac.jp/admission/nyushi/pdf/youkou/2027_youkou_p19.pdf
+ryukoku|H|公募推薦入試〔総合評価型〕（情報学部 文系型）|数学4.0以上、または数学3.8以上かつ情報Ⅰ4.0以上|^www.ryukoku.ac.jp/admission/nyushi/pdf/youkou/2027_youkou_p19.pdf
+konan|H|公募制推薦入学試験 AO型 個性重視方式|学部により異なる（文学部歴史文化学科3.5以上、経営学部3.6以上、グローバル教養学環3.5以上、マネジメント創造学部は条件なし）|^ch.konan-u.ac.jp/admission/other/AO/
+konan|H|公募制推薦入学試験 AO型 女子特別推薦方式|学科により異なる（知能情報学部3.6以上、理工学部 宇宙理学・量子物理工学科／環境・エネルギー工学科は条件なし）|^ch.konan-u.ac.jp/admission/other/women/
+bukkyo|H|総合型選抜（自己推薦制）|3.0以上（全学部）|^www.bukkyo-u.ac.jp/admission/design/file/exam/2027_youkou-self_recommendation.pdf
+bukkyo|H|学校推薦型選抜（公募制）|条件なし|^www.bukkyo-u.ac.jp/admission/design/file/exam/2027_youkou-commendatory_a_b_c_common.pdf
+kyoto-tachibana|H|総合型選抜 小論文方式・探究・課外活動方式|3.0以上（看護学科・理学療法学科・救急救命学科は3.7以上）|^www.tachibana-u.ac.jp/admission/cms/wp-content/themes/tachibana-u/assets/pdf/sogo-guide.pdf
+kyoto-tachibana|H|総合型選抜 講座参加方式（デジタルクリエイション講座参加方式・書道実技講座参加方式）|3.0以上|^www.tachibana-u.ac.jp/admission/cms/wp-content/themes/tachibana-u/assets/pdf/sogo-guide.pdf
+kyoto-tachibana|H|学校推薦型選抜 公募推薦・併願制|条件なし|^www.tachibana-u.ac.jp/admission/pdf/nyushiyoukou_koubo_ippan.pdf
+setsunan|H|総合型選抜 AO入試（法学部・国際学部・経済学部・現代社会学部）|条件なし|^www.setsunan.ac.jp/admission/faculty/data/2027ao.pdf
+setsunan|H|総合型選抜 AO入試（経営学部・理工学部・薬学部・看護学部・農学部）|学部・学科により3.0〜3.2以上|^www.setsunan.ac.jp/admission/faculty/data/2027ao.pdf
+setsunan|H|公募制推薦入試|条件なし|^www.setsunan.ac.jp/admission/faculty/requirements/files/koubo/2027yoko.pdf
+otemon|H|総合型 アサーティブ入試|3.0以上|^nyushi.otemon.ac.jp/guide/pdf/2027_assertive.pdf
+otemon|H|総合型 理工学部独自入試（理工学部）|全体は原則3.0以上、かつ数学・理科いずれか原則3.3以上|^nyushi.otemon.ac.jp/guide/pdf/2027_sc.pdf
+otemon|H|公募制推薦入試|条件なし|^nyushi.otemon.ac.jp/guide/pdf/2027_general.pdf
+osaka-gakuin|H|総合型 奨学金チャレンジ型|4.0以上|^www.ogu.ac.jp/admissions/assets/files/admission/download/2027/nyouko_syogaku.pdf
+osaka-gakuin|H|総合型 活動評価型|条件なし|^www.ogu.ac.jp/admissions/assets/files/admission/download/2027/nyouko_syogaku.pdf
+osaka-gakuin|H|公募推薦|条件なし|^www.ogu.ac.jp/admissions/assets/files/admission/download/2027/kobo_01.pdf
+oit|H|総合型 AO入試 課外活動評価型（工学部・情報科学部）|学部により指定教科の平均3.5以上|^www.oit.ac.jp/admission/outline/pdf/document_2027/ao_02-youkou2027.pdf
+oit|H|公募制推薦入試|条件なし|^www.oit.ac.jp/admission/outline/faq.html
+kansai-gaidai|H|公募制推薦入試|条件なし|^www.kansaigaidai.ac.jp/magazine/kansaigaidai-introduction/15399/
+otani|H|総合型選抜入試|条件なし|^www.otani.ac.jp/admission/exam/sfpjr70000001w2b-att/2027guide.pdf
+otani|H|公募制推薦入試（専願制・併願制）|条件なし|^www.otani.ac.jp/admission/exam/sfpjr70000001w2b-att/2027guide.pdf
+otani|H|公募制推薦入試（専願制）|条件なし|^www.otani.ac.jp/admission/exam/u10fi90000008939-att/27guide_P15-16.pdf
+kuas|H|総合型選抜|条件なし|^www.kuas.ac.jp/admissions/system/ao/
+kuas|H|公募推薦入試A日程|条件なし|^www.kuas.ac.jp/admissions/system/recommendation-open/schedule-a/
+kyoto-bunkyo|H|総合型選抜 基礎学力方式|条件なし|^www.kbu.ac.jp/kbu/exam/admission_guide/index/asset/KBU_NyushiGuide2027_P07.pdf
+kyoto-bunkyo|H|公募制推薦入試（Ⅰ期・Ⅱ期・Ⅲ期）|条件なし|^www.kbu.ac.jp/kbu/exam/admission_guide/index/asset/KBU_NyushiGuide2027_P20_P21.pdf
+osaka-kokusai|H|総合型選抜（AO）|条件なし|^oiuvoice.com/assets/pdf/examination/2027-nyushiguide.pdf
+osaka-kokusai|H|学校推薦型選抜（公募）A方式・B方式・C方式|条件なし|^oiuvoice.com/assets/pdf/examination/2027-nyushiguide.pdf
+osaka-seikei|H|総合型選抜入試 A日程・B日程|条件なし|^osaka-seikei-nyushi.jp/nyushi-university/exam/pdf/2027bosyu_univ.pdf?2608
+osaka-seikei|H|公募推薦入試 前期・後期|条件なし|^osaka-seikei-nyushi.jp/nyushi-university/exam/pdf/2027bosyu_univ.pdf?2608
+kyoto-kango|H|総合型選抜AO入試（看護学部）|条件なし|^www.kyotokango.ac.jp/admission/
+kyoto-kango|H|学校推薦型選抜 公募推薦A日程（看護学部）|3.5以上|^www.kyotokango.ac.jp/pdf/admission/2026/senbatsu_yokoku2.pdf
+kyoto-kango|H|学校推薦型選抜 公募推薦B日程（看護学部）|条件なし|^www.kyotokango.ac.jp/pdf/admission/2026/senbatsu_yokoku2.pdf
+osaka-shinai|H|総合型選抜（教育学部・看護学部）|条件なし|^www.osgu.ac.jp/admissions/qa/
+osaka-shinai|H|公募制推薦選抜（教育学部・看護学部）|条件なし|^www.osgu.ac.jp/admissions/qa/
+hanazono|H|総合型選抜（AO入試）|条件なし|^www.hanazono.ac.jp/wp/wp-content/uploads/2026/07/2027Application-Guidelines.pdf
+hanazono|H|総合型選抜（高大接続型／高大接続専門型）|条件なし|^www.hanazono.ac.jp/wp/wp-content/uploads/2026/07/2027Application-Guidelines.pdf
+hanazono|H|自己推薦入試|条件なし|^www.hanazono.ac.jp/wp/wp-content/uploads/2026/07/2027Application-Guidelines.pdf
+hyogo-ika|H|医学部 学校推薦型選抜（一般公募制）|4.0以上|^www.hyo-med.ac.jp/files/20260703/c737f86c1b3de8f37133c3de2c8031853ac51fff.pdf
+hyogo-ika|H|医学部 総合型選抜（一般枠）|条件なし|^www.hyo-med.ac.jp/files/20260703/c737f86c1b3de8f37133c3de2c8031853ac51fff.pdf
+hyogo-ika|H|薬学部・看護学部・リハビリテーション学部 学校推薦型選抜（一般公募制）|条件なし|^www.hyo-med.ac.jp/files/20260724/b9d638c75dd7b3ef8acf62de83eb346b06e210ae.pdf
+konan-joshi|H|総合型選抜（専願）|条件なし|^www.konan-wu.ac.jp/admission/exam/manual/pdf/2027guideline.pdf
+konan-joshi|H|学校推薦型選抜（専願）|条件なし|^www.konan-wu.ac.jp/admission/exam/manual/pdf/2027guideline.pdf
+konan-joshi|H|学校推薦型選抜（併願）|条件なし|^www.konan-wu.ac.jp/admission/exam/manual/pdf/2027guideline.pdf
+kyoto-gaidai|H|公募制推薦入学試験|条件なし|^www.kufs.ac.jp/view/data/admissions/information.pdf?260601
+kyoto-gaidai|H|総合型選抜 語学検定利用入学試験|条件なし|^www.kufs.ac.jp/view/data/admissions/information.pdf?260601
+kyoto-gaidai|H|総合型選抜 探究入学試験|条件なし|^www.kufs.ac.jp/view/data/admissions/information.pdf?260601
+kyoto-geijutsu|H|総合型選抜|条件なし|^www.kyoto-art.ac.jp/admission/pdf/guidebook_2027j.pdf
+kyoto-seika|H|総合型選抜|条件なし|^www.kyoto-seika.ac.jp/pdf/2027/youkou.pdf
+kyoto-seika|H|学校推薦型選抜（公募制）|条件なし|^www.kyoto-seika.ac.jp/pdf/2027/youkou.pdf
+nara-univ|H|総合型選抜（AO入試）第1回|条件なし|^www.nara-u.ac.jp/admission/nyushi_guide_2027.pdf
+nara-univ|H|総合型選抜（AO入試）第2回（Aタイプ・Bタイプ）|条件なし|^www.nara-u.ac.jp/admission/nyushi_guide_2027.pdf
+nara-univ|H|学校推薦型選抜（課題提示型小論文・基礎学力型A・B）|条件なし|^www.nara-u.ac.jp/admission/2027_youkou_ippan.pdf
+sonoda-gakuen|H|総合型選抜 AO経験値入試|条件なし|^navi.sonoda-u.ac.jp/uploads/2026nyuusigaido.pdf
+sonoda-gakuen|H|公募制推薦入試［前期］|条件なし|^navi.sonoda-u.ac.jp/uploads/2026nyuusigaido.pdf
+sonoda-gakuen|H|公募制推薦入試［後期］|条件なし|^navi.sonoda-u.ac.jp/uploads/2026nyuusigaido.pdf
+seian-zokei|H|総合選抜入試（1期・2期）〈体験授業方式〉|条件なし|^www.seian.ac.jp/assets/pdf/admission/2027_seian_exam_guide.pdf
+seian-zokei|H|総合選抜入試（3期・5期）〈面接方式〉|条件なし|^www.seian.ac.jp/assets/pdf/admission/2027_seian_exam_guide.pdf
+seian-zokei|H|総合選抜入試（4期）特待生〈実技方式〉|条件なし|^www.seian.ac.jp/assets/pdf/admission/2027_seian_exam_guide.pdf

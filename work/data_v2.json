@@ -551,6 +551,34 @@
     "ippan": [
      "一般選抜 2教科型｜出願 12/21〜1/13｜試験 1/30｜発表 2/12"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜 自己表現型・体力評価型（スポーツ科学部・教育学部）",
+      "cond": "3.0以上",
+      "min": 3,
+      "none": false,
+      "url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/2027_sougougata.pdf"
+     },
+     {
+      "name": "総合型選抜 アスリート型（スポーツ科学部）",
+      "cond": "3.0以上",
+      "min": 3,
+      "none": false,
+      "url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/2027_sougougata.pdf"
+     },
+     {
+      "name": "学校推薦型選抜 自己表現型・体力評価型・教科型（スポーツ科学部・教育学部）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.ouhs.jp/nyushi/wp/wp-content/uploads/b2c181aafd910d24123c09eb4297b0b0.pdf"
+     }
+    ]
    }
   },
   {
@@ -835,6 +863,34 @@
      "学部個別配点方式｜出願 1/6〜1/26｜試験 2/7｜発表 2/20",
      "共通テスト方式（2月選考）｜出願 1/6〜1/15｜試験 1/16｜発表 2/17"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "AO選抜 産業社会学部 産業社会小論文方式",
+      "cond": "3.5以上",
+      "min": 3.5,
+      "none": false,
+      "url": "https://admission.ritsumei.ac.jp/assets/file/2027/admission/ao/guidelines/ao-youkou27.pdf"
+     },
+     {
+      "name": "AO選抜 理工学部 理工セミナー方式",
+      "cond": "全体・数学・理科・英語それぞれ3.0以上",
+      "min": null,
+      "none": false,
+      "url": "https://admission.ritsumei.ac.jp/assets/file/2027/admission/ao/guidelines/ao-youkou27.pdf"
+     },
+     {
+      "name": "AO選抜 国際関係学部 国際関係学専攻講義選抜方式",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://admission.ritsumei.ac.jp/assets/file/2027/admission/ao/guidelines/ao-youkou27.pdf"
+     }
+    ]
    }
   },
   {
@@ -1113,6 +1169,34 @@
      "一般入試・前期（A日程）｜出願 1/3〜1/23｜試験 1/30・1/31｜発表 2/10",
      "一般入試・前期（B日程）｜出願 1/3〜2/3｜試験 2/11・2/12（学部により2/13・2/14）｜発表 2/24",
      "一般入試・後期｜出願 2/3〜3/1｜試験 3/8・3/9｜発表 3/19"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "推薦入試（一般公募）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://kindai.jp/assets/pdf/exam/admissions/2027_nyushiyoko_78.pdf?20260825"
+     },
+     {
+      "name": "総合型選抜 法学部 A（グローバル型）・B（リーガル・パブリック志向型）",
+      "cond": "3.5以上",
+      "min": 3.5,
+      "none": false,
+      "url": "https://kindai.jp/exam/system/ao/#requirements"
+     },
+     {
+      "name": "総合型選抜 経営学部 B（プロフェッショナル型）",
+      "cond": "4.0以上",
+      "min": 4,
+      "none": false,
+      "url": "https://kindai.jp/exam/system/ao/#requirements"
+     }
     ]
    }
   },
@@ -2241,6 +2325,34 @@
      "一般 前期日程A-Ⅲ｜出願 12/14〜1/24｜試験 1/31",
      "一般 前期日程B｜出願 12/14〜2/2｜試験 2/9"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜入試（スポーツ学部）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://bss-nyushi.jp/img/top/exam2027.pdf?0"
+     },
+     {
+      "name": "学校推薦型選抜（公募）スタンダード方式・小論型・スポーツ活動型（スポーツ学部）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://bss-nyushi.jp/img/top/exam2027.pdf?0"
+     },
+     {
+      "name": "総合型選抜 スポーツ推薦型（スポーツ学部）",
+      "cond": "条件なし（原則3.0以上が望ましいと記載）",
+      "min": null,
+      "none": true,
+      "url": "https://bss-nyushi.jp/img/top/exam2027.pdf?0"
+     }
+    ]
    }
   },
   {
@@ -2498,6 +2610,34 @@
      "一般選抜・前期 A方式｜出願 1/3〜1/18｜試験 1/27〜1/29｜発表 2/15",
      "一般選抜・前期 B方式｜出願 1/3〜1/25｜試験 2/3〜2/4｜発表 2/15",
      "一般選抜・後期 D方式｜出願 2/8〜2/25｜試験 3/5｜発表 3/13"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "学部AO入試",
+      "cond": "学部により異なる（経済学部：全体3.5以上／経営学部ビジネス法学科：国語4.0以上／国際共創学部：英語3.5以上／情報社会学部・人間科学部：条件なし）",
+      "min": null,
+      "none": false,
+      "url": "https://www.osaka-ue.ac.jp/entrance/file/general/4307"
+     },
+     {
+      "name": "公募推薦（総合評価型）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.osaka-ue.ac.jp/entrance/file/general/4307"
+     },
+     {
+      "name": "公募推薦（基礎学力型）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.osaka-ue.ac.jp/entrance/file/general/4307"
+     }
     ]
    }
   },
@@ -2764,6 +2904,34 @@
      "一般選抜入試［中期日程］｜出願 1/4〜2/5｜試験 2/16｜発表 2/25",
      "共通テスト利用入試［前期］｜出願 1/4〜1/22｜試験 1/16｜発表 2/11"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜入試",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kyoto-su.ac.jp/admissions/exam/pdf/sougougata_nyushiyoukou2027.pdf"
+     },
+     {
+      "name": "次世代型リーダー選抜入試（現代社会学部）",
+      "cond": "Bタイプのみ3.5以上（Aタイプは条件なし）",
+      "min": null,
+      "none": false,
+      "url": "https://www.kyoto-su.ac.jp/admissions/exam/entrance_method/leader/"
+     },
+     {
+      "name": "公募推薦入試",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kyoto-su.ac.jp/admissions/exam/pdf/adm-yoko.pdf"
+     }
+    ]
    }
   },
   {
@@ -3008,6 +3176,34 @@
     "ippan": [
      "一般入試［前期］｜出願 12/14〜1/8｜試験 1/19・1/20・2/9・2/10｜発表 2/18",
      "一般入試［後期］｜出願 2/18〜3/3｜試験 3/11｜発表 3/18"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "学科別選考入試［10月］",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.andrew.ac.jp/nyushi/pdf/admission/yoko_sogoSen.pdf"
+     },
+     {
+      "name": "公募制推薦入試［前期］",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.andrew.ac.jp/nyushi/pdf/admission/guide_suisen.pdf"
+     },
+     {
+      "name": "公募制推薦入試［後期］",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.andrew.ac.jp/nyushi/pdf/admission/guide_suisen.pdf"
+     }
     ]
    }
   },
@@ -3321,6 +3517,34 @@
     "ippan": [
      "一般選抜 A｜出願 1/5〜1/20｜試験 2/1〜2/2｜発表 2/10",
      "一般選抜 B｜出願 2/9〜2/22｜試験 3/4｜発表 3/12"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.fuksi-kagk-u.ac.jp/nyushi/nyugaku/ao.html"
+     },
+     {
+      "name": "学校推薦型選抜（公募A）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.fuksi-kagk-u.ac.jp/nyushi/nyugaku/recommend.html"
+     },
+     {
+      "name": "学校推薦型選抜（公募B）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.fuksi-kagk-u.ac.jp/nyushi/nyugaku/recommend.html"
+     }
     ]
    }
   },
@@ -3872,6 +4096,34 @@
      "前期入試A方式｜出願 1/8〜1/20｜試験 2/1〜2/3｜発表 2/17",
      "共通テスト利用入試（前期）｜出願 1/8〜1/22｜試験 1/16〜1/17｜発表 2/17"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "夢探究入試（総合型選抜）",
+      "cond": "条件なし（資格検定型の経営情報学部 経営総合学科のみ全体3.5以上）",
+      "min": null,
+      "none": true,
+      "url": "https://cuweb.chubu.ac.jp/admissions/wp-content/uploads/sites/15/2026/05/admissions-entrance-exams-guide-dream2027-yoko.pdf"
+     },
+     {
+      "name": "公募制推薦入試 専願（面接重視型）",
+      "cond": "全体3.0以上",
+      "min": 3,
+      "none": false,
+      "url": "https://adm.chubu.ac.jp/admissions/entrance-exams/recommend-general/"
+     },
+     {
+      "name": "公募制推薦入試 併願（適性検査型）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://adm.chubu.ac.jp/admissions/entrance-exams/recommend-general/"
+     }
+    ]
    }
   },
   {
@@ -4358,6 +4610,34 @@
     "ippan": [
      "前期A方式｜出願 12/28〜1/14｜試験 1/23｜発表 2/3",
      "前期B方式｜出願 12/28〜1/14｜試験 1/24｜発表 2/3"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "体験授業総合型選抜",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.daido-news.jp/admission/entrance_exam/type/"
+     },
+     {
+      "name": "専門高校総合型選抜",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.daido-news.jp/admission/entrance_exam/type/suisen/special.html"
+     },
+     {
+      "name": "一般推薦（公募系学校推薦型選抜）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.daido-news.jp/admission/entrance_exam/type/suisen/recom.html"
+     }
     ]
    }
   },
@@ -8223,6 +8503,34 @@
      "一般選抜 全学日程2｜出願 1/7〜1/19｜試験 2/5〜2/7｜発表 2/16",
      "共通テスト利用入試（前期）｜出願 1/7〜1/15｜試験 1/16〜1/17｜発表 2/16"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "AO入試（総合型選抜）",
+      "cond": "学部により異なる（条件なし〜全体4.0以上。多くは全体3.5以上、社会学部社会学専攻は4.0以上、外国語学部は全体3.8以上＋英語等の教科条件）",
+      "min": null,
+      "none": false,
+      "url": "https://files.microcms-assets.io/assets/76cac1d7ce9f4ad08d453f8f074f8419/fcd3babc75834fe6b81391e7523f62e5/2027_ao_yoko.pdf"
+     },
+     {
+      "name": "公募制推薦入学試験（商学部）",
+      "cond": "全体4.0以上",
+      "min": 4,
+      "none": false,
+      "url": "https://files.microcms-assets.io/assets/76cac1d7ce9f4ad08d453f8f074f8419/d1cf67ac13f049ad8f8073288c218410/2027_recommendation_commerce_yoko.pdf"
+     },
+     {
+      "name": "公募制推薦入学試験（システム理工・環境都市工・化学生命工学部）",
+      "cond": "学科により教科の評定平均3.5〜4.0以上（数学科は数学4.5以上かつ国語4.0以上）",
+      "min": null,
+      "none": false,
+      "url": "https://files.microcms-assets.io/assets/76cac1d7ce9f4ad08d453f8f074f8419/962faec16dbe448fa1510843f73da5ff/2027_recommendation_science_yoko.pdf"
+     }
+    ]
    }
   },
   {
@@ -8491,6 +8799,34 @@
      "一般選抜入試〔中期日程〕｜出願 1/4〜2/2｜試験 2/14〜2/15｜発表 2/26",
      "共通テスト利用入試〔前期〕｜出願 1/4〜1/17｜試験 1/16〜1/17｜発表 2/12"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜（学部独自方式）",
+      "cond": "学部により異なる（全体3.3以上〜4科目平均4.0以上、評定条件のない学部・課程もあり）",
+      "min": null,
+      "none": false,
+      "url": "https://www.ryukoku.ac.jp/admission/nyushi/pdf/sogo/2027_sogo_00.pdf"
+     },
+     {
+      "name": "公募推薦入試〔総合評価型〕",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.ryukoku.ac.jp/admission/nyushi/pdf/youkou/2027_youkou_p19.pdf"
+     },
+     {
+      "name": "公募推薦入試〔総合評価型〕（情報学部 文系型）",
+      "cond": "数学4.0以上、または数学3.8以上かつ情報Ⅰ4.0以上",
+      "min": null,
+      "none": false,
+      "url": "https://www.ryukoku.ac.jp/admission/nyushi/pdf/youkou/2027_youkou_p19.pdf"
+     }
+    ]
    }
   },
   {
@@ -8737,6 +9073,27 @@
      "一般選抜 前期日程｜出願 1/3〜1/15｜試験 1/30・1/31・2/1・2/4・2/5｜発表 2/15",
      "一般選抜 中期日程｜出願 1/3〜2/5｜試験 2/17・2/18｜発表 2/28"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "公募制推薦入学試験 AO型 個性重視方式",
+      "cond": "学部により異なる（文学部歴史文化学科3.5以上、経営学部3.6以上、グローバル教養学環3.5以上、マネジメント創造学部は条件なし）",
+      "min": null,
+      "none": false,
+      "url": "https://ch.konan-u.ac.jp/admission/other/AO/"
+     },
+     {
+      "name": "公募制推薦入学試験 AO型 女子特別推薦方式",
+      "cond": "学科により異なる（知能情報学部3.6以上、理工学部 宇宙理学・量子物理工学科／環境・エネルギー工学科は条件なし）",
+      "min": null,
+      "none": false,
+      "url": "https://ch.konan-u.ac.jp/admission/other/women/"
+     }
+    ]
    }
   },
   {
@@ -8971,6 +9328,27 @@
     "ippan": [
      "一般選抜（A日程）｜出願 1/6〜1/20｜試験 2/2・2/3｜発表 2/12",
      "一般選抜（B日程）｜出願 1/6〜1/20｜試験 1/31・2/1｜発表 2/12"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜（自己推薦制）",
+      "cond": "3.0以上（全学部）",
+      "min": 3,
+      "none": false,
+      "url": "https://www.bukkyo-u.ac.jp/admission/design/file/exam/2027_youkou-self_recommendation.pdf"
+     },
+     {
+      "name": "学校推薦型選抜（公募制）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.bukkyo-u.ac.jp/admission/design/file/exam/2027_youkou-commendatory_a_b_c_common.pdf"
+     }
     ]
    }
   },
@@ -9252,6 +9630,34 @@
      "一般 前期A日程（3科目）｜出願 12/24〜1/12｜試験 1/21｜発表 2/5",
      "一般 前期B日程（3科目）｜試験 1/22｜発表 2/5",
      "一般 前期C日程（2科目）｜出願 12/24〜1/27｜試験 2/11｜発表 2/22"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜 小論文方式・探究・課外活動方式",
+      "cond": "3.0以上（看護学科・理学療法学科・救急救命学科は3.7以上）",
+      "min": null,
+      "none": false,
+      "url": "https://www.tachibana-u.ac.jp/admission/cms/wp-content/themes/tachibana-u/assets/pdf/sogo-guide.pdf"
+     },
+     {
+      "name": "総合型選抜 講座参加方式（デジタルクリエイション講座参加方式・書道実技講座参加方式）",
+      "cond": "3.0以上",
+      "min": 3,
+      "none": false,
+      "url": "https://www.tachibana-u.ac.jp/admission/cms/wp-content/themes/tachibana-u/assets/pdf/sogo-guide.pdf"
+     },
+     {
+      "name": "学校推薦型選抜 公募推薦・併願制",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.tachibana-u.ac.jp/admission/pdf/nyushiyoukou_koubo_ippan.pdf"
+     }
     ]
    }
   },
@@ -9724,6 +10130,34 @@
      "一般選抜 前期日程｜出願 12/15〜1/15｜試験 1/24・1/25・1/26｜発表 2/8",
      "一般選抜 中期A日程｜出願 12/15〜1/29｜試験 2/9｜発表 2/25"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜 AO入試（法学部・国際学部・経済学部・現代社会学部）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.setsunan.ac.jp/admission/faculty/data/2027ao.pdf"
+     },
+     {
+      "name": "総合型選抜 AO入試（経営学部・理工学部・薬学部・看護学部・農学部）",
+      "cond": "学部・学科により3.0〜3.2以上",
+      "min": null,
+      "none": false,
+      "url": "https://www.setsunan.ac.jp/admission/faculty/data/2027ao.pdf"
+     },
+     {
+      "name": "公募制推薦入試",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.setsunan.ac.jp/admission/faculty/requirements/files/koubo/2027yoko.pdf"
+     }
+    ]
    }
   },
   {
@@ -9965,6 +10399,34 @@
     "ippan": [
      "一般入試［前期日程］1月実施｜出願 12/18〜1/12｜試験 1/26・1/27・1/28｜発表 2/18",
      "一般入試［後期日程］｜出願 2/3〜2/19｜試験 3/2｜発表 3/11"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型 アサーティブ入試",
+      "cond": "3.0以上",
+      "min": 3,
+      "none": false,
+      "url": "https://nyushi.otemon.ac.jp/guide/pdf/2027_assertive.pdf"
+     },
+     {
+      "name": "総合型 理工学部独自入試（理工学部）",
+      "cond": "全体は原則3.0以上、かつ数学・理科いずれか原則3.3以上",
+      "min": null,
+      "none": false,
+      "url": "https://nyushi.otemon.ac.jp/guide/pdf/2027_sc.pdf"
+     },
+     {
+      "name": "公募制推薦入試",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://nyushi.otemon.ac.jp/guide/pdf/2027_general.pdf"
+     }
     ]
    }
   },
@@ -10428,6 +10890,34 @@
     "ippan": [
      "一般選抜 前期日程（2教科選択型）｜出願 12/21〜1/19｜試験 1/28・1/29・1/30｜発表 2/4",
      "一般選抜 中期日程（2教科選択型）｜出願 1/29〜2/9｜試験 2/20｜発表 2/26"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型 奨学金チャレンジ型",
+      "cond": "4.0以上",
+      "min": 4,
+      "none": false,
+      "url": "https://www.ogu.ac.jp/admissions/assets/files/admission/download/2027/nyouko_syogaku.pdf"
+     },
+     {
+      "name": "総合型 活動評価型",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.ogu.ac.jp/admissions/assets/files/admission/download/2027/nyouko_syogaku.pdf"
+     },
+     {
+      "name": "公募推薦",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.ogu.ac.jp/admissions/assets/files/admission/download/2027/kobo_01.pdf"
+     }
     ]
    }
   },
@@ -11814,6 +12304,27 @@
      "一般入試 前期・均等配点型（A日程）｜出願 1/4〜1/18｜試験 1/28・1/29",
      "一般入試 前期・均等配点型（B日程）｜出願 1/4〜1/22｜試験 2/4"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型 AO入試 課外活動評価型（工学部・情報科学部）",
+      "cond": "学部により指定教科の平均3.5以上",
+      "min": null,
+      "none": false,
+      "url": "https://www.oit.ac.jp/admission/outline/pdf/document_2027/ao_02-youkou2027.pdf"
+     },
+     {
+      "name": "公募制推薦入試",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.oit.ac.jp/admission/outline/faq.html"
+     }
+    ]
    }
   },
   {
@@ -12283,6 +12794,20 @@
      "一般入試 前期日程｜試験 1/26〜1/28",
      "一般入試 後期日程｜試験 3/7"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "公募制推薦入試",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kansaigaidai.ac.jp/magazine/kansaigaidai-introduction/15399/"
+     }
+    ]
    }
   },
   {
@@ -12523,6 +13048,34 @@
      "一般入試［第2期］｜出願 2/4〜2/17｜試験 2/26・2/27｜発表 3/4",
      "共通テスト利用入試｜出願 12/16〜1/20｜発表 2/13"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜入試",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.otani.ac.jp/admission/exam/sfpjr70000001w2b-att/2027guide.pdf"
+     },
+     {
+      "name": "公募制推薦入試（専願制・併願制）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.otani.ac.jp/admission/exam/sfpjr70000001w2b-att/2027guide.pdf"
+     },
+     {
+      "name": "公募制推薦入試（専願制）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.otani.ac.jp/admission/exam/u10fi90000008939-att/27guide_P15-16.pdf"
+     }
+    ]
    }
   },
   {
@@ -12756,6 +13309,27 @@
     "ippan": [
      "一般入試 A日程｜出願 1/4〜1/15｜試験 2/1〜2/3",
      "共通テスト利用入試 A日程｜出願 1/4〜1/22"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kuas.ac.jp/admissions/system/ao/"
+     },
+     {
+      "name": "公募推薦入試A日程",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kuas.ac.jp/admissions/system/recommendation-open/schedule-a/"
+     }
     ]
    }
   },
@@ -13687,6 +14261,27 @@
      "一般入試 A日程｜出願 12/14〜1/16｜試験 1/23〜1/25｜発表 2/6",
      "一般入試 B日程｜出願 1/12〜2/13｜試験 2/19｜発表 2/26"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜 基礎学力方式",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kbu.ac.jp/kbu/exam/admission_guide/index/asset/KBU_NyushiGuide2027_P07.pdf"
+     },
+     {
+      "name": "公募制推薦入試（Ⅰ期・Ⅱ期・Ⅲ期）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kbu.ac.jp/kbu/exam/admission_guide/index/asset/KBU_NyushiGuide2027_P20_P21.pdf"
+     }
+    ]
    }
   },
   {
@@ -14150,6 +14745,27 @@
      "一般選抜 前期日程｜出願 1/6〜1/28｜試験 2/5・2/6｜発表 2/17",
      "一般選抜 後期日程｜出願 2/15〜2/22｜試験 3/2｜発表 3/9"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜（AO）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://oiuvoice.com/assets/pdf/examination/2027-nyushiguide.pdf"
+     },
+     {
+      "name": "学校推薦型選抜（公募）A方式・B方式・C方式",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://oiuvoice.com/assets/pdf/examination/2027-nyushiguide.pdf"
+     }
+    ]
    }
   },
   {
@@ -14379,6 +14995,27 @@
     "ippan": [
      "一般選抜入試 前期A-Ⅰ｜出願 12/14〜1/19｜試験 1/25｜発表 2/12",
      "一般選抜入試 前期B｜出願 12/14〜2/2｜試験 2/9｜発表 2/19"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜入試 A日程・B日程",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://osaka-seikei-nyushi.jp/nyushi-university/exam/pdf/2027bosyu_univ.pdf?2608"
+     },
+     {
+      "name": "公募推薦入試 前期・後期",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://osaka-seikei-nyushi.jp/nyushi-university/exam/pdf/2027bosyu_univ.pdf?2608"
+     }
     ]
    }
   },
@@ -15750,6 +16387,34 @@
      "一般選抜A日程｜試験 1/31",
      "一般選抜B日程｜試験 2/14"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜AO入試（看護学部）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kyotokango.ac.jp/admission/"
+     },
+     {
+      "name": "学校推薦型選抜 公募推薦A日程（看護学部）",
+      "cond": "3.5以上",
+      "min": 3.5,
+      "none": false,
+      "url": "https://www.kyotokango.ac.jp/pdf/admission/2026/senbatsu_yokoku2.pdf"
+     },
+     {
+      "name": "学校推薦型選抜 公募推薦B日程（看護学部）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kyotokango.ac.jp/pdf/admission/2026/senbatsu_yokoku2.pdf"
+     }
+    ]
    }
   },
   {
@@ -15977,6 +16642,27 @@
     "ippan": [
      "一般選抜（前期）｜出願 1/6〜1/20｜試験 1/27｜発表 2/5",
      "一般選抜（中期）｜出願 1/21〜2/8｜試験 2/13｜発表 2/22"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜（教育学部・看護学部）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.osgu.ac.jp/admissions/qa/"
+     },
+     {
+      "name": "公募制推薦選抜（教育学部・看護学部）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.osgu.ac.jp/admissions/qa/"
+     }
     ]
    }
   },
@@ -27293,6 +27979,34 @@
      "一般選抜 A日程｜出願 12/15〜1/20｜試験 1/30｜発表 2/5",
      "一般選抜 B日程｜出願 12/15〜1/20｜試験 1/31｜発表 2/5"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜（AO入試）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.hanazono.ac.jp/wp/wp-content/uploads/2026/07/2027Application-Guidelines.pdf"
+     },
+     {
+      "name": "総合型選抜（高大接続型／高大接続専門型）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.hanazono.ac.jp/wp/wp-content/uploads/2026/07/2027Application-Guidelines.pdf"
+     },
+     {
+      "name": "自己推薦入試",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.hanazono.ac.jp/wp/wp-content/uploads/2026/07/2027Application-Guidelines.pdf"
+     }
+    ]
    }
   },
   {
@@ -27886,6 +28600,34 @@
     "ippan": [
      "一般選抜A（医学部）｜出願 12/14〜1/20｜試験 2/4｜発表 2/24",
      "一般選抜B（医学部）｜出願 12/14〜1/20｜試験 2/4｜発表 3/5"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "医学部 学校推薦型選抜（一般公募制）",
+      "cond": "4.0以上",
+      "min": 4,
+      "none": false,
+      "url": "https://www.hyo-med.ac.jp/files/20260703/c737f86c1b3de8f37133c3de2c8031853ac51fff.pdf"
+     },
+     {
+      "name": "医学部 総合型選抜（一般枠）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.hyo-med.ac.jp/files/20260703/c737f86c1b3de8f37133c3de2c8031853ac51fff.pdf"
+     },
+     {
+      "name": "薬学部・看護学部・リハビリテーション学部 学校推薦型選抜（一般公募制）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.hyo-med.ac.jp/files/20260724/b9d638c75dd7b3ef8acf62de83eb346b06e210ae.pdf"
+     }
     ]
    }
   },
@@ -29311,6 +30053,34 @@
      "一般選抜（Ⅰ日程）｜出願 12/22〜1/8｜試験 1/20｜発表 1/29",
      "一般選抜（Ⅲ日程）｜出願 1/19〜2/4｜試験 2/14｜発表 2/19"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜（専願）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.konan-wu.ac.jp/admission/exam/manual/pdf/2027guideline.pdf"
+     },
+     {
+      "name": "学校推薦型選抜（専願）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.konan-wu.ac.jp/admission/exam/manual/pdf/2027guideline.pdf"
+     },
+     {
+      "name": "学校推薦型選抜（併願）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.konan-wu.ac.jp/admission/exam/manual/pdf/2027guideline.pdf"
+     }
+    ]
    }
   },
   {
@@ -29457,6 +30227,34 @@
      "一般入学試験A日程｜出願 1/6〜1/20｜試験 2/3・2/4｜発表 2/12",
      "一般入学試験B日程｜出願 2/12〜2/18｜試験 3/3｜発表 3/8"
     ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "公募制推薦入学試験",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kufs.ac.jp/view/data/admissions/information.pdf?260601"
+     },
+     {
+      "name": "総合型選抜 語学検定利用入学試験",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kufs.ac.jp/view/data/admissions/information.pdf?260601"
+     },
+     {
+      "name": "総合型選抜 探究入学試験",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kufs.ac.jp/view/data/admissions/information.pdf?260601"
+     }
+    ]
    }
   },
   {
@@ -29601,6 +30399,20 @@
     "koubo": [],
     "ippan": [
      "一般選抜｜出願 12/21〜1/5｜試験 1/28｜発表 2/5"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kyoto-art.ac.jp/admission/pdf/guidebook_2027j.pdf"
+     }
     ]
    }
   },
@@ -29902,6 +30714,27 @@
     "ippan": [
      "一般選抜1期｜出願 1/6〜1/14｜試験 2/3・2/4｜発表 2/16",
      "一般選抜2期｜出願 3/1〜3/8｜試験 3/13｜発表 3/17"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kyoto-seika.ac.jp/pdf/2027/youkou.pdf"
+     },
+     {
+      "name": "学校推薦型選抜（公募制）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.kyoto-seika.ac.jp/pdf/2027/youkou.pdf"
+     }
     ]
    }
   },
@@ -31487,6 +32320,34 @@
     ],
     "ippan": [
      "一般選抜｜出願 12/21〜1/24｜試験 2/4・2/5｜発表 2/14"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜（AO入試）第1回",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.nara-u.ac.jp/admission/nyushi_guide_2027.pdf"
+     },
+     {
+      "name": "総合型選抜（AO入試）第2回（Aタイプ・Bタイプ）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.nara-u.ac.jp/admission/nyushi_guide_2027.pdf"
+     },
+     {
+      "name": "学校推薦型選抜（課題提示型小論文・基礎学力型A・B）",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.nara-u.ac.jp/admission/2027_youkou_ippan.pdf"
+     }
     ]
    }
   },
@@ -33210,6 +34071,34 @@
     "ippan": [
      "一般入試A日程｜出願 12/21〜1/13｜試験 1/24｜発表 1/29",
      "一般入試B日程｜出願 1/25〜2/3｜試験 2/12｜発表 2/19"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合型選抜 AO経験値入試",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://navi.sonoda-u.ac.jp/uploads/2026nyuusigaido.pdf"
+     },
+     {
+      "name": "公募制推薦入試［前期］",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://navi.sonoda-u.ac.jp/uploads/2026nyuusigaido.pdf"
+     },
+     {
+      "name": "公募制推薦入試［後期］",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://navi.sonoda-u.ac.jp/uploads/2026nyuusigaido.pdf"
+     }
     ]
    }
   },
@@ -35373,6 +36262,34 @@
     "ippan": [
      "一般選抜入試 1期〈面接方式〉｜出願 1/8〜1/24｜試験 2/7｜発表 2/15",
      "一般選抜入試 2期〈面接方式・実技方式〉｜出願 2/8〜2/15｜試験 2/19｜発表 2/26"
+    ]
+   },
+   "hyoutei_official": {
+    "year": "2027年度入試",
+    "fetched": "2026-11-20",
+    "by": "muse",
+    "rows": [
+     {
+      "name": "総合選抜入試（1期・2期）〈体験授業方式〉",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.seian.ac.jp/assets/pdf/admission/2027_seian_exam_guide.pdf"
+     },
+     {
+      "name": "総合選抜入試（3期・5期）〈面接方式〉",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.seian.ac.jp/assets/pdf/admission/2027_seian_exam_guide.pdf"
+     },
+     {
+      "name": "総合選抜入試（4期）特待生〈実技方式〉",
+      "cond": "条件なし",
+      "min": null,
+      "none": true,
+      "url": "https://www.seian.ac.jp/assets/pdf/admission/2027_seian_exam_guide.pdf"
+     }
     ]
    }
   }
@@ -54900,60 +55817,6 @@
    ],
    "zemi": [],
    "data_status": "verified"
-  },
-  {
-   "dept_id": "osaka-kokusai-hokeniryo",
-   "uni_id": "osaka-kokusai",
-   "name": "保健医療学部 看護学科",
-   "campus": null,
-   "hensachi": {
-    "min": 45,
-    "max": 50,
-    "basis": "kawai",
-    "source_url": null,
-    "verified_date": null
-   },
-   "bairitsu": {
-    "ippan": {},
-    "source_url": null,
-    "verified_date": null
-   },
-   "entry_methods": [
-    {
-     "type": "sogo",
-     "available": true,
-     "note": null,
-     "verified": false
-    },
-    {
-     "type": "koubo",
-     "available": true,
-     "note": null,
-     "verified": false
-    },
-    {
-     "type": "ippan",
-     "available": true,
-     "note": null,
-     "verified": false
-    },
-    {
-     "type": "kyotsu",
-     "available": null,
-     "note": "共テ利用の有無は要調査",
-     "verified": false
-    }
-   ],
-   "qualifications": [
-    "看護師",
-    "保健師"
-   ],
-   "interest_tags": [
-    "iryo"
-   ],
-   "employment_fields": [],
-   "zemi": [],
-   "data_status": "unconfirmed"
   },
   {
    "dept_id": "osaka-kokusai-ningenkagaku",
@@ -77104,8 +77967,6 @@
    "qualifications": [
     "社会福祉士（受験資格）",
     "精神保健福祉士（受験資格）（要確認）",
-    "保育士（児童福祉学科）（要確認）",
-    "幼稚園教諭一種（児童福祉学科）（要確認）",
     "認定心理士（臨床心理学科）（要確認）"
    ],
    "interest_tags": [
@@ -77118,7 +77979,12 @@
     "service"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.hanazono.ac.jp/education/social_welfare/social_welfare.html"
+   }
   },
   {
    "dept_id": "himeji-dokkyo-ningen",
@@ -78449,7 +79315,12 @@
     "maker"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.hyo-med.ac.jp/admission/question/pharmacy/"
+   }
   },
   {
    "dept_id": "hyogo-ika-kango",
@@ -78496,7 +79367,8 @@
    ],
    "qualifications": [
     "看護師国家試験受験資格",
-    "保健師国家試験受験資格（選抜制・要確認）"
+    "保健師国家試験受験資格（選抜制）",
+    "助産師（国家試験受験資格）"
    ],
    "interest_tags": [
     "iryo"
@@ -78505,7 +79377,12 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.hyo-med.ac.jp/admission/question/nursing/"
+   }
   },
   {
    "dept_id": "hyogo-ika-riha",
@@ -78563,7 +79440,12 @@
     "sports_kenko"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.hyo-med.ac.jp/admission/question/rehabilitation/"
+   }
   },
   {
    "dept_id": "hyogo-kenritsu-shokei",
@@ -81648,10 +82530,7 @@
    ],
    "qualifications": [
     "認定心理士",
-    "公認心理師（大学院等の要件あり・要確認）",
-    "保育士",
-    "幼稚園教諭一種",
-    "小学校教諭一種（要確認）"
+    "公認心理師（大学院等の要件あり・要確認）"
    ],
    "interest_tags": [
     "shakai",
@@ -81663,7 +82542,12 @@
     "service"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.konan-wu.ac.jp/career/qualification_list/"
+   }
   },
   {
    "dept_id": "konan-joshi-kango-riha",
@@ -81710,8 +82594,9 @@
    ],
    "qualifications": [
     "看護師（国家試験受験資格）",
-    "保健師（選抜制・要確認）",
-    "理学療法士（国家試験受験資格）"
+    "保健師（選抜制）",
+    "理学療法士（国家試験受験資格）",
+    "助産師（国家試験受験資格）"
    ],
    "interest_tags": [
     "iryo"
@@ -81720,7 +82605,12 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.konan-wu.ac.jp/career/qualification_list/"
+   }
   },
   {
    "dept_id": "konan-joshi-iryo-eiyo",
@@ -81779,7 +82669,12 @@
     "shokuhin"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.konan-wu.ac.jp/career/qualification_list/"
+   }
   },
   {
    "dept_id": "kyoto-gaidai-gaikokugo",
@@ -82236,8 +83131,8 @@
     }
    ],
    "qualifications": [
-    "一級建築士受験資格（建築コース・卒業後実務経験要）（要確認）",
-    "二級建築士受験資格（要確認）",
+    "一級建築士受験資格（建築コース・卒業後実務経験要）",
+    "二級建築士受験資格",
     "学芸員（要確認）"
    ],
    "interest_tags": [
@@ -82250,7 +83145,12 @@
     "service"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kyoto-art.ac.jp/art/department/environmental/"
+   }
   },
   {
    "dept_id": "kyoto-geijutsu-eiga",
@@ -82523,8 +83423,8 @@
     }
    ],
    "qualifications": [
-    "保育士（要確認）",
-    "幼稚園教諭一種（要確認）"
+    "保育士",
+    "幼稚園教諭一種"
    ],
    "interest_tags": [
     "kyoiku",
@@ -82536,7 +83436,12 @@
     "service"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kyoto-art.ac.jp/department/child/?url=art/department/child"
+   }
   },
   {
    "dept_id": "kyoto-geijutsu-rekishi",
@@ -82642,8 +83547,8 @@
    ],
    "qualifications": [
     "看護師（国家試験受験資格）",
-    "保健師（選抜制・要確認）",
-    "養護教諭一種免許（要確認）"
+    "保健師（選抜制）",
+    "養護教諭一種免許"
    ],
    "interest_tags": [
     "iryo"
@@ -82653,7 +83558,12 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.koka.ac.jp/wp-content/themes/www/assets/file/introduction/regulations/2025daigaku_gakusoku.pdf"
+   }
   },
   {
    "dept_id": "kyoto-koka-shinri",
@@ -82770,7 +83680,12 @@
     "service"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.koka.ac.jp/wp-content/themes/www/assets/file/introduction/regulations/2025daigaku_gakusoku.pdf"
+   }
   },
   {
    "dept_id": "kyoto-koka-fukushi",
@@ -82816,7 +83731,6 @@
     }
    ],
    "qualifications": [
-    "社会福祉士（国家試験受験資格）",
     "言語聴覚士（国家試験受験資格）",
     "作業療法士（国家試験受験資格）",
     "精神保健福祉士（要確認）"
@@ -82829,7 +83743,12 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.koka.ac.jp/wp-content/themes/www/assets/file/introduction/regulations/2025daigaku_gakusoku.pdf"
+   }
   },
   {
    "dept_id": "kyoto-koka-kodomo",
@@ -82888,7 +83807,12 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.koka.ac.jp/child/facilities/125/"
+   }
   },
   {
    "dept_id": "kyoto-koka-career",
@@ -83054,7 +83978,7 @@
    "qualifications": [
     "中学校・高等学校教諭一種免許状（美術）（要確認）",
     "学芸員",
-    "一級・二級建築士受験資格（建築学科）（要確認）"
+    "一級・二級建築士受験資格（建築学科）"
    ],
    "interest_tags": [
     "geijutsu",
@@ -83066,7 +83990,12 @@
     "kensetsu"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://sjocw.kyoto-seika.ac.jp/edu/design/"
+   }
   },
   {
    "dept_id": "kyoto-seika-geijutsu",
@@ -84388,8 +85317,8 @@
    ],
    "qualifications": [
     "看護師（国家試験受験資格）",
-    "保健師（国家試験受験資格・選抜制）（要確認）",
-    "助産師（卒業後、助産学専攻科進学で目指せる）（要確認）"
+    "保健師（国家試験受験資格・選抜制）",
+    "助産師（卒業後、助産学専攻科進学で目指せる）"
    ],
    "interest_tags": [
     "iryo"
@@ -84399,7 +85328,12 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://morinomiya-u.ac.jp/faculty/kango/"
+   }
   },
   {
    "dept_id": "morinomiya-iryo-rigaku",
@@ -84456,7 +85390,12 @@
     "sports_kenko"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.morinomiya-u.ac.jp/guide/diplomapolicy.html"
+   }
   },
   {
    "dept_id": "morinomiya-iryo-sagyo",
@@ -84512,7 +85451,12 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.morinomiya-u.ac.jp/guide/diplomapolicy.html"
+   }
   },
   {
    "dept_id": "morinomiya-iryo-gengo",
@@ -84568,7 +85512,12 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.morinomiya-u.ac.jp/guide/diplomapolicy.html"
+   }
   },
   {
    "dept_id": "morinomiya-iryo-kensa",
@@ -84624,7 +85573,12 @@
     "maker"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.morinomiya-u.ac.jp/faculty/rinshou/"
+   }
   },
   {
    "dept_id": "morinomiya-iryo-kogaku",
@@ -84737,7 +85691,12 @@
     "koumuin"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.morinomiya-u.ac.jp/faculty/shinryou/"
+   }
   },
   {
    "dept_id": "morinomiya-iryo-shinkyu",
@@ -89396,7 +90355,12 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://univ.osaka-shoin.ac.jp/about/disclosure/information/kyoin_goal/"
+   }
   },
   {
    "dept_id": "osaka-shoin-eiyo",
@@ -89456,7 +90420,12 @@
     "kyoiku"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "http://www.osaka-shoin.ac.jp/univ/departments/nutrition/"
+   }
   },
   {
    "dept_id": "seijo-keizai",
@@ -91043,7 +92012,12 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.sonoda-u.ac.jp/university/uploads/a1708064904594.pdf"
+   }
   },
   {
    "dept_id": "sonoda-gakuen-kango",
@@ -91090,8 +92064,9 @@
    ],
    "qualifications": [
     "看護師国家試験受験資格",
-    "保健師国家試験受験資格（選抜制・要確認）",
-    "養護教諭二種免許（保健師課程経由・要確認）"
+    "保健師国家試験受験資格（選抜制）",
+    "養護教諭二種免許（保健師課程経由）",
+    "助産師（国家試験受験資格）"
    ],
    "interest_tags": [
     "iryo"
@@ -91100,7 +92075,12 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.sonoda-u.ac.jp/sonodanavi/course/kango.html"
+   }
   },
   {
    "dept_id": "sonoda-gakuen-eiyo",
@@ -91159,7 +92139,12 @@
     "service"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.sonoda-u.ac.jp/course/food-management.html"
+   }
   },
   {
    "dept_id": "sonoda-gakuen-kyoiku",
@@ -91218,7 +92203,12 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.sonoda-u.ac.jp/news/000144.html"
+   }
   },
   {
    "dept_id": "tamagawa-kyoiku",
@@ -97835,7 +98825,7 @@
     }
    ],
    "qualifications": [
-    "一級建築士受験資格（建築・デザイン学科・要確認）",
+    "一級建築士受験資格（建築・デザイン学科）",
     "危険物取扱者（受験対策・要確認）",
     "高等学校教諭一種免許（工業・要確認）",
     "情報・電気系技術職"
@@ -97851,7 +98841,12 @@
     "service"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.kindai.ac.jp/hose/department/architecture/message/"
+   }
   },
   {
    "dept_id": "meiji-riko",
@@ -100459,7 +101454,7 @@
     "公認心理師（大学院等の要件あり・要確認）",
     "保育士",
     "幼稚園教諭一種",
-    "小学校教諭一種（要確認）"
+    "小学校教諭一種"
    ],
    "interest_tags": [
     "kyoiku"
@@ -100468,7 +101463,12 @@
     "kyoiku"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.konan-wu.ac.jp/career/qualification_list/"
+   }
   },
   {
    "dept_id": "konan-joshi-shakaigakubu",
@@ -100515,10 +101515,7 @@
    ],
    "qualifications": [
     "認定心理士",
-    "公認心理師（大学院等の要件あり・要確認）",
-    "保育士",
-    "幼稚園教諭一種",
-    "小学校教諭一種（要確認）"
+    "公認心理師（大学院等の要件あり・要確認）"
    ],
    "interest_tags": [
     "shakai"
@@ -100528,7 +101525,12 @@
     "ryutsu"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.konan-wu.ac.jp/career/qualification_list/"
+   }
   },
   {
    "dept_id": "tokai-univ-kyoyo",
@@ -101284,7 +102286,12 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://www.hanazono.ac.jp/education/h_education/primary_education.html"
+   }
   },
   {
    "dept_id": "tsukuba-sugaku",
@@ -101565,7 +102572,12 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://bpur.aino.ac.jp/physiotherapy/"
+   }
   },
   {
    "dept_id": "biwako-reha-ot",
@@ -101620,7 +102632,12 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://bpur.aino.ac.jp/occupationaltherapy/"
+   }
   },
   {
    "dept_id": "biwako-reha-st",
@@ -101675,7 +102692,12 @@
     "iryo_fukushi"
    ],
    "zemi": [],
-   "data_status": "estimated"
+   "data_status": "estimated",
+   "quals_checked": {
+    "date": "2026-11-20",
+    "by": "muse",
+    "source_url": "https://bpur.aino.ac.jp/speechtherapy/"
+   }
   },
   {
    "dept_id": "seian-zokei-geijutsu",

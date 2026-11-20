@@ -2583,8 +2583,13 @@ function setupHyoutei() {
     hint.textContent = h.text;
   };
   // ライブカウンタ: 評定条件が数値公表されている推薦・総合型(105方式)を前計算し、スライダーで即時集計
-  const mins = [];
+  const mins = [], noCond = [];
   ((DATA_V2 && DATA_V2.universities) || []).forEach(u => {
+    const ho = u.hyoutei_official;
+    if (ho) {   // 2027年度の要項で確かめた大学は、その条件で数える（古い推定の行は使わない）
+      ho.rows.forEach(r => { if (r.min != null) mins.push({ min: r.min, uni: u.id }); else if (r.none) noCond.push(u.id); });
+      return;
+    }
     const e = u.entry_method_details || {};
     ['sogo', 'koubo'].forEach(tp => (e[tp] || []).forEach(m => {
       if (typeof m.hyoutei_min === 'number') mins.push({ min: m.hyoutei_min, uni: u.id });
@@ -2598,7 +2603,8 @@ function setupHyoutei() {
     const ok = mins.filter(x => v >= x.min);
     const unis = new Set(ok.map(x => x.uni)).size;
     counter.hidden = false;
-    counter.innerHTML = `✅ 評定の条件をクリアできる推薦・総合型の入試: <strong>${ok.length}件（${unis}大学）</strong>　※評定は条件の1つで、ほかに面接・小論文などの選考があります<br><span style="font-size:11px;color:var(--text-muted)">評定条件を数値で公表している${mins.length}件が対象。学部ごとに条件が違う場合や「要確認」の入試は含みません</span>`;
+    counter.innerHTML = `✅ 評定の条件をクリアできる推薦・総合型の入試: <strong>${ok.length}件（${unis}大学）</strong>　※評定は条件の1つで、ほかに面接・小論文などの選考があります<br><span style="font-size:11px;color:var(--text-muted)">評定条件を数値で公表している${mins.length}件が対象。学部ごとに条件が違う場合や「要確認」の入試は含みません</span>` +
+      (noCond.length ? `<br>📄 このほかに、<strong>評定の条件が無い</strong>と要項で確かめた総合型・公募の方式: <strong>${noCond.length}件（${new Set(noCond).size}大学）</strong>　※条件が無くても、評定が選考で点数にされることはあります` : '');
   };
   input.addEventListener('input', (e) => {
     state.diag.hyoutei = parseFloat(e.target.value);
@@ -3910,6 +3916,18 @@ function _toSeason(str) {
     .replace(/(\d{1,2}月[上中下]旬)\s*[〜～~-]\s*\1/g, '$1');
 }
 
+// 2027年度の要項で確かめた「出願に要る評定の条件」（data の hyoutei_official）
+function hyouteiOfficialHtml(ho, myG) {
+  const li = ho.rows.map(r => {
+    let mark = '';
+    if (myG != null) { if (r.cond === '条件なし') mark = ' ✅'; else if (r.min != null) mark = myG >= r.min ? ' ✅' : ' ⚠️'; }   // ただし書きのある条件には印を付けない
+    return `<li>${_esc(r.name)}：<b>${_esc(r.cond)}</b>${mark}${r.url ? ` <a href="${_esc(r.url)}" target="_blank" rel="noopener">要項 ↗</a>` : ''}</li>`;
+  }).join('');
+  return `<div class="method-item"><div class="method-name">📊 出願に要る評定の条件（${_esc(ho.year)}の要項で確認・${_esc(ho.fetched)}）</div><ul class="off-lines">${li}</ul></div>` +
+    `<p class="detail-note">総合型・公募制のおもな方式だけです（指定校推薦は進路指導室へ）。「条件なし」でも、評定が選考で点数にされることはあります。` +
+    (myG != null ? `✅ = あなたの評定（${_esc(myG)}）で出願できる ／ ⚠️ = 届いていない。` : '') + `学部や教科で条件が違う方式には印を付けていません。</p>`;
+}
+
 function uniTabEntrance(uni) {
   if (uni.boshu_teishi) return `<p class="detail-note">学生募集を停止しているため、入試の情報は載せていません。</p>`;   // 知らせは大学ページの上に出ている
   const emd = uni.entry_method_details || {};
@@ -3965,7 +3983,7 @@ function uniTabEntrance(uni) {
     rows.forEach(r => {
       html += `<div class="method-item"><div class="method-name">${_esc(r.method_name || '')}</div>` +
         _dl([
-          _row('評定条件', r.hyoutei_note ? _esc(r.hyoutei_note) : (r.hyoutei_min != null ? `${r.hyoutei_min}以上` : null)),
+          _row('評定条件', uni.hyoutei_official ? null : r.hyoutei_note ? _esc(r.hyoutei_note) : (r.hyoutei_min != null ? `${r.hyoutei_min}以上` : null)),
           _row('出願区分', r.type ? _esc(r.type) : null),
           _row('選考内容', _joinArr(r.selection_content)),
           _row('試験科目', r.subjects ? _esc(r.subjects) : null),
@@ -4001,7 +4019,7 @@ function uniTabEntrance(uni) {
   if (html.indexOf('heat-badge') !== -1) {
     html += `<p class="detail-note">🎨 想定倍率の色は<strong>赤に近いほど競争が激しい</strong>（倍率が高い＝受ける人が多く不合格も多い）目安です。</p>`;
   }
-  return banner + chipHtml + _schedTimeline(nd) + (html || '<p class="detail-lead">入試方式の詳細は公式サイトで確認してください。</p>') +
+  return banner + (uni.hyoutei_official ? hyouteiOfficialHtml(uni.hyoutei_official, myG) : chipHtml) + _schedTimeline(nd) + (html || '<p class="detail-lead">入試方式の詳細は公式サイトで確認してください。</p>') +
     `<div class="detail-links">${links}</div>`;
 }
 
@@ -4265,6 +4283,12 @@ function renderSameLevelPeers(dept, uni) {
     `<p class="detail-note">📌 ${myQuals.length ? `この学部と同じ資格（${_esc(myQuals.map(id => GUIDE.QUAL_RULES[id].label).slice(0, 2).join('・'))}）が取れて` : '学べる分野が近く'}、難易度がこの学部とほぼ同じ（偏差値の低いほうの数字で±2以内。国公立は実質難度+${kb}で比較）学部を、近い順に並べています。タップでその学部のページへ。<br>💡 併願 = 本命と同じ時期に、他の大学にも出願しておくこと。</p>`;
 }
 
+// 資格の欄を公式サイトで確かめた学部（data の quals_checked）
+function _qualsCheckedHtml(dept) {
+  const c = dept && dept.quals_checked;
+  if (!c) return '';
+  return ` <small style="color:var(--text-muted)">（${_esc(c.date)} 公式サイトで確認` + (c.source_url ? ` <a href="${_esc(c.source_url)}" target="_blank" rel="noopener">↗</a>` : '') + `）</small>`;
+}
 // 学部名には出ないが専攻として学べる分野（data の fields_extra。公式サイトで確かめた分だけ）
 function _fieldsExtraHtml(dept) {
   const fx = dept && dept.fields_extra;
@@ -4341,7 +4365,7 @@ function deptOnlyBody(dept, uni) {
       _row('倍率（一般）', bai),
       _row('キャンパス', dept.campus ? _esc(dept.campus) : null),
       _row('学べる分野', _joinArr(itags)),
-      _row('取得できる資格', _joinArr(dept.qualifications)),
+      _row('取得できる資格', _joinArr(dept.qualifications) ? _joinArr(dept.qualifications) + _qualsCheckedHtml(dept) : null),
       _row('専攻として学べる', _fieldsExtraHtml(dept)),
       _row('この学部の就職分野', _joinArr(empf)),
     ]) +
@@ -4371,7 +4395,7 @@ function detailBasicV2(dept, uni) {
       _row('倍率（一般）', bai),
       _row('キャンパス', _esc(dept.campus || uni.campus_main || '')),
       _row('学べる分野', _joinArr(itags)),
-      _row('取得できる資格', _joinArr(dept.qualifications)),
+      _row('取得できる資格', _joinArr(dept.qualifications) ? _joinArr(dept.qualifications) + _qualsCheckedHtml(dept) : null),
       _row('専攻として学べる', _fieldsExtraHtml(dept)),
       _row('ゼミ・研究', zemi ? _esc(zemi) : null),
     ]) +
