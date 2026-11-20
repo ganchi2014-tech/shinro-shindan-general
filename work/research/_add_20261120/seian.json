@@ -1,0 +1,53 @@
+{
+ "uni": {
+  "id": "seian-zokei",
+  "name": "成安造形大学",
+  "name_short": "成安造形大",
+  "prefecture": "滋賀県",
+  "type": "私立",
+  "campus_main": "大津キャンパス（滋賀県大津市仰木の里東）",
+  "tuition_yen_per_year": 1540000,
+  "tuition_note": "授業料の年額（総合領域は980,000円）。別に実習費・諸会費と、初年度は入学金200,000円が必要。入試の成績優秀者には授業料などを給付する特待生制度あり（旺文社パスナビ2026年度・要確認）",
+  "access_from_shiga_min": 45,
+  "commute_possible": true,
+  "commute_note": "大津から湖西線でおごと温泉駅、駅からバス。県内自宅通学圏",
+  "feature": "びわ湖を望む大津市のキャンパスにある、滋賀県内で唯一の芸術大学。芸術学部芸術学科の1学部1学科で、美術・イラストレーション・情報デザインなどの「領域」に分かれて学ぶ。少人数での個別指導が特色。2027年4月にゲーム・アニメーション、空間造形デザイン、コスチュームの各領域を設置予定（要確認）。",
+  "living_cost": { "rent_min": 0, "rent_max": 45000, "food_monthly": 15000, "monthly_total": 20000, "four_year_total": 1000000, "note": "県内自宅通学が基本。制作の材料費が別にかかる" },
+  "shingaku_jisseki": { "shushoku_rate": "要確認", "top_employers": [], "note": null },
+  "campus_neighborhood": { "nearest_station": "JR湖西線 おごと温泉駅からバス", "walking_min_from_station": null, "nearby_amenities": "住宅地の中のキャンパス", "area_description": "大津市北部・仰木の里の丘の上" },
+  "shogakukin": { "general_shogakukin": "入試成績優秀者の特待生制度（授業料などを給付）、日本学生支援機構", "shogakukin_official_url": null },
+  "career_center": { "features": ["少人数の個別支援"], "quality": 3, "note": null },
+  "official_links": { "official_url": "https://www.seian.ac.jp/", "nyushi_url": null, "shingaku_url": null, "youkou_url": null },
+  "unique_point": "県内から通える芸術・デザイン系の大学。実技（デッサン）か面接で受けられる方式があり、学力試験だけで決まらない。",
+  "employment": {
+   "ratings": { "kyoin": 1, "shogakkō": 1, "keisatsu": 1, "shōbō": 1, "kōmuin_ippan": 1, "kigyō_ippan": 2, "kigyō_supotsu": 1, "iryō": 1 },
+   "strengths": ["デザイン・イラスト・映像など制作の仕事につながる学び"],
+   "representative_employers": [],
+   "summary": "デザイン・制作系をめざす人向け。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [ { "method_name": "総合選抜入試（1期〜3期）", "subjects": "面接方式・実技方式（鉛筆デッサン）など", "notes": "方式・日程は年度で変わるので公式の入学試験要項で確認（要確認）", "required_achievement": null } ],
+   "koubo": [],
+   "ippan": [ { "method_name": "一般選抜入試／大学入学共通テスト利用方式", "subjects": "実技方式・面接方式・共通テスト利用方式", "notes": "共通テスト利用方式のボーダー得点率は60〜70%（河合塾・2027年度入試予想）" } ]
+  }
+ },
+ "departments": [
+  {
+   "dept_id": "seian-zokei-geijutsu",
+   "name": "芸術学部 芸術学科（美術・イラストレーション・情報デザインほか）",
+   "campus": "大津キャンパス（滋賀県大津市仰木の里東）",
+   "hensachi": { "min": 35, "max": 37.5 },
+   "entry_methods": [
+    { "type": "sogo", "available": true, "note": "総合選抜入試（面接方式・実技方式）" },
+    { "type": "koubo", "note": "要確認" },
+    { "type": "ippan", "available": true, "note": "実技（鉛筆デッサン）・面接中心。河合塾のボーダー偏差値は設定なし。偏差値は進研模試の目安（44〜47）を換算した推定" },
+    { "type": "kyotsu", "available": true, "note": "共通テスト利用方式あり。ボーダー得点率60〜70%（河合塾）" }
+   ],
+   "qualifications": [],
+   "interest_tags": ["geijutsu", "kenchiku"],
+   "employment_fields": ["media"],
+   "data_status": "estimated"
+  }
+ ]
+}

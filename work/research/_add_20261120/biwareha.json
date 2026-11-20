@@ -1,0 +1,49 @@
+{
+ "uni": {
+  "id": "biwako-reha",
+  "name": "びわこリハビリテーション専門職大学",
+  "name_short": "びわリハ大",
+  "prefecture": "滋賀県",
+  "type": "私立",
+  "campus_main": "東近江キャンパス（滋賀県東近江市北坂町）",
+  "tuition_yen_per_year": 1100000,
+  "tuition_note": "4年間の納入金 約440万円を4で割った目安。授業料は年90万円、初年度納入金は約145万円（入学金を含む・2027年度予定）。実習費などを含むかは公式で確認（要確認）",
+  "access_from_shiga_min": 60,
+  "commute_possible": true,
+  "commute_note": "近江八幡から近江鉄道で八日市方面。県内自宅通学圏。通学定期代の補助制度あり",
+  "feature": "滋賀県で唯一のリハビリ職（理学療法士・作業療法士・言語聴覚士）の養成校。4年制の専門職大学で、授業の3分の1以上が実技・実習。前身の専門学校から続く県内の病院・施設とのつながりが強い。",
+  "living_cost": { "rent_min": 0, "rent_max": 40000, "food_monthly": 15000, "monthly_total": 20000, "four_year_total": 1000000, "note": "県内自宅通学が基本。下宿する人への家賃補助制度あり（要確認）" },
+  "shingaku_jisseki": { "shushoku_rate": "100%（2年連続・大学公表）", "top_employers": ["県内の病院", "福祉施設"], "note": "滋賀県内で働く理学療法士・作業療法士の約4分の1が卒業生（前身の専門学校を含む・大学公表）" },
+  "campus_neighborhood": { "nearest_station": "近江鉄道 八日市方面（要確認）", "walking_min_from_station": null, "nearby_amenities": null, "area_description": "東近江市" },
+  "shogakukin": { "general_shogakukin": "一般選抜スカラシップ（授業料相当額または半額を給付）、自宅外通学者への家賃補助、通学費用補助、日本学生支援機構", "shogakukin_official_url": null },
+  "career_center": { "features": ["学内での合同就職説明会", "クラス担任制・チューター制"], "quality": 4, "note": null },
+  "official_links": { "official_url": "https://bpur.aino.ac.jp/", "nyushi_url": null, "shingaku_url": null, "youkou_url": null },
+  "unique_point": "県内で家から通ってリハビリの国家資格をめざせる。大学卒の学位（専門職）が取れる点が、同じ資格をめざす専門学校との違い。",
+  "employment": {
+   "ratings": { "kyoin": 1, "shogakkō": 1, "keisatsu": 1, "shōbō": 1, "kōmuin_ippan": 1, "kigyō_ippan": 1, "kigyō_supotsu": 2, "iryō": 5 },
+   "strengths": ["県内の病院・施設への就職に直結", "少人数（1クラス40名以下）"],
+   "representative_employers": ["県内の病院", "福祉施設"],
+   "summary": "県内でリハビリ職につく最短の道のひとつ。",
+   "notes": null
+  },
+  "entry_method_details": {
+   "sogo": [ { "method_name": "総合型選抜入試（講座参加型・面接重視型）", "subjects": "講座参加・面接など", "notes": "募集の中心（理学療法60名中24名＝2027年度予定）", "required_achievement": null } ],
+   "koubo": [ { "method_name": "学校推薦型選抜入試（公募制推薦）", "selection_content": ["書類", "面接", "学科試験"], "notes": "指定校推薦もあり。評定の条件は要確認" } ],
+   "ippan": [ { "method_name": "一般選抜入試", "subjects": "国語＋選択（英語・数学）など", "notes": "成績優秀者へのスカラシップ制度あり" } ]
+  }
+ },
+ "departments": [
+  { "dept_id": "biwako-reha-pt", "name": "リハビリテーション学部 理学療法学科", "campus": "東近江キャンパス（滋賀県東近江市北坂町）",
+    "hensachi": { "min": 35, "max": 35 },
+    "entry_methods": [ { "type": "sogo", "available": true, "note": "講座参加型・面接重視型" }, { "type": "koubo", "available": true, "note": "公募制推薦・指定校推薦" }, { "type": "ippan", "available": true, "note": "河合塾ボーダー偏差値35.0（2027年度入試予想）" }, { "type": "kyotsu", "note": "要確認" } ],
+    "qualifications": ["理学療法士"], "interest_tags": ["iryo", "sports"], "employment_fields": ["iryo_fukushi"], "data_status": "estimated" },
+  { "dept_id": "biwako-reha-ot", "name": "リハビリテーション学部 作業療法学科", "campus": "東近江キャンパス（滋賀県東近江市北坂町）",
+    "hensachi": { "min": 35, "max": 35 },
+    "entry_methods": [ { "type": "sogo", "available": true, "note": "講座参加型・面接重視型" }, { "type": "koubo", "available": true, "note": "公募制推薦・指定校推薦" }, { "type": "ippan", "available": true, "note": null }, { "type": "kyotsu", "note": "要確認" } ],
+    "qualifications": ["作業療法士"], "interest_tags": ["iryo"], "employment_fields": ["iryo_fukushi"], "data_status": "estimated" },
+  { "dept_id": "biwako-reha-st", "name": "リハビリテーション学部 言語聴覚療法学科", "campus": "東近江キャンパス（滋賀県東近江市北坂町）",
+    "hensachi": { "min": 35, "max": 35 },
+    "entry_methods": [ { "type": "sogo", "available": true, "note": "要確認" }, { "type": "koubo", "note": "要確認" }, { "type": "ippan", "available": true, "note": "河合塾ではボーダーフリー（偏差値の設定なし）。35は表示上の最小値" }, { "type": "kyotsu", "note": "要確認" } ],
+    "qualifications": ["言語聴覚士"], "interest_tags": ["iryo"], "employment_fields": ["iryo_fukushi"], "data_status": "estimated" }
+ ]
+}

@@ -2969,7 +2969,8 @@ function renderResults() {
   }
   const areaLbl = { shiga: '🏞️滋賀', kansai: '🏯関西圏', any: '🗾どこでも' };
   if (areaLbl[state.diag.workArea]) conds.push(areaLbl[state.diag.workArea]);
-  const commuteLbl = { 'jitaku': '🏠通い厳', 'jitaku-flex': '🏠通い緩', 'any': '🏘️下宿OK' };
+  const commuteLbl = { 'jitaku': '🏠片道90分まで', 'jitaku-flex': '🏠片道120分まで', 'any': '🏘️下宿OK' };
+  if (state.diag.origin && GUIDE && GUIDE.originById(state.diag.origin)) conds.push('🚉' + originShort() + 'から');
   if (commuteLbl[state.diag.commute]) conds.push(commuteLbl[state.diag.commute]);
   if (state.diag.costPriority) conds.push('💴学費抑えめ');
   if (!state.diag.methods.has('any')) {
@@ -3808,6 +3809,15 @@ function uniTabEntrance(uni) {
     `<div class="detail-links">${links}</div>`;
 }
 
+// 滋賀県内に就職した人の割合（滋賀県の公表資料から。数字のある大学だけ出す）
+function _shigaShushoku(uni) {
+  const ss = uni.shiga_shushoku;
+  if (!ss || ss.rate_pct == null) return null;
+  const sh = ss.shusshin_pct != null ? `。卒業生のうち滋賀県出身は${ss.shusshin_pct}%` : '';
+  const src = ss.source_url ? ` <a href="${_esc(ss.source_url)}" target="_blank" rel="noopener">出典 ↗</a>` : '';
+  return `${ss.base} <strong>${ss.rate_pct}%</strong>（${_esc(ss.cohort)}・大学全体${sh}）${src}<br><span style="font-size:11px;color:var(--text-muted)">滋賀県の公表資料。県外の大学は、県と就職支援の協定を結んでいる大学だけ数字があります。学部ごとの数字ではありません</span>`;
+}
+
 function uniTabEmployment(uni) {
   const sj = uni.shingaku_jisseki || {};
   const emp = uni.employment || {};
@@ -3850,6 +3860,7 @@ function uniTabEmployment(uni) {
 
   html += _dl([
     _row('就職率', sj.shushoku_rate ? _esc(sj.shushoku_rate) : null),
+    _row('滋賀県内に就職した割合', _shigaShushoku(uni)),
     _row('主な就職先', (() => {   // top_employersとrepresentative_employersのunion（100大学で実名+270件）
       const u = [...new Set([...(sj.top_employers || []), ...(emp.representative_employers || [])])];
       if (!u.length) return null;
