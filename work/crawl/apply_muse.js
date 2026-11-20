@@ -2,6 +2,7 @@
 //  使い方: node crawl/apply_muse.js <取得日 YYYY-MM-DD> <ファイル...>
 //   *.txt = Museの行  id|S/K/I|方式名|出願 …|試験 …|発表 …[|年度=2026]   /   id|L|入試ページ|日程の資料|募集要項|オープンキャンパス
 //   *.tsv = 巡回スクリプトのリンク  id<TAB>入試ページ<TAB>入試日程<TAB>募集要項<TAB>オープンキャンパス（~ は入試ページと同じサイト）
+//   self_*.txt = 同じ形で、Claudeが公式ページを自分で開いて確かめた行（by が 'claude' になる）
 //  すでに人の目で整えた日程（official_*.json 由来）がある大学の日程は上書きしない。リンクは空でない値だけ上書きする。
 const fs = require('fs'), path = require('path');
 const P = path.join(__dirname, '..', 'data_v2.json');
@@ -10,7 +11,7 @@ const [fetched, ...files] = process.argv.slice(2);
 if (!/^\d{4}-\d\d-\d\d$/.test(fetched || '') || !files.length) { console.error('使い方: node crawl/apply_muse.js YYYY-MM-DD ファイル...'); process.exit(1); }
 const U = Object.fromEntries(d.universities.map((u) => [u.id, u]));
 const okUrl = (u) => /^https?:\/\/[^\s|]+$/.test(u || '');
-const warn = [], sched = {}, links = {};
+const warn = [], sched = {}, links = {}, byOf = {};
 const DATEISH = /^\d{1,2}\/\d{1,2}/;
 for (const f of files) {
   const lines = fs.readFileSync(f, 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'));
@@ -40,6 +41,7 @@ for (const f of files) {
     if (!c[2] || !dated.length) { warn.push('日付なしで読み飛ばし: ' + l.slice(0, 50)); continue; }
     const key = { S: 'sogo', K: 'koubo', I: 'ippan' }[k];
     const s = (sched[id] = sched[id] || { sogo: [], koubo: [], ippan: [], years: new Set() });
+    if (path.basename(f).startsWith('self_')) byOf[id] = 'claude';   // self_*.txt = Claudeが公式ページを開いて確かめた行
     s.years.add(old || '2027');
     if (s[key].length < 4) s[key].push([c[2], ...parts].join('｜'));
   }
@@ -55,9 +57,9 @@ for (const [id, l] of Object.entries(links)) {
 }
 for (const [id, s] of Object.entries(sched)) {
   const u = U[id];
-  if (u.nyushi_official && u.nyushi_official.by !== 'muse') { kept++; continue; }
+  if (u.nyushi_official && !['muse', 'claude'].includes(u.nyushi_official.by)) { kept++; continue; }
   const years = [...s.years];
-  u.nyushi_official = { year: (years.length === 1 ? years[0] : '2027') + '年度入試', fetched, by: 'muse',
+  u.nyushi_official = { year: (years.length === 1 ? years[0] : '2027') + '年度入試', fetched, by: byOf[id] || 'muse',
     source_url: (links[id] && (links[id].schedule || links[id].youkou)) || (u.official_links && (u.official_links.schedule_url || u.official_links.nyushi_url)) || null,
     sogo: s.sogo, koubo: s.koubo, ippan: s.ippan };
   ns++;

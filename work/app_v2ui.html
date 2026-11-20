@@ -3035,6 +3035,7 @@ function buildView(r) {
     return (d.interest_tags || []).some(t => myTags.includes(t));
   };
   const place = (it, key) => {
+    if ((uniByIdFast(it.uni_id) || {}).boshu_teishi) return;   // 学生募集を停止した大学は結果に出さない
     const b = GUIDE.commuteBucket(commuteMinOf(uniByIdFast(it.uni_id), deptById(it.dept_id)), limit);
     if (b === 'far') { v.far++; return; }
     if (b === 'near') { v.over.push(it); return; }
@@ -3567,7 +3568,7 @@ function uniListCard(u) {
   el.innerHTML =
     `<div class="uc-head"><div class="uc-name">${escapeHtml(u.name)}</div>` +
     `<span class="region-badge" style="background:${region.color || '#666'}">${escapeHtml(region.label || '')}</span></div>` +
-    `<div class="uc-meta"><span class="meta-tag">${escapeHtml(u.type || '')}</span><span class="uc-band">${band}</span><span class="meta-tag">${depts.length}学部</span></div>` +
+    `<div class="uc-meta">${u.boshu_teishi ? '<span class="meta-tag">⚠️ 募集停止</span>' : ''}<span class="meta-tag">${escapeHtml(u.type || '')}</span><span class="uc-band">${band}</span><span class="meta-tag">${depts.length}学部</span></div>` +
     `<button class="uc-detail-btn" data-uni="${u.id}">🏫 大学ページを見る →</button>`;
   return el;
 }
@@ -3699,6 +3700,14 @@ function uniBand(uni) {
 }
 
 // 大学全体ページ（共通情報を一括・タブ表示）
+// 学生募集を停止した大学の知らせ（data の boshu_teishi）。高2が受ける年度には入試が無いので、目立つ所に出す
+function boshuTeishiHtml(uni) {
+  const b = uni && uni.boshu_teishi;
+  if (!b) return '';
+  return `<div class="estimated-banner">⚠️ <strong>この大学は${_esc(b.from)}入試から学生募集を停止しています。</strong>高2のみなさんが受ける2028年度入試はありません（${_esc(b.checked)} 確認）。` +
+    (b.source_url ? ` <a href="${_esc(b.source_url)}" target="_blank" rel="noopener">大学の公式サイト ↗</a>` : '') + `</div>`;
+}
+
 function renderUniPage(uniId) {
   if (uniId != null) { state.currentUni = uniId; state.currentUniTab = 'overview'; }
   const uni = uniById(state.currentUni);
@@ -3711,6 +3720,7 @@ function renderUniPage(uniId) {
     `<div class="detail-header"><h2>${_esc(uni.name)}</h2>` +
     `<div class="uni-meta"><span class="region-badge" style="background:${region.color || '#666'}">${_esc(region.label || '')}</span>` +
     `<span class="meta-tag">${_esc(uni.type || '')}</span><span class="meta-tag">${_esc(uni.prefecture || '')}</span><span class="meta-tag">${band}</span></div></div>` +
+    boshuTeishiHtml(uni) +
     `<nav class="tab-row">${tabs.map(([k, l]) => `<button class="tab${k === tab ? ' active' : ''}" data-utab="${k}">${l}</button>`).join('')}</nav>` +
     `<div class="tab-content" id="uniTabContent"></div>`;
   renderUniTab(tab);
@@ -3752,6 +3762,7 @@ function _toSeason(str) {
 }
 
 function uniTabEntrance(uni) {
+  if (uni.boshu_teishi) return `<p class="detail-note">学生募集を停止しているため、入試の情報は載せていません。</p>`;   // 知らせは大学ページの上に出ている
   const emd = uni.entry_method_details || {};
   const nd = uni.nyushi_details || {};
 
@@ -3764,7 +3775,7 @@ function uniTabEntrance(uni) {
     const lab = { sogo: '総合型選抜', koubo: '学校推薦型・公募', ippan: '一般選抜' };
     const blocks = ['sogo', 'koubo', 'ippan'].filter(hasOff).map(tp =>
       `<div class="method-item"><div class="method-name">${lab[tp]}</div><ul class="off-lines">${no[tp].map(x => `<li>${_esc(x)}</li>`).join('')}</ul></div>`).join('');
-    banner = `<div class="verified-banner">✅ <strong>${_esc(no.year)}の日程</strong>（今の高3が受けた入試。${_esc(no.fetched)} に大学の公式サイトで確認）` +
+    banner = `<div class="verified-banner">✅ <strong>${_esc(no.year)}の日程</strong>（今の高3の学年の入試。${_esc(no.fetched)} に大学の公式サイトで確認）` +
       (no.source_url ? ` <a href="${_esc(no.source_url)}" target="_blank" rel="noopener">公式の日程ページ ↗</a>` : '') + `</div>` + blocks +
       `<p class="detail-note">高2のみなさんが受ける<strong>2028年度入試の日程は、高3の夏ごろに発表</strong>されます。例年ほぼ同じ時期なので、「いつ頃に何があるか」の目安にしてください。おもな方式だけを載せています。</p>`;
   } else {
@@ -4064,7 +4075,7 @@ function renderDetail(deptId) {
       <span class="meta-tag">${_esc(uni.type || '')}</span>
       <span class="meta-tag">${_esc(uni.prefecture || '')}</span>
       <span class="meta-tag">${band}</span>
-    </div>`;
+    </div>${boshuTeishiHtml(uni)}`;
   document.getElementById('tabContent').innerHTML = deptOnlyBody(dept, uni);
 }
 
@@ -4080,12 +4091,14 @@ function renderSameLevelPeers(dept, uni) {
   const eff = (d, u) => d.hensachi.min + (isKokkoritsuUni(u) ? kb : 0);   // 実効難度
   const myEff = eff(dept, uni);
   const typeOrder = { '国立': 0, '公立': 1, '私立': 2 };
+  // 資格が決め手の学部（看護・薬・リハビリなど）は「同じ資格が取れる学部」だけを候補にする。分野のタグだけで選ぶと看護に薬学部が混ざるため
+  const myQuals = Object.keys(GUIDE.QUAL_RULES).filter(id => GUIDE.deptHasQual(dept, id));
+  const sameKind = (o) => myQuals.length ? myQuals.some(id => GUIDE.deptHasQual(o, id)) : (o.interest_tags || []).some(t => anchorTags.includes(t));
   const rows = (DATA_V2.departments || [])
     .filter(o => o.dept_id !== dept.dept_id && o.uni_id !== dept.uni_id &&
-      o.hensachi && o.hensachi.min != null &&
-      (o.interest_tags || []).some(t => anchorTags.includes(t)))
+      o.hensachi && o.hensachi.min != null && sameKind(o))
     .map(o => ({ o, u: uniById(o.uni_id) }))
-    .filter(r => r.u && Math.abs(eff(r.o, r.u) - myEff) <= 2);
+    .filter(r => r.u && !r.u.boshu_teishi && Math.abs(eff(r.o, r.u) - myEff) <= 2);
   if (!rows.length) return head + `<p class="detail-note">同レベル・同系統の学部が収録データ内に見つかりません。</p>`;
   rows.sort((x, y) => (Math.abs(eff(x.o, x.u) - myEff) - Math.abs(eff(y.o, y.u) - myEff)) ||
     ((typeOrder[x.u.type] != null ? typeOrder[x.u.type] : 3) - (typeOrder[y.u.type] != null ? typeOrder[y.u.type] : 3)));
@@ -4100,7 +4113,7 @@ function renderSameLevelPeers(dept, uni) {
   let body = rows.slice(0, 8).map(mk).join('');
   if (rows.length > 8) body += `<details class="peer-more"><summary>他${rows.length - 8}件を表示</summary>${rows.slice(8).map(mk).join('')}</details>`;
   return head + body +
-    `<p class="detail-note">📌 学べる分野が近く、難易度がこの学部とほぼ同じ（偏差値の低いほうの数字で±2以内。国公立は実質難度+${kb}で比較）学部を、近い順に並べています。タップでその学部のページへ。<br>💡 併願 = 本命と同じ時期に、他の大学にも出願しておくこと。</p>`;
+    `<p class="detail-note">📌 ${myQuals.length ? `この学部と同じ資格（${_esc(myQuals.map(id => GUIDE.QUAL_RULES[id].label).slice(0, 2).join('・'))}）が取れて` : '学べる分野が近く'}、難易度がこの学部とほぼ同じ（偏差値の低いほうの数字で±2以内。国公立は実質難度+${kb}で比較）学部を、近い順に並べています。タップでその学部のページへ。<br>💡 併願 = 本命と同じ時期に、他の大学にも出願しておくこと。</p>`;
 }
 
 // 学部固有情報のみ（倍率・キャンパス・資格・ゼミ・入試方式の可否・就職分野）

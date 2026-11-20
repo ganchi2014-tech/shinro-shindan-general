@@ -1,0 +1,21 @@
+# Museが公式サイトを開けなかった大学。Claudeが利用者のブラウザで公式ページを開いて確かめた 2027年度入試の日程（2026-11-20）。
+# 森ノ宮医療大: https://www.morinomiya-u.ac.jp/entrance/youkou.html （出願はWEB登録の期間）
+# 至学館大: https://navi.sgk-u.net/nyushi/schedule/
+# 名古屋商科大: https://www.nucba.ac.jp/admission/exam.html （Museが別経路で取った日付と一致）
+morinomiya-iryo|S|総合型選抜【学習成果重視型】|出願 9/28〜10/7|試験 10/18|発表 11/2
+morinomiya-iryo|K|公募推薦選抜【自己推薦型】Ⅰ期|出願 10/27〜11/4|試験 11/15|発表 11/24
+morinomiya-iryo|K|公募推薦選抜【自己推薦型】Ⅱ期|出願 11/25〜12/3|試験 12/13|発表 12/23
+morinomiya-iryo|I|一般選抜 前期（A・B・C日程）|出願 1/5〜1/19|試験 1/30・1/31・2/1|発表 2/12
+morinomiya-iryo|I|一般選抜 後期|出願 2/17〜2/23|試験 3/3|発表 3/12
+morinomiya-iryo|L|https://www.morinomiya-u.ac.jp/entrance/|https://www.morinomiya-u.ac.jp/entrance/youkou.html||
+shigakkan|S|総合型選抜入試（プレゼンテーション型）|出願 9/14〜9/28|試験 10/3（一次）・10/24（二次）|発表 11/1
+shigakkan|K|公募制一般推薦入試（前期）|出願 10/26〜11/3|試験 11/7|発表 12/1
+shigakkan|K|公募制一般推薦入試（後期）|出願 11/30〜12/7|試験 12/12|発表 12/18
+shigakkan|I|一般入試（前期）|出願 1/8〜1/22|試験 1/30|発表 2/6
+shigakkan|I|一般入試（後期）|出願 2/15〜2/23|試験 2/28|発表 3/5
+shigakkan|L|https://navi.sgk-u.net/nyushi/|https://navi.sgk-u.net/nyushi/schedule/||
+nucb|S|AO入試（定員に達ししだい締切。試験日は大学が指定）|出願 9/1〜3/19
+nucb|K|一般推薦前期|出願 10/16〜11/2|試験 11/7・11/8|発表 12/1
+nucb|K|一般推薦後期|出願 12/1〜12/8|試験 12/13|発表 12/22
+nucb|I|一般入試前期A（3教科）|出願 1/4〜1/25|試験 2/2・2/3・2/4|発表 2/16
+nucb|L|https://www.nucba.ac.jp/admission/|https://www.nucba.ac.jp/admission/exam.html||
