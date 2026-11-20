@@ -5572,7 +5572,7 @@ async function init() {
     state.riasecAnswers = [];
     { const os = document.getElementById('originSelect'); if (os) os.value = ''; populateFilterCounts(); renderCareerPathNote(); }
     state.resultView = 'dept';
-    document.querySelectorAll('.riasec-opt.on').forEach(b => b.classList.remove('on'));
+    document.querySelectorAll('.riasec-opt').forEach(b => { b.classList.remove('on'); b.setAttribute('aria-checked', 'false'); });   // 見た目だけでなく読み上げ用の状態も戻す
     updateRiasecUi();   // 進捗0/ボタンラベル/部分回答警告をまとめて初期化
     // UIリセット
     ['hyouteiUnknownChk', 'hensachiUnknownChk'].forEach(id => {
@@ -5590,7 +5590,12 @@ async function init() {
     const hi = document.getElementById('hensachiInput'); if (hi) hi.value = 50;
     document.querySelectorAll('.hensachi-quick-btn.selected').forEach(b => b.classList.remove('selected'));
     state.currentUni = null; state.currentUniTab = 'overview'; state.currentDetail = null;
-    go('diag-1');
+    // 前の人の条件と結果を残さない（共用の端末で、次の人が「戻る」で前の人の結果を見られた）
+    renderCareerChips(); renderInterestChips();          // 札を描き直す（選択の印と aria-pressed をそろえて戻す）
+    state.lastResult = null; state.lastRiasec = [];
+    ['resultSummary', 'resultList'].forEach(id => { const el = document.getElementById(id); if (el) el.innerHTML = ''; });
+    state.history = ['home']; state.forward = [];        // 「戻る」はホームへ
+    go('diag-1', { noHistory: true });
   });
   document.getElementById('runDiagBtn').addEventListener('click', () => {
     runDiagnose(state.riasecAnswers);
