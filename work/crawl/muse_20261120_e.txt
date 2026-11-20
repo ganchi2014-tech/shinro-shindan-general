@@ -1,0 +1,189 @@
+# Muse 第5回（遠方42校のうち41校。成城大は公式で確かめられず日程なし）。公式サイト・公式PDFから取った 2027年度入試の日程。 ^ は https:// の略。
+# こちらで直した所: 文教・神奈川・武蔵・津田塾・帝京は、学部や方式ごとのページが「入試ページ」欄に入っていたので空にした。東北大の外部サイトのパンフレットはリンクにしない。
+# 畿央大の日程ページは住所に 2020 と入っているが、Claudeが開いて2026年の日付（2027年度入試）であることを確かめた。
+nagoya-univ|S|総合型選抜（理学部）|出願 1/19〜1/22|試験 2/8|発表 2/10
+nagoya-univ|K|学校推薦型選抜（文学部）|出願 11/2〜11/6|試験 11/26|発表 12/9
+nagoya-univ|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25・2/26|発表 3/10
+nagoya-univ|I|一般選抜 後期日程（医学部医学科）|出願 1/25〜2/3|試験 3/12|発表 3/20
+nagoya-univ|L|^www.nagoya-u.ac.jp/admissions/exam/|^www.nagoya-u.ac.jp/admissions/exam/upload/r9_senbatsuyoko.pdf||
+fukui-univ|S|総合型選抜Ⅰ（教育学部）|出願 11/2〜11/6|試験 11/14|発表 12/1
+fukui-univ|K|学校推薦型選抜Ⅰ（教育学部）|出願 11/2〜11/6|試験 11/14|発表 12/1
+fukui-univ|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25|発表 3/6
+fukui-univ|I|一般選抜 後期日程|出願 1/25〜2/3|試験 3/12|発表 3/20
+fukui-univ|L|^www.u-fukui.ac.jp/user_admission/examination/essential_point/|^www.u-fukui.ac.jp/user_admission/examination/essential_point/||
+aichi-kyoiku|S|総合型選抜（一般受験者対象）|出願 9/1〜9/7|試験 10/3|発表 11/2
+aichi-kyoiku|K|学校推薦型選抜|出願 11/5〜11/11|試験 12/5|発表 2/10
+aichi-kyoiku|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25・2/26|発表 3/8
+aichi-kyoiku|I|一般選抜 後期日程|出願 1/25〜2/3|試験 3/12|発表 3/23
+aichi-kyoiku|L|http://www.aichi-edu.ac.jp/exam/faculty/info/|http://www.aichi-edu.ac.jp/exam/faculty/info/||
+bunkyo-univ|S|総合型選抜 1期|出願 9/1〜9/8|試験 10/11|発表 11/2
+bunkyo-univ|K|学校推薦型選抜（公募制）|出願 11/1〜11/10|試験 11/22|発表 12/1
+bunkyo-univ|I|一般選抜 全国入試|出願 1/4〜1/20|試験 2/1|発表 2/6
+bunkyo-univ|I|一般選抜 A日程入試|出願 1/4〜1/25|試験 2/7・2/8・2/9|発表 2/20
+bunkyo-univ|L||^www.bunkyo.ac.jp/faculty/human/sougou_gakkousuisen/||
+chiba-univ|S|総合型選抜（教育学部 方式Ⅰ）|出願 8/26〜9/3|試験 9/26・9/27|発表 2/9
+chiba-univ|K|学校推薦型選抜（文学部）|出願 10/28〜11/5|試験 11/14・11/15|発表 12/11
+chiba-univ|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25|発表 3/9
+chiba-univ|I|一般選抜 後期日程|出願 1/25〜2/3|試験 3/12|発表 3/20
+chiba-univ|L|^www.chiba-u.ac.jp/admissions/gakubu/annai_boshu.html|^www.education.chiba-u.jp/exam/files/pdf/cb52efdc75dc31cce83e74e626c10ac2.pdf||
+fukuchiyama-koritsu|S|総合型選抜Ⅰ（地域経営学部）|出願 9/1〜9/8|試験 10/10|発表 11/1
+fukuchiyama-koritsu|K|学校推薦型選抜（地域経営学部）|出願 11/1〜11/6|試験 11/14|発表 12/2
+fukuchiyama-koritsu|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25|発表 3/8
+fukuchiyama-koritsu|I|一般選抜 後期日程|出願 1/25〜2/3|試験 3/12|発表 3/21
+fukuchiyama-koritsu|L|^www.fukuchiyama.ac.jp/for_applicants/|^www.fukuchiyama.ac.jp/wp-content/uploads/2026/06/R9senbatsu_youkou.pdf||
+himeji-dokkyo|S|AO入試 前期|出願 10/1〜10/21|試験 10/31|発表 11/9
+himeji-dokkyo|K|公募推薦入試|出願 10/13〜11/6|試験 11/14|発表 11/24
+himeji-dokkyo|I|一般入試 A日程|出願 1/7〜1/21|試験 1/30|発表 2/8
+himeji-dokkyo|I|一般入試 B日程|出願 1/12〜2/4|試験 2/13|発表 2/22
+himeji-dokkyo|L|^www.himeji-du.ac.jp/exam/|^www.himeji-du.ac.jp/hdu/exam/ippan/||
+hitotsubashi|K|学校推薦型選抜|出願 1/18〜1/29|試験 2/8|発表 2/10
+hitotsubashi|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25・2/26|発表 3/10
+hitotsubashi|I|一般選抜 後期日程|出願 1/25〜2/3|試験 3/12|発表 3/23
+hitotsubashi|L|^juken.hit-u.ac.jp/admission/info/guidelines/index.html|^juken.hit-u.ac.jp/admission/info/guidelines/files/R9senbatsu-2.pdf||
+hokkaido-univ|S|フロンティア入試TypeⅠ|出願 9/9〜9/15|試験 11/15|発表 2/9
+hokkaido-univ|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25|発表 3/8
+hokkaido-univ|I|一般選抜 後期日程|出願 1/25〜2/3|試験 3/12|発表 3/20
+hokkaido-univ|L|^www.hokudai.ac.jp/admission/|^www.hokudai.ac.jp/admission/R9_bosyuyoukou.pdf||
+hyogo-kyoiku|S|総合型選抜＜一般枠＞|出願 9/1〜9/7|試験 10/17|発表 11/2
+hyogo-kyoiku|K|学校推薦型選抜|出願 11/2〜11/9|試験 11/26|発表 2/10
+hyogo-kyoiku|I|一般選抜（前期日程）|出願 1/25〜2/3|試験 2/25|発表 3/8
+hyogo-kyoiku|L|^www.hyogo-u.ac.jp/admission/education/schedule.php|^www.hyogo-u.ac.jp/admission/education/schedule.php||
+kanagawa-univ|S|総合型選抜（総合評価型）|出願 9/11〜9/18|試験 10/11|発表 11/1
+kanagawa-univ|I|一般入試（前期）|出願 1/6〜1/20|試験 2/4・2/6・2/7・2/8|発表 2/18
+kanagawa-univ|I|一般入試（後期）|出願 2/12〜2/19|試験 3/4|発表 3/13
+kanagawa-univ|L||^www.kanagawa-u.ac.jp/admissions/faculty/about_application/general/file/general_yoko2027.pdf||
+kio|S|リーダーシップ選抜|出願 9/7〜9/16|試験 9/27・10/18|発表 11/1
+kio|K|公募推薦選抜|出願 10/19〜10/31|試験 11/7・11/8・11/15|発表 11/21
+kio|I|一般選抜 前期日程|出願 12/21〜1/15|試験 1/23・1/24・1/26|発表 2/4
+kio|I|一般選抜 後期日程|出願 2/15〜3/3|試験 3/10|発表 3/13
+kio|L|^www.kio.ac.jp/admission/info/2020schedule/|^www.kio.ac.jp/admission/info/2020schedule/||
+kitasato|S|総合型選抜（理学部）|出願 9/8〜9/30|試験 10/17|発表 11/2
+kitasato|K|学校推薦型選抜 公募制（理学部）|出願 11/2〜11/9|試験 11/21|発表 12/2
+kitasato|I|一般選抜 前期（理学部）|出願 12/24〜1/19|試験 2/3|発表 2/12
+kitasato|I|一般選抜 中期（理学部）|出願 12/24〜1/25|試験 2/13|発表 2/22
+kitasato|L|^www.kitasato-u.ac.jp/jp/goukaku/undergraduate_ad/application/application.html|^www.kitasato-u.ac.jp/jp/goukaku/albums/abm.php?f=abm00050193.pdf&n=2027%E5%B9%B4%E5%BA%A6%E4%B8%80%E8%88%AC%E9%81%B8%E6%8A%9C%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85_%E5%85%A8%E9%A0%81.pdf||
+kobe-gaidai|S|総合型選抜|出願 9/1〜9/7|試験 10/24・10/25|発表 11/4
+kobe-gaidai|K|学校推薦型選抜 全国枠|出願 11/4〜11/10|試験 11/28|発表 12/7
+kobe-gaidai|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25|発表 3/5
+kobe-gaidai|I|一般選抜 後期日程|出願 1/25〜2/3|試験 |発表 3/20
+kobe-gaidai|L|^www.kobe-cufs.ac.jp/admissions/university/guide/schedule.html|^www.kobe-cufs.ac.jp/admissions/university/guide/schedule.html||
+kobe-geijutsu-koka|S|総合型選抜Ⅲ期 作品持参型|出願 9/18〜10/1|試験 10/10|発表 11/1
+kobe-geijutsu-koka|I|一般選抜Ⅰ期 科目選択型|出願 1/4〜1/14|試験 2/6|発表 2/12
+kobe-geijutsu-koka|I|一般選抜Ⅱ期 大学入学共通テスト利用型|出願 1/18〜1/28|試験 1/16〜1/17|発表 2/12
+kobe-geijutsu-koka|L|^www.kobe-du.ac.jp/exam/system/schedule/|^www.kobe-du.ac.jp/2024renewal/wp-content/uploads/2026/04/nyushiyokoguide2027.pdf||
+kokugakuin|S|公募制自己推薦（AO型）|出願 9/28〜10/2|試験 11/15|発表 11/25
+kokugakuin|I|A日程|出願 1/4〜1/21|試験 2/2・2/3・2/4|発表 2/15
+kokugakuin|I|B日程|出願 1/4〜2/19|試験 3/2|発表 3/13
+kokugakuin|L|^www.kokugakuin.ac.jp/admission/admissions/41757-2|^www.kokugakuin.ac.jp/admission/admissions/41757-2||
+kyushu-univ|S|総合型選抜Ⅰ（共創学部・教育学部）|出願 9/7〜9/11|試験 10/12・11/28|発表 12/21
+kyushu-univ|K|学校推薦型選抜|出願 11/2〜11/6|試験 1/30|発表 2/10
+kyushu-univ|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25・2/26|発表 3/10
+kyushu-univ|I|一般選抜 後期日程|出願 1/25〜2/3|試験 3/12|発表 3/21
+kyushu-univ|L||^www.kyushu-u.ac.jp/f/66635/R9_gaiyo_3-5.pdf||
+meiji-gakuin|S|自己推薦AO|出願 9/14〜9/24|試験 11/15|発表 12/4
+meiji-gakuin|I|一般選抜 全学部日程|出願 1/6〜1/20|試験 2/1|発表 2/16
+meiji-gakuin|I|一般選抜 A日程|出願 1/6〜1/20|試験 2/3・2/4・2/6・2/7|発表 2/17・2/18
+meiji-gakuin|L|^www.meijigakuin.ac.jp/admission/|^www.meijigakuin.ac.jp/admission/guidelines/guide_ippan/index.html||
+musashi|S|総合型選抜|出願 9/1〜9/10|試験 10/11|発表 11/2
+musashi|I|一般選抜 一般方式2科目型|出願 1/5〜1/25|試験 2/2|発表 2/10
+musashi|I|一般選抜 一般方式3科目型|出願 1/5〜1/25|試験 2/4|発表 2/15
+musashi|L||^www.musashi.ac.jp/ahdlv300000006xr-att/m5vp4o0000006jn5.pdf||
+nagoya-kogyo|S|総合型選抜（社会工学科 環境都市分野）|出願 9/14〜9/17|試験 10/9・10/10|発表 11/2
+nagoya-kogyo|K|学校推薦型選抜（共通テストを課さない）|出願 11/2〜11/5|試験 11/21|発表 12/11
+nagoya-kogyo|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25|発表 3/6
+nagoya-kogyo|I|一般選抜 後期日程|出願 1/25〜2/3|試験 3/12|発表 3/20
+nagoya-kogyo|L|^www.nitech.ac.jp/examination/gakubu/request.html|^www.nitech.ac.jp/examination/mt_files/bosyuyokou_ippan_2027.pdf||
+nara-idai|K|学校推薦型選抜（医学科）|出願 12/16〜12/18|試験 1/30・1/31|発表 2/9
+nara-idai|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25・2/26|発表 3/9
+nara-idai|I|一般選抜 後期日程（医学科）|出願 1/25〜2/3|試験 3/12・3/13|発表 3/23
+nara-idai|L||^www.naramed-u.ac.jp/university/nyushijoho/kangogakka/documents/r9senbatsuyoukou.pdf||
+nihon-joshi|S|総合型選抜|出願 9/7〜9/15|試験 10/25|発表 11/2
+nihon-joshi|K|学校推薦型選抜（公募制）|出願 11/1〜11/19|試験 12/6|発表 12/11
+nihon-joshi|I|一般選抜（個別選抜型）|出願 1/5〜1/15|試験 2/1・2/2・2/3|発表 2/15
+nihon-joshi|I|一般選抜（大学入学共通テスト利用型 前期）|出願 1/5〜1/22|試験 1/16・1/17|発表 2/15
+nihon-joshi|L|^www.jwu.ac.jp/unv/admission/exam/about_entaranceexam.html|^www.jwu.ac.jp/unv/admission/exam/about_entaranceexam.html||
+okayama-univ|S|総合型選抜（大学入学共通テストを課すもの・文学部）|出願 11/4〜11/10|試験 12/5|発表 2/10
+okayama-univ|K|学校推薦型選抜Ⅰ|出願 11/4〜11/10|試験 12/5|発表 12/21
+okayama-univ|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25・2/26|発表 3/8
+okayama-univ|L|^www.okayama-u.ac.jp/tp/admission/index.html|^www.okayama-u.ac.jp/user/st/nyushika/2027/pdf/kansuruyoko/2027-00_nittei.pdf||
+osaka-geidai|S|総合型選抜入学試験（1期）|出願 9/1〜9/6|試験 9/12・9/13|発表 11/1
+osaka-geidai|I|一般選抜入学試験（1期）|出願 11/1〜11/8|試験 11/14・11/15|発表 12/1
+osaka-geidai|I|一般選抜入学試験（2期）|出願 1/18〜1/28|試験 2/5・2/6|発表 2/20
+osaka-geidai|L|^www.osaka-geidai.ac.jp/nyusi/exam|^www.osaka-geidai.ac.jp/nyusi/exam||
+seikei|S|総合型選抜 自己推薦型（経済学部）|出願 9/23〜10/7|試験 11/14|発表 11/20
+seikei|I|3教科型学部個別入試（A方式）（経営学部）|出願 1/5〜1/26|試験 2/11|発表 2/19
+seikei|I|2教科型全学部統一入試（E方式）|出願 1/5〜1/20|試験 2/3|発表 2/9
+seikei|L|^www.seikei.ac.jp/university/s-net/admissions/general/|^www.seikei.ac.jp/university/s-net/pdf/2027_admission_guidelines.pdf||
+shibaura-kogyo|S|工学部総合型選抜|出願 10/1〜10/5|試験 11/29|発表 12/11
+shibaura-kogyo|I|前期日程|出願 1/7〜1/15|試験 2/1・2/2・2/3|発表 2/14
+shibaura-kogyo|I|全学統一日程|出願 1/7〜1/15|試験 2/4|発表 2/14
+shibaura-kogyo|L|^www.shibaura-it.ac.jp/examinee/undergraduate/|^www.shibaura-it.ac.jp/assets/admissions_guideboook_2027_v2.pdf||
+shitennoji|S|総合型選抜 オープンキャンパス参加型|出願 9/1〜9/6|試験 9/12|発表 11/2
+shitennoji|K|学校推薦型選抜 前期日程|出願 10/23〜11/3|試験 11/12・11/13|発表 12/1
+shitennoji|I|一般選抜 前期日程|出願 12/20〜1/18|試験 1/27・1/28|発表 2/5
+shitennoji|I|一般選抜 中期日程|出願 1/20〜2/9|試験 2/17|発表 2/25
+shitennoji|L|^www.shitennoji.ac.jp/admission/|^www.shitennoji.ac.jp/admission/assets/images/nyushi/docs/guidelines_01.pdf||
+shizuoka-univ|S|総合型選抜（共通テストを課さない）|出願 9/1〜9/7|試験 9/26・10/10|発表 11/2
+shizuoka-univ|K|学校推薦型選抜（教育学部・共通テストを課さない）|出願 11/2〜11/9|試験 11/21|発表 12/1
+shizuoka-univ|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25|発表 3/6
+shizuoka-univ|I|一般選抜 後期日程|出願 1/25〜2/3|試験 3/12|発表 3/20
+shizuoka-univ|L|^www.shizuoka.ac.jp/nyushi/entry/|^www.shizuoka.ac.jp/cms/files/shizudai/nyushi/4200/d4iZqkB2.pdf||
+tamagawa|S|総合型入学審査Ⅰ期|出願 9/2〜9/10|試験 |発表 11/2
+tamagawa|K|公募制推薦入学試験|出願 11/2〜11/4|試験 11/21|発表 12/1
+tamagawa|I|全学統一入学試験|出願 1/4〜1/22|試験 2/2・2/3・2/4・2/5|発表 2/16
+tamagawa|I|大学入学共通テスト利用入学試験 前期日程|出願 1/4〜1/15|試験 1/16・1/17|発表 2/16
+tamagawa|L|^www.tamagawa.jp/uni_admission/examination/ippan_center/|^www.tamagawa.jp/uni_admission/examination/ippan_center/same.html||
+teikyo|S|総合型選抜Ⅰ期（理工学部）|出願 9/10〜9/24|試験 10/3・10/4|発表 11/2
+teikyo|K|学校推薦型選抜 公募制（理工学部）|出願 11/2〜11/11|試験 11/21|発表 12/1
+teikyo|I|一般選抜Ⅰ期（理工学部）|出願 12/17〜1/19|試験 1/30・1/31・2/1|発表 2/13
+teikyo|I|一般選抜Ⅱ期（理工学部）|出願 2/2〜2/15|試験 2/20・2/21|発表 2/26
+teikyo|L||^www.teikyo-u.ac.jp/applicants/faculty/science_tech||
+todai|K|学校推薦型選抜|出願 11/1〜11/6|試験 12/12・12/13|発表 2/10
+todai|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25・2/26|発表 3/10
+todai|L|^www.u-tokyo.ac.jp/ja/admissions/undergraduate/e01_02_01.html|^www.u-tokyo.ac.jp/content/400243934.pdf||
+tohoku-univ|S|AO入試（総合型選抜）Ⅱ期|出願 10/13〜10/16|試験 11/7・11/28|発表 12/4
+tohoku-univ|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25・2/26|発表 3/9
+tohoku-univ|I|一般選抜 後期日程（経済学部・理学部）|出願 1/25〜2/3|試験 3/12|発表 3/22
+tohoku-univ|L|^admissions.tohoku.ac.jp/ja/|||
+tokyo-denki|S|総合型選抜（AO）|出願 9/7〜9/10|試験 10/24|発表 11/2
+tokyo-denki|K|学校推薦型選抜（公募）|出願 11/6〜11/10|試験 12/12・12/13|発表 12/21
+tokyo-denki|I|一般選抜（前期）|出願 1/7〜1/20|試験 2/1〜2/5|発表 2/12
+tokyo-denki|I|一般選抜（後期）|出願 2/12〜2/18|試験 2/27・2/28|発表 3/8
+tokyo-denki|L|^www.dendai.ac.jp/about/admission/|^www.dendai.ac.jp/special2027/youkou/viewerpdf/web/yoko.pdf||
+tokyo-joshi|S|知のかけはし入学試験（ディスカッション型）|出願 9/1〜9/4|試験 10/18|発表 11/2
+tokyo-joshi|I|一般選抜 個別学力試験型|出願 1/4〜1/18|試験 2/3・2/4|発表 2/12
+tokyo-joshi|I|一般選抜 後期共通テスト併用型|出願 2/15〜3/1|試験 3/10|発表 3/12
+tokyo-joshi|L|^www.twcu.ac.jp/main/admissions/dept-info/index.html|^www.twcu.ac.jp/admission/ippan2027/2027ippan.pdf||
+tokyo-kagaku|S|総合型選抜|出願 12/14〜12/16|試験 2/7|発表 2/9
+tokyo-kagaku|K|特別選抜Ⅰ（学校推薦型選抜）（医学部・歯学部）|出願 11/2〜11/6|試験 11/24・11/25|発表 12/11
+tokyo-kagaku|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25・2/26|発表 3/9
+tokyo-kagaku|I|一般選抜 後期日程（医歯学系）|出願 1/25〜2/3|試験 3/12・3/13|発表 3/23
+tokyo-kagaku|L|^admissions.isct.ac.jp/ja/013/undergraduate/date|^admissions.isct.ac.jp/plugins/cms/component_download_file.php?type=1&pageId=3088&contentsId=&contentsDataId=&prevId=&key=2c267bc83d484dc5370621fb9ed717d7.pdf&fileName=r9-guidelines-zenki||
+tokyo-nodai|S|総合型選抜 全学部|出願 9/4〜9/15|試験 10/24|発表 11/2
+tokyo-nodai|K|学校推薦型選抜（公募制）|出願 11/2〜11/9|試験 11/21|発表 12/2
+tokyo-nodai|I|一般選抜 A日程|出願 1/4〜1/25|試験 2/3・2/4・2/5|発表 2/12
+tokyo-nodai|I|一般選抜 B日程|出願 2/1〜3/1|試験 3/3|発表 3/10
+tokyo-nodai|L||^www.nodai.ac.jp/application/files/6817/7883/6443/04_AB.pdf||
+tokyo-toritsu|S|ゼミナール入試（理学部生命科学科）|出願 9/1〜9/3|試験 9/26・9/27・10/15|発表 11/1
+tokyo-toritsu|K|一般推薦入試（システムデザイン学部）|出願 11/1〜11/6|試験 11/28|発表 12/14
+tokyo-toritsu|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25・2/26|発表 3/8
+tokyo-toritsu|I|一般選抜 後期日程|出願 1/25〜2/3|試験 3/12|発表 3/21
+tokyo-toritsu|L|^www.tmu.ac.jp/entrance/faculty/application_guideline.html|^www.tmu.ac.jp/assets/files/download/entrance/guide/2026/2027ippannsennbatsugakuseibosyuuyoukou.pdf||
+tsuda-juku|S|総合型選抜（学芸学部 多文化・国際協力学科）|出願 9/1〜9/16|試験 10/31|発表 11/6
+tsuda-juku|K|学校推薦型選抜（公募制）（学芸学部 英語英文学科）|出願 11/1〜11/10|試験 11/28|発表 12/5
+tsuda-juku|I|一般選抜 A方式（学芸学部 英語英文学科）|出願 1/4〜1/22|試験 2/5|発表 2/16
+tsuda-juku|I|一般選抜 B方式|出願 1/4〜2/18|試験 2/28|発表 3/8
+tsuda-juku|L||^www.tsuda.ac.jp/admissions/ug-others/hfqhg3000000149t-att/koubo2027_en_guideline.pdf||
+wakayama-idai|K|学校推薦型選抜（医学部）|出願 12/15〜12/22|試験 2/7|発表 2/9
+wakayama-idai|I|一般選抜 前期日程（医学部）|出願 1/25〜2/3|試験 2/25・2/26|発表 3/9
+wakayama-idai|L|^www.wakayama-med.ac.jp/nyushi/igakubu/boshuyoukou.html|^www.wakayama-med.ac.jp/nyushi/igakubu/files/r9_igakubu_bosyuyoko.pdf||
+yokohama-kokudai|S|総合型選抜 一般プログラム（経済学部）|出願 9/1〜9/4|試験 11/16|発表 2/10
+yokohama-kokudai|K|学校推薦型選抜 一般枠（理工学部）|出願 1/18〜1/22|試験 2/4|発表 2/9
+yokohama-kokudai|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25|発表 3/6
+yokohama-kokudai|I|一般選抜 後期日程|出願 1/25〜2/3|試験 3/12|発表 3/20
+yokohama-kokudai|L|^www.ynu.ac.jp/exam/faculty/essential/index.html|^www.ynu.ac.jp/exam/faculty/essential/pdf/2027_zai_sougou.pdf||
+yokohama-shiritsu|S|総合型選抜|出願 9/1〜9/3|試験 10/10|発表 11/2
+yokohama-shiritsu|K|公募制学校推薦型選抜|出願 1/5〜1/22|試験 1/16・1/17|発表 2/10
+yokohama-shiritsu|I|一般選抜 前期日程|出願 1/25〜2/3|試験 2/25|発表 3/10
+yokohama-shiritsu|I|一般選抜 後期日程（理学部・データサイエンス学部）|出願 1/25〜2/3|試験 3/12|発表 3/20
+yokohama-shiritsu|L|^www.yokohama-cu.ac.jp/admissions/admissions/documents|^www.yokohama-cu.ac.jp/admissions/admissions/documents/j8907d00000005zj-att/2027senbatsuyoukou_20260702.pdf||

@@ -30,3 +30,5 @@ nagoya-keizai|K|学校推薦型選抜（一般推薦入試）前期|出願 11/2�
 nagoya-keizai|I|一般選抜（一般入試）前期|出願 1/5〜1/22|試験 2/1・2/2|発表 2/12
 nagoya-keizai|I|一般選抜（一般入試）中期|出願 2/1〜2/15|試験 2/19|発表 2/26
 nagoya-keizai|L||https://www.nagoya-ku.ac.jp/exam/schedule/||
+# 成城大: 日程は募集要項のPDFの中にあり、Museも確かめられなかったため日程は載せない。入試サイトと要項のリンクだけ（Claudeが開いて確認）
+seijo|L|https://admission.seijo.ac.jp/||https://admission.seijo.ac.jp/application/files/4117/9453/4305/2027.pdf|
