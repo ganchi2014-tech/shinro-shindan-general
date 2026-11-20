@@ -1,7 +1,7 @@
 // 大学公式サイトから「入試情報・入試日程・募集要項・オープンキャンパス」のリンクと、日程表の行を集める小さな巡回スクリプト。
 // ブラウザのページ上で動かす（window.name にコードと状態を持ち、ページを移っても続きから動く）。
-// 使い方: このファイルを開いたページで  window.name = document.body.innerText + String.fromCharCode(1) + JSON.stringify({q:<queue>,i:0,res:{}})
-//         以後、各ページで  eval(name.split(String.fromCharCode(1))[0]); await T()  を繰り返す。
+// 使い方: このファイルを開いたページで  window.name = document.body.innerText + String.fromCharCode(1) + JSON.stringify({res:{}})
+//         以後、各ページで  eval(name.split(String.fromCharCode(1))[0]); await T('<大学id>', 1か2)  を1校ずつ実行する。
 (function () {
   const SEP = String.fromCharCode(1);
   const st = () => JSON.parse(window.name.split(SEP)[1]);
@@ -40,60 +40,51 @@
   const SCH = [/入試日程|入試スケジュール|試験日程|入試カレンダー|日程一覧/, /日程/];
   const YK = [/入学試験要項|入試要項|募集要項|学生募集要項|選抜要項/, /入試ガイド|入試概要/];
   const NOT = /オープンキャンパス|イベント|相談会|大学院|編入|留学生|過去/;
-  window.T = async function () {
+  // 1校ぶんの処理。ページの移動はしない（移動は外から行う）。step 1 = 大学トップから入試ページを探す / 2 = 入試ページそのもの
+  window.T = async function (id, step) {
     const s = st();
-    if (s.i >= s.q.length) return 'DONE';
-    const [id, url, step] = s.q[s.i];
-    const r = (s.res[id] = s.res[id] || {});
-    const next = () => { s.i++; s.w = 0; s.sub = 0; save(s); if (s.i < s.q.length) location.href = s.q[s.i][1]; return s.i + ' ' + id; };
+    const r = (s.res[id] = {});
     const here = location.href;
-    // まだ目的のページに来ていない（読み込み中・失敗）
-    if (!s.sub && here.replace(/\/$/, '') !== url.replace(/\/$/, '') && new URL(here).hostname.split('.').slice(-3).join('.') !== new URL(url).hostname.split('.').slice(-3).join('.')) {
-      s.w = (s.w || 0) + 1;
-      if (s.w >= 3) { r.err = 'load'; return next(); }
-      save(s); if (s.w === 2) location.href = url; return 'wait ' + id;
+    if (/404|not found|見つかりません|お探しのページ|存在しません/i.test(document.title + ' ' + ((document.querySelector('h1') || {}).textContent || ''))) {
+      r.err = 'gone'; r.top = new URL(here).origin + '/'; save(s); return 'GONE ' + id;
     }
-    // 登録されていたURLが無くなっている（404）→ 大学のトップから探し直す
-    if (/404|not found|見つかりません|お探しのページ|存在しません/i.test(document.title + ' ' + ((document.querySelector('h1') || {}).textContent || '')) && !s.q[s.i][3]) {
-      const top = new URL(here).origin + '/';
-      s.q[s.i] = [id, top, 1, 1]; s.sub = 0; s.w = 0; r.gone = url; save(s); location.href = top; return 'gone ' + id;
-    }
-    if (step === 1 && !s.sub) {
+    let doc = document, base = here;
+    if (step === 1) {
       const adm = pick(document, here, ADM, /大学院|在学生|保護者|卒業生/);
-      r.adm = adm;
-      if (adm && adm.replace(/\/$/, '') !== here.replace(/\/$/, '')) { s.sub = 1; s.w = 0; save(s); location.href = adm; return 'adm ' + id; }
+      if (adm && adm.split('#')[0].replace(/\/$/, '') !== here.replace(/\/$/, '')) {
+        if (sameOrigin(adm)) { try { doc = await getDoc(adm); base = adm; } catch (e) {} }
+        else { r.x = adm; save(s); return 'X ' + id; }                  // 入試サイトが別ドメイン → 次の回にそのURLを直接開く
+      }
     }
-    r.n = step === 1 && !r.adm ? null : here;
-    r.sch = pick(document, here, SCH, NOT);
-    r.yk = pick(document, here, YK, /大学院|編入|留学生/);
-    r.oc = pick(document, here, [/オープンキャンパス/]);
+    r.n = base;
+    r.sch = pick(doc, base, SCH, NOT);
+    r.yk = pick(doc, base, YK, /大学院|編入|留学生/);
+    r.oc = pick(doc, base, [/オープンキャンパス/]) || pick(document, here, [/オープンキャンパス/]);
     try {
-      // 1階層下（入試情報・入試制度など）も見て、日程と要項のリンクを探す
       if (!r.sch || !r.yk) {
-        for (const u of pickAll(document, here, /入試情報|入試制度|入試概要|入試種別|選抜方式|入試・入学|学部入試|一般選抜/, NOT, 4)) {
+        for (const u of pickAll(doc, base, /入試情報|入試制度|入試概要|入試種別|選抜方式|入試・入学|学部入試|一般選抜/, NOT, 4)) {
           if (r.sch && r.yk) break;
           try { const d2 = await getDoc(u); if (!r.sch) r.sch = pick(d2, u, SCH, NOT); if (!r.yk) r.yk = pick(d2, u, YK, /大学院|編入|留学生/); } catch (e) {}
         }
       }
-      let t = '';
-      if (r.sch && sameOrigin(r.sch)) { const d = await getDoc(r.sch); t = rows(d); if (!r.yk) r.yk = pick(d, r.sch, YK, /大学院|編入|留学生/); }
-      if (!t) t = rows(document);
-      // 日程表に日付が無ければ、方式ごとのページ（総合型・推薦・一般）から拾う
+      let t = '', sd = null;
+      if (r.sch && sameOrigin(r.sch)) { sd = await getDoc(r.sch); t = rows(sd); if (!r.yk) r.yk = pick(sd, r.sch, YK, /大学院|編入|留学生/); }
+      if (!t) t = rows(doc);
       if (t.length < 80) {
-        const base = r.sch && sameOrigin(r.sch) ? await getDoc(r.sch) : document;
         for (const [lab, re] of [['総合型', /総合型選抜|AO入試/], ['推薦', /学校推薦型|公募/], ['一般', /一般選抜|一般入試/]]) {
-          const u = pickAll(base, r.sch || here, re, NOT, 1)[0] || pickAll(document, here, re, NOT, 1)[0];
+          const u = (sd && pickAll(sd, r.sch, re, NOT, 1)[0]) || pickAll(doc, base, re, NOT, 1)[0];
           if (u) { try { const x = rows(await getDoc(u)); if (x) t += '\n[' + lab + '] ' + x.slice(0, 600); } catch (e) {} }
         }
       }
       r.t = t.slice(0, 1800);
     } catch (e) { r.t = r.t || ''; }
-    return next();
+    save(s);
+    return 'ok ' + id + ' ' + (r.sch ? 'S' : '-') + (r.yk ? 'Y' : '-') + (r.oc ? 'O' : '-') + ' ' + (r.t || '').length;
   };
   // 結果の読み出し: R('links') = 全校のリンクを1行ずつ / R('t',[id,…]) = 日程表の行
   window.R = function (kind, ids) {
     const s = st();
-    if (kind === 'links') return Object.entries(s.res).map(([id, r]) => [id, r.err || (r.gone ? 'gone' : ''), r.n || '', r.sch || '', r.yk || '', r.oc || '', (r.t || '').length].join('\t')).join('\n');
+    if (kind === 'links') return Object.entries(s.res).map(([id, r]) => [id, r.err || (r.x ? 'X ' + r.x : ''), r.n || r.top || '', r.sch || '', r.yk || '', r.oc || '', (r.t || '').length].join('\t')).join('\n');
     return (ids || []).map((id) => '## ' + id + ' ' + ((s.res[id] || {}).sch || '') + '\n' + ((s.res[id] || {}).t || '')).join('\n');
   };
 })();
