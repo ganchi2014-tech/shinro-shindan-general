@@ -1,9 +1,9 @@
 // 大学公式サイトから「入試情報・入試日程・募集要項・オープンキャンパス」のリンクと、日程表の行を集める小さな巡回スクリプト。
 // ブラウザのページ上で動かす（window.name にコードと状態を持ち、ページを移っても続きから動く）。
-// 使い方: このファイルを開いたページで  window.name = document.body.innerText + '§§' + JSON.stringify({q:<queue>,i:0,res:{}})
-//         以後、各ページで  eval(name.split('§§')[0]); await T()  を繰り返す。
+// 使い方: このファイルを開いたページで  window.name = document.body.innerText + String.fromCharCode(1) + JSON.stringify({q:<queue>,i:0,res:{}})
+//         以後、各ページで  eval(name.split(String.fromCharCode(1))[0]); await T()  を繰り返す。
 (function () {
-  const SEP = '§§';
+  const SEP = String.fromCharCode(1);
   const st = () => JSON.parse(window.name.split(SEP)[1]);
   const save = (s) => { window.name = window.name.split(SEP)[0] + SEP + JSON.stringify(s); };
   const txt = (a) => ((a.textContent || '') + ' ' + [...a.querySelectorAll('img')].map((i) => i.alt || '').join(' ') + ' ' + (a.title || '')).replace(/\s+/g, '');
