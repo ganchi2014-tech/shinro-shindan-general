@@ -31,7 +31,7 @@
   };
   // ページの取得: 7秒で打ち切り。Shift_JIS / EUC-JP のサイトも読めるよう文字コードを見て復号する
   const getDoc = async (u) => {
-    const c = new AbortController(); const tm = setTimeout(() => c.abort(), 7000);
+    const c = new AbortController(); const tm = setTimeout(() => c.abort(), 5000);
     try {
       const r = await fetch(u, { signal: c.signal });
       const buf = await r.arrayBuffer();
@@ -103,10 +103,11 @@
     const s = st();
     const r = (s.res[id] = {});
     const here = location.href, t0 = Date.now();
-    const late = () => Date.now() - t0 > 24000;
+    const late = () => Date.now() - t0 > 13000;
     let doc = document, base = here;
     try {
-      if (is404(document)) {                       // 登録URLが切れている → 同じサイトのトップから探し直す
+      const nav = (performance.getEntriesByType('navigation')[0] || {}).responseStatus;
+      if (is404(document) || nav === 404 || nav === 410) {                       // 登録URLが切れている → 同じサイトのトップから探し直す
         r.gone = 1; const top = new URL(here).origin + '/';
         doc = await getDoc(top); base = top; step = 1;
       }
