@@ -1617,6 +1617,20 @@ main {
 .hyoutei-chips .hchip b { color: var(--accent); font-weight: 700; }
 .heat-badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; font-weight: 600; background: var(--hb, var(--bg-card-hi)); color: #10131c; }
 
+/* 面談用の1枚（いつも白地に黒。印刷のときはこの1枚だけを出す） */
+#sheetBody { background:#fff; color:#111; border-radius:10px; padding:16px 14px; font-size:13px; line-height:1.7; }
+#sheetBody h2 { font-size:17px; margin:0 0 4px; color:#111; }
+#sheetBody h3 { font-size:14px; margin:14px 0 4px; padding-bottom:2px; border-bottom:1px solid #999; color:#111; }
+#sheetBody table { width:100%; border-collapse:collapse; }
+#sheetBody td, #sheetBody th { border:1px solid #bbb; padding:3px 6px; text-align:left; vertical-align:top; font-size:12px; color:#111; }
+#sheetBody th { background:#eee; white-space:nowrap; width:6.5em; }
+#sheetBody .sheet-line { border-bottom:1px solid #999; height:26px; }
+#sheetBody .sheet-sub { font-size:11px; color:#444; }
+@media print {
+  body * { visibility: hidden !important; }
+  #sheetBody, #sheetBody * { visibility: visible !important; }
+  #sheetBody { position: absolute; left: 0; top: 0; width: 100%; padding: 0; border-radius: 0; }
+}
 /* 入試タブ: 日程の横タイムライン（ラベル列は両gridで同一pxにして月境界を揃える） */
 .sched-timeline { margin: 6px 0 12px; overflow-x: auto; }
 .sched-tl-inner { min-width: 340px; }
@@ -1715,6 +1729,7 @@ main {
         <div class="warning-banner">
           ⚠️ <strong>重要</strong>: 入試制度・偏差値・倍率は<strong>年度ごとに変動</strong>します。出願前は必ず<strong>各大学の公式入試要項</strong>を確認してください。
         </div>
+        <div id="savedDiagNote" hidden style="margin:0 0 10px;padding:10px 12px;border-radius:8px;background:var(--bg-card-hi);font-size:13px;line-height:1.8;color:var(--text)"></div>
         <div id="schoolNote" hidden style="margin:0 0 10px;padding:8px 12px;border-radius:8px;background:var(--primary-soft);font-size:12px;line-height:1.7;color:var(--text)"></div>
         <div class="cta-row">
           <button class="primary-btn" data-go="diag-1">診断スタート</button>
@@ -1954,7 +1969,10 @@ main {
       <div class="result-actions">
         <button class="ghost-btn" id="editDiagBtn">条件を編集</button>
         <button class="ghost-btn" data-go="list">全大学を見る</button>
+        <button class="ghost-btn" id="sheetBtn">🖨 面談用の1枚</button>
+        <button class="ghost-btn" id="saveDiagBtn">💾 この端末に条件を残す</button>
       </div>
+      <p class="detail-note" id="saveDiagNote" hidden></p>
       <div class="uni-list" id="resultList"></div>
     </section>
 
@@ -1988,6 +2006,14 @@ main {
     </section>
 
     <!-- ============================ LOADING ============================ -->
+    <section class="screen" data-screen="sheet" hidden>
+      <div id="sheetBody"></div>
+      <div class="nav-row no-print">
+        <button class="primary-btn" id="sheetPrint">印刷する・PDFにする</button>
+      </div>
+      <p class="detail-note no-print">進路面談や家での相談に持っていく用のまとめです。名前はこの端末に保存されません（印刷してから手で書いてください）。</p>
+    </section>
+
     <section class="screen" data-screen="teacher" hidden>
       <h2 class="step-title">先生用：学校の数字を入れた配布リンクを作る</h2>
       <p class="step-sub">校内の模試の平均とばらつきを入れると、偏差値の「目安ボタン」と初期値がその学校に合います。数字はこの画面の中だけで使い、どこにも送りません。できたリンク（またはそのQRコード）を生徒に配ってください。</p>
@@ -2479,6 +2505,107 @@ function updateHeader() {
     backBtn.hidden = true;
     resetBtn.hidden = true;
   }
+}
+
+// ============================================================
+// 面談用の1枚（条件・各段の上位・お気に入りを1枚に。名前は保存しない）
+// ============================================================
+function _henText() {
+  const dg = state.diag;
+  if (dg.hensachiUnknown) return '未定';
+  const adj = adjustedHensachi(), src = EXAM_SOURCE_LABEL[dg.examSource];
+  if (src && adj !== dg.hensachi) return `${dg.hensachi}（${src}模試）→ 河合の基準に換算した目安 ${adj}`;
+  return dg.henFrom === 'input' ? `${dg.hensachi}` : `目安 ${dg.hensachi}（${dg.henFrom === 'quick' ? '目安ボタンで選んだ値' : '入れていない'}）`;
+}
+function buildSheet() {
+  const r = state.lastResult; if (!r) return '';
+  const v = buildView(r), dg = state.diag, m = r.meta || {};
+  const names = (set, get) => [...set].map(x => (get(x) || {}).label).filter(Boolean).join('・') || '未定';
+  const commuteLbl = { 'jitaku': '片道90分まで', 'jitaku-flex': '片道120分まで', 'any': '下宿OK' }, areaLbl = { shiga: '滋賀県内', kansai: '関西', any: 'どこでも' };
+  const cond = [
+    ['評定', dg.hyouteiUnknown ? '未定' : dg.hyoutei.toFixed(1)],
+    ['偏差値', _henText()],
+    ['つきたい仕事', names(dg.careers, getCareerOption)],
+    ['興味のある分野', names(dg.interests, getInterestOption)],
+    ['通学', [(dg.origin && GUIDE.originById(dg.origin)) ? originShort() + 'から' : '', commuteLbl[dg.commute] || '未定'].filter(Boolean).join('　')],
+    ['働きたい地域', areaLbl[dg.workArea] || '未定'],
+    ['12問のタイプ', (m.hollandCode && !m.lowSignal) ? ([...document.querySelectorAll('#resultSummary .cond-tag')].map(e => e.textContent).find(t => t.includes('🧭')) || '').replace('🧭', '').trim() || '回答あり' : '答えていない'],
+  ];
+  const row = (it) => { const d = deptById(it.dept_id), u = uniByIdFast(it.uni_id); return `<tr><td>${_esc(u.name)}</td><td>${_esc(d.name)}</td><td>${fmtBand(d.hensachi, isKokkoritsuUni(u)).replace('偏差値 ', '')}</td><td>${_esc(commuteText(u, d) || '')}</td></tr>`; };
+  const zone = (title, arr) => arr.length ? `<h3>${title}（${arr.length}件のうち上から${Math.min(5, arr.length)}件）</h3><table><tr><th style="width:auto">大学</th><th style="width:auto">学部</th><th style="width:auto">偏差値</th><th style="width:auto">通学</th></tr>${arr.slice(0, 5).map(row).join('')}</table>` : '';
+  const favs = getFavs().map(id => findDeptV2(id)).filter(p => p.dept && p.uni).map(p => `${_esc(p.uni.name)} ${_esc(p.dept.name)}`);
+  const today = new Date(), ymd = `${today.getFullYear()}年${today.getMonth() + 1}月${today.getDate()}日`;
+  const lines = (n) => Array.from({ length: n }, () => '<div class="sheet-line"></div>').join('');
+  return `<h2>進路診断のまとめ（面談用）</h2>
+    <div class="sheet-sub">${ymd}　　　年　　組　　番　名前　　　　　　　　　　　　　　／ 目安の資料です。正式な条件は各大学の要項で確かめます</div>
+    <h3>入れた条件</h3><table>${cond.map(([k, x]) => `<tr><th>${k}</th><td>${_esc(x)}</td></tr>`).join('')}</table>
+    ${zone('実力相応', v.zones.match)}${zone('チャレンジ', v.zones.challenge)}${zone('安全圏', v.zones.safe)}${zone('おすすめ', v.ungrouped)}
+    ${(!v.shown) ? '<p>条件に合う学部が出ませんでした。条件を変えて試すか、面談で相談します。</p>' : ''}
+    <h3>気になっている学部（お気に入り）</h3>${favs.length ? `<p>${favs.join(' ／ ')}</p>` : '<p class="sheet-sub">まだ登録していません（結果の ❤️ で登録）</p>' + lines(2)}
+    <h3>先生に聞きたいこと・家で相談したいこと</h3>${lines(3)}
+    <h3>次にやること</h3><p>□ 気になった学部の入試の科目を確かめる（3年の科目選択に関わる）　□ オープンキャンパスに1校行く　□ 次の通知表の目標を決める</p>`;
+}
+// ============================================================
+// 条件をこの端末に残す（自分のスマホの人向け。押した人だけ。リセットで消える）
+// ============================================================
+const SAVE_KEY = 'diag-v1';
+function saveDiag() {
+  const dg = state.diag;
+  const o = Object.assign({}, dg, { careers: [...dg.careers], interests: [...dg.interests], methods: [...(dg.methods || [])] });
+  try { localStorage.setItem(SAVE_KEY, JSON.stringify({ t: Date.now(), diag: o, riasec: state.lastRiasec || [], course: state.schoolCourse || 0 })); return true; } catch (e) { return false; }
+}
+function loadSavedDiag() {
+  try {
+    const s = JSON.parse(localStorage.getItem(SAVE_KEY) || 'null');
+    if (!s || !s.diag || Date.now() - s.t > 120 * 86400000) return null;   // 4か月たったものは使わない
+    return s;
+  } catch (e) { return null; }
+}
+function clearSavedDiag() { try { localStorage.removeItem(SAVE_KEY); } catch (e) {} }
+// 入力の画面を、いまの条件（state.diag）に合わせる
+function syncDiagUi() {
+  const dg = state.diag, $ = (id) => document.getElementById(id);
+  $('hyouteiInput').value = dg.hyoutei; $('hyouteiVal').textContent = dg.hyoutei.toFixed(1); $('hyouteiInput').dispatchEvent(new Event('input'));
+  [['hyouteiUnknownChk', dg.hyouteiUnknown], ['hensachiUnknownChk', dg.hensachiUnknown]].forEach(([id, on]) => { const c = $(id); if (c && c.checked !== !!on) { c.checked = !!on; c.dispatchEvent(new Event('change')); } });
+  const keep = { h: dg.hensachi, f: dg.henFrom };
+  $('hensachiInput').value = dg.hensachi; state.diag.hensachi = keep.h; state.diag.henFrom = keep.f;
+  document.querySelectorAll('.hensachi-quick-btn').forEach(b => b.classList.toggle('selected', dg.henFrom === 'quick' && parseFloat(b.dataset.hen) === dg.hensachi));
+  [['examSource', dg.examSource], ['workArea', dg.workArea], ['commute', dg.commute]].forEach(([n, val]) => document.querySelectorAll(`input[name="${n}"]`).forEach(r => { r.checked = r.value === val; }));
+  const hint = $('examSourceHint'); if (hint) hint.hidden = dg.examSource === 'unknown';
+  const os = $('originSelect'); if (os) os.value = dg.origin || '';
+  const cc = $('costPriorityChk'); if (cc) cc.checked = !!dg.costPriority;
+  document.querySelectorAll('#exammethodChips .chip').forEach(c => c.classList.toggle('selected', dg.methods.has(c.dataset.method)));
+  renderCareerChips(); renderInterestChips(); populateFilterCounts(); renderCareerPathNote();
+  document.querySelectorAll('.riasec-card').forEach((card, i) => card.querySelectorAll('.riasec-opt').forEach((b, vv) => { const on = state.riasecAnswers[i] === vv; b.classList.toggle('on', on); b.setAttribute('aria-checked', on ? 'true' : 'false'); }));
+  updateRiasecUi();
+}
+function renderSavedNote() {
+  const el = document.getElementById('savedDiagNote'); if (!el) return;
+  const s = loadSavedDiag();
+  el.hidden = !s;
+  if (s) { const d = new Date(s.t); el.innerHTML = `💾 この端末に、${d.getMonth() + 1}月${d.getDate()}日の診断の条件が残っています。 <button class="ghost-btn" id="resumeDiag" style="padding:2px 10px">続きを見る</button> <button class="ghost-btn" id="forgetDiag" style="padding:2px 10px">消す</button>`; }
+}
+function setupSaveAndSheet() {
+  renderSavedNote();
+  document.addEventListener('click', (e) => {
+    const id = e.target && e.target.id;
+    if (id === 'sheetBtn') { document.getElementById('sheetBody').innerHTML = buildSheet(); go('sheet'); }
+    if (id === 'sheetPrint') window.print();
+    if (id === 'saveDiagBtn') {
+      const ok = saveDiag(); const n = document.getElementById('saveDiagNote');
+      if (n) { n.hidden = false; n.textContent = ok ? '💾 この端末に条件を残しました。次に開いたとき、最初の画面の「続きを見る」から同じ結果に戻れます。共用の端末では「リセット」か「消す」で消してください。' : '保存できませんでした（この端末の設定で保存が止められています）。'; }
+      renderSavedNote();
+    }
+    if (id === 'forgetDiag') { clearSavedDiag(); renderSavedNote(); }
+    if (id === 'resumeDiag') {
+      const s = loadSavedDiag(); if (!s) return;
+      const o = s.diag;
+      state.diag = Object.assign({}, state.diag, o, { careers: new Set(o.careers || []), interests: new Set(o.interests || []), methods: new Set(o.methods && o.methods.length ? o.methods : ['any']) });
+      state.riasecAnswers = (s.riasec || []).slice(); state.schoolCourse = s.course || 0;
+      syncDiagUi();
+      runDiagnose(state.riasecAnswers);
+    }
+  });
 }
 
 // ============================================================
@@ -3810,7 +3937,21 @@ function _jpDatePos(str) {
 
 // 入試日程の横タイムライン（全方式を同一軸に積んで併願比較しやすく）
 // 帯=出願できる期間そのもの（手続〆切は⏰の別マーカー。帯に混ぜると出願期限と誤読されるため）
-function _schedTimeline(nd) {
+// 公式で確かめた日程の行（「方式名｜出願 9/28〜10/7｜試験 10/18｜発表 11/2」）を、図を描く処理が読める形に直す
+function _offToNd(no) {
+  const md = (x) => { const m = String(x || '').match(/(\d{1,2})\/(\d{1,2})/); return m ? `${m[1]}月${m[2]}日` : null; };
+  const out = {};
+  ['sogo', 'koubo', 'ippan'].forEach(tp => {
+    out[tp] = ((no && no[tp]) || []).map(line => {
+      const c = String(line).split('｜'), get = (k) => (c.find(x => x.startsWith(k)) || '').slice(k.length).trim();
+      const ap = get('出願').split(/[〜~]/);
+      return { method_name: c[0], application_period: [md(ap[0]), md(ap[1])].filter(Boolean).join('〜'), exam_date: md(get('試験')), result_date: md(get('発表')) };
+    });
+  });
+  return out;
+}
+function _schedTimeline(nd, opt) {
+  opt = opt || {};
   const TL = { sogo: '総合', koubo: '公募', ippan: '一般' };
   const rows = [];
   let early = false;
@@ -3828,7 +3969,7 @@ function _schedTimeline(nd) {
   }));
   if (!rows.length) return '';
   const MONTHS = ['9月', '10月', '11月', '12月', '1月', '2月', '3月'];
-  let h = `<h4 class="detail-h">日程ざっくりタイムライン</h4><div class="sched-timeline"><div class="sched-tl-inner">` +
+  let h = (opt.bare ? '' : `<h4 class="detail-h">日程ざっくりタイムライン</h4>`) + `<div class="sched-timeline"><div class="sched-tl-inner">` +
     `<div class="sched-axis"><span></span>${MONTHS.map(m => `<span>${m}</span>`).join('')}</div>`;
   rows.forEach(r => {
     let track = '';
@@ -3843,6 +3984,7 @@ function _schedTimeline(nd) {
     if (r.dead != null) track += `<span class="sched-dot" style="left:${r.dead.toFixed(1)}%">⏰</span>`;
     h += `<div class="sched-row"><span class="sched-row-label">${_esc(r.label)}</span><div class="sched-track">${track}</div></div>`;
   });
+  if (opt.bare) return h + `</div></div>`;
   return h + `</div></div><p class="detail-note">帯 = 出願できる期間（点線は終了日が読み取れず目安）、📝 = 試験日、🌸 = 合格発表、⏰ = 入学手続〆切（合格後に入学金を納める期限。出願の締切ではありません）${early ? '、◀ = 8月以前から出願開始' : ''}。月単位の目安なので、正確な日付は下の各方式・公式要項で確認してください。</p>`;
 }
 
@@ -4019,7 +4161,7 @@ function uniTabEntrance(uni) {
   if (html.indexOf('heat-badge') !== -1) {
     html += `<p class="detail-note">🎨 想定倍率の色は<strong>赤に近いほど競争が激しい</strong>（倍率が高い＝受ける人が多く不合格も多い）目安です。</p>`;
   }
-  return banner + (uni.hyoutei_official ? hyouteiOfficialHtml(uni.hyoutei_official, myG) : chipHtml) + _schedTimeline(nd) + (html || '<p class="detail-lead">入試方式の詳細は公式サイトで確認してください。</p>') +
+  return banner + (uni.hyoutei_official ? hyouteiOfficialHtml(uni.hyoutei_official, myG) : chipHtml) + _schedTimeline(no ? _offToNd(no) : nd) + (html || '<p class="detail-lead">入試方式の詳細は公式サイトで確認してください。</p>') +
     `<div class="detail-links">${links}</div>`;
 }
 
@@ -4923,6 +5065,16 @@ function renderFavs() {
   const dead = pairs.filter(p => !p.dept || !p.uni);
   el.innerHTML = `<p style="font-size:12px;color:var(--text-dim);margin:8px 0">${live.length} 学部を登録中</p>`;
   live.forEach(p => el.appendChild(deptCard(deptToItem(p.dept, p.uni))));
+  // 受験カレンダー: お気に入りの大学の日程（公式で確かめた分）を同じ目盛りで並べ、出願・試験の重なりを見えるようにする
+  const calUnis = []; live.forEach(p => { if (p.uni.nyushi_official && !calUnis.includes(p.uni)) calUnis.push(p.uni); });
+  if (calUnis.length) {
+    const cal = document.createElement('div');
+    cal.innerHTML = `<h3 class="zone-title" style="margin-top:20px">📅 お気に入りの大学の日程をならべる</h3>` +
+      `<p class="zone-sub">${_esc(calUnis[0].nyushi_official.year)}（今の高3の学年）の日程です。例年ほぼ同じ時期なので、出願や試験が重なる所の目安にしてください。</p>` +
+      calUnis.map(u => `<h4 class="detail-h" style="margin:12px 0 2px">${_esc(u.name)}</h4>` + (_schedTimeline(_offToNd(u.nyushi_official), { bare: true }) || '<p class="detail-note">日程を図にできませんでした。大学ページの入試タブを見てください。</p>')).join('') +
+      `<p class="detail-note">帯 = 出願できる期間、📝 = 試験日、🌸 = 合格発表。おもな方式だけです。<strong>総合型は9月に出願が始まる大学が多い</strong>ので、準備は高3の夏休みまでに。評定は高3の1学期までの成績で決まります。</p>`;
+    el.appendChild(cal);
+  }
   if (dead.length) {
     const note = document.createElement('div');
     note.className = 'detail-note';
@@ -4983,6 +5135,7 @@ async function init() {
   setupChips();
   setupRadios();
   setupSchool();
+  setupSaveAndSheet();
 
   // ナビゲーション
   document.querySelectorAll('[data-go]').forEach(btn => {
@@ -5036,6 +5189,7 @@ async function init() {
     // 前の人の条件と結果を残さない（共用の端末で、次の人が「戻る」で前の人の結果を見られた）
     renderCareerChips(); renderInterestChips();          // 札を描き直す（選択の印と aria-pressed をそろえて戻す）
     state.lastResult = null; state.lastRiasec = [];
+    clearSavedDiag(); renderSavedNote();   // 残した条件も消す
     ['resultSummary', 'resultList'].forEach(id => { const el = document.getElementById(id); if (el) el.innerHTML = ''; });
     state.history = ['home']; state.forward = [];        // 「戻る」はホームへ
     go('diag-1', { noHistory: true });
