@@ -18,6 +18,7 @@ const engine = R('engine_v2.js');
 const bridge = R('bridge_v2.js');
 const agg = R('agg_v2.js');
 const guide = R('guide_v2.js');
+const school = R('school_v2.js');
 
 // CommonJS を ブラウザ global へ。module.exports を横取りして window に載せる
 const wrap = (src, globalName) =>
@@ -30,7 +31,8 @@ const inlineBlocks =
   wrap(engine, 'ENGINE_V2') + '\n' +
   wrap(bridge, 'BRIDGE_V2') + '\n' +
   wrap(agg, 'AGG_V2') + '\n' +
-  wrap(guide, 'GUIDE_V2') + '\n';
+  wrap(guide, 'GUIDE_V2') + '\n' +
+  wrap(school, 'SCHOOL_V2') + '\n';
 
 if (!html.includes('<!-- INLINE_V2 -->')) {
   console.error('ERROR: マーカー <!-- INLINE_V2 --> が見つかりません');

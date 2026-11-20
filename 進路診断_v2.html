@@ -2382,6 +2382,56 @@ module.exports = {
 };
 
 ;window.GUIDE_V2=module.exports;})();</script>
+<script>(function(){var module={exports:{}};var exports=module.exports;
+// school_v2.js — 学校の数字（校内の模試の平均・ばらつき）で、偏差値の目安を学校に合わせる。
+// 数字そのものはこのリポジトリに置かない。先生が作った配布リンクの後ろ（#s=…）に入れ、開いた端末が覚える。
+//
+// 使う所は2つだけ（2026-11-20 に先生・Claude・Museで決めた形）:
+//   1) 何も入れない人の初期値 … 全国の平均50ではなく「校内の模試平均を河合の基準に直した値」
+//   2) 目安ボタン … 「校内で上の方／まん中くらい／下の方」。値は 校内平均 ±（つながりの強さ r × 1.09 × ばらつき）
+//      1.09 は、集団を3等分したときの上・下の群の平均の位置（平均から標準偏差の約1.09倍）。
+//      校内での位置と模試の成績は別の物差しなので、つながりの強さ r（相関）で縮める。
+// 使わない所: 評定から偏差値を出して段分けに使うこと（誤差が±8〜9で段の境±2.5より大きい）、「学年の上位○%」の表示。
+//
+// 配布リンクに入れる形（短い名前にしてリンクを短くする）:
+//   { v:1, n:'学校名', t:'2026年度 2年・11月', x:'shinken'|'kawai'|'sundai', r:0.5,
+//     c:[ { l:'コース名', m:校内平均, s:ばらつき（標準偏差）, k:人数 }, ... ] }
+'use strict';
+const TERCILE = 1.09;
+const _b64 = {
+  enc: (str) => (typeof Buffer !== 'undefined' ? Buffer.from(str, 'utf8').toString('base64')
+    : btoa(String.fromCharCode.apply(null, Array.from(new TextEncoder().encode(str))))),
+  dec: (b) => (typeof Buffer !== 'undefined' ? Buffer.from(b, 'base64').toString('utf8')
+    : new TextDecoder().decode(Uint8Array.from(atob(b), (ch) => ch.charCodeAt(0)))),
+};
+function encode(obj) { return _b64.enc(JSON.stringify(obj)).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); }
+function decode(str) {
+  try {
+    const b = String(str || '').replace(/-/g, '+').replace(/_/g, '/');
+    return validate(JSON.parse(_b64.dec(b + '==='.slice((b.length + 3) % 4))));
+  } catch (e) { return null; }
+}
+// 形と数字の範囲を確かめる。おかしければ null（その端末は一般版のまま動く）
+function validate(o) {
+  if (!o || o.v !== 1 || typeof o.n !== 'string' || !o.n.trim() || !Array.isArray(o.c) || !o.c.length || o.c.length > 12) return null;
+  if (!['shinken', 'kawai', 'sundai'].includes(o.x)) return null;
+  const r = Number(o.r);
+  if (!(r >= 0 && r <= 1)) return null;
+  const c = o.c.map((x) => ({ l: String((x && x.l) || '').slice(0, 30), m: Number(x && x.m), s: Number(x && x.s), k: x && x.k != null ? Number(x.k) : null }));
+  if (c.some((x) => !x.l || !(x.m >= 20 && x.m <= 80) || !(x.s >= 1 && x.s <= 20))) return null;
+  return { v: 1, n: o.n.trim().slice(0, 40), t: String(o.t || '').slice(0, 40), x: o.x, r, c };
+}
+const half = (v) => Math.round(v * 2) / 2;   // 0.5刻み
+// 3つの目安ボタンの値（河合の基準）。offset は その模試→河合 の換算（進研なら -7）
+function buttons(course, r, offset) {
+  const d = r * TERCILE * course.s;
+  return { hi: half(course.m + d + offset), mid: half(course.m + offset), lo: half(course.m - d + offset) };
+}
+// ボタンで選んだ値の「ぶれ」の目安（±いくつ）。校内での位置から模試の成績を当てるときに残るばらつき
+function spread(course, r) { return Math.round(course.s * Math.sqrt(1 - r * r)); }
+module.exports = { TERCILE, encode, decode, validate, buttons, spread };
+
+;window.SCHOOL_V2=module.exports;})();</script>
 
 </head>
 <body>
@@ -2413,6 +2463,7 @@ module.exports = {
         <div class="warning-banner">
           ⚠️ <strong>重要</strong>: 入試制度・偏差値・倍率は<strong>年度ごとに変動</strong>します。出願前は必ず<strong>各大学の公式入試要項</strong>を確認してください。
         </div>
+        <div id="schoolNote" hidden style="margin:0 0 10px;padding:8px 12px;border-radius:8px;background:var(--primary-soft);font-size:12px;line-height:1.7;color:var(--text)"></div>
         <div class="cta-row">
           <button class="primary-btn" data-go="diag-1">診断スタート</button>
           <button class="secondary-btn" data-go="list">全大学を見る</button>
@@ -2490,33 +2541,36 @@ module.exports = {
       <div class="step-indicator">Step 2 / 7</div>
       <h2 class="step-title">あなたの偏差値は？</h2>
       <p class="step-sub">自分のレベルと大学のミスマッチを防ぎます。</p>
-      <p class="step-sub" style="margin-bottom:8px"><strong>📝 定期試験での目安をタップ</strong></p>
-      <div class="hensachi-quick-buttons" id="hensachiQuickBtns">
-        <button class="hensachi-quick-btn" data-hen="52">
-          <div class="qb-main">主要教科 平均80点以上</div>
-          <div class="qb-sub">偏差値の目安 52</div>
-        </button>
-        <button class="hensachi-quick-btn" data-hen="48">
-          <div class="qb-main">主要教科 平均点並み</div>
-          <div class="qb-sub">偏差値の目安 48</div>
-        </button>
-        <button class="hensachi-quick-btn" data-hen="43">
-          <div class="qb-main">主要教科 平均点以下</div>
-          <div class="qb-sub">偏差値の目安 43</div>
-        </button>
-      </div>
+      <p class="step-sub" style="margin-bottom:8px"><strong>① 模試の成績表がある人</strong>：偏差値を入れて、模試の種類を選んでください（いちばん正確です）</p>
       <div class="hensachi-input-wrap">
-        <label>偏差値（手動調整可）:</label>
+        <label>偏差値:</label>
         <input type="number" id="hensachiInput" step="0.5" min="30" max="75" value="50" />
       </div>
-      <p class="step-sub" style="margin-top:16px">📐 どの模試の偏差値？（基準を自動でそろえます）:</p>
+      <p class="step-sub" style="margin-top:12px">📐 どの模試の偏差値？（基準を自動でそろえます）:</p>
       <div class="radio-list" id="examSourceList">
-        <label class="radio-row"><input type="radio" name="examSource" value="shinken" /><span><strong>進研模試</strong><br />受験者層が広く数値が高めに出ます（−7で換算）</span></label>
+        <label class="radio-row"><input type="radio" name="examSource" value="shinken" /><span><strong>進研模試（ベネッセ総合学力テスト）</strong><br />受験者層が広く数値が高めに出ます（−7で換算。高2の回は差がもっと大きいことがあります）</span></label>
         <label class="radio-row"><input type="radio" name="examSource" value="kawai" /><span><strong>河合塾 全統模試</strong><br />このアプリの基準。そのまま使います</span></label>
         <label class="radio-row"><input type="radio" name="examSource" value="sundai" /><span><strong>駿台模試</strong><br />数値が低めに出ます（＋5で換算）</span></label>
         <label class="radio-row"><input type="radio" name="examSource" value="unknown" checked /><span><strong>🤷 わからない / 定期テストの目安</strong><br />換算せずそのまま使います</span></label>
       </div>
       <p class="step-sub" id="examSourceHint" hidden>💡 模試を選んだときは、上の欄に<strong>その模試の偏差値</strong>を入力してください（目安ボタンの値は模試の数値ではないため、模試を選ぶと目安ボタンの選択は解除されます）。</p>
+      <p class="step-sub" style="margin:18px 0 8px"><strong>② 模試の数字が分からない人</strong>：<span id="quickLead">定期試験での目安をタップ</span></p>
+      <p class="step-sub" id="schoolCourseWrap" hidden style="margin-bottom:8px"><label>コース: <select id="schoolCourse" style="padding:6px 8px;border-radius:8px;font-size:14px"></select></label></p>
+      <div class="hensachi-quick-buttons" id="hensachiQuickBtns">
+        <button class="hensachi-quick-btn" data-hen="52" data-pos="hi">
+          <div class="qb-main">主要教科 平均80点以上</div>
+          <div class="qb-sub">偏差値の目安 52</div>
+        </button>
+        <button class="hensachi-quick-btn" data-hen="48" data-pos="mid">
+          <div class="qb-main">主要教科 平均点並み</div>
+          <div class="qb-sub">偏差値の目安 48</div>
+        </button>
+        <button class="hensachi-quick-btn" data-hen="43" data-pos="lo">
+          <div class="qb-main">主要教科 平均点以下</div>
+          <div class="qb-sub">偏差値の目安 43</div>
+        </button>
+      </div>
+      <p class="step-sub" id="quickNote" style="font-size:12px;color:var(--text-muted);margin-top:6px">目安ボタンはおおよその見当です。模試を受けたら、①に入れ直してください。</p>
       <label class="unknown-toggle">
         <input type="checkbox" id="hensachiUnknownChk" />
         🤷 偏差値は未定（スコアに影響させない）
@@ -2682,6 +2736,23 @@ module.exports = {
     </section>
 
     <!-- ============================ LOADING ============================ -->
+    <section class="screen" data-screen="teacher" hidden>
+      <h2 class="step-title">先生用：学校の数字を入れた配布リンクを作る</h2>
+      <p class="step-sub">校内の模試の平均とばらつきを入れると、偏差値の「目安ボタン」と初期値がその学校に合います。数字はこの画面の中だけで使い、どこにも送りません。できたリンク（またはそのQRコード）を生徒に配ってください。</p>
+      <p class="detail-note">⚠️ リンクは生徒の間で回ります。<strong>生徒に見えてよい数字だけ</strong>を入れてください（評定の平均・順位などは入れません。このアプリも使いません）。</p>
+      <div class="info-card" style="text-align:left;padding:12px 14px;line-height:2.2;font-size:14px">
+        <label>学校名 <input id="tcName" type="text" style="width:60%" placeholder="○○高校" /></label><br />
+        <label>いつの数字か <input id="tcTerm" type="text" style="width:55%" placeholder="2026年度 2年・11月" /></label><br />
+        <label>模試 <select id="tcExam"><option value="shinken">進研模試（ベネッセ総合学力テスト）</option><option value="kawai">河合塾 全統模試</option><option value="sundai">駿台模試</option></select></label><br />
+        <label>校内での位置と模試のつながりの強さ（0〜1） <input id="tcR" type="number" min="0" max="1" step="0.05" value="0.5" style="width:70px" /></label>
+        <p class="detail-note" style="margin:0 0 6px">分からなければ 0.5 のまま。定期試験の順位と模試の偏差値の相関係数が分かれば、その値を入れます。</p>
+        <label>コースごとの数字（1行に1コース。<strong>コース名,校内平均の偏差値,ばらつき（標準偏差）,人数</strong>）</label>
+        <textarea id="tcCourses" rows="5" style="width:100%;font-size:14px" placeholder="学年全体,46.0,8.0,300"></textarea>
+      </div>
+      <div class="nav-row"><button class="primary-btn" id="tcMake">リンクを作る</button></div>
+      <div id="tcOut"></div>
+    </section>
+
     <section class="screen" data-screen="loading">
       <div class="loading-wrap">
         <div class="spinner"></div>
@@ -2714,6 +2785,7 @@ const state = {
     hyoutei: 3.5,
     hyouteiUnknown: false,       // デフォルトで入力あり（未定にしたい場合のみチェック）
     hensachi: 50,
+    henFrom: 'default',          // 偏差値の出どころ: default=入れていない / quick=目安ボタン / input=自分で入れた
     hensachiUnknown: false,      // デフォルトで入力あり
     examSource: 'unknown',       // 模試基準（shinken/kawai/sundai/unknown）
     challenge: 'unknown',        // デフォルト未定
@@ -2892,6 +2964,7 @@ function getRegion(regionId) { return state.data.base?.regions?.[regionId]; }
 // v2 データ / エンジン / ブリッジ（ビルドが <!-- INLINE_V2 --> に注入）
 // ============================================================
 let DATA_V2 = null, RIASEC_DEF = null, RIASEC_MAP = null, ENGINE = null, BRIDGE = null, AGG = null, GUIDE = null;
+let SCHOOLMOD = null;   // school_v2.js（学校の数字で目安を合わせる部品）
 function loadV2() {
   const dEl = document.getElementById('inlineDataV2');
   const rdEl = document.getElementById('inlineRiasecDef');
@@ -2903,6 +2976,7 @@ function loadV2() {
   BRIDGE = window.BRIDGE_V2 || null;
   AGG = window.AGG_V2 || null;
   GUIDE = window.GUIDE_V2 || null;
+  SCHOOLMOD = window.SCHOOL_V2 || null;
   return !!(DATA_V2 && ENGINE && BRIDGE && AGG && GUIDE && RIASEC_DEF && RIASEC_MAP);
 }
 function uniById(id) { return (DATA_V2.universities || []).find(u => u.id === id) || null; }
@@ -3156,6 +3230,95 @@ function updateHeader() {
 }
 
 // ============================================================
+// 学校の数字（配布リンクの #s=… で受け取り、端末が覚える。リポジトリには置かない）
+// ============================================================
+const SCHOOL_KEY = 'school-v1';
+function loadSchool() {
+  state.school = null; state.schoolCourse = 0;
+  if (!SCHOOLMOD) return;
+  try {
+    const m = (location.hash || '').match(/^#s=([A-Za-z0-9_-]+)$/);
+    if (m) {
+      const p = SCHOOLMOD.decode(m[1]);
+      if (p) localStorage.setItem(SCHOOL_KEY, m[1]);
+      history.replaceState(null, '', location.pathname + location.search);   // 住所の欄からは外す（画面の共有で数字ごと回らないように）
+    }
+    const saved = localStorage.getItem(SCHOOL_KEY);
+    if (saved) state.school = SCHOOLMOD.decode(saved);
+  } catch (e) { state.school = null; }
+}
+function schoolCourse() { return state.school ? state.school.c[Math.min(state.schoolCourse || 0, state.school.c.length - 1)] : null; }
+function schoolButtons() { const c = schoolCourse(); return c ? SCHOOLMOD.buttons(c, state.school.r, EXAM_SOURCE_OFFSET[state.school.x] || 0) : null; }
+// 目安ボタン・初期値・ホームの一言を、学校の数字の有無に合わせる（無ければ一般版のまま）
+function applySchoolUi() {
+  const sc = state.school, b = schoolButtons();
+  const note = document.getElementById('schoolNote');
+  if (note) {
+    note.hidden = !sc;
+    if (sc) note.innerHTML = `🏫 <strong>${escapeHtml(sc.n)}</strong>${sc.t ? `（${escapeHtml(sc.t)}）` : ''}の校内の数字で、偏差値の目安を出します。 <button class="ghost-btn" id="schoolOff" style="font-size:12px;padding:2px 8px">はずす</button>`;
+  }
+  const wrap = document.getElementById('schoolCourseWrap'), sel = document.getElementById('schoolCourse');
+  if (wrap && sel) {
+    wrap.hidden = !(sc && sc.c.length > 1);
+    if (sc) { sel.innerHTML = sc.c.map((c, i) => `<option value="${i}"${i === (state.schoolCourse || 0) ? ' selected' : ''}>${escapeHtml(c.l)}</option>`).join(''); }
+  }
+  const lead = document.getElementById('quickLead'); if (lead) lead.textContent = sc ? '校内でのだいたいの位置をタップ' : '定期試験での目安をタップ';
+  const GEN = { hi: ['主要教科 平均80点以上', 52], mid: ['主要教科 平均点並み', 48], lo: ['主要教科 平均点以下', 43] };
+  const SCH = { hi: '校内で上の方', mid: '校内でまん中くらい', lo: '校内で下の方' };
+  document.querySelectorAll('.hensachi-quick-btn').forEach(btn => {
+    const pos = btn.dataset.pos; if (!GEN[pos]) return;
+    const v = b ? b[pos] : GEN[pos][1];
+    btn.dataset.hen = v;
+    btn.querySelector('.qb-main').textContent = b ? SCH[pos] : GEN[pos][0];
+    btn.querySelector('.qb-sub').textContent = `偏差値の目安 ${v}`;
+    btn.classList.remove('selected');
+  });
+  const qn = document.getElementById('quickNote');
+  if (qn) qn.textContent = sc
+    ? `校内の模試の平均から出した見当です（±${SCHOOLMOD.spread(schoolCourse(), sc.r)}ほどぶれます）。模試の成績表がある人は、①に入れてください。`
+    : '目安ボタンはおおよその見当です。模試を受けたら、①に入れ直してください。';
+  // まだ何も入れていない人の初期値: 全国の平均50ではなく、校内の模試平均から
+  if (state.diag.henFrom !== 'input') {
+    if (state.diag.henFrom === 'quick') state.diag.henFrom = 'default';
+    state.diag.hensachi = b ? b.mid : 50;
+    const hi = document.getElementById('hensachiInput'); if (hi) hi.value = state.diag.hensachi;
+  }
+}
+function setupSchool() {
+  loadSchool(); applySchoolUi();
+  document.getElementById('schoolCourse')?.addEventListener('change', e => { state.schoolCourse = parseInt(e.target.value, 10) || 0; applySchoolUi(); });
+  document.addEventListener('click', e => {
+    if (e.target && e.target.id === 'schoolOff') { try { localStorage.removeItem(SCHOOL_KEY); } catch (x) {} state.school = null; applySchoolUi(); }
+  });
+  // 先生用の画面（住所の後ろに #teacher を付けて開く）
+  document.getElementById('tcMake')?.addEventListener('click', () => {
+    const out = document.getElementById('tcOut');
+    const c = document.getElementById('tcCourses').value.split('\n').map(l => l.trim()).filter(Boolean).map(l => { const a = l.split(/[,、，\t]/).map(x => x.trim()); return { l: a[0], m: parseFloat(a[1]), s: parseFloat(a[2]), k: a[3] ? parseInt(a[3], 10) : null }; });
+    const p = SCHOOLMOD.validate({ v: 1, n: document.getElementById('tcName').value, t: document.getElementById('tcTerm').value, x: document.getElementById('tcExam').value, r: parseFloat(document.getElementById('tcR').value), c });
+    if (!p) { out.innerHTML = '<p class="detail-note">⚠️ 入力を確かめてください（学校名、コースの行は「コース名,平均,ばらつき,人数」。平均は20〜80、ばらつきは1〜20、つながりの強さは0〜1）。</p>'; return; }
+    const url = location.origin + location.pathname + '#s=' + SCHOOLMOD.encode(p);
+    const off = EXAM_SOURCE_OFFSET[p.x] || 0;
+    out.innerHTML = `<h4 class="detail-h">配布リンク</h4><textarea id="tcUrl" rows="4" readonly style="width:100%;font-size:12px">${escapeHtml(url)}</textarea>` +
+      `<div class="nav-row"><button class="secondary-btn" id="tcCopy">リンクをコピー</button></div>` +
+      `<h4 class="detail-h">このリンクで開いた生徒に出る目安（河合の基準）</h4>` +
+      p.c.map(x => { const b = SCHOOLMOD.buttons(x, p.r, off); return `<p class="detail-note" style="margin:4px 0"><strong>${escapeHtml(x.l)}</strong>${x.k ? `（${x.k}人）` : ''}：上の方 ${b.hi} ／ まん中 ${b.mid} ／ 下の方 ${b.lo}　ぶれ ±${SCHOOLMOD.spread(x, p.r)}${x.k && x.k < 30 ? '　⚠️ 人数が少ないので年度で大きく動きます' : ''}</p>`; }).join('') +
+      `<p class="detail-note">何も入れない生徒の初期値は「まん中」の値になります。数字を入れ替えたいときは、新しいリンクを作って配り直してください（生徒が新しいリンクを開くと上書きされます）。</p>`;
+    document.getElementById('tcCopy')?.addEventListener('click', () => { const t = document.getElementById('tcUrl'); t.select(); try { navigator.clipboard.writeText(t.value); } catch (x) { document.execCommand('copy'); } });
+  });
+}
+// 結果の上に出す一言: 目安の偏差値で判定したときは、そう伝える（言い切らない）
+function henLegendHtml() {
+  if (state.diag.hensachiUnknown) return '';
+  const sc = state.school, from = state.diag.henFrom, src = state.diag.examSource;
+  if (from === 'input') {
+    if (src === 'shinken' || src === 'sundai') return `<p class="summary-legend">📐 模試の偏差値を<strong>河合の基準に換算した目安</strong>で判定しています（${src === 'shinken' ? '進研は−7' : '駿台は＋5'}）。${src === 'shinken' ? '高2の進研模試は差がもっと大きいことがあり、その場合は実際より易しめに出ます。' : ''}</p>`;
+    return '';
+  }
+  if (from === 'quick') return `<p class="summary-legend">📐 <strong>目安の偏差値</strong>で判定しています（${sc ? `校内での位置から出した見当で、±${SCHOOLMOD.spread(schoolCourse(), sc.r)}ほどぶれます` : '定期試験からのおおよその見当です'}）。段の分け方は変わることがあるので、模試を受けたらその数字に入れ直してください。</p>`;
+  return `<p class="summary-legend">📐 偏差値を入れていないので、<strong>${sc ? '校内の模試平均から出した目安' : '全国の平均（50）'}</strong>で判定しています。「条件を編集」から入れると、自分に合った段分けになります。</p>`;
+}
+
+// ============================================================
 // 評定平均スライダー
 // ============================================================
 function setupHyoutei() {
@@ -3327,6 +3490,7 @@ function setupRadios() {
   const hensachiInput = document.getElementById('hensachiInput');
   if (hensachiInput) {
     hensachiInput.addEventListener('input', e => {
+      state.diag.henFrom = 'input';
       const v = parseFloat(e.target.value);
       if (!isNaN(v)) state.diag.hensachi = Math.min(75, Math.max(30, v));
       // クイックボタンの選択ハイライト解除
@@ -3342,7 +3506,7 @@ function setupRadios() {
   document.querySelectorAll('.hensachi-quick-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const v = parseFloat(btn.dataset.hen);
-      state.diag.hensachi = v;
+      state.diag.hensachi = v; state.diag.henFrom = 'quick';
       if (hensachiInput) hensachiInput.value = v;
       document.querySelectorAll('.hensachi-quick-btn').forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
@@ -3656,8 +3820,8 @@ function renderResults() {
     const adj = m.adjustedHensachi;
     const srcLbl = EXAM_SOURCE_LABEL[state.diag.examSource];
     conds.push(srcLbl && adj != null && adj !== state.diag.hensachi
-      ? `偏差値 ${state.diag.hensachi}（${srcLbl}→河合換算 ${adj}）`
-      : `偏差値 ${state.diag.hensachi}`);
+      ? `偏差値 ${state.diag.hensachi}（${srcLbl}→河合に換算した目安 ${adj}）`
+      : (state.diag.henFrom === 'input' ? `偏差値 ${state.diag.hensachi}` : `偏差値の目安 ${state.diag.hensachi}`));
   }
   if (state.diag.careers.size > 0) {
     const careerNames = [...state.diag.careers].map(c => getCareerOption(c)?.label).filter(Boolean);
@@ -3692,6 +3856,7 @@ function renderResults() {
     </div>
     ${m.hollandCode && !m.lowSignal ? `<p class="summary-legend">🧭 は12問の答えから出した<strong>あなたのタイプ</strong>（上位3つ）。合う学部ほど上に並びます。</p>` : ''}
     ${m.adjustedHensachi != null ? `<p class="summary-legend">🏛️ <strong>国公立は難しめに判定</strong>しています。共通テスト（5〜7科目）＋2次試験があるため、偏差値に+${kkBonus()}して「実力相応／チャレンジ／安全圏」を決めています。</p>` : ''}
+    ${henLegendHtml()}
     ${state.diag.costPriority ? `<div class="nudge">💴 学費が心配な人へ：各大学の「生活」タブで学費・奨学金・下宿費を確認できます。国公立（学費 年約54万円）や自宅から通える大学は費用を抑えやすいです。</div>` : ''}
     ${guideCardsHtml(r)}
     ${renderBunriHint()}
@@ -5541,6 +5706,7 @@ async function init() {
   setupHyoutei();
   setupChips();
   setupRadios();
+  setupSchool();
 
   // ナビゲーション
   document.querySelectorAll('[data-go]').forEach(btn => {
@@ -5568,7 +5734,7 @@ async function init() {
   document.getElementById('fwdBtn')?.addEventListener('click', forward);
   document.getElementById('fabFwdBtn')?.addEventListener('click', forward);
   document.getElementById('resetBtn').addEventListener('click', () => {
-    state.diag = { hyoutei: 3.5, hyouteiUnknown: false, hensachi: 50, hensachiUnknown: false, examSource: 'unknown', careers: new Set(), interests: new Set(), workArea: 'unknown', commute: 'unknown', origin: null, costPriority: false, methods: new Set(['any']) };
+    state.diag = { hyoutei: 3.5, hyouteiUnknown: false, hensachi: 50, henFrom: 'default', hensachiUnknown: false, examSource: 'unknown', careers: new Set(), interests: new Set(), workArea: 'unknown', commute: 'unknown', origin: null, costPriority: false, methods: new Set(['any']) };
     state.riasecAnswers = [];
     { const os = document.getElementById('originSelect'); if (os) os.value = ''; populateFilterCounts(); renderCareerPathNote(); }
     state.resultView = 'dept';
@@ -5589,6 +5755,7 @@ async function init() {
     // 偏差値の入力欄とクイックボタン強調も戻す（state 50 と表示のズレ防止）
     const hi = document.getElementById('hensachiInput'); if (hi) hi.value = 50;
     document.querySelectorAll('.hensachi-quick-btn.selected').forEach(b => b.classList.remove('selected'));
+    applySchoolUi();   // 学校の数字があれば、初期値と目安ボタンをその数字に
     state.currentUni = null; state.currentUniTab = 'overview'; state.currentDetail = null;
     // 前の人の条件と結果を残さない（共用の端末で、次の人が「戻る」で前の人の結果を見られた）
     renderCareerChips(); renderInterestChips();          // 札を描き直す（選択の印と aria-pressed をそろえて戻す）
@@ -5643,7 +5810,7 @@ async function init() {
   });
 
   renderHome();
-  go('home', { noHistory: true });
+  go(location.hash === '#teacher' ? 'teacher' : 'home', { noHistory: true });   // #teacher = 先生用（配布リンクを作る画面）
 }
 
 // ユーティリティ
